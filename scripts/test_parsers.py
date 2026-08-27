@@ -99,11 +99,20 @@ ALTS = {"routes": [
 INC = {"incidents": [{"properties": {
     "roadNumbers": ["US-27"], "delay": 240, "magnitudeOfDelay": 2,
     "events": [{"description": "Roadworks"}], "startTime": "2026-08-25T04:00:00Z"}}]}
-seq = [ROUTE, ALTS, INC]
+INC_EMPTY = {"incidents": []}
+OUTBOUND = F.COMMUTE_LEGS[0]
+RETURN = F.COMMUTE_LEGS[1]
+
+# Incidents are collected first (one call per county), then the route, then
+# the alternates. Pin the leg so the test does not depend on the wall clock.
+seq = [INC, INC_EMPTY, ROUTE, ALTS]
 with mock.patch.object(F, "TOMTOM_KEY", "test"), \
+     mock.patch.object(F, "_active_leg", lambda *a, **k: OUTBOUND), \
      mock.patch.object(F, "get", lambda *a, **k: fake_response(seq.pop(0))):
     c = F.fetch_commute()
 check("commute ok", c["ok"])
+check("outbound leg named", c["leg"].endswith("Jackson Memorial") and c["direction"] == "outbound")
+check("route is shown in window", c["route_shown"] is True)
 check("32,078 m converts to 19.9 mi", c["miles"] == 19.9, str(c.get("miles")))
 check("2,291 s converts to 38 min", c["minutes"] == 38, str(c.get("minutes")))
 check("alternates captured", len(c["alternates"]) == 2)
@@ -114,6 +123,36 @@ check("incident captured with road", c["incident_count"] == 1 and "US-27" in c["
 with mock.patch.object(F, "TOMTOM_KEY", ""):
     cn = F.fetch_commute()
 check("missing key fails loudly, not silently", cn["ok"] is False and "TOMTOM_API_KEY" in cn["error"])
+
+# ---------------------------------------------------------------- commute windows
+def at(h, m=0, day=27):        # Thu 27 Aug 2026 is a weekday
+    return dt.datetime(2026, 8, day, h, m, tzinfo=F.ET)
+
+check("5 AM routes outbound", F._active_leg(at(5))["key"] == "outbound")
+check("8:59 AM still outbound", F._active_leg(at(8, 59))["key"] == "outbound")
+check("2 PM routes return", F._active_leg(at(14))["key"] == "return")
+check("5 PM still return", F._active_leg(at(17))["key"] == "return")
+check("10 AM has no leg", F._active_leg(at(10)) is None)
+check("9 PM has no leg", F._active_leg(at(21)) is None)
+check("weekend has no leg", F._active_leg(at(9, 0, 29)) is None)   # Sat 29 Aug
+
+check("outbound departs 5:45 when ahead",
+      F._depart_at(OUTBOUND, at(4)).endswith("05:45:00-04:00"))
+check("past the clock inside window asks for live",
+      F._depart_at(OUTBOUND, at(7)) == "now")
+check("outside window rolls to tomorrow",
+      F._depart_at(OUTBOUND, at(23)).startswith("2026-08-28"))
+check("return departs 15:30", F._depart_at(RETURN, at(13)).endswith("15:30:00-04:00"))
+
+# Outside any window the card still carries area traffic, just no route.
+seq2 = [INC, INC_EMPTY]
+with mock.patch.object(F, "TOMTOM_KEY", "test"), \
+     mock.patch.object(F, "_active_leg", lambda *a, **k: None), \
+     mock.patch.object(F, "get", lambda *a, **k: fake_response(seq2.pop(0))):
+    cq = F.fetch_commute()
+check("no leg still returns traffic", cq["ok"] and cq["route_shown"] is False)
+check("no leg means no travel time", "minutes" not in cq)
+check("no leg still counts incidents", cq["incident_count"] == 1)
 
 # ---------------------------------------------------------------- tropics
 NHC = """<html><body><pre>
@@ -155,6 +194,63 @@ check("rss keeps pubDate", items[0]["published"] and "25 Aug 2026" in items[0]["
 with mock.patch.object(F, "get", lambda *a, **k: fake_response(content=RSS.encode())):
     fires = F.fetch_fires()
 check("fire keyword filter works", len(fires["items"]) == 1 and "acres" in fires["items"][0]["title"])
+
+# ---------------------------------------------------------------- county traffic
+INC = {
+    "Broward": {"incidents": [
+        {"properties": {"roadNumbers": ["I-95"], "delay": 300, "magnitudeOfDelay": 2,
+                        "events": [{"description": "Slow traffic"}], "startTime": "2026-08-27T11:00:00Z"}},
+        {"properties": {"roadNumbers": ["I-595"], "delay": 60, "magnitudeOfDelay": 4,
+                        "events": [{"description": "Road closed"}], "startTime": "2026-08-27T10:00:00Z"}},
+    ]},
+    "Miami-Dade": {"incidents": [
+        {"properties": {"roadNumbers": ["SR-826"], "delay": 900, "magnitudeOfDelay": 3,
+                        "events": [{"description": "Accident"}], "startTime": "2026-08-27T11:30:00Z"}},
+        # same incident the Broward box also sees, in the overlap band
+        {"properties": {"roadNumbers": ["I-95"], "delay": 300, "magnitudeOfDelay": 2,
+                        "events": [{"description": "Slow traffic"}], "startTime": "2026-08-27T11:00:00Z"}},
+    ]},
+}
+
+
+def _inc_by_bbox(url, params=None, **k):
+    lat_lo = float(params["bbox"].split(",")[1])
+    return fake_response(INC["Broward" if lat_lo > 25.9 else "Miami-Dade"])
+
+
+F.TOMTOM_KEY = "test-key"
+with mock.patch.object(F, "get", _inc_by_bbox):
+    inc = F._area_incidents()
+
+check("both counties collected", {i["county"] for i in inc} == {"Broward", "Miami-Dade"})
+check("overlap deduplicated", len(inc) == 3, f"got {len(inc)}")
+check("closure sorts first", inc[0]["magnitude"] == 4 and "closed" in inc[0]["description"].lower())
+check("then worst delay first", inc[1]["delay_s"] == 900 and inc[1]["roads"] == ["SR-826"])
+check("county is labelled", all(i["county"] in ("Broward", "Miami-Dade") for i in inc))
+
+# ---------------------------------------------------------------- feed media
+MEDIA_RSS = b"""<?xml version="1.0"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/"><channel>
+<item><title>Clip with video</title><link>https://x.test/a</link>
+  <pubDate>Wed, 27 Aug 2026 09:00:00 -0400</pubDate>
+  <enclosure url="https://x.test/a.mp4" type="video/mp4"/></item>
+<item><title>Still only</title><link>https://x.test/b</link>
+  <pubDate>Wed, 27 Aug 2026 08:00:00 -0400</pubDate>
+  <media:content url="https://x.test/b.jpg" type="image/jpeg"/></item>
+<item><title>Nothing attached</title><link>https://x.test/c</link>
+  <pubDate>Wed, 27 Aug 2026 07:00:00 -0400</pubDate></item>
+</channel></rss>"""
+with mock.patch.object(F, "get", lambda *a, **k: fake_response(content=MEDIA_RSS)):
+    m = F._parse_feed("https://example.com/media")
+check("video enclosure found", m[0]["media_type"] == "video" and m[0]["media"].endswith(".mp4"))
+check("image falls back to still", m[1]["media_type"] == "image")
+check("no media stays null", m[2]["media"] is None and m[2]["media_type"] is None)
+
+# ---------------------------------------------------------------- streams
+check("every news section has streams", set(F.STREAMS) == {"local", "colombia", "world"})
+check("streams carry name and url",
+      all(x.get("name") and x.get("url", "").startswith("https://")
+          for v in F.STREAMS.values() for x in v))
 
 # ---------------------------------------------------------------- failure shape
 f = F.fail("SomeSource", "boom")

@@ -25,6 +25,45 @@ from bs4 import BeautifulSoup
 ET = ZoneInfo("America/New_York")
 HOME = (25.971228, -80.362648)      # lat, lon
 JACKSON = (25.7922591, -80.2132758)
+
+# Traffic incidents are collected county-wide, not just along the commute.
+# Two boxes rather than one wide one: TomTom does not return coordinates with
+# the fields we ask for, so asking per county is the only honest way to say
+# where an incident actually is.
+#                minLon,  minLat,  maxLon,  maxLat
+COUNTY_BBOX = {
+    "Broward":    (-80.50, 25.96, -80.05, 26.34),
+    "Miami-Dade": (-80.62, 25.34, -80.10, 25.97),
+}
+INCIDENT_FIELDS = ("{incidents{type,properties{iconCategory,magnitudeOfDelay,"
+                   "events{description},startTime,endTime,delay,roadNumbers}}}")
+
+# The two drives that actually matter, and the hours either one is worth
+# routing. Outside these windows the card drops the route and shows area
+# traffic only — a travel time for a trip nobody is about to take is noise.
+COMMUTE_LEGS = [
+    {"key": "outbound", "label": "Home \u2192 Jackson Memorial", "clock": "5:45 AM",
+     "origin": HOME, "dest": JACKSON, "hour": 5, "minute": 45, "window": (3, 9)},
+    {"key": "return", "label": "Jackson Memorial \u2192 Home", "clock": "3:30 PM",
+     "origin": JACKSON, "dest": HOME, "hour": 15, "minute": 30, "window": (12, 18)},
+]
+
+# Live streams for the news sections. Static on purpose: these are station
+# landing pages, not scraped URLs that can rot without anyone noticing.
+STREAMS = {
+    "local": [
+        {"name": "WPLG Local 10", "url": "https://www.local10.com/live/", "live": True},
+        {"name": "WPLG on YouTube", "url": "https://www.youtube.com/@WPLGLocal10/streams", "live": True},
+        {"name": "WSVN 7News", "url": "https://wsvn.com/on-air-live-stream/", "live": True},
+    ],
+    "colombia": [
+        {"name": "El Tiempo video", "url": "https://www.eltiempo.com/videos", "live": False},
+    ],
+    "world": [
+        {"name": "Kyiv Independent", "url": "https://www.youtube.com/@kyivindependent/streams", "live": True},
+        {"name": "NPR program stream", "url": "https://www.npr.org/about-npr/472557877/npr-program-stream", "live": True},
+    ],
+}
 UA = {"User-Agent": "daily-brief/1.0 (personal morning brief; contact via repo issues)"}
 TIMEOUT = 25
 
@@ -217,17 +256,39 @@ def fetch_air():
 # COMMUTE — TomTom. The key never expired; the Claude connector kept dropping
 # it. Called directly over HTTPS it is stable.
 # --------------------------------------------------------------------------
-def _depart_at():
-    """Today's 5:45 AM ET if it is still ahead, otherwise tomorrow's."""
-    n = now_et()
-    d = n.replace(hour=5, minute=45, second=0, microsecond=0)
+def _active_leg(n=None):
+    """Which drive, if any, is worth routing right now. None on weekends."""
+    n = n or now_et()
+    if n.weekday() >= 5:
+        return None
+    for leg in COMMUTE_LEGS:
+        lo, hi = leg["window"]
+        if lo <= n.hour < hi:
+            return leg
+    return None
+
+
+def _depart_at(leg=None, n=None):
+    """The leg's departure time, as TomTom wants it.
+
+    Inside the window but past the clock — you are already driving, or about
+    to — ask for live conditions instead of a stale scheduled time. Outside
+    it, the next occurrence.
+    """
+    leg = leg or COMMUTE_LEGS[0]
+    n = n or now_et()
+    d = n.replace(hour=leg["hour"], minute=leg["minute"], second=0, microsecond=0)
     if n >= d:
+        lo, hi = leg["window"]
+        if lo <= n.hour < hi:
+            return "now"
         d += dt.timedelta(days=1)
     return d.isoformat(timespec="seconds")
 
 
-def _route(avoid_tolls, depart, alternatives=0):
-    loc = f"{HOME[0]},{HOME[1]}:{JACKSON[0]},{JACKSON[1]}"
+def _route(leg, avoid_tolls, depart, alternatives=0):
+    o, dst = leg["origin"], leg["dest"]
+    loc = f"{o[0]},{o[1]}:{dst[0]},{dst[1]}"
     params = {
         "key": TOMTOM_KEY,
         "traffic": "true",
@@ -246,59 +307,85 @@ def _route(avoid_tolls, depart, alternatives=0):
     return r.json()
 
 
+def _area_incidents():
+    """Every incident across Miami-Dade and Broward, worst first.
+
+    Sorted so a full closure outranks any delay, then by delay length. The
+    commute route is still fetched separately; this is the wider picture for
+    days when the drive is not the 5:45 run to Jackson.
+    """
+    out, seen = [], set()
+    for county, (w, s_, e, n) in COUNTY_BBOX.items():
+        try:
+            r = get(
+                "https://api.tomtom.com/traffic/services/5/incidentDetails",
+                params={"key": TOMTOM_KEY, "bbox": f"{w},{s_},{e},{n}",
+                        "fields": INCIDENT_FIELDS, "language": "en-GB"},
+            ).json()
+        except Exception as ex:
+            print(f"  .. incidents {county}: {ex}", file=sys.stderr)
+            continue
+        for it in r.get("incidents", []):
+            p = it.get("properties", {})
+            roads = p.get("roadNumbers") or []
+            desc = "; ".join(ev.get("description", "") for ev in p.get("events", []))
+            key = (desc, tuple(roads), p.get("startTime"))
+            if key in seen:          # the two boxes touch; do not double-count
+                continue
+            seen.add(key)
+            out.append({
+                "county": county,
+                "roads": roads,
+                "delay_s": p.get("delay"),
+                "magnitude": p.get("magnitudeOfDelay"),
+                "description": desc,
+                "start": p.get("startTime"),
+            })
+    out.sort(key=lambda i: ((i.get("magnitude") or 0) == 4, i.get("delay_s") or 0),
+             reverse=True)
+    return out
+
+
 def fetch_commute():
     if not TOMTOM_KEY:
         return fail("TomTom", "TOMTOM_API_KEY not set — add it as a repository secret")
     try:
-        depart = _depart_at()
-        mine = _route(True, depart)["routes"][0]["summary"]
+        incidents = _area_incidents()
+        majors = [i for i in incidents if (i.get("magnitude") or 0) >= 3]
+        area = dict(incidents=incidents[:25], incident_count=len(incidents),
+                    major_count=len(majors), coverage="Miami-Dade + Broward")
+
+        leg = _active_leg()
+        if leg is None:
+            # Between the two runs, or a weekend. Area traffic still matters.
+            return block("TomTom Traffic", route_shown=False, leg=None,
+                         direction=None, **area)
+
+        depart = _depart_at(leg)
+        mine = _route(leg, True, depart)["routes"][0]["summary"]
         miles = round(mine["lengthInMeters"] / 1609.34, 1)
         mins = round(mine["travelTimeInSeconds"] / 60)
         delay = round(mine.get("trafficDelayInSeconds", 0) / 60)
 
         alts = []
         try:
-            for rt in _route(False, depart, alternatives=3).get("routes", []):
-                s = rt["summary"]
-                am = round(s["lengthInMeters"] / 1609.34, 1)
-                at = round(s["travelTimeInSeconds"] / 60)
-                tolled = bool(rt.get("sections"))
-                alts.append({"miles": am, "minutes": at, "toll": tolled,
-                             "saves": mins - at})
+            for rt in _route(leg, False, depart, alternatives=3).get("routes", []):
+                sm = rt["summary"]
+                am = round(sm["lengthInMeters"] / 1609.34, 1)
+                at = round(sm["travelTimeInSeconds"] / 60)
+                alts.append({"miles": am, "minutes": at,
+                             "toll": bool(rt.get("sections")), "saves": mins - at})
         except Exception as e:
             print(f"  .. alternates failed: {e}", file=sys.stderr)
 
         # His rule: only surface an alternate that beats the default by >10 min.
         worth = [a for a in alts if a["saves"] > 10]
 
-        incidents = []
-        try:
-            inc = get(
-                "https://api.tomtom.com/traffic/services/5/incidentDetails",
-                params={
-                    "key": TOMTOM_KEY,
-                    "bbox": "-80.40,25.77,-80.19,25.99",
-                    "fields": "{incidents{type,properties{iconCategory,magnitudeOfDelay,"
-                              "events{description},startTime,endTime,delay,roadNumbers}}}",
-                    "language": "en-GB",
-                },
-            ).json()
-            for it in inc.get("incidents", []):
-                p = it.get("properties", {})
-                incidents.append({
-                    "roads": p.get("roadNumbers") or [],
-                    "delay_s": p.get("delay"),
-                    "magnitude": p.get("magnitudeOfDelay"),
-                    "description": "; ".join(e.get("description", "") for e in p.get("events", [])),
-                    "start": p.get("startTime"),
-                })
-        except Exception as e:
-            print(f"  .. incidents failed: {e}", file=sys.stderr)
-
-        return block("TomTom Routing + Traffic", depart_at=depart, miles=miles,
-                     minutes=mins, delay_minutes=delay, toll_free=True,
-                     alternates=alts, alternates_worth_taking=worth,
-                     incidents=incidents, incident_count=len(incidents))
+        return block("TomTom Routing + Traffic", route_shown=True,
+                     leg=leg["label"], direction=leg["key"], depart_clock=leg["clock"],
+                     depart_at=depart, miles=miles, minutes=mins,
+                     delay_minutes=delay, toll_free=True, alternates=alts,
+                     alternates_worth_taking=worth, **area)
     except Exception as e:
         return fail("TomTom", e)
 
@@ -406,6 +493,31 @@ FEEDS = {
 }
 
 
+def _media(it):
+    """Pull a video or image out of an RSS item if the feed offers one.
+
+    Feeds advertise media through <enclosure> or the media: namespace. We
+    prefer video and fall back to a still. Absent means absent — no guessing
+    a thumbnail URL from the article link.
+    """
+    vid = img = None
+    for tag in it.find_all(["enclosure", "content", "thumbnail"]):
+        u = tag.get("url")
+        if not u:
+            continue
+        t = (tag.get("type") or "").lower()
+        low = u.lower()
+        if t.startswith("video") or low.endswith((".mp4", ".m3u8", ".mov")):
+            vid = vid or u
+        elif t.startswith("image") or low.endswith((".jpg", ".jpeg", ".png", ".webp")):
+            img = img or u
+    if vid:
+        return vid, "video"
+    if img:
+        return img, "image"
+    return None, None
+
+
 def _parse_feed(url, limit=8):
     items = []
     try:
@@ -415,11 +527,14 @@ def _parse_feed(url, limit=8):
             link = it.find("link")
             date = it.find("pubDate") or it.find("published") or it.find("updated")
             href = link.get("href") if (link and link.get("href")) else (link.text if link else None)
+            media, kind = _media(it)
             items.append({
                 "title": re.sub(r"\s+", " ", title.text).strip() if title else None,
                 "url": href,
                 "published": date.text.strip() if date else None,
                 "feed": url,
+                "media": media,
+                "media_type": kind,
             })
     except Exception as e:
         print(f"  .. feed {url}: {e}", file=sys.stderr)
@@ -435,7 +550,7 @@ def fetch_news():
         out[section] = items
     ok = any(v for v in out.values())
     return block("RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-                 ok=ok, **out)
+                 ok=ok, streams=STREAMS, **out)
 
 
 # --------------------------------------------------------------------------
