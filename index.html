@@ -192,6 +192,7 @@ a.ln:active{opacity:.55}
 .atbl th{font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);
   text-align:left;padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.11);font-weight:800}
 .atbl td{padding:9px 8px;border-bottom:1px solid rgba(255,255,255,.06);color:var(--ink2)}
+.atbl tr.best td{color:#7fd47f;font-weight:650}
 .atbl tr.dim td{color:var(--muted)}
 .pill{display:inline-block;padding:3px 9px;border-radius:999px;font-size:9.5px;
   font-weight:800;letter-spacing:.08em;text-transform:uppercase}
@@ -275,7 +276,7 @@ footer b{color:var(--ink2)}
   border-radius:999px;background:var(--surface2);color:var(--ink2);
   border:1px solid var(--grid)}
 .stream:active{opacity:.6}
-.stream .ldot{width:6px;height:6px;border-radius:50%;background:var(--crit);
+.stream .ldot,.livebox summary .ldot{width:6px;height:6px;border-radius:50%;background:var(--crit);flex:none;
   animation:bp 2.4s ease-in-out infinite}
 
 /* ---- video badge on a news row ---- */
@@ -294,6 +295,20 @@ footer b{color:var(--ink2)}
 .idelay{float:right;font-size:12.5px;font-weight:800;font-variant-numeric:tabular-nums}
 .iclosed{color:var(--crit)}
 
+
+/* ---- collapsible live player ---- */
+.livebox{margin:0 0 12px;border:1px solid var(--grid);border-radius:11px;
+  background:var(--surface2);overflow:hidden}
+.livebox summary{cursor:pointer;list-style:none;padding:10px 13px;
+  font-size:12.5px;font-weight:750;letter-spacing:.02em;display:flex;
+  align-items:center;gap:8px}
+.livebox summary::-webkit-details-marker{display:none}
+.livebox summary:active{opacity:.6}
+.livebox[open] summary{border-bottom:1px solid var(--grid)}
+.livebox .meta{padding:0 13px 11px}
+.vwrap{position:relative;width:100%;aspect-ratio:16/9;background:#000}
+.vwrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
 @media (prefers-reduced-motion: reduce){
   /* Motion is kept on purpose. Only large positional movement is softened. */
   .car{animation-name:fadeonly} .sunrise{animation-name:none}
@@ -305,7 +320,6 @@ footer b{color:var(--ink2)}
 
 <div class="top"><div class="toprow">
   <span class="clock" id="clock">—</span>
-  <span class="csub" id="csub"></span>
   <span class="sp"></span>
   <button class="ib" id="refresh" aria-label="Refresh">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
@@ -399,9 +413,6 @@ function hero(d) {
         h14 v-28 h11 v28 h18 v-20 h13 v20 H400 v34 Z"/></g>
     </svg>
     <h1>${esc(d.date_label || '')}</h1>
-    <div class="sub">${d.commute?.route_shown
-      ? esc(d.commute.leg) + ' · departure ' + esc(d.commute.depart_clock)
-      : (d.is_weekend ? 'Weekend · no commute' : 'No drive routed now · traffic across both counties')}</div>
   </div>`;
 }
 
@@ -607,14 +618,22 @@ function commuteCard(d) {
       <tr><th>Option</th><th>Time</th><th>Miles</th><th>Toll</th></tr>
       <tr><td><b>Your route</b> · ${esc(c.leg || '')}</td>
           <td>${num(c.minutes, ' min')}</td><td>${num(c.miles, '', 1)}</td><td>Free</td></tr>
+      ${c.best_free && c.best_free.saves > 0
+        ? `<tr class="best"><td><b>Best toll-free</b> · saves ${c.best_free.saves} min</td>
+            <td>${num(c.best_free.minutes, ' min')}</td>
+            <td>${num(c.best_free.miles, '', 1)}</td><td>Free</td></tr>`
+        : ''}
       ${(c.alternates || []).map(a => `<tr class="dim"><td>Alternate${a.saves > 0 ? ' · saves ' + a.saves : ''}</td>
         <td>${num(a.minutes, ' min')}</td><td>${num(a.miles, '', 1)}</td>
         <td>${a.toll ? 'Toll' : 'Free'}</td></tr>`).join('')}
     </table>
     <div class="meta" style="margin-top:9px">${
+      c.best_free && c.best_free.saves > 0
+        ? `A toll-free line runs <b>${c.best_free.saves} min quicker</b> than the usual one. `
+        : 'Your usual road is the quickest toll-free way right now. '}${
       c.alternates_worth_taking?.length
-        ? `<b>${c.alternates_worth_taking.length} alternate saves more than 10 minutes.</b> Tolled — your call.`
-        : 'No alternate clears the 10-minute bar. Nothing worth taking.'}</div>`;
+        ? `<b>${c.alternates_worth_taking.length} tolled alternate saves more than 10 minutes.</b> Your call.`
+        : 'No tolled alternate clears the 10-minute bar.'}</div>`;
 
   } else if (c?.ok && !shown) {
     body += `<div class="meta">No drive routed right now. Your two runs are
@@ -749,9 +768,24 @@ function fuelCard(d) {
 /* ---------------------------------------------------------------- news */
 function streamBar(list) {
   if (!list?.length) return '';
-  return `<div class="streams">` + list.map(s =>
+  const btns = `<div class="streams">` + list.map(s =>
     `<a class="stream" href="${esc(s.url)}" target="_blank" rel="noopener">
       ${s.live ? '<span class="ldot"></span>' : ''}${esc(s.name)}</a>`).join('') + `</div>`;
+
+  // Player stays collapsed so the iframe only loads if you ask for it, and the
+  // direct link sits underneath: a channel that is off air shows YouTube's own
+  // "offline" card, never a dead black box pretending to be a feed.
+  const vids = list.filter(s => s.yt).map(s => `
+    <details class="livebox">
+      <summary><span class="ldot"></span>Watch ${esc(s.name)} live</summary>
+      <div class="vwrap"><iframe loading="lazy" allowfullscreen
+        title="${esc(s.name)} live stream"
+        allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
+        src="https://www.youtube.com/embed/live_stream?channel=${esc(s.yt)}"></iframe></div>
+      <div class="meta" style="margin-top:7px">Nothing playing means the channel is off air.
+        <a href="${esc(s.url)}" target="_blank" rel="noopener" style="color:var(--s1)">Open ${esc(s.name)}</a>.</div>
+    </details>`).join('');
+  return btns + vids;
 }
 
 function newsCard(id, dotClass, title, items, srcLabel, srcUrl, streams) {
@@ -830,7 +864,6 @@ function paintFreshness(d) {
   const now = new Date();
   $('#clock').textContent = now.toLocaleTimeString('en-US',
     { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' });
-  $('#csub').textContent = d.is_weekend ? 'weekend' : 'leave 5:45';
 }
 
 /* ---------------------------------------------------------------- load */
