@@ -62,21 +62,31 @@ COMMUTE_LEGS = [
 # cable login — so it is a link, not a player. Better an outbound link than a
 # black rectangle pretending to be a feed.
 LIVE_TV = [
+    # Round-the-clock streams. These play whenever you tap them.
+    {"name": "Sky News", "region": "World", "always": True,
+     "yt": "UCoMdktPbSTixAyNGwb-UYkQ"},
     {"name": "Al Jazeera English", "region": "World", "always": True,
      "yt": "UCNye-wNBqNL5ZzHSJj3l8Bg"},
-    {"name": "Bloomberg TV", "region": "World", "always": True,
+    {"name": "DW News", "region": "World", "always": True,
+     "yt": "UCknLrEdhRCp1aegoMqRaCZg"},
+    {"name": "FRANCE 24 English", "region": "World", "always": True,
+     "yt": "UCQfwfsi5VrQ8yKZ-UWmAEFg"},
+    {"name": "euronews", "region": "World", "always": True,
+     "yt": "UCSrZ3UV4jOidv8ppoVuvW9Q"},
+    {"name": "Bloomberg TV", "region": "Business", "always": True,
      "yt": "UCIALMKvObZNtJ6AmdCLP7Lg"},
     {"name": "El Tiempo", "region": "Colombia", "always": True,
      "yt": "UCe5-b0fCK3eQCpwS6MT0aNw"},
+
+    # On air only at certain hours — newscasts, market sessions, breaking events.
+    {"name": "CNBC", "region": "Business", "always": False,
+     "yt": "UCvJJ_dzjViJCoLf5uKUTwoA"},
     {"name": "WPLG Local 10", "region": "Local", "always": False,
      "yt": "UCgVZ0mrM3liHNhRYC5Mchgg"},
     {"name": "WSVN 7News", "region": "Local", "always": False,
      "yt": "UC0IyiKpx7Oirfbqelu3WFJA"},
     {"name": "Kyiv Independent", "region": "World", "always": False,
      "yt": "UCGAC5yzlYgjKoJABDZ7zEyw"},
-    {"name": "CNN", "region": "World", "always": False,
-     "url": "https://www.cnn.com/live-tv",
-     "note": "no free live stream on YouTube"},
 ]
 
 STREAMS = {
@@ -640,6 +650,178 @@ def fetch_fires():
 
 
 # --------------------------------------------------------------------------
+# --------------------------------------------------------------------------
+# WORLD MAP — which countries are in today's headlines.
+#
+# Derived entirely from the feeds already collected. Nothing is asserted about
+# a country unless a headline we fetched named it, and clicking through goes to
+# that headline. No conflict list to curate and go stale.
+#
+# Ambiguous names are matched by demonym or capital rather than the bare word,
+# because "Georgia", "Jordan", "Chad" and "Turkey" all mean something else far
+# more often in an English news feed than they mean the country.
+# --------------------------------------------------------------------------
+COUNTRIES = {
+    "UKR": ("Ukraine", ["ukraine", "ukrainian", "ukrainians", "kyiv", "kiev"]),
+    "RUS": ("Russia", ["russia", "russian", "russians", "moscow", "kremlin", "putin"]),
+    "USA": ("United States", ["united states", "u.s.", "american", "washington",
+                              "white house", "pentagon", "congress"]),
+    "COL": ("Colombia", ["colombia", "colombian", "bogota", "bogotá", "medellin",
+                         "medellín", "cali", "petro"]),
+    "VEN": ("Venezuela", ["venezuela", "venezuelan", "caracas", "maduro"]),
+    "ISR": ("Israel", ["israel", "israeli", "israelis", "tel aviv", "netanyahu"]),
+    "PSE": ("Palestine", ["palestine", "palestinian", "palestinians", "gaza", "west bank"]),
+    "IRN": ("Iran", ["iran", "iranian", "iranians", "tehran"]),
+    "IRQ": ("Iraq", ["iraq", "iraqi", "baghdad"]),
+    "SYR": ("Syria", ["syria", "syrian", "damascus"]),
+    "LBN": ("Lebanon", ["lebanon", "lebanese", "beirut", "hezbollah"]),
+    "YEM": ("Yemen", ["yemen", "yemeni", "houthi", "houthis"]),
+    "SAU": ("Saudi Arabia", ["saudi arabia", "saudi", "saudis", "riyadh"]),
+    "ARE": ("United Arab Emirates", ["united arab emirates", "emirati", "abu dhabi", "dubai"]),
+    "QAT": ("Qatar", ["qatar", "qatari", "doha"]),
+    "EGY": ("Egypt", ["egypt", "egyptian", "cairo"]),
+    "TUR": ("Turkey", ["turkish", "türkiye", "turkiye", "ankara", "istanbul", "erdogan"]),
+    "CHN": ("China", ["china", "chinese", "beijing", "shanghai", "xi jinping"]),
+    "TWN": ("Taiwan", ["taiwan", "taiwanese", "taipei"]),
+    "JPN": ("Japan", ["japan", "japanese", "tokyo"]),
+    "KOR": ("South Korea", ["south korea", "south korean", "seoul"]),
+    "PRK": ("North Korea", ["north korea", "north korean", "pyongyang"]),
+    "IND": ("India", ["india", "indian", "new delhi", "mumbai", "modi"]),
+    "PAK": ("Pakistan", ["pakistan", "pakistani", "islamabad"]),
+    "AFG": ("Afghanistan", ["afghanistan", "afghan", "kabul", "taliban"]),
+    "BGD": ("Bangladesh", ["bangladesh", "bangladeshi", "dhaka"]),
+    "MMR": ("Myanmar", ["myanmar", "burmese", "burma", "yangon"]),
+    "THA": ("Thailand", ["thailand", "thai", "bangkok"]),
+    "VNM": ("Vietnam", ["vietnam", "vietnamese", "hanoi"]),
+    "PHL": ("Philippines", ["philippines", "filipino", "manila"]),
+    "IDN": ("Indonesia", ["indonesia", "indonesian", "jakarta"]),
+    "AUS": ("Australia", ["australia", "australian", "canberra", "sydney"]),
+    "NZL": ("New Zealand", ["new zealand", "wellington", "auckland"]),
+    "GBR": ("United Kingdom", ["united kingdom", "britain", "british", "england",
+                               "london", "scotland", "wales"]),
+    "IRL": ("Ireland", ["ireland", "irish", "dublin"]),
+    "FRA": ("France", ["france", "french", "paris", "macron"]),
+    "DEU": ("Germany", ["germany", "german", "berlin"]),
+    "ITA": ("Italy", ["italy", "italian", "rome"]),
+    "ESP": ("Spain", ["spain", "spanish", "madrid", "barcelona"]),
+    "PRT": ("Portugal", ["portugal", "portuguese", "lisbon"]),
+    "NLD": ("Netherlands", ["netherlands", "dutch", "amsterdam", "the hague"]),
+    "BEL": ("Belgium", ["belgium", "belgian", "brussels"]),
+    "CHE": ("Switzerland", ["switzerland", "swiss", "geneva", "zurich"]),
+    "AUT": ("Austria", ["austria", "austrian", "vienna"]),
+    "POL": ("Poland", ["poland", "polish", "warsaw"]),
+    "SWE": ("Sweden", ["sweden", "swedish", "stockholm"]),
+    "NOR": ("Norway", ["norway", "norwegian", "oslo"]),
+    "FIN": ("Finland", ["finland", "finnish", "helsinki"]),
+    "DNK": ("Denmark", ["denmark", "danish", "copenhagen"]),
+    "GRC": ("Greece", ["greece", "greek", "athens"]),
+    "HUN": ("Hungary", ["hungary", "hungarian", "budapest", "orban", "orbán"]),
+    "ROU": ("Romania", ["romania", "romanian", "bucharest"]),
+    "CZE": ("Czechia", ["czech", "czechia", "prague"]),
+    "SRB": ("Serbia", ["serbia", "serbian", "belgrade"]),
+    "BLR": ("Belarus", ["belarus", "belarusian", "minsk", "lukashenko"]),
+    "MDA": ("Moldova", ["moldova", "moldovan", "chisinau"]),
+    "GEO": ("Georgia", ["tbilisi", "georgian government", "republic of georgia"]),
+    "ARM": ("Armenia", ["armenia", "armenian", "yerevan"]),
+    "AZE": ("Azerbaijan", ["azerbaijan", "azerbaijani", "baku"]),
+    "KAZ": ("Kazakhstan", ["kazakhstan", "kazakh", "astana"]),
+    "CAN": ("Canada", ["canada", "canadian", "ottawa", "toronto"]),
+    "MEX": ("Mexico", ["mexico", "mexican", "mexico city"]),
+    "GTM": ("Guatemala", ["guatemala", "guatemalan"]),
+    "HND": ("Honduras", ["honduras", "honduran", "tegucigalpa"]),
+    "SLV": ("El Salvador", ["el salvador", "salvadoran", "bukele"]),
+    "NIC": ("Nicaragua", ["nicaragua", "nicaraguan", "managua"]),
+    "CRI": ("Costa Rica", ["costa rica", "costa rican", "san jose"]),
+    "PAN": ("Panama", ["panama", "panamanian"]),
+    "CUB": ("Cuba", ["cuba", "cuban", "havana", "habana"]),
+    "HTI": ("Haiti", ["haiti", "haitian", "port-au-prince"]),
+    "DOM": ("Dominican Republic", ["dominican republic", "santo domingo"]),
+    "JAM": ("Jamaica", ["jamaica", "jamaican", "kingston"]),
+    "PRI": ("Puerto Rico", ["puerto rico", "puerto rican", "san juan"]),
+    "BRA": ("Brazil", ["brazil", "brazilian", "brasilia", "sao paulo", "são paulo", "lula"]),
+    "ARG": ("Argentina", ["argentina", "argentine", "buenos aires", "milei"]),
+    "CHL": ("Chile", ["chile", "chilean", "santiago"]),
+    "PER": ("Peru", ["peru", "peruvian", "lima"]),
+    "ECU": ("Ecuador", ["ecuador", "ecuadorian", "quito", "guayaquil"]),
+    "BOL": ("Bolivia", ["bolivia", "bolivian", "la paz"]),
+    "PRY": ("Paraguay", ["paraguay", "paraguayan", "asuncion"]),
+    "URY": ("Uruguay", ["uruguay", "uruguayan", "montevideo"]),
+    "NGA": ("Nigeria", ["nigeria", "nigerian", "abuja", "lagos"]),
+    "NER": ("Niger", ["niger", "nigerien", "niamey"]),
+    "MLI": ("Mali", ["mali", "malian", "bamako"]),
+    "BFA": ("Burkina Faso", ["burkina faso", "burkinabe", "ouagadougou"]),
+    "SDN": ("Sudan", ["sudan", "sudanese", "khartoum", "darfur"]),
+    "SSD": ("South Sudan", ["south sudan", "juba"]),
+    "ETH": ("Ethiopia", ["ethiopia", "ethiopian", "addis ababa", "tigray"]),
+    "SOM": ("Somalia", ["somalia", "somali", "mogadishu", "al-shabaab"]),
+    "KEN": ("Kenya", ["kenya", "kenyan", "nairobi"]),
+    "TZA": ("Tanzania", ["tanzania", "tanzanian", "dodoma"]),
+    "UGA": ("Uganda", ["uganda", "ugandan", "kampala"]),
+    "RWA": ("Rwanda", ["rwanda", "rwandan", "kigali"]),
+    "COD": ("DR Congo", ["democratic republic of congo", "dr congo", "drc", "kinshasa"]),
+    "ZAF": ("South Africa", ["south africa", "south african", "johannesburg", "pretoria"]),
+    "ZWE": ("Zimbabwe", ["zimbabwe", "zimbabwean", "harare"]),
+    "MOZ": ("Mozambique", ["mozambique", "mozambican", "maputo"]),
+    "AGO": ("Angola", ["angola", "angolan", "luanda"]),
+    "LBY": ("Libya", ["libya", "libyan", "tripoli"]),
+    "TUN": ("Tunisia", ["tunisia", "tunisian", "tunis"]),
+    "DZA": ("Algeria", ["algeria", "algerian", "algiers"]),
+    "MAR": ("Morocco", ["morocco", "moroccan", "rabat", "casablanca"]),
+}
+
+_COUNTRY_RE = {
+    iso: re.compile(r"\b(" + "|".join(re.escape(t) for t in terms) + r")\b", re.I)
+    for iso, (_, terms) in COUNTRIES.items()
+}
+
+
+def fetch_world(news):
+    """Countries named in the headlines we already fetched.
+
+    Not a conflict index. It says "these places were in today's news, here is
+    what was said, here is the article" — which is a claim the feeds actually
+    support. Anything stronger would be us inventing a severity we cannot
+    source.
+    """
+    try:
+        items = []
+        for section in ("local", "colombia", "world"):
+            for it in (news.get(section) or []):
+                items.append((section, it))
+
+        found = {}
+        for section, it in items:
+            title = it.get("title") or ""
+            if not title:
+                continue
+            for iso, rx in _COUNTRY_RE.items():
+                if rx.search(title):
+                    e = found.setdefault(iso, {"iso": iso, "name": COUNTRIES[iso][0],
+                                               "stories": []})
+                    e["stories"].append({
+                        "title": title,
+                        "url": it.get("url"),
+                        "published": it.get("published"),
+                        "section": section,
+                    })
+
+        countries = []
+        for e in found.values():
+            e["count"] = len(e["stories"])
+            e["issue"] = e["stories"][0]["title"]      # what the map shows on hover
+            e["stories"] = e["stories"][:6]
+            countries.append(e)
+        countries.sort(key=lambda c: (-c["count"], c["name"]))
+
+        return block("Derived from the RSS headlines in this brief",
+                     countries=countries, headlines_scanned=len(items),
+                     countries_matched=len(countries),
+                     note="A country appears here because a headline named it, "
+                          "not because anyone graded its importance.")
+    except Exception as e:
+        return fail("World map", e)
+
+
 def main():
     n = now_et()
     print(f"Collecting at {n.isoformat(timespec='seconds')}")
@@ -663,8 +845,14 @@ def main():
         if not data[name].get("ok"):
             failures.append(name)
 
+    print("-> world")
+    data["world"] = fetch_world(data.get("news") or {})
+    if not data["world"].get("ok"):
+        failures.append("world")
+
     data["failures"] = failures
-    data["health"] = f"{len(steps) - len(failures)}/{len(steps)} sources ok"
+    total = len(steps) + 1
+    data["health"] = f"{total - len(failures)}/{total} sources ok"
 
     os.makedirs("data", exist_ok=True)
     with open("data/brief.json", "w", encoding="utf-8") as f:

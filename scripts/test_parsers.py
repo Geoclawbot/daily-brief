@@ -136,6 +136,13 @@ check("a link-only channel explains why",
       all(c.get("note") for c in F.LIVE_TV if not c.get("yt")))
 check("no channel is both a player and a bare link",
       not [c for c in F.LIVE_TV if c.get("yt") and c.get("url")])
+check("no duplicate channel ids",
+      len({c["yt"] for c in F.LIVE_TV if c.get("yt")}) ==
+      len([c for c in F.LIVE_TV if c.get("yt")]))
+check("no duplicate channel names",
+      len({c["name"] for c in F.LIVE_TV}) == len(F.LIVE_TV))
+check("CNN is gone from live TV",
+      not [c for c in F.LIVE_TV if "cnn" in c["name"].lower()])
 check("only >10 min savings surface",
       c["alternates_worth_taking"] == [], str(c["alternates_worth_taking"]))
 check("incident captured with road", c["incident_count"] == 1 and "US-27" in c["incidents"][0]["roads"])
@@ -292,6 +299,73 @@ check("every news section has streams", set(F.STREAMS) == {"local", "colombia", 
 check("streams carry name and url",
       all(x.get("name") and x.get("url", "").startswith("https://")
           for v in F.STREAMS.values() for x in v))
+
+# ---------------------------------------------------------------- world map geometry
+sys.path.insert(0, "scripts")
+import build_map as M  # noqa: E402
+
+check("west edge projects to x=0", M.project(-180, 0)[0] == 0)
+check("east edge projects to full width", M.project(180, 0)[0] == M.W)
+check("north pole projects to y=0", M.project(0, 90)[1] == 0)
+check("south pole projects to full height", M.project(0, -90)[1] == M.H)
+check("null island lands mid-canvas", M.project(0, 0) == (M.W / 2, M.H / 2))
+
+line = [(0, 0), (1, 0.001), (2, 0), (3, 0.002), (4, 0)]
+check("collinear points collapse", len(M.simplify(line, 0.35)) == 2)
+bend = [(0, 0), (5, 50), (10, 0)]
+check("a real corner survives", len(M.simplify(bend, 0.35)) == 3)
+
+big = [[-100, 40], [-100, 60], [-60, 60], [-60, 40], [-100, 40]]
+d = M.ring_path(big)
+check("a large ring becomes a closed subpath", d.startswith("M") and d.endswith("Z"))
+tiny = [[0, 0], [0, 0.05], [0.05, 0.05], [0.05, 0], [0, 0]]
+check("a speck island is dropped", M.ring_path(tiny) == "")
+
+GJ = {"features": [
+    {"properties": {"ISO_A3": "AAA", "NAME": "Alpha"},
+     "geometry": {"type": "Polygon", "coordinates": [big]}},
+    {"properties": {"ISO_A3": "-99", "ADM0_A3": "BBB", "NAME": "Beta"},
+     "geometry": {"type": "MultiPolygon", "coordinates": [[big]]}},
+    {"properties": {"ISO_A3": "CCC", "NAME": "Speck"},
+     "geometry": {"type": "Polygon", "coordinates": [tiny]}},
+]}
+built = M.build(GJ)
+check("features become country paths", len(built) == 2)
+check("-99 falls back to ADM0_A3", built[1]["iso"] == "BBB")
+check("multipolygon is handled", built[1]["d"].count("M") == 1)
+check("a country with no drawable ring is omitted",
+      "CCC" not in [c["iso"] for c in built])
+
+# ---------------------------------------------------------------- world map matching
+NEWS = {"world": [
+    {"title": "Russia strikes Kharkiv as Ukraine presses counterattack",
+     "url": "https://x.test/1", "published": "a"},
+    {"title": "Ukrainian drones hit Moscow refinery", "url": "https://x.test/2",
+     "published": "b"},
+    {"title": "Sudan aid convoy blocked in Darfur", "url": "https://x.test/3",
+     "published": "c"},
+], "local": [
+    {"title": "Jordan scored 30 points against Georgia on Saturday",
+     "url": "https://x.test/4", "published": "d"},
+], "colombia": [
+    {"title": "Petro anuncia plan para Medellín", "url": "https://x.test/5",
+     "published": "e"},
+]}
+w = F.fetch_world(NEWS)
+iso = {c["iso"]: c for c in w["countries"]}
+check("world block is ok", w["ok"])
+check("ukraine matched twice", iso["UKR"]["count"] == 2)
+check("russia matched by name and capital", iso["RUS"]["count"] == 2)
+check("sudan matched", "SDN" in iso)
+check("colombia matched in spanish", "COL" in iso)
+check("a basketball Jordan is not a country", "JOR" not in iso)
+check("a US-state Georgia is not a country", "GEO" not in iso)
+check("issue is a real headline",
+      iso["SDN"]["issue"] == "Sudan aid convoy blocked in Darfur")
+check("every story keeps its link",
+      all(st["url"] for c in w["countries"] for st in c["stories"]))
+check("busiest country sorts first", w["countries"][0]["count"] >= w["countries"][-1]["count"])
+check("headline count is reported", w["headlines_scanned"] == 5)
 
 # ---------------------------------------------------------------- failure shape
 f = F.fail("SomeSource", "boom")
