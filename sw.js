@@ -1,7 +1,7 @@
 // Cache the shell so the app opens instantly and works with no signal.
 // Data is always network-first: a stale brief that looks live is the one
 // failure mode this whole project exists to avoid.
-const SHELL = 'brief-shell-v4';
+const SHELL = 'brief-shell-v5';
 const FILES = ['./', './index.html', './manifest.json'];
 
 self.addEventListener('install', e => {

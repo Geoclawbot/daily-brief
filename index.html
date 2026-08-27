@@ -276,7 +276,7 @@ footer b{color:var(--ink2)}
   border-radius:999px;background:var(--surface2);color:var(--ink2);
   border:1px solid var(--grid)}
 .stream:active{opacity:.6}
-.stream .ldot,.livebox summary .ldot{width:6px;height:6px;border-radius:50%;background:var(--crit);flex:none;
+.stream .ldot,.chbtn .ldot{width:6px;height:6px;border-radius:50%;background:var(--crit);flex:none;
   animation:bp 2.4s ease-in-out infinite}
 
 /* ---- video badge on a news row ---- */
@@ -297,17 +297,23 @@ footer b{color:var(--ink2)}
 
 
 /* ---- collapsible live player ---- */
-.livebox{margin:0 0 12px;border:1px solid var(--grid);border-radius:11px;
-  background:var(--surface2);overflow:hidden}
-.livebox summary{cursor:pointer;list-style:none;padding:10px 13px;
-  font-size:12.5px;font-weight:750;letter-spacing:.02em;display:flex;
-  align-items:center;gap:8px}
-.livebox summary::-webkit-details-marker{display:none}
-.livebox summary:active{opacity:.6}
-.livebox[open] summary{border-bottom:1px solid var(--grid)}
-.livebox .meta{padding:0 13px 11px}
-.vwrap{position:relative;width:100%;aspect-ratio:16/9;background:#000}
+.chgrp{margin:0 0 12px}
+.chlab{font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--muted);font-weight:800;margin-bottom:7px}
+.chrow{display:flex;flex-wrap:wrap;gap:7px}
+.chbtn{display:inline-flex;align-items:center;gap:6px;cursor:pointer;
+  font:inherit;font-size:12px;font-weight:750;letter-spacing:.02em;
+  padding:8px 13px;border-radius:999px;background:var(--surface2);
+  color:var(--ink2);border:1px solid var(--grid);text-decoration:none}
+.chbtn:active{opacity:.6}
+.chbtn.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chbtn.on .ldot{background:var(--crit)}
+.vwrap{position:relative;width:100%;aspect-ratio:16/9;background:#000;
+  border-radius:11px;overflow:hidden;margin:0 0 13px;border:1px solid var(--grid)}
 .vwrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vwrap.empty{background:var(--surface2);display:flex;align-items:center;
+  justify-content:center;text-align:center}
+.vhint{font-size:13.5px;font-weight:650;color:var(--ink2);padding:16px;line-height:1.6}
 
 @media (prefers-reduced-motion: reduce){
   /* Motion is kept on purpose. Only large positional movement is softened. */
@@ -768,24 +774,57 @@ function fuelCard(d) {
 /* ---------------------------------------------------------------- news */
 function streamBar(list) {
   if (!list?.length) return '';
-  const btns = `<div class="streams">` + list.map(s =>
+  return `<div class="streams">` + list.map(s =>
     `<a class="stream" href="${esc(s.url)}" target="_blank" rel="noopener">
       ${s.live ? '<span class="ldot"></span>' : ''}${esc(s.name)}</a>`).join('') + `</div>`;
+}
 
-  // Player stays collapsed so the iframe only loads if you ask for it, and the
-  // direct link sits underneath: a channel that is off air shows YouTube's own
-  // "offline" card, never a dead black box pretending to be a feed.
-  const vids = list.filter(s => s.yt).map(s => `
-    <details class="livebox">
-      <summary><span class="ldot"></span>Watch ${esc(s.name)} live</summary>
-      <div class="vwrap"><iframe loading="lazy" allowfullscreen
-        title="${esc(s.name)} live stream"
-        allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
-        src="https://www.youtube.com/embed/live_stream?channel=${esc(s.yt)}"></iframe></div>
-      <div class="meta" style="margin-top:7px">Nothing playing means the channel is off air.
-        <a href="${esc(s.url)}" target="_blank" rel="noopener" style="color:var(--s1)">Open ${esc(s.name)}</a>.</div>
-    </details>`).join('');
-  return btns + vids;
+/* ------------------------------------------------------------- live TV */
+function liveTvCard(d) {
+  const ch = d.news?.live_tv;
+  if (!ch?.length) return '';
+  const alwaysOn = ch.filter(c => c.always && c.yt);
+  const onAir    = ch.filter(c => !c.always && c.yt);
+  const links    = ch.filter(c => !c.yt);
+
+  const btn = c => `<button type="button" class="chbtn${c.always ? ' always' : ''}"
+      data-ch="${esc(c.yt)}" data-name="${esc(c.name)}">
+      ${c.always ? '<span class="ldot"></span>' : ''}${esc(c.name)}</button>`;
+
+  const body = `
+    <div class="chgrp"><div class="chlab">Streaming around the clock</div>
+      <div class="chrow">${alwaysOn.map(btn).join('')}</div></div>
+    <div id="liveplayer" class="vwrap empty">
+      <div class="vhint">Pick a channel to start it.<br>
+        <span class="meta">Nothing loads until you do.</span></div>
+    </div>
+    <div class="chgrp"><div class="chlab">Live only during their newscasts</div>
+      <div class="chrow">${onAir.map(btn).join('')}</div>
+      <div class="meta" style="margin-top:7px">Outside those hours YouTube shows its own
+        offline card. That is the channel being off air, not the app failing.</div></div>
+    ${links.length ? `<div class="chgrp"><div class="chlab">No free stream — opens their site</div>
+      <div class="chrow">${links.map(c =>
+        `<a class="chbtn" href="${esc(c.url)}" target="_blank" rel="noopener"
+          >${esc(c.name)}</a>`).join('')}</div>
+      <div class="meta" style="margin-top:7px">${links.map(c =>
+        esc(c.name) + ' — ' + esc(c.note || 'link only')).join(' · ')}</div></div>` : ''}`;
+
+  return card('livetv', 'good', 'Live TV', body, null, null);
+}
+
+function playLive(id, name) {
+  const box = document.getElementById('liveplayer');
+  if (!box) return;
+  box.classList.remove('empty');
+  const f = document.createElement('iframe');
+  f.setAttribute('allowfullscreen', '');
+  f.setAttribute('title', name + ' live');
+  f.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; picture-in-picture');
+  f.src = 'https://www.youtube.com/embed/live_stream?channel=' +
+          encodeURIComponent(id) + '&autoplay=1';
+  box.replaceChildren(f);
+  document.querySelectorAll('.chbtn').forEach(b =>
+    b.classList.toggle('on', b.dataset.ch === id));
 }
 
 function newsCard(id, dotClass, title, items, srcLabel, srcUrl, streams) {
@@ -830,7 +869,7 @@ function render(d) {
     <div class="quad">${tropicsCard(d)}${fuelCard(d)}${
       newsCard('fires', 'crit', 'Wildfires & smoke', d.fires?.items,
         'Local 10', 'https://www.local10.com/news/florida/')}</div>
-    <div class="quad">${
+    <div class="quad">${liveTvCard(d)}${
       newsCard('local', 'warn', 'Local · WPLG & WSVN', d.news?.local,
         'WPLG', 'https://www.local10.com/news/local/', st.local)}${
       newsCard('colombia', 'crit', 'Colombia · El Tiempo', d.news?.colombia,
@@ -891,6 +930,10 @@ async function load(force) {
   }
 }
 
+document.addEventListener('click', e => {
+  const b = e.target.closest('.chbtn[data-ch]');
+  if (b) playLive(b.dataset.ch, b.dataset.name || '');
+});
 $('#refresh').addEventListener('click', () => load(true));
 document.addEventListener('visibilitychange', () => { if (!document.hidden) load(true); });
 load(false);
