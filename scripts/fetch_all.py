@@ -52,7 +52,8 @@ COMMUTE_LEGS = [
 # landing pages, not scraped URLs that can rot without anyone noticing.
 STREAMS = {
     "local": [
-        {"name": "WPLG Local 10", "url": "https://www.local10.com/live/", "live": True},
+        {"name": "WPLG Local 10", "url": "https://www.local10.com/live/", "live": True,
+         "yt": "UCgVZ0mrM3liHNhRYC5Mchgg"},
         {"name": "WPLG on YouTube", "url": "https://www.youtube.com/@WPLGLocal10/streams", "live": True},
         {"name": "WSVN 7News", "url": "https://wsvn.com/on-air-live-stream/", "live": True},
     ],
@@ -60,7 +61,8 @@ STREAMS = {
         {"name": "El Tiempo video", "url": "https://www.eltiempo.com/videos", "live": False},
     ],
     "world": [
-        {"name": "Kyiv Independent", "url": "https://www.youtube.com/@kyivindependent/streams", "live": True},
+        {"name": "Kyiv Independent", "url": "https://www.youtube.com/@kyivindependent/streams",
+         "live": True, "yt": "UCGAC5yzlYgjKoJABDZ7zEyw"},
         {"name": "NPR program stream", "url": "https://www.npr.org/about-npr/472557877/npr-program-stream", "live": True},
     ],
 }
@@ -402,14 +404,35 @@ def fetch_commute():
         except Exception as e:
             print(f"  .. alternates failed: {e}", file=sys.stderr)
 
-        # His rule: only surface an alternate that beats the default by >10 min.
+        # His rule: only surface a tolled alternate that beats the default by
+        # >10 min. Tolls have to earn their place.
         worth = [a for a in alts if a["saves"] > 10]
+
+        # Separately: the quickest way home that costs nothing. The default
+        # route already avoids tolls, but TomTom's alternates sometimes find a
+        # faster toll-free line, and that is the one he actually wants.
+        free_alts = []
+        try:
+            for rt in _route(leg, True, depart, alternatives=3).get("routes", []):
+                sm = rt["summary"]
+                free_alts.append({
+                    "miles": round(sm["lengthInMeters"] / 1609.34, 1),
+                    "minutes": round(sm["travelTimeInSeconds"] / 60),
+                    "delay_minutes": round(sm.get("trafficDelayInSeconds", 0) / 60),
+                })
+        except Exception as e:
+            print(f"  .. toll-free alternates failed: {e}", file=sys.stderr)
+
+        best_free = min(free_alts, key=lambda a: a["minutes"]) if free_alts else None
+        if best_free:
+            best_free["saves"] = mins - best_free["minutes"]
 
         return block("TomTom Routing + Traffic", route_shown=True,
                      leg=leg["label"], direction=leg["key"], depart_clock=leg["clock"],
                      depart_at=depart, miles=miles, minutes=mins,
                      delay_minutes=delay, toll_free=True, alternates=alts,
-                     alternates_worth_taking=worth, **area)
+                     alternates_worth_taking=worth, free_alternates=free_alts,
+                     best_free=best_free, **area)
     except Exception as e:
         return fail("TomTom", e)
 

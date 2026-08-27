@@ -100,12 +100,16 @@ INC = {"incidents": [{"properties": {
     "roadNumbers": ["US-27"], "delay": 240, "magnitudeOfDelay": 2,
     "events": [{"description": "Roadworks"}], "startTime": "2026-08-25T04:00:00Z"}}]}
 INC_EMPTY = {"incidents": []}
+FREE = {"routes": [
+    {"summary": {"lengthInMeters": 35000, "travelTimeInSeconds": 2040}},
+    {"summary": {"lengthInMeters": 33000, "travelTimeInSeconds": 2400}},
+]}
 OUTBOUND = F.COMMUTE_LEGS[0]
 RETURN = F.COMMUTE_LEGS[1]
 
 # Incidents are collected first (one call per county), then the route, then
 # the alternates. Pin the leg so the test does not depend on the wall clock.
-seq = [INC, INC_EMPTY, ROUTE, ALTS]
+seq = [INC, INC_EMPTY, ROUTE, ALTS, FREE]
 with mock.patch.object(F, "TOMTOM_KEY", "test"), \
      mock.patch.object(F, "_active_leg", lambda *a, **k: OUTBOUND), \
      mock.patch.object(F, "get", lambda *a, **k: fake_response(seq.pop(0))):
@@ -116,6 +120,10 @@ check("route is shown in window", c["route_shown"] is True)
 check("32,078 m converts to 19.9 mi", c["miles"] == 19.9, str(c.get("miles")))
 check("2,291 s converts to 38 min", c["minutes"] == 38, str(c.get("minutes")))
 check("alternates captured", len(c["alternates"]) == 2)
+check("best toll-free captured", c["best_free"]["minutes"] == 34)
+check("best toll-free saves is computed", c["best_free"]["saves"] == 4)
+check("live players carry a verified channel id",
+      [x for x in F.STREAMS["local"] if x.get("yt")][0]["yt"].startswith("UC"))
 check("only >10 min savings surface",
       c["alternates_worth_taking"] == [], str(c["alternates_worth_taking"]))
 check("incident captured with road", c["incident_count"] == 1 and "US-27" in c["incidents"][0]["roads"])
