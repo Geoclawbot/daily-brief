@@ -37,6 +37,13 @@ jobs:
       - name: Test parsers
         run: python scripts/test_parsers.py
 
+      # Country outlines for the world map. Downloads once, then skips on
+      # every later run. Allowed to fail: the map is a nice-to-have, the
+      # brief is not.
+      - name: Build world map (first run only)
+        continue-on-error: true
+        run: python scripts/build_map.py
+
       - name: Collect
         env:
           TOMTOM_API_KEY: ${{ secrets.TOMTOM_API_KEY }}
@@ -48,6 +55,7 @@ jobs:
           git config user.name  "brief-bot"
           git config user.email "brief-bot@users.noreply.github.com"
           git add data/brief.json
+          if [ -f data/world.json ]; then git add data/world.json; fi
           if git diff --staged --quiet; then
             echo "No change."
           else
