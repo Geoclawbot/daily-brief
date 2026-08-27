@@ -315,6 +315,29 @@ footer b{color:var(--ink2)}
   justify-content:center;text-align:center}
 .vhint{font-size:13.5px;font-weight:650;color:var(--ink2);padding:16px;line-height:1.6}
 
+
+/* ---- world map ---- */
+.mapwrap{position:relative;border-radius:11px;overflow:hidden;
+  background:#080a12;border:1px solid var(--grid)}
+.wmap{display:block;width:100%;height:auto}
+.cty{fill:#191c26;stroke:#262b38;stroke-width:.5;vector-effect:non-scaling-stroke}
+.cty[data-iso]{cursor:pointer}
+.cty.h1{fill:#6b4a1e;stroke:#8a6224}
+.cty.h2{fill:#a8641f;stroke:#c67b28}
+.cty.h3{fill:#c23c34;stroke:#e05046}
+.cty[data-iso]:hover,.cty[data-iso]:focus{fill:#f0a23a;outline:none}
+.cty.sel{fill:#f5d76e;stroke:#fff;stroke-width:1.4}
+.maptip{position:absolute;z-index:5;width:220px;transform:translateY(-100%);
+  background:rgba(10,10,14,.96);border:1px solid var(--grid);border-radius:9px;
+  padding:8px 10px;font-size:12px;line-height:1.45;pointer-events:none;
+  box-shadow:0 6px 20px rgba(0,0,0,.5)}
+.maptip span{color:var(--ink2)}
+.maploading{padding:34px 12px;text-align:center;color:var(--muted);font-size:13px}
+.mapdet{margin-top:12px;border-top:1px solid var(--grid);padding-top:10px}
+.mapdet-h{font-size:15px;font-weight:800;letter-spacing:-.01em;margin-bottom:4px;
+  display:flex;align-items:baseline;gap:9px}
+.mapdet-empty{margin-top:11px}
+
 @media (prefers-reduced-motion: reduce){
   /* Motion is kept on purpose. Only large positional movement is softened. */
   .car{animation-name:fadeonly} .sunrise{animation-name:none}
@@ -779,6 +802,79 @@ function streamBar(list) {
       ${s.live ? '<span class="ldot"></span>' : ''}${esc(s.name)}</a>`).join('') + `</div>`;
 }
 
+/* ------------------------------------------------------------- world map */
+let WORLD = null;          // country outlines, fetched once, never changes
+let MAPSEL = null;         // iso of the country the reader tapped
+
+function worldCard(d) {
+  const w = d.world;
+  if (!w) return '';
+  if (!w.ok) return card('worldmap', 'crit', 'World map',
+    `<div class="err">Could not read the headlines for country names: ${esc(w.error || '')}</div>`,
+    null, null);
+
+  const hot = new Map((w.countries || []).map(c => [c.iso, c]));
+  const max = Math.max(1, ...[...hot.values()].map(c => c.count));
+
+  const svg = !WORLD
+    ? `<div class="maploading">Loading the map…</div>`
+    : `<svg class="wmap" viewBox="0 0 ${WORLD.width} ${WORLD.height}"
+         role="img" aria-label="World map, countries named in today's headlines">
+        ${WORLD.countries.map(c => {
+          const h = hot.get(c.iso);
+          const lvl = h ? (h.count >= max ? 3 : h.count > 1 ? 2 : 1) : 0;
+          return `<path d="${c.d}" class="cty${lvl ? ' h' + lvl : ''}${
+            MAPSEL === c.iso ? ' sel' : ''}"${
+            h ? ` data-iso="${esc(c.iso)}" data-name="${esc(h.name)}" data-issue="${esc(h.issue)}" data-n="${h.count}" tabindex="0"` : ''}
+            ></path>`;
+        }).join('')}
+      </svg>
+      <div id="maptip" class="maptip" hidden></div>`;
+
+  const sel = MAPSEL ? hot.get(MAPSEL) : null;
+  const detail = sel
+    ? `<div class="mapdet">
+        <div class="mapdet-h">${esc(sel.name)}
+          <span class="meta">${sel.count} ${sel.count === 1 ? 'story' : 'stories'}</span></div>
+        ${sel.stories.map(st => `<a class="nrow" href="${esc(st.url || '#')}"
+            target="_blank" rel="noopener">
+            <div class="ntitle">${esc(st.title)}</div>
+            <div class="nmeta">${esc(st.published || '')}</div></a>`).join('')}
+      </div>`
+    : `<div class="meta mapdet-empty">Tap a highlighted country to read what was said about it.</div>`;
+
+  const body = `<div class="mapwrap">${svg}</div>${detail}
+    <div class="meta" style="margin-top:11px">${w.countries_matched} ${
+      w.countries_matched === 1 ? 'country' : 'countries'} named across ${
+      w.headlines_scanned} headlines in this brief. ${esc(w.note || '')}</div>`;
+
+  return card('worldmap', w.countries_matched ? 'warn' : 'good', 'World map', body, null, null);
+}
+
+function mapTip(el, show) {
+  const tip = document.getElementById('maptip');
+  if (!tip) return;
+  if (!show) { tip.hidden = true; return; }
+  tip.innerHTML = `<b>${esc(el.dataset.name)}</b> · ${el.dataset.n} ${
+    el.dataset.n === '1' ? 'story' : 'stories'}<br><span>${esc(el.dataset.issue)}</span>`;
+  tip.hidden = false;
+  const box = el.ownerSVGElement.getBoundingClientRect();
+  const r = el.getBoundingClientRect();
+  tip.style.left = Math.max(4, Math.min(box.width - 220,
+    r.left - box.left + r.width / 2 - 110)) + 'px';
+  tip.style.top = Math.max(4, r.top - box.top - 8) + 'px';
+}
+
+async function loadWorldGeometry() {
+  if (WORLD) return;
+  try {
+    const r = await fetch('data/world.json');
+    if (!r.ok) return;                     // no map yet; the card says so
+    WORLD = await r.json();
+    if (window.__brief) render(window.__brief);
+  } catch (e) { /* map is optional; the brief is not */ }
+}
+
 /* ------------------------------------------------------------- live TV */
 function liveTvCard(d) {
   const ch = d.news?.live_tv;
@@ -798,10 +894,11 @@ function liveTvCard(d) {
       <div class="vhint">Pick a channel to start it.<br>
         <span class="meta">Nothing loads until you do.</span></div>
     </div>
-    <div class="chgrp"><div class="chlab">Live only during their newscasts</div>
+    <div class="chgrp"><div class="chlab">On air only at certain hours</div>
       <div class="chrow">${onAir.map(btn).join('')}</div>
-      <div class="meta" style="margin-top:7px">Outside those hours YouTube shows its own
-        offline card. That is the channel being off air, not the app failing.</div></div>
+      <div class="meta" style="margin-top:7px">Newscasts, market sessions, breaking events.
+        Outside those hours YouTube shows its own offline card — the channel is off air,
+        not the app failing.</div></div>
     ${links.length ? `<div class="chgrp"><div class="chlab">No free stream — opens their site</div>
       <div class="chrow">${links.map(c =>
         `<a class="chbtn" href="${esc(c.url)}" target="_blank" rel="noopener"
@@ -866,7 +963,7 @@ function render(d) {
   parts.push(`<div class="quads">
     <div class="quad">${weatherCard(d)}</div>
     <div class="quad">${commuteCard(d)}</div>
-    <div class="quad">${tropicsCard(d)}${fuelCard(d)}${
+    <div class="quad">${worldCard(d)}${tropicsCard(d)}${fuelCard(d)}${
       newsCard('fires', 'crit', 'Wildfires & smoke', d.fires?.items,
         'Local 10', 'https://www.local10.com/news/florida/')}</div>
     <div class="quad">${liveTvCard(d)}${
@@ -932,11 +1029,35 @@ async function load(force) {
 
 document.addEventListener('click', e => {
   const b = e.target.closest('.chbtn[data-ch]');
-  if (b) playLive(b.dataset.ch, b.dataset.name || '');
+  if (b) { playLive(b.dataset.ch, b.dataset.name || ''); return; }
+  const c = e.target.closest('.cty[data-iso]');
+  if (c) {
+    MAPSEL = MAPSEL === c.dataset.iso ? null : c.dataset.iso;
+    if (window.__brief) render(window.__brief);
+    return;
+  }
+  if (e.target.closest('.wmap')) { MAPSEL = null; if (window.__brief) render(window.__brief); }
+});
+document.addEventListener('mouseover', e => {
+  const c = e.target.closest('.cty[data-iso]');
+  if (c) mapTip(c, true);
+});
+document.addEventListener('mouseout', e => {
+  if (e.target.closest('.cty[data-iso]')) mapTip(null, false);
+});
+document.addEventListener('focusin', e => {
+  const c = e.target.closest('.cty[data-iso]');
+  if (c) mapTip(c, true);
+});
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Enter' && e.key !== ' ') return;
+  const c = e.target.closest?.('.cty[data-iso]');
+  if (c) { e.preventDefault(); MAPSEL = c.dataset.iso; if (window.__brief) render(window.__brief); }
 });
 $('#refresh').addEventListener('click', () => load(true));
 document.addEventListener('visibilitychange', () => { if (!document.hidden) load(true); });
 load(false);
+loadWorldGeometry();
 setInterval(() => load(true), 5 * 60 * 1000);
 
 </script>
