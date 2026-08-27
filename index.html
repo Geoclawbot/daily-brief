@@ -630,9 +630,10 @@ function commuteCard(d) {
     const shown = c.incidents.slice(0, 12);
     body += `<div style="margin-top:15px;padding-top:14px;border-top:1px solid rgba(255,255,255,.09)">
       <div class="wxk" style="width:auto;margin-bottom:4px">Traffic · ${esc(c.coverage || 'area')}</div>
-      <div class="meta" style="margin-bottom:9px">${c.incident_count} incident${
-        c.incident_count === 1 ? '' : 's'}${
-        c.major_count ? ` · <b>${c.major_count} major</b>` : ''} · worst first${
+      <div class="meta" style="margin-bottom:9px">${
+        c.major_count ? `<b>${c.major_count} major</b> · ` : ''}${
+        c.named_count != null ? `${c.named_count} on named roads · ` : ''}${
+        c.incident_count} logged in both counties · worst first${
         c.incident_count > shown.length ? ` · showing ${shown.length}` : ''}
         · <a href="https://www.google.com/maps/@25.85,-80.25,10z/data=!5m1!1e1"
              target="_blank" rel="noopener" style="color:var(--s1)">live map</a></div>`
