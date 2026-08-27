@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07070a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.svg">
+<title>Daily Brief</title>
+<style>
+/* ==========================================================================
+   Carried over from the HTML brief, with the constraints that mattered there:
+   looping animations (never one-shot — anything below the fold has finished
+   before you scroll to it), no position:fixed, no 100vh, no var() inside the
+   animation shorthand, and motion preserved under prefers-reduced-motion
+   because Jorge runs Reduce Motion system-wide but wants the animation.
+   ========================================================================== */
+:root{
+  --bg:#07070a; --surface:#141419; --surface2:#1b1b21;
+  --ink:#fff; --ink2:#c3c2b7; --muted:#8a8880; --grid:#2c2c2a;
+  --good:#0ca30c; --warn:#fab219; --crit:#d03b3b; --serious:#ec835a;
+  --s1:#3987e5; --s2:#d95926;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{background:var(--bg);color:var(--ink);
+  font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased;padding:0 0 60px;
+  padding-top:env(safe-area-inset-top)}
+.wrap{max-width:640px;margin:0 auto;padding:0 15px}
+
+/* ---- top bar ---- */
+.top{position:sticky;top:0;z-index:40;background:rgba(7,7,10,.93);
+  backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.09)}
+.toprow{display:flex;align-items:center;max-width:640px;margin:0 auto;
+  padding:11px 15px;min-height:52px}
+.clock{font-size:17px;font-weight:800;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.csub{font-size:12px;color:var(--muted);margin-left:9px;font-weight:650}
+.sp{flex:1}
+.ib{width:44px;height:44px;display:flex;align-items:center;justify-content:center;
+  border-radius:50%;background:transparent;border:0;color:var(--ink);cursor:pointer}
+.ib:active{background:rgba(255,255,255,.10)}
+.ib svg{width:19px;height:19px}
+.spin{animation:rot 1s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+
+/* ---- freshness ---- */
+.fresh{display:flex;align-items:center;font-size:12px;font-weight:700;
+  padding:7px 15px;max-width:640px;margin:0 auto;letter-spacing:.02em}
+.fdot{width:7px;height:7px;border-radius:50%;margin-right:8px;flex:none;
+  animation:bp 2.4s ease-in-out infinite}
+@keyframes bp{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.8)}}
+.f-live .fdot{background:var(--good)} .f-live{color:#7fd47f}
+.f-old .fdot{background:var(--warn)}  .f-old{color:#f5c977}
+.f-stale .fdot{background:var(--crit)}.f-stale{color:#ef8a8a}
+
+/* ---- hero ---- */
+.hero{position:relative;border-radius:20px;overflow:hidden;margin:12px 0 14px;
+  min-height:190px;display:flex;flex-direction:column;justify-content:flex-end;
+  padding:20px 18px 18px}
+.hero svg{position:absolute;top:0;left:0;width:100%;height:100%}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:62%;
+  background:linear-gradient(to top,rgba(7,7,10,.92),rgba(7,7,10,.55) 45%,transparent);
+  pointer-events:none}
+.hero h1{position:relative;z-index:2;font-size:31px;font-weight:800;letter-spacing:-.035em;line-height:1.05}
+.hero .sub{position:relative;z-index:2;color:#e8e7e2;font-size:13.5px;font-weight:650;margin-top:6px;
+  text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.sk{opacity:0;animation-duration:26s;animation-timing-function:ease-in-out;
+  animation-iteration-count:infinite}
+.sk1{animation-name:s1} .sk2{animation-name:s2} .sk3{animation-name:s3}
+@keyframes s1{0%,18%{opacity:1}38%,100%{opacity:0}}
+@keyframes s2{0%,20%{opacity:0}38%,58%{opacity:1}78%,100%{opacity:0}}
+@keyframes s3{0%,60%{opacity:0}80%,100%{opacity:1}}
+.stars{animation:tw 26s ease-in-out infinite}
+@keyframes tw{0%,22%{opacity:.9}55%,100%{opacity:0}}
+.sunrise{animation:rise 26s ease-in-out infinite}
+@keyframes rise{0%,30%{transform:translateY(52px)}72%,100%{transform:translateY(-16px)}}
+.sunglow{animation:glow 26s ease-in-out infinite}
+@keyframes glow{0%,30%{opacity:.15}75%,100%{opacity:.95}}
+.cloudA{animation:dr 44s linear infinite} .cloudB{animation:dr2 62s linear infinite}
+@keyframes dr{from{transform:translateX(-70px)}to{transform:translateX(430px)}}
+@keyframes dr2{from{transform:translateX(430px)}to{transform:translateX(-90px)}}
+
+/* ---- cards ---- */
+.card{background:var(--surface);border:1px solid rgba(255,255,255,.10);
+  border-radius:18px;margin-bottom:13px;overflow:hidden}
+.card>summary{list-style:none;cursor:pointer;padding:15px 17px;display:flex;
+  align-items:center;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:800;color:var(--muted);min-height:52px}
+.card>summary::-webkit-details-marker{display:none}
+.dot{width:8px;height:8px;border-radius:50%;margin-right:10px;flex:none}
+.dot.good{background:var(--good)} .dot.warn{background:var(--warn)}
+.dot.crit{background:var(--crit)} .dot.ser{background:var(--serious)}
+.chev{margin-left:auto;transition:transform .2s;color:var(--muted)}
+details[open] .chev{transform:rotate(180deg)}
+.cpad{padding:0 17px 17px}
+.srcchip{margin-left:auto;padding:6px 11px;border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;font-size:9.5px;font-weight:800;letter-spacing:.1em;
+  color:var(--muted);text-decoration:none;min-height:28px;display:inline-flex;
+  align-items:center}
+.srcchip:active{border-color:var(--s1);color:var(--ink)}
+
+ul{list-style:none} li{margin-bottom:10px;font-size:14.5px;color:var(--ink2);
+  padding-left:14px;position:relative}
+li:last-child{margin-bottom:0}
+li::before{content:"";position:absolute;left:0;top:9px;width:4px;height:4px;
+  border-radius:50%;background:var(--muted)}
+li b{color:var(--ink)} li.meta{color:var(--muted);font-size:12.5px}
+a.ln{color:inherit;text-decoration:none;display:block}
+a.ln:active{opacity:.55}
+.ext{margin-left:5px;color:var(--muted);font-size:11px;font-weight:700}
+.meta{color:var(--muted);font-size:12.5px;line-height:1.6}
+
+/* ---- alert ---- */
+.alert{border:1px solid var(--crit);background:rgba(208,59,59,.13);
+  border-radius:18px;padding:16px 17px;margin-bottom:13px;display:flex}
+.alert.warn{border-color:var(--warn);background:rgba(250,178,25,.11)}
+.alert.calm{border-color:rgba(12,163,12,.5);background:rgba(12,163,12,.09)}
+.beacon{width:9px;height:9px;border-radius:50%;background:var(--crit);
+  margin:6px 13px 0 0;flex:none;position:relative;animation:bp 1.9s ease-in-out infinite}
+.alert.warn .beacon{background:var(--warn)} .alert.calm .beacon{background:var(--good)}
+.at{font-weight:800;font-size:15.5px;margin-bottom:5px;letter-spacing:-.01em}
+.ab{color:var(--ink2);font-size:14px}
+.big{font-size:40px;font-weight:800;letter-spacing:-.045em;line-height:1;margin-bottom:6px}
+
+/* ---- tiles ---- */
+.tiles{display:flex;flex-wrap:wrap;margin:0 -5px 13px}
+.tile{flex:1 1 150px;margin:5px;background:var(--surface);
+  border:1px solid rgba(255,255,255,.10);border-radius:16px;padding:13px 14px}
+.lab{font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--muted);font-weight:800}
+.val{font-size:27px;font-weight:800;letter-spacing:-.04em;margin-top:5px;line-height:1;
+  font-variant-numeric:tabular-nums}
+.note{font-size:12px;color:var(--ink2);margin-top:4px}
+
+/* ---- weather instruments ---- */
+.wx{display:flex;flex-wrap:wrap;align-items:center}
+.dial{position:relative;width:150px;height:150px;flex:none;margin-right:16px}
+.dialarc{stroke-dasharray:292.2 389.6;transition:stroke-dashoffset 1.4s cubic-bezier(.2,.7,.3,1)}
+.dialtxt{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;
+  flex-direction:column;align-items:center;justify-content:center}
+.dialnum{font-size:35px;font-weight:800;letter-spacing:-.04em;line-height:1;
+  font-variant-numeric:tabular-nums;color:var(--crit)}
+.diallab{font-size:9px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--muted);font-weight:800;margin-top:5px;text-align:center}
+.wxside{flex:1;min-width:150px}
+.wxrow{display:flex;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+.wxk{font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+  font-weight:800;width:70px;flex:none}
+.wxv{font-size:18px;font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.wxu{font-size:11.5px;color:var(--muted);margin-left:8px;font-weight:650}
+.drop{width:52px;height:52px;border-radius:50%;overflow:hidden;position:relative;
+  background:#0f1a17;border:1px solid rgba(255,255,255,.10);margin-right:11px;flex:none}
+.wave{position:absolute;left:-50%;width:200%;height:200%;border-radius:42%;
+  background:rgba(27,175,122,.55);animation:sw 7s linear infinite}
+.wave.b{background:rgba(27,175,122,.32);animation-duration:11s;animation-direction:reverse}
+@keyframes sw{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.dropn{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;
+  justify-content:center;font-size:14px;font-weight:800;z-index:2}
+.aqi{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.09)}
+.aqibar{height:9px;border-radius:6px;position:relative;margin:9px 0 6px;
+  background:linear-gradient(90deg,#0ca30c 0%,#0ca30c 33%,#fab219 33%,#fab219 66%,#d03b3b 66%,#d03b3b 100%)}
+.aqimk{position:absolute;top:-6px;width:3px;height:21px;border-radius:2px;background:#fff;
+  box-shadow:0 0 0 2px rgba(0,0,0,.45);transition:left 1.2s cubic-bezier(.2,.7,.3,1)}
+.aqisc{display:flex;justify-content:space-between;font-size:9.5px;color:var(--muted);font-weight:700}
+
+/* ---- charts ---- */
+.viz{width:100%;height:auto;display:block}
+.draw{stroke-dasharray:1200;stroke-dashoffset:1200;
+  animation-name:dash;animation-duration:13s;animation-timing-function:cubic-bezier(.3,.8,.3,1);
+  animation-iteration-count:infinite;animation-fill-mode:backwards}
+@keyframes dash{0%{stroke-dashoffset:1200}14%{stroke-dashoffset:0}
+  86%{stroke-dashoffset:0}97%{stroke-dashoffset:1200}100%{stroke-dashoffset:1200}}
+.hfill{animation-name:hf;animation-duration:13s;animation-timing-function:ease-in-out;
+  animation-iteration-count:infinite;animation-fill-mode:backwards}
+@keyframes hf{0%{opacity:0}18%{opacity:1}86%{opacity:1}97%{opacity:0}100%{opacity:0}}
+.peakpulse{transform-box:fill-box;transform-origin:center;animation:pk 2s ease-out infinite}
+@keyframes pk{0%{transform:scale(1);opacity:.8}70%,100%{transform:scale(3.2);opacity:0}}
+
+/* ---- route ---- */
+.rline{stroke-dasharray:300;stroke-dashoffset:300;
+  animation-name:d2;animation-duration:9s;animation-timing-function:cubic-bezier(.4,0,.2,1);
+  animation-iteration-count:infinite;animation-fill-mode:backwards}
+@keyframes d2{0%{stroke-dashoffset:300}22%{stroke-dashoffset:0}
+  90%{stroke-dashoffset:0}99%{stroke-dashoffset:300}100%{stroke-dashoffset:300}}
+.car{animation-name:drive;animation-duration:9s;animation-timing-function:cubic-bezier(.4,0,.2,1);
+  animation-iteration-count:infinite;animation-fill-mode:backwards}
+@keyframes drive{0%{transform:translateY(0)}22%{transform:translateY(292px)}
+  90%{transform:translateY(292px)}99%{transform:translateY(0)}100%{transform:translateY(0)}}
+.atbl{width:100%;border-collapse:collapse;margin-top:11px;font-size:13px}
+.atbl th{font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);
+  text-align:left;padding:7px 8px;border-bottom:1px solid rgba(255,255,255,.11);font-weight:800}
+.atbl td{padding:9px 8px;border-bottom:1px solid rgba(255,255,255,.06);color:var(--ink2)}
+.atbl tr.dim td{color:var(--muted)}
+.pill{display:inline-block;padding:3px 9px;border-radius:999px;font-size:9.5px;
+  font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.pill.good{background:rgba(12,163,12,.17);color:#4cd94c}
+.pill.warn{background:rgba(250,178,25,.17);color:#f5c977}
+.pill.crit{background:rgba(208,59,59,.19);color:#ef8a8a}
+
+/* ---- fuel gauge ---- */
+.gaugewrap{display:flex;flex-wrap:wrap;align-items:center}
+.gauge{width:210px;height:145px;flex:none}
+.gfill{stroke-dasharray:196 400;transition:stroke-dashoffset 1.6s cubic-bezier(.2,.7,.3,1)}
+.needle{transform-box:view-box;transform-origin:110px 108px;
+  transition:transform 1.7s cubic-bezier(.2,.9,.3,1)}
+.needlein{transform-box:view-box;transform-origin:110px 108px;
+  animation-name:trem;animation-duration:2.9s;animation-timing-function:ease-in-out;
+  animation-iteration-count:infinite}
+@keyframes trem{0%,100%{transform:rotate(-.55deg)}35%{transform:rotate(.7deg)}70%{transform:rotate(-.3deg)}}
+.redzone{animation:rp 3.4s ease-in-out infinite}
+@keyframes rp{0%,100%{opacity:.55}50%{opacity:1}}
+.hub{transform-box:fill-box;transform-origin:center;animation:hp 2.9s ease-in-out infinite}
+@keyframes hp{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.35);opacity:.35}}
+.gread{flex:1;min-width:150px;padding-left:6px}
+.gnum{font-size:38px;font-weight:800;letter-spacing:-.045em;line-height:1;
+  font-variant-numeric:tabular-nums}
+.glab{font-size:12px;color:var(--muted);margin-top:5px;font-weight:650}
+.gdelta{font-size:14px;font-weight:800;color:var(--serious);margin-top:9px}
+.gdelta span{color:var(--muted);font-weight:650;font-size:12px}
+.gside{display:flex;flex-wrap:wrap;margin-top:13px;padding-top:13px;
+  border-top:1px solid rgba(255,255,255,.09)}
+.gs{flex:1 1 90px;text-align:center}
+.gs span{display:block;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);font-weight:800}
+.gs b{display:block;font-size:17px;margin-top:4px;font-variant-numeric:tabular-nums}
+
+/* ---- radar ---- */
+.ring1,.ring2{transform-box:fill-box;transform-origin:center;animation:rg 4s ease-out infinite}
+.ring2{animation-delay:2s}
+@keyframes rg{0%{transform:scale(.2);opacity:.9}100%{transform:scale(1);opacity:0}}
+.sweep{transform-box:view-box;transform-origin:120px 120px;animation:sp 4s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+
+/* ---- news ---- */
+.nrow{display:block;text-decoration:none;color:inherit;padding:11px 0;
+  border-bottom:1px solid rgba(255,255,255,.06)}
+.nrow:last-child{border-bottom:0}
+.nrow:active{opacity:.6}
+.ntitle{font-size:14.5px;font-weight:650;color:var(--ink);line-height:1.4}
+.nmeta{font-size:11px;color:var(--muted);margin-top:4px;font-weight:650}
+
+.err{border:1px solid rgba(208,59,59,.45);background:rgba(208,59,59,.09);
+  border-radius:12px;padding:12px 14px;font-size:13px;color:#ef8a8a;margin-bottom:12px}
+footer{color:var(--muted);font-size:11.5px;line-height:1.7;padding:18px 0 40px;
+  border-top:1px solid rgba(255,255,255,.09);margin-top:20px}
+footer b{color:var(--ink2)}
+
+@media (prefers-reduced-motion: reduce){
+  /* Motion is kept on purpose. Only large positional movement is softened. */
+  .car{animation-name:fadeonly} .sunrise{animation-name:none}
+  @keyframes fadeonly{0%,100%{opacity:.85}50%{opacity:1}}
+}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="toprow">
+  <span class="clock" id="clock">—</span>
+  <span class="csub" id="csub"></span>
+  <span class="sp"></span>
+  <button class="ib" id="refresh" aria-label="Refresh">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+         stroke-linecap="round"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>
+  </button>
+</div></div>
+
+<div class="fresh f-live" id="fresh"><span class="fdot"></span><span id="freshtxt">Loading…</span></div>
+
+<div class="wrap" id="app"></div>
+
+<script>
+/* =========================================================================
+   Daily Brief — renderer.
+
+   Reads data/brief.json and draws it. The one rule inherited from the HTML
+   brief: a missing value renders as "not sourced", never as a carried-forward
+   number and never as a guess. Every card shows where its data came from and
+   how old it is.
+   ========================================================================= */
+
+const $ = (s, r = document) => r.querySelector(s);
+const app = $('#app');
+
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c =>
+  ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+const NS = '<span style="color:var(--muted);font-weight:650">not sourced</span>';
+const num = (v, suffix = '', dp = 0) =>
+  (v === null || v === undefined || Number.isNaN(v)) ? NS
+    : `${Number(v).toFixed(dp)}${suffix}`;
+
+function ago(iso) {
+  if (!iso) return null;
+  const mins = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
+  if (mins < 1) return 'just now';
+  if (mins < 60) return `${mins} min ago`;
+  const h = Math.floor(mins / 60);
+  if (h < 24) return `${h}h ${mins % 60}m ago`;
+  return `${Math.floor(h / 24)}d ago`;
+}
+
+function chip(label, url) {
+  return url ? `<a class="srcchip" href="${esc(url)}" target="_blank" rel="noopener">${esc(label)} &#8599;</a>`
+             : `<span class="srcchip">${esc(label)}</span>`;
+}
+
+function card(id, dotClass, title, body, srcLabel, srcUrl, open = true) {
+  return `<details class="card" id="${id}" ${open ? 'open' : ''}>
+    <summary><span class="dot ${dotClass}"></span>${esc(title)}
+      ${srcLabel ? chip(srcLabel, srcUrl) : ''}
+      <svg class="chev" width="15" height="15" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+    </summary><div class="cpad">${body}</div></details>`;
+}
+
+/* ---------------------------------------------------------------- hero */
+function hero(d) {
+  return `<div class="hero">
+    <svg viewBox="0 0 400 230" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="n" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#04060f"/><stop offset="100%" stop-color="#121a33"/></linearGradient>
+        <linearGradient id="t" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#0d1330"/><stop offset="100%" stop-color="#5a3560"/></linearGradient>
+        <linearGradient id="w" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1b1c3e"/><stop offset="45%" stop-color="#7b3f5c"/>
+          <stop offset="100%" stop-color="#c96a3c"/></linearGradient>
+        <radialGradient id="g" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#ffb06a" stop-opacity=".95"/>
+          <stop offset="100%" stop-color="#e2703a" stop-opacity="0"/></radialGradient>
+      </defs>
+      <rect class="sk sk1" width="400" height="230" fill="url(#n)"/>
+      <rect class="sk sk2" width="400" height="230" fill="url(#t)"/>
+      <rect class="sk sk3" width="400" height="230" fill="url(#w)"/>
+      <g class="stars" fill="#fff">
+        <circle cx="26" cy="30" r="1.2"/><circle cx="150" cy="22" r="1.4"/>
+        <circle cx="272" cy="38" r="1.3"/><circle cx="212" cy="72" r="1"/>
+        <circle cx="374" cy="30" r="1.1"/><circle cx="88" cy="58" r=".9"/>
+        <circle cx="330" cy="66" r="1"/><circle cx="56" cy="94" r=".8"/></g>
+      <g class="cloudA" opacity=".22" fill="#f0c7a8">
+        <ellipse cx="80" cy="86" rx="42" ry="7"/><ellipse cx="108" cy="82" rx="26" ry="6"/></g>
+      <g class="cloudB" opacity=".16" fill="#e8b79b">
+        <ellipse cx="290" cy="116" rx="54" ry="8"/><ellipse cx="258" cy="112" rx="30" ry="6"/></g>
+      <g class="sunrise">
+        <circle class="sunglow" cx="300" cy="176" r="86" fill="url(#g)"/>
+        <circle cx="300" cy="176" r="24" fill="#ffb45c"/></g>
+      <g fill="#05060c" opacity=".92"><path d="M0 230 V196 h18 v-14 h10 v14 h14 v-26 h12 v26 h16 v-40 h9 v-9 h7 v9 h9 v40
+        h13 v-20 h14 v20 h11 v-52 h8 v-10 h6 v10 h8 v52 h15 v-30 h12 v30 h10 v-18 h13 v18
+        h16 v-44 h10 v-12 h6 v12 h9 v44 h12 v-24 h14 v24 h11 v-34 h13 v34 h15 v-16 h12 v16
+        h14 v-28 h11 v28 h18 v-20 h13 v20 H400 v34 Z"/></g>
+    </svg>
+    <h1>${esc(d.date_label || '')}</h1>
+    <div class="sub">${d.is_weekend ? 'Weekend · no commute' : 'Home → Jackson Memorial · departure 5:45 AM'}</div>
+  </div>`;
+}
+
+/* ---------------------------------------------------------------- alert */
+function alertBlock(d) {
+  const al = d.alerts, air = d.air, cm = d.commute;
+  if (al?.ok && al.count > 0) {
+    const a = al.alerts[0];
+    return `<div class="alert"><span class="beacon"></span><div>
+      <div class="at">${esc(a.event || 'Weather alert')}</div>
+      <div class="ab">${esc(a.headline || '')}${a.description ? '<br><br>' + esc(a.description.slice(0, 420)) : ''}</div>
+    </div></div>`;
+  }
+  if (air?.ok && air.aqi >= 101) {
+    return `<div class="alert warn"><span class="beacon"></span><div>
+      <div class="at">Air quality ${esc(air.category || '')} · AQI ${esc(air.aqi)}</div>
+      <div class="ab">Above the Moderate band. A real risk for asthma, COPD and older
+      patients — the people who turn up at Jackson — rather than a general one.
+      ${air.pollutant ? 'Driver: ' + esc(air.pollutant) + '.' : ''}</div>
+    </div></div>`;
+  }
+  if (cm?.ok && cm.delay_minutes >= 10) {
+    return `<div class="alert"><span class="beacon"></span><div>
+      <div class="at">${esc(cm.delay_minutes)} minutes of delay on your route</div>
+      <div class="ab">TomTom has live congestion on the toll-free line this morning.
+      See the commute card for whether an alternate actually beats it.</div>
+    </div></div>`;
+  }
+  return `<div class="alert calm"><span class="beacon"></span><div>
+    <div class="at">Nothing urgent</div>
+    <div class="ab">No active NWS alert for Miramar, air quality below the sensitive-groups
+    band, and no significant delay on the route. Detail below.</div>
+  </div></div>`;
+}
+
+/* ---------------------------------------------------------------- weather */
+function weatherCard(d) {
+  const w = d.weather, air = d.air;
+  if (!w?.ok) return card('weather', 'crit', 'Weather · instruments',
+    `<div class="err">Weather source failed: ${esc(w?.error || 'unknown')}. Nothing shown rather than
+     yesterday's numbers.</div>`, 'Open-Meteo', 'https://open-meteo.com/');
+
+  const feels = w.peak_feels, cur = w.current || {}, td = w.today || {};
+  // 270° dial, 0–120°F. dasharray 292.2 of a 389.6 circumference.
+  const frac = Math.max(0, Math.min(1, ((feels ?? 0) - 60) / 60));
+  const off = 292.2 - 292.2 * frac;
+
+  const curve = w.curve || [];
+  const x = i => 38 + (i * (308 / Math.max(1, curve.length - 1)));
+  const yT = v => 190 - (v - 80) * 5.735;
+  const yH = v => 92 - (v - 50) * 1.6;
+  const path = (vals, fn) => vals.map((v, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)} ${fn(v).toFixed(1)}`).join(' ');
+  const feelsPath = path(curve.map(c => c.feels), yT);
+  const tempPath = path(curve.map(c => c.temp), yT);
+  const humPath = path(curve.map(c => c.humidity), yH);
+  const humArea = curve.length
+    ? `M${x(0).toFixed(1)} 92 L${humPath.slice(1)} L${x(curve.length - 1).toFixed(1)} 92 Z` : '';
+  const pk = curve.length ? curve.reduce((a, b) => b.feels > a.feels ? b : a) : null;
+  const pkI = pk ? curve.indexOf(pk) : 0;
+  const hr = h => h === 12 ? '12 PM' : h > 12 ? `${h - 12} PM` : `${h} AM`;
+
+  const aqiPct = air?.ok && air.aqi != null ? Math.min(100, (air.aqi / 150) * 100) : null;
+
+  return card('weather', air?.ok && air.aqi >= 101 ? 'ser' : 'crit', 'Weather · instruments', `
+    <div class="wx">
+      <div class="dial">
+        <svg viewBox="0 0 160 160" width="150" height="150">
+          <circle cx="80" cy="80" r="62" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="11"
+            stroke-linecap="round" stroke-dasharray="292.2 389.6" transform="rotate(135 80 80)"/>
+          <circle class="dialarc" cx="80" cy="80" r="62" fill="none" stroke="#d03b3b" stroke-width="11"
+            stroke-linecap="round" stroke-dashoffset="${off.toFixed(1)}" transform="rotate(135 80 80)"/>
+        </svg>
+        <div class="dialtxt"><div class="dialnum">${num(feels, '°')}</div>
+          <div class="diallab">Peak feels-like${pk ? '<br>' + hr(pk.hour) : ''}</div></div>
+      </div>
+      <div class="wxside">
+        <div class="wxrow"><span class="wxk">High</span><span class="wxv">${num(td.high, '°')}</span>
+          <span class="wxu">low ${num(td.low, '°')} · ${num(td.pop_max, '% rain')}</span></div>
+        <div class="wxrow"><span class="wxk">Now</span><span class="wxv">${num(cur.temp, '°')}</span>
+          <span class="wxu">feels ${num(cur.feels, '°')} · wind ${num(cur.wind_mph, ' mph')}</span></div>
+        <div class="wxrow">
+          <div class="drop"><div class="wave"></div><div class="wave b"></div>
+            <div class="dropn">${cur.humidity != null ? cur.humidity + '%' : '—'}</div></div>
+          <div><div class="wxk" style="width:auto">Humidity now</div>
+            <div style="font-size:12.5px;color:var(--ink2);margin-top:3px">
+            ${curve.length ? `Falls to <b>${Math.min(...curve.map(c => c.humidity))}%</b> at peak heat, back up overnight.`
+              : 'Hourly curve unavailable.'}</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="aqi">
+      <div style="display:flex;align-items:baseline;flex-wrap:wrap;margin-bottom:4px">
+        <span class="wxk" style="width:auto;margin-right:10px">Air quality</span>
+        ${air?.ok
+          ? `<span style="font-size:20px;font-weight:800;font-variant-numeric:tabular-nums">${num(air.aqi)}</span>
+             <span class="wxu">${esc(air.category || '')}${air.pollutant ? ' · ' + esc(air.pollutant) : ''}</span>`
+          : `<span style="font-size:15px;font-weight:800;color:var(--muted)">not sourced</span>`}
+      </div>
+      <div class="aqibar">${aqiPct != null ? `<div class="aqimk" style="left:${aqiPct.toFixed(1)}%"></div>` : ''}</div>
+      <div class="aqisc"><span>0 Good</span><span>50 Moderate</span><span>100 Unhealthy</span><span>150</span></div>
+      ${air?.ok && air.forecast?.length
+        ? `<div class="meta" style="margin-top:9px">Forecast: ` +
+          air.forecast.slice(0, 3).map(f => `${esc(f.date)} <b>${esc(f.category || f.aqi || '—')}</b>`).join(' · ') + `</div>`
+        : ''}
+    </div>
+
+    ${curve.length ? `
+    <div style="margin-top:18px;font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+      color:var(--muted);font-weight:800">Today · heat index and air temp</div>
+    <div style="display:flex;margin:7px 0 4px;font-size:12.5px;color:var(--ink2)">
+      <span><span style="display:inline-block;width:15px;height:2px;background:#d95926;vertical-align:4px"></span> Feels like</span>
+      <span style="margin-left:14px"><span style="display:inline-block;width:15px;height:2px;background:#3987e5;vertical-align:4px"></span> Air temp</span>
+    </div>
+    <svg class="viz" viewBox="0 0 360 215" role="img" aria-label="Heat index and air temperature by hour">
+      <g stroke="var(--grid)" stroke-width="1">
+        <line x1="38" x2="346" y1="190" y2="190"/><line x1="38" x2="346" y1="132.7" y2="132.7"/>
+        <line x1="38" x2="346" y1="75.3" y2="75.3"/><line x1="38" x2="346" y1="18" y2="18"/></g>
+      <g font-size="10" fill="var(--muted)" font-weight="650" text-anchor="end">
+        <text x="32" y="194">80°</text><text x="32" y="136.7">90°</text>
+        <text x="32" y="79.3">100°</text><text x="32" y="22">110°</text></g>
+      <path class="draw" fill="none" stroke="#d95926" stroke-width="2.2"
+        stroke-linecap="round" stroke-linejoin="round" d="${feelsPath}"/>
+      <path class="draw" fill="none" stroke="#3987e5" stroke-width="2.2"
+        stroke-linecap="round" stroke-linejoin="round" d="${tempPath}"/>
+      ${pk ? `<circle class="peakpulse" cx="${x(pkI).toFixed(1)}" cy="${yT(pk.feels).toFixed(1)}" r="5" fill="#d95926"/>
+      <circle cx="${x(pkI).toFixed(1)}" cy="${yT(pk.feels).toFixed(1)}" r="5" fill="#d95926"
+        stroke="var(--surface)" stroke-width="2"/>
+      <text x="${x(pkI).toFixed(1)}" y="${(yT(pk.feels) - 11).toFixed(1)}" text-anchor="middle"
+        font-size="11.5" font-weight="800" fill="var(--ink)">${pk.feels}° peak</text>` : ''}
+      <g font-size="10" fill="var(--muted)" font-weight="650">
+        <text x="38" y="209">${hr(curve[0].hour)}</text>
+        <text x="192" y="209" text-anchor="middle">${hr(curve[Math.floor(curve.length / 2)].hour)}</text>
+        <text x="346" y="209" text-anchor="end">${hr(curve[curve.length - 1].hour)}</text></g>
+    </svg>
+
+    <div style="margin-top:14px;font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+      color:var(--muted);font-weight:800">Relative humidity · own scale</div>
+    <svg class="viz" viewBox="0 0 360 118" style="margin-top:4px" role="img" aria-label="Relative humidity by hour">
+      <defs><linearGradient id="hg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#1baf7a" stop-opacity=".38"/>
+        <stop offset="100%" stop-color="#1baf7a" stop-opacity="0"/></linearGradient></defs>
+      <g stroke="var(--grid)" stroke-width="1">
+        <line x1="38" x2="346" y1="92" y2="92"/><line x1="38" x2="346" y1="60" y2="60"/>
+        <line x1="38" x2="346" y1="28" y2="28"/></g>
+      <g font-size="9.5" fill="var(--muted)" font-weight="650" text-anchor="end">
+        <text x="32" y="95">50%</text><text x="32" y="64">70%</text><text x="32" y="32">90%</text></g>
+      <path class="hfill" fill="url(#hg)" d="${humArea}"/>
+      <path class="draw" fill="none" stroke="#1baf7a" stroke-width="2.2"
+        stroke-linecap="round" stroke-linejoin="round" d="${humPath}"/>
+    </svg>
+    <div class="meta" style="margin-top:9px">Hourly values carry real Eastern-time stamps from the
+      forecast API — not a scraped page rendering someone else's clock.</div>` : ''}
+  `, 'Open-Meteo', 'https://open-meteo.com/');
+}
+
+/* ---------------------------------------------------------------- commute */
+function commuteCard(d) {
+  if (d.is_weekend) return '';
+  const c = d.commute, cl = d.closures;
+  const stops = [
+    ['Home', 'departure 5:45'], ['I-75 / 826', 'merge'],
+    ['Okeechobee', 'at the Palmetto'], ['Medley', 'no bypass — watch this one'],
+    ['36th St', 'airport curve'], ['Jackson', 'NW 12th Ave']];
+
+  const route = `<svg class="viz" viewBox="0 0 360 344" style="max-width:420px" role="img"
+      aria-label="Six route checkpoints from home to Jackson Memorial">
+    <line x1="24" y1="26" x2="24" y2="318" stroke="var(--grid)" stroke-width="6" stroke-linecap="round"/>
+    <line class="rline" x1="24" y1="26" x2="24" y2="318" stroke="var(--good)" stroke-width="6" stroke-linecap="round"/>
+    <g transform="translate(24,26)"><g class="car">
+      <rect x="-8" y="-17" width="16" height="34" rx="6.6" fill="#fff"/>
+      <rect x="-10.4" y="3.2" width="2.6" height="3.4" rx="1.2" fill="#fff"/>
+      <rect x="7.8" y="3.2" width="2.6" height="3.4" rx="1.2" fill="#fff"/>
+      <path d="M-5.4 -13.4 h10.8 a1 1 0 0 1 1 1 l-.5 3.4 h-11.8 l-.5 -3.4 a1 1 0 0 1 1 -1 z" fill="#2b3240"/>
+      <rect x="-6.1" y="-8.4" width="12.2" height="11.4" rx="2.2" fill="#1e242f"/>
+      <path d="M-6.2 3.6 h12.4 l-1.5 5.2 h-9.4 z" fill="#2b3240"/>
+      <rect x="-5.6" y="-16.2" width="11.2" height="1.5" rx=".7" fill="#e0483f" opacity=".9"/>
+      <rect x="-6.2" y="15" width="3.6" height="1.5" rx=".7" fill="#ffe9b8"/>
+      <rect x="2.6" y="15" width="3.6" height="1.5" rx=".7" fill="#ffe9b8"/>
+    </g></g>
+    ${stops.map((s, i) => {
+      const y = 26 + i * 58.4;
+      return `<circle cx="24" cy="${y}" r="9" fill="var(--surface)" stroke="var(--good)" stroke-width="3"/>
+      <text x="46" y="${y - 2}" font-size="12.5" font-weight="750" fill="var(--ink)">${esc(s[0])}</text>
+      <text x="46" y="${y + 12}" font-size="11" fill="var(--muted)" font-weight="650">${esc(s[1])}</text>`;
+    }).join('')}
+  </svg>`;
+
+  let body = route;
+
+  if (c?.ok) {
+    const delayed = c.delay_minutes >= 5;
+    body += `<div style="margin:13px 0 4px">
+      <span class="pill ${delayed ? 'warn' : 'good'}">${delayed ? c.delay_minutes + ' min delay' : 'No delay'}</span>
+      <span class="meta" style="margin-left:9px">live traffic · departure ${esc((c.depart_at || '').slice(11, 16))}</span>
+    </div>
+    <table class="atbl">
+      <tr><th>Option</th><th>Time</th><th>Miles</th><th>Toll</th></tr>
+      <tr><td><b>Your route</b> · I-75 → 826 → Okeechobee</td>
+          <td>${num(c.minutes, ' min')}</td><td>${num(c.miles, '', 1)}</td><td>Free</td></tr>
+      ${(c.alternates || []).map(a => `<tr class="dim"><td>Alternate${a.saves > 0 ? ' · saves ' + a.saves : ''}</td>
+        <td>${num(a.minutes, ' min')}</td><td>${num(a.miles, '', 1)}</td>
+        <td>${a.toll ? 'Toll' : 'Free'}</td></tr>`).join('')}
+    </table>
+    <div class="meta" style="margin-top:9px">${
+      c.alternates_worth_taking?.length
+        ? `<b>${c.alternates_worth_taking.length} alternate saves more than 10 minutes.</b> Tolled — your call.`
+        : 'No alternate clears the 10-minute bar. Nothing worth taking.'}</div>`;
+
+    if (c.incidents?.length) {
+      body += `<ul style="margin-top:13px">` + c.incidents.slice(0, 5).map(i =>
+        `<li><b>${esc((i.roads || []).join(', ') || 'Corridor')}</b> — ${esc(i.description || 'incident')}${
+          i.delay_s ? ` · ${Math.round(i.delay_s / 60)} min` : ''}</li>`).join('') + `</ul>`;
+    }
+  } else {
+    body += `<div class="err" style="margin-top:13px">Live routing unavailable: ${esc(c?.error || 'unknown')}.
+      No distance or time shown — the route is 19.9 miles as measured, but this card will not
+      print a travel time it did not just measure.</div>`;
+  }
+
+  if (cl?.ok && (cl.closures?.length || cl.fl511_local?.length)) {
+    body += `<div style="margin-top:15px;padding-top:14px;border-top:1px solid rgba(255,255,255,.09)">
+      <div class="wxk" style="width:auto;margin-bottom:9px">Construction &amp; closures</div><ul>`
+      + (cl.closures || []).slice(0, 4).map(x => `<li>${esc(x.text)}</li>`).join('')
+      + (cl.fl511_local || []).slice(0, 3).map(x => `<li class="meta">FL511 · ${esc(x)}</li>`).join('')
+      + `</ul></div>`;
+  }
+
+  return card('commute', c?.ok && c.delay_minutes >= 5 ? 'warn' : 'good',
+    'Commute · toll-free', body, 'FDOT', 'https://www.fdotmiamidade.com/laneclosures');
+}
+
+/* ---------------------------------------------------------------- tropics */
+function tropicsCard(d) {
+  const t = d.tropics;
+  if (!t?.ok) return card('tropics', 'good', 'Tropics',
+    `<div class="err">NHC unavailable: ${esc(t?.error || 'unknown')}</div>`,
+    'NHC', 'https://www.nhc.noaa.gov/');
+  const areas = t.areas || [];
+  const worst = areas.reduce((m, a) => Math.max(m, a.chance_7d || 0), 0);
+  const dot = worst >= 60 ? 'crit' : worst >= 40 ? 'warn' : 'good';
+  return card('tropics', dot, 'Tropics · live sweep', `
+    <svg class="viz" viewBox="0 0 240 240" style="max-width:250px;margin:0 auto" role="img"
+      aria-label="Radar sweep of Atlantic formation chances">
+      <defs><linearGradient id="sw" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#0ca30c" stop-opacity=".55"/>
+        <stop offset="100%" stop-color="#0ca30c" stop-opacity="0"/></linearGradient></defs>
+      <g fill="none" stroke="var(--grid)" stroke-width="1">
+        <circle cx="120" cy="120" r="110"/><circle cx="120" cy="120" r="80"/>
+        <circle cx="120" cy="120" r="50"/><circle cx="120" cy="120" r="24"/>
+        <line x1="10" y1="120" x2="230" y2="120"/><line x1="120" y1="10" x2="120" y2="230"/></g>
+      <circle class="ring1" cx="120" cy="120" r="110" fill="none" stroke="#0ca30c" stroke-width="1.5"/>
+      <circle class="ring2" cx="120" cy="120" r="110" fill="none" stroke="#0ca30c" stroke-width="1.5"/>
+      <g class="sweep"><path d="M120 120 L230 120 A110 110 0 0 0 198 42 Z" fill="url(#sw)"/></g>
+      <text x="120" y="114" text-anchor="middle" font-size="18" font-weight="800"
+        fill="var(--good)">CLEAR HERE</text>
+      <text x="120" y="134" text-anchor="middle" font-size="11" fill="var(--muted)"
+        font-weight="650">${areas.length} area${areas.length === 1 ? '' : 's'} · peak ${worst}%</text>
+    </svg>
+    <ul style="margin-top:10px">
+      ${areas.map(a => `<li><b>${a.chance_48h}% / ${a.chance_7d}%</b> — ${esc(a.text.slice(0, 200))}</li>`).join('')
+        || '<li>No areas under investigation.</li>'}
+      <li class="meta">NHC outlook${t.issued ? ', issued ' + esc(t.issued) : ''}. Percentages are
+        48-hour and 7-day formation chance. Location matters as much as the number — an
+        80% east of Bermuda is not a South Florida problem.</li>
+    </ul>`, 'NHC', 'https://www.nhc.noaa.gov/text/MIATWOAT.shtml');
+}
+
+/* ---------------------------------------------------------------- fuel */
+function fuelCard(d) {
+  const f = d.fuel;
+  if (!f?.ok) return card('fuel', 'ser', 'Fuel · what you pay',
+    `<div class="err">AAA unavailable: ${esc(f?.error || 'unknown')}</div>`,
+    'AAA', 'https://gasprices.aaa.com/');
+  const price = parseFloat(String(f.florida || '').replace('$', ''));
+  const ang = isNaN(price) ? 0 : (price - 3.75) * 82.2;
+  const fill = isNaN(price) ? 196 : Math.max(0, 196 - ((price - 3.00) / 1.5) * 196);
+  return card('fuel', 'ser', 'Fuel · what you pay', `
+    <div class="gaugewrap">
+      <svg class="gauge" viewBox="0 0 220 150" role="img" aria-label="Florida average fuel price gauge">
+        <path d="M34.8 80.6 A80 80 0 0 1 185.2 80.6" fill="none"
+          stroke="rgba(255,255,255,.10)" stroke-width="13" stroke-linecap="round"/>
+        <path class="redzone" d="M163.5 48.5 A80 80 0 0 1 185.2 80.6" fill="none"
+          stroke="#d03b3b" stroke-width="13" stroke-linecap="round"/>
+        <path class="gfill" d="M34.8 80.6 A80 80 0 0 1 185.2 80.6" fill="none"
+          stroke="#ec835a" stroke-width="13" stroke-linecap="round"
+          stroke-dashoffset="${fill.toFixed(1)}"/>
+        <g font-size="10" fill="var(--muted)" font-weight="750">
+          <text x="26" y="103" text-anchor="middle">$3.00</text>
+          <text x="72" y="22" text-anchor="middle">$3.50</text>
+          <text x="148" y="22" text-anchor="middle">$4.00</text>
+          <text x="194" y="103" text-anchor="middle">$4.50</text></g>
+        <g class="needle" style="transform:rotate(${ang.toFixed(1)}deg)"><g class="needlein">
+          <line x1="110" y1="108" x2="110" y2="38" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="110" cy="38" r="3" fill="#fff"/></g></g>
+        <circle class="hub" cx="110" cy="108" r="13" fill="#ec835a" opacity=".3"/>
+        <circle cx="110" cy="108" r="9" fill="var(--surface)" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
+        <circle cx="110" cy="108" r="3.5" fill="#ec835a"/>
+      </svg>
+      <div class="gread">
+        <div class="gnum">${esc(f.florida || '—')}</div>
+        <div class="glab">Florida average · regular${f.as_of ? ' · AAA ' + esc(f.as_of) : ''}</div>
+        <div class="gdelta">${isNaN(price) ? '' :
+          `<span>${(price * 39.8 / 25).toFixed(2)} per round trip at 25 mpg</span>`}</div>
+      </div>
+    </div>
+    <div class="gside">
+      <div class="gs"><span>National</span><b>${esc(f.national || '—')}</b></div>
+      <div class="gs"><span>Diesel · FL</span><b>${esc(f.diesel || '—')}</b></div>
+      <div class="gs"><span>Your commute</span><b>39.8 mi</b></div>
+    </div>`, 'AAA', 'https://gasprices.aaa.com/state-gas-price-averages/');
+}
+
+/* ---------------------------------------------------------------- news */
+function newsCard(id, dotClass, title, items, srcLabel, srcUrl) {
+  if (!items?.length) return card(id, dotClass, title,
+    `<div class="meta">Nothing returned from this feed on the last refresh.</div>`, srcLabel, srcUrl);
+  return card(id, dotClass, title, items.slice(0, 7).map(i =>
+    `<a class="nrow" href="${esc(i.url || '#')}" target="_blank" rel="noopener">
+      <div class="ntitle">${esc(i.title || '')}</div>
+      <div class="nmeta">${esc(i.published || '')}</div></a>`).join(''), srcLabel, srcUrl);
+}
+
+/* ---------------------------------------------------------------- render */
+function render(d) {
+  const parts = [hero(d), alertBlock(d)];
+
+  const w = d.weather, air = d.air, c = d.commute;
+  parts.push(`<div class="tiles">
+    <div class="tile"><div class="lab">Now</div>
+      <div class="val">${num(w?.current?.temp, '°')}</div>
+      <div class="note">feels ${num(w?.current?.feels, '°')}</div></div>
+    <div class="tile"><div class="lab">Air quality</div>
+      <div class="val">${num(air?.aqi)}</div>
+      <div class="note">${esc(air?.category || (air?.ok ? '' : 'not sourced'))}</div></div>
+    ${d.is_weekend ? '' : `<div class="tile"><div class="lab">Drive</div>
+      <div class="val">${c?.ok ? num(c.minutes, ' min') : NS}</div>
+      <div class="note">${c?.ok ? num(c.miles, ' mi', 1) : 'routing down'}</div></div>`}
+  </div>`);
+
+  parts.push(weatherCard(d));
+  parts.push(commuteCard(d));
+  parts.push(tropicsCard(d));
+  parts.push(fuelCard(d));
+  parts.push(newsCard('fires', 'crit', 'Wildfires & smoke', d.fires?.items,
+    'Local 10', 'https://www.local10.com/news/florida/'));
+  parts.push(newsCard('local', 'warn', 'Local · WPLG & WSVN', d.news?.local,
+    'WPLG', 'https://www.local10.com/news/local/'));
+  parts.push(newsCard('colombia', 'crit', 'Colombia · El Tiempo', d.news?.colombia,
+    'El Tiempo', 'https://www.eltiempo.com/colombia'));
+  parts.push(newsCard('world', 'crit', 'World & war', d.news?.world,
+    'Kyiv Ind.', 'https://kyivindependent.com/'));
+
+  const failed = d.failures || [];
+  parts.push(`<footer>
+    <b>Updated ${esc(ago(d.generated_at) || '—')}</b> · ${esc(d.health || '')}<br>
+    ${failed.length
+      ? `<b>Not sourced this run:</b> ${failed.map(esc).join(', ')}. Those sections show gaps rather
+         than the last value that worked — a brief with declared holes beats one that is quietly wrong.<br>`
+      : 'Every source answered on this refresh.<br>'}
+    Data refreshes on a schedule; pull the button up top to fetch the newest file.
+    Every figure here was measured by a named source and stamped — nothing is carried forward.
+  </footer>`);
+
+  app.innerHTML = parts.join('');
+}
+
+/* ---------------------------------------------------------------- freshness */
+function paintFreshness(d) {
+  const el = $('#fresh'), txt = $('#freshtxt');
+  const mins = d.generated_at ? (Date.now() - new Date(d.generated_at).getTime()) / 60000 : 1e9;
+  el.className = 'fresh ' + (mins < 45 ? 'f-live' : mins < 180 ? 'f-old' : 'f-stale');
+  txt.textContent = mins < 45 ? `Live · updated ${ago(d.generated_at)}`
+    : mins < 180 ? `Updated ${ago(d.generated_at)} — refresh may be running late`
+    : `Stale · last updated ${ago(d.generated_at)}. Treat these numbers with suspicion.`;
+  const now = new Date();
+  $('#clock').textContent = now.toLocaleTimeString('en-US',
+    { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' });
+  $('#csub').textContent = d.is_weekend ? 'weekend' : 'leave 5:45';
+}
+
+/* ---------------------------------------------------------------- load */
+let loading = false;
+async function load(force) {
+  if (loading) return;
+  loading = true;
+  $('#refresh').firstElementChild.classList.add('spin');
+  try {
+    const r = await fetch('data/brief.json' + (force ? '?t=' + Date.now() : ''), { cache: 'no-store' });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    render(d);
+    paintFreshness(d);
+    window.__brief = d;   // handy when poking at it in devtools
+  } catch (e) {
+    app.innerHTML = `<div class="err" style="margin-top:16px">Could not load the brief:
+      ${esc(e.message)}.<br><br>If this is the first load, check that the refresh workflow has run
+      at least once and that <b>data/brief.json</b> exists in the repository.</div>`;
+    $('#freshtxt').textContent = 'Load failed';
+    $('#fresh').className = 'fresh f-stale';
+  } finally {
+    loading = false;
+    $('#refresh').firstElementChild.classList.remove('spin');
+  }
+}
+
+$('#refresh').addEventListener('click', () => load(true));
+document.addEventListener('visibilitychange', () => { if (!document.hidden) load(true); });
+load(false);
+setInterval(() => load(true), 5 * 60 * 1000);
+
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(()=>{}));
+}
+</script>
+</body>
+</html>
