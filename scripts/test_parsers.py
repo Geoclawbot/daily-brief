@@ -224,8 +224,29 @@ with mock.patch.object(F, "get", _inc_by_bbox):
 
 check("both counties collected", {i["county"] for i in inc} == {"Broward", "Miami-Dade"})
 check("overlap deduplicated", len(inc) == 3, f"got {len(inc)}")
-check("closure sorts first", inc[0]["magnitude"] == 4 and "closed" in inc[0]["description"].lower())
-check("then worst delay first", inc[1]["delay_s"] == 900 and inc[1]["roads"] == ["SR-826"])
+check("worst delay outranks a closure", inc[0]["delay_s"] == 900 and inc[0]["roads"] == ["SR-826"])
+check("named closure ranks above ordinary congestion",
+      inc[1]["magnitude"] == 4 and inc[1]["roads"] == ["I-595"])
+
+# The real feed is mostly unnamed "Closed" entries with no delay. They must
+# never outrank a named road, or the card fills with rows saying nothing.
+NOISE = [
+    {"county": "Broward", "roads": [], "delay_s": None, "magnitude": 4,
+     "description": "Closed", "start": "x"},
+    {"county": "Broward", "roads": ["I-95"], "delay_s": 120, "magnitude": 2,
+     "description": "Slow", "start": "x"},
+]
+NOISE.sort(key=lambda i: (bool(i["roads"]), F._cost(i), i.get("delay_s") or 0),
+          reverse=True)
+check("unnamed closure sinks below a named road", NOISE[0]["roads"] == ["I-95"])
+check("major needs a road name",
+      F._is_major({"roads": [], "magnitude": 4, "delay_s": None}) is False)
+check("closed named road is major",
+      F._is_major({"roads": ["I-595"], "magnitude": 4, "delay_s": None}) is True)
+check("ten minutes lost is major",
+      F._is_major({"roads": ["I-95"], "magnitude": 2, "delay_s": 600}) is True)
+check("two minutes lost is not",
+      F._is_major({"roads": ["I-95"], "magnitude": 2, "delay_s": 120}) is False)
 check("county is labelled", all(i["county"] in ("Broward", "Miami-Dade") for i in inc))
 
 # ---------------------------------------------------------------- feed media

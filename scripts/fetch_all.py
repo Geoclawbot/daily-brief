@@ -341,9 +341,31 @@ def _area_incidents():
                 "description": desc,
                 "start": p.get("startTime"),
             })
-    out.sort(key=lambda i: ((i.get("magnitude") or 0) == 4, i.get("delay_s") or 0),
+    # Tie-break on the measured delay: a closure's score is an assumption we
+    # made, a delay is a number TomTom actually reported. Real data wins.
+    out.sort(key=lambda i: (bool(i["roads"]), _cost(i), i.get("delay_s") or 0),
              reverse=True)
     return out
+
+
+def _cost(i):
+    """Roughly what an incident costs you, in seconds, for ranking only.
+
+    A closure carries no delay figure, so it would sink to the bottom of a
+    pure delay sort even though it is the thing you most need to know. Score
+    it as a quarter hour: enough to outrank ordinary congestion, not enough to
+    bury a genuinely bad jam on the interstate.
+    """
+    if (i.get("magnitude") or 0) == 4:
+        return 900
+    return i.get("delay_s") or 0
+
+
+def _is_major(i):
+    """Worth calling out: a closed named road, or ten minutes lost."""
+    if not i["roads"]:
+        return False
+    return (i.get("magnitude") or 0) == 4 or (i.get("delay_s") or 0) >= 600
 
 
 def fetch_commute():
@@ -351,9 +373,11 @@ def fetch_commute():
         return fail("TomTom", "TOMTOM_API_KEY not set — add it as a repository secret")
     try:
         incidents = _area_incidents()
-        majors = [i for i in incidents if (i.get("magnitude") or 0) >= 3]
-        area = dict(incidents=incidents[:25], incident_count=len(incidents),
-                    major_count=len(majors), coverage="Miami-Dade + Broward")
+        majors = [i for i in incidents if _is_major(i)]
+        named = [i for i in incidents if i["roads"]]
+        area = dict(incidents=incidents[:30], incident_count=len(incidents),
+                    named_count=len(named), major_count=len(majors),
+                    coverage="Miami-Dade + Broward")
 
         leg = _active_leg()
         if leg is None:
