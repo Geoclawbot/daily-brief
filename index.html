@@ -247,6 +247,53 @@ footer{color:var(--muted);font-size:11.5px;line-height:1.7;padding:18px 0 40px;
   border-top:1px solid rgba(255,255,255,.09);margin-top:20px}
 footer b{color:var(--ink2)}
 
+
+/* ---- landscape: four quadrants ---- */
+.quads{display:block}
+.quad{min-width:0}
+@media (orientation:landscape) and (min-width:820px){
+  .wrap,.toprow,.fresh{max-width:1460px}
+  .quads{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+  .quad{max-height:calc(100dvh - 140px);overflow-y:auto;overscroll-behavior:contain;
+        padding-right:5px;scrollbar-width:thin}
+  .quad::-webkit-scrollbar{width:6px}
+  .quad::-webkit-scrollbar-thumb{background:var(--grid);border-radius:3px}
+  /* Reclaim vertical space so all four quadrants are reachable without
+     scrolling the page itself. */
+  .hero{min-height:0;margin:8px 0 10px}
+  .hero h1{font-size:24px}
+  .hero .sub{font-size:12.5px;margin-top:3px}
+  .tiles{margin:0 -4px 10px}
+  .tile{padding:9px 12px}
+  .val{font-size:22px}
+}
+
+/* ---- live stream buttons ---- */
+.streams{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px}
+.stream{display:inline-flex;align-items:center;gap:6px;text-decoration:none;
+  font-size:11.5px;font-weight:750;letter-spacing:.02em;padding:6px 11px;
+  border-radius:999px;background:var(--surface2);color:var(--ink2);
+  border:1px solid var(--grid)}
+.stream:active{opacity:.6}
+.stream .ldot{width:6px;height:6px;border-radius:50%;background:var(--crit);
+  animation:bp 2.4s ease-in-out infinite}
+
+/* ---- video badge on a news row ---- */
+.vbadge{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.07em;
+  padding:1px 5px;border-radius:3px;background:var(--s1);color:#fff;
+  vertical-align:2px;margin-right:6px}
+
+/* ---- incident rows ---- */
+.irow{display:block;text-decoration:none;color:inherit;padding:9px 0;
+  border-bottom:1px solid rgba(255,255,255,.07)}
+.irow:last-child{border-bottom:0}
+.irow:active{opacity:.6}
+.iroad{font-size:13.5px;font-weight:750}
+.idesc{font-size:12.5px;color:var(--ink2);margin-top:2px}
+.icty{font-size:10.5px;color:var(--muted);font-weight:700;letter-spacing:.04em}
+.idelay{float:right;font-size:12.5px;font-weight:800;font-variant-numeric:tabular-nums}
+.iclosed{color:var(--crit)}
+
 @media (prefers-reduced-motion: reduce){
   /* Motion is kept on purpose. Only large positional movement is softened. */
   .car{animation-name:fadeonly} .sunrise{animation-name:none}
@@ -352,7 +399,9 @@ function hero(d) {
         h14 v-28 h11 v28 h18 v-20 h13 v20 H400 v34 Z"/></g>
     </svg>
     <h1>${esc(d.date_label || '')}</h1>
-    <div class="sub">${d.is_weekend ? 'Weekend · no commute' : 'Home → Jackson Memorial · departure 5:45 AM'}</div>
+    <div class="sub">${d.commute?.route_shown
+      ? esc(d.commute.leg) + ' · departure ' + esc(d.commute.depart_clock)
+      : (d.is_weekend ? 'Weekend · no commute' : 'No drive routed now · traffic across both counties')}</div>
   </div>`;
 }
 
@@ -511,12 +560,16 @@ function weatherCard(d) {
 
 /* ---------------------------------------------------------------- commute */
 function commuteCard(d) {
-  if (d.is_weekend) return '';
   const c = d.commute, cl = d.closures;
-  const stops = [
-    ['Home', 'departure 5:45'], ['I-75 / 826', 'merge'],
+  const shown = !!c?.route_shown;
+  const dir = c?.direction || 'outbound';
+  const base = [
+    ['Home', 'Miramar'], ['I-75 / 826', 'merge'],
     ['Okeechobee', 'at the Palmetto'], ['Medley', 'no bypass — watch this one'],
     ['36th St', 'airport curve'], ['Jackson', 'NW 12th Ave']];
+  const stops = (dir === 'return' ? base.slice().reverse() : base.slice())
+    .map(x => x.slice());
+  stops[0][1] = 'departure ' + (c?.depart_clock || '5:45 AM');
 
   const route = `<svg class="viz" viewBox="0 0 360 344" style="max-width:420px" role="img"
       aria-label="Six route checkpoints from home to Jackson Memorial">
@@ -541,17 +594,18 @@ function commuteCard(d) {
     }).join('')}
   </svg>`;
 
-  let body = route;
+  let body = shown ? route : '';
 
-  if (c?.ok) {
+  if (c?.ok && shown) {
     const delayed = c.delay_minutes >= 5;
     body += `<div style="margin:13px 0 4px">
       <span class="pill ${delayed ? 'warn' : 'good'}">${delayed ? c.delay_minutes + ' min delay' : 'No delay'}</span>
-      <span class="meta" style="margin-left:9px">live traffic · departure ${esc((c.depart_at || '').slice(11, 16))}</span>
+      <span class="meta" style="margin-left:9px">live traffic · ${
+        c.depart_at === 'now' ? 'leaving now' : 'departure ' + esc(c.depart_clock || '')}</span>
     </div>
     <table class="atbl">
       <tr><th>Option</th><th>Time</th><th>Miles</th><th>Toll</th></tr>
-      <tr><td><b>Your route</b> · I-75 → 826 → Okeechobee</td>
+      <tr><td><b>Your route</b> · ${esc(c.leg || '')}</td>
           <td>${num(c.minutes, ' min')}</td><td>${num(c.miles, '', 1)}</td><td>Free</td></tr>
       ${(c.alternates || []).map(a => `<tr class="dim"><td>Alternate${a.saves > 0 ? ' · saves ' + a.saves : ''}</td>
         <td>${num(a.minutes, ' min')}</td><td>${num(a.miles, '', 1)}</td>
@@ -562,15 +616,38 @@ function commuteCard(d) {
         ? `<b>${c.alternates_worth_taking.length} alternate saves more than 10 minutes.</b> Tolled — your call.`
         : 'No alternate clears the 10-minute bar. Nothing worth taking.'}</div>`;
 
-    if (c.incidents?.length) {
-      body += `<ul style="margin-top:13px">` + c.incidents.slice(0, 5).map(i =>
-        `<li><b>${esc((i.roads || []).join(', ') || 'Corridor')}</b> — ${esc(i.description || 'incident')}${
-          i.delay_s ? ` · ${Math.round(i.delay_s / 60)} min` : ''}</li>`).join('') + `</ul>`;
-    }
+  } else if (c?.ok && !shown) {
+    body += `<div class="meta">No drive routed right now. Your two runs are
+      <b>5:45 AM</b> out to Jackson and <b>3:30 PM</b> back home, weekdays — the route and its
+      alternates appear inside those windows. Below is what traffic is doing across both
+      counties regardless.</div>`;
   } else {
     body += `<div class="err" style="margin-top:13px">Live routing unavailable: ${esc(c?.error || 'unknown')}.
-      No distance or time shown — the route is 19.9 miles as measured, but this card will not
-      print a travel time it did not just measure.</div>`;
+      No distance or time shown — this card will not print a travel time it did not just measure.</div>`;
+  }
+
+  if (c?.ok && c.incidents?.length) {
+    const shown = c.incidents.slice(0, 12);
+    body += `<div style="margin-top:15px;padding-top:14px;border-top:1px solid rgba(255,255,255,.09)">
+      <div class="wxk" style="width:auto;margin-bottom:4px">Traffic · ${esc(c.coverage || 'area')}</div>
+      <div class="meta" style="margin-bottom:9px">${c.incident_count} incident${
+        c.incident_count === 1 ? '' : 's'}${
+        c.major_count ? ` · <b>${c.major_count} major</b>` : ''} · worst first${
+        c.incident_count > shown.length ? ` · showing ${shown.length}` : ''}
+        · <a href="https://www.google.com/maps/@25.85,-80.25,10z/data=!5m1!1e1"
+             target="_blank" rel="noopener" style="color:var(--s1)">live map</a></div>`
+      + shown.map(i => {
+        const roads = (i.roads || []).join(', ');
+        const closed = i.magnitude === 4;
+        const q = encodeURIComponent((roads || i.description || '') + ' ' + (i.county || '') + ' Florida');
+        return `<a class="irow" href="https://www.google.com/maps/search/?api=1&query=${q}"
+            target="_blank" rel="noopener">
+          <span class="idelay ${closed ? 'iclosed' : ''}">${
+            closed ? 'CLOSED' : (i.delay_s ? Math.round(i.delay_s / 60) + ' min' : '—')}</span>
+          <div class="iroad">${esc(roads || 'Local road')}</div>
+          <div class="idesc">${esc(i.description || 'Incident')}</div>
+          <div class="icty">${esc(i.county || '')}</div></a>`;
+      }).join('') + `</div>`;
   }
 
   if (cl?.ok && (cl.closures?.length || cl.fl511_local?.length)) {
@@ -581,8 +658,10 @@ function commuteCard(d) {
       + `</ul></div>`;
   }
 
-  return card('commute', c?.ok && c.delay_minutes >= 5 ? 'warn' : 'good',
-    'Commute · toll-free', body, 'FDOT', 'https://www.fdotmiamidade.com/laneclosures');
+  return card('commute', c?.ok && shown && c.delay_minutes >= 5 ? 'warn' : 'good',
+    shown ? 'Commute · ' + (dir === 'return' ? 'Jackson → Home' : 'Home → Jackson')
+          : 'Traffic · Miami-Dade & Broward',
+    body, 'FDOT', 'https://www.fdotmiamidade.com/laneclosures');
 }
 
 /* ---------------------------------------------------------------- tropics */
@@ -667,13 +746,25 @@ function fuelCard(d) {
 }
 
 /* ---------------------------------------------------------------- news */
-function newsCard(id, dotClass, title, items, srcLabel, srcUrl) {
+function streamBar(list) {
+  if (!list?.length) return '';
+  return `<div class="streams">` + list.map(s =>
+    `<a class="stream" href="${esc(s.url)}" target="_blank" rel="noopener">
+      ${s.live ? '<span class="ldot"></span>' : ''}${esc(s.name)}</a>`).join('') + `</div>`;
+}
+
+function newsCard(id, dotClass, title, items, srcLabel, srcUrl, streams) {
+  const bar = streamBar(streams);
   if (!items?.length) return card(id, dotClass, title,
-    `<div class="meta">Nothing returned from this feed on the last refresh.</div>`, srcLabel, srcUrl);
-  return card(id, dotClass, title, items.slice(0, 7).map(i =>
-    `<a class="nrow" href="${esc(i.url || '#')}" target="_blank" rel="noopener">
-      <div class="ntitle">${esc(i.title || '')}</div>
-      <div class="nmeta">${esc(i.published || '')}</div></a>`).join(''), srcLabel, srcUrl);
+    bar + `<div class="meta">Nothing returned from this feed on the last refresh.</div>`,
+    srcLabel, srcUrl);
+  return card(id, dotClass, title, bar + items.slice(0, 7).map(i => {
+    const vid = i.media_type === 'video';
+    return `<a class="nrow" href="${esc(i.url || '#')}" target="_blank" rel="noopener">
+      <div class="ntitle">${vid ? '<span class="vbadge">VIDEO</span>' : ''}${esc(i.title || '')}</div>
+      <div class="nmeta">${esc(i.published || '')}${
+        vid ? ' · has video' : ''}</div></a>`;
+  }).join(''), srcLabel, srcUrl);
 }
 
 /* ---------------------------------------------------------------- render */
@@ -688,23 +779,30 @@ function render(d) {
     <div class="tile"><div class="lab">Air quality</div>
       <div class="val">${num(air?.aqi)}</div>
       <div class="note">${esc(air?.category || (air?.ok ? '' : 'not sourced'))}</div></div>
-    ${d.is_weekend ? '' : `<div class="tile"><div class="lab">Drive</div>
-      <div class="val">${c?.ok ? num(c.minutes, ' min') : NS}</div>
-      <div class="note">${c?.ok ? num(c.miles, ' mi', 1) : 'routing down'}</div></div>`}
+    ${c?.route_shown
+      ? `<div class="tile"><div class="lab">Drive · ${esc(c.depart_clock || '')}</div>
+          <div class="val">${c.ok ? num(c.minutes, ' min') : NS}</div>
+          <div class="note">${c.ok ? num(c.miles, ' mi', 1) : 'routing down'}</div></div>`
+      : `<div class="tile"><div class="lab">Traffic</div>
+          <div class="val">${c?.ok ? num(c.incident_count) : NS}</div>
+          <div class="note">${c?.ok ? (c.major_count || 0) + ' major · both counties' : 'not sourced'}</div></div>`}
   </div>`);
 
-  parts.push(weatherCard(d));
-  parts.push(commuteCard(d));
-  parts.push(tropicsCard(d));
-  parts.push(fuelCard(d));
-  parts.push(newsCard('fires', 'crit', 'Wildfires & smoke', d.fires?.items,
-    'Local 10', 'https://www.local10.com/news/florida/'));
-  parts.push(newsCard('local', 'warn', 'Local · WPLG & WSVN', d.news?.local,
-    'WPLG', 'https://www.local10.com/news/local/'));
-  parts.push(newsCard('colombia', 'crit', 'Colombia · El Tiempo', d.news?.colombia,
-    'El Tiempo', 'https://www.eltiempo.com/colombia'));
-  parts.push(newsCard('world', 'crit', 'World & war', d.news?.world,
-    'Kyiv Ind.', 'https://kyivindependent.com/'));
+  const st = d.news?.streams || {};
+  parts.push(`<div class="quads">
+    <div class="quad">${weatherCard(d)}</div>
+    <div class="quad">${commuteCard(d)}</div>
+    <div class="quad">${tropicsCard(d)}${fuelCard(d)}${
+      newsCard('fires', 'crit', 'Wildfires & smoke', d.fires?.items,
+        'Local 10', 'https://www.local10.com/news/florida/')}</div>
+    <div class="quad">${
+      newsCard('local', 'warn', 'Local · WPLG & WSVN', d.news?.local,
+        'WPLG', 'https://www.local10.com/news/local/', st.local)}${
+      newsCard('colombia', 'crit', 'Colombia · El Tiempo', d.news?.colombia,
+        'El Tiempo', 'https://www.eltiempo.com/colombia', st.colombia)}${
+      newsCard('world', 'crit', 'World & war', d.news?.world,
+        'Kyiv Ind.', 'https://kyivindependent.com/', st.world)}</div>
+  </div>`);
 
   const failed = d.failures || [];
   parts.push(`<footer>
