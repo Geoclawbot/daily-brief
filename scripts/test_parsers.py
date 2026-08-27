@@ -122,8 +122,20 @@ check("2,291 s converts to 38 min", c["minutes"] == 38, str(c.get("minutes")))
 check("alternates captured", len(c["alternates"]) == 2)
 check("best toll-free captured", c["best_free"]["minutes"] == 34)
 check("best toll-free saves is computed", c["best_free"]["saves"] == 4)
-check("live players carry a verified channel id",
-      [x for x in F.STREAMS["local"] if x.get("yt")][0]["yt"].startswith("UC"))
+# ---- Live TV channel list -------------------------------------------
+check("every channel has a name and a region",
+      all(c.get("name") and c.get("region") for c in F.LIVE_TV))
+check("every channel is playable or linkable",
+      all(c.get("yt") or c.get("url") for c in F.LIVE_TV))
+check("channel ids look like real youtube ids",
+      all(c["yt"].startswith("UC") and len(c["yt"]) == 24
+          for c in F.LIVE_TV if c.get("yt")))
+check("at least one channel streams around the clock",
+      any(c.get("always") and c.get("yt") for c in F.LIVE_TV))
+check("a link-only channel explains why",
+      all(c.get("note") for c in F.LIVE_TV if not c.get("yt")))
+check("no channel is both a player and a bare link",
+      not [c for c in F.LIVE_TV if c.get("yt") and c.get("url")])
 check("only >10 min savings surface",
       c["alternates_worth_taking"] == [], str(c["alternates_worth_taking"]))
 check("incident captured with road", c["incident_count"] == 1 and "US-27" in c["incidents"][0]["roads"])

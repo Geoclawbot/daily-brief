@@ -50,10 +50,38 @@ COMMUTE_LEGS = [
 
 # Live streams for the news sections. Static on purpose: these are station
 # landing pages, not scraped URLs that can rot without anyone noticing.
+# Channels for the Live TV card, with channel IDs verified against each
+# channel's own page rather than taken from a search result.
+#
+# always=True means a genuine round-the-clock stream — those play whenever you
+# tap them. always=False means the channel only goes live for its newscasts,
+# so most of the day YouTube will show its own "offline" card. That is the
+# honest state, not a bug, and the card says so.
+#
+# CNN has no free live stream on YouTube at all — its live TV sits behind a
+# cable login — so it is a link, not a player. Better an outbound link than a
+# black rectangle pretending to be a feed.
+LIVE_TV = [
+    {"name": "Al Jazeera English", "region": "World", "always": True,
+     "yt": "UCNye-wNBqNL5ZzHSJj3l8Bg"},
+    {"name": "Bloomberg TV", "region": "World", "always": True,
+     "yt": "UCIALMKvObZNtJ6AmdCLP7Lg"},
+    {"name": "El Tiempo", "region": "Colombia", "always": True,
+     "yt": "UCe5-b0fCK3eQCpwS6MT0aNw"},
+    {"name": "WPLG Local 10", "region": "Local", "always": False,
+     "yt": "UCgVZ0mrM3liHNhRYC5Mchgg"},
+    {"name": "WSVN 7News", "region": "Local", "always": False,
+     "yt": "UC0IyiKpx7Oirfbqelu3WFJA"},
+    {"name": "Kyiv Independent", "region": "World", "always": False,
+     "yt": "UCGAC5yzlYgjKoJABDZ7zEyw"},
+    {"name": "CNN", "region": "World", "always": False,
+     "url": "https://www.cnn.com/live-tv",
+     "note": "no free live stream on YouTube"},
+]
+
 STREAMS = {
     "local": [
-        {"name": "WPLG Local 10", "url": "https://www.local10.com/live/", "live": True,
-         "yt": "UCgVZ0mrM3liHNhRYC5Mchgg"},
+        {"name": "WPLG Local 10", "url": "https://www.local10.com/live/", "live": True},
         {"name": "WPLG on YouTube", "url": "https://www.youtube.com/@WPLGLocal10/streams", "live": True},
         {"name": "WSVN 7News", "url": "https://wsvn.com/on-air-live-stream/", "live": True},
     ],
@@ -61,8 +89,7 @@ STREAMS = {
         {"name": "El Tiempo video", "url": "https://www.eltiempo.com/videos", "live": False},
     ],
     "world": [
-        {"name": "Kyiv Independent", "url": "https://www.youtube.com/@kyivindependent/streams",
-         "live": True, "yt": "UCGAC5yzlYgjKoJABDZ7zEyw"},
+        {"name": "Kyiv Independent", "url": "https://www.youtube.com/@kyivindependent/streams", "live": True},
         {"name": "NPR program stream", "url": "https://www.npr.org/about-npr/472557877/npr-program-stream", "live": True},
     ],
 }
@@ -597,7 +624,7 @@ def fetch_news():
         out[section] = items
     ok = any(v for v in out.values())
     return block("RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-                 ok=ok, streams=STREAMS, **out)
+                 ok=ok, streams=STREAMS, live_tv=LIVE_TV, **out)
 
 
 # --------------------------------------------------------------------------
