@@ -2,9 +2,16 @@ name: Refresh brief data
 
 on:
   schedule:
-    # Every 20 minutes. GitHub cron is UTC and can run a few minutes late —
-    # that is fine, the app shows how old the data actually is.
-    - cron: "*/20 * * * *"
+    # Times are UTC. Miami is UTC-4 in summer, UTC-5 in winter, so these
+    # windows drift an hour when the clocks change — widen them if it matters.
+    #
+    # Concentrated rather than constant. GitHub runs scheduled workflows at
+    # low priority on free public repos and drops high-frequency ones when it
+    # is busy: a plain */20 was firing roughly once a night. Asking for fewer
+    # runs, in the hours the brief is actually read, gets honoured far more.
+    - cron: "*/15 9-13 * * 1-5"    # 05:00-09:59 ET weekdays — the run to Jackson
+    - cron: "*/15 18-23 * * 1-5"   # 14:00-19:59 ET weekdays — the drive home
+    - cron: "0 * * * *"            # hourly baseline, every day, all day
   workflow_dispatch:        # lets you hit "Run workflow" by hand
   push:
     branches: [main]
