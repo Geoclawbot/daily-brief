@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-28T15:30:56-04:00",
- "generated_at_utc": "2026-08-28T19:30:56+00:00",
+ "generated_at": "2026-08-28T15:45:57-04:00",
+ "generated_at_utc": "2026-08-28T19:45:57+00:00",
  "weekday": "Friday",
  "date_label": "Friday, August 28",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-28T15:30:56-04:00",
+  "fetched_at": "2026-08-28T15:45:57-04:00",
   "curve": [
    {
     "time": "2026-08-28T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 92.2,
-   "feels": 107.5,
-   "humidity": 61,
-   "wind_mph": 0.5,
-   "wind_dir": 153,
-   "observed_at": "2026-08-28T15:30"
+   "temp": 92.5,
+   "feels": 109.5,
+   "humidity": 66,
+   "wind_mph": 0.2,
+   "wind_dir": 90,
+   "observed_at": "2026-08-28T15:45"
   },
   "today": {
    "high": 93.5,
@@ -166,136 +166,160 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-28T15:30:56-04:00",
+  "fetched_at": "2026-08-28T15:45:57-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-08-28T15:30:58-04:00",
-  "aqi": 55,
-  "category": "Moderate",
-  "pm25": 7.9,
-  "pm10": 10.4,
-  "observed": "2026-08-28T15:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-08-28T15:45:58-04:00",
+  "aqi": 36,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-08-28 14:00 EST",
+  "forecast": [
+   {
+    "date": "2026-08-28",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-08-28",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-08-29",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-08-29",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-08-28T15:31:02-04:00",
+  "fetched_at": "2026-08-28T15:46:01-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 20.9,
-  "minutes": 70,
-  "delay_minutes": 4,
+  "miles": 21.9,
+  "minutes": 73,
+  "delay_minutes": 3,
   "toll_free": true,
   "alternates": [
    {
     "miles": 25.5,
-    "minutes": 52,
+    "minutes": 55,
     "toll": true,
     "saves": 18
    },
    {
     "miles": 22.6,
-    "minutes": 59,
+    "minutes": 61,
     "toll": true,
-    "saves": 11
+    "saves": 12
    },
    {
-    "miles": 29.0,
-    "minutes": 60,
-    "toll": true,
-    "saves": 10
-   },
-   {
-    "miles": 21.7,
+    "miles": 28.7,
     "minutes": 69,
     "toll": true,
-    "saves": 1
+    "saves": 4
+   },
+   {
+    "miles": 22.7,
+    "minutes": 73,
+    "toll": true,
+    "saves": 0
    }
   ],
   "alternates_worth_taking": [
    {
     "miles": 25.5,
-    "minutes": 52,
+    "minutes": 55,
     "toll": true,
     "saves": 18
    },
    {
     "miles": 22.6,
-    "minutes": 59,
+    "minutes": 61,
     "toll": true,
-    "saves": 11
+    "saves": 12
    }
   ],
   "free_alternates": [
    {
-    "miles": 20.9,
-    "minutes": 70,
-    "delay_minutes": 4,
+    "miles": 21.9,
+    "minutes": 73,
+    "delay_minutes": 1,
     "saves": 0
    },
    {
     "miles": 23.4,
-    "minutes": 77,
-    "delay_minutes": 0
+    "minutes": 79,
+    "delay_minutes": 2
    },
    {
     "miles": 23.3,
-    "minutes": 84,
+    "minutes": 85,
     "delay_minutes": 2
    },
    {
-    "miles": 22.1,
-    "minutes": 80,
-    "delay_minutes": 2
+    "miles": 22.4,
+    "minutes": 82,
+    "delay_minutes": 0
    }
   ],
   "best_free": {
-   "miles": 20.9,
-   "minutes": 70,
-   "delay_minutes": 4,
+   "miles": 21.9,
+   "minutes": 73,
+   "delay_minutes": 1,
    "saves": 0
   },
   "incidents": [
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 1088,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-28T17:30:30Z"
-   },
    {
     "county": "Miami-Dade",
     "roads": [
      "US-1 N",
      "I-95 N"
     ],
-    "delay_s": 1009,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 1273,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-08-28T18:44:46Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-823"
+     "FL-821 S",
+     "Florida's Tpke S"
     ],
-    "delay_s": 976,
+    "delay_s": 1013,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-28T19:21:53Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 980,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-28T18:08:00Z"
+    "start": "2026-08-28T19:12:24Z"
    },
    {
     "county": "Broward",
@@ -355,7 +379,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-08-24T12:49:01Z"
+    "start": "2026-08-24T12:19:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -365,69 +389,37 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-08-24T12:19:30Z"
+    "start": "2026-08-24T12:49:01Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-823"
+    ],
+    "delay_s": 885,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T18:08:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-986"
     ],
-    "delay_s": 854,
+    "delay_s": 875,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T18:29:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-986"
+    ],
+    "delay_s": 833,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-28T18:36:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-972"
-    ],
-    "delay_s": 798,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-28T18:11:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "County Hwy-913",
-     "FL-973"
-    ],
-    "delay_s": 764,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-28T19:20:03Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 759,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-28T18:03:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 727,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-28T17:43:09Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 691,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-28T18:34:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -436,7 +428,7 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 619,
+    "delay_s": 788,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-28T15:56:30Z"
@@ -444,110 +436,20 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 613,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-28T19:21:53Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 600,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-28T17:42:41Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-932"
-    ],
-    "delay_s": 590,
+    "delay_s": 722,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-28T18:39:42Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-922"
-    ],
-    "delay_s": 587,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-28T19:16:58Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 N"
-    ],
-    "delay_s": 580,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-28T19:25:10Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 546,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-28T17:06:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 495,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-28T19:06:29Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 494,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-28T19:05:57Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 490,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-28T18:15:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": 482,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-28T19:14:10Z"
+    "start": "2026-08-28T18:22:04Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-860"
     ],
-    "delay_s": 470,
+    "delay_s": 705,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-28T19:11:21Z"
@@ -555,33 +457,157 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-916"
+     "FL-932"
     ],
-    "delay_s": 469,
+    "delay_s": 672,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-28T18:28:00Z"
+    "start": "2026-08-28T18:39:42Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 626,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-28T18:15:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 625,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-28T17:06:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-817"
+     "FL-836 W"
     ],
-    "delay_s": 447,
+    "delay_s": 621,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-28T17:42:41Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 610,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-28T19:06:29Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 N"
+    ],
+    "delay_s": 609,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-28T19:25:10Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-932"
+    ],
+    "delay_s": 606,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-28T18:50:14Z"
+    "start": "2026-08-28T18:05:01Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 N",
+     "Florida's Tpke N"
+    ],
+    "delay_s": 605,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T17:30:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 W",
+     "FL-A1A S"
+    ],
+    "delay_s": 602,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T18:27:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-922"
+    ],
+    "delay_s": 589,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T19:16:58Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-A1A"
+    ],
+    "delay_s": 558,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T19:13:38Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-992"
+    ],
+    "delay_s": 536,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T18:54:25Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 521,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T18:30:39Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Don Shula Expy S",
+     "FL-874 S",
+     "S Dade Expy S"
+    ],
+    "delay_s": 510,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-28T17:41:30Z"
    }
   ],
-  "incident_count": 708,
-  "named_count": 284,
-  "major_count": 19,
+  "incident_count": 679,
+  "named_count": 270,
+  "major_count": 25,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-28T15:31:03-04:00",
+  "fetched_at": "2026-08-28T15:46:02-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -628,7 +654,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-28T15:31:03-04:00",
+  "fetched_at": "2026-08-28T15:46:03-04:00",
   "issued": "200 PM EDT Fri Aug 28 2026",
   "areas": [],
   "raw": "en Español\n\n948 \nABNT20 KNHC 281746\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Fri Aug 28 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center has issued the last advisory on the \nremnants of Dolly, located over the central tropical Atlantic.\n\nTropical cyclone formation is not expected during the next 7 days. \n\n$$\nForecaster Blake"
@@ -636,7 +662,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-28T15:31:03-04:00",
+  "fetched_at": "2026-08-28T15:46:03-04:00",
   "florida": "$3.9488",
   "national": "$4.0898",
   "diesel": "$5.4920",
@@ -645,7 +671,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-28T15:31:05-04:00",
+  "fetched_at": "2026-08-28T15:46:05-04:00",
   "streams": {
    "local": [
     {
@@ -884,6 +910,14 @@
   ],
   "colombia": [
    {
+    "title": "Medellín entra en racionamiento nocturno de agua en más de 10 barrios: estas son las zonas afectadas y los horarios de corte",
+    "url": "https://www.eltiempo.com/colombia/medellin/medellin-entra-en-racionamiento-nocturno-de-agua-en-mas-de-10-barrios-estas-son-las-zonas-afectadas-y-los-horarios-de-corte-3581905",
+    "published": "2026-08-28T14:18:58-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/28/6a91dce369f37.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Zozobra por la violencia en Soledad (Atlántico): sicarios interrumpieron con disparos una fiesta infantil y dejaron un muerto y dos heridos",
     "url": "https://www.eltiempo.com/colombia/barranquilla/zozobra-por-la-violencia-en-soledad-atlantico-sicarios-interrumpieron-con-disparos-una-fiesta-infantil-y-dejaron-un-muerto-y-dos-heridos-3581900",
     "published": "2026-08-28T14:02:55-05:00",
@@ -938,17 +972,17 @@
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2024/08/15/66be96b470346.r_d.772-735-0.jpeg",
     "media_type": "image"
-   },
-   {
-    "title": "Aerocivil anuncia que impondrá medidas y duras sanciones contra el dueño de un dron de fumigación en el que subieron a una persona a volar en el Meta",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/aerocivil-anuncia-que-impondra-medidas-y-duras-sanciones-contra-el-dueno-de-un-dron-de-fumigacion-en-el-que-subieron-a-una-persona-a-volar-en-el-meta-3581842",
-    "published": "2026-08-28T11:56:37-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/28/6a91bc6addd5e.jpeg",
-    "media_type": "image"
    }
   ],
   "world": [
+   {
+    "title": "After 6 months of war, Iran's battered regime remains entrenched",
+    "url": "https://www.npr.org/2026/08/28/nx-s1-5947854/us-iran-war",
+    "published": "Fri, 28 Aug 2026 15:35:24 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
    {
     "title": "Experts warn more flooding might hit Nepal. And, Fed chairman to give key address",
     "url": "https://www.npr.org/2026/08/28/g-s1-140866/up-first-newsletter-nepal-tibet-floods-kevin-warsh-kennedy-center",
@@ -1004,21 +1038,13 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "U.S., South Korea and Japan to hold drill as North Korea ramps up pressure on U.S.",
-    "url": "https://www.npr.org/2026/08/28/g-s1-140849/us-south-korea-japan-drill-north-korea",
-    "published": "Fri, 28 Aug 2026 01:46:43 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-28T15:31:05-04:00",
+  "fetched_at": "2026-08-28T15:46:05-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1026,8 +1052,28 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-28T15:31:06-04:00",
+  "fetched_at": "2026-08-28T15:46:05-04:00",
   "countries": [
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "Medellín entra en racionamiento nocturno de agua en más de 10 barrios: estas son las zonas afectadas y los horarios de corte",
+      "url": "https://www.eltiempo.com/colombia/medellin/medellin-entra-en-racionamiento-nocturno-de-agua-en-mas-de-10-barrios-estas-son-las-zonas-afectadas-y-los-horarios-de-corte-3581905",
+      "published": "2026-08-28T14:18:58-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "Los negocios fraudulentos por los que le extinguieron lujosas mansiones con playa artificial y carros deportivos en Medellín a famoso influencer",
+      "url": "https://www.eltiempo.com/colombia/medellin/los-negocios-fraudulentos-por-los-que-le-extinguieron-lujosas-mansiones-con-playa-artificial-y-carros-deportivos-en-medellin-a-famoso-influencer-3581847",
+      "published": "2026-08-28T12:43:37-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 2,
+    "issue": "Medellín entra en racionamiento nocturno de agua en más de 10 barrios: estas son las zonas afectadas y los horarios de corte"
+   },
    {
     "iso": "KEN",
     "name": "Kenya",
@@ -1049,46 +1095,18 @@
     "issue": "Chief says heist at home of Kenya crash victims exposed crime ring: ‘More people are going to jail’"
    },
    {
-    "iso": "COL",
-    "name": "Colombia",
+    "iso": "IRN",
+    "name": "Iran",
     "stories": [
      {
-      "title": "Los negocios fraudulentos por los que le extinguieron lujosas mansiones con playa artificial y carros deportivos en Medellín a famoso influencer",
-      "url": "https://www.eltiempo.com/colombia/medellin/los-negocios-fraudulentos-por-los-que-le-extinguieron-lujosas-mansiones-con-playa-artificial-y-carros-deportivos-en-medellin-a-famoso-influencer-3581847",
-      "published": "2026-08-28T12:43:37-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 1,
-    "issue": "Los negocios fraudulentos por los que le extinguieron lujosas mansiones con playa artificial y carros deportivos en Medellín a famoso influencer"
-   },
-   {
-    "iso": "JPN",
-    "name": "Japan",
-    "stories": [
-     {
-      "title": "U.S., South Korea and Japan to hold drill as North Korea ramps up pressure on U.S.",
-      "url": "https://www.npr.org/2026/08/28/g-s1-140849/us-south-korea-japan-drill-north-korea",
-      "published": "Fri, 28 Aug 2026 01:46:43 -0400",
+      "title": "After 6 months of war, Iran's battered regime remains entrenched",
+      "url": "https://www.npr.org/2026/08/28/nx-s1-5947854/us-iran-war",
+      "published": "Fri, 28 Aug 2026 15:35:24 -0400",
       "section": "world"
      }
     ],
     "count": 1,
-    "issue": "U.S., South Korea and Japan to hold drill as North Korea ramps up pressure on U.S."
-   },
-   {
-    "iso": "PRK",
-    "name": "North Korea",
-    "stories": [
-     {
-      "title": "U.S., South Korea and Japan to hold drill as North Korea ramps up pressure on U.S.",
-      "url": "https://www.npr.org/2026/08/28/g-s1-140849/us-south-korea-japan-drill-north-korea",
-      "published": "Fri, 28 Aug 2026 01:46:43 -0400",
-      "section": "world"
-     }
-    ],
-    "count": 1,
-    "issue": "U.S., South Korea and Japan to hold drill as North Korea ramps up pressure on U.S."
+    "issue": "After 6 months of war, Iran's battered regime remains entrenched"
    },
    {
     "iso": "NOR",
@@ -1103,24 +1121,10 @@
     ],
     "count": 1,
     "issue": "Norway's King Harald V dies at 89 and his son becomes King Haakon VIII"
-   },
-   {
-    "iso": "KOR",
-    "name": "South Korea",
-    "stories": [
-     {
-      "title": "U.S., South Korea and Japan to hold drill as North Korea ramps up pressure on U.S.",
-      "url": "https://www.npr.org/2026/08/28/g-s1-140849/us-south-korea-japan-drill-north-korea",
-      "published": "Fri, 28 Aug 2026 01:46:43 -0400",
-      "section": "world"
-     }
-    ],
-    "count": 1,
-    "issue": "U.S., South Korea and Japan to hold drill as North Korea ramps up pressure on U.S."
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 6,
+  "countries_matched": 4,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
