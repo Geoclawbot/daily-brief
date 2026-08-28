@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-28T11:55:02-04:00",
- "generated_at_utc": "2026-08-28T15:55:02+00:00",
+ "generated_at": "2026-08-28T12:00:58-04:00",
+ "generated_at_utc": "2026-08-28T16:00:58+00:00",
  "weekday": "Friday",
  "date_label": "Friday, August 28",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-28T11:55:02-04:00",
+  "fetched_at": "2026-08-28T12:01:01-04:00",
   "curve": [
    {
     "time": "2026-08-28T05:00",
@@ -71,7 +71,7 @@
     "temp": 88.2,
     "feels": 99.5,
     "humidity": 64,
-    "pop": 8
+    "pop": 9
    },
    {
     "time": "2026-08-28T13:00",
@@ -87,7 +87,7 @@
     "temp": 90.3,
     "feels": 100.6,
     "humidity": 59,
-    "pop": 10
+    "pop": 9
    },
    {
     "time": "2026-08-28T15:00",
@@ -103,7 +103,7 @@
     "temp": 92.2,
     "feels": 98.2,
     "humidity": 51,
-    "pop": 16
+    "pop": 15
    },
    {
     "time": "2026-08-28T17:00",
@@ -111,7 +111,7 @@
     "temp": 92.2,
     "feels": 97.6,
     "humidity": 48,
-    "pop": 15
+    "pop": 10
    },
    {
     "time": "2026-08-28T18:00",
@@ -119,7 +119,7 @@
     "temp": 91.1,
     "feels": 96.2,
     "humidity": 50,
-    "pop": 9
+    "pop": 8
    },
    {
     "time": "2026-08-28T19:00",
@@ -127,7 +127,7 @@
     "temp": 88.9,
     "feels": 94.5,
     "humidity": 54,
-    "pop": 6
+    "pop": 8
    },
    {
     "time": "2026-08-28T20:00",
@@ -135,7 +135,7 @@
     "temp": 83.5,
     "feels": 91.6,
     "humidity": 74,
-    "pop": 5
+    "pop": 6
    },
    {
     "time": "2026-08-28T21:00",
@@ -147,18 +147,18 @@
    }
   ],
   "current": {
-   "temp": 87.8,
-   "feels": 98.4,
-   "humidity": 65,
-   "wind_mph": 7.4,
-   "wind_dir": 131,
-   "observed_at": "2026-08-28T11:45"
+   "temp": 88.2,
+   "feels": 100.0,
+   "humidity": 64,
+   "wind_mph": 5.5,
+   "wind_dir": 137,
+   "observed_at": "2026-08-28T12:00"
   },
   "today": {
    "high": 92.7,
    "low": 77.9,
    "feels_max": 102.2,
-   "pop_max": 16
+   "pop_max": 15
   },
   "peak_feels": 102.2,
   "peak_hour": 15
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-28T11:55:03-04:00",
+  "fetched_at": "2026-08-28T12:01:01-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-28T11:55:04-04:00",
+  "fetched_at": "2026-08-28T12:01:02-04:00",
   "aqi": 55,
   "category": "Moderate",
   "pollutant": "PM2.5",
@@ -208,11 +208,73 @@
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-08-28T11:55:04-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-08-28T12:01:05-04:00",
+  "route_shown": true,
+  "leg": "Jackson Memorial → Home",
+  "direction": "return",
+  "depart_clock": "3:30 PM",
+  "depart_at": "2026-08-28T15:30:00-04:00",
+  "miles": 20.6,
+  "minutes": 63,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 22.6,
+    "minutes": 56,
+    "toll": true,
+    "saves": 7
+   },
+   {
+    "miles": 20.8,
+    "minutes": 61,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 28.6,
+    "minutes": 61,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 26.1,
+    "minutes": 64,
+    "toll": true,
+    "saves": -1
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 62,
+    "delay_minutes": 0,
+    "saves": 1
+   },
+   {
+    "miles": 23.4,
+    "minutes": 71,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.6,
+    "minutes": 76,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.5,
+    "minutes": 72,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 62,
+   "delay_minutes": 0,
+   "saves": 1
+  },
   "incidents": [
    {
     "county": "Broward",
@@ -287,40 +349,19 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S",
-     "US-41 N"
+     "FL-932"
     ],
-    "delay_s": 361,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-28T15:15:38Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-94"
-    ],
-    "delay_s": 352,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-28T10:57:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 339,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-28T13:40:00Z"
+    "delay_s": 353,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-28T15:48:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 293,
+    "delay_s": 340,
     "magnitude": 3,
     "description": "Stationary traffic; Roadworks",
     "start": "2026-08-28T15:51:30Z"
@@ -330,7 +371,7 @@
     "roads": [
      "FL-836 E"
     ],
-    "delay_s": 280,
+    "delay_s": 297,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-08-28T11:43:30Z"
@@ -338,50 +379,70 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-972"
+     "US-441 N"
     ],
-    "delay_s": 278,
+    "delay_s": 287,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-28T15:42:00Z"
+    "start": "2026-08-28T15:47:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-932"
+     "FL-94"
     ],
-    "delay_s": 277,
-    "magnitude": 1,
-    "description": "Slow traffic",
+    "delay_s": 269,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T10:57:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 259,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T13:40:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 241,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-08-28T15:48:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "FL-826"
     ],
-    "delay_s": 267,
-    "magnitude": 2,
-    "description": "Queuing traffic; Roadworks",
-    "start": "2026-08-28T11:45:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 266,
+    "delay_s": 241,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-28T15:23:30Z"
+    "start": "2026-08-28T15:59:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 239,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-28T15:43:04Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-968"
     ],
-    "delay_s": 240,
+    "delay_s": 239,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-28T15:43:04Z"
@@ -389,19 +450,101 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-948"
+     "I-95 S"
     ],
-    "delay_s": 233,
+    "delay_s": 238,
     "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-28T15:35:00Z"
+    "description": "Queuing traffic; Roadworks",
+    "start": "2026-08-28T11:45:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-985"
+     "FL-934"
     ],
-    "delay_s": 230,
+    "delay_s": 232,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-28T15:54:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-816"
+    ],
+    "delay_s": 220,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T15:57:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 220,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T15:28:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 217,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T15:51:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-990"
+    ],
+    "delay_s": 210,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T15:53:08Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 208,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T15:15:38Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 207,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T15:58:08Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-823"
+    ],
+    "delay_s": 205,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T15:42:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 199,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-28T15:52:30Z"
@@ -410,106 +553,12 @@
     "county": "Miami-Dade",
     "roads": [
      "US-1 N",
-     "US-1 S",
-     "US-41 S",
      "FL-5"
     ],
-    "delay_s": 193,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-28T15:49:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 186,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-28T15:10:36Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-441 N"
-    ],
-    "delay_s": 183,
+    "delay_s": 194,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-28T15:47:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 180,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-28T15:48:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-823"
-    ],
-    "delay_s": 178,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-28T15:42:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": 173,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-28T15:51:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 173,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-28T15:28:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 165,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-28T15:51:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-948"
-    ],
-    "delay_s": 164,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-28T15:49:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-985"
-    ],
-    "delay_s": 154,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-28T15:50:30Z"
+    "start": "2026-08-28T15:55:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -517,21 +566,31 @@
      "Florida's Tpke N",
      "FL-821 N"
     ],
-    "delay_s": 149,
-    "magnitude": 1,
-    "description": "Slow traffic; Roadworks",
+    "delay_s": 193,
+    "magnitude": 2,
+    "description": "Queuing traffic; Roadworks",
     "start": "2026-08-28T13:39:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-986"
+    ],
+    "delay_s": 192,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-28T15:52:30Z"
    }
   ],
-  "incident_count": 348,
-  "named_count": 93,
+  "incident_count": 341,
+  "named_count": 84,
   "major_count": 7,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-28T11:55:05-04:00",
+  "fetched_at": "2026-08-28T12:01:06-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -577,7 +636,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-28T11:55:05-04:00",
+  "fetched_at": "2026-08-28T12:01:06-04:00",
   "issued": "800 AM EDT Fri Aug 28 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 281128\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Fri Aug 28 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Dolly, located over the central tropical Atlantic.\n\nTropical cyclone formation is not expected during the next 7 days. \n\n&&\n\nPublic Advisories on Tropical Storm Dolly are issued under WMO \nheader WTNT34 KNHC and under AWIPS header MIATCPAT4. \nForecast/Advisories on Tropical Storm Dolly are issued under WMO \nheader WTNT24 KNHC and under AWIPS header MIATCMAT4.\n\n$$\nForecaster Kelly"
@@ -585,7 +644,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-28T11:55:05-04:00",
+  "fetched_at": "2026-08-28T12:01:07-04:00",
   "florida": "$3.9488",
   "national": "$4.0898",
   "diesel": "$5.4920",
@@ -594,7 +653,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-28T11:55:07-04:00",
+  "fetched_at": "2026-08-28T12:01:08-04:00",
   "streams": {
    "local": [
     {
@@ -833,6 +892,22 @@
   ],
   "colombia": [
    {
+    "title": "Bebé indígena herido con múltiples impactos de arma de fuego en Chocó fue trasladado en helicóptero para recibir ayuda: esto se sabe",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/bebe-indigena-herido-con-multiples-impactos-de-arma-de-fuego-en-choco-fue-trasladado-en-helicoptero-para-recibir-ayuda-esto-se-sabe-3581790",
+    "published": "2026-08-28T10:46:21-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/28/6a91a92f7489f.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Procuraduría pone la lupa a la financiación de Air-e por $1 billón y alerta por el momento en que fue firmada: esto es lo que revisará",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/procuraduria-pone-la-lupa-a-la-financiacion-de-air-e-por-1-billon-y-alerta-por-el-momento-en-que-fue-firmada-esto-es-lo-que-revisara-3581805",
+    "published": "2026-08-28T10:40:53-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/21/6a885b94deb12.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Caravana de 39 camiones con café nariñense fue escoltada por el Ejército en la vía Panamericana: 'Que la economía de la región no se detenga'",
     "url": "https://www.eltiempo.com/colombia/cali/caravana-de-39-camiones-con-cafe-narinense-fue-escoltada-por-el-ejercito-en-la-via-panamericana-que-la-economia-de-la-region-no-se-detenga-3581801",
     "published": "2026-08-28T10:26:39-05:00",
@@ -878,22 +953,6 @@
     "published": "2026-08-28T06:55:31-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/11/6a7b4eef0af1c.png",
-    "media_type": "image"
-   },
-   {
-    "title": "El poder de cruzar fronteras sin sonido: la emotiva historia de Luisa Santacruz, la primera magíster sorda señante de la UPB",
-    "url": "https://www.eltiempo.com/colombia/medellin/el-poder-de-cruzar-fronteras-sin-sonido-la-emotiva-historia-de-luisa-santacruz-la-primera-magister-sorda-senante-de-la-upb-3581022",
-    "published": "2026-08-28T06:01:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/25/6a8e188aa13f0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Temblor de 3,8 de magnitud en Colombia | Sismo durante la madrugada de este viernes 28 de agosto: epicentro, profundidad y detalles",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-de-3-8-de-magnitud-en-colombia-sismo-durante-la-madrugada-de-este-viernes-28-de-agosto-epicentro-magnitud-y-profundidad-3581725",
-    "published": "2026-08-28T04:50:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/25/6a8e0518f2257.jpeg",
     "media_type": "image"
    }
   ],
@@ -967,7 +1026,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-28T11:55:07-04:00",
+  "fetched_at": "2026-08-28T12:01:09-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -975,7 +1034,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-28T11:55:07-04:00",
+  "fetched_at": "2026-08-28T12:01:09-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -986,15 +1045,9 @@
       "url": "https://www.eltiempo.com/colombia/otras-ciudades/mujer-con-cancer-se-disfrazo-de-habitante-de-calle-para-entrar-al-bronx-de-medellin-y-buscar-a-su-hija-de-13-anos-me-arriesgue-para-salvarla-3581752",
       "published": "2026-08-28T10:10:16-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Temblor de 3,8 de magnitud en Colombia | Sismo durante la madrugada de este viernes 28 de agosto: epicentro, profundidad y detalles",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-de-3-8-de-magnitud-en-colombia-sismo-durante-la-madrugada-de-este-viernes-28-de-agosto-epicentro-magnitud-y-profundidad-3581725",
-      "published": "2026-08-28T04:50:00-05:00",
-      "section": "colombia"
      }
     ],
-    "count": 2,
+    "count": 1,
     "issue": "Mujer con cáncer se disfrazó de habitante de calle para entrar al 'Bronx' de Medellín y buscar a su hija de 13 años: 'Era explotada sexualmente'"
    },
    {
