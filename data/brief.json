@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-28T21:01:01-04:00",
- "generated_at_utc": "2026-08-29T01:01:01+00:00",
+ "generated_at": "2026-08-28T21:16:00-04:00",
+ "generated_at_utc": "2026-08-29T01:16:00+00:00",
  "weekday": "Friday",
  "date_label": "Friday, August 28",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-28T21:01:01-04:00",
+  "fetched_at": "2026-08-28T21:16:00-04:00",
   "curve": [
    {
     "time": "2026-08-28T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 81.2,
-   "feels": 93.2,
-   "humidity": 88,
-   "wind_mph": 0.7,
-   "wind_dir": 198,
-   "observed_at": "2026-08-28T21:00"
+   "temp": 81.4,
+   "feels": 93.8,
+   "humidity": 89,
+   "wind_mph": 0.5,
+   "wind_dir": 297,
+   "observed_at": "2026-08-28T21:15"
   },
   "today": {
    "high": 90.8,
@@ -164,15 +164,16 @@
   "peak_hour": 16
  },
  "alerts": {
-  "ok": false,
-  "source": "NWS alerts",
-  "fetched_at": "2026-08-28T21:01:01-04:00",
-  "error": "502 Server Error: Bad Gateway for url: https://api.weather.gov/alerts/active?point=25.971228%2C-80.362648"
+  "ok": true,
+  "source": "NWS api.weather.gov/alerts",
+  "fetched_at": "2026-08-28T21:16:01-04:00",
+  "alerts": [],
+  "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-08-28T21:01:04-04:00",
+  "fetched_at": "2026-08-28T21:16:02-04:00",
   "aqi": 55,
   "category": "Moderate",
   "pm25": 8.6,
@@ -184,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-28T21:01:04-04:00",
+  "fetched_at": "2026-08-28T21:16:02-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -250,80 +251,55 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": 505,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-29T01:06:30Z"
+   },
+   {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "US-1 S",
      "US-41 S",
      "FL-5"
     ],
-    "delay_s": 351,
+    "delay_s": 311,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-08-29T00:22:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 N"
+    ],
+    "delay_s": 142,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-29T01:13:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-842"
     ],
-    "delay_s": 153,
+    "delay_s": 136,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-08-29T00:43:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-41 N",
-     "FL-5"
-    ],
-    "delay_s": 145,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-29T00:57:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 N"
-    ],
-    "delay_s": 121,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-29T00:55:00Z"
+    "start": "2026-08-29T01:07:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826"
     ],
-    "delay_s": 86,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 93,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-08-29T00:40:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 75,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-28T23:47:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 34,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-28T19:21:53Z"
    },
    {
     "county": "Broward",
@@ -503,17 +479,39 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-08-27T13:49:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-07-20T13:16:51Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-07-20T13:16:51Z"
    }
   ],
-  "incident_count": 265,
-  "named_count": 34,
+  "incident_count": 264,
+  "named_count": 32,
   "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-28T21:01:05-04:00",
+  "fetched_at": "2026-08-28T21:16:03-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -560,7 +558,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-28T21:01:05-04:00",
+  "fetched_at": "2026-08-28T21:16:04-04:00",
   "issued": "800 PM EDT Fri Aug 28 2026",
   "areas": [
    {
@@ -579,7 +577,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-28T21:01:05-04:00",
+  "fetched_at": "2026-08-28T21:16:04-04:00",
   "florida": "$3.9488",
   "national": "$4.0898",
   "diesel": "$5.4920",
@@ -588,7 +586,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-28T21:01:06-04:00",
+  "fetched_at": "2026-08-28T21:16:06-04:00",
   "streams": {
    "local": [
     {
@@ -961,7 +959,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-28T21:01:07-04:00",
+  "fetched_at": "2026-08-28T21:16:06-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -969,7 +967,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-28T21:01:07-04:00",
+  "fetched_at": "2026-08-28T21:16:06-04:00",
   "countries": [
    {
     "iso": "IRN",
@@ -1018,8 +1016,6 @@
   "countries_matched": 3,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "alerts"
- ],
- "health": "9/10 sources ok"
+ "failures": [],
+ "health": "10/10 sources ok"
 }
