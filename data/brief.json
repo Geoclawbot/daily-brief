@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-30T11:30:58-04:00",
- "generated_at_utc": "2026-08-30T15:30:58+00:00",
+ "generated_at": "2026-08-30T11:46:01-04:00",
+ "generated_at_utc": "2026-08-30T15:46:01+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, August 30",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-30T11:30:59-04:00",
+  "fetched_at": "2026-08-30T11:46:02-04:00",
   "curve": [
    {
     "time": "2026-08-30T05:00",
@@ -53,8 +53,8 @@
     "time": "2026-08-30T10:00",
     "hour": 10,
     "temp": 85.4,
-    "feels": 95.2,
-    "humidity": 77,
+    "feels": 97.3,
+    "humidity": 85,
     "pop": 12
    },
    {
@@ -69,72 +69,72 @@
     "time": "2026-08-30T12:00",
     "hour": 12,
     "temp": 87.8,
-    "feels": 98.4,
-    "humidity": 71,
+    "feels": 98.6,
+    "humidity": 72,
     "pop": 23
    },
    {
     "time": "2026-08-30T13:00",
     "hour": 13,
     "temp": 88.1,
-    "feels": 96.0,
-    "humidity": 67,
+    "feels": 96.9,
+    "humidity": 70,
     "pop": 24
    },
    {
     "time": "2026-08-30T14:00",
     "hour": 14,
     "temp": 88.8,
-    "feels": 98.7,
-    "humidity": 67,
+    "feels": 99.2,
+    "humidity": 69,
     "pop": 19
    },
    {
     "time": "2026-08-30T15:00",
     "hour": 15,
     "temp": 88.6,
-    "feels": 102.6,
-    "humidity": 85,
+    "feels": 97.1,
+    "humidity": 66,
     "pop": 26
    },
    {
     "time": "2026-08-30T16:00",
     "hour": 16,
     "temp": 89.1,
-    "feels": 103.3,
-    "humidity": 84,
+    "feels": 97.2,
+    "humidity": 63,
     "pop": 22
    },
    {
     "time": "2026-08-30T17:00",
     "hour": 17,
     "temp": 89.0,
-    "feels": 103.4,
-    "humidity": 80,
+    "feels": 98.4,
+    "humidity": 63,
     "pop": 23
    },
    {
     "time": "2026-08-30T18:00",
     "hour": 18,
     "temp": 81.7,
-    "feels": 88.7,
-    "humidity": 80,
+    "feels": 90.3,
+    "humidity": 87,
     "pop": 25
    },
    {
     "time": "2026-08-30T19:00",
     "hour": 19,
     "temp": 77.3,
-    "feels": 83.3,
-    "humidity": 93,
+    "feels": 83.7,
+    "humidity": 95,
     "pop": 41
    },
    {
     "time": "2026-08-30T20:00",
     "hour": 20,
     "temp": 77.5,
-    "feels": 86.3,
-    "humidity": 93,
+    "feels": 86.1,
+    "humidity": 92,
     "pop": 42
    },
    {
@@ -148,44 +148,50 @@
   ],
   "current": {
    "temp": 87.8,
-   "feels": 99.3,
+   "feels": 99.0,
    "humidity": 72,
-   "wind_mph": 6.0,
-   "wind_dir": 103,
-   "observed_at": "2026-08-30T11:30"
+   "wind_mph": 6.9,
+   "wind_dir": 86,
+   "observed_at": "2026-08-30T11:45"
   },
   "today": {
    "high": 89.1,
    "low": 77.3,
-   "feels_max": 103.4,
+   "feels_max": 99.2,
    "pop_max": 42
   },
-  "peak_feels": 103.4,
-  "peak_hour": 17
+  "peak_feels": 99.2,
+  "peak_hour": 14
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-30T11:30:59-04:00",
+  "fetched_at": "2026-08-30T11:46:02-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-08-30T11:31:15-04:00",
-  "aqi": 36,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-08-30T11:46:03-04:00",
+  "aqi": 41,
   "category": "Good",
-  "pm25": 5.6,
-  "pm10": 7.7,
-  "observed": "2026-08-30T11:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-08-30 10:00 EST",
+  "forecast": [
+   {
+    "date": "2026-08-30",
+    "aqi": 41,
+    "category": "Good",
+    "pollutant": "O3"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-30T11:31:15-04:00",
+  "fetched_at": "2026-08-30T11:46:03-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -193,12 +199,13 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-827"
+     "FL-91 S",
+     "Florida's Tpke S"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "delay_s": 1043,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-30T14:56:30Z"
    },
    {
     "county": "Broward",
@@ -209,6 +216,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:05:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -241,25 +258,25 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
+     "US-1 N",
+     "FL-970"
     ],
-    "delay_s": 670,
+    "delay_s": 476,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-30T14:56:30Z"
+    "start": "2026-08-30T15:21:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-A1A"
     ],
-    "delay_s": 564,
+    "delay_s": 281,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-30T15:24:30Z"
+    "start": "2026-08-30T15:44:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -267,20 +284,43 @@
      "Florida's Tpke N",
      "FL-821 N"
     ],
-    "delay_s": 501,
-    "magnitude": 3,
-    "description": "Stationary traffic",
+    "delay_s": 183,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-08-30T14:00:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-887 N"
+     "US-1 N",
+     "US-1 S",
+     "US-41 S",
+     "FL-5"
     ],
-    "delay_s": 362,
+    "delay_s": 142,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-30T15:44:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 138,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-30T14:10:00Z"
+    "start": "2026-08-30T15:40:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-994"
+    ],
+    "delay_s": 134,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-30T15:43:00Z"
    },
    {
     "county": "Broward",
@@ -288,52 +328,30 @@
      "FL-91 N",
      "Florida's Tpke N"
     ],
-    "delay_s": 352,
+    "delay_s": 112,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-30T14:51:30Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-822",
-     "FL-A1A"
+     "FL-887 N"
     ],
-    "delay_s": 183,
+    "delay_s": 55,
     "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-08-30T15:29:30Z"
+    "description": "Stationary traffic",
+    "start": "2026-08-30T15:41:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-932"
+     "I-95 S"
     ],
-    "delay_s": 145,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-30T15:24:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 97,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-30T15:17:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": 70,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-30T15:29:30Z"
+    "delay_s": 38,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-30T15:34:30Z"
    },
    {
     "county": "Broward",
@@ -492,25 +510,17 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-08-26T14:57:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-18T20:48:14Z"
    }
   ],
-  "incident_count": 262,
-  "named_count": 29,
+  "incident_count": 260,
+  "named_count": 30,
   "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-30T11:31:16-04:00",
+  "fetched_at": "2026-08-30T11:46:04-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -553,7 +563,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-30T11:31:16-04:00",
+  "fetched_at": "2026-08-30T11:46:04-04:00",
   "issued": "800 AM EDT Sun Aug 30 2026",
   "areas": [
    {
@@ -572,7 +582,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-30T11:31:16-04:00",
+  "fetched_at": "2026-08-30T11:46:04-04:00",
   "florida": "$3.8947",
   "national": "$4.0787",
   "diesel": "$5.4413",
@@ -581,7 +591,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-30T11:31:18-04:00",
+  "fetched_at": "2026-08-30T11:46:06-04:00",
   "streams": {
    "local": [
     {
@@ -786,11 +796,11 @@
     "media_type": "video"
    },
    {
-    "title": "Water quality advisory issued for Crandon Park North in Key Biscayne",
-    "url": "https://wsvn.com/news/local/miami-dade/water-quality-advisory-issued-for-crandon-park-north-in-key-biscayne/",
+    "title": "Florida Department of Health issues water quality advisory for Crandon Park North in Key Biscayne",
+    "url": "https://wsvn.com/news/local/miami-dade/florida-department-of-health-issues-water-quality-advisory-for-crandon-park-north-in-key-biscayne/",
     "published": "Sun, 30 Aug 2026 12:59:52 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/3c44c466-afe3-48b6-836a-55ac5dc47758/891e2242-1202-4d0e-89c1-e1065e4bf4fa/main.mp4?fastly_token=NmE5NDgxNGVfNTgxOTE4MmVhOTI4ZjhmNGY2NzgxNzE1NjQ0OGQ4YTUwNWZmYWMwOWU3ZTQ4NDFjOTRjZTA3OTM1ODA4YzM0ZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zYzQ0YzQ2Ni1hZmUzLTQ4YjYtODM2YS01NWFjNWRjNDc3NTgvODkxZTIyNDItMTIwMi00ZDBlLTg5YzEtZTEwNjVlNGJmNGZhL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/3c44c466-afe3-48b6-836a-55ac5dc47758/891e2242-1202-4d0e-89c1-e1065e4bf4fa/main.mp4?fastly_token=NmE5NDlkOTVfMzM2Y2M3M2FiNGI5MDNhZmRkM2I2NTUzN2Q5ZjlhZWE5OGM0ZDEwMmY5NzM4NGQzMDY4ZDI4MDg3MGM0OGU3OF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zYzQ0YzQ2Ni1hZmUzLTQ4YjYtODM2YS01NWFjNWRjNDc3NTgvODkxZTIyNDItMTIwMi00ZDBlLTg5YzEtZTEwNjVlNGJmNGZhL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -820,6 +830,14 @@
   ],
   "colombia": [
    {
+    "title": "Ellas son las niñas que le pidieron casa al presidente Abelardo De La Espriella en Cali por el terremoto: '¡El corazón se me salía de la emoción!'",
+    "url": "https://www.eltiempo.com/colombia/cali/ellas-son-las-ninas-que-le-pidieron-casa-al-presidente-abelardo-de-la-espriella-en-cali-por-el-terremoto-el-corazon-se-me-salia-de-la-emocion-3582197",
+    "published": "2026-08-30T10:34:04-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/30/6a944a22ad853.r_d.606-333-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Dolor e indignación por el asesinato de un estudiante de 16 años en una casa del municipio de Florida, Valle: el menor cursaba noveno grado",
     "url": "https://www.eltiempo.com/colombia/cali/dolor-e-indignacion-por-el-asesinato-de-un-estudiante-de-16-anos-en-una-casa-del-municipio-de-florida-valle-el-menor-cursaba-noveno-grado-3582192",
     "published": "2026-08-30T09:31:23-05:00",
@@ -838,9 +856,9 @@
    {
     "title": "¿Dónde está Michelle Dayana Chavarría, niña de 6 años con epilepsia desaparecida en Buriticá, Antioquia? Ofrecen hasta $ 50 millones por encontrarla",
     "url": "https://www.eltiempo.com/colombia/medellin/donde-esta-michelle-dayana-chavarria-de-6-anos-desaparecida-en-buritica-antioquia-50-millones-por-encontrarla-en-operativo-con-drones-y-perros-3582186",
-    "published": "2026-08-30T10:02:37-05:00",
+    "published": "2026-08-30T10:42:21-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/27/6a9096bca8c1d.png",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/27/6a9096bca8c1d.r_d.383-160-0.png",
     "media_type": "image"
    },
    {
@@ -873,14 +891,6 @@
     "published": "2026-08-30T03:25:29-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/30/6a93e568bd7c2.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Volcán Puracé presentó un incremento de actividad sísmica en el Cauca durante el sábado 29 de agosto: Servicio Geológico Colombiano reportó 58 eventos",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/volcan-purace-presento-un-incremento-de-actividad-sismica-en-el-cauca-durante-el-sabado-29-de-agosto-servicio-geologico-colombiano-reporto-58-eventos-3582175",
-    "published": "2026-08-30T02:08:03-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/05/6a733a04ab11f.r_d.505-527-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -954,7 +964,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-30T11:31:21-04:00",
+  "fetched_at": "2026-08-30T11:46:06-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -962,8 +972,28 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-30T11:31:21-04:00",
+  "fetched_at": "2026-08-30T11:46:06-04:00",
   "countries": [
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "Miami celebrates Colombian culture with Medellin flower festival in Wynwood",
+      "url": "https://wsvn.com/news/local/miami-dade/medellin-flower-festival-miami/",
+      "published": "Sat, 29 Aug 2026 23:12:57 +0000",
+      "section": "local"
+     },
+     {
+      "title": "Ellas son las niñas que le pidieron casa al presidente Abelardo De La Espriella en Cali por el terremoto: '¡El corazón se me salía de la emoción!'",
+      "url": "https://www.eltiempo.com/colombia/cali/ellas-son-las-ninas-que-le-pidieron-casa-al-presidente-abelardo-de-la-espriella-en-cali-por-el-terremoto-el-corazon-se-me-salia-de-la-emocion-3582197",
+      "published": "2026-08-30T10:34:04-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 2,
+    "issue": "Miami celebrates Colombian culture with Medellin flower festival in Wynwood"
+   },
    {
     "iso": "CAN",
     "name": "Canada",
@@ -977,20 +1007,6 @@
     ],
     "count": 1,
     "issue": "Canada claps back at Trump's efforts to rename Lake Ontario as 'Lake America'"
-   },
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Miami celebrates Colombian culture with Medellin flower festival in Wynwood",
-      "url": "https://wsvn.com/news/local/miami-dade/medellin-flower-festival-miami/",
-      "published": "Sat, 29 Aug 2026 23:12:57 +0000",
-      "section": "local"
-     }
-    ],
-    "count": 1,
-    "issue": "Miami celebrates Colombian culture with Medellin flower festival in Wynwood"
    },
    {
     "iso": "RUS",
