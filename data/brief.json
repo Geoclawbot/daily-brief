@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-30T16:30:56-04:00",
- "generated_at_utc": "2026-08-30T20:30:56+00:00",
+ "generated_at": "2026-08-30T16:45:58-04:00",
+ "generated_at_utc": "2026-08-30T20:45:58+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, August 30",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-30T16:30:56-04:00",
+  "fetched_at": "2026-08-30T16:45:59-04:00",
   "curve": [
    {
     "time": "2026-08-30T05:00",
@@ -93,112 +93,124 @@
     "time": "2026-08-30T15:00",
     "hour": 15,
     "temp": 88.0,
-    "feels": 97.8,
-    "humidity": 67,
+    "feels": 99.8,
+    "humidity": 74,
     "pop": 23
    },
    {
     "time": "2026-08-30T16:00",
     "hour": 16,
     "temp": 88.6,
-    "feels": 96.0,
-    "humidity": 66,
+    "feels": 95.7,
+    "humidity": 65,
     "pop": 24
    },
    {
     "time": "2026-08-30T17:00",
     "hour": 17,
     "temp": 86.8,
-    "feels": 93.9,
-    "humidity": 65,
+    "feels": 93.4,
+    "humidity": 63,
     "pop": 25
    },
    {
     "time": "2026-08-30T18:00",
     "hour": 18,
     "temp": 84.6,
-    "feels": 91.6,
-    "humidity": 68,
+    "feels": 93.9,
+    "humidity": 77,
     "pop": 32
    },
    {
     "time": "2026-08-30T19:00",
     "hour": 19,
     "temp": 79.0,
-    "feels": 84.2,
-    "humidity": 78,
+    "feels": 86.3,
+    "humidity": 88,
     "pop": 54
    },
    {
     "time": "2026-08-30T20:00",
     "hour": 20,
     "temp": 77.6,
-    "feels": 86.0,
-    "humidity": 89,
+    "feels": 86.4,
+    "humidity": 91,
     "pop": 45
    },
    {
     "time": "2026-08-30T21:00",
     "hour": 21,
     "temp": 77.5,
-    "feels": 86.0,
-    "humidity": 89,
+    "feels": 86.4,
+    "humidity": 91,
     "pop": 26
    }
   ],
   "current": {
-   "temp": 87.5,
-   "feels": 94.4,
-   "humidity": 65,
-   "wind_mph": 8.2,
-   "wind_dir": 43,
-   "observed_at": "2026-08-30T16:30"
+   "temp": 88.0,
+   "feels": 95.1,
+   "humidity": 62,
+   "wind_mph": 6.7,
+   "wind_dir": 42,
+   "observed_at": "2026-08-30T16:45"
   },
   "today": {
    "high": 88.6,
    "low": 76.7,
-   "feels_max": 99.0,
+   "feels_max": 99.8,
    "pop_max": 54
   },
-  "peak_feels": 99.0,
-  "peak_hour": 12
+  "peak_feels": 99.8,
+  "peak_hour": 15
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-30T16:30:56-04:00",
+  "fetched_at": "2026-08-30T16:45:59-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-08-30T16:31:22-04:00",
-  "aqi": 33,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-08-30T16:46:00-04:00",
+  "aqi": 29,
   "category": "Good",
-  "pm25": 3.3,
-  "pm10": 4.1,
-  "observed": "2026-08-30T16:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-08-30 15:00 EST",
+  "forecast": [
+   {
+    "date": "2026-08-30",
+    "aqi": 40,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-08-31",
+    "aqi": 41,
+    "category": "Good",
+    "pollutant": "O3"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-30T16:31:22-04:00",
+  "fetched_at": "2026-08-30T16:46:00-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-827"
+     "FL-A1A"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "delay_s": 1438,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-30T20:31:36Z"
    },
    {
     "county": "Broward",
@@ -209,6 +221,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -247,7 +269,7 @@
      "Florida's Tpke N",
      "FL-826 W"
     ],
-    "delay_s": 249,
+    "delay_s": 719,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-30T20:23:00Z"
@@ -255,40 +277,39 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-934"
+     "FL-907"
     ],
-    "delay_s": 177,
+    "delay_s": 208,
     "magnitude": 2,
-    "description": "Queuing traffic; Roadworks",
-    "start": "2026-08-30T17:54:00Z"
+    "description": "Queuing traffic",
+    "start": "2026-08-30T20:40:30Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-84"
+     "FL-A1A"
     ],
-    "delay_s": 99,
+    "delay_s": 175,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-08-30T20:20:00Z"
+    "start": "2026-08-30T20:43:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "FL-5"
+     "FL-934"
     ],
-    "delay_s": 98,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-30T20:24:30Z"
+    "delay_s": 121,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-30T17:54:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 95,
+    "delay_s": 107,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-08-30T18:41:00Z"
@@ -296,96 +317,33 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S",
-     "FL-A1A"
+     "I-95 S"
     ],
-    "delay_s": 81,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-30T20:27:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-811"
-    ],
-    "delay_s": 74,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-30T20:14:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 74,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-30T20:14:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
-    ],
-    "delay_s": 61,
+    "delay_s": 95,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-08-30T17:25:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826"
-    ],
-    "delay_s": 52,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-30T20:25:00Z"
+    "start": "2026-08-30T20:38:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 40,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-30T20:25:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-869 N"
-    ],
     "delay_s": 37,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-08-30T20:20:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": 30,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-04-30T20:30:11Z"
+    "start": "2026-08-30T20:40:30Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-869 S"
+     "FL-91 N",
+     "Florida's Tpke N"
     ],
-    "delay_s": 25,
-    "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-08-30T20:21:30Z"
+    "delay_s": 34,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-30T20:43:00Z"
    },
    {
     "county": "Broward",
@@ -453,6 +411,17 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-27 S",
+     "FL-25"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-04-30T20:30:11Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-972"
     ],
     "delay_s": null,
@@ -501,17 +470,60 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-08-03T13:43:04Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-30T19:00:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-886"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-08-27T13:49:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-07-20T13:16:51Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-07-20T13:16:51Z"
    }
   ],
-  "incident_count": 266,
-  "named_count": 36,
-  "major_count": 5,
+  "incident_count": 263,
+  "named_count": 32,
+  "major_count": 7,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-30T16:31:24-04:00",
+  "fetched_at": "2026-08-30T16:46:01-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -557,7 +569,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-30T16:31:24-04:00",
+  "fetched_at": "2026-08-30T16:46:01-04:00",
   "issued": "200 PM EDT Sun Aug 30 2026",
   "areas": [
    {
@@ -576,7 +588,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-30T16:31:24-04:00",
+  "fetched_at": "2026-08-30T16:46:02-04:00",
   "florida": "$3.8947",
   "national": "$4.0787",
   "diesel": "$5.4413",
@@ -585,7 +597,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-30T16:31:26-04:00",
+  "fetched_at": "2026-08-30T16:46:03-04:00",
   "streams": {
    "local": [
     {
@@ -824,6 +836,14 @@
   ],
   "colombia": [
    {
+    "title": "Liberan a uno de los cuatro secuestrados en zona rural del municipio de Anorí, Antioquia: es el presidente de una Junta de Acción Comunal",
+    "url": "https://www.eltiempo.com/colombia/cali/liberan-a-uno-de-los-cuatro-secuestrados-en-zona-rural-del-municipio-de-anori-antioquia-es-el-presidente-de-una-junta-de-accion-comunal-3582228",
+    "published": "2026-08-30T15:34:26-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2025/12/22/694936da28c90.r_d.826-344-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Atacaron con explosivos la empresa de aseo Urbaser en Popayán: reportaron daños en camiones que afectarían el servicio público de recolección",
     "url": "https://www.eltiempo.com/colombia/cali/atacaron-con-explosivos-la-empresa-de-aseo-urbaser-en-popayan-reportaron-danos-en-camiones-que-afectarian-el-servicio-publico-de-recoleccion-3582219",
     "published": "2026-08-30T13:48:59-05:00",
@@ -877,14 +897,6 @@
     "published": "2026-08-30T10:42:21-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/27/6a9096bca8c1d.r_d.383-160-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "La sombra de la corrupción sobre Mompox: cargos a exalcalde y exsecretario por obras inconclusas del río Magdalena",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/la-sombra-de-la-corrupcion-sobre-mompox-cargos-a-exalcalde-y-exsecretario-por-obras-inconclusas-del-rio-magdalena-3582183",
-    "published": "2026-08-30T08:46:59-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/29/6a92e043a7e5b.png",
     "media_type": "image"
    }
   ],
@@ -958,7 +970,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-30T16:31:27-04:00",
+  "fetched_at": "2026-08-30T16:46:04-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -966,7 +978,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-30T16:31:27-04:00",
+  "fetched_at": "2026-08-30T16:46:04-04:00",
   "countries": [
    {
     "iso": "COL",
