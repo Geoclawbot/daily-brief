@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-30T14:15:55-04:00",
- "generated_at_utc": "2026-08-30T18:15:55+00:00",
+ "generated_at": "2026-08-30T14:31:01-04:00",
+ "generated_at_utc": "2026-08-30T18:31:01+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, August 30",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-30T14:15:55-04:00",
+  "fetched_at": "2026-08-30T14:31:01-04:00",
   "curve": [
    {
     "time": "2026-08-30T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 85.6,
-   "feels": 96.4,
-   "humidity": 72,
-   "wind_mph": 7.0,
-   "wind_dir": 73,
-   "observed_at": "2026-08-30T14:15"
+   "temp": 86.9,
+   "feels": 99.9,
+   "humidity": 73,
+   "wind_mph": 7.4,
+   "wind_dir": 90,
+   "observed_at": "2026-08-30T14:30"
   },
   "today": {
    "high": 89.4,
@@ -166,32 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-30T14:15:56-04:00",
+  "fetched_at": "2026-08-30T14:31:02-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-30T14:15:56-04:00",
-  "aqi": 26,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-08-30T14:31:28-04:00",
+  "aqi": 34,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-08-30 13:00 EST",
-  "forecast": [
-   {
-    "date": "2026-08-30",
-    "aqi": 41,
-    "category": "Good",
-    "pollutant": "O3"
-   }
-  ]
+  "pm25": 5.0,
+  "pm10": 6.0,
+  "observed": "2026-08-30T14:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-30T14:15:56-04:00",
+  "fetched_at": "2026-08-30T14:31:28-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -201,7 +195,7 @@
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 922,
+    "delay_s": 1307,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-30T17:06:30Z"
@@ -257,65 +251,14 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-854"
+     "FL-934"
     ],
-    "delay_s": 191,
+    "delay_s": 232,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-08-30T18:02:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 191,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-30T17:54:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 186,
-    "magnitude": 3,
-    "description": "Stationary traffic",
     "start": "2026-08-30T18:09:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 149,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-30T17:54:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-823"
-    ],
-    "delay_s": 149,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-30T18:10:37Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 127,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-30T18:11:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -323,79 +266,87 @@
      "Florida's Tpke N",
      "FL-821 N"
     ],
-    "delay_s": 126,
-    "magnitude": 1,
-    "description": "Slow traffic",
+    "delay_s": 215,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-08-30T17:25:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-A1A"
+     "FL-909"
     ],
-    "delay_s": 117,
+    "delay_s": 170,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-30T18:00:03Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": 113,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-30T18:02:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 99,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-30T18:11:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-811"
-    ],
-    "delay_s": 92,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-30T18:10:37Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 85,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-30T17:46:30Z"
+    "start": "2026-08-30T18:25:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826"
     ],
-    "delay_s": 82,
+    "delay_s": 158,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-08-30T18:00:03Z"
+    "start": "2026-08-30T18:24:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 149,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-30T17:54:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-94"
+    ],
+    "delay_s": 136,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-30T18:29:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 126,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-30T18:02:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-823"
+    ],
+    "delay_s": 125,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-30T18:25:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826"
+    ],
+    "delay_s": 86,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-30T18:09:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 57,
+    "delay_s": 80,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-08-30T16:29:30Z"
@@ -403,32 +354,33 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-986"
-    ],
-    "delay_s": 56,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-30T18:07:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826"
-    ],
-    "delay_s": 54,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-30T18:09:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-825"
     ],
-    "delay_s": 53,
+    "delay_s": 56,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-30T17:58:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 53,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-30T18:20:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 48,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-30T17:54:30Z"
    },
    {
     "county": "Broward",
@@ -503,17 +455,58 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-04-30T20:30:11Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-05-07T11:50:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-7",
+     "US-441 N"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-08-28T06:56:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-13T10:30:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-395 W"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-08-21T08:47:30Z"
    }
   ],
-  "incident_count": 288,
-  "named_count": 39,
+  "incident_count": 285,
+  "named_count": 35,
   "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-30T14:15:57-04:00",
+  "fetched_at": "2026-08-30T14:31:29-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -556,7 +549,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-30T14:15:57-04:00",
+  "fetched_at": "2026-08-30T14:31:29-04:00",
   "issued": "200 PM EDT Sun Aug 30 2026",
   "areas": [
    {
@@ -570,12 +563,12 @@
     "chance_7d": 20
    }
   ],
-  "raw": "en Español\n\n000\nABNT20 KNHC 301732\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Sun Aug 30 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nNorthern Gulf of America (AL97):\nA low pressure area is located over the northern Gulf of America \nabout 125 mils south of the coast of southeastern Louisiana.  \nSatellite imagery and recent satellite wind data indicate that this \nsystem has become better organized since yesterday.  Additional \ndevelopment is possible as the low moves slowly west-northwestward, \nand a short-lived tropical depression or tropical storm could form \nbefore the system reaches the Upper Texas or southwestern Louisiana \ncoasts Tuesday or Tuesday night. Interests along the Louisiana and \nUpper Texas coasts should monitor the progress of this system. \nRegardless of development, locally heavy rainfall is possible over \nportions of the Upper Texas or southwestern Louisiana coasts during \nthe next couple of days.\n* Formation chance through 48 hours...medium...50 percent.\n* Formation chance through 7 days...low...50 percent.\n\nNear Puerto Rico and the Virgin Islands (Remnants of Dolly):\nA strong tropical wave, the remnants of Tropical Storm Dolly, is \nproducing an area of showers and thunderstorms from Puerto Rico \neastward across the Virgin Islands and the northern Leeward Islands. \nSatellite data and surface observations indicate that there are no \nsigns of a closed surface circulation, and redevelopment is unlikely \nduring the next day or two while the wave moves westward to \nwest-northwestward at about 25 mph. The system should bring locally \nheavy rains and gusty winds to portions of the Leeward Islands, the \nVirgin Islands, Puerto Rico, and Hispaniola over the next couple of \ndays. Conditions may become more conducive for redevelopment by the \nmiddle of the week as the system reaches the southeastern Gulf of \nAmerica.\n* Formation chance through 48 hours...low...near 0 percent.\n* Formation chance through 7 days...low...20 percent.\n\n$$\nForecaster Beven"
+  "raw": "en Español\n\n000\nABNT20 KNHC 301828 CCA\nTWOAT \n\nTropical Weather Outlook...Corrteced\nNWS National Hurricane Center Miami FL\n200 PM EDT Sun Aug 30 2026\n\nCorrect low chance to medium chance for the Gulf system\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nNorthern Gulf of America (AL97):\nA low pressure area is located over the northern Gulf of America \nabout 125 mils south of the coast of southeastern Louisiana.  \nSatellite imagery and recent satellite wind data indicate that this \nsystem has become better organized since yesterday.  Additional \ndevelopment is possible as the low moves slowly west-northwestward, \nand a short-lived tropical depression or tropical storm could form \nbefore the system reaches the Upper Texas or southwestern Louisiana \ncoasts Tuesday or Tuesday night. Interests along the Louisiana and \nUpper Texas coasts should monitor the progress of this system. \nRegardless of development, locally heavy rainfall is possible over \nportions of the Upper Texas or southwestern Louisiana coasts during \nthe next couple of days.\n* Formation chance through 48 hours...medium...50 percent.\n* Formation chance through 7 days...medium...50 percent.\n\nNear Puerto Rico and the Virgin Islands (Remnants of Dolly):\nA strong tropical wave, the remnants of Tropical Storm Dolly, is \nproducing an area of showers and thunderstorms from Puerto Rico \neastward across the Virgin Islands and the northern Leeward Islands. \nSatellite data and surface observations indicate that there are no \nsigns of a closed surface circulation, and redevelopment is unlikely \nduring the next day or two while the wave moves westward to \nwest-northwestward at about 25 mph. The system should bring locally \nheavy rains and gusty winds to portions of the Leeward Islands, the \nVirgin Islands, Puerto Rico, and Hispaniola over the next couple of \ndays. Conditions may become more conducive for redevelopment by the \nmiddle of the week as the system reaches the southeastern Gulf of \nAmerica.\n* Formation chance through 48 hours...low...near 0 percent.\n* Formation chance through 7 days...low...20 percent.\n\n$$\nForecaster Beven"
  },
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-30T14:15:58-04:00",
+  "fetched_at": "2026-08-30T14:31:29-04:00",
   "florida": "$3.8947",
   "national": "$4.0787",
   "diesel": "$5.4413",
@@ -584,7 +577,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-30T14:15:59-04:00",
+  "fetched_at": "2026-08-30T14:31:31-04:00",
   "streams": {
    "local": [
     {
@@ -957,7 +950,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-30T14:15:59-04:00",
+  "fetched_at": "2026-08-30T14:31:31-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -965,7 +958,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-30T14:15:59-04:00",
+  "fetched_at": "2026-08-30T14:31:31-04:00",
   "countries": [
    {
     "iso": "COL",
