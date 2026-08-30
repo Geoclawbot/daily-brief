@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-30T13:15:55-04:00",
- "generated_at_utc": "2026-08-30T17:15:55+00:00",
+ "generated_at": "2026-08-30T13:30:55-04:00",
+ "generated_at_utc": "2026-08-30T17:30:55+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, August 30",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-30T13:15:55-04:00",
+  "fetched_at": "2026-08-30T13:30:56-04:00",
   "curve": [
    {
     "time": "2026-08-30T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 87.7,
-   "feels": 97.1,
-   "humidity": 72,
-   "wind_mph": 12.1,
-   "wind_dir": 93,
-   "observed_at": "2026-08-30T13:15"
+   "temp": 87.8,
+   "feels": 99.9,
+   "humidity": 71,
+   "wind_mph": 9.5,
+   "wind_dir": 99,
+   "observed_at": "2026-08-30T13:30"
   },
   "today": {
    "high": 87.9,
@@ -166,32 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-30T13:15:56-04:00",
+  "fetched_at": "2026-08-30T13:30:56-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-30T13:15:56-04:00",
-  "aqi": 23,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-08-30T13:31:46-04:00",
+  "aqi": 35,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-08-30 12:00 EST",
-  "forecast": [
-   {
-    "date": "2026-08-30",
-    "aqi": 41,
-    "category": "Good",
-    "pollutant": "O3"
-   }
-  ]
+  "pm25": 4.7,
+  "pm10": 5.8,
+  "observed": "2026-08-30T13:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-30T13:15:56-04:00",
+  "fetched_at": "2026-08-30T13:31:47-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -199,12 +193,12 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-827"
+     "I-95 S"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "delay_s": 2114,
+    "magnitude": 3,
+    "description": "Stationary traffic; Incident",
+    "start": "2026-08-30T17:06:30Z"
    },
    {
     "county": "Broward",
@@ -215,6 +209,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -247,21 +251,11 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 530,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-30T17:06:30Z"
-   },
-   {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 168,
+    "delay_s": 204,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-08-30T16:29:30Z"
@@ -269,54 +263,84 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-934"
+     "FL-968"
     ],
-    "delay_s": 160,
+    "delay_s": 187,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-30T16:34:30Z"
+    "start": "2026-08-30T17:23:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-A1A"
+    ],
+    "delay_s": 150,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-30T17:26:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 148,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-30T17:17:39Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 159,
+    "delay_s": 140,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-08-30T17:09:00Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-907"
-    ],
-    "delay_s": 153,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-30T17:10:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 140,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-30T17:10:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 S",
+     "FL-822",
      "FL-A1A"
     ],
-    "delay_s": 92,
+    "delay_s": 126,
     "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-30T17:13:30Z"
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-08-30T17:26:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-986"
+    ],
+    "delay_s": 60,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-30T17:27:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-823"
+    ],
+    "delay_s": 59,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-30T17:25:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Florida's Tpke N",
+     "FL-821 N"
+    ],
+    "delay_s": 57,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-30T17:25:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -324,27 +348,27 @@
      "US-1 N",
      "FL-5"
     ],
-    "delay_s": 75,
+    "delay_s": 53,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-08-30T16:57:30Z"
+    "start": "2026-08-30T17:18:02Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-932"
+     "FL-825"
     ],
-    "delay_s": 63,
+    "delay_s": 49,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-30T17:00:30Z"
+    "start": "2026-08-30T17:16:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826"
     ],
-    "delay_s": 48,
+    "delay_s": 46,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-08-30T16:56:30Z"
@@ -358,6 +382,16 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-08-30T15:59:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Incident",
+    "start": "2026-08-30T17:20:30Z"
    },
    {
     "county": "Broward",
@@ -463,60 +497,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-08-21T08:47:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-03T13:43:04Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-886"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-08-27T13:49:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-07-20T13:16:51Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-07-20T13:16:51Z"
    }
   ],
-  "incident_count": 268,
-  "named_count": 31,
-  "major_count": 5,
+  "incident_count": 277,
+  "named_count": 35,
+  "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-30T13:15:57-04:00",
+  "fetched_at": "2026-08-30T13:31:48-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -559,7 +550,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-30T13:15:58-04:00",
+  "fetched_at": "2026-08-30T13:31:48-04:00",
   "issued": "800 AM EDT Sun Aug 30 2026",
   "areas": [
    {
@@ -578,7 +569,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-30T13:15:58-04:00",
+  "fetched_at": "2026-08-30T13:31:48-04:00",
   "florida": "$3.8947",
   "national": "$4.0787",
   "diesel": "$5.4413",
@@ -587,7 +578,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-30T13:15:59-04:00",
+  "fetched_at": "2026-08-30T13:31:49-04:00",
   "streams": {
    "local": [
     {
@@ -826,9 +817,9 @@
   ],
   "colombia": [
    {
-    "title": "Medellín en racionamiento e Hidroituango en jaque por El Niño: Gobernador de Antioquia califica de tardía flexibilización de Anla ante sequía",
+    "title": "Medellín en racionamiento e Hidroituango en jaque por El Niño: el gobernador de Antioquia califica de tardía flexibilización de Anla ante sequía",
     "url": "https://www.eltiempo.com/colombia/medellin/medellin-en-racionamiento-e-hidroituango-en-jaque-por-el-nino-gobernador-de-antioquia-califica-de-tardia-flexibilizacion-de-anla-ante-sequia-3582208",
-    "published": "2026-08-30T11:51:14-05:00",
+    "published": "2026-08-30T12:04:03-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/07/17/6a5aaf73ec9f7.r_d.114-158-0.jpeg",
     "media_type": "image"
@@ -960,7 +951,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-30T13:15:59-04:00",
+  "fetched_at": "2026-08-30T13:31:50-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -968,7 +959,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-30T13:15:59-04:00",
+  "fetched_at": "2026-08-30T13:31:50-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -981,9 +972,9 @@
       "section": "local"
      },
      {
-      "title": "Medellín en racionamiento e Hidroituango en jaque por El Niño: Gobernador de Antioquia califica de tardía flexibilización de Anla ante sequía",
+      "title": "Medellín en racionamiento e Hidroituango en jaque por El Niño: el gobernador de Antioquia califica de tardía flexibilización de Anla ante sequía",
       "url": "https://www.eltiempo.com/colombia/medellin/medellin-en-racionamiento-e-hidroituango-en-jaque-por-el-nino-gobernador-de-antioquia-califica-de-tardia-flexibilizacion-de-anla-ante-sequia-3582208",
-      "published": "2026-08-30T11:51:14-05:00",
+      "published": "2026-08-30T12:04:03-05:00",
       "section": "colombia"
      },
      {
