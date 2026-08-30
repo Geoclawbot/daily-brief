@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-30T18:30:57-04:00",
- "generated_at_utc": "2026-08-30T22:30:57+00:00",
+ "generated_at": "2026-08-30T18:45:58-04:00",
+ "generated_at_utc": "2026-08-30T22:45:58+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, August 30",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-30T18:30:58-04:00",
+  "fetched_at": "2026-08-30T18:45:59-04:00",
   "curve": [
    {
     "time": "2026-08-30T05:00",
@@ -108,55 +108,55 @@
    {
     "time": "2026-08-30T17:00",
     "hour": 17,
-    "temp": 87.7,
-    "feels": 95.9,
-    "humidity": 71,
+    "temp": 81.1,
+    "feels": 91.0,
+    "humidity": 95,
     "pop": 28
    },
    {
     "time": "2026-08-30T18:00",
     "hour": 18,
-    "temp": 87.0,
-    "feels": 95.7,
-    "humidity": 72,
+    "temp": 81.1,
+    "feels": 89.9,
+    "humidity": 86,
     "pop": 41
    },
    {
     "time": "2026-08-30T19:00",
     "hour": 19,
-    "temp": 85.5,
-    "feels": 96.2,
-    "humidity": 74,
+    "temp": 81.4,
+    "feels": 90.7,
+    "humidity": 85,
     "pop": 40
    },
    {
     "time": "2026-08-30T20:00",
     "hour": 20,
-    "temp": 77.9,
-    "feels": 85.9,
-    "humidity": 90,
+    "temp": 78.6,
+    "feels": 88.0,
+    "humidity": 88,
     "pop": 33
    },
    {
     "time": "2026-08-30T21:00",
     "hour": 21,
-    "temp": 75.1,
-    "feels": 81.4,
-    "humidity": 93,
+    "temp": 77.8,
+    "feels": 87.5,
+    "humidity": 94,
     "pop": 28
    }
   ],
   "current": {
-   "temp": 86.6,
-   "feels": 96.3,
-   "humidity": 72,
-   "wind_mph": 4.8,
-   "wind_dir": 41,
-   "observed_at": "2026-08-30T18:30"
+   "temp": 81.5,
+   "feels": 91.0,
+   "humidity": 85,
+   "wind_mph": 5.6,
+   "wind_dir": 7,
+   "observed_at": "2026-08-30T18:45"
   },
   "today": {
    "high": 88.3,
-   "low": 75.1,
+   "low": 77.5,
    "feels_max": 99.8,
    "pop_max": 41
   },
@@ -166,30 +166,75 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-30T18:30:59-04:00",
+  "fetched_at": "2026-08-30T18:45:59-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-08-30T18:31:25-04:00",
-  "aqi": 32,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-08-30T18:46:00-04:00",
+  "aqi": 35,
   "category": "Good",
-  "pm25": 6.6,
-  "pm10": 8.5,
-  "observed": "2026-08-30T18:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-08-30 17:00 EST",
+  "forecast": [
+   {
+    "date": "2026-08-30",
+    "aqi": 40,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-08-31",
+    "aqi": 41,
+    "category": "Good",
+    "pollutant": "O3"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-30T18:31:25-04:00",
+  "fetched_at": "2026-08-30T18:46:01-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 N",
+     "Florida's Tpke N"
+    ],
+    "delay_s": 2724,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-30T21:37:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 1185,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-30T22:25:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 N",
+     "Florida's Tpke N"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-08-30T22:43:00Z"
+   },
    {
     "county": "Broward",
     "roads": [
@@ -245,72 +290,31 @@
     "roads": [
      "FL-934"
     ],
-    "delay_s": 476,
+    "delay_s": 368,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-30T20:52:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 274,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-30T22:25:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 226,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-30T22:02:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 213,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-30T21:37:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 212,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-30T22:10:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-814"
-    ],
-    "delay_s": 155,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-30T22:23:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826"
     ],
-    "delay_s": 95,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-30T22:28:30Z"
+    "delay_s": 259,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-30T22:39:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-970"
+    ],
+    "delay_s": 135,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-30T22:39:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -323,34 +327,25 @@
     "start": "2026-08-30T22:29:30Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "I-95 S"
+     "FL-814"
     ],
-    "delay_s": 70,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-30T21:36:30Z"
+    "delay_s": 80,
+    "magnitude": 2,
+    "description": "Heavy rain; Queuing traffic",
+    "start": "2026-08-30T22:41:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 N"
+     "US-1 N",
+     "FL-5"
     ],
-    "delay_s": 63,
-    "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-08-30T22:04:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826"
-    ],
-    "delay_s": 56,
+    "delay_s": 77,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-08-30T22:28:30Z"
+    "start": "2026-08-30T22:38:00Z"
    },
    {
     "county": "Broward",
@@ -498,17 +493,39 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-08-27T13:49:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-07-20T13:16:51Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-07-20T13:16:51Z"
    }
   ],
-  "incident_count": 270,
-  "named_count": 33,
-  "major_count": 5,
+  "incident_count": 254,
+  "named_count": 31,
+  "major_count": 8,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-30T18:31:25-04:00",
+  "fetched_at": "2026-08-30T18:46:01-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -552,7 +569,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-30T18:31:26-04:00",
+  "fetched_at": "2026-08-30T18:46:02-04:00",
   "issued": "200 PM EDT Sun Aug 30 2026",
   "areas": [
    {
@@ -571,7 +588,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-30T18:31:26-04:00",
+  "fetched_at": "2026-08-30T18:46:02-04:00",
   "florida": "$3.8947",
   "national": "$4.0787",
   "diesel": "$5.4413",
@@ -580,7 +597,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-30T18:31:27-04:00",
+  "fetched_at": "2026-08-30T18:46:04-04:00",
   "streams": {
    "local": [
     {
@@ -819,6 +836,14 @@
   ],
   "colombia": [
    {
+    "title": "Liam Santiago, niño con distrofia de Duchenne, le pidió ayuda al presidente Abelardo de la Espriella: 'Podría cambiar la vida de muchos niños'",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/liam-santiago-nino-con-distrofia-de-duchenne-le-pidio-ayuda-al-presidente-abelardo-de-la-espriella-podria-cambiar-la-vida-de-muchos-ninos-3582241",
+    "published": "2026-08-30T17:26:43-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/30/6a94ad2f21e93.png",
+    "media_type": "image"
+   },
+   {
     "title": "Conmoción en Medellín por el asesinato de un menor LGBTIQ+: la mamá lo encontró amordazado, con rasguños y otras heridas en una casa",
     "url": "https://www.eltiempo.com/colombia/medellin/conmocion-en-medellin-investigan-el-asesinato-de-un-menor-lgbtiq-la-mama-de-la-victima-lo-encontro-amordazado-con-rasgunos-y-otras-heridas-3582233",
     "published": "2026-08-30T16:26:09-05:00",
@@ -872,14 +897,6 @@
     "published": "2026-08-30T09:31:23-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2024/12/12/675b9ec99b1fb.r_d.600-267-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Mamá de Lucas, el niño que pidió ayuda por grave condición médica, envió emotivo mensaje al presidente De La Espriella: 'Nos están abriendo puertas'",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/mama-de-lucas-el-nino-que-pidio-ayuda-por-grave-condicion-medica-envio-emotivo-mensaje-al-presidente-de-la-espriella-nos-estan-abriendo-puertas-3582181",
-    "published": "2026-08-30T09:10:22-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/30/6a9434ee21602.r_d.617-227-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -953,7 +970,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-30T18:31:27-04:00",
+  "fetched_at": "2026-08-30T18:46:04-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -961,7 +978,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-30T18:31:27-04:00",
+  "fetched_at": "2026-08-30T18:46:04-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -1024,6 +1041,20 @@
     "issue": "Canada claps back at Trump's efforts to rename Lake Ontario as 'Lake America'"
    },
    {
+    "iso": "CHL",
+    "name": "Chile",
+    "stories": [
+     {
+      "title": "Liam Santiago, niño con distrofia de Duchenne, le pidió ayuda al presidente Abelardo de la Espriella: 'Podría cambiar la vida de muchos niños'",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/liam-santiago-nino-con-distrofia-de-duchenne-le-pidio-ayuda-al-presidente-abelardo-de-la-espriella-podria-cambiar-la-vida-de-muchos-ninos-3582241",
+      "published": "2026-08-30T17:26:43-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 1,
+    "issue": "Liam Santiago, niño con distrofia de Duchenne, le pidió ayuda al presidente Abelardo de la Espriella: 'Podría cambiar la vida de muchos niños'"
+   },
+   {
     "iso": "RUS",
     "name": "Russia",
     "stories": [
@@ -1067,7 +1098,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 6,
+  "countries_matched": 7,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
