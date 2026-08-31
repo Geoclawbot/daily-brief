@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-31T11:46:10-04:00",
- "generated_at_utc": "2026-08-31T15:46:10+00:00",
+ "generated_at": "2026-08-31T12:00:58-04:00",
+ "generated_at_utc": "2026-08-31T16:00:58+00:00",
  "weekday": "Monday",
  "date_label": "Monday, August 31",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-31T11:46:10-04:00",
+  "fetched_at": "2026-08-31T12:00:59-04:00",
   "curve": [
    {
     "time": "2026-08-31T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 86.7,
-   "feels": 97.0,
+   "temp": 88.1,
+   "feels": 102.5,
    "humidity": 75,
    "wind_mph": 5.4,
-   "wind_dir": 95,
-   "observed_at": "2026-08-31T11:45"
+   "wind_dir": 99,
+   "observed_at": "2026-08-31T12:00"
   },
   "today": {
    "high": 88.2,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-31T11:46:11-04:00",
+  "fetched_at": "2026-08-31T12:00:59-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-31T11:46:12-04:00",
+  "fetched_at": "2026-08-31T12:01:04-04:00",
   "aqi": 46,
   "category": "Good",
   "pollutant": "PM2.5",
@@ -190,22 +190,83 @@
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-08-31T11:46:12-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-08-31T12:01:08-04:00",
+  "route_shown": true,
+  "leg": "Jackson Memorial → Home",
+  "direction": "return",
+  "depart_clock": "3:30 PM",
+  "depart_at": "2026-08-31T15:30:00-04:00",
+  "miles": 20.6,
+  "minutes": 60,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 22.6,
+    "minutes": 54,
+    "toll": true,
+    "saves": 6
+   },
+   {
+    "miles": 28.6,
+    "minutes": 57,
+    "toll": true,
+    "saves": 3
+   },
+   {
+    "miles": 25.5,
+    "minutes": 57,
+    "toll": true,
+    "saves": 3
+   },
+   {
+    "miles": 24.0,
+    "minutes": 59,
+    "toll": true,
+    "saves": 1
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 60,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 26.6,
+    "minutes": 64,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.1,
+    "minutes": 74,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.5,
+    "minutes": 70,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 60,
+   "delay_minutes": 0,
+   "saves": 0
+  },
   "incidents": [
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-887 S",
-     "FL-887 N"
+     "FL-827"
     ],
-    "delay_s": 1575,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T12:17:30Z"
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -216,16 +277,6 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:05:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -275,7 +326,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-08-31T13:17:00Z"
+    "start": "2026-08-31T13:46:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -285,47 +336,17 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-08-31T13:46:00Z"
+    "start": "2026-08-31T13:17:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-886"
+     "FL-887 S"
     ],
-    "delay_s": 605,
+    "delay_s": 853,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T15:37:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 539,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T14:46:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-395 W"
-    ],
-    "delay_s": 493,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-08-31T12:05:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 449,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-08-31T13:47:00Z"
+    "start": "2026-08-31T12:17:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -333,7 +354,7 @@
      "US-41 W",
      "FL-A1A S"
     ],
-    "delay_s": 386,
+    "delay_s": 688,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T14:43:30Z"
@@ -341,9 +362,19 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-976"
+    ],
+    "delay_s": 577,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T14:46:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-826 S"
     ],
-    "delay_s": 318,
+    "delay_s": 458,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-08-31T15:39:30Z"
@@ -354,7 +385,7 @@
      "US-27 S",
      "FL-25"
     ],
-    "delay_s": 292,
+    "delay_s": 441,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T15:31:00Z"
@@ -362,33 +393,23 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 403,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T15:14:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-826 N"
     ],
-    "delay_s": 285,
+    "delay_s": 393,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-08-31T15:30:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-932"
-    ],
-    "delay_s": 283,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T15:29:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 E",
-     "I-395 E"
-    ],
-    "delay_s": 283,
-    "magnitude": 1,
-    "description": "Slow traffic; Roadworks",
-    "start": "2026-08-31T12:25:07Z"
    },
    {
     "county": "Miami-Dade",
@@ -398,48 +419,47 @@
      "US-41 S",
      "FL-5"
     ],
-    "delay_s": 273,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 336,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-08-31T15:24:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-907"
+     "I-95 S"
     ],
-    "delay_s": 260,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T15:33:00Z"
+    "delay_s": 298,
+    "magnitude": 2,
+    "description": "Queuing traffic; Roadworks",
+    "start": "2026-08-31T13:47:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S",
-     "US-41 N"
+     "FL-886"
     ],
-    "delay_s": 243,
+    "delay_s": 297,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T15:36:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 235,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T15:26:30Z"
+    "start": "2026-08-31T15:37:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 220,
+    "delay_s": 269,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T15:14:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 258,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T14:23:30Z"
@@ -447,9 +467,20 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-934"
+     "I-395 W"
     ],
-    "delay_s": 198,
+    "delay_s": 257,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-08-31T12:05:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 225,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T15:36:30Z"
@@ -457,64 +488,94 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-9"
+     "FL-934"
     ],
-    "delay_s": 195,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T15:33:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 193,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T15:14:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-9"
-    ],
-    "delay_s": 186,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T15:34:00Z"
+    "delay_s": 224,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T15:26:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-112 W"
     ],
+    "delay_s": 195,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T15:15:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 E",
+     "I-395 E"
+    ],
+    "delay_s": 194,
+    "magnitude": 1,
+    "description": "Slow traffic; Roadworks",
+    "start": "2026-08-31T12:25:07Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826"
+    ],
     "delay_s": 183,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T15:15:30Z"
+    "start": "2026-08-31T15:36:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-907"
+    ],
+    "delay_s": 182,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T15:33:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-932"
+    ],
+    "delay_s": 168,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T15:29:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-994"
+    ],
+    "delay_s": 150,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T15:53:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 182,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T15:14:00Z"
+    "delay_s": 150,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T15:58:30Z"
    }
   ],
-  "incident_count": 309,
-  "named_count": 69,
+  "incident_count": 321,
+  "named_count": 80,
   "major_count": 10,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-31T11:46:13-04:00",
+  "fetched_at": "2026-08-31T12:01:09-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -560,7 +621,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-31T11:46:13-04:00",
+  "fetched_at": "2026-08-31T12:01:10-04:00",
   "issued": "800 AM EDT Mon Aug 31 2026",
   "areas": [
    {
@@ -579,7 +640,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-31T11:46:13-04:00",
+  "fetched_at": "2026-08-31T12:01:10-04:00",
   "florida": "$3.8781",
   "national": "$4.0807",
   "diesel": "$5.4232",
@@ -588,7 +649,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-31T11:46:15-04:00",
+  "fetched_at": "2026-08-31T12:01:14-04:00",
   "streams": {
    "local": [
     {
@@ -827,6 +888,22 @@
   ],
   "colombia": [
    {
+    "title": "Universidad Industrial de Santander propone al gobierno De La Espriella un estudio microsísmico para detectar las zonas más vulnerables de derrumbe",
+    "url": "https://www.eltiempo.com/colombia/santander/universidad-industrial-de-santander-propone-al-gobierno-de-la-espriella-un-estudio-microsismico-para-detectar-las-zonas-mas-vulnerables-de-derrumbe-3582374",
+    "published": "2026-08-31T10:41:19-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/27/6a9043571f066.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Motociclista terminó dentro de una buseta tras fuerte choque en el centro de Buga: 'Menos mal que no le pasó nada'",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/motociclista-termino-dentro-de-una-buseta-tras-fuerte-choque-en-el-centro-de-buga-menos-mal-que-no-le-paso-nada-3582369",
+    "published": "2026-08-31T10:40:51-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a959f77af28c.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Barranquilla tendrá suspensión de agua por casi 19 horas este martes: gerente de la Triple A recomienda no tener clases en los colegios",
     "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-tendra-suspension-de-agua-por-casi-19-horas-este-martes-gerente-de-la-triple-a-recomienda-no-tener-clases-en-los-colegios-3582359",
     "published": "2026-08-31T10:01:00-05:00",
@@ -873,22 +950,6 @@
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a9575e00b182.jpeg",
     "media_type": "image"
-   },
-   {
-    "title": "Alcalde 'Fico' Gutiérrez responde al presidente De La Espriella y anuncia cooperación para investigar corrupción en Medellín: entregará pruebas al FBI",
-    "url": "https://www.eltiempo.com/colombia/medellin/alcalde-fico-gutierrez-responde-al-presidente-de-la-espriella-y-anuncia-cooperacion-para-investigar-corrupcion-en-medellin-entregara-pruebas-al-fbi-3582297",
-    "published": "2026-08-31T06:45:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/07/02/6a46f2961f9f0.r_d.529-668-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Disidentes de las Farc bajo órdenes de 'Mordisco' lanzaron cilindros bomba en El Patía, Cauca: el hecho dejó heridos a tres civiles y a un soldado",
-    "url": "https://www.eltiempo.com/colombia/cali/disidentes-de-las-farc-bajo-ordenes-de-mordisco-lanzaron-cilindros-bomba-contra-soldados-en-zona-de-el-patia-cauca-dentro-la-escalada-terrorista-3582298",
-    "published": "2026-08-31T06:39:04-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/18/6a8497253670f.jpeg",
-    "media_type": "image"
    }
   ],
   "world": [
@@ -925,16 +986,16 @@
     "media_type": null
    },
    {
-    "title": "The U.S. Venezuela oil deal won't lower your gas prices. Here's what you need to know",
-    "url": "https://www.npr.org/2026/08/31/nx-s1-5949407/us-venezuelan-oil-deal",
+    "title": "Hit shows from Edinburgh's Fringe festival are coming to America. Here are our top picks",
+    "url": "https://www.npr.org/2026/08/31/nx-s1-5949346/edinburgh-fringe-scotland-best-shows-coming-to-america",
     "published": "Mon, 31 Aug 2026 05:00:00 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
    },
    {
-    "title": "Hit shows from Edinburgh's Fringe festival are coming to America. Here are our top picks",
-    "url": "https://www.npr.org/2026/08/31/nx-s1-5949346/edinburgh-fringe-scotland-best-shows-coming-to-america",
+    "title": "The U.S.-Venezuela oil deal won't lower your gas prices. Here's what you need to know",
+    "url": "https://www.npr.org/2026/08/31/nx-s1-5949407/us-venezuelan-oil-deal",
     "published": "Mon, 31 Aug 2026 05:00:00 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
@@ -961,7 +1022,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-31T11:46:16-04:00",
+  "fetched_at": "2026-08-31T12:01:15-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -969,7 +1030,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-31T11:46:16-04:00",
+  "fetched_at": "2026-08-31T12:01:15-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -986,15 +1047,9 @@
       "url": "https://www.eltiempo.com/colombia/medellin/facturaban-420-millones-al-mes-la-cruda-radiografia-de-los-conejos-grupo-criminal-que-usaba-ninos-para-vender-droga-en-medellin-3582318",
       "published": "2026-08-31T07:48:44-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Alcalde 'Fico' Gutiérrez responde al presidente De La Espriella y anuncia cooperación para investigar corrupción en Medellín: entregará pruebas al FBI",
-      "url": "https://www.eltiempo.com/colombia/medellin/alcalde-fico-gutierrez-responde-al-presidente-de-la-espriella-y-anuncia-cooperacion-para-investigar-corrupcion-en-medellin-entregara-pruebas-al-fbi-3582297",
-      "published": "2026-08-31T06:45:00-05:00",
-      "section": "colombia"
      }
     ],
-    "count": 3,
+    "count": 2,
     "issue": "Caída de un imperio criminal: capturan en Medellín a alias ‘Hermes’, el magnate textil señalado de enviar toneladas de cocaína a Europa"
    },
    {
@@ -1008,7 +1063,7 @@
       "section": "world"
      },
      {
-      "title": "The U.S. Venezuela oil deal won't lower your gas prices. Here's what you need to know",
+      "title": "The U.S.-Venezuela oil deal won't lower your gas prices. Here's what you need to know",
       "url": "https://www.npr.org/2026/08/31/nx-s1-5949407/us-venezuelan-oil-deal",
       "published": "Mon, 31 Aug 2026 05:00:00 -0400",
       "section": "world"
