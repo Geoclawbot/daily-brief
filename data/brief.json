@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-30T20:15:56-04:00",
- "generated_at_utc": "2026-08-31T00:15:56+00:00",
+ "generated_at": "2026-08-30T20:20:53-04:00",
+ "generated_at_utc": "2026-08-31T00:20:53+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, August 30",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-30T20:15:57-04:00",
+  "fetched_at": "2026-08-30T20:20:54-04:00",
   "curve": [
    {
     "time": "2026-08-30T05:00",
@@ -164,15 +164,16 @@
   "peak_hour": 15
  },
  "alerts": {
-  "ok": false,
-  "source": "NWS alerts",
-  "fetched_at": "2026-08-30T20:15:57-04:00",
-  "error": "502 Server Error: Bad Gateway for url: https://api.weather.gov/alerts/active?point=25.971228%2C-80.362648"
+  "ok": true,
+  "source": "NWS api.weather.gov/alerts",
+  "fetched_at": "2026-08-30T20:20:54-04:00",
+  "alerts": [],
+  "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-30T20:15:58-04:00",
+  "fetched_at": "2026-08-30T20:20:55-04:00",
   "aqi": 28,
   "category": "Good",
   "pollutant": "PM2.5",
@@ -190,7 +191,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-30T20:15:59-04:00",
+  "fetched_at": "2026-08-30T20:20:55-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -203,7 +204,7 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed",
+    "description": "Closed; Roadworks",
     "start": "2026-08-30T22:43:00Z"
    },
    {
@@ -214,7 +215,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -224,7 +225,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -262,7 +263,7 @@
      "FL-91 N",
      "Florida's Tpke N"
     ],
-    "delay_s": 527,
+    "delay_s": 613,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-30T21:37:30Z"
@@ -272,10 +273,31 @@
     "roads": [
      "I-395 W"
     ],
-    "delay_s": 191,
+    "delay_s": 241,
     "magnitude": 3,
     "description": "Stationary traffic; Roadworks",
     "start": "2026-08-30T23:40:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 203,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T00:07:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 193,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T00:14:30Z"
    },
    {
     "county": "Broward",
@@ -293,7 +315,7 @@
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 109,
+    "delay_s": 68,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-08-30T22:25:00Z"
@@ -301,12 +323,23 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "Gratigny Pkwy W",
+     "FL-924 W"
     ],
-    "delay_s": 62,
+    "delay_s": 56,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T00:19:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 48,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-08-30T23:42:00Z"
+    "start": "2026-08-31T00:17:30Z"
    },
    {
     "county": "Broward",
@@ -475,43 +508,17 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-08-31T00:01:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-26T14:57:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-18T20:48:14Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-27T16:08:00Z"
    }
   ],
-  "incident_count": 257,
-  "named_count": 28,
-  "major_count": 6,
+  "incident_count": 258,
+  "named_count": 31,
+  "major_count": 7,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-30T20:15:59-04:00",
+  "fetched_at": "2026-08-30T20:20:56-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -558,7 +565,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-30T20:15:59-04:00",
+  "fetched_at": "2026-08-30T20:20:56-04:00",
   "issued": "800 PM EDT Sun Aug 30 2026",
   "areas": [
    {
@@ -577,7 +584,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-30T20:16:00-04:00",
+  "fetched_at": "2026-08-30T20:20:56-04:00",
   "florida": "$3.8947",
   "national": "$4.0787",
   "diesel": "$5.4413",
@@ -586,7 +593,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-30T20:16:01-04:00",
+  "fetched_at": "2026-08-30T20:20:58-04:00",
   "streams": {
    "local": [
     {
@@ -959,7 +966,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-30T20:16:01-04:00",
+  "fetched_at": "2026-08-30T20:20:58-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -967,7 +974,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-30T20:16:01-04:00",
+  "fetched_at": "2026-08-30T20:20:58-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -1096,8 +1103,6 @@
   "countries_matched": 7,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "alerts"
- ],
- "health": "9/10 sources ok"
+ "failures": [],
+ "health": "10/10 sources ok"
 }
