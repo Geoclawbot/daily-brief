@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-30T21:15:58-04:00",
- "generated_at_utc": "2026-08-31T01:15:58+00:00",
+ "generated_at": "2026-08-30T21:30:59-04:00",
+ "generated_at_utc": "2026-08-31T01:30:59+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, August 30",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-30T21:15:59-04:00",
+  "fetched_at": "2026-08-30T21:31:00-04:00",
   "curve": [
    {
     "time": "2026-08-30T05:00",
@@ -132,31 +132,31 @@
    {
     "time": "2026-08-30T20:00",
     "hour": 20,
-    "temp": 78.3,
-    "feels": 87.6,
+    "temp": 78.7,
+    "feels": 88.1,
     "humidity": 92,
     "pop": 43
    },
    {
     "time": "2026-08-30T21:00",
     "hour": 21,
-    "temp": 78.1,
-    "feels": 87.0,
+    "temp": 77.8,
+    "feels": 87.7,
     "humidity": 93,
-    "pop": 42
+    "pop": 32
    }
   ],
   "current": {
-   "temp": 78.0,
-   "feels": 86.7,
+   "temp": 77.4,
+   "feels": 86.9,
    "humidity": 93,
-   "wind_mph": 6.4,
-   "wind_dir": 25,
-   "observed_at": "2026-08-30T21:15"
+   "wind_mph": 3.6,
+   "wind_dir": 353,
+   "observed_at": "2026-08-30T21:30"
   },
   "today": {
    "high": 88.3,
-   "low": 77.1,
+   "low": 77.4,
    "feels_max": 99.8,
    "pop_max": 45
   },
@@ -166,32 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-30T21:15:59-04:00",
+  "fetched_at": "2026-08-30T21:31:00-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-30T21:16:00-04:00",
-  "aqi": 34,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-08-30T21:31:26-04:00",
+  "aqi": 31,
   "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-08-30 20:00 EST",
-  "forecast": [
-   {
-    "date": "2026-08-31",
-    "aqi": 41,
-    "category": "Good",
-    "pollutant": "O3"
-   }
-  ]
+  "pm25": 6.7,
+  "pm10": 7.5,
+  "observed": "2026-08-30T21:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-30T21:16:00-04:00",
+  "fetched_at": "2026-08-30T21:31:26-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -204,7 +198,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -214,7 +208,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -247,22 +241,11 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Broward",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 592,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T00:23:30Z"
-   },
-   {
     "county": "Miami-Dade",
     "roads": [
-     "I-395 W",
      "FL-836 W"
     ],
-    "delay_s": 534,
+    "delay_s": 677,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T00:48:30Z"
@@ -272,61 +255,71 @@
     "roads": [
      "I-595 W"
     ],
-    "delay_s": 208,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T00:58:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 135,
+    "delay_s": 486,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T01:07:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-814"
-    ],
-    "delay_s": 87,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T00:56:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 80,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T01:11:00Z"
+    "start": "2026-08-31T00:58:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-84"
     ],
-    "delay_s": 62,
+    "delay_s": 443,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T01:13:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 E"
+    ],
+    "delay_s": 186,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-08-31T01:08:00Z"
+    "start": "2026-08-31T01:26:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-994"
+    ],
+    "delay_s": 167,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T01:27:30Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "I-75 S"
+     "I-95 N"
     ],
-    "delay_s": 47,
+    "delay_s": 113,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-08-31T01:13:30Z"
+    "start": "2026-08-31T00:23:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 106,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-31T01:07:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 61,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-31T01:27:30Z"
    },
    {
     "county": "Broward",
@@ -505,15 +498,15 @@
     "start": "2026-06-18T20:48:14Z"
    }
   ],
-  "incident_count": 248,
+  "incident_count": 255,
   "named_count": 29,
-  "major_count": 5,
+  "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-30T21:16:01-04:00",
+  "fetched_at": "2026-08-30T21:31:27-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -551,16 +544,18 @@
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Southeast | Broward | There is a crash on Florida's Turnpike, northbound at mile post 51 beyond Hollywood Boulevard. All lanes are closed. Motorists are asked to seek an alternate route and expect delays. | Aug 30 2026, 7:43 PM",
-   "Panhandle | Leon | US 27: A major incident has closed all Westbound lanes near Conner Blvd in Leon County. Motorists are advised to seek alternate route and use caution in the area. | Aug 30 2026, 8:56 PM"
+   "Panhandle | Leon | US 27: A major incident has closed all Westbound lanes near Conner Blvd in Leon County. Motorists are advised to seek alternate route and use caution in the area. | Aug 30 2026, 8:56 PM",
+   "Southeast | Palm Beach | There is scheduled road work on Florida's Turnpike, southbound at exit 99, Okechobee Boulevard. All lanes are scheduled to be closed from 9pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike at exit 97, Southern Boulevard. | Aug 30 2026, 9:25 PM"
   ],
   "fl511_local": [
-   "Southeast | Broward | There is a crash on Florida's Turnpike, northbound at mile post 51 beyond Hollywood Boulevard. All lanes are closed. Motorists are asked to seek an alternate route and expect delays. | Aug 30 2026, 7:43 PM"
+   "Southeast | Broward | There is a crash on Florida's Turnpike, northbound at mile post 51 beyond Hollywood Boulevard. All lanes are closed. Motorists are asked to seek an alternate route and expect delays. | Aug 30 2026, 7:43 PM",
+   "Southeast | Palm Beach | There is scheduled road work on Florida's Turnpike, southbound at exit 99, Okechobee Boulevard. All lanes are scheduled to be closed from 9pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike at exit 97, Southern Boulevard. | Aug 30 2026, 9:25 PM"
   ]
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-30T21:16:01-04:00",
+  "fetched_at": "2026-08-30T21:31:27-04:00",
   "issued": "800 PM EDT Sun Aug 30 2026",
   "areas": [
    {
@@ -579,7 +574,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-30T21:16:02-04:00",
+  "fetched_at": "2026-08-30T21:31:27-04:00",
   "florida": "$3.8947",
   "national": "$4.0787",
   "diesel": "$5.4413",
@@ -588,7 +583,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-30T21:16:03-04:00",
+  "fetched_at": "2026-08-30T21:31:29-04:00",
   "streams": {
    "local": [
     {
@@ -697,6 +692,14 @@
   ],
   "local": [
    {
+    "title": "1 dead, 1 critically injured after Porsche crashes into pole in Southwest Miami-Dade",
+    "url": "https://www.local10.com/news/local/2026/08/30/1-dead-1-critically-injured-after-porsche-crashes-into-pole-in-southwest-miami-dade/",
+    "published": "Mon, 31 Aug 2026 01:29:08 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Dolly-themed celebration brings wigs, pink and cocktails to Wilton Manors",
     "url": "https://www.local10.com/news/local/2026/08/30/dolly-themed-celebration-brings-wigs-pink-and-cocktails-to-wilton-manors/",
     "published": "Sun, 30 Aug 2026 22:22:55 +0000",
@@ -748,14 +751,6 @@
     "title": "Driver airlifted to hospital after rollover crash on Palmetto Expressway in Miami Lakes",
     "url": "https://www.local10.com/news/local/2026/08/30/driver-airlifted-to-hospital-after-rollover-crash-on-palmetto-expressway-in-miami-lakes/",
     "published": "Sun, 30 Aug 2026 13:48:31 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Woman hospitalized after drowning incident in North Lauderdale",
-    "url": "https://www.local10.com/news/local/2026/08/29/woman-hospitalized-after-drowning-incident-in-north-fort-lauderdale/",
-    "published": "Sun, 30 Aug 2026 01:48:44 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -837,7 +832,7 @@
    {
     "title": "Liam Santiago, niño con distrofia de Duchenne, le pidió ayuda al presidente Abelardo de la Espriella: 'Podría cambiar la vida de muchos niños'",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/liam-santiago-nino-con-distrofia-de-duchenne-le-pidio-ayuda-al-presidente-abelardo-de-la-espriella-podria-cambiar-la-vida-de-muchos-ninos-3582241",
-    "published": "2026-08-30T17:26:43-05:00",
+    "published": "2026-08-30T20:11:02-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/30/6a94ad2f21e93.r_d.930-221-0.png",
     "media_type": "image"
@@ -961,7 +956,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-30T21:16:03-04:00",
+  "fetched_at": "2026-08-30T21:31:31-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -969,7 +964,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-30T21:16:03-04:00",
+  "fetched_at": "2026-08-30T21:31:31-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -1044,7 +1039,7 @@
      {
       "title": "Liam Santiago, niño con distrofia de Duchenne, le pidió ayuda al presidente Abelardo de la Espriella: 'Podría cambiar la vida de muchos niños'",
       "url": "https://www.eltiempo.com/colombia/otras-ciudades/liam-santiago-nino-con-distrofia-de-duchenne-le-pidio-ayuda-al-presidente-abelardo-de-la-espriella-podria-cambiar-la-vida-de-muchos-ninos-3582241",
-      "published": "2026-08-30T17:26:43-05:00",
+      "published": "2026-08-30T20:11:02-05:00",
       "section": "colombia"
      }
     ],
