@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-30T20:00:57-04:00",
- "generated_at_utc": "2026-08-31T00:00:57+00:00",
+ "generated_at": "2026-08-30T20:15:56-04:00",
+ "generated_at_utc": "2026-08-31T00:15:56+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, August 30",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-30T20:00:59-04:00",
+  "fetched_at": "2026-08-30T20:15:57-04:00",
   "curve": [
    {
     "time": "2026-08-30T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 78.0,
-   "feels": 87.3,
+   "temp": 77.8,
+   "feels": 86.2,
    "humidity": 89,
-   "wind_mph": 3.0,
-   "wind_dir": 257,
-   "observed_at": "2026-08-30T20:00"
+   "wind_mph": 4.9,
+   "wind_dir": 313,
+   "observed_at": "2026-08-30T20:15"
   },
   "today": {
    "high": 88.3,
@@ -164,21 +164,20 @@
   "peak_hour": 15
  },
  "alerts": {
-  "ok": true,
-  "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-30T20:00:59-04:00",
-  "alerts": [],
-  "count": 0
+  "ok": false,
+  "source": "NWS alerts",
+  "fetched_at": "2026-08-30T20:15:57-04:00",
+  "error": "502 Server Error: Bad Gateway for url: https://api.weather.gov/alerts/active?point=25.971228%2C-80.362648"
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-30T20:01:08-04:00",
-  "aqi": 33,
+  "fetched_at": "2026-08-30T20:15:58-04:00",
+  "aqi": 28,
   "category": "Good",
   "pollutant": "PM2.5",
   "reporting_area": "Miami",
-  "observed": "2026-08-30 18:00 EST",
+  "observed": "2026-08-30 19:00 EST",
   "forecast": [
    {
     "date": "2026-08-31",
@@ -191,7 +190,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-30T20:01:08-04:00",
+  "fetched_at": "2026-08-30T20:15:59-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -215,7 +214,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -225,7 +224,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -263,21 +262,30 @@
      "FL-91 N",
      "Florida's Tpke N"
     ],
-    "delay_s": 808,
+    "delay_s": 527,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-30T21:37:30Z"
    },
    {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-395 W"
+    ],
+    "delay_s": 191,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-08-30T23:40:00Z"
+   },
+   {
     "county": "Broward",
     "roads": [
-     "FL-7",
-     "US-441 N"
+     "FL-814"
     ],
-    "delay_s": 359,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-30T23:18:30Z"
+    "delay_s": 110,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T00:01:30Z"
    },
    {
     "county": "Broward",
@@ -285,7 +293,7 @@
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 168,
+    "delay_s": 109,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-08-30T22:25:00Z"
@@ -293,52 +301,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-395 W"
-    ],
-    "delay_s": 146,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-08-30T23:40:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "I-95 S"
     ],
-    "delay_s": 72,
+    "delay_s": 62,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-08-30T23:42:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-814"
-    ],
-    "delay_s": 71,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-30T23:59:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-84"
-    ],
-    "delay_s": 65,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-30T23:57:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826"
-    ],
-    "delay_s": 64,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-30T23:40:30Z"
    },
    {
     "county": "Broward",
@@ -506,18 +474,44 @@
     "delay_s": null,
     "magnitude": 0,
     "description": "Roadworks",
+    "start": "2026-08-31T00:01:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
     "start": "2026-08-26T14:57:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-06-18T20:48:14Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-06-27T16:08:00Z"
    }
   ],
-  "incident_count": 256,
-  "named_count": 30,
-  "major_count": 7,
+  "incident_count": 257,
+  "named_count": 28,
+  "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-30T20:01:09-04:00",
+  "fetched_at": "2026-08-30T20:15:59-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -564,7 +558,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-30T20:01:09-04:00",
+  "fetched_at": "2026-08-30T20:15:59-04:00",
   "issued": "800 PM EDT Sun Aug 30 2026",
   "areas": [
    {
@@ -583,7 +577,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-30T20:01:09-04:00",
+  "fetched_at": "2026-08-30T20:16:00-04:00",
   "florida": "$3.8947",
   "national": "$4.0787",
   "diesel": "$5.4413",
@@ -592,7 +586,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-30T20:01:12-04:00",
+  "fetched_at": "2026-08-30T20:16:01-04:00",
   "streams": {
    "local": [
     {
@@ -965,7 +959,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-30T20:01:12-04:00",
+  "fetched_at": "2026-08-30T20:16:01-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -973,7 +967,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-30T20:01:12-04:00",
+  "fetched_at": "2026-08-30T20:16:01-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -1102,6 +1096,8 @@
   "countries_matched": 7,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [],
- "health": "10/10 sources ok"
+ "failures": [
+  "alerts"
+ ],
+ "health": "9/10 sources ok"
 }
