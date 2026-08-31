@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-31T03:30:57-04:00",
- "generated_at_utc": "2026-08-31T07:30:57+00:00",
+ "generated_at": "2026-08-31T03:46:10-04:00",
+ "generated_at_utc": "2026-08-31T07:46:10+00:00",
  "weekday": "Monday",
  "date_label": "Monday, August 31",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-31T03:30:58-04:00",
+  "fetched_at": "2026-08-31T03:46:10-04:00",
   "curve": [
    {
     "time": "2026-08-31T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 78.4,
+   "temp": 78.3,
    "feels": 88.6,
-   "humidity": 92,
-   "wind_mph": 2.8,
-   "wind_dir": 346,
-   "observed_at": "2026-08-31T03:30"
+   "humidity": 93,
+   "wind_mph": 2.9,
+   "wind_dir": 351,
+   "observed_at": "2026-08-31T03:45"
   },
   "today": {
    "high": 88.9,
@@ -166,26 +166,32 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-31T03:30:58-04:00",
+  "fetched_at": "2026-08-31T03:46:11-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-08-31T03:31:23-04:00",
-  "aqi": 33,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-08-31T03:46:12-04:00",
+  "aqi": 31,
   "category": "Good",
-  "pm25": 11.7,
-  "pm10": 12.6,
-  "observed": "2026-08-31T03:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-08-31 2:00 EST",
+  "forecast": [
+   {
+    "date": "2026-08-31",
+    "aqi": 41,
+    "category": "Good",
+    "pollutant": "O3"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-08-31T03:31:25-04:00",
+  "fetched_at": "2026-08-31T03:46:14-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
@@ -270,7 +276,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -280,7 +286,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -321,16 +327,6 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-08-31T01:50:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-9"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-08-31T03:53:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -559,17 +555,27 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-08-03T13:43:04Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-886"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-08-27T13:49:00Z"
    }
   ],
-  "incident_count": 264,
-  "named_count": 34,
-  "major_count": 17,
+  "incident_count": 263,
+  "named_count": 33,
+  "major_count": 16,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-31T03:31:26-04:00",
+  "fetched_at": "2026-08-31T03:46:15-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -608,7 +614,7 @@
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Southeast | Broward | There is a crash on Florida's Turnpike, northbound at mile post 51 beyond Hollywood Boulevard. All lanes are closed. Motorists are asked to seek an alternate route and expect delays. | Aug 30 2026, 7:43 PM",
    "Southeast | Palm Beach | There is scheduled road work on Florida's Turnpike, southbound at exit 99, Okechobee Boulevard. All lanes are scheduled to be closed from 9pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike at exit 97, Southern Boulevard. | Aug 30 2026, 9:25 PM",
-   "Central | Brevard | Crash on I-95 South in Brevard County at MM 214 with All Lanes Closed. Motorists should seek an alternate route and expect significant delays approaching the area. | Aug 31 2026, 3:31 AM"
+   "Central | Brevard | Crash on I-95 South in Brevard County at MM 214 with All Lanes Closed. Motorists should seek an alternate route and expect significant delays approaching the area. | Aug 31 2026, 3:45 AM"
   ],
   "fl511_local": [
    "Southeast | Broward | There is a crash on Florida's Turnpike, northbound at mile post 51 beyond Hollywood Boulevard. All lanes are closed. Motorists are asked to seek an alternate route and expect delays. | Aug 30 2026, 7:43 PM",
@@ -618,7 +624,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-31T03:31:26-04:00",
+  "fetched_at": "2026-08-31T03:46:15-04:00",
   "issued": "200 AM EDT Mon Aug 31 2026",
   "areas": [
    {
@@ -637,7 +643,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-31T03:31:26-04:00",
+  "fetched_at": "2026-08-31T03:46:15-04:00",
   "florida": "$3.8947",
   "national": "$4.0787",
   "diesel": "$5.4413",
@@ -646,7 +652,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-31T03:31:27-04:00",
+  "fetched_at": "2026-08-31T03:46:17-04:00",
   "streams": {
    "local": [
     {
@@ -885,6 +891,30 @@
   ],
   "colombia": [
    {
+    "title": "¡Evite multas, conductor! Pico y placa en Bucaramanga este lunes 31 de agosto de 2026: consulte cómo aplica la restricción",
+    "url": "https://www.eltiempo.com/colombia/santander/evite-multas-conductor-pico-y-placa-en-bucaramanga-este-lunes-31-de-agosto-de-2026-consulte-como-aplica-la-restriccion-3581879",
+    "published": "2026-08-31T02:30:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2023/08/30/64efcd4463475.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Así opera el pico y placa en Cali este lunes 31 de agosto de 2026: estas son las restricciones y los cambios en la medida por el terremoto",
+    "url": "https://www.eltiempo.com/colombia/cali/asi-opera-el-pico-y-placa-en-cali-este-lunes-31-de-agosto-de-2026-estas-son-las-restricciones-y-los-cambios-en-la-medida-por-el-terremoto-3581874",
+    "published": "2026-08-31T02:30:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2024/11/27/674721e179539.r_d.662-61-0.png",
+    "media_type": "image"
+   },
+   {
+    "title": "¡Pilas, conductor! Pico y placa en Medellín este lunes 31 de agosto de 2026: consulte cómo aplica la restricción",
+    "url": "https://www.eltiempo.com/colombia/medellin/pilas-conductor-pico-y-placa-en-medellin-este-lunes-31-de-agosto-de-2026-consulte-como-aplica-la-restriccion-3581871",
+    "published": "2026-08-31T02:30:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2024/10/30/672234f2540e9.png",
+    "media_type": "image"
+   },
+   {
     "title": "Pereira conmemoró sus 163 años y rindió homenaje a las víctimas del terremoto; esto dijo el alcalde Mauricio Salazar: 'Nos verán volver, lo juro'",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/pereira-conmemoro-sus-163-anos-y-rindio-homenaje-a-las-victimas-del-terremoto-esto-dijo-el-alcalde-mauricio-salazar-nos-veran-volver-lo-juro-3582288",
     "published": "2026-08-30T23:13:13-05:00",
@@ -922,30 +952,6 @@
     "published": "2026-08-30T22:20:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/29/6a936c67dd99e.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Lideresa social que defendía a adultos mayores en Jamundí fue asesinada días después del crimen del hijo de una activista de la Mesa de Víctimas",
-    "url": "https://www.eltiempo.com/colombia/cali/lideresa-social-que-defendia-a-adultos-mayores-en-jamundi-fue-asesinada-dias-despues-del-crimen-del-hijo-de-una-activista-de-mesa-de-victimas-3582265",
-    "published": "2026-08-30T21:30:45-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/30/6a94e30bf0069.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Abelardo De La Espriella entrega balance actualizado de afectaciones por terremoto en Colombia: cifras de casas, colegios e infraestructuras afectadas",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/abelardo-de-la-espriella-entrega-balance-actualizado-de-afectaciones-por-terremoto-en-colombia-cifras-de-casas-colegios-e-infraestructuras-afectadas-3582262",
-    "published": "2026-08-30T21:14:11-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/30/6a94d7e8e7abc.r_d.904-376-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Historia del clamor de dos niñas cuyos hogares están en ruinas; una de ellas, hija del bombero rescatista que cambió protocolo tras terremoto en Cali",
-    "url": "https://www.eltiempo.com/colombia/cali/historia-de-clamor-de-dos-ninas-cuyos-hogares-estan-en-ruinas-una-de-ellas-hija-del-bombero-rescatista-que-cambio-protocolo-tras-terremoto-en-cali-3582244",
-    "published": "2026-08-30T18:04:22-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/30/6a94b2017a633.jpeg",
     "media_type": "image"
    }
   ],
@@ -1019,7 +1025,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-31T03:31:27-04:00",
+  "fetched_at": "2026-08-31T03:46:18-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1027,7 +1033,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-31T03:31:27-04:00",
+  "fetched_at": "2026-08-31T03:46:18-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -1040,15 +1046,15 @@
       "section": "local"
      },
      {
-      "title": "Abelardo De La Espriella entrega balance actualizado de afectaciones por terremoto en Colombia: cifras de casas, colegios e infraestructuras afectadas",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/abelardo-de-la-espriella-entrega-balance-actualizado-de-afectaciones-por-terremoto-en-colombia-cifras-de-casas-colegios-e-infraestructuras-afectadas-3582262",
-      "published": "2026-08-30T21:14:11-05:00",
+      "title": "Así opera el pico y placa en Cali este lunes 31 de agosto de 2026: estas son las restricciones y los cambios en la medida por el terremoto",
+      "url": "https://www.eltiempo.com/colombia/cali/asi-opera-el-pico-y-placa-en-cali-este-lunes-31-de-agosto-de-2026-estas-son-las-restricciones-y-los-cambios-en-la-medida-por-el-terremoto-3581874",
+      "published": "2026-08-31T02:30:00-05:00",
       "section": "colombia"
      },
      {
-      "title": "Historia del clamor de dos niñas cuyos hogares están en ruinas; una de ellas, hija del bombero rescatista que cambió protocolo tras terremoto en Cali",
-      "url": "https://www.eltiempo.com/colombia/cali/historia-de-clamor-de-dos-ninas-cuyos-hogares-estan-en-ruinas-una-de-ellas-hija-del-bombero-rescatista-que-cambio-protocolo-tras-terremoto-en-cali-3582244",
-      "published": "2026-08-30T18:04:22-05:00",
+      "title": "¡Pilas, conductor! Pico y placa en Medellín este lunes 31 de agosto de 2026: consulte cómo aplica la restricción",
+      "url": "https://www.eltiempo.com/colombia/medellin/pilas-conductor-pico-y-placa-en-medellin-este-lunes-31-de-agosto-de-2026-consulte-como-aplica-la-restriccion-3581871",
+      "published": "2026-08-31T02:30:00-05:00",
       "section": "colombia"
      }
     ],
