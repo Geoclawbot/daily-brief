@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-30T22:45:54-04:00",
- "generated_at_utc": "2026-08-31T02:45:54+00:00",
+ "generated_at": "2026-08-30T23:00:56-04:00",
+ "generated_at_utc": "2026-08-31T03:00:56+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, August 30",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-30T22:45:54-04:00",
+  "fetched_at": "2026-08-30T23:00:57-04:00",
   "curve": [
    {
     "time": "2026-08-30T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 77.5,
-   "feels": 87.3,
+   "temp": 77.7,
+   "feels": 86.7,
    "humidity": 92,
-   "wind_mph": 2.3,
-   "wind_dir": 17,
-   "observed_at": "2026-08-30T22:45"
+   "wind_mph": 4.5,
+   "wind_dir": 9,
+   "observed_at": "2026-08-30T23:00"
   },
   "today": {
    "high": 88.3,
@@ -166,32 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-30T22:45:55-04:00",
+  "fetched_at": "2026-08-30T23:00:57-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-30T22:45:55-04:00",
-  "aqi": 34,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-08-30T23:01:34-04:00",
+  "aqi": 31,
   "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-08-30 21:00 EST",
-  "forecast": [
-   {
-    "date": "2026-08-31",
-    "aqi": 41,
-    "category": "Good",
-    "pollutant": "O3"
-   }
-  ]
+  "pm25": 6.5,
+  "pm10": 6.8,
+  "observed": "2026-08-30T23:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-30T22:45:56-04:00",
+  "fetched_at": "2026-08-30T23:01:35-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -205,6 +199,16 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-08-31T01:59:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-834"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-08-31T02:56:30Z"
    },
    {
     "county": "Broward",
@@ -265,6 +269,26 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-08-31T01:50:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-08-31T02:56:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-08-31T02:57:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -353,7 +377,7 @@
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 238,
+    "delay_s": 239,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T01:48:30Z"
@@ -361,43 +385,32 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-7",
-     "US-441 S"
+     "I-75 S"
     ],
-    "delay_s": 157,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T02:39:00Z"
+    "delay_s": 200,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T02:31:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 W"
+     "FL-994"
     ],
-    "delay_s": 81,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T01:07:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-75 S"
-    ],
-    "delay_s": 63,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T02:31:30Z"
+    "delay_s": 154,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T03:00:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-595 E"
     ],
-    "delay_s": 59,
+    "delay_s": 57,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-08-31T02:28:00Z"
+    "start": "2026-08-31T02:51:30Z"
    },
    {
     "county": "Broward",
@@ -483,37 +496,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-08-28T06:56:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-13T10:30:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-395 W"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-08-21T08:47:30Z"
    }
   ],
-  "incident_count": 263,
-  "named_count": 35,
-  "major_count": 15,
+  "incident_count": 267,
+  "named_count": 37,
+  "major_count": 18,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-30T22:45:56-04:00",
+  "fetched_at": "2026-08-30T23:01:36-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -562,7 +555,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-30T22:45:57-04:00",
+  "fetched_at": "2026-08-30T23:01:36-04:00",
   "issued": "800 PM EDT Sun Aug 30 2026",
   "areas": [
    {
@@ -581,7 +574,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-30T22:45:57-04:00",
+  "fetched_at": "2026-08-30T23:01:36-04:00",
   "florida": "$3.8947",
   "national": "$4.0787",
   "diesel": "$5.4413",
@@ -590,7 +583,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-30T22:45:58-04:00",
+  "fetched_at": "2026-08-30T23:01:38-04:00",
   "streams": {
    "local": [
     {
@@ -887,7 +880,7 @@
    {
     "title": "Atacaron con explosivos la empresa de aseo Urbaser en Popayán: reportaron daños en camiones que afectarían el servicio público de recolección",
     "url": "https://www.eltiempo.com/colombia/cali/atacaron-con-explosivos-la-empresa-de-aseo-urbaser-en-popayan-reportaron-danos-en-camiones-que-afectarian-el-servicio-publico-de-recoleccion-3582219",
-    "published": "2026-08-30T13:48:59-05:00",
+    "published": "2026-08-30T21:41:35-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/30/6a94740e292d8.r_d.772-293-0.jpeg",
     "media_type": "image"
@@ -963,7 +956,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-30T22:45:59-04:00",
+  "fetched_at": "2026-08-30T23:01:41-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -971,7 +964,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-30T22:45:59-04:00",
+  "fetched_at": "2026-08-30T23:01:41-04:00",
   "countries": [
    {
     "iso": "COL",
