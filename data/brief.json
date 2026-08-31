@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-30T23:16:01-04:00",
- "generated_at_utc": "2026-08-31T03:16:01+00:00",
+ "generated_at": "2026-08-30T23:30:58-04:00",
+ "generated_at_utc": "2026-08-31T03:30:58+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, August 30",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-30T23:16:02-04:00",
+  "fetched_at": "2026-08-30T23:30:59-04:00",
   "curve": [
    {
     "time": "2026-08-30T05:00",
@@ -147,16 +147,16 @@
    }
   ],
   "current": {
-   "temp": 77.7,
-   "feels": 86.5,
-   "humidity": 92,
-   "wind_mph": 4.9,
-   "wind_dir": 24,
-   "observed_at": "2026-08-30T23:15"
+   "temp": 77.9,
+   "feels": 87.3,
+   "humidity": 93,
+   "wind_mph": 4.6,
+   "wind_dir": 29,
+   "observed_at": "2026-08-30T23:30"
   },
   "today": {
    "high": 88.3,
-   "low": 77.4,
+   "low": 77.8,
    "feels_max": 99.8,
    "pop_max": 45
   },
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-30T23:16:02-04:00",
+  "fetched_at": "2026-08-30T23:30:59-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-08-30T23:16:28-04:00",
+  "fetched_at": "2026-08-30T23:31:25-04:00",
   "aqi": 31,
   "category": "Good",
   "pm25": 6.5,
@@ -185,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-30T23:16:29-04:00",
+  "fetched_at": "2026-08-30T23:31:26-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -349,7 +349,7 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed",
+    "description": "Closed; Roadworks",
     "start": "2026-08-31T01:59:30Z"
    },
    {
@@ -373,11 +373,21 @@
     "start": "2026-08-31T01:10:30Z"
    },
    {
+    "county": "Broward",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 433,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T03:07:30Z"
+   },
+   {
     "county": "Miami-Dade",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 246,
+    "delay_s": 206,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T01:48:30Z"
@@ -385,19 +395,19 @@
    {
     "county": "Broward",
     "roads": [
-     "I-95 N"
+     "I-595 W"
     ],
-    "delay_s": 197,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T03:07:30Z"
+    "delay_s": 76,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T03:29:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-75 S"
     ],
-    "delay_s": 73,
+    "delay_s": 59,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-08-31T02:31:30Z"
@@ -405,29 +415,9 @@
    {
     "county": "Broward",
     "roads": [
-     "I-595 W"
-    ],
-    "delay_s": 67,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T03:08:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-595 W"
-    ],
-    "delay_s": 55,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T03:11:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
      "I-595 E"
     ],
-    "delay_s": 35,
+    "delay_s": 36,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-08-31T02:51:30Z"
@@ -495,17 +485,27 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-04-30T20:30:11Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-05-07T11:50:15Z"
    }
   ],
   "incident_count": 268,
-  "named_count": 39,
+  "named_count": 38,
   "major_count": 18,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-30T23:16:29-04:00",
+  "fetched_at": "2026-08-30T23:31:26-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -554,7 +554,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-30T23:16:30-04:00",
+  "fetched_at": "2026-08-30T23:31:26-04:00",
   "issued": "800 PM EDT Sun Aug 30 2026",
   "areas": [
    {
@@ -573,7 +573,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-30T23:16:30-04:00",
+  "fetched_at": "2026-08-30T23:31:26-04:00",
   "florida": "$3.8947",
   "national": "$4.0787",
   "diesel": "$5.4413",
@@ -582,7 +582,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-30T23:16:31-04:00",
+  "fetched_at": "2026-08-30T23:31:28-04:00",
   "streams": {
    "local": [
     {
@@ -821,9 +821,17 @@
   ],
   "colombia": [
    {
+    "title": "Alerta en Cauca por ‘enjambre sísmico’ cerca del volcán Puracé",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/alerta-en-cauca-por-enjambre-sismico-cerca-del-volcan-purace-3582276",
+    "published": "2026-08-30T22:00:35-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/10/6a7a376da233e.r_d.123-566-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Tolima y Valle luchan contra 10 incendios activos: en Armero el fuego impacta en las veredas Maracaibo, Netú, Playón, Los Trinchos y Santuario",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/tolima-y-valle-luchan-contra-10-incendios-activos-en-armero-el-fuego-impacta-en-las-veredas-maracaibo-netu-playon-los-trinchos-y-santuario-3582256",
-    "published": "2026-08-30T21:32:59-05:00",
+    "published": "2026-08-30T22:20:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/29/6a936c67dd99e.jpeg",
     "media_type": "image"
@@ -874,14 +882,6 @@
     "published": "2026-08-30T15:47:43-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2025/12/22/694936da28c90.r_d.826-344-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Atacaron con explosivos la empresa de aseo Urbaser en Popayán: reportaron daños en camiones que afectarían el servicio público de recolección",
-    "url": "https://www.eltiempo.com/colombia/cali/atacaron-con-explosivos-la-empresa-de-aseo-urbaser-en-popayan-reportaron-danos-en-camiones-que-afectarian-el-servicio-publico-de-recoleccion-3582219",
-    "published": "2026-08-30T21:41:35-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/30/6a94740e292d8.r_d.772-293-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -955,7 +955,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-30T23:16:32-04:00",
+  "fetched_at": "2026-08-30T23:31:28-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -963,7 +963,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-30T23:16:32-04:00",
+  "fetched_at": "2026-08-30T23:31:28-04:00",
   "countries": [
    {
     "iso": "COL",
