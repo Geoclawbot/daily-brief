@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-30T21:30:59-04:00",
- "generated_at_utc": "2026-08-31T01:30:59+00:00",
+ "generated_at": "2026-08-30T21:45:57-04:00",
+ "generated_at_utc": "2026-08-31T01:45:57+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, August 30",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-30T21:31:00-04:00",
+  "fetched_at": "2026-08-30T21:45:58-04:00",
   "curve": [
    {
     "time": "2026-08-30T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 77.4,
-   "feels": 86.9,
+   "temp": 77.3,
+   "feels": 86.8,
    "humidity": 93,
-   "wind_mph": 3.6,
-   "wind_dir": 353,
-   "observed_at": "2026-08-30T21:30"
+   "wind_mph": 3.5,
+   "wind_dir": 345,
+   "observed_at": "2026-08-30T21:45"
   },
   "today": {
    "high": 88.3,
@@ -166,30 +166,46 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-30T21:31:00-04:00",
+  "fetched_at": "2026-08-30T21:45:58-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-08-30T21:31:26-04:00",
-  "aqi": 31,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-08-30T21:45:59-04:00",
+  "aqi": 34,
   "category": "Good",
-  "pm25": 6.7,
-  "pm10": 7.5,
-  "observed": "2026-08-30T21:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-08-30 20:00 EST",
+  "forecast": [
+   {
+    "date": "2026-08-31",
+    "aqi": 41,
+    "category": "Good",
+    "pollutant": "O3"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-30T21:31:26-04:00",
+  "fetched_at": "2026-08-30T21:45:59-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
+   {
+    "county": "Broward",
+    "roads": [
+     "I-595 W"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-08-31T01:31:30Z"
+   },
    {
     "county": "Broward",
     "roads": [
@@ -223,6 +239,16 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "I-75 S"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-08-31T01:41:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-934"
     ],
     "delay_s": null,
@@ -241,74 +267,24 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-836 W"
+     "FL-84"
     ],
-    "delay_s": 677,
+    "delay_s": 504,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T00:48:30Z"
+    "start": "2026-08-31T01:13:30Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-595 W"
     ],
-    "delay_s": 486,
+    "delay_s": 304,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T00:58:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-84"
-    ],
-    "delay_s": 443,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T01:13:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 E"
-    ],
-    "delay_s": 186,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T01:26:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-994"
-    ],
-    "delay_s": 167,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T01:27:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 113,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T00:23:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 106,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T01:07:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -316,10 +292,71 @@
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 61,
+    "delay_s": 303,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-08-31T01:27:30Z"
+    "start": "2026-08-31T01:36:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 E"
+    ],
+    "delay_s": 207,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-31T01:26:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-84"
+    ],
+    "delay_s": 176,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T01:42:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 133,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T01:07:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Florida's Tpke N",
+     "FL-821 N"
+    ],
+    "delay_s": 119,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T01:30:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 29,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T01:42:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-595 E"
+    ],
+    "delay_s": 28,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-31T01:41:00Z"
    },
    {
     "county": "Broward",
@@ -467,46 +504,17 @@
     "magnitude": 0,
     "description": "Lane closed; Roadworks",
     "start": "2026-07-20T13:16:51Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-07-20T13:16:51Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-26T14:57:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-18T20:48:14Z"
    }
   ],
-  "incident_count": 255,
-  "named_count": 29,
-  "major_count": 6,
+  "incident_count": 258,
+  "named_count": 32,
+  "major_count": 7,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-30T21:31:27-04:00",
+  "fetched_at": "2026-08-30T21:46:00-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -555,7 +563,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-30T21:31:27-04:00",
+  "fetched_at": "2026-08-30T21:46:01-04:00",
   "issued": "800 PM EDT Sun Aug 30 2026",
   "areas": [
    {
@@ -574,7 +582,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-30T21:31:27-04:00",
+  "fetched_at": "2026-08-30T21:46:01-04:00",
   "florida": "$3.8947",
   "national": "$4.0787",
   "diesel": "$5.4413",
@@ -583,7 +591,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-30T21:31:29-04:00",
+  "fetched_at": "2026-08-30T21:46:03-04:00",
   "streams": {
    "local": [
     {
@@ -822,6 +830,14 @@
   ],
   "colombia": [
    {
+    "title": "Abelardo De La Espriella entrega balance actualizado de afectaciones por terremoto en Colombia: cifras de casas, colegios e infraestructuras afectadas",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/abelardo-de-la-espriella-entrega-balance-actualizado-de-afectaciones-por-terremoto-en-colombia-cifras-de-casas-colegios-e-infraestructuras-afectadas-3582262",
+    "published": "2026-08-30T20:37:44-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/30/6a94d7e8e7abc.png",
+    "media_type": "image"
+   },
+   {
     "title": "Historia del clamor de dos niñas cuyos hogares están en ruinas; una de ellas, hija del bombero rescatista que cambió protocolo tras terremoto en Cali",
     "url": "https://www.eltiempo.com/colombia/cali/historia-de-clamor-de-dos-ninas-cuyos-hogares-estan-en-ruinas-una-de-ellas-hija-del-bombero-rescatista-que-cambio-protocolo-tras-terremoto-en-cali-3582244",
     "published": "2026-08-30T18:04:22-05:00",
@@ -875,14 +891,6 @@
     "published": "2026-08-30T12:55:10-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/07/17/6a5aaf73ec9f7.r_d.114-158-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Ellas son las niñas que le pidieron casa al presidente Abelardo De La Espriella en Cali por el terremoto: '¡El corazón se me salía de la emoción!'",
-    "url": "https://www.eltiempo.com/colombia/cali/ellas-son-las-ninas-que-le-pidieron-casa-al-presidente-abelardo-de-la-espriella-en-cali-por-el-terremoto-el-corazon-se-me-salia-de-la-emocion-3582197",
-    "published": "2026-08-30T17:28:32-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/30/6a945393a83c9.r_d.466-391-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -956,7 +964,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-30T21:31:31-04:00",
+  "fetched_at": "2026-08-30T21:46:04-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -964,7 +972,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-30T21:31:31-04:00",
+  "fetched_at": "2026-08-30T21:46:04-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -975,6 +983,12 @@
       "url": "https://wsvn.com/news/local/miami-dade/medellin-flower-festival-miami/",
       "published": "Sat, 29 Aug 2026 23:12:57 +0000",
       "section": "local"
+     },
+     {
+      "title": "Abelardo De La Espriella entrega balance actualizado de afectaciones por terremoto en Colombia: cifras de casas, colegios e infraestructuras afectadas",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/abelardo-de-la-espriella-entrega-balance-actualizado-de-afectaciones-por-terremoto-en-colombia-cifras-de-casas-colegios-e-infraestructuras-afectadas-3582262",
+      "published": "2026-08-30T20:37:44-05:00",
+      "section": "colombia"
      },
      {
       "title": "Historia del clamor de dos niñas cuyos hogares están en ruinas; una de ellas, hija del bombero rescatista que cambió protocolo tras terremoto en Cali",
@@ -992,12 +1006,6 @@
       "title": "Medellín en racionamiento e Hidroituango en jaque por El Niño: gobernador de Antioquia califica de tardía decisión de Anla y Procuraduría pide cuentas",
       "url": "https://www.eltiempo.com/colombia/medellin/medellin-en-racionamiento-e-hidroituango-en-jaque-por-el-nino-gobernador-de-antioquia-califica-de-tardia-flexibilizacion-de-anla-ante-sequia-3582208",
       "published": "2026-08-30T12:55:10-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Ellas son las niñas que le pidieron casa al presidente Abelardo De La Espriella en Cali por el terremoto: '¡El corazón se me salía de la emoción!'",
-      "url": "https://www.eltiempo.com/colombia/cali/ellas-son-las-ninas-que-le-pidieron-casa-al-presidente-abelardo-de-la-espriella-en-cali-por-el-terremoto-el-corazon-se-me-salia-de-la-emocion-3582197",
-      "published": "2026-08-30T17:28:32-05:00",
       "section": "colombia"
      }
     ],
