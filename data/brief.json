@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-30T23:30:58-04:00",
- "generated_at_utc": "2026-08-31T03:30:58+00:00",
+ "generated_at": "2026-08-30T23:45:54-04:00",
+ "generated_at_utc": "2026-08-31T03:45:54+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, August 30",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-30T23:30:59-04:00",
+  "fetched_at": "2026-08-30T23:45:55-04:00",
   "curve": [
    {
     "time": "2026-08-30T05:00",
@@ -148,11 +148,11 @@
   ],
   "current": {
    "temp": 77.9,
-   "feels": 87.3,
+   "feels": 87.7,
    "humidity": 93,
-   "wind_mph": 4.6,
-   "wind_dir": 29,
-   "observed_at": "2026-08-30T23:30"
+   "wind_mph": 3.7,
+   "wind_dir": 17,
+   "observed_at": "2026-08-30T23:45"
   },
   "today": {
    "high": 88.3,
@@ -166,26 +166,32 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-30T23:30:59-04:00",
+  "fetched_at": "2026-08-30T23:45:55-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-08-30T23:31:25-04:00",
-  "aqi": 31,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-08-30T23:45:56-04:00",
+  "aqi": 39,
   "category": "Good",
-  "pm25": 6.5,
-  "pm10": 6.8,
-  "observed": "2026-08-30T23:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-08-30 22:00 EST",
+  "forecast": [
+   {
+    "date": "2026-08-31",
+    "aqi": 41,
+    "category": "Good",
+    "pollutant": "O3"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-30T23:31:26-04:00",
+  "fetched_at": "2026-08-30T23:45:56-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -228,7 +234,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -238,7 +244,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -268,6 +274,16 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
+    "start": "2026-08-31T01:50:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-968"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
     "start": "2026-08-31T01:50:30Z"
    },
    {
@@ -377,7 +393,7 @@
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 433,
+    "delay_s": 469,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T03:07:30Z"
@@ -387,40 +403,40 @@
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 206,
+    "delay_s": 317,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T01:48:30Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "I-595 W"
+     "I-95 S"
     ],
-    "delay_s": 76,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T03:29:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-75 S"
-    ],
-    "delay_s": 59,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T02:31:30Z"
+    "delay_s": 45,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-31T03:42:30Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-595 E"
     ],
-    "delay_s": 36,
+    "delay_s": 41,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-08-31T02:51:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-75 S"
+    ],
+    "delay_s": 31,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-31T03:43:00Z"
    },
    {
     "county": "Broward",
@@ -485,27 +501,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-04-30T20:30:11Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-972"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-05-07T11:50:15Z"
    }
   ],
-  "incident_count": 268,
-  "named_count": 38,
-  "major_count": 18,
+  "incident_count": 267,
+  "named_count": 39,
+  "major_count": 19,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-30T23:31:26-04:00",
+  "fetched_at": "2026-08-30T23:45:57-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -554,7 +560,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-30T23:31:26-04:00",
+  "fetched_at": "2026-08-30T23:45:57-04:00",
   "issued": "800 PM EDT Sun Aug 30 2026",
   "areas": [
    {
@@ -573,7 +579,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-30T23:31:26-04:00",
+  "fetched_at": "2026-08-30T23:45:57-04:00",
   "florida": "$3.8947",
   "national": "$4.0787",
   "diesel": "$5.4413",
@@ -582,7 +588,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-30T23:31:28-04:00",
+  "fetched_at": "2026-08-30T23:45:59-04:00",
   "streams": {
    "local": [
     {
@@ -821,6 +827,22 @@
   ],
   "colombia": [
    {
+    "title": "Ayudas que vienen por mar desde Miami a bordo del 'ARC Guajira' tienen como destino Buenaventura",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/ayudas-que-vienen-por-mar-desde-miami-a-bordo-del-arc-guajira-tienen-como-destino-buenaventura-3582283",
+    "published": "2026-08-30T22:30:24-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/30/6a94f440c95b0.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Reportan ataque contra unidad militar en Patía, Cauca: habrían usado un vehículo acondicionado para lanzar artefactos explosivos",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/reportan-ataque-contra-unidad-militar-en-patia-cauca-habrian-usado-un-vehiculo-acondicionado-para-lanzar-artefactos-explosivos-3582281",
+    "published": "2026-08-30T22:24:55-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/30/6a94f071c369d.png",
+    "media_type": "image"
+   },
+   {
     "title": "Alerta en Cauca por ‘enjambre sísmico’ cerca del volcán Puracé",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/alerta-en-cauca-por-enjambre-sismico-cerca-del-volcan-purace-3582276",
     "published": "2026-08-30T22:00:35-05:00",
@@ -866,22 +888,6 @@
     "published": "2026-08-30T20:11:02-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/30/6a94ad2f21e93.r_d.930-221-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Conmoción en Medellín por el asesinato de un menor LGBTIQ+: la mamá lo encontró amordazado, con rasguños y otras heridas en una casa",
-    "url": "https://www.eltiempo.com/colombia/medellin/conmocion-en-medellin-investigan-el-asesinato-de-un-menor-lgbtiq-la-mama-de-la-victima-lo-encontro-amordazado-con-rasgunos-y-otras-heridas-3582233",
-    "published": "2026-08-30T16:26:09-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/21/6a88bd4ee34c6.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Liberan a uno de los cuatro secuestrados por el 'clan del Golfo' en zona rural de Anorí, Antioquia: es el presidente de una Junta de Acción Comunal",
-    "url": "https://www.eltiempo.com/colombia/medellin/liberan-a-uno-de-los-cuatro-secuestrados-en-zona-rural-del-municipio-de-anori-antioquia-es-el-presidente-de-una-junta-de-accion-comunal-3582228",
-    "published": "2026-08-30T15:47:43-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2025/12/22/694936da28c90.r_d.826-344-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -955,15 +961,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-30T23:31:28-04:00",
+  "fetched_at": "2026-08-30T23:45:59-04:00",
   "items": [],
-  "scanned": 2,
+  "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-30T23:31:28-04:00",
+  "fetched_at": "2026-08-30T23:45:59-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -986,15 +992,9 @@
       "url": "https://www.eltiempo.com/colombia/cali/historia-de-clamor-de-dos-ninas-cuyos-hogares-estan-en-ruinas-una-de-ellas-hija-del-bombero-rescatista-que-cambio-protocolo-tras-terremoto-en-cali-3582244",
       "published": "2026-08-30T18:04:22-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Conmoción en Medellín por el asesinato de un menor LGBTIQ+: la mamá lo encontró amordazado, con rasguños y otras heridas en una casa",
-      "url": "https://www.eltiempo.com/colombia/medellin/conmocion-en-medellin-investigan-el-asesinato-de-un-menor-lgbtiq-la-mama-de-la-victima-lo-encontro-amordazado-con-rasgunos-y-otras-heridas-3582233",
-      "published": "2026-08-30T16:26:09-05:00",
-      "section": "colombia"
      }
     ],
-    "count": 4,
+    "count": 3,
     "issue": "Miami celebrates Colombian culture with Medellin flower festival in Wynwood"
    },
    {
