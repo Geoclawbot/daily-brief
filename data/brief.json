@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-31T00:15:59-04:00",
- "generated_at_utc": "2026-08-31T04:15:59+00:00",
+ "generated_at": "2026-08-31T00:30:56-04:00",
+ "generated_at_utc": "2026-08-31T04:30:56+00:00",
  "weekday": "Monday",
  "date_label": "Monday, August 31",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-31T00:16:00-04:00",
+  "fetched_at": "2026-08-31T00:30:57-04:00",
   "curve": [
    {
     "time": "2026-08-31T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 77.9,
-   "feels": 88.0,
+   "temp": 77.8,
+   "feels": 87.6,
    "humidity": 93,
-   "wind_mph": 2.9,
-   "wind_dir": 32,
-   "observed_at": "2026-08-31T00:15"
+   "wind_mph": 3.5,
+   "wind_dir": 27,
+   "observed_at": "2026-08-31T00:30"
   },
   "today": {
    "high": 90.1,
@@ -166,32 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-31T00:16:00-04:00",
+  "fetched_at": "2026-08-31T00:30:57-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-31T00:16:01-04:00",
-  "aqi": 23,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-08-31T00:31:23-04:00",
+  "aqi": 30,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-08-30 23:00 EST",
-  "forecast": [
-   {
-    "date": "2026-08-31",
-    "aqi": 41,
-    "category": "Good",
-    "pollutant": "O3"
-   }
-  ]
+  "pm25": 8.8,
+  "pm10": 9.1,
+  "observed": "2026-08-31T00:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-31T00:16:01-04:00",
+  "fetched_at": "2026-08-31T00:31:24-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -224,7 +218,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -234,7 +228,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -363,50 +357,10 @@
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 190,
+    "delay_s": 150,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-08-31T03:07:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 E"
-    ],
-    "delay_s": 62,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T03:58:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 46,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T01:48:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-595 E"
-    ],
-    "delay_s": 31,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T03:53:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-595 W"
-    ],
-    "delay_s": 31,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T04:08:30Z"
    },
    {
     "county": "Broward",
@@ -503,17 +457,59 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-05-07T11:50:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-7",
+     "US-441 N"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-08-28T06:56:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-13T10:30:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-395 W"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-08-21T08:47:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-03T13:43:04Z"
    }
   ],
-  "incident_count": 263,
-  "named_count": 38,
+  "incident_count": 264,
+  "named_count": 34,
   "major_count": 16,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-31T00:16:02-04:00",
+  "fetched_at": "2026-08-31T00:31:25-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -562,7 +558,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-31T00:16:02-04:00",
+  "fetched_at": "2026-08-31T00:31:25-04:00",
   "issued": "800 PM EDT Sun Aug 30 2026",
   "areas": [
    {
@@ -581,7 +577,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-31T00:16:02-04:00",
+  "fetched_at": "2026-08-31T00:31:25-04:00",
   "florida": "$3.8947",
   "national": "$4.0787",
   "diesel": "$5.4413",
@@ -590,7 +586,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-31T00:16:04-04:00",
+  "fetched_at": "2026-08-31T00:31:27-04:00",
   "streams": {
    "local": [
     {
@@ -829,6 +825,14 @@
   ],
   "colombia": [
    {
+    "title": "Pereira conmemoró sus 163 años y rindió homenaje a las víctimas del terremoto; esto dijo el alcalde Mauricio Salazar: 'Nos verán volver, lo juro'",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/pereira-conmemoro-sus-163-anos-y-rindio-homenaje-a-las-victimas-del-terremoto-esto-dijo-el-alcalde-mauricio-salazar-nos-veran-volver-lo-juro-3582288",
+    "published": "2026-08-30T23:13:13-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/30/6a94fdd3dfe77.r_d.720-249-0.png",
+    "media_type": "image"
+   },
+   {
     "title": "Ayudas que vienen por mar desde Miami a bordo del 'ARC Guajira' tienen como destino Buenaventura",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/ayudas-que-vienen-por-mar-desde-miami-a-bordo-del-arc-guajira-tienen-como-destino-buenaventura-3582283",
     "published": "2026-08-30T22:30:24-05:00",
@@ -882,14 +886,6 @@
     "published": "2026-08-30T18:04:22-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/30/6a94b2017a633.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Liam Santiago, niño con distrofia de Duchenne, le pidió ayuda al presidente Abelardo de la Espriella: 'Podría cambiar la vida de muchos niños'",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/liam-santiago-nino-con-distrofia-de-duchenne-le-pidio-ayuda-al-presidente-abelardo-de-la-espriella-podria-cambiar-la-vida-de-muchos-ninos-3582241",
-    "published": "2026-08-30T20:11:02-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/30/6a94ad2f21e93.r_d.930-221-0.png",
     "media_type": "image"
    }
   ],
@@ -963,7 +959,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-31T00:16:04-04:00",
+  "fetched_at": "2026-08-31T00:31:27-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -971,7 +967,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-31T00:16:04-04:00",
+  "fetched_at": "2026-08-31T00:31:27-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -1042,20 +1038,6 @@
     "issue": "Canada claps back at Trump's efforts to rename Lake Ontario as 'Lake America'"
    },
    {
-    "iso": "CHL",
-    "name": "Chile",
-    "stories": [
-     {
-      "title": "Liam Santiago, niño con distrofia de Duchenne, le pidió ayuda al presidente Abelardo de la Espriella: 'Podría cambiar la vida de muchos niños'",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/liam-santiago-nino-con-distrofia-de-duchenne-le-pidio-ayuda-al-presidente-abelardo-de-la-espriella-podria-cambiar-la-vida-de-muchos-ninos-3582241",
-      "published": "2026-08-30T20:11:02-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 1,
-    "issue": "Liam Santiago, niño con distrofia de Duchenne, le pidió ayuda al presidente Abelardo de la Espriella: 'Podría cambiar la vida de muchos niños'"
-   },
-   {
     "iso": "RUS",
     "name": "Russia",
     "stories": [
@@ -1099,7 +1081,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 8,
+  "countries_matched": 7,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
