@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-31T19:30:56-04:00",
- "generated_at_utc": "2026-08-31T23:30:56+00:00",
+ "generated_at": "2026-08-31T19:45:56-04:00",
+ "generated_at_utc": "2026-08-31T23:45:56+00:00",
  "weekday": "Monday",
  "date_label": "Monday, August 31",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-31T19:30:57-04:00",
+  "fetched_at": "2026-08-31T19:45:57-04:00",
   "curve": [
    {
     "time": "2026-08-31T05:00",
@@ -117,24 +117,24 @@
     "time": "2026-08-31T18:00",
     "hour": 18,
     "temp": 85.7,
-    "feels": 90.6,
-    "humidity": 65,
+    "feels": 93.5,
+    "humidity": 76,
     "pop": 36
    },
    {
     "time": "2026-08-31T19:00",
     "hour": 19,
     "temp": 85.0,
-    "feels": 95.0,
-    "humidity": 78,
+    "feels": 94.7,
+    "humidity": 77,
     "pop": 45
    },
    {
     "time": "2026-08-31T20:00",
     "hour": 20,
     "temp": 84.0,
-    "feels": 96.8,
-    "humidity": 91,
+    "feels": 94.8,
+    "humidity": 83,
     "pop": 42
    },
    {
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 84.3,
-   "feels": 96.2,
-   "humidity": 85,
-   "wind_mph": 4.4,
-   "wind_dir": 114,
-   "observed_at": "2026-08-31T19:30"
+   "temp": 84.1,
+   "feels": 94.4,
+   "humidity": 81,
+   "wind_mph": 5.1,
+   "wind_dir": 90,
+   "observed_at": "2026-08-31T19:45"
   },
   "today": {
    "high": 90.4,
@@ -166,26 +166,74 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-31T19:30:57-04:00",
+  "fetched_at": "2026-08-31T19:45:57-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-08-31T19:31:23-04:00",
-  "aqi": 45,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-08-31T19:45:58-04:00",
+  "aqi": 32,
   "category": "Good",
-  "pm25": 5.9,
-  "pm10": 7.2,
-  "observed": "2026-08-31T19:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "O3",
+  "reporting_area": "Miami",
+  "observed": "2026-08-31 18:00 EST",
+  "forecast": [
+   {
+    "date": "2026-08-31",
+    "aqi": 21,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-08-31",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-01",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-01",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-02",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-02",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-31T19:31:23-04:00",
+  "fetched_at": "2026-08-31T19:45:59-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -251,15 +299,45 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 677,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T19:51:39Z"
+   },
+   {
     "county": "Miami-Dade",
     "roads": [
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 535,
+    "delay_s": 526,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T20:07:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 213,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T23:30:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 200,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T23:35:30Z"
    },
    {
     "county": "Broward",
@@ -267,37 +345,27 @@
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 481,
+    "delay_s": 176,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T21:02:12Z"
    },
    {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 351,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T19:51:39Z"
-   },
-   {
     "county": "Miami-Dade",
     "roads": [
-     "FL-854"
+     "FL-922"
     ],
-    "delay_s": 210,
+    "delay_s": 138,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T23:18:00Z"
+    "start": "2026-08-31T23:43:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 189,
+    "delay_s": 136,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T18:03:30Z"
@@ -305,209 +373,190 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-976"
-    ],
-    "delay_s": 181,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T23:24:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 176,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T18:35:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 159,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T23:27:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 144,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T23:29:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 143,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T23:29:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-823"
-    ],
-    "delay_s": 135,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T23:23:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-823"
-    ],
-    "delay_s": 131,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T23:25:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 118,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T23:28:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-932"
-    ],
-    "delay_s": 113,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T23:22:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 105,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T23:09:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 102,
-    "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-08-31T21:04:55Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "Don Shula Expy S",
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 82,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T23:22:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": 76,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T23:29:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 52,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T23:14:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Don Shula Expy S",
-     "FL-874 S",
-     "S Dade Expy S"
-    ],
-    "delay_s": 49,
+    "delay_s": 129,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-08-31T23:26:00Z"
    },
    {
+    "county": "Broward",
+    "roads": [
+     "FL-811"
+    ],
+    "delay_s": 76,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T23:43:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-823"
+    ],
+    "delay_s": 61,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T23:41:00Z"
+   },
+   {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 46,
+    "delay_s": 29,
     "magnitude": 1,
-    "description": "Slow traffic",
+    "description": "Heavy traffic",
     "start": "2026-08-31T21:04:55Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-820"
+     "FL-736"
     ],
-    "delay_s": 44,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T23:15:30Z"
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-31T03:35:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-822",
+     "FL-A1A"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-07-29T01:44:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-07T21:06:54Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-29T19:31:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "FL-25",
+     "US-27 N"
     ],
-    "delay_s": 35,
-    "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-08-31T22:10:00Z"
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-08-29T14:31:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "US-27 S",
+     "FL-25"
     ],
-    "delay_s": 31,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T19:16:30Z"
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-04-29T18:52:55Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 S",
+     "FL-25"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-04-30T20:30:11Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-05-07T11:50:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-31T21:45:20Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-7",
+     "US-441 N"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-08-28T06:56:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-31T21:45:20Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-13T10:30:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-395 W"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-08-21T08:47:30Z"
    }
   ],
-  "incident_count": 279,
-  "named_count": 53,
-  "major_count": 6,
+  "incident_count": 271,
+  "named_count": 40,
+  "major_count": 7,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-31T19:31:24-04:00",
+  "fetched_at": "2026-08-31T19:45:59-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -558,7 +607,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-31T19:31:24-04:00",
+  "fetched_at": "2026-08-31T19:46:00-04:00",
   "issued": "200 PM EDT Mon Aug 31 2026",
   "areas": [
    {
@@ -572,7 +621,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-31T19:31:24-04:00",
+  "fetched_at": "2026-08-31T19:46:00-04:00",
   "florida": "$3.8781",
   "national": "$4.0807",
   "diesel": "$5.4232",
@@ -581,7 +630,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-31T19:31:25-04:00",
+  "fetched_at": "2026-08-31T19:46:01-04:00",
   "streams": {
    "local": [
     {
@@ -690,6 +739,14 @@
   ],
   "local": [
    {
+    "title": "Judge orders no bond for real estate developer accused of crashing vehicle into home, killing senior",
+    "url": "https://www.local10.com/news/local/2026/08/31/judge-orders-no-bond-for-real-estate-developer-accused-of-crashing-vehicle-into-home-killing-senior/",
+    "published": "Mon, 31 Aug 2026 17:05:37 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Video shows antisemitic attack inside North Miami Beach Target, police say",
     "url": "https://www.local10.com/news/local/2026/08/31/video-shows-antisemitic-attack-inside-north-miami-beach-target-police-say/",
     "published": "Mon, 31 Aug 2026 22:19:14 +0000",
@@ -725,14 +782,6 @@
     "title": "‘I thought it was the end’: Video shows hit-and-run suspect’s high-speed sideswipe on I-95",
     "url": "https://www.local10.com/news/local/2026/08/31/i-thought-it-was-the-end-video-shows-hit-and-run-suspects-high-speed-sideswipe-on-i-95/",
     "published": "Mon, 31 Aug 2026 20:43:05 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Judge orders no bond for real estate developer accused of crashing vehicle into home, killing senior",
-    "url": "https://www.local10.com/news/local/2026/08/31/judge-orders-no-bond-for-real-estate-developer-accused-of-crashing-vehicle-into-home-killing-senior/",
-    "published": "Mon, 31 Aug 2026 17:05:37 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -786,6 +835,14 @@
     "media_type": "video"
    },
    {
+    "title": "Woman arrested for attacking Jewish teen, swinging chair at North Miami Beach Target, police say",
+    "url": "https://wsvn.com/news/local/miami-dade/woman-arrested-for-attacking-jewish-teen-swinging-chair-at-north-miami-beach-target-police-say/",
+    "published": "Mon, 31 Aug 2026 22:43:15 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/a142f669-df1c-4add-a58c-af7e8e59c635/413e772e-ea36-449a-bc1f-88ff40acc62b/main.mp4?fastly_token=NmE5NjVjMDBfYzc1MzIyZTU1Mzg0ZWUyYTIyY2NkYjU1ZDg0YWY3NTU0NTM2NzQ0N2UwNTg2ODEzMTYxZTgwNjNkNDc3ZjliOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hMTQyZjY2OS1kZjFjLTRhZGQtYTU4Yy1hZjdlOGU1OWM2MzUvNDEzZTc3MmUtZWEzNi00NDlhLWJjMWYtODhmZjQwYWNjNjJiL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "Man accused of injuring 3 during high-speed pursuit on I-95 makes court appearance",
     "url": "https://wsvn.com/news/local/miami-dade/man-accused-of-injuring-3-during-high-speed-pursuit-on-i-95-makes-court-appearance/",
     "published": "Mon, 31 Aug 2026 21:11:17 +0000",
@@ -808,17 +865,17 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/08/Osniel-Blanco-Lopez.png",
     "media_type": "image"
-   },
-   {
-    "title": "North Beach Elementary teacher accused of shoving neighbor outside condo; parent says suspect, 64, is ‘very mean to kids’",
-    "url": "https://wsvn.com/news/local/miami-dade/north-beach-elementary-teacher-accused-of-shoving-neighbor-outside-condo-parent-says-suspect-64-is-very-mean-to-kids/",
-    "published": "Mon, 31 Aug 2026 17:10:13 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/fb883cfe-0281-4474-876c-2f0242a3cc3d/62077142-1cce-4f86-9f46-73352b7c8cb8/main.mp4?fastly_token=NmE5NjRlYTZfYmJmZjMxNmU1MjRjMWQ1ODJjZjk0NzkzNDU4MmQxODllZmMzZmE3ZmE0NWEyNWZjZTA1NTk4MTQyMTdjMGM0Ml8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9mYjg4M2NmZS0wMjgxLTQ0NzQtODc2Yy0yZjAyNDJhM2NjM2QvNjIwNzcxNDItMWNjZS00Zjg2LTlmNDYtNzMzNTJiN2M4Y2I4L21haW4ubXA0",
-    "media_type": "video"
    }
   ],
   "colombia": [
+   {
+    "title": "¿Cuáles son las conclusiones de mesa técnica entre Camacol e ingenieros sobre afectación de edificaciones en Cali, según tipos de sismos y la norma?",
+    "url": "https://www.eltiempo.com/colombia/cali/cuales-son-las-conclusiones-de-mesa-tecnica-entre-camacol-e-ingenieros-sobre-afectacion-de-edificaciones-en-cali-segun-tipos-de-sismos-y-la-norma-3582529",
+    "published": "2026-08-31T18:34:50-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a960c9ef27dc.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Air-e responde a reparos por financiación de $1 billón: 'No es un cheque en blanco ni un desembolso inmediato'",
     "url": "https://www.eltiempo.com/colombia/barranquilla/air-e-responde-a-reparos-por-financiacion-de-1-billon-no-es-un-cheque-en-blanco-ni-un-desembolso-inmediato-3582509",
@@ -830,7 +887,7 @@
    {
     "title": "Tras una semana de búsqueda, Michelle Dayana Henao, de seis años, fue encontrada sin vida en zona rural de Buriticá, Antioquia",
     "url": "https://www.eltiempo.com/colombia/medellin/tras-una-semana-de-busqueda-michelle-dayana-henao-de-10-anos-fue-encontrada-sin-vida-en-zona-rural-de-buritica-antioquia-3582526",
-    "published": "2026-08-31T18:22:33-05:00",
+    "published": "2026-08-31T18:34:05-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/27/6a9096bca8c1d.r_d.383-160-0.png",
     "media_type": "image"
@@ -873,14 +930,6 @@
     "published": "2026-08-31T15:05:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a95de9e4feb9.png",
-    "media_type": "image"
-   },
-   {
-    "title": "La historia de Lucas, el niño 'milagro' que se hizo viral por pedir ayuda al presidente De La Espriella para recibir atención médica: casi nunca llora",
-    "url": "https://www.eltiempo.com/colombia/santander/la-historia-de-lucas-el-nino-milagro-que-se-hizo-viral-por-pedir-ayuda-al-presidente-de-la-espriella-para-recibir-atencion-medica-casi-nunca-llora-3582453",
-    "published": "2026-08-31T14:58:27-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/31/6a95b9ed631a0.r_d.445-205-1.png",
     "media_type": "image"
    }
   ],
@@ -934,16 +983,16 @@
     "media_type": null
    },
    {
-    "title": "The U.S.-Venezuela oil deal won't lower your gas prices. Here's what you need to know",
-    "url": "https://www.npr.org/2026/08/31/nx-s1-5949407/us-venezuelan-oil-deal",
+    "title": "Hit shows from Edinburgh's Fringe festival are coming to America. Here are our top picks",
+    "url": "https://www.npr.org/2026/08/31/nx-s1-5949346/edinburgh-fringe-scotland-best-shows-coming-to-america",
     "published": "Mon, 31 Aug 2026 05:00:00 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
    },
    {
-    "title": "Hit shows from Edinburgh's Fringe festival are coming to America. Here are our top picks",
-    "url": "https://www.npr.org/2026/08/31/nx-s1-5949346/edinburgh-fringe-scotland-best-shows-coming-to-america",
+    "title": "The U.S.-Venezuela oil deal won't lower your gas prices. Here's what you need to know",
+    "url": "https://www.npr.org/2026/08/31/nx-s1-5949407/us-venezuelan-oil-deal",
     "published": "Mon, 31 Aug 2026 05:00:00 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
@@ -954,7 +1003,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-31T19:31:26-04:00",
+  "fetched_at": "2026-08-31T19:46:02-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -962,8 +1011,34 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-31T19:31:26-04:00",
+  "fetched_at": "2026-08-31T19:46:02-04:00",
   "countries": [
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "¿Cuáles son las conclusiones de mesa técnica entre Camacol e ingenieros sobre afectación de edificaciones en Cali, según tipos de sismos y la norma?",
+      "url": "https://www.eltiempo.com/colombia/cali/cuales-son-las-conclusiones-de-mesa-tecnica-entre-camacol-e-ingenieros-sobre-afectacion-de-edificaciones-en-cali-segun-tipos-de-sismos-y-la-norma-3582529",
+      "published": "2026-08-31T18:34:50-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "Bomberos atendieron 50 incendios forestales en agosto: temporada seca y manos criminales tienen a Medellín en máxima alerta",
+      "url": "https://www.eltiempo.com/colombia/medellin/bomberos-atendieron-50-incendios-forestales-en-agosto-temporada-seca-y-manos-criminales-tienen-a-medellin-en-maxima-alerta-3582498",
+      "published": "2026-08-31T16:50:02-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "Así afectó el terremoto a emprendedores en Cali y la región: 'Un negocio puede seguir en pie y aun así, haber perdido su capacidad de vender'",
+      "url": "https://www.eltiempo.com/colombia/cali/asi-afecto-el-terremoto-a-emprendedores-en-cali-y-la-region-un-negocio-puede-seguir-en-pie-y-aun-asi-haber-perdido-su-capacidad-de-vender-3582463",
+      "published": "2026-08-31T15:13:23-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 3,
+    "issue": "¿Cuáles son las conclusiones de mesa técnica entre Camacol e ingenieros sobre afectación de edificaciones en Cali, según tipos de sismos y la norma?"
+   },
    {
     "iso": "VEN",
     "name": "Venezuela",
@@ -989,26 +1064,6 @@
     ],
     "count": 3,
     "issue": "Experts: ‘A lot of questions around’ Trump’s Venezuela oil deal, what it means for South Florida"
-   },
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Bomberos atendieron 50 incendios forestales en agosto: temporada seca y manos criminales tienen a Medellín en máxima alerta",
-      "url": "https://www.eltiempo.com/colombia/medellin/bomberos-atendieron-50-incendios-forestales-en-agosto-temporada-seca-y-manos-criminales-tienen-a-medellin-en-maxima-alerta-3582498",
-      "published": "2026-08-31T16:50:02-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Así afectó el terremoto a emprendedores en Cali y la región: 'Un negocio puede seguir en pie y aun así, haber perdido su capacidad de vender'",
-      "url": "https://www.eltiempo.com/colombia/cali/asi-afecto-el-terremoto-a-emprendedores-en-cali-y-la-region-un-negocio-puede-seguir-en-pie-y-aun-asi-haber-perdido-su-capacidad-de-vender-3582463",
-      "published": "2026-08-31T15:13:23-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 2,
-    "issue": "Bomberos atendieron 50 incendios forestales en agosto: temporada seca y manos criminales tienen a Medellín en máxima alerta"
    },
    {
     "iso": "IRN",
