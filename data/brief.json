@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-31T09:00:57-04:00",
- "generated_at_utc": "2026-08-31T13:00:57+00:00",
+ "generated_at": "2026-08-31T09:15:59-04:00",
+ "generated_at_utc": "2026-08-31T13:15:59+00:00",
  "weekday": "Monday",
  "date_label": "Monday, August 31",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-31T09:00:58-04:00",
+  "fetched_at": "2026-08-31T09:15:59-04:00",
   "curve": [
    {
     "time": "2026-08-31T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 83.3,
-   "feels": 93.9,
-   "humidity": 84,
-   "wind_mph": 5.2,
-   "wind_dir": 80,
-   "observed_at": "2026-08-31T09:00"
+   "temp": 83.7,
+   "feels": 94.5,
+   "humidity": 83,
+   "wind_mph": 4.7,
+   "wind_dir": 90,
+   "observed_at": "2026-08-31T09:15"
   },
   "today": {
    "high": 87.8,
@@ -166,19 +166,19 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-31T09:00:58-04:00",
+  "fetched_at": "2026-08-31T09:16:00-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-31T09:00:59-04:00",
-  "aqi": 35,
+  "fetched_at": "2026-08-31T09:16:01-04:00",
+  "aqi": 22,
   "category": "Good",
-  "pollutant": "PM2.5",
+  "pollutant": "O3",
   "reporting_area": "Miami",
-  "observed": "2026-08-31 7:00 EST",
+  "observed": "2026-08-31 8:00 EST",
   "forecast": [
    {
     "date": "2026-08-31",
@@ -191,17 +191,28 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-31T09:00:59-04:00",
+  "fetched_at": "2026-08-31T09:16:01-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
    {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 1313,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T10:42:51Z"
+   },
+   {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 1665,
+    "delay_s": 1207,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T10:52:00Z"
@@ -209,21 +220,10 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 1470,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T10:42:51Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-836 E",
      "I-395 E"
     ],
-    "delay_s": 1129,
+    "delay_s": 1126,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-08-31T12:25:07Z"
@@ -231,62 +231,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-922"
-    ],
-    "delay_s": 1073,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T11:53:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 1062,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T10:45:56Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-A1A"
-    ],
-    "delay_s": 1012,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T12:33:35Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "I-95 S"
     ],
-    "delay_s": 1007,
+    "delay_s": 1107,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T10:45:56Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-75 S"
-    ],
-    "delay_s": 905,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T10:45:17Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -297,6 +247,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:05:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -329,14 +289,55 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-972"
+     "FL-858"
     ],
-    "delay_s": 872,
+    "delay_s": 895,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T11:29:30Z"
+    "start": "2026-08-31T12:10:37Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-7",
+     "US-441 S"
+    ],
+    "delay_s": 832,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T12:06:40Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 784,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T10:45:56Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-94"
+    ],
+    "delay_s": 720,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T10:53:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-A1A"
+    ],
+    "delay_s": 701,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T12:33:35Z"
    },
    {
     "county": "Broward",
@@ -344,7 +345,7 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 858,
+    "delay_s": 590,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T11:32:33Z"
@@ -352,19 +353,80 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-9"
+     "FL-860"
     ],
-    "delay_s": 822,
+    "delay_s": 572,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T12:53:43Z"
+    "start": "2026-08-31T11:41:04Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-75 S"
+    ],
+    "delay_s": 520,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T10:45:17Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 508,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T11:07:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 487,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T13:05:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 465,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T11:35:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-A1A"
+    ],
+    "delay_s": 459,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T11:51:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 E"
+    ],
+    "delay_s": 453,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T10:45:17Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-976"
     ],
-    "delay_s": 758,
+    "delay_s": 446,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T12:11:30Z"
@@ -375,143 +437,83 @@
      "US-1 N",
      "FL-5"
     ],
-    "delay_s": 733,
+    "delay_s": 425,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T11:07:00Z"
+    "start": "2026-08-31T11:53:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-94"
-    ],
-    "delay_s": 693,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T10:53:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 S"
-    ],
-    "delay_s": 636,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T12:16:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-810"
-    ],
-    "delay_s": 532,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T12:41:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 E"
-    ],
-    "delay_s": 531,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T10:45:17Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": 531,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T10:55:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-7",
+     "US-441 N",
      "US-441 S"
     ],
-    "delay_s": 521,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T12:06:40Z"
+    "delay_s": 423,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T13:00:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-817"
+    ],
+    "delay_s": 388,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T11:09:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826 S"
     ],
-    "delay_s": 515,
+    "delay_s": 379,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-08-31T12:28:11Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "I-195 E"
+     "FL-869"
     ],
-    "delay_s": 514,
+    "delay_s": 353,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-08-31T11:02:30Z"
+    "start": "2026-08-31T11:30:30Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 509,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T12:37:11Z"
+    "delay_s": 352,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T13:02:37Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-953"
+     "FL-821 N"
     ],
-    "delay_s": 502,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T12:12:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 499,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T11:35:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-A1A"
-    ],
-    "delay_s": 498,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T11:51:00Z"
+    "delay_s": 350,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-31T10:53:00Z"
    }
   ],
-  "incident_count": 522,
-  "named_count": 180,
-  "major_count": 20,
+  "incident_count": 439,
+  "named_count": 135,
+  "major_count": 14,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-31T09:01:01-04:00",
+  "fetched_at": "2026-08-31T09:16:02-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -549,7 +551,7 @@
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Aug 31 2026, 7:23 AM",
-   "Central | Volusia | Crash on SR-421 / Dunlawton Ave South in Volusia County at I-95 with All Lanes Closed. Motorists should seek an alternate route and expect significant delays approaching the area. | Aug 31 2026, 9:00 AM",
+   "Central | Volusia | Crash on SR-421 / Dunlawton Ave South in Volusia County at I-95 with All Lanes Closed. Motorists should seek an alternate route and expect significant delays approaching the area. | Aug 31 2026, 9:14 AM",
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Aug 31 2026, 8:39 AM"
   ],
   "fl511_local": []
@@ -557,7 +559,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-31T09:01:01-04:00",
+  "fetched_at": "2026-08-31T09:16:02-04:00",
   "issued": "800 AM EDT Mon Aug 31 2026",
   "areas": [
    {
@@ -576,7 +578,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-31T09:01:01-04:00",
+  "fetched_at": "2026-08-31T09:16:02-04:00",
   "florida": "$3.8781",
   "national": "$4.0807",
   "diesel": "$5.4232",
@@ -585,7 +587,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-31T09:01:09-04:00",
+  "fetched_at": "2026-08-31T09:16:03-04:00",
   "streams": {
    "local": [
     {
@@ -694,6 +696,14 @@
   ],
   "local": [
    {
+    "title": "Car slams into Dania Beach home, 1 person hospitalized",
+    "url": "https://www.local10.com/news/local/2026/08/29/car-slams-into-dania-beach-home-1-person-hospitalized/",
+    "published": "Sat, 29 Aug 2026 22:27:18 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Broward elementary school administrator arrested, reassigned after off-campus incident",
     "url": "https://www.local10.com/news/local/2026/08/30/broward-elementary-school-administrator-arrested-reassigned-after-off-campus-incident/",
     "published": "Sun, 30 Aug 2026 21:31:56 +0000",
@@ -713,14 +723,6 @@
     "title": "Vigil held for mother, daughter killed in Margate lightning strike",
     "url": "https://www.local10.com/news/local/2026/08/29/vigil-held-for-mother-daughter-killed-in-margate-lightning-strike/",
     "published": "Sat, 29 Aug 2026 22:20:26 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Car slams into Dania Beach home, 1 person hospitalized",
-    "url": "https://www.local10.com/news/local/2026/08/29/car-slams-into-dania-beach-home-1-person-hospitalized/",
-    "published": "Sat, 29 Aug 2026 22:27:18 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -824,6 +826,14 @@
   ],
   "colombia": [
    {
+    "title": "Facturaban $420 millones al mes: la cruda radiografía de 'Los Conejos', grupo criminal que usaba niños para vender droga en Medellín",
+    "url": "https://www.eltiempo.com/colombia/medellin/facturaban-420-millones-al-mes-la-cruda-radiografia-de-los-conejos-grupo-criminal-que-usaba-ninos-para-vender-droga-en-medellin-3582318",
+    "published": "2026-08-31T07:48:44-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a9575e00b182.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Alcalde 'Fico' Gutiérrez responde al presidente De La Espriella y anuncia cooperación para investigar corrupción en Medellín: entregará pruebas al FBI",
     "url": "https://www.eltiempo.com/colombia/medellin/alcalde-fico-gutierrez-responde-al-presidente-de-la-espriella-y-anuncia-cooperacion-para-investigar-corrupcion-en-medellin-entregara-pruebas-al-fbi-3582297",
     "published": "2026-08-31T06:45:00-05:00",
@@ -877,14 +887,6 @@
     "published": "2026-08-31T02:30:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2024/10/30/672234f2540e9.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Pereira conmemoró sus 163 años y rindió homenaje a las víctimas del terremoto; esto dijo el alcalde Mauricio Salazar: 'Nos verán volver, lo juro'",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/pereira-conmemoro-sus-163-anos-y-rindio-homenaje-a-las-victimas-del-terremoto-esto-dijo-el-alcalde-mauricio-salazar-nos-veran-volver-lo-juro-3582288",
-    "published": "2026-08-30T23:13:13-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/30/6a94fdd3dfe77.r_d.720-249-0.png",
     "media_type": "image"
    }
   ],
@@ -958,7 +960,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-31T09:01:10-04:00",
+  "fetched_at": "2026-08-31T09:16:03-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -966,7 +968,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-31T09:01:10-04:00",
+  "fetched_at": "2026-08-31T09:16:03-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -977,6 +979,12 @@
       "url": "https://wsvn.com/news/local/miami-dade/medellin-flower-festival-miami/",
       "published": "Sat, 29 Aug 2026 23:12:57 +0000",
       "section": "local"
+     },
+     {
+      "title": "Facturaban $420 millones al mes: la cruda radiografía de 'Los Conejos', grupo criminal que usaba niños para vender droga en Medellín",
+      "url": "https://www.eltiempo.com/colombia/medellin/facturaban-420-millones-al-mes-la-cruda-radiografia-de-los-conejos-grupo-criminal-que-usaba-ninos-para-vender-droga-en-medellin-3582318",
+      "published": "2026-08-31T07:48:44-05:00",
+      "section": "colombia"
      },
      {
       "title": "Alcalde 'Fico' Gutiérrez responde al presidente De La Espriella y anuncia cooperación para investigar corrupción en Medellín: entregará pruebas al FBI",
@@ -1001,15 +1009,9 @@
       "url": "https://www.eltiempo.com/colombia/cali/asi-opera-el-pico-y-placa-en-cali-este-lunes-31-de-agosto-de-2026-estas-son-las-restricciones-y-los-cambios-en-la-medida-por-el-terremoto-3581874",
       "published": "2026-08-31T02:30:00-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "¡Pilas, conductor! Pico y placa en Medellín este lunes 31 de agosto de 2026: consulte cómo aplica la restricción",
-      "url": "https://www.eltiempo.com/colombia/medellin/pilas-conductor-pico-y-placa-en-medellin-este-lunes-31-de-agosto-de-2026-consulte-como-aplica-la-restriccion-3581871",
-      "published": "2026-08-31T02:30:00-05:00",
-      "section": "colombia"
      }
     ],
-    "count": 6,
+    "count": 7,
     "issue": "Miami celebrates Colombian culture with Medellin flower festival in Wynwood"
    },
    {
