@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-31T06:16:01-04:00",
- "generated_at_utc": "2026-08-31T10:16:01+00:00",
+ "generated_at": "2026-08-31T06:30:54-04:00",
+ "generated_at_utc": "2026-08-31T10:30:54+00:00",
  "weekday": "Monday",
  "date_label": "Monday, August 31",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-31T06:16:02-04:00",
+  "fetched_at": "2026-08-31T06:30:55-04:00",
   "curve": [
    {
     "time": "2026-08-31T05:00",
@@ -148,11 +148,11 @@
   ],
   "current": {
    "temp": 78.2,
-   "feels": 89.0,
+   "feels": 88.8,
    "humidity": 94,
-   "wind_mph": 2.2,
-   "wind_dir": 6,
-   "observed_at": "2026-08-31T06:15"
+   "wind_mph": 2.6,
+   "wind_dir": 15,
+   "observed_at": "2026-08-31T06:30"
   },
   "today": {
    "high": 90.6,
@@ -166,128 +166,112 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-31T06:16:02-04:00",
+  "fetched_at": "2026-08-31T06:30:55-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-31T06:16:03-04:00",
-  "aqi": 22,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-08-31T06:31:21-04:00",
+  "aqi": 37,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-08-31 5:00 EST",
-  "forecast": [
-   {
-    "date": "2026-08-31",
-    "aqi": 41,
-    "category": "Good",
-    "pollutant": "O3"
-   }
-  ]
+  "pm25": 7.8,
+  "pm10": 8.5,
+  "observed": "2026-08-31T06:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-08-31T06:16:06-04:00",
+  "fetched_at": "2026-08-31T06:31:23-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
   "depart_clock": "5:45 AM",
   "depart_at": "now",
   "miles": 19.9,
-  "minutes": 44,
-  "delay_minutes": 0,
+  "minutes": 50,
+  "delay_minutes": 2,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 20.7,
-    "minutes": 41,
+    "miles": 28.2,
+    "minutes": 45,
     "toll": true,
-    "saves": 3
+    "saves": 5
    },
    {
     "miles": 23.0,
-    "minutes": 41,
+    "minutes": 46,
+    "toll": true,
+    "saves": 4
+   },
+   {
+    "miles": 21.9,
+    "minutes": 47,
     "toll": true,
     "saves": 3
    },
    {
-    "miles": 27.1,
-    "minutes": 44,
-    "toll": true,
-    "saves": 0
-   },
-   {
     "miles": 29.0,
-    "minutes": 47,
+    "minutes": 52,
     "toll": true,
-    "saves": -3
+    "saves": -2
    }
   ],
   "alternates_worth_taking": [],
   "free_alternates": [
    {
     "miles": 19.9,
-    "minutes": 44,
-    "delay_minutes": 0,
+    "minutes": 50,
+    "delay_minutes": 2,
     "saves": 0
    },
    {
-    "miles": 21.9,
-    "minutes": 45,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 26.1,
+    "miles": 22.1,
     "minutes": 57,
     "delay_minutes": 0
    },
    {
     "miles": 23.1,
-    "minutes": 62,
+    "minutes": 63,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 24.8,
+    "minutes": 66,
     "delay_minutes": 0
    }
   ],
   "best_free": {
    "miles": 19.9,
-   "minutes": 44,
-   "delay_minutes": 0,
+   "minutes": 50,
+   "delay_minutes": 2,
    "saves": 0
   },
   "incidents": [
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 3026,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T09:47:00Z"
+   },
    {
     "county": "Miami-Dade",
     "roads": [
      "Florida's Tpke N",
      "FL-821 N"
     ],
-    "delay_s": 1701,
+    "delay_s": 1761,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T09:08:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 1442,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T09:47:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -298,6 +282,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:05:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -344,7 +338,7 @@
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 409,
+    "delay_s": 766,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T09:57:00Z"
@@ -352,41 +346,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 373,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T10:05:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 293,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T09:27:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-997"
-    ],
-    "delay_s": 286,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T10:10:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-953"
     ],
-    "delay_s": 256,
+    "delay_s": 552,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T09:32:30Z"
@@ -394,12 +356,86 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-994"
+     "FL-997"
     ],
-    "delay_s": 222,
+    "delay_s": 539,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T10:10:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 497,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T10:04:00Z"
+    "start": "2026-08-31T09:27:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Florida's Tpke N",
+     "FL-821 N"
+    ],
+    "delay_s": 325,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-31T10:09:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-7",
+     "US-441 S"
+    ],
+    "delay_s": 304,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T10:21:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 N"
+    ],
+    "delay_s": 286,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-31T10:08:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-916"
+    ],
+    "delay_s": 286,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T10:20:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 283,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T10:20:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-7",
+     "US-441 S"
+    ],
+    "delay_s": 261,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T10:17:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -407,10 +443,72 @@
      "US-1 N",
      "FL-5"
     ],
-    "delay_s": 161,
+    "delay_s": 240,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T10:05:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 E"
+    ],
+    "delay_s": 217,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T10:17:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-994"
+    ],
+    "delay_s": 206,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T10:04:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-94"
+    ],
+    "delay_s": 185,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T10:28:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 184,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-08-31T10:03:30Z"
+    "start": "2026-08-31T10:24:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 174,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T10:28:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 164,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T10:29:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -419,7 +517,7 @@
      "S Dade Expy N",
      "FL-874 N"
     ],
-    "delay_s": 139,
+    "delay_s": 148,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-08-31T09:45:00Z"
@@ -427,86 +525,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
+     "FL-994"
     ],
-    "delay_s": 77,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T10:09:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 N"
-    ],
-    "delay_s": 72,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T10:08:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 58,
+    "delay_s": 143,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-08-31T10:14:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-736"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-31T06:02:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-822",
-     "FL-A1A"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-07-29T01:44:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-27T17:50:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-29T18:58:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-25",
-     "US-27 N"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-08-29T13:56:30Z"
+    "start": "2026-08-31T10:29:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -514,73 +538,42 @@
      "US-27 S",
      "FL-25"
     ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-04-29T18:52:55Z"
+    "delay_s": 131,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T10:29:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-27 S",
-     "FL-25"
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-04-30T20:30:11Z"
+    "delay_s": 70,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T10:29:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-972"
+     "FL-836 E"
     ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-05-07T11:50:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-7",
-     "US-441 N"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-08-28T06:56:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-13T10:30:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-395 W"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-08-21T08:47:30Z"
+    "delay_s": 64,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-31T10:26:00Z"
    }
   ],
-  "incident_count": 261,
-  "named_count": 35,
-  "major_count": 8,
+  "incident_count": 296,
+  "named_count": 51,
+  "major_count": 9,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-31T06:16:06-04:00",
+  "fetched_at": "2026-08-31T06:31:24-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -626,7 +619,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-31T06:16:06-04:00",
+  "fetched_at": "2026-08-31T06:31:24-04:00",
   "issued": "200 AM EDT Mon Aug 31 2026",
   "areas": [
    {
@@ -645,7 +638,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-31T06:16:07-04:00",
+  "fetched_at": "2026-08-31T06:31:24-04:00",
   "florida": "$3.8781",
   "national": "$4.0807",
   "diesel": "$5.4232",
@@ -654,7 +647,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-31T06:16:08-04:00",
+  "fetched_at": "2026-08-31T06:31:25-04:00",
   "streams": {
    "local": [
     {
@@ -959,6 +952,14 @@
   ],
   "world": [
    {
+    "title": "Russia's jet-powered drones bring empty Kyiv supermarket shelves and rattle Ukrainians",
+    "url": "https://www.npr.org/2026/08/31/g-s1-141181/russia-ukraine-war",
+    "published": "Mon, 31 Aug 2026 06:24:25 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Attacks flare between U.S., Iran after month-long pause",
     "url": "https://www.npr.org/2026/08/31/g-s1-141175/attacks-flare-us-iran",
     "published": "Mon, 31 Aug 2026 06:04:30 -0400",
@@ -1013,21 +1014,13 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "Noel Godin, who made powerful people nervous around cream pies, dies at 80",
-    "url": "https://www.npr.org/2026/08/30/nx-s1-5946807/noel-godin-who-made-powerful-people-nervous-around-cream-pies-dies-at-80",
-    "published": "Sun, 30 Aug 2026 17:01:12 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-31T06:16:09-04:00",
+  "fetched_at": "2026-08-31T06:31:26-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1035,7 +1028,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-31T06:16:09-04:00",
+  "fetched_at": "2026-08-31T06:31:26-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -1096,10 +1089,38 @@
     ],
     "count": 1,
     "issue": "Attacks flare between U.S., Iran after month-long pause"
+   },
+   {
+    "iso": "RUS",
+    "name": "Russia",
+    "stories": [
+     {
+      "title": "Russia's jet-powered drones bring empty Kyiv supermarket shelves and rattle Ukrainians",
+      "url": "https://www.npr.org/2026/08/31/g-s1-141181/russia-ukraine-war",
+      "published": "Mon, 31 Aug 2026 06:24:25 -0400",
+      "section": "world"
+     }
+    ],
+    "count": 1,
+    "issue": "Russia's jet-powered drones bring empty Kyiv supermarket shelves and rattle Ukrainians"
+   },
+   {
+    "iso": "UKR",
+    "name": "Ukraine",
+    "stories": [
+     {
+      "title": "Russia's jet-powered drones bring empty Kyiv supermarket shelves and rattle Ukrainians",
+      "url": "https://www.npr.org/2026/08/31/g-s1-141181/russia-ukraine-war",
+      "published": "Mon, 31 Aug 2026 06:24:25 -0400",
+      "section": "world"
+     }
+    ],
+    "count": 1,
+    "issue": "Russia's jet-powered drones bring empty Kyiv supermarket shelves and rattle Ukrainians"
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 3,
+  "countries_matched": 5,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
