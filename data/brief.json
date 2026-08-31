@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-31T16:15:56-04:00",
- "generated_at_utc": "2026-08-31T20:15:56+00:00",
+ "generated_at": "2026-08-31T16:30:59-04:00",
+ "generated_at_utc": "2026-08-31T20:30:59+00:00",
  "weekday": "Monday",
  "date_label": "Monday, August 31",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-31T16:15:57-04:00",
+  "fetched_at": "2026-08-31T16:30:59-04:00",
   "curve": [
    {
     "time": "2026-08-31T05:00",
@@ -92,148 +92,100 @@
    {
     "time": "2026-08-31T15:00",
     "hour": 15,
-    "temp": 88.7,
-    "feels": 100.2,
+    "temp": 90.4,
+    "feels": 103.4,
     "humidity": 70,
     "pop": 56
    },
    {
     "time": "2026-08-31T16:00",
     "hour": 16,
-    "temp": 89.3,
-    "feels": 101.3,
+    "temp": 88.9,
+    "feels": 98.2,
     "humidity": 67,
     "pop": 52
    },
    {
     "time": "2026-08-31T17:00",
     "hour": 17,
-    "temp": 85.3,
-    "feels": 94.2,
+    "temp": 85.8,
+    "feels": 94.0,
     "humidity": 77,
     "pop": 45
    },
    {
     "time": "2026-08-31T18:00",
     "hour": 18,
-    "temp": 85.9,
-    "feels": 94.1,
+    "temp": 86.7,
+    "feels": 95.7,
     "humidity": 74,
     "pop": 56
    },
    {
     "time": "2026-08-31T19:00",
     "hour": 19,
-    "temp": 84.3,
-    "feels": 94.0,
+    "temp": 82.6,
+    "feels": 91.5,
     "humidity": 78,
     "pop": 54
    },
    {
     "time": "2026-08-31T20:00",
     "hour": 20,
-    "temp": 80.3,
-    "feels": 90.4,
+    "temp": 77.6,
+    "feels": 85.2,
     "humidity": 93,
     "pop": 42
    },
    {
     "time": "2026-08-31T21:00",
     "hour": 21,
-    "temp": 76.6,
-    "feels": 85.6,
+    "temp": 77.7,
+    "feels": 87.7,
     "humidity": 95,
     "pop": 22
    }
   ],
   "current": {
-   "temp": 87.7,
-   "feels": 96.2,
-   "humidity": 69,
-   "wind_mph": 7.5,
-   "wind_dir": 78,
-   "observed_at": "2026-08-31T16:15"
+   "temp": 88.4,
+   "feels": 98.5,
+   "humidity": 72,
+   "wind_mph": 6.5,
+   "wind_dir": 46,
+   "observed_at": "2026-08-31T16:30"
   },
   "today": {
-   "high": 89.3,
-   "low": 76.6,
-   "feels_max": 101.3,
+   "high": 90.4,
+   "low": 77.6,
+   "feels_max": 103.4,
    "pop_max": 56
   },
-  "peak_feels": 101.3,
-  "peak_hour": 16
+  "peak_feels": 103.4,
+  "peak_hour": 15
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-31T16:15:57-04:00",
+  "fetched_at": "2026-08-31T16:31:00-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-31T16:15:57-04:00",
-  "aqi": 28,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-08-31T16:31:26-04:00",
+  "aqi": 42,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-08-31 15:00 EST",
-  "forecast": [
-   {
-    "date": "2026-08-31",
-    "aqi": 21,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-08-31",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-01",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-01",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 5.4,
+  "pm10": 6.7,
+  "observed": "2026-08-31T16:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-08-31T16:16:00-04:00",
+  "fetched_at": "2026-08-31T16:31:29-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
@@ -241,46 +193,53 @@
   "depart_at": "now",
   "miles": 20.6,
   "minutes": 72,
-  "delay_minutes": 6,
+  "delay_minutes": 7,
   "toll_free": true,
   "alternates": [
    {
     "miles": 22.6,
-    "minutes": 68,
+    "minutes": 60,
     "toll": true,
-    "saves": 4
+    "saves": 12
+   },
+   {
+    "miles": 26.8,
+    "minutes": 64,
+    "toll": true,
+    "saves": 8
    },
    {
     "miles": 20.8,
-    "minutes": 68,
+    "minutes": 69,
     "toll": true,
-    "saves": 4
+    "saves": 3
    },
    {
-    "miles": 28.7,
-    "minutes": 70,
+    "miles": 29.5,
+    "minutes": 72,
     "toll": true,
-    "saves": 2
-   },
-   {
-    "miles": 26.1,
-    "minutes": 74,
-    "toll": true,
-    "saves": -2
+    "saves": 0
    }
   ],
-  "alternates_worth_taking": [],
+  "alternates_worth_taking": [
+   {
+    "miles": 22.6,
+    "minutes": 60,
+    "toll": true,
+    "saves": 12
+   }
+  ],
   "free_alternates": [
    {
     "miles": 20.6,
     "minutes": 72,
-    "delay_minutes": 6,
+    "delay_minutes": 7,
     "saves": 0
    },
    {
     "miles": 23.4,
-    "minutes": 81,
-    "delay_minutes": 5
+    "minutes": 79,
+    "delay_minutes": 1
    },
    {
     "miles": 22.5,
@@ -288,35 +247,24 @@
     "delay_minutes": 2
    },
    {
-    "miles": 23.7,
-    "minutes": 88,
+    "miles": 23.3,
+    "minutes": 84,
     "delay_minutes": 0
    }
   ],
   "best_free": {
    "miles": 20.6,
    "minutes": 72,
-   "delay_minutes": 6,
+   "delay_minutes": 7,
    "saves": 0
   },
   "incidents": [
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "I-95 N"
-    ],
-    "delay_s": 1368,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T18:05:01Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-825"
     ],
-    "delay_s": 1332,
+    "delay_s": 1598,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T19:39:33Z"
@@ -324,13 +272,57 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-1 N",
+     "I-95 N"
+    ],
+    "delay_s": 1551,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T18:05:01Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 1445,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-08-31T16:01:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 944,
+    "delay_s": 1088,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-08-31T18:29:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 986,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T19:51:39Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 971,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T20:07:30Z"
    },
    {
     "county": "Broward",
@@ -396,52 +388,20 @@
     "county": "Miami-Dade",
     "roads": [
      "US-1 N",
-     "US-1 S",
      "FL-5"
     ],
-    "delay_s": 795,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-08-31T16:01:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 775,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T18:20:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 717,
+    "delay_s": 696,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T20:07:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 660,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T19:41:00Z"
+    "start": "2026-08-31T20:08:07Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-997"
+     "FL-817",
+     "FL-9"
     ],
-    "delay_s": 524,
+    "delay_s": 664,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T19:46:45Z"
@@ -449,9 +409,21 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "Don Shula Expy S",
+     "FL-874 S",
+     "S Dade Expy S"
+    ],
+    "delay_s": 626,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T17:50:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-826 N"
     ],
-    "delay_s": 522,
+    "delay_s": 587,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-08-31T15:30:00Z"
@@ -459,13 +431,93 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-395 W",
-     "FL-836 W"
+     "FL-953"
     ],
-    "delay_s": 513,
+    "delay_s": 585,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T19:41:30Z"
+    "start": "2026-08-31T19:38:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 582,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T19:25:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-986"
+    ],
+    "delay_s": 565,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T20:01:04Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 562,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-31T18:20:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 503,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T20:14:56Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 482,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T18:35:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 459,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-31T19:45:48Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S"
+    ],
+    "delay_s": 442,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T20:10:13Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 423,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T19:36:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -475,157 +527,64 @@
      "Florida's Tpke N",
      "FL-826 W"
     ],
-    "delay_s": 510,
-    "magnitude": 3,
-    "description": "Stationary traffic",
+    "delay_s": 412,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-08-31T19:30:11Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-953"
+     "FL-112 W"
     ],
-    "delay_s": 503,
+    "delay_s": 390,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T19:38:30Z"
+    "start": "2026-08-31T19:15:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "Don Shula Expy S",
-     "FL-874 S",
-     "S Dade Expy S"
-    ],
-    "delay_s": 489,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T17:50:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
+     "US-1 S",
      "FL-5"
     ],
-    "delay_s": 453,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T20:08:07Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 449,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T19:53:42Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 426,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T18:35:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "US-27 N"
-    ],
-    "delay_s": 421,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T19:54:38Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-441 N",
-     "US-441 S"
-    ],
-    "delay_s": 418,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T19:42:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-395 W"
-    ],
-    "delay_s": 407,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-08-31T17:29:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 N"
-    ],
-    "delay_s": 401,
+    "delay_s": 376,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-08-31T19:28:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 386,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T19:51:39Z"
+    "start": "2026-08-31T19:03:05Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-994"
+     "I-395 W",
+     "FL-836 W"
     ],
-    "delay_s": 386,
+    "delay_s": 374,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T19:14:30Z"
+    "start": "2026-08-31T19:41:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S",
-     "US-41 N"
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 375,
+    "delay_s": 372,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T15:36:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-972"
-    ],
-    "delay_s": 367,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T19:11:00Z"
+    "start": "2026-08-31T19:29:00Z"
    }
   ],
-  "incident_count": 551,
-  "named_count": 188,
-  "major_count": 13,
+  "incident_count": 546,
+  "named_count": 193,
+  "major_count": 15,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-31T16:16:01-04:00",
+  "fetched_at": "2026-08-31T16:31:29-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -671,7 +630,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-31T16:16:01-04:00",
+  "fetched_at": "2026-08-31T16:31:30-04:00",
   "issued": "200 PM EDT Mon Aug 31 2026",
   "areas": [
    {
@@ -685,7 +644,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-31T16:16:01-04:00",
+  "fetched_at": "2026-08-31T16:31:30-04:00",
   "florida": "$3.8781",
   "national": "$4.0807",
   "diesel": "$5.4232",
@@ -694,7 +653,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-31T16:16:02-04:00",
+  "fetched_at": "2026-08-31T16:31:32-04:00",
   "streams": {
    "local": [
     {
@@ -911,7 +870,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/north-beach-elementary-teacher-accused-of-shoving-neighbor-outside-condo-parent-says-suspect-64-is-very-mean-to-kids/",
     "published": "Mon, 31 Aug 2026 17:10:13 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/90c764bd-9858-4af2-a81f-6b54433e4e4c/744103d5-df99-476f-b561-3724385b73a4/main.mp4?fastly_token=NmE5NjMwYTJfZTAxMGFmOTM5NTcxMDJhMjI0MTIyOTVlMjZhZTUyOGU4ZmU5ZWY0MzBmZDljOWMzZGQxZDU4NGE3YWE1ZmRmNl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85MGM3NjRiZC05ODU4LTRhZjItYTgxZi02YjU0NDMzZTRlNGMvNzQ0MTAzZDUtZGY5OS00NzZmLWI1NjEtMzcyNDM4NWI3M2E0L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/90c764bd-9858-4af2-a81f-6b54433e4e4c/744103d5-df99-476f-b561-3724385b73a4/main.mp4?fastly_token=NmE5NjBkZTVfZmM2MDBkNDMzNzRiMWUxZGVkMzVlMGFhZDI0MjNhYzA5MTM2MTE1M2Y3ZmU2YjU3ODQ1Nzg1NmYyOWNhZGUzZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85MGM3NjRiZC05ODU4LTRhZjItYTgxZi02YjU0NDMzZTRlNGMvNzQ0MTAzZDUtZGY5OS00NzZmLWI1NjEtMzcyNDM4NWI3M2E0L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -932,6 +891,22 @@
    }
   ],
   "colombia": [
+   {
+    "title": "Así afectó el terremoto a emprendedores en Cali y la región: 'Un negocio puede seguir en pie y aun así, haber perdido su capacidad de vender'",
+    "url": "https://www.eltiempo.com/colombia/cali/asi-afecto-el-terremoto-a-emprendedores-en-cali-y-la-region-un-negocio-puede-seguir-en-pie-y-aun-asi-haber-perdido-su-capacidad-de-vender-3582463",
+    "published": "2026-08-31T15:13:23-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/12/6a7c700db06c7.r_d.820-187-0.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Checo Acosta fue a visitar a su padre Alci Acosta a la clínica donde está hospitalizado en Barranquilla: hay novedades positivas de su estado de salud",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/checo-acosta-fue-a-visitar-a-su-padre-alci-acosta-a-la-clinica-donde-esta-hospitalizado-en-barranquilla-hay-novedades-positivas-de-su-estado-de-salud-3582470",
+    "published": "2026-08-31T15:05:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a95de9e4feb9.png",
+    "media_type": "image"
+   },
    {
     "title": "La historia de Lucas, el niño 'milagro' que se hizo viral por pedir ayuda al presidente De La Espriella para recibir atención médica: casi nunca llora",
     "url": "https://www.eltiempo.com/colombia/santander/la-historia-de-lucas-el-nino-milagro-que-se-hizo-viral-por-pedir-ayuda-al-presidente-de-la-espriella-para-recibir-atencion-medica-casi-nunca-llora-3582453",
@@ -979,22 +954,6 @@
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a95c9804001d.png",
     "media_type": "image"
-   },
-   {
-    "title": "'Alcalde, deje de ser payaso': Daniel Quintero le responde al alcalde de Medellín, Federico Gutiérrez, tras reunión en Miami con el FBI",
-    "url": "https://www.eltiempo.com/colombia/medellin/alcalde-deje-de-ser-payaso-daniel-quintero-le-responde-al-alcalde-de-medellin-federico-gutierrez-tras-reunion-en-miami-con-el-fbi-3582441",
-    "published": "2026-08-31T13:36:30-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a95c46204669.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Video | Movimiento de masas en Bello, Antioquia, afectó a una decena de personas: autoridades verifican riesgos en viviendas contiguas",
-    "url": "https://www.eltiempo.com/colombia/medellin/video-movimiento-de-masas-en-bello-antioquia-afecto-a-una-decena-de-personas-autoridades-verifican-riesgos-en-viviendas-contiguas-3582429",
-    "published": "2026-08-31T13:12:54-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a95c360985ee.png",
-    "media_type": "image"
    }
   ],
   "world": [
@@ -1039,16 +998,16 @@
     "media_type": null
    },
    {
-    "title": "The U.S.-Venezuela oil deal won't lower your gas prices. Here's what you need to know",
-    "url": "https://www.npr.org/2026/08/31/nx-s1-5949407/us-venezuelan-oil-deal",
+    "title": "Hit shows from Edinburgh's Fringe festival are coming to America. Here are our top picks",
+    "url": "https://www.npr.org/2026/08/31/nx-s1-5949346/edinburgh-fringe-scotland-best-shows-coming-to-america",
     "published": "Mon, 31 Aug 2026 05:00:00 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
    },
    {
-    "title": "Hit shows from Edinburgh's Fringe festival are coming to America. Here are our top picks",
-    "url": "https://www.npr.org/2026/08/31/nx-s1-5949346/edinburgh-fringe-scotland-best-shows-coming-to-america",
+    "title": "The U.S.-Venezuela oil deal won't lower your gas prices. Here's what you need to know",
+    "url": "https://www.npr.org/2026/08/31/nx-s1-5949407/us-venezuelan-oil-deal",
     "published": "Mon, 31 Aug 2026 05:00:00 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
@@ -1067,7 +1026,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-31T16:16:03-04:00",
+  "fetched_at": "2026-08-31T16:31:33-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1075,7 +1034,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-31T16:16:03-04:00",
+  "fetched_at": "2026-08-31T16:31:33-04:00",
   "countries": [
    {
     "iso": "VEN",
@@ -1116,14 +1075,14 @@
     "name": "Colombia",
     "stories": [
      {
-      "title": "'Alcalde, deje de ser payaso': Daniel Quintero le responde al alcalde de Medellín, Federico Gutiérrez, tras reunión en Miami con el FBI",
-      "url": "https://www.eltiempo.com/colombia/medellin/alcalde-deje-de-ser-payaso-daniel-quintero-le-responde-al-alcalde-de-medellin-federico-gutierrez-tras-reunion-en-miami-con-el-fbi-3582441",
-      "published": "2026-08-31T13:36:30-05:00",
+      "title": "Así afectó el terremoto a emprendedores en Cali y la región: 'Un negocio puede seguir en pie y aun así, haber perdido su capacidad de vender'",
+      "url": "https://www.eltiempo.com/colombia/cali/asi-afecto-el-terremoto-a-emprendedores-en-cali-y-la-region-un-negocio-puede-seguir-en-pie-y-aun-asi-haber-perdido-su-capacidad-de-vender-3582463",
+      "published": "2026-08-31T15:13:23-05:00",
       "section": "colombia"
      }
     ],
     "count": 1,
-    "issue": "'Alcalde, deje de ser payaso': Daniel Quintero le responde al alcalde de Medellín, Federico Gutiérrez, tras reunión en Miami con el FBI"
+    "issue": "Así afectó el terremoto a emprendedores en Cali y la región: 'Un negocio puede seguir en pie y aun así, haber perdido su capacidad de vender'"
    },
    {
     "iso": "CUB",
