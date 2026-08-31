@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-31T16:30:59-04:00",
- "generated_at_utc": "2026-08-31T20:30:59+00:00",
+ "generated_at": "2026-08-31T16:45:57-04:00",
+ "generated_at_utc": "2026-08-31T20:45:57+00:00",
  "weekday": "Monday",
  "date_label": "Monday, August 31",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-31T16:30:59-04:00",
+  "fetched_at": "2026-08-31T16:45:57-04:00",
   "curve": [
    {
     "time": "2026-08-31T05:00",
@@ -117,42 +117,42 @@
     "time": "2026-08-31T18:00",
     "hour": 18,
     "temp": 86.7,
-    "feels": 95.7,
-    "humidity": 74,
+    "feels": 94.9,
+    "humidity": 71,
     "pop": 56
    },
    {
     "time": "2026-08-31T19:00",
     "hour": 19,
     "temp": 82.6,
-    "feels": 91.5,
-    "humidity": 78,
+    "feels": 92.9,
+    "humidity": 84,
     "pop": 54
    },
    {
     "time": "2026-08-31T20:00",
     "hour": 20,
     "temp": 77.6,
-    "feels": 85.2,
-    "humidity": 93,
+    "feels": 84.6,
+    "humidity": 90,
     "pop": 42
    },
    {
     "time": "2026-08-31T21:00",
     "hour": 21,
     "temp": 77.7,
-    "feels": 87.7,
-    "humidity": 95,
+    "feels": 87.5,
+    "humidity": 94,
     "pop": 22
    }
   ],
   "current": {
-   "temp": 88.4,
-   "feels": 98.5,
-   "humidity": 72,
-   "wind_mph": 6.5,
-   "wind_dir": 46,
-   "observed_at": "2026-08-31T16:30"
+   "temp": 87.5,
+   "feels": 97.0,
+   "humidity": 75,
+   "wind_mph": 8.6,
+   "wind_dir": 57,
+   "observed_at": "2026-08-31T16:45"
   },
   "today": {
    "high": 90.4,
@@ -166,26 +166,74 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-31T16:31:00-04:00",
+  "fetched_at": "2026-08-31T16:45:58-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-08-31T16:31:26-04:00",
-  "aqi": 42,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-08-31T16:45:59-04:00",
+  "aqi": 30,
   "category": "Good",
-  "pm25": 5.4,
-  "pm10": 6.7,
-  "observed": "2026-08-31T16:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-08-31 15:00 EST",
+  "forecast": [
+   {
+    "date": "2026-08-31",
+    "aqi": 21,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-08-31",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-01",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-01",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-02",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-02",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-08-31T16:31:29-04:00",
+  "fetched_at": "2026-08-31T16:46:02-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
@@ -193,17 +241,17 @@
   "depart_at": "now",
   "miles": 20.6,
   "minutes": 72,
-  "delay_minutes": 7,
+  "delay_minutes": 10,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 22.6,
-    "minutes": 60,
+    "miles": 25.5,
+    "minutes": 58,
     "toll": true,
-    "saves": 12
+    "saves": 14
    },
    {
-    "miles": 26.8,
+    "miles": 22.6,
     "minutes": 64,
     "toll": true,
     "saves": 8
@@ -215,71 +263,50 @@
     "saves": 3
    },
    {
-    "miles": 29.5,
-    "minutes": 72,
+    "miles": 29.2,
+    "minutes": 71,
     "toll": true,
-    "saves": 0
+    "saves": 1
    }
   ],
   "alternates_worth_taking": [
    {
-    "miles": 22.6,
-    "minutes": 60,
+    "miles": 25.5,
+    "minutes": 58,
     "toll": true,
-    "saves": 12
+    "saves": 14
    }
   ],
   "free_alternates": [
    {
     "miles": 20.6,
-    "minutes": 72,
-    "delay_minutes": 7,
-    "saves": 0
+    "minutes": 73,
+    "delay_minutes": 11,
+    "saves": -1
    },
    {
     "miles": 23.4,
-    "minutes": 79,
-    "delay_minutes": 1
-   },
-   {
-    "miles": 22.5,
     "minutes": 80,
     "delay_minutes": 2
    },
    {
     "miles": 23.3,
-    "minutes": 84,
+    "minutes": 85,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.5,
+    "minutes": 78,
     "delay_minutes": 0
    }
   ],
   "best_free": {
    "miles": 20.6,
-   "minutes": 72,
-   "delay_minutes": 7,
-   "saves": 0
+   "minutes": 73,
+   "delay_minutes": 11,
+   "saves": -1
   },
   "incidents": [
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-825"
-    ],
-    "delay_s": 1598,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T19:39:33Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "I-95 N"
-    ],
-    "delay_s": 1551,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T18:05:01Z"
-   },
    {
     "county": "Miami-Dade",
     "roads": [
@@ -287,7 +314,7 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 1445,
+    "delay_s": 2053,
     "magnitude": 3,
     "description": "Stationary traffic; Roadworks",
     "start": "2026-08-31T16:01:00Z"
@@ -295,23 +322,23 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
+     "US-1 N",
+     "I-95 N"
     ],
-    "delay_s": 1088,
+    "delay_s": 1694,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-08-31T18:29:00Z"
+    "start": "2026-08-31T18:05:01Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-854"
+     "FL-825"
     ],
-    "delay_s": 986,
+    "delay_s": 1638,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T19:51:39Z"
+    "start": "2026-08-31T19:39:33Z"
    },
    {
     "county": "Miami-Dade",
@@ -319,10 +346,31 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 971,
+    "delay_s": 1267,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T20:07:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 1114,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T18:29:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-986"
+    ],
+    "delay_s": 1071,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T20:20:51Z"
    },
    {
     "county": "Broward",
@@ -385,15 +433,14 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "US-1 N",
-     "FL-5"
+     "FL-854"
     ],
-    "delay_s": 696,
+    "delay_s": 892,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T20:08:07Z"
+    "start": "2026-08-31T19:51:39Z"
    },
    {
     "county": "Miami-Dade",
@@ -401,7 +448,7 @@
      "FL-817",
      "FL-9"
     ],
-    "delay_s": 664,
+    "delay_s": 890,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T19:46:45Z"
@@ -409,115 +456,33 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "Don Shula Expy S",
-     "FL-874 S",
-     "S Dade Expy S"
+     "US-1 N",
+     "FL-5"
     ],
-    "delay_s": 626,
+    "delay_s": 803,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T17:50:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 N"
-    ],
-    "delay_s": 587,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T15:30:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 585,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T19:38:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 582,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T19:25:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": 565,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T20:01:04Z"
+    "start": "2026-08-31T20:08:07Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-836 W"
     ],
-    "delay_s": 562,
-    "magnitude": 1,
-    "description": "Slow traffic",
+    "delay_s": 690,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-08-31T18:20:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-976"
+     "FL-826 N"
     ],
-    "delay_s": 503,
+    "delay_s": 615,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-08-31T20:14:56Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 482,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T18:35:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 459,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-08-31T19:45:48Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 S"
-    ],
-    "delay_s": 442,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T20:10:13Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 423,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T19:36:30Z"
+    "start": "2026-08-31T15:30:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -527,7 +492,7 @@
      "Florida's Tpke N",
      "FL-826 W"
     ],
-    "delay_s": 412,
+    "delay_s": 557,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-08-31T19:30:11Z"
@@ -535,31 +500,10 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-112 W"
-    ],
-    "delay_s": 390,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-08-31T19:15:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 376,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-08-31T19:03:05Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "I-395 W",
      "FL-836 W"
     ],
-    "delay_s": 374,
+    "delay_s": 537,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T19:41:30Z"
@@ -567,24 +511,126 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-41 S"
+    ],
+    "delay_s": 532,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T20:10:13Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Don Shula Expy S",
+     "FL-874 S",
+     "S Dade Expy S"
+    ],
+    "delay_s": 531,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T17:50:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 513,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T18:35:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 497,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-31T19:25:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 460,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T19:38:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 S"
+    ],
+    "delay_s": 451,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-08-31T19:58:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 432,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T18:03:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 417,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-08-31T19:45:48Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 406,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T18:47:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 372,
+    "delay_s": 384,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T19:29:00Z"
+    "start": "2026-08-31T19:03:05Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-860"
+    ],
+    "delay_s": 383,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-08-31T20:37:28Z"
    }
   ],
-  "incident_count": 546,
-  "named_count": 193,
-  "major_count": 15,
+  "incident_count": 520,
+  "named_count": 183,
+  "major_count": 17,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-31T16:31:29-04:00",
+  "fetched_at": "2026-08-31T16:46:02-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -630,7 +676,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-31T16:31:30-04:00",
+  "fetched_at": "2026-08-31T16:46:03-04:00",
   "issued": "200 PM EDT Mon Aug 31 2026",
   "areas": [
    {
@@ -644,7 +690,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-31T16:31:30-04:00",
+  "fetched_at": "2026-08-31T16:46:03-04:00",
   "florida": "$3.8781",
   "national": "$4.0807",
   "diesel": "$5.4232",
@@ -653,7 +699,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-31T16:31:32-04:00",
+  "fetched_at": "2026-08-31T16:46:05-04:00",
   "streams": {
    "local": [
     {
@@ -762,6 +808,14 @@
   ],
   "local": [
    {
+    "title": "2 teens hospitalized after stabbing at Miami Northwestern Senior High School, officials say",
+    "url": "https://www.local10.com/news/local/2026/08/31/2-teens-hospitalized-after-stabbing-at-miami-northwestern-senior-high-school-officials-say/",
+    "published": "Mon, 31 Aug 2026 20:40:48 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/E7SNMKC2VJFSNDQIRXFB2XWHBA.jpeg?auth=586d0abe3c1f3114e34c22283f2a2fd7d2f86021db2342c64a3b3009bed2aaad&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
     "title": "Miami biker ‘performing a wheelie’ crashes, leaves passenger to die, police say",
     "url": "https://www.local10.com/news/local/2026/08/31/miami-biker-performing-a-wheelie-crashes-leaves-passenger-to-die-police-say/",
     "published": "Mon, 31 Aug 2026 19:43:18 +0000",
@@ -818,14 +872,6 @@
     "media_type": null
    },
    {
-    "title": "Man accused of leaving his 2 children on corner of Doral street after driving drunk, crashing into tree",
-    "url": "https://www.local10.com/news/local/2026/08/31/man-accused-of-leaving-2-children-on-corner-of-doral-street-after-driving-drunk-crashing-into-tree/",
-    "published": "Mon, 31 Aug 2026 17:12:59 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/2AB7VCZ6BJGH7KB63IPRALFTPA.jpg?auth=67abdb0f926160594d6bf55cd9ff426fecd7119555f2f8e427c879e6d560f7fe&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
     "title": "Several cars burglarized, 2 stolen from Miami’s Vista Mar Apartments, resident says",
     "url": "https://wsvn.com/news/local/miami-dade/several-cars-burglarized-2-stolen-from-miamis-vista-mar-apartments-resident-says/",
     "published": "Mon, 31 Aug 2026 16:34:36 +0000",
@@ -858,6 +904,14 @@
     "media_type": "video"
    },
    {
+    "title": "2 hospitalized after stabbing at Miami Northwestern Senior High",
+    "url": "https://wsvn.com/news/local/miami-dade/2-hospitalized-after-stabbing-at-miami-northwestern-senior-high/",
+    "published": "Mon, 31 Aug 2026 20:23:11 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/73bca8ef-131b-4faf-8218-4c331393f604/fcce8a44-f3d9-47d8-b940-406fb28b4e01/main.mp4?fastly_token=NmE5NjNhZjlfODdjNWUyMWZkMzc5ODJmOGQ1YTQxOWU2OWRiZTZkYjFjOGI2NWIzNmZkZGJhODk2NTJkZmQ0ZjBiZGM3YzFiM18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83M2JjYThlZi0xMzFiLTRmYWYtODIxOC00YzMzMTM5M2Y2MDQvZmNjZThhNDQtZjNkOS00N2Q4LWI5NDAtNDA2ZmIyOGI0ZTAxL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "Man arrested after joking about grenade in luggage at MIA, deputies say",
     "url": "https://wsvn.com/news/local/miami-dade/man-arrested-after-joking-about-grenade-in-luggage-at-mia-deputies-say/",
     "published": "Mon, 31 Aug 2026 18:55:28 +0000",
@@ -870,7 +924,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/north-beach-elementary-teacher-accused-of-shoving-neighbor-outside-condo-parent-says-suspect-64-is-very-mean-to-kids/",
     "published": "Mon, 31 Aug 2026 17:10:13 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/90c764bd-9858-4af2-a81f-6b54433e4e4c/744103d5-df99-476f-b561-3724385b73a4/main.mp4?fastly_token=NmE5NjBkZTVfZmM2MDBkNDMzNzRiMWUxZGVkMzVlMGFhZDI0MjNhYzA5MTM2MTE1M2Y3ZmU2YjU3ODQ1Nzg1NmYyOWNhZGUzZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85MGM3NjRiZC05ODU4LTRhZjItYTgxZi02YjU0NDMzZTRlNGMvNzQ0MTAzZDUtZGY5OS00NzZmLWI1NjEtMzcyNDM4NWI3M2E0L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/90c764bd-9858-4af2-a81f-6b54433e4e4c/744103d5-df99-476f-b561-3724385b73a4/main.mp4?fastly_token=NmE5NjMwYTJfZTAxMGFmOTM5NTcxMDJhMjI0MTIyOTVlMjZhZTUyOGU4ZmU5ZWY0MzBmZDljOWMzZGQxZDU4NGE3YWE1ZmRmNl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85MGM3NjRiZC05ODU4LTRhZjItYTgxZi02YjU0NDMzZTRlNGMvNzQ0MTAzZDUtZGY5OS00NzZmLWI1NjEtMzcyNDM4NWI3M2E0L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -880,14 +934,6 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/08/Deyton-Rojas-Jose-Luis-Martinez-Helder-Rojas.png",
     "media_type": "image"
-   },
-   {
-    "title": "Several cars burglarized, 2 stolen from Miami’s Vista Mar Apartments, resident says",
-    "url": "https://wsvn.com/news/local/miami-dade/several-cars-burglarized-2-stolen-from-miamis-vista-mar-apartments-resident-says/",
-    "published": "Mon, 31 Aug 2026 16:34:36 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/8b6b2fd6-02f0-4e46-8ca8-bf33f7e6ffac/93e8289d-4355-4d6f-a5a4-c86defcb593d/main.mp4?fastly_token=NmE5NjA1MjBfZmE3OGRkZThkZWIzZWMxNTliM2EwZTlkMDlkYTM3ZTU1ODUyZTFmMzhmNTM3ZTliMWZmY2E2MDVkOGY4NWY3OV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84YjZiMmZkNi0wMmYwLTRlNDYtOGNhOC1iZjMzZjdlNmZmYWMvOTNlODI4OWQtNDM1NS00ZDZmLWE1YTQtYzg2ZGVmY2I1OTNkL21haW4ubXA0",
-    "media_type": "video"
    }
   ],
   "colombia": [
@@ -924,9 +970,9 @@
     "media_type": "image"
    },
    {
-    "title": "¿Qué pasaría si hace erupción el volcán Puracé? Estos son los detalles de su actividad según el Servicio Geológico Colombiano",
+    "title": "¿Qué pasaría si hace erupción el volcán Puracé? Estos son los detalles de su actividad, según el Servicio Geológico Colombiano",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/que-pasaria-si-hace-erupcion-el-volcan-purace-estos-son-los-detalles-de-su-actividad-segun-el-servicio-geologico-colombiano-3582447",
-    "published": "2026-08-31T14:18:00-05:00",
+    "published": "2026-08-31T15:31:39-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a95a8032a87d.png",
     "media_type": "image"
@@ -957,6 +1003,14 @@
    }
   ],
   "world": [
+   {
+    "title": "The oil deal with the U.S. could be a boost for Venezuela's authoritarian regime",
+    "url": "https://www.npr.org/2026/08/31/nx-s1-5946856/the-oil-deal-with-the-u-s-could-be-a-boost-for-venezuelas-authoritarian-regime",
+    "published": "Mon, 31 Aug 2026 16:33:48 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
    {
     "title": "Lionel Messi says he's retiring from playing internationally for Argentina",
     "url": "https://www.npr.org/2026/08/31/nx-s1-5950427/lionel-messi-retires-international-soccer",
@@ -998,14 +1052,6 @@
     "media_type": null
    },
    {
-    "title": "Hit shows from Edinburgh's Fringe festival are coming to America. Here are our top picks",
-    "url": "https://www.npr.org/2026/08/31/nx-s1-5949346/edinburgh-fringe-scotland-best-shows-coming-to-america",
-    "published": "Mon, 31 Aug 2026 05:00:00 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "The U.S.-Venezuela oil deal won't lower your gas prices. Here's what you need to know",
     "url": "https://www.npr.org/2026/08/31/nx-s1-5949407/us-venezuelan-oil-deal",
     "published": "Mon, 31 Aug 2026 05:00:00 -0400",
@@ -1014,9 +1060,9 @@
     "media_type": null
    },
    {
-    "title": "Rescuers search for the missing after deadly flood along Nepal-Tibet border",
-    "url": "https://www.npr.org/2026/08/31/nx-s1-5949292/rescuers-search-for-the-missing-after-deadly-flood-along-nepal-tibet-border",
-    "published": "Mon, 31 Aug 2026 04:48:09 -0400",
+    "title": "Hit shows from Edinburgh's Fringe festival are coming to America. Here are our top picks",
+    "url": "https://www.npr.org/2026/08/31/nx-s1-5949346/edinburgh-fringe-scotland-best-shows-coming-to-america",
+    "published": "Mon, 31 Aug 2026 05:00:00 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
@@ -1026,7 +1072,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-31T16:31:33-04:00",
+  "fetched_at": "2026-08-31T16:46:05-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1034,12 +1080,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-31T16:31:33-04:00",
+  "fetched_at": "2026-08-31T16:46:05-04:00",
   "countries": [
    {
     "iso": "VEN",
     "name": "Venezuela",
     "stories": [
+     {
+      "title": "The oil deal with the U.S. could be a boost for Venezuela's authoritarian regime",
+      "url": "https://www.npr.org/2026/08/31/nx-s1-5946856/the-oil-deal-with-the-u-s-could-be-a-boost-for-venezuelas-authoritarian-regime",
+      "published": "Mon, 31 Aug 2026 16:33:48 -0400",
+      "section": "world"
+     },
      {
       "title": "U.S., Venezuela strike oil deal. And, the staggering hidden toll of U.S. heat deaths",
       "url": "https://www.npr.org/2026/08/31/g-s1-141187/up-first-newsletter-venezuela-oil-iran-war-house-government-funding-grand-canyon-flash-flooding",
@@ -1053,8 +1105,8 @@
       "section": "world"
      }
     ],
-    "count": 2,
-    "issue": "U.S., Venezuela strike oil deal. And, the staggering hidden toll of U.S. heat deaths"
+    "count": 3,
+    "issue": "The oil deal with the U.S. could be a boost for Venezuela's authoritarian regime"
    },
    {
     "iso": "ARG",
