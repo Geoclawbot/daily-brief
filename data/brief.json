@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-01T18:44:44-04:00",
- "generated_at_utc": "2026-09-01T22:44:44+00:00",
+ "generated_at": "2026-09-01T18:45:55-04:00",
+ "generated_at_utc": "2026-09-01T22:45:55+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 1",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-01T18:44:44-04:00",
+  "fetched_at": "2026-09-01T18:45:55-04:00",
   "curve": [
    {
     "time": "2026-09-01T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 86.0,
-   "feels": 95.1,
-   "humidity": 76,
-   "wind_mph": 8.1,
-   "wind_dir": 71,
-   "observed_at": "2026-09-01T18:30"
+   "temp": 85.8,
+   "feels": 96.1,
+   "humidity": 77,
+   "wind_mph": 5.4,
+   "wind_dir": 83,
+   "observed_at": "2026-09-01T18:45"
   },
   "today": {
    "high": 89.2,
@@ -166,74 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-01T18:44:44-04:00",
+  "fetched_at": "2026-09-01T18:45:55-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-01T18:44:45-04:00",
-  "aqi": 51,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-01T18:46:22-04:00",
+  "aqi": 53,
   "category": "Moderate",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-01 17:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-01",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-01",
-    "aqi": 36,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 7.8,
+  "pm10": 10.0,
+  "observed": "2026-09-01T18:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-01T18:44:46-04:00",
+  "fetched_at": "2026-09-01T18:46:22-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -243,7 +195,7 @@
     "roads": [
      "FL-836 W"
     ],
-    "delay_s": 1823,
+    "delay_s": 1980,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T19:44:44Z"
@@ -253,7 +205,7 @@
     "roads": [
      "FL-94"
     ],
-    "delay_s": 1671,
+    "delay_s": 1880,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T20:03:31Z"
@@ -261,33 +213,10 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 1600,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T21:24:42Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Don Shula Expy S",
-     "FL-874 S",
-     "S Dade Expy S"
-    ],
-    "delay_s": 1534,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T18:13:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "US-1 N",
      "I-95 N"
     ],
-    "delay_s": 1514,
+    "delay_s": 1611,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T15:32:30Z"
@@ -297,7 +226,7 @@
     "roads": [
      "FL-826 S"
     ],
-    "delay_s": 1457,
+    "delay_s": 1560,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-01T19:17:35Z"
@@ -305,19 +234,52 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-985"
+     "Don Shula Expy S",
+     "FL-874 S",
+     "S Dade Expy S"
     ],
-    "delay_s": 1128,
+    "delay_s": 1496,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T20:56:35Z"
+    "start": "2026-09-01T18:13:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 1488,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T21:24:42Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 N"
+    ],
+    "delay_s": 1139,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T20:31:05Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 N"
+    ],
+    "delay_s": 1031,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-01T16:35:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-953"
     ],
-    "delay_s": 1123,
+    "delay_s": 963,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T17:29:30Z"
@@ -325,32 +287,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 N"
+     "FL-985"
     ],
-    "delay_s": 1070,
+    "delay_s": 947,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T21:46:23Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 N"
-    ],
-    "delay_s": 1027,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T20:31:05Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 1025,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:44:44Z"
+    "start": "2026-09-01T20:56:35Z"
    },
    {
     "county": "Miami-Dade",
@@ -358,7 +300,7 @@
      "US-41 S",
      "US-41 N"
     ],
-    "delay_s": 960,
+    "delay_s": 937,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T20:58:32Z"
@@ -366,22 +308,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 N"
+     "I-95 N"
     ],
-    "delay_s": 907,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T16:35:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "delay_s": 931,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T21:46:23Z"
    },
    {
     "county": "Broward",
@@ -392,6 +324,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:05:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -436,13 +378,43 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-836 E"
+    ],
+    "delay_s": 809,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T21:12:18Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 804,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T19:44:44Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "Snapper Creek Expy W",
      "FL-878 W"
     ],
-    "delay_s": 858,
+    "delay_s": 756,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T19:27:01Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-75 N"
+    ],
+    "delay_s": 703,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T22:08:33Z"
    },
    {
     "county": "Miami-Dade",
@@ -459,19 +431,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 E"
-    ],
-    "delay_s": 615,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T21:12:18Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-972"
     ],
-    "delay_s": 588,
+    "delay_s": 529,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-01T21:58:33Z"
@@ -479,40 +441,20 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 S",
-     "FL-5"
+     "FL-836",
+     "FL-836 W"
     ],
-    "delay_s": 570,
+    "delay_s": 528,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T22:35:22Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-75 N"
-    ],
-    "delay_s": 567,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T22:08:33Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 561,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:23:01Z"
+    "start": "2026-09-01T20:18:45Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-836 W"
     ],
-    "delay_s": 525,
+    "delay_s": 510,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T22:13:15Z"
@@ -520,19 +462,19 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-972"
+     "I-95 N"
     ],
-    "delay_s": 484,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T18:52:08Z"
+    "delay_s": 498,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T19:23:01Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-976"
     ],
-    "delay_s": 476,
+    "delay_s": 479,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T18:51:40Z"
@@ -540,23 +482,33 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-94"
+     "FL-823"
     ],
-    "delay_s": 464,
+    "delay_s": 476,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T18:08:04Z"
+    "start": "2026-09-01T22:04:49Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-907"
+    ],
+    "delay_s": 472,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T21:23:18Z"
    }
   ],
-  "incident_count": 529,
-  "named_count": 172,
-  "major_count": 22,
+  "incident_count": 523,
+  "named_count": 168,
+  "major_count": 23,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-01T18:44:46-04:00",
+  "fetched_at": "2026-09-01T18:46:23-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -603,7 +555,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-01T18:44:47-04:00",
+  "fetched_at": "2026-09-01T18:46:23-04:00",
   "issued": "200 PM EDT Tue Sep 1 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 011724\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\nIssued by the NWS Weather Prediction Center College Park MD\n200 PM EDT Tue Sep 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Edouard, located over the northwestern Gulf of America.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Bann"
@@ -611,7 +563,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-01T18:44:47-04:00",
+  "fetched_at": "2026-09-01T18:46:23-04:00",
   "florida": "$3.9420",
   "national": "$4.0954",
   "diesel": "$5.5763",
@@ -620,7 +572,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-01T18:44:48-04:00",
+  "fetched_at": "2026-09-01T18:46:24-04:00",
   "streams": {
    "local": [
     {
@@ -825,11 +777,19 @@
     "media_type": "video"
    },
    {
-    "title": "M-DCPS: 3 arrested after brawl leads to stabbing at Miami Northwestern Senior High",
-    "url": "https://wsvn.com/news/local/miami-dade/m-dcps-3-arrested-after-brawl-leads-to-stabbing-at-miami-northwestern-senior-high/",
+    "title": "Miccosukee Tribe opens new plaza along Tamiami Trail for Everglades tourists",
+    "url": "https://wsvn.com/news/local/miami-dade/miccosukee-tribe-opens-new-plaza-along-tamiami-trail-for-everglades-tourists/",
+    "published": "Tue, 01 Sep 2026 22:14:59 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/048953dc-107c-409c-884a-41442e8def2b/ff58b71d-d0a7-47cc-8909-976e064a0f38/main.mp4?fastly_token=NmE5N2E2NmNfMjY3NDg1Y2I3MWQzMDBmOGFmYWJkZjUwZDg2ZTcyZDRkY2M4MDQyMzQ3MmJkNTYwNjg0ZGU4YzdmYTMwMjFkYV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8wNDg5NTNkYy0xMDdjLTQwOWMtODg0YS00MTQ0MmU4ZGVmMmIvZmY1OGI3MWQtZDBhNy00N2NjLTg5MDktOTc2ZTA2NGEwZjM4L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "MDSO: 3 arrested after brawl leads to stabbing at Miami Northwestern Senior High",
+    "url": "https://wsvn.com/news/local/miami-dade/mdso-3-arrested-after-brawl-leads-to-stabbing-at-miami-northwestern-senior-high/",
     "published": "Tue, 01 Sep 2026 21:17:24 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/62769317-c31a-494c-9ddf-835941ad4357/43774912-2813-4df4-8c0c-4e099e00b762/main.mp4?fastly_token=NmE5Nzk5NzhfY2UyOWEyNGM2ODZmY2ZlM2NmZmJlZGI0ZDZkZDVlY2Q1OWU1YjJkMWU2MDNmMDQ3NDJkZjRhYTdjZThlY2RhZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82Mjc2OTMxNy1jMzFhLTQ5NGMtOWRkZi04MzU5NDFhZDQzNTcvNDM3NzQ5MTItMjgxMy00ZGY0LThjMGMtNGUwOTllMDBiNzYyL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/cac0d195-5d0f-4683-b44d-60ad5f09ed3f/ad4dee5d-2c23-4f96-9060-ed18e3b775d8/main.mp4?fastly_token=NmE5N2E5YmFfZDM0YWU1ZTc2ZTE4Yjc0NTliMGIwNTE3MmVmZTExODkyMDg3OGIxODM0MmQ2MjQ2ZTc1MTZlZTBkZDE2YWI2Y18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jYWMwZDE5NS01ZDBmLTQ2ODMtYjQ0ZC02MGFkNWYwOWVkM2YvYWQ0ZGVlNWQtMmMyMy00Zjk2LTkwNjAtZWQxOGUzYjc3NWQ4L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -837,7 +797,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/miami-beach-mayor-vows-to-fight-fdot-order-that-removes-flock-cameras-from-state-roads/",
     "published": "Tue, 01 Sep 2026 20:59:09 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/65e1df35-e955-4c6c-842e-8551a3e8a0d7/9afc6dbf-899e-4e60-a30e-f7d1e69a7248/main.mp4?fastly_token=NmE5Nzk1NTJfNzQ3ZTc2YjVlNDcxMWVkOWJhOWU2MDU5NWQ1MTBmN2Q3ZjcxYjJhMWMwYTBjZTc3MTBmZmUzZWEwMjExYTNiZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82NWUxZGYzNS1lOTU1LTRjNmMtODQyZS04NTUxYTNlOGEwZDcvOWFmYzZkYmYtODk5ZS00ZTYwLWEzMGUtZjdkMWU2OWE3MjQ4L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/5a1e6a0a-0765-4e3f-aa82-6283f83207bb/776718d9-563a-4285-b9cf-e80af2198a74/main.mp4?fastly_token=NmE5N2E4MDlfODMyMGRjOTdjYWZmNTM4MmNmYzgzNjJkNmI0MWVkMTZkZjZmMmRlMmYxMDAxODU0ZWFkOWM4M2NkNGViYWQxYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81YTFlNmEwYS0wNzY1LTRlM2YtYWE4Mi02MjgzZjgzMjA3YmIvNzc2NzE4ZDktNTYzYS00Mjg1LWI5Y2YtZTgwYWYyMTk4YTc0L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -847,14 +807,6 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c1607a31-687d-4c0e-92d0-f17d2135ae54/4dd44581-371e-447c-bd91-6e77c34c5c15/main.mp4?fastly_token=NmE5NzhmOGRfZDQxNDA4N2U5ZGNhYjFmOGIwODVmZGQzMDIyOTY3NGYzMjcxNTViNjE4N2Q1NGEzYzE5NzZkMzZhNTA2ZDk3Yl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jMTYwN2EzMS02ODdkLTRjMGUtOTJkMC1mMTdkMjEzNWFlNTQvNGRkNDQ1ODEtMzcxZS00NDdjLWJkOTEtNmU3N2MzNGM1YzE1L21haW4ubXA0",
     "media_type": "video"
-   },
-   {
-    "title": "Suspect accused of ramming Miami police vehicle arrested in New Orleans, extradited to Florida",
-    "url": "https://wsvn.com/news/local/miami-dade/suspect-accused-of-ramming-miami-police-vehicle-arrested-in-new-orleans-extradited-to-florida/",
-    "published": "Tue, 01 Sep 2026 19:49:08 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Celestino-Ayala-Jr.png",
-    "media_type": "image"
    }
   ],
   "colombia": [
@@ -993,7 +945,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-01T18:44:49-04:00",
+  "fetched_at": "2026-09-01T18:46:25-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1001,7 +953,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-01T18:44:49-04:00",
+  "fetched_at": "2026-09-01T18:46:25-04:00",
   "countries": [
    {
     "iso": "COL",
