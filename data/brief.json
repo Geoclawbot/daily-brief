@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-01T19:15:58-04:00",
- "generated_at_utc": "2026-09-01T23:15:58+00:00",
+ "generated_at": "2026-09-01T19:30:55-04:00",
+ "generated_at_utc": "2026-09-01T23:30:55+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 1",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-01T19:15:59-04:00",
+  "fetched_at": "2026-09-01T19:30:56-04:00",
   "curve": [
    {
     "time": "2026-09-01T05:00",
@@ -116,47 +116,47 @@
    {
     "time": "2026-09-01T18:00",
     "hour": 18,
-    "temp": 86.7,
-    "feels": 95.9,
+    "temp": 87.0,
+    "feels": 96.4,
     "humidity": 74,
     "pop": 44
    },
    {
     "time": "2026-09-01T19:00",
     "hour": 19,
-    "temp": 85.4,
-    "feels": 95.8,
+    "temp": 85.3,
+    "feels": 96.5,
     "humidity": 79,
     "pop": 40
    },
    {
     "time": "2026-09-01T20:00",
     "hour": 20,
-    "temp": 78.1,
-    "feels": 82.6,
+    "temp": 81.3,
+    "feels": 91.5,
     "humidity": 92,
     "pop": 51
    },
    {
     "time": "2026-09-01T21:00",
     "hour": 21,
-    "temp": 77.3,
-    "feels": 85.7,
+    "temp": 78.5,
+    "feels": 88.5,
     "humidity": 91,
     "pop": 41
    }
   ],
   "current": {
-   "temp": 85.0,
-   "feels": 96.5,
-   "humidity": 82,
-   "wind_mph": 4.2,
-   "wind_dir": 106,
-   "observed_at": "2026-09-01T19:15"
+   "temp": 84.1,
+   "feels": 97.7,
+   "humidity": 86,
+   "wind_mph": 0.7,
+   "wind_dir": 72,
+   "observed_at": "2026-09-01T19:30"
   },
   "today": {
    "high": 89.2,
-   "low": 76.6,
+   "low": 77.6,
    "feels_max": 101.0,
    "pop_max": 51
   },
@@ -166,74 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-01T19:15:59-04:00",
+  "fetched_at": "2026-09-01T19:30:56-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-01T19:16:00-04:00",
-  "aqi": 52,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-01T19:31:21-04:00",
+  "aqi": 53,
   "category": "Moderate",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-01 18:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-01",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-01",
-    "aqi": 36,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 7.7,
+  "pm10": 9.2,
+  "observed": "2026-09-01T19:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-01T19:16:00-04:00",
+  "fetched_at": "2026-09-01T19:31:22-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -244,10 +196,10 @@
      "US-1 N",
      "I-95 N"
     ],
-    "delay_s": 1690,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T21:46:23Z"
+    "delay_s": 1431,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T23:09:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -256,22 +208,10 @@
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 1155,
+    "delay_s": 1156,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T18:13:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 991,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T18:38:00Z"
    },
    {
     "county": "Broward",
@@ -336,34 +276,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
+     "FL-976"
     ],
-    "delay_s": 759,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T21:24:42Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 748,
+    "delay_s": 707,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T19:44:44Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S",
-     "US-1 S"
-    ],
-    "delay_s": 663,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T20:17:09Z"
+    "start": "2026-09-01T23:14:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -372,7 +290,29 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 585,
+    "delay_s": 645,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T18:38:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 558,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T19:44:44Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 438,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T23:03:30Z"
@@ -382,7 +322,7 @@
     "roads": [
      "FL-826 N"
     ],
-    "delay_s": 510,
+    "delay_s": 426,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-01T16:35:00Z"
@@ -392,119 +332,57 @@
     "roads": [
      "FL-826 S"
     ],
-    "delay_s": 478,
+    "delay_s": 398,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T19:17:35Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 474,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T23:12:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 469,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T19:44:44Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 S"
-    ],
-    "delay_s": 422,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T19:17:35Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 421,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T21:06:02Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 413,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T18:51:40Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-907"
-    ],
-    "delay_s": 310,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T21:23:18Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-441 N"
-    ],
-    "delay_s": 306,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T22:47:33Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Snapper Creek Expy W",
-     "FL-878 W"
-    ],
-    "delay_s": 288,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:27:01Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 277,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T22:44:41Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 N"
-    ],
-    "delay_s": 264,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T22:59:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-94"
     ],
-    "delay_s": 256,
+    "delay_s": 336,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T23:16:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 332,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T23:12:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 275,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T23:07:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 254,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T23:09:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-94"
+    ],
+    "delay_s": 250,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-01T20:03:31Z"
@@ -512,13 +390,54 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-441 N",
-     "US-441 S"
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 241,
+    "delay_s": 219,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-01T22:44:11Z"
+    "start": "2026-09-01T21:06:02Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Snapper Creek Expy W",
+     "FL-878 W"
+    ],
+    "delay_s": 206,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T19:27:01Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-907"
+    ],
+    "delay_s": 201,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T21:23:18Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-968"
+    ],
+    "delay_s": 187,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T23:11:35Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 187,
+    "magnitude": 1,
+    "description": "Heavy traffic",
+    "start": "2026-09-01T19:44:44Z"
    },
    {
     "county": "Miami-Dade",
@@ -526,7 +445,7 @@
      "US-41 S",
      "US-41 N"
     ],
-    "delay_s": 234,
+    "delay_s": 186,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-01T15:50:00Z"
@@ -534,33 +453,64 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-953"
+     "FL-976"
     ],
-    "delay_s": 229,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T23:04:30Z"
+    "delay_s": 181,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T18:51:40Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-986"
+     "FL-985"
     ],
-    "delay_s": 225,
+    "delay_s": 176,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-01T18:26:30Z"
+    "start": "2026-09-01T23:25:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 175,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T23:23:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 166,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T19:23:01Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 153,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T23:24:00Z"
    }
   ],
-  "incident_count": 397,
-  "named_count": 109,
-  "major_count": 12,
+  "incident_count": 331,
+  "named_count": 73,
+  "major_count": 10,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-01T19:16:01-04:00",
+  "fetched_at": "2026-09-01T19:31:23-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -607,7 +557,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-01T19:16:01-04:00",
+  "fetched_at": "2026-09-01T19:31:23-04:00",
   "issued": "200 PM EDT Tue Sep 1 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 011724\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\nIssued by the NWS Weather Prediction Center College Park MD\n200 PM EDT Tue Sep 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Edouard, located over the northwestern Gulf of America.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Bann"
@@ -615,7 +565,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-01T19:16:01-04:00",
+  "fetched_at": "2026-09-01T19:31:23-04:00",
   "florida": "$3.9420",
   "national": "$4.0954",
   "diesel": "$5.5763",
@@ -624,7 +574,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-01T19:16:03-04:00",
+  "fetched_at": "2026-09-01T19:31:24-04:00",
   "streams": {
    "local": [
     {
@@ -997,7 +947,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-01T19:16:03-04:00",
+  "fetched_at": "2026-09-01T19:31:25-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1005,7 +955,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-01T19:16:03-04:00",
+  "fetched_at": "2026-09-01T19:31:25-04:00",
   "countries": [
    {
     "iso": "COL",
