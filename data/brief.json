@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-31T20:30:48-04:00",
- "generated_at_utc": "2026-09-01T00:30:48+00:00",
+ "generated_at": "2026-08-31T20:45:56-04:00",
+ "generated_at_utc": "2026-09-01T00:45:56+00:00",
  "weekday": "Monday",
  "date_label": "Monday, August 31",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-31T20:30:48-04:00",
+  "fetched_at": "2026-08-31T20:45:57-04:00",
   "curve": [
    {
     "time": "2026-08-31T05:00",
@@ -125,34 +125,34 @@
     "time": "2026-08-31T19:00",
     "hour": 19,
     "temp": 83.8,
-    "feels": 92.8,
-    "humidity": 77,
+    "feels": 94.3,
+    "humidity": 81,
     "pop": 45
    },
    {
     "time": "2026-08-31T20:00",
     "hour": 20,
     "temp": 83.1,
-    "feels": 93.3,
-    "humidity": 83,
+    "feels": 95.3,
+    "humidity": 84,
     "pop": 49
    },
    {
     "time": "2026-08-31T21:00",
     "hour": 21,
     "temp": 82.5,
-    "feels": 91.3,
-    "humidity": 93,
+    "feels": 94.4,
+    "humidity": 87,
     "pop": 37
    }
   ],
   "current": {
-   "temp": 82.9,
-   "feels": 93.3,
-   "humidity": 88,
-   "wind_mph": 7.2,
-   "wind_dir": 16,
-   "observed_at": "2026-08-31T20:30"
+   "temp": 82.7,
+   "feels": 94.7,
+   "humidity": 86,
+   "wind_mph": 2.1,
+   "wind_dir": 311,
+   "observed_at": "2026-08-31T20:45"
   },
   "today": {
    "high": 90.4,
@@ -166,26 +166,62 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-31T20:30:48-04:00",
+  "fetched_at": "2026-08-31T20:45:57-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-08-31T20:31:14-04:00",
-  "aqi": 45,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-08-31T20:45:58-04:00",
+  "aqi": 34,
   "category": "Good",
-  "pm25": 6.8,
-  "pm10": 7.9,
-  "observed": "2026-08-31T20:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-08-31 19:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-01",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-01",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-02",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-02",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-31T20:31:14-04:00",
+  "fetched_at": "2026-08-31T20:45:58-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -251,65 +287,34 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "I-95 N"
+     "FL-968"
     ],
-    "delay_s": 500,
+    "delay_s": 164,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-08-31T23:54:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 165,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T00:29:00Z"
+    "start": "2026-09-01T00:43:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-854"
     ],
-    "delay_s": 159,
+    "delay_s": 157,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T00:12:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-820"
-    ],
-    "delay_s": 158,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T00:28:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-824"
-    ],
-    "delay_s": 153,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T00:21:30Z"
+    "start": "2026-09-01T00:43:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-441 N",
-     "US-441 S"
+     "FL-976"
     ],
-    "delay_s": 128,
+    "delay_s": 135,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T00:15:30Z"
+    "start": "2026-09-01T00:43:00Z"
    },
    {
     "county": "Broward",
@@ -317,31 +322,30 @@
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 75,
+    "delay_s": 93,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-01T00:20:30Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "US-27 S",
-     "FL-25"
+     "FL-84"
     ],
-    "delay_s": 33,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-04-30T20:30:11Z"
+    "delay_s": 88,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T00:33:30Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 26,
+    "delay_s": 63,
     "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T00:29:30Z"
+    "description": "Heavy traffic",
+    "start": "2026-08-31T23:54:30Z"
    },
    {
     "county": "Broward",
@@ -395,6 +399,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-04-29T18:52:55Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 S",
+     "FL-25"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-04-30T20:30:11Z"
    },
    {
     "county": "Miami-Dade",
@@ -500,17 +515,39 @@
     "magnitude": 0,
     "description": "Lane closed; Roadworks",
     "start": "2026-07-20T13:16:51Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-07-20T13:16:51Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-08-31T20:45:00Z"
    }
   ],
-  "incident_count": 246,
-  "named_count": 33,
+  "incident_count": 244,
+  "named_count": 31,
   "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-31T20:31:15-04:00",
+  "fetched_at": "2026-08-31T20:45:59-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -561,7 +598,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-31T20:31:15-04:00",
+  "fetched_at": "2026-08-31T20:46:00-04:00",
   "issued": "800 PM EDT Mon Aug 31 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 312350\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Mon Aug 31 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on recently \nupgraded Tropical Storm Edouard, located over the northern Gulf of \nAmerica.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\nPublic Advisories on Tropical Storm Edouard are issued under WMO \nheader WTNT35 KNHC and under AWIPS header MIATCPAT5.\nForecast/Advisories on Tropical Storm Edouard are issued under WMO \nheader WTNT25 KNHC and under AWIPS header MIATCMAT5.\n\n$$\nForecaster Kelly"
@@ -569,7 +606,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-31T20:31:15-04:00",
+  "fetched_at": "2026-08-31T20:46:00-04:00",
   "florida": "$3.8781",
   "national": "$4.0807",
   "diesel": "$5.4232",
@@ -578,7 +615,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-31T20:31:17-04:00",
+  "fetched_at": "2026-08-31T20:46:02-04:00",
   "streams": {
    "local": [
     {
@@ -931,16 +968,16 @@
     "media_type": null
    },
    {
-    "title": "The U.S.-Venezuela oil deal won't lower your gas prices. Here's what you need to know",
-    "url": "https://www.npr.org/2026/08/31/nx-s1-5949407/us-venezuelan-oil-deal",
+    "title": "Hit shows from Edinburgh's Fringe festival are coming to America. Here are our top picks",
+    "url": "https://www.npr.org/2026/08/31/nx-s1-5949346/edinburgh-fringe-scotland-best-shows-coming-to-america",
     "published": "Mon, 31 Aug 2026 05:00:00 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
    },
    {
-    "title": "Hit shows from Edinburgh's Fringe festival are coming to America. Here are our top picks",
-    "url": "https://www.npr.org/2026/08/31/nx-s1-5949346/edinburgh-fringe-scotland-best-shows-coming-to-america",
+    "title": "The U.S.-Venezuela oil deal won't lower your gas prices. Here's what you need to know",
+    "url": "https://www.npr.org/2026/08/31/nx-s1-5949407/us-venezuelan-oil-deal",
     "published": "Mon, 31 Aug 2026 05:00:00 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
@@ -951,7 +988,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-31T20:31:17-04:00",
+  "fetched_at": "2026-08-31T20:46:02-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -959,7 +996,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-31T20:31:17-04:00",
+  "fetched_at": "2026-08-31T20:46:02-04:00",
   "countries": [
    {
     "iso": "VEN",
