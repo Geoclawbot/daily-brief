@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-01T17:15:58-04:00",
- "generated_at_utc": "2026-09-01T21:15:58+00:00",
+ "generated_at": "2026-09-01T17:30:56-04:00",
+ "generated_at_utc": "2026-09-01T21:30:56+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 1",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-01T17:15:58-04:00",
+  "fetched_at": "2026-09-01T17:30:57-04:00",
   "curve": [
    {
     "time": "2026-09-01T05:00",
@@ -100,63 +100,63 @@
    {
     "time": "2026-09-01T16:00",
     "hour": 16,
-    "temp": 87.7,
-    "feels": 96.0,
+    "temp": 87.9,
+    "feels": 96.8,
     "humidity": 70,
     "pop": 30
    },
    {
     "time": "2026-09-01T17:00",
     "hour": 17,
-    "temp": 87.1,
-    "feels": 95.4,
+    "temp": 87.4,
+    "feels": 97.5,
     "humidity": 75,
     "pop": 31
    },
    {
     "time": "2026-09-01T18:00",
     "hour": 18,
-    "temp": 85.2,
-    "feels": 96.2,
+    "temp": 86.5,
+    "feels": 97.0,
     "humidity": 79,
     "pop": 39
    },
    {
     "time": "2026-09-01T19:00",
     "hour": 19,
-    "temp": 77.6,
-    "feels": 86.3,
+    "temp": 85.2,
+    "feels": 100.7,
     "humidity": 96,
     "pop": 43
    },
    {
     "time": "2026-09-01T20:00",
     "hour": 20,
-    "temp": 78.6,
-    "feels": 89.3,
+    "temp": 76.9,
+    "feels": 81.8,
     "humidity": 94,
     "pop": 38
    },
    {
     "time": "2026-09-01T21:00",
     "hour": 21,
-    "temp": 78.4,
-    "feels": 88.6,
+    "temp": 76.8,
+    "feels": 86.1,
     "humidity": 92,
     "pop": 34
    }
   ],
   "current": {
-   "temp": 86.3,
-   "feels": 94.6,
+   "temp": 86.8,
+   "feels": 96.7,
    "humidity": 76,
-   "wind_mph": 10.4,
-   "wind_dir": 59,
-   "observed_at": "2026-09-01T17:15"
+   "wind_mph": 7.6,
+   "wind_dir": 62,
+   "observed_at": "2026-09-01T17:30"
   },
   "today": {
    "high": 89.2,
-   "low": 77.6,
+   "low": 76.8,
    "feels_max": 101.0,
    "pop_max": 43
   },
@@ -166,137 +166,89 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-01T17:15:59-04:00",
+  "fetched_at": "2026-09-01T17:30:57-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-01T17:16:00-04:00",
-  "aqi": 34,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-01 16:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-01",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-01",
-    "aqi": 36,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-01T17:31:23-04:00",
+  "aqi": 52,
+  "category": "Moderate",
+  "pm25": 8.9,
+  "pm10": 11.0,
+  "observed": "2026-09-01T17:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-01T17:16:03-04:00",
+  "fetched_at": "2026-09-01T17:31:25-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 21.9,
-  "minutes": 72,
-  "delay_minutes": 8,
+  "miles": 21.8,
+  "minutes": 71,
+  "delay_minutes": 1,
   "toll_free": true,
   "alternates": [
    {
     "miles": 22.6,
-    "minutes": 63,
+    "minutes": 62,
     "toll": true,
     "saves": 9
    },
    {
-    "miles": 26.2,
+    "miles": 26.4,
     "minutes": 65,
     "toll": true,
-    "saves": 7
+    "saves": 6
    },
    {
     "miles": 23.2,
-    "minutes": 70,
+    "minutes": 68,
     "toll": true,
-    "saves": 2
+    "saves": 3
    },
    {
-    "miles": 27.6,
-    "minutes": 76,
+    "miles": 23.5,
+    "minutes": 70,
     "toll": true,
-    "saves": -4
+    "saves": 1
    }
   ],
   "alternates_worth_taking": [],
   "free_alternates": [
    {
-    "miles": 21.9,
-    "minutes": 72,
-    "delay_minutes": 8,
+    "miles": 21.8,
+    "minutes": 71,
+    "delay_minutes": 1,
     "saves": 0
    },
    {
-    "miles": 23.7,
-    "minutes": 78,
-    "delay_minutes": 6
+    "miles": 23.5,
+    "minutes": 73,
+    "delay_minutes": 4
    },
    {
-    "miles": 23.3,
-    "minutes": 81,
+    "miles": 25.0,
+    "minutes": 80,
     "delay_minutes": 2
    },
    {
-    "miles": 22.6,
-    "minutes": 77,
-    "delay_minutes": 5
+    "miles": 23.5,
+    "minutes": 78,
+    "delay_minutes": 2
    }
   ],
   "best_free": {
-   "miles": 21.9,
-   "minutes": 72,
-   "delay_minutes": 8,
+   "miles": 21.8,
+   "minutes": 71,
+   "delay_minutes": 1,
    "saves": 0
   },
   "incidents": [
@@ -306,7 +258,7 @@
      "US-1 N",
      "I-95 N"
     ],
-    "delay_s": 2277,
+    "delay_s": 2428,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T15:32:30Z"
@@ -314,19 +266,41 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 N"
+     "FL-836 W"
     ],
-    "delay_s": 1206,
+    "delay_s": 1569,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-01T16:35:00Z"
+    "start": "2026-09-01T19:44:44Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 1453,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T18:38:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 1255,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T18:04:03Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-985"
     ],
-    "delay_s": 1195,
+    "delay_s": 1242,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T20:56:35Z"
@@ -336,10 +310,40 @@
     "roads": [
      "FL-854"
     ],
-    "delay_s": 1159,
+    "delay_s": 1196,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T19:44:44Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 N"
+    ],
+    "delay_s": 1166,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T16:35:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-860"
+    ],
+    "delay_s": 1112,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T19:59:41Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-94"
+    ],
+    "delay_s": 1065,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T20:03:31Z"
    },
    {
     "county": "Miami-Dade",
@@ -348,42 +352,43 @@
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 1118,
+    "delay_s": 1049,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T18:13:15Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "FL-817",
+     "FL-9"
     ],
-    "delay_s": 1046,
+    "delay_s": 1018,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T18:04:03Z"
+    "start": "2026-09-01T19:55:08Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "US-1 S",
-     "FL-5"
+     "FL-821 S",
+     "Florida's Tpke S"
     ],
-    "delay_s": 945,
+    "delay_s": 1005,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T18:38:00Z"
+    "start": "2026-09-01T19:41:58Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-827"
+     "FL-91 N",
+     "Florida's Tpke N"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "delay_s": 918,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T20:31:05Z"
    },
    {
     "county": "Broward",
@@ -394,6 +399,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -438,20 +453,10 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 N"
-    ],
-    "delay_s": 881,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T20:31:05Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "Snapper Creek Expy W",
      "FL-878 W"
     ],
-    "delay_s": 876,
+    "delay_s": 834,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T19:27:01Z"
@@ -464,7 +469,7 @@
      "Florida's Tpke N",
      "FL-826 W"
     ],
-    "delay_s": 862,
+    "delay_s": 828,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T19:02:00Z"
@@ -472,92 +477,10 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-860"
-    ],
-    "delay_s": 766,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:59:41Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-969"
-    ],
-    "delay_s": 744,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T18:59:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 739,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:41:58Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 S"
-    ],
-    "delay_s": 684,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T19:06:37Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 668,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:33:18Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-969"
-    ],
-    "delay_s": 667,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:05:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "County Hwy-913",
-     "FL-973"
-    ],
-    "delay_s": 643,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T20:36:09Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 625,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:44:44Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "US-41 S",
      "US-41 N"
     ],
-    "delay_s": 618,
+    "delay_s": 775,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T20:58:32Z"
@@ -567,7 +490,7 @@
     "roads": [
      "FL-823"
     ],
-    "delay_s": 602,
+    "delay_s": 748,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T20:52:08Z"
@@ -575,31 +498,60 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-817",
-     "FL-9"
+     "FL-953"
     ],
-    "delay_s": 556,
+    "delay_s": 746,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T19:55:08Z"
+    "start": "2026-09-01T21:17:55Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
+     "FL-976"
     ],
-    "delay_s": 555,
+    "delay_s": 719,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T20:13:07Z"
+    "start": "2026-09-01T19:38:46Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826 S"
     ],
-    "delay_s": 539,
+    "delay_s": 706,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T19:06:37Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "County Hwy-913",
+     "FL-973"
+    ],
+    "delay_s": 683,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T21:10:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-94"
+    ],
+    "delay_s": 655,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T18:08:04Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 S"
+    ],
+    "delay_s": 626,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T19:17:35Z"
@@ -607,23 +559,24 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-94"
+     "US-27 S",
+     "FL-25"
     ],
-    "delay_s": 536,
+    "delay_s": 623,
     "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T20:03:31Z"
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-09-01T18:39:30Z"
    }
   ],
-  "incident_count": 674,
-  "named_count": 259,
-  "major_count": 26,
+  "incident_count": 748,
+  "named_count": 317,
+  "major_count": 31,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-01T17:16:03-04:00",
+  "fetched_at": "2026-09-01T17:31:27-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -668,7 +621,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-01T17:16:04-04:00",
+  "fetched_at": "2026-09-01T17:31:27-04:00",
   "issued": "200 PM EDT Tue Sep 1 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 011724\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\nIssued by the NWS Weather Prediction Center College Park MD\n200 PM EDT Tue Sep 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Edouard, located over the northwestern Gulf of America.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Bann"
@@ -676,7 +629,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-01T17:16:04-04:00",
+  "fetched_at": "2026-09-01T17:31:27-04:00",
   "florida": "$3.9420",
   "national": "$4.0954",
   "diesel": "$5.5763",
@@ -685,7 +638,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-01T17:16:05-04:00",
+  "fetched_at": "2026-09-01T17:31:28-04:00",
   "streams": {
    "local": [
     {
@@ -794,6 +747,30 @@
   ],
   "local": [
    {
+    "title": "All clear given after 2 Hollywood schools placed on lockdown over reported bomb threat, officials say",
+    "url": "https://www.local10.com/news/local/2026/09/01/hollywood-hills-high-school-placed-on-lockdown-over-potential-threat-officials-say/",
+    "published": "Tue, 01 Sep 2026 14:05:22 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Homestead police deliver DoorDash driver to jail after tip jar theft spree, cops say",
+    "url": "https://www.local10.com/news/local/2026/09/01/homestead-police-deliver-doordash-driver-to-jail-after-tip-jar-theft-spree-cops-say/",
+    "published": "Tue, 01 Sep 2026 21:16:41 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "DeSantis’ Flock camera removal order ‘going to take a hit on public safety,’ local officials say",
+    "url": "https://www.local10.com/news/local/2026/09/01/desantis-flock-camera-removal-order-going-to-take-a-hit-on-public-safety-local-officials-say/",
+    "published": "Tue, 01 Sep 2026 21:14:43 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Speakers escorted out as Miami-Dade commission votes to increase cap on Israel Bonds",
     "url": "https://www.local10.com/news/local/2026/09/01/speakers-escorted-out-as-miami-dade-commission-votes-to-increase-cap-on-israel-bonds/",
     "published": "Tue, 01 Sep 2026 20:09:48 +0000",
@@ -818,14 +795,6 @@
     "media_type": null
    },
    {
-    "title": "All clear given after 2 Hollywood schools placed on lockdown over ‘potential threat,’ officials say",
-    "url": "https://www.local10.com/news/local/2026/09/01/hollywood-hills-high-school-placed-on-lockdown-over-potential-threat-officials-say/",
-    "published": "Tue, 01 Sep 2026 14:05:22 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "Man shoots victim while ‘recording videos’ at North Bay Village short-term rental, police say",
     "url": "https://www.local10.com/news/local/2026/08/31/man-shoots-victim-while-recording-videos-at-north-bay-village-airbnb-police-say/",
     "published": "Mon, 31 Aug 2026 18:03:16 +0000",
@@ -839,22 +808,6 @@
     "published": "Tue, 01 Sep 2026 16:47:43 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/VZQEL5DDKNHT5AGHQQBOZ2TIS4.jpg?auth=fda861bf3c79becbd60c06b995f253dca16e5aaf487016af760ad8a0780c3a1a&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "Man busted at FLL with trove of stolen credit cards after using them on luxe Jamaica trip, feds say",
-    "url": "https://www.local10.com/news/local/2026/09/01/man-busted-at-fll-with-trove-of-stolen-credit-cards-after-using-them-on-luxe-jamaica-trip-feds-say/",
-    "published": "Tue, 01 Sep 2026 16:33:12 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/W5FL74M77ZCCDI7CJC6MFYTFPU.jpg?auth=f947aef7e1525b2c21b57985c39292d0e251c2335e129379f4e2ef0af915f840&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "Man flying to Cuba tells AA gate agent at MIA: No lithium batteries, ‘but I have a bomb,’ cops say",
-    "url": "https://www.local10.com/news/local/2026/09/01/man-flying-to-cuba-tells-aa-gate-agent-at-mia-no-lithium-batteries-but-i-have-a-bomb-cops-say/",
-    "published": "Tue, 01 Sep 2026 15:29:02 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/HBIP7ODRURGYFCPRZDVFA7OTIA.jpg?auth=8dbc1c2245212bc762f416e2c9fafd22ecf91b65d1fbe52f7155f34859365b4e&smart=true&width=1200&height=900",
     "media_type": "image"
    },
    {
@@ -890,6 +843,22 @@
     "media_type": "video"
    },
    {
+    "title": "M-DCPS: 3 arrested after brawl leads to stabbing at Miami Northwestern Senior High",
+    "url": "https://wsvn.com/news/local/miami-dade/m-dcps-3-arrested-after-brawl-leads-to-stabbing-at-miami-northwestern-senior-high/",
+    "published": "Tue, 01 Sep 2026 21:17:24 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/62769317-c31a-494c-9ddf-835941ad4357/43774912-2813-4df4-8c0c-4e099e00b762/main.mp4?fastly_token=NmE5Nzk5NzhfY2UyOWEyNGM2ODZmY2ZlM2NmZmJlZGI0ZDZkZDVlY2Q1OWU1YjJkMWU2MDNmMDQ3NDJkZjRhYTdjZThlY2RhZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82Mjc2OTMxNy1jMzFhLTQ5NGMtOWRkZi04MzU5NDFhZDQzNTcvNDM3NzQ5MTItMjgxMy00ZGY0LThjMGMtNGUwOTllMDBiNzYyL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Miami Beach mayor vows to fight FDOT order that removes Flock cameras from state roads",
+    "url": "https://wsvn.com/news/local/miami-dade/miami-beach-mayor-vows-to-fight-fdot-order-that-removes-flock-cameras-from-state-roads/",
+    "published": "Tue, 01 Sep 2026 20:59:09 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/65e1df35-e955-4c6c-842e-8551a3e8a0d7/9afc6dbf-899e-4e60-a30e-f7d1e69a7248/main.mp4?fastly_token=NmE5Nzk1NTJfNzQ3ZTc2YjVlNDcxMWVkOWJhOWU2MDU5NWQ1MTBmN2Q3ZjcxYjJhMWMwYTBjZTc3MTBmZmUzZWEwMjExYTNiZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82NWUxZGYzNS1lOTU1LTRjNmMtODQyZS04NTUxYTNlOGEwZDcvOWFmYzZkYmYtODk5ZS00ZTYwLWEzMGUtZjdkMWU2OWE3MjQ4L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "MDSO investigating police-involved crash that left 1 hospitalized on Turnpike in Doral",
     "url": "https://wsvn.com/news/local/miami-dade/mdso-investigating-police-involved-crash-that-left-1-hospitalized-on-turnpike-in-doral/",
     "published": "Tue, 01 Sep 2026 20:37:30 +0000",
@@ -904,25 +873,17 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Celestino-Ayala-Jr.png",
     "media_type": "image"
-   },
-   {
-    "title": "Search underway for missing 64-year-old man from SW Miami-Dade",
-    "url": "https://wsvn.com/news/local/miami-dade/search-underway-for-missing-64-year-old-man-from-sw-miami-dade/",
-    "published": "Tue, 01 Sep 2026 19:08:33 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/090126-Eustasio-Espinosa-Gonzalez.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Passenger arrested after saying he had bomb at MIA gate before Cuba flight",
-    "url": "https://wsvn.com/news/local/miami-dade/passenger-arrested-after-saying-he-had-bomb-at-mia-gate-before-cuba-flight/",
-    "published": "Tue, 01 Sep 2026 18:51:44 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Yoel-Guevara-Crespo.png",
-    "media_type": "image"
    }
   ],
   "colombia": [
+   {
+    "title": "Desde Bucaramanga se oponen al anuncio del traslado de más de 50 delincuentes de alta peligrosidad a la cárcel Palogordo de máxima seguridad",
+    "url": "https://www.eltiempo.com/colombia/santander/desde-bucaramanga-se-oponen-al-anuncio-del-traslado-de-mas-de-50-delincuentes-de-alta-peligrosidad-a-la-carcel-palogordo-de-maxima-seguridad-3582738",
+    "published": "2026-09-01T16:14:48-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2025/11/12/6914889abb2c0.r_d.600-267-0.png",
+    "media_type": "image"
+   },
    {
     "title": "Detalles del caso de Michelle Dayana, menor de seis años hallada muerta en Antioquia: no habría llegado por sus medios al lugar donde fue encontrada",
     "url": "https://www.eltiempo.com/colombia/medellin/detalles-del-caso-de-michelle-dayana-menor-de-seis-anos-hallada-muerta-en-antioquia-no-habria-llegado-por-sus-medios-al-lugar-donde-fue-encontrada-3582746",
@@ -977,14 +938,6 @@
     "published": "2026-09-01T15:03:32-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/01/6a9725ed3b56c.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Tres segundos, la diferencia entre una tragedia y la historia de supervivencia de la profe Diana y sus 30 alumnos en Chinchiná tras el terremoto",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/tres-segundos-la-diferencia-entre-una-tragedia-y-la-historia-de-supervivencia-de-la-profe-diana-y-sus-30-alumnos-en-chinchina-tras-el-terremoto-3582693",
-    "published": "2026-09-01T14:31:55-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/01/6a9703f92ba0f.jpeg",
     "media_type": "image"
    }
   ],
@@ -1058,7 +1011,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-01T17:16:06-04:00",
+  "fetched_at": "2026-09-01T17:31:29-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1066,28 +1019,8 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-01T17:16:06-04:00",
+  "fetched_at": "2026-09-01T17:31:29-04:00",
   "countries": [
-   {
-    "iso": "CUB",
-    "name": "Cuba",
-    "stories": [
-     {
-      "title": "Man flying to Cuba tells AA gate agent at MIA: No lithium batteries, ‘but I have a bomb,’ cops say",
-      "url": "https://www.local10.com/news/local/2026/09/01/man-flying-to-cuba-tells-aa-gate-agent-at-mia-no-lithium-batteries-but-i-have-a-bomb-cops-say/",
-      "published": "Tue, 01 Sep 2026 15:29:02 +0000",
-      "section": "local"
-     },
-     {
-      "title": "Passenger arrested after saying he had bomb at MIA gate before Cuba flight",
-      "url": "https://wsvn.com/news/local/miami-dade/passenger-arrested-after-saying-he-had-bomb-at-mia-gate-before-cuba-flight/",
-      "published": "Tue, 01 Sep 2026 18:51:44 +0000",
-      "section": "local"
-     }
-    ],
-    "count": 2,
-    "issue": "Man flying to Cuba tells AA gate agent at MIA: No lithium batteries, ‘but I have a bomb,’ cops say"
-   },
    {
     "iso": "IRN",
     "name": "Iran",
@@ -1165,20 +1098,6 @@
     "issue": "Speakers escorted out as Miami-Dade commission votes to increase cap on Israel Bonds"
    },
    {
-    "iso": "JAM",
-    "name": "Jamaica",
-    "stories": [
-     {
-      "title": "Man busted at FLL with trove of stolen credit cards after using them on luxe Jamaica trip, feds say",
-      "url": "https://www.local10.com/news/local/2026/09/01/man-busted-at-fll-with-trove-of-stolen-credit-cards-after-using-them-on-luxe-jamaica-trip-feds-say/",
-      "published": "Tue, 01 Sep 2026 16:33:12 +0000",
-      "section": "local"
-     }
-    ],
-    "count": 1,
-    "issue": "Man busted at FLL with trove of stolen credit cards after using them on luxe Jamaica trip, feds say"
-   },
-   {
     "iso": "ESP",
     "name": "Spain",
     "stories": [
@@ -1222,7 +1141,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 10,
+  "countries_matched": 8,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
