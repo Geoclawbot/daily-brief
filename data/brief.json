@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-01T11:30:59-04:00",
- "generated_at_utc": "2026-09-01T15:30:59+00:00",
+ "generated_at": "2026-09-01T11:46:00-04:00",
+ "generated_at_utc": "2026-09-01T15:46:00+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 1",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-01T11:31:00-04:00",
+  "fetched_at": "2026-09-01T11:46:01-04:00",
   "curve": [
    {
     "time": "2026-09-01T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 86.6,
-   "feels": 98.5,
-   "humidity": 72,
-   "wind_mph": 2.7,
-   "wind_dir": 48,
-   "observed_at": "2026-09-01T11:30"
+   "temp": 86.7,
+   "feels": 96.7,
+   "humidity": 71,
+   "wind_mph": 3.7,
+   "wind_dir": 52,
+   "observed_at": "2026-09-01T11:45"
   },
   "today": {
    "high": 87.7,
@@ -166,26 +166,62 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-01T11:31:00-04:00",
+  "fetched_at": "2026-09-01T11:46:01-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-01T11:31:26-04:00",
-  "aqi": 51,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-01T11:46:02-04:00",
+  "aqi": 54,
   "category": "Moderate",
-  "pm25": 7.9,
-  "pm10": 9.6,
-  "observed": "2026-09-01T11:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-01 10:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-01",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-01",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-02",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-02",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-01T11:31:26-04:00",
+  "fetched_at": "2026-09-01T11:46:03-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +234,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -208,7 +244,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -239,16 +275,6 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-09-01T14:07:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-972"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-01T15:21:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -295,27 +321,17 @@
     "roads": [
      "US-41 S"
     ],
-    "delay_s": 436,
+    "delay_s": 463,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T14:13:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-816"
-    ],
-    "delay_s": 385,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T15:04:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-953"
     ],
-    "delay_s": 369,
+    "delay_s": 346,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T14:44:30Z"
@@ -325,7 +341,7 @@
     "roads": [
      "FL-934"
     ],
-    "delay_s": 357,
+    "delay_s": 291,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T14:03:30Z"
@@ -333,10 +349,50 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-976"
+    ],
+    "delay_s": 219,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T15:42:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 206,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T15:37:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-907"
+    ],
+    "delay_s": 192,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-01T15:43:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-112 W"
+    ],
+    "delay_s": 176,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T15:29:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "US-41 S",
      "US-41 N"
     ],
-    "delay_s": 259,
+    "delay_s": 141,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-01T14:32:00Z"
@@ -344,115 +400,44 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 W",
-     "US-41 E"
-    ],
-    "delay_s": 180,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T15:24:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 178,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T15:06:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-934"
     ],
-    "delay_s": 172,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T14:40:30Z"
+    "delay_s": 138,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-09-01T14:35:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-823"
+     "US-41 S",
+     "US-41 N"
     ],
-    "delay_s": 153,
+    "delay_s": 135,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-01T14:44:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-817"
-    ],
-    "delay_s": 151,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T14:45:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 146,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T15:09:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 142,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T15:25:00Z"
+    "start": "2026-09-01T15:30:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-968"
     ],
-    "delay_s": 142,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T15:28:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": 141,
+    "delay_s": 135,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T15:15:30Z"
+    "start": "2026-09-01T15:40:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-922"
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 135,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T15:29:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 127,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-09-01T14:35:00Z"
+    "delay_s": 134,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T15:44:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -461,51 +446,103 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 115,
+    "delay_s": 132,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-01T15:03:00Z"
+    "start": "2026-09-01T15:39:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-976"
+     "FL-922"
     ],
-    "delay_s": 109,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T14:47:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 107,
+    "delay_s": 128,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-01T15:23:00Z"
+    "start": "2026-09-01T15:41:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": 123,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T15:32:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": 121,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T15:40:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 117,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-01T15:09:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826"
+    ],
+    "delay_s": 109,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T15:41:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 102,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T15:14:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826"
+    ],
+    "delay_s": 102,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T15:37:30Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 102,
+    "delay_s": 96,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-01T14:55:30Z"
+    "start": "2026-09-01T15:36:30Z"
    }
   ],
-  "incident_count": 296,
-  "named_count": 58,
-  "major_count": 10,
+  "incident_count": 299,
+  "named_count": 57,
+  "major_count": 9,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-01T11:31:27-04:00",
+  "fetched_at": "2026-09-01T11:46:04-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -553,7 +590,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-01T11:31:28-04:00",
+  "fetched_at": "2026-09-01T11:46:04-04:00",
   "issued": "800 AM EDT Tue Sep 1 2026",
   "areas": [],
   "raw": "en Español\n\n674 \nABNT20 KNHC 011122\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Tue Sep 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Edouard, located over the northwestern Gulf of America.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\nPublic Advisories on Tropical Storm Edouard are issued under WMO \nheader WTNT35 KNHC and under AWIPS header MIATCPAT5.\nForecast/Advisories on Tropical Storm Edouard are issued under WMO \nheader WTNT25 KNHC and under AWIPS header MIATCMAT5.\n\n$$\nForecaster Reinhart"
@@ -561,7 +598,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-01T11:31:28-04:00",
+  "fetched_at": "2026-09-01T11:46:04-04:00",
   "florida": "$3.9420",
   "national": "$4.0954",
   "diesel": "$5.5763",
@@ -570,7 +607,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-01T11:31:29-04:00",
+  "fetched_at": "2026-09-01T11:46:05-04:00",
   "streams": {
    "local": [
     {
@@ -679,6 +716,14 @@
   ],
   "local": [
    {
+    "title": "Man flying to Cuba tells AA gate agent at MIA: No lithium batteries, ‘but I have a bomb,’ cops say",
+    "url": "https://www.local10.com/news/local/2026/09/01/man-flying-to-cuba-tells-aa-gate-agent-at-mia-no-lithium-batteries-but-i-have-a-bomb-cops-say/",
+    "published": "Tue, 01 Sep 2026 15:29:02 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/HBIP7ODRURGYFCPRZDVFA7OTIA.jpg?auth=8dbc1c2245212bc762f416e2c9fafd22ecf91b65d1fbe52f7155f34859365b4e&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
     "title": "2 teens hospitalized after stabbing at Miami Northwestern Senior High School, officials say",
     "url": "https://www.local10.com/news/local/2026/08/31/2-teens-hospitalized-after-stabbing-at-miami-northwestern-senior-high-school-officials-say/",
     "published": "Mon, 31 Aug 2026 20:40:48 +0000",
@@ -733,14 +778,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "Miami biker ‘performing a wheelie’ crashes, leaves passenger to die, police say",
-    "url": "https://www.local10.com/news/local/2026/08/31/miami-biker-performing-a-wheelie-crashes-leaves-passenger-to-die-police-say/",
-    "published": "Mon, 31 Aug 2026 19:43:18 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/PAR7JHZ7BBGPFMG75CB5FJSHDE.png?auth=0ff92fa769f4bf67279e664a3a647c7baa39c679f610b24b5ef81659dab486d2&smart=true&width=1200&height=900",
-    "media_type": "image"
    },
    {
     "title": "Several cars burglarized, 2 stolen from Miami’s Vista Mar Apartments, resident says",
@@ -809,6 +846,30 @@
   ],
   "colombia": [
    {
+    "title": "Alcaldes del Atlántico, bajo amenaza: denuncian que ofrecen $5 millones por matar a un mandatario y Defensoría alerta riesgos en cinco municipios",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/alcaldes-del-atlantico-bajo-amenaza-denuncian-que-ofrecen-5-millones-por-matar-a-un-mandatario-y-defensoria-alerta-riesgos-en-cinco-municipios-3582630",
+    "published": "2026-09-01T10:30:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2024/09/08/66ddc2a3b4a77.r_d.735-532-0.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Cartagena: el 15 de octubre abre sus primeros 2 kilómetros el Gran Malecón del Mar en la zona norte",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/cartagena-el-15-de-octubre-abre-sus-primeros-2-kilometros-el-gran-malecon-del-mar-en-la-zona-norte-3582647",
+    "published": "2026-09-01T10:28:42-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/07/10/6a515e7f32c0e.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Habla el conductor de la buseta donde un motociclista terminó dentro tras fuerte choque en el centro de Buga: 'Pensé que venía en el bus'",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/habla-el-conductor-de-la-buseta-donde-un-motociclista-termino-dentro-tras-fuerte-choque-en-el-centro-de-buga-pense-que-venia-en-el-bus-3582639",
+    "published": "2026-09-01T10:10:54-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/01/6a96e1c6594f4.png",
+    "media_type": "image"
+   },
+   {
     "title": "Servicio Geológico reveló que encontró un 'enjambre sísmico' en el Chocó tras terremoto de 7,4: temblor liberó energía de más de 100 bombas atómicas",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/servicio-geologico-revelo-que-encontro-un-enjambre-sismico-en-el-choco-tras-terremoto-de-7-4-temblor-libero-energia-de-mas-de-100-bombas-atomicas-3582635",
     "published": "2026-09-01T09:56:22-05:00",
@@ -846,30 +907,6 @@
     "published": "2026-09-01T09:34:09-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/01/6a96d4cb6afb2.r_d.781-472-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "La violencia no da tregua en Barranquilla y su área metropolitana: agosto cerró con 107 homicidios, un promedio de una muerte cada siete horas",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/la-violencia-no-da-tregua-en-barranquilla-y-su-area-metropolitana-agosto-cerro-con-107-homicidios-un-promedio-de-una-muerte-cada-siete-horas-3582620",
-    "published": "2026-09-01T08:50:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2025/11/19/691ea0462f0c9.r_d.439-168-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Esto se sabe del estado de salud de los policías heridos y de la persona que murió en el atentado terrorista contra la estación de Los Patios, Cúcuta",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/esto-se-sabe-del-estado-de-salud-de-los-policias-heridos-y-de-la-persona-que-murio-en-el-atentado-terrorista-contra-la-estacion-de-los-patios-cucuta-3582596",
-    "published": "2026-09-01T08:19:38-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/01/6a96aa6bcefa2.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "¿Su barrio está en la lista? Así serán las intervenciones de Emcali en acueducto, energía y alcantarillado este martes 1 de septiembre",
-    "url": "https://www.eltiempo.com/colombia/cali/su-barrio-esta-en-la-lista-asi-seran-las-intervenciones-de-emcali-en-acueducto-energia-y-alcantarillado-este-martes-1-de-septiembre-3582591",
-    "published": "2026-09-01T07:58:43-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/06/23/6a3a77582e89d.r_d.1280-719-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -943,7 +980,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-01T11:31:30-04:00",
+  "fetched_at": "2026-09-01T11:46:06-04:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -951,7 +988,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-01T11:31:30-04:00",
+  "fetched_at": "2026-09-01T11:46:06-04:00",
   "countries": [
    {
     "iso": "IRN",
@@ -1022,6 +1059,20 @@
     "issue": "Trump's plan for economic D-day for Iran has one big hole: China"
    },
    {
+    "iso": "CUB",
+    "name": "Cuba",
+    "stories": [
+     {
+      "title": "Man flying to Cuba tells AA gate agent at MIA: No lithium batteries, ‘but I have a bomb,’ cops say",
+      "url": "https://www.local10.com/news/local/2026/09/01/man-flying-to-cuba-tells-aa-gate-agent-at-mia-no-lithium-batteries-but-i-have-a-bomb-cops-say/",
+      "published": "Tue, 01 Sep 2026 15:29:02 +0000",
+      "section": "local"
+     }
+    ],
+    "count": 1,
+    "issue": "Man flying to Cuba tells AA gate agent at MIA: No lithium batteries, ‘but I have a bomb,’ cops say"
+   },
+   {
     "iso": "USA",
     "name": "United States",
     "stories": [
@@ -1037,7 +1088,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 5,
+  "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
