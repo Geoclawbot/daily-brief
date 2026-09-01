@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-01T16:31:00-04:00",
- "generated_at_utc": "2026-09-01T20:31:00+00:00",
+ "generated_at": "2026-09-01T16:45:58-04:00",
+ "generated_at_utc": "2026-09-01T20:45:58+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 1",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-01T16:31:01-04:00",
+  "fetched_at": "2026-09-01T16:45:59-04:00",
   "curve": [
    {
     "time": "2026-09-01T05:00",
@@ -93,66 +93,66 @@
     "time": "2026-09-01T15:00",
     "hour": 15,
     "temp": 89.2,
-    "feels": 99.2,
-    "humidity": 67,
+    "feels": 98.9,
+    "humidity": 66,
     "pop": 33
    },
    {
     "time": "2026-09-01T16:00",
     "hour": 16,
     "temp": 87.7,
-    "feels": 95.7,
-    "humidity": 69,
+    "feels": 96.0,
+    "humidity": 70,
     "pop": 35
    },
    {
     "time": "2026-09-01T17:00",
     "hour": 17,
     "temp": 87.1,
-    "feels": 94.6,
-    "humidity": 72,
+    "feels": 95.4,
+    "humidity": 75,
     "pop": 36
    },
    {
     "time": "2026-09-01T18:00",
     "hour": 18,
     "temp": 85.2,
-    "feels": 94.7,
-    "humidity": 73,
+    "feels": 96.2,
+    "humidity": 79,
     "pop": 43
    },
    {
     "time": "2026-09-01T19:00",
     "hour": 19,
     "temp": 77.6,
-    "feels": 84.3,
-    "humidity": 86,
+    "feels": 86.3,
+    "humidity": 96,
     "pop": 39
    },
    {
     "time": "2026-09-01T20:00",
     "hour": 20,
     "temp": 78.6,
-    "feels": 88.1,
-    "humidity": 88,
+    "feels": 89.3,
+    "humidity": 94,
     "pop": 26
    },
    {
     "time": "2026-09-01T21:00",
     "hour": 21,
     "temp": 78.4,
-    "feels": 87.9,
-    "humidity": 89,
+    "feels": 88.6,
+    "humidity": 92,
     "pop": 17
    }
   ],
   "current": {
-   "temp": 87.3,
-   "feels": 96.2,
-   "humidity": 71,
-   "wind_mph": 7.2,
-   "wind_dir": 85,
-   "observed_at": "2026-09-01T16:30"
+   "temp": 87.7,
+   "feels": 96.8,
+   "humidity": 74,
+   "wind_mph": 9.2,
+   "wind_dir": 83,
+   "observed_at": "2026-09-01T16:45"
   },
   "today": {
    "high": 89.2,
@@ -166,111 +166,170 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-01T16:31:01-04:00",
+  "fetched_at": "2026-09-01T16:45:59-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-01T16:31:22-04:00",
-  "aqi": 52,
-  "category": "Moderate",
-  "pm25": 9.5,
-  "pm10": 11.9,
-  "observed": "2026-09-01T16:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-01T16:46:00-04:00",
+  "aqi": 46,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-01 15:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-01",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-01",
+    "aqi": 36,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-02",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-02",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-04",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-04",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-01T16:31:25-04:00",
+  "fetched_at": "2026-09-01T16:46:03-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 26.6,
+  "miles": 26.7,
   "minutes": 79,
-  "delay_minutes": 4,
+  "delay_minutes": 6,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 22.6,
-    "minutes": 67,
-    "toll": true,
-    "saves": 12
-   },
-   {
-    "miles": 25.5,
+    "miles": 26.8,
     "minutes": 66,
     "toll": true,
     "saves": 13
    },
    {
-    "miles": 23.8,
-    "minutes": 78,
+    "miles": 22.6,
+    "minutes": 68,
     "toll": true,
-    "saves": 1
+    "saves": 11
    },
    {
-    "miles": 27.8,
-    "minutes": 80,
+    "miles": 23.8,
+    "minutes": 79,
     "toll": true,
-    "saves": -1
+    "saves": 0
+   },
+   {
+    "miles": 27.9,
+    "minutes": 83,
+    "toll": true,
+    "saves": -4
    }
   ],
   "alternates_worth_taking": [
    {
-    "miles": 22.6,
-    "minutes": 67,
-    "toll": true,
-    "saves": 12
-   },
-   {
-    "miles": 25.5,
+    "miles": 26.8,
     "minutes": 66,
     "toll": true,
     "saves": 13
+   },
+   {
+    "miles": 22.6,
+    "minutes": 68,
+    "toll": true,
+    "saves": 11
    }
   ],
   "free_alternates": [
    {
-    "miles": 26.6,
+    "miles": 26.7,
     "minutes": 79,
-    "delay_minutes": 4,
+    "delay_minutes": 6,
     "saves": 0
    },
    {
-    "miles": 21.8,
-    "minutes": 82,
-    "delay_minutes": 2
+    "miles": 21.9,
+    "minutes": 79,
+    "delay_minutes": 10
    },
    {
-    "miles": 24.9,
+    "miles": 24.7,
     "minutes": 88,
-    "delay_minutes": 3
+    "delay_minutes": 4
    },
    {
     "miles": 23.7,
     "minutes": 88,
-    "delay_minutes": 2
+    "delay_minutes": 1
    }
   ],
   "best_free": {
-   "miles": 26.6,
+   "miles": 26.7,
    "minutes": 79,
-   "delay_minutes": 4,
+   "delay_minutes": 6,
    "saves": 0
   },
   "incidents": [
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-1 N",
+     "I-95 N"
+    ],
+    "delay_s": 2368,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T15:32:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-826 N"
     ],
-    "delay_s": 2218,
+    "delay_s": 1652,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T16:35:00Z"
@@ -278,20 +337,43 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "I-95 N"
+     "FL-986"
     ],
-    "delay_s": 2052,
+    "delay_s": 1354,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T15:32:30Z"
+    "start": "2026-09-01T18:26:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 1220,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-09-01T18:38:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 S",
+     "US-27 N",
+     "FL-25"
+    ],
+    "delay_s": 1173,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T19:32:11Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-854"
     ],
-    "delay_s": 1317,
+    "delay_s": 1128,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T19:44:44Z"
@@ -299,23 +381,34 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
+     "FL-826 N"
     ],
-    "delay_s": 1077,
+    "delay_s": 1113,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T19:41:58Z"
+    "start": "2026-09-01T20:31:05Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Don Shula Expy S",
+     "FL-874 S",
+     "S Dade Expy S"
+    ],
+    "delay_s": 1075,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T18:13:15Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-827"
+     "I-95 S"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "delay_s": 961,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T18:04:03Z"
    },
    {
     "county": "Broward",
@@ -326,6 +419,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -370,130 +473,13 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "Don Shula Expy S",
-     "FL-874 S",
-     "S Dade Expy S"
-    ],
-    "delay_s": 872,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T18:13:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-823"
-    ],
-    "delay_s": 783,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T18:19:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-91 S",
+     "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 762,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:23:43Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 N"
-    ],
-    "delay_s": 734,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:58:32Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 653,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T18:57:04Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 570,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T18:38:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-969"
-    ],
-    "delay_s": 569,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T18:59:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": 530,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-09-01T18:39:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 528,
+    "delay_s": 816,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-01T19:38:46Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 515,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T18:25:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-395 W"
-    ],
-    "delay_s": 512,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-09-01T18:59:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 510,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T19:16:10Z"
+    "start": "2026-09-01T19:41:58Z"
    },
    {
     "county": "Miami-Dade",
@@ -503,51 +489,30 @@
      "Florida's Tpke N",
      "FL-826 W"
     ],
-    "delay_s": 507,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 790,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-09-01T19:02:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-985"
+     "FL-836 W"
     ],
-    "delay_s": 505,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:13:30Z"
+    "delay_s": 778,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T18:57:04Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-986"
+     "FL-823"
     ],
-    "delay_s": 493,
+    "delay_s": 647,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T19:10:40Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 481,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T19:46:18Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-858"
-    ],
-    "delay_s": 472,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T20:14:10Z"
+    "start": "2026-09-01T18:19:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -555,44 +520,124 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 470,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:24:41Z"
+    "delay_s": 612,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T20:41:38Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836",
-     "FL-836 W"
+     "FL-9"
     ],
-    "delay_s": 459,
+    "delay_s": 611,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T20:18:45Z"
+    "start": "2026-09-01T20:40:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-27 S",
-     "US-27 N",
-     "FL-25"
+     "FL-826 S"
     ],
-    "delay_s": 451,
+    "delay_s": 600,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T19:06:37Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-860"
+    ],
+    "delay_s": 591,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T19:32:11Z"
+    "start": "2026-09-01T19:59:41Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-986"
+    ],
+    "delay_s": 533,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T18:26:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 521,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T20:13:07Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 506,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T15:50:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Snapper Creek Expy W",
+     "FL-878 W"
+    ],
+    "delay_s": 502,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T19:27:01Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 498,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T19:33:18Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-969"
+    ],
+    "delay_s": 482,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T18:59:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 479,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T19:38:46Z"
    }
   ],
-  "incident_count": 635,
-  "named_count": 221,
-  "major_count": 15,
+  "incident_count": 625,
+  "named_count": 225,
+  "major_count": 22,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-01T16:31:26-04:00",
+  "fetched_at": "2026-09-01T16:46:04-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -637,7 +682,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-01T16:31:26-04:00",
+  "fetched_at": "2026-09-01T16:46:04-04:00",
   "issued": "200 PM EDT Tue Sep 1 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 011724\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\nIssued by the NWS Weather Prediction Center College Park MD\n200 PM EDT Tue Sep 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Edouard, located over the northwestern Gulf of America.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Bann"
@@ -645,7 +690,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-01T16:31:26-04:00",
+  "fetched_at": "2026-09-01T16:46:04-04:00",
   "florida": "$3.9420",
   "national": "$4.0954",
   "diesel": "$5.5763",
@@ -654,7 +699,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-01T16:31:27-04:00",
+  "fetched_at": "2026-09-01T16:46:06-04:00",
   "streams": {
    "local": [
     {
@@ -763,7 +808,7 @@
   ],
   "local": [
    {
-    "title": "Student accused of stabbing 2 at Miami Northwestern Senior High School ordered to remain behind bars",
+    "title": "Student accused of stabbing 2 at Miami Northwestern Senior High School to remain behind bars",
     "url": "https://www.local10.com/news/local/2026/09/01/student-accused-of-stabbing-2-at-miami-northwestern-senior-high-school-ordered-to-home-detention/",
     "published": "Tue, 01 Sep 2026 17:19:42 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
@@ -859,6 +904,14 @@
     "media_type": "video"
    },
    {
+    "title": "MDSO investigating police-involved crash that left 1 hospitalized on Turnpike in Doral",
+    "url": "https://wsvn.com/news/local/miami-dade/mdso-investigating-police-involved-crash-that-left-1-hospitalized-on-turnpike-in-doral/",
+    "published": "Tue, 01 Sep 2026 20:37:30 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c1607a31-687d-4c0e-92d0-f17d2135ae54/4dd44581-371e-447c-bd91-6e77c34c5c15/main.mp4?fastly_token=NmE5NzhmOGRfZDQxNDA4N2U5ZGNhYjFmOGIwODVmZGQzMDIyOTY3NGYzMjcxNTViNjE4N2Q1NGEzYzE5NzZkMzZhNTA2ZDk3Yl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jMTYwN2EzMS02ODdkLTRjMGUtOTJkMC1mMTdkMjEzNWFlNTQvNGRkNDQ1ODEtMzcxZS00NDdjLWJkOTEtNmU3N2MzNGM1YzE1L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "Suspect accused of ramming Miami police vehicle arrested in New Orleans, extradited to Florida",
     "url": "https://wsvn.com/news/local/miami-dade/suspect-accused-of-ramming-miami-police-vehicle-arrested-in-new-orleans-extradited-to-florida/",
     "published": "Tue, 01 Sep 2026 19:49:08 +0000",
@@ -881,23 +934,39 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Yoel-Guevara-Crespo.png",
     "media_type": "image"
-   },
-   {
-    "title": "Woman arrested for attacking Jewish teen, swinging chair at North Miami Beach Target, police say",
-    "url": "https://wsvn.com/news/local/miami-dade/woman-arrested-for-attacking-jewish-teen-swinging-chair-at-north-miami-beach-target-police-say/",
-    "published": "Mon, 31 Aug 2026 22:43:15 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/8fbaff3d-3868-4502-b3f5-f80a0bc3106c/cc94be6b-85b7-4051-b6c3-03642aac8b4e/main.mp4?fastly_token=NmE5NjhlNWJfNGRkYTM4OTUwMTk3NTNlOWJkZmEyMGRmNWE4NDhjNzU3NWFlNmUwOGUwYTMwOWMzOWFjMTY2ZjgxZjFhYWM0Nl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84ZmJhZmYzZC0zODY4LTQ1MDItYjNmNS1mODBhMGJjMzEwNmMvY2M5NGJlNmItODViNy00MDUxLWI2YzMtMDM2NDJhYWM4YjRlL21haW4ubXA0",
-    "media_type": "video"
    }
   ],
   "colombia": [
+   {
+    "title": "Alias Pirry, cabecilla de la sanguinaria banda 'El Mesa', fue capturado: es señalado como el determinador de la masacre de siete personas en Antioquia",
+    "url": "https://www.eltiempo.com/colombia/medellin/alias-pirry-cabecilla-de-la-sanguinaria-banda-el-mesa-fue-capturado-es-senalado-como-el-determinador-de-la-masacre-de-siete-personas-en-antioquia-3582762",
+    "published": "2026-09-01T15:25:46-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/01/6a973478acdd6.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Barranquilla blinda la temporada de fin de año: 3.500 policías, bloque especial, drones y operativos contra delitos de alto impacto",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-blinda-la-temporada-de-fin-de-ano-3-500-policias-bloque-especial-drones-y-operativos-contra-delitos-de-alto-impacto-3582753",
+    "published": "2026-09-01T15:21:43-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/01/6a9731e6bdf0b.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "El escape 'kamikaze' con 482 kilos de marihuana que fracasó en una vía de Antioquia: el conductor dejó la carga tirada y se lanzó al río Cauca",
     "url": "https://www.eltiempo.com/colombia/medellin/el-escape-kamikaze-con-482-kilos-de-marihuana-que-fracaso-en-una-via-de-antioquia-el-conductor-dejo-la-carga-tirada-y-se-lanzo-al-rio-cauca-3582752",
     "published": "2026-09-01T15:10:28-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/01/6a972f36384ad.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Ofrecen recompensa de $100 millones por captura de operadores de drones explosivos con los que están atacando a los municipios del sur del Cesar",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/ofrecen-recompensa-de-100-millones-por-captura-de-operadores-de-drones-explosivos-con-los-que-estan-atacando-a-los-municipios-del-sur-del-cesar-3582749",
+    "published": "2026-09-01T15:10:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/01/6a9733518fdd4.jpeg",
     "media_type": "image"
    },
    {
@@ -930,30 +999,6 @@
     "published": "2026-09-01T14:15:34-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2025/12/11/693b09f3d2c86.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Crónica de la catarsis en un poema por el terremoto: ¿cómo la palabra surge como tabla de salvación tras el sismo que sacudió al Valle?",
-    "url": "https://www.eltiempo.com/colombia/cali/cronica-de-la-catarsis-en-un-poema-por-el-terremoto-como-la-palabra-surge-como-tabla-de-salvacion-tras-el-sismo-que-sacudio-al-valle-3582715",
-    "published": "2026-09-01T14:21:11-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/01/6a97209482979.r_d.776-447-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "¿Qué es un enjambre sísmico? Lo que halló el SGC en el Chocó tras terremoto de 7,4: explican por qué se generó y si podría causar otro fuerte temblor",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/que-es-un-enjambre-sismico-lo-que-hallo-el-sgc-en-el-choco-tras-terremoto-de-7-4-explican-por-que-se-genero-y-si-podria-causar-otro-fuerte-temblor-3582721",
-    "published": "2026-09-01T13:49:28-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/01/6a971d0112c8c.png",
-    "media_type": "image"
-   },
-   {
-    "title": "'Hasta el vino se lo tomaron': reconocido bailarín e ícono de la Feria de Cali denuncia robo en su apartamento afectado por el terremoto",
-    "url": "https://www.eltiempo.com/colombia/cali/hasta-el-vino-se-lo-tomaron-reconocido-bailarin-e-icono-de-la-feria-de-cali-denuncia-robo-en-su-apartamento-afectado-por-el-terremoto-3582720",
-    "published": "2026-09-01T13:35:15-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/01/6a9718f7dab3b.r_d.518-784-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -1027,7 +1072,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-01T16:31:28-04:00",
+  "fetched_at": "2026-09-01T16:46:06-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1035,28 +1080,8 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-01T16:31:28-04:00",
+  "fetched_at": "2026-09-01T16:46:06-04:00",
   "countries": [
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Emprendedores del Festival Petronio Álvarez tendrán un ‘respiro’ económico en la Feria del Hogar de Bogotá",
-      "url": "https://www.eltiempo.com/colombia/cali/emprendedores-del-festival-petronio-alvarez-tendran-un-respiro-economico-en-la-feria-del-hogar-de-bogota-3582754",
-      "published": "2026-09-01T15:07:23-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "'Hasta el vino se lo tomaron': reconocido bailarín e ícono de la Feria de Cali denuncia robo en su apartamento afectado por el terremoto",
-      "url": "https://www.eltiempo.com/colombia/cali/hasta-el-vino-se-lo-tomaron-reconocido-bailarin-e-icono-de-la-feria-de-cali-denuncia-robo-en-su-apartamento-afectado-por-el-terremoto-3582720",
-      "published": "2026-09-01T13:35:15-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 2,
-    "issue": "Emprendedores del Festival Petronio Álvarez tendrán un ‘respiro’ económico en la Feria del Hogar de Bogotá"
-   },
    {
     "iso": "CUB",
     "name": "Cuba",
@@ -1124,6 +1149,20 @@
     ],
     "count": 1,
     "issue": "Trump's plan for economic D-day for Iran has one big hole: China"
+   },
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "Emprendedores del Festival Petronio Álvarez tendrán un ‘respiro’ económico en la Feria del Hogar de Bogotá",
+      "url": "https://www.eltiempo.com/colombia/cali/emprendedores-del-festival-petronio-alvarez-tendran-un-respiro-economico-en-la-feria-del-hogar-de-bogota-3582754",
+      "published": "2026-09-01T15:07:23-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 1,
+    "issue": "Emprendedores del Festival Petronio Álvarez tendrán un ‘respiro’ económico en la Feria del Hogar de Bogotá"
    },
    {
     "iso": "ISR",
