@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-31T20:15:57-04:00",
- "generated_at_utc": "2026-09-01T00:15:57+00:00",
+ "generated_at": "2026-08-31T20:30:48-04:00",
+ "generated_at_utc": "2026-09-01T00:30:48+00:00",
  "weekday": "Monday",
  "date_label": "Monday, August 31",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-31T20:15:57-04:00",
+  "fetched_at": "2026-08-31T20:30:48-04:00",
   "curve": [
    {
     "time": "2026-08-31T05:00",
@@ -124,39 +124,39 @@
    {
     "time": "2026-08-31T19:00",
     "hour": 19,
-    "temp": 85.0,
-    "feels": 94.7,
+    "temp": 83.8,
+    "feels": 92.8,
     "humidity": 77,
     "pop": 45
    },
    {
     "time": "2026-08-31T20:00",
     "hour": 20,
-    "temp": 84.0,
-    "feels": 94.8,
+    "temp": 83.1,
+    "feels": 93.3,
     "humidity": 83,
     "pop": 49
    },
    {
     "time": "2026-08-31T21:00",
     "hour": 21,
-    "temp": 77.6,
-    "feels": 83.1,
+    "temp": 82.5,
+    "feels": 91.3,
     "humidity": 93,
     "pop": 37
    }
   ],
   "current": {
-   "temp": 82.7,
-   "feels": 92.7,
-   "humidity": 85,
-   "wind_mph": 6.3,
-   "wind_dir": 6,
-   "observed_at": "2026-08-31T20:15"
+   "temp": 82.9,
+   "feels": 93.3,
+   "humidity": 88,
+   "wind_mph": 7.2,
+   "wind_dir": 16,
+   "observed_at": "2026-08-31T20:30"
   },
   "today": {
    "high": 90.4,
-   "low": 76.9,
+   "low": 77.9,
    "feels_max": 103.4,
    "pop_max": 59
   },
@@ -164,63 +164,28 @@
   "peak_hour": 15
  },
  "alerts": {
-  "ok": false,
-  "source": "NWS alerts",
-  "fetched_at": "2026-08-31T20:16:22-04:00",
-  "error": "HTTPSConnectionPool(host='api.weather.gov', port=443): Read timed out. (read timeout=25)"
+  "ok": true,
+  "source": "NWS api.weather.gov/alerts",
+  "fetched_at": "2026-08-31T20:30:48-04:00",
+  "alerts": [],
+  "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-31T20:16:24-04:00",
-  "aqi": 34,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-08-31T20:31:14-04:00",
+  "aqi": 45,
   "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-08-31 19:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-01",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-01",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 6.8,
+  "pm10": 7.9,
+  "observed": "2026-08-31T20:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-31T20:16:24-04:00",
+  "fetched_at": "2026-08-31T20:31:14-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -290,52 +255,93 @@
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 440,
+    "delay_s": 500,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-08-31T23:54:30Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "US-1 S",
-     "FL-5"
+     "FL-854"
     ],
-    "delay_s": 198,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T00:07:30Z"
+    "delay_s": 165,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T00:29:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-854"
     ],
-    "delay_s": 173,
+    "delay_s": 159,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T00:12:00Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-953"
+     "FL-820"
     ],
-    "delay_s": 124,
+    "delay_s": 158,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-01T00:09:30Z"
+    "start": "2026-09-01T00:28:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-824"
+    ],
+    "delay_s": 153,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T00:21:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "FL-5"
+     "US-441 N",
+     "US-441 S"
     ],
-    "delay_s": 68,
+    "delay_s": 128,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T00:15:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 75,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-01T00:13:30Z"
+    "start": "2026-09-01T00:20:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 S",
+     "FL-25"
+    ],
+    "delay_s": 33,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-04-30T20:30:11Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 26,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-01T00:29:30Z"
    },
    {
     "county": "Broward",
@@ -389,17 +395,6 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-04-29T18:52:55Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-04-30T20:30:11Z"
    },
    {
     "county": "Miami-Dade",
@@ -505,49 +500,17 @@
     "magnitude": 0,
     "description": "Lane closed; Roadworks",
     "start": "2026-07-20T13:16:51Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-07-20T13:16:51Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-08-31T20:45:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-26T14:23:00Z"
    }
   ],
-  "incident_count": 242,
-  "named_count": 30,
+  "incident_count": 246,
+  "named_count": 33,
   "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-31T20:16:25-04:00",
+  "fetched_at": "2026-08-31T20:31:15-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -598,7 +561,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-31T20:16:25-04:00",
+  "fetched_at": "2026-08-31T20:31:15-04:00",
   "issued": "800 PM EDT Mon Aug 31 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 312350\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Mon Aug 31 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on recently \nupgraded Tropical Storm Edouard, located over the northern Gulf of \nAmerica.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\nPublic Advisories on Tropical Storm Edouard are issued under WMO \nheader WTNT35 KNHC and under AWIPS header MIATCPAT5.\nForecast/Advisories on Tropical Storm Edouard are issued under WMO \nheader WTNT25 KNHC and under AWIPS header MIATCMAT5.\n\n$$\nForecaster Kelly"
@@ -606,7 +569,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-31T20:16:25-04:00",
+  "fetched_at": "2026-08-31T20:31:15-04:00",
   "florida": "$3.8781",
   "national": "$4.0807",
   "diesel": "$5.4232",
@@ -615,7 +578,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-31T20:16:26-04:00",
+  "fetched_at": "2026-08-31T20:31:17-04:00",
   "streams": {
    "local": [
     {
@@ -854,6 +817,14 @@
   ],
   "colombia": [
    {
+    "title": "Atlántico | Tristeza en Soledad por violento crimen de joven futbolista que había pasado por la cantera de Millonarios: ‘Aquí te arrebataron el sueño’",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/atlantico-tristeza-en-soledad-por-violento-crimen-de-joven-futbolista-que-habia-pasado-por-la-cantera-de-millonarios-aqui-te-arrebataron-el-sueno-3582539",
+    "published": "2026-08-31T19:04:23-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a961604a7324.png",
+    "media_type": "image"
+   },
+   {
     "title": "Tolima bajo las llamas: más de 50.000 hectáreas en cenizas",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/tolima-bajo-las-llamas-mas-de-50-000-hectareas-en-cenizas-3582537",
     "published": "2026-08-31T18:36:26-05:00",
@@ -862,9 +833,9 @@
     "media_type": "image"
    },
    {
-    "title": "¿Cuáles son las conclusiones de mesa técnica entre Camacol e ingenieros sobre afectación de edificaciones en Cali, según tipos de sismos y la norma?",
+    "title": "Video: las conclusiones de la mesa técnica entre Camacol e ingenieros sobre afectación de edificaciones en Cali, según tipos de sismos y la norma",
     "url": "https://www.eltiempo.com/colombia/cali/cuales-son-las-conclusiones-de-mesa-tecnica-entre-camacol-e-ingenieros-sobre-afectacion-de-edificaciones-en-cali-segun-tipos-de-sismos-y-la-norma-3582529",
-    "published": "2026-08-31T18:36:32-05:00",
+    "published": "2026-08-31T19:18:20-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a960c9ef27dc.jpeg",
     "media_type": "image"
@@ -907,14 +878,6 @@
     "published": "2026-08-31T16:48:08-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2025/12/11/693ad36ceb704.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Así afectó el terremoto a emprendedores en Cali y la región: 'Un negocio puede seguir en pie y aun así, haber perdido su capacidad de vender'",
-    "url": "https://www.eltiempo.com/colombia/cali/asi-afecto-el-terremoto-a-emprendedores-en-cali-y-la-region-un-negocio-puede-seguir-en-pie-y-aun-asi-haber-perdido-su-capacidad-de-vender-3582463",
-    "published": "2026-08-31T15:13:23-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/12/6a7c700db06c7.r_d.820-187-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -988,7 +951,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-31T20:16:27-04:00",
+  "fetched_at": "2026-08-31T20:31:17-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -996,34 +959,8 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-31T20:16:27-04:00",
+  "fetched_at": "2026-08-31T20:31:17-04:00",
   "countries": [
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "¿Cuáles son las conclusiones de mesa técnica entre Camacol e ingenieros sobre afectación de edificaciones en Cali, según tipos de sismos y la norma?",
-      "url": "https://www.eltiempo.com/colombia/cali/cuales-son-las-conclusiones-de-mesa-tecnica-entre-camacol-e-ingenieros-sobre-afectacion-de-edificaciones-en-cali-segun-tipos-de-sismos-y-la-norma-3582529",
-      "published": "2026-08-31T18:36:32-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Bomberos atendieron 50 incendios forestales en agosto: temporada seca y manos criminales tienen a Medellín en máxima alerta",
-      "url": "https://www.eltiempo.com/colombia/medellin/bomberos-atendieron-50-incendios-forestales-en-agosto-temporada-seca-y-manos-criminales-tienen-a-medellin-en-maxima-alerta-3582498",
-      "published": "2026-08-31T16:50:02-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Así afectó el terremoto a emprendedores en Cali y la región: 'Un negocio puede seguir en pie y aun así, haber perdido su capacidad de vender'",
-      "url": "https://www.eltiempo.com/colombia/cali/asi-afecto-el-terremoto-a-emprendedores-en-cali-y-la-region-un-negocio-puede-seguir-en-pie-y-aun-asi-haber-perdido-su-capacidad-de-vender-3582463",
-      "published": "2026-08-31T15:13:23-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 3,
-    "issue": "¿Cuáles son las conclusiones de mesa técnica entre Camacol e ingenieros sobre afectación de edificaciones en Cali, según tipos de sismos y la norma?"
-   },
    {
     "iso": "VEN",
     "name": "Venezuela",
@@ -1049,6 +986,26 @@
     ],
     "count": 3,
     "issue": "Experts: ‘A lot of questions around’ Trump’s Venezuela oil deal, what it means for South Florida"
+   },
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "Video: las conclusiones de la mesa técnica entre Camacol e ingenieros sobre afectación de edificaciones en Cali, según tipos de sismos y la norma",
+      "url": "https://www.eltiempo.com/colombia/cali/cuales-son-las-conclusiones-de-mesa-tecnica-entre-camacol-e-ingenieros-sobre-afectacion-de-edificaciones-en-cali-segun-tipos-de-sismos-y-la-norma-3582529",
+      "published": "2026-08-31T19:18:20-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "Bomberos atendieron 50 incendios forestales en agosto: temporada seca y manos criminales tienen a Medellín en máxima alerta",
+      "url": "https://www.eltiempo.com/colombia/medellin/bomberos-atendieron-50-incendios-forestales-en-agosto-temporada-seca-y-manos-criminales-tienen-a-medellin-en-maxima-alerta-3582498",
+      "published": "2026-08-31T16:50:02-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 2,
+    "issue": "Video: las conclusiones de la mesa técnica entre Camacol e ingenieros sobre afectación de edificaciones en Cali, según tipos de sismos y la norma"
    },
    {
     "iso": "IRN",
@@ -1131,8 +1088,6 @@
   "countries_matched": 7,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "alerts"
- ],
- "health": "9/10 sources ok"
+ "failures": [],
+ "health": "10/10 sources ok"
 }
