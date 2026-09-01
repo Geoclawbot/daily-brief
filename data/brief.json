@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-31T21:00:55-04:00",
- "generated_at_utc": "2026-09-01T01:00:55+00:00",
+ "generated_at": "2026-08-31T21:15:58-04:00",
+ "generated_at_utc": "2026-09-01T01:15:58+00:00",
  "weekday": "Monday",
  "date_label": "Monday, August 31",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-31T21:00:55-04:00",
+  "fetched_at": "2026-08-31T21:15:58-04:00",
   "curve": [
    {
     "time": "2026-08-31T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 82.5,
-   "feels": 94.4,
-   "humidity": 87,
-   "wind_mph": 2.7,
-   "wind_dir": 312,
-   "observed_at": "2026-08-31T21:00"
+   "temp": 82.3,
+   "feels": 94.3,
+   "humidity": 88,
+   "wind_mph": 2.3,
+   "wind_dir": 299,
+   "observed_at": "2026-08-31T21:15"
   },
   "today": {
    "high": 90.4,
@@ -164,20 +164,21 @@
   "peak_hour": 15
  },
  "alerts": {
-  "ok": false,
-  "source": "NWS alerts",
-  "fetched_at": "2026-08-31T21:01:20-04:00",
-  "error": "HTTPSConnectionPool(host='api.weather.gov', port=443): Read timed out. (read timeout=25)"
+  "ok": true,
+  "source": "NWS api.weather.gov/alerts",
+  "fetched_at": "2026-08-31T21:15:58-04:00",
+  "alerts": [],
+  "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-31T21:01:21-04:00",
-  "aqi": 34,
+  "fetched_at": "2026-08-31T21:15:59-04:00",
+  "aqi": 32,
   "category": "Good",
-  "pollutant": "PM2.5",
+  "pollutant": "O3",
   "reporting_area": "Miami",
-  "observed": "2026-08-31 19:00 EST",
+  "observed": "2026-08-31 20:00 EST",
   "forecast": [
    {
     "date": "2026-09-01",
@@ -220,11 +221,21 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-31T21:01:22-04:00",
+  "fetched_at": "2026-08-31T21:15:59-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-01-12T19:06:35Z"
+   },
    {
     "county": "Broward",
     "roads": [
@@ -288,10 +299,20 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-836 E"
+    ],
+    "delay_s": 244,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T00:58:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "US-1",
      "FL-5"
     ],
-    "delay_s": 175,
+    "delay_s": 178,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T00:56:30Z"
@@ -299,63 +320,62 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 E"
+     "FL-836 W"
     ],
-    "delay_s": 128,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T00:58:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 85,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T00:56:00Z"
+    "delay_s": 137,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T01:10:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 78,
+    "delay_s": 112,
     "magnitude": 1,
-    "description": "Slow traffic",
+    "description": "Heavy traffic",
     "start": "2026-09-01T00:57:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-84"
-    ],
-    "delay_s": 64,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T00:54:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-985"
+     "I-95 S"
     ],
-    "delay_s": 57,
+    "delay_s": 100,
+    "magnitude": 1,
+    "description": "Heavy traffic",
+    "start": "2026-09-01T00:56:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 85,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-01T00:58:30Z"
+    "start": "2026-09-01T01:06:00Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
+     "I-95 N"
     ],
-    "delay_s": 29,
+    "delay_s": 83,
     "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T00:58:30Z"
+    "description": "Heavy traffic",
+    "start": "2026-09-01T01:00:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 77,
+    "magnitude": 1,
+    "description": "Heavy traffic",
+    "start": "2026-09-01T01:00:30Z"
    },
    {
     "county": "Broward",
@@ -363,7 +383,17 @@
      "FL-91 N",
      "Florida's Tpke N"
     ],
-    "delay_s": 27,
+    "delay_s": 64,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-01T00:58:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-985"
+    ],
+    "delay_s": 57,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-01T00:58:30Z"
@@ -503,49 +533,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-08-27T13:25:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-07-20T13:16:51Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-07-20T13:16:51Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-26T14:23:00Z"
    }
   ],
-  "incident_count": 240,
-  "named_count": 30,
-  "major_count": 6,
+  "incident_count": 247,
+  "named_count": 33,
+  "major_count": 7,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-31T21:01:23-04:00",
+  "fetched_at": "2026-08-31T21:16:00-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -596,7 +594,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-31T21:01:23-04:00",
+  "fetched_at": "2026-08-31T21:16:00-04:00",
   "issued": "800 PM EDT Mon Aug 31 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 312350\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Mon Aug 31 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on recently \nupgraded Tropical Storm Edouard, located over the northern Gulf of \nAmerica.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\nPublic Advisories on Tropical Storm Edouard are issued under WMO \nheader WTNT35 KNHC and under AWIPS header MIATCPAT5.\nForecast/Advisories on Tropical Storm Edouard are issued under WMO \nheader WTNT25 KNHC and under AWIPS header MIATCMAT5.\n\n$$\nForecaster Kelly"
@@ -604,7 +602,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-31T21:01:23-04:00",
+  "fetched_at": "2026-08-31T21:16:01-04:00",
   "florida": "$3.8781",
   "national": "$4.0807",
   "diesel": "$5.4232",
@@ -613,7 +611,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-31T21:01:25-04:00",
+  "fetched_at": "2026-08-31T21:16:02-04:00",
   "streams": {
    "local": [
     {
@@ -722,6 +720,14 @@
   ],
   "local": [
    {
+    "title": "2 teens hospitalized after stabbing at Miami Northwestern Senior High School, officials say",
+    "url": "https://www.local10.com/news/local/2026/08/31/2-teens-hospitalized-after-stabbing-at-miami-northwestern-senior-high-school-officials-say/",
+    "published": "Mon, 31 Aug 2026 20:40:48 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Judge orders no bond for real estate developer accused of crashing vehicle into home, killing senior",
     "url": "https://www.local10.com/news/local/2026/08/31/judge-orders-no-bond-for-real-estate-developer-accused-of-crashing-vehicle-into-home-killing-senior/",
     "published": "Mon, 31 Aug 2026 17:05:37 +0000",
@@ -752,14 +758,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/PAR7JHZ7BBGPFMG75CB5FJSHDE.png?auth=0ff92fa769f4bf67279e664a3a647c7baa39c679f610b24b5ef81659dab486d2&smart=true&width=1200&height=900",
     "media_type": "image"
-   },
-   {
-    "title": "2 teens hospitalized after stabbing at Miami Northwestern Senior High School, officials say",
-    "url": "https://www.local10.com/news/local/2026/08/31/2-teens-hospitalized-after-stabbing-at-miami-northwestern-senior-high-school-officials-say/",
-    "published": "Mon, 31 Aug 2026 20:40:48 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
    },
    {
     "title": "‘I thought it was the end’: Video shows hit-and-run suspect’s high-speed sideswipe on I-95",
@@ -852,6 +850,14 @@
   ],
   "colombia": [
    {
+    "title": "¿Por qué el influencer Kevin Thobias sigue en su lujosa mansión de Las Palmas, en Medellín, luego de que le impusieran medida de extinción de dominio?",
+    "url": "https://www.eltiempo.com/colombia/medellin/por-que-el-influencer-kevin-thobias-sigue-en-su-lujosa-mansion-de-las-palmas-en-medellin-luego-de-que-le-impusieran-medida-de-extincion-de-dominio-3582544",
+    "published": "2026-08-31T20:06:06-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a96192ed3137.png",
+    "media_type": "image"
+   },
+   {
     "title": "Nuevo edificio de Ingenierías Fisicomecánicas de la UIS tendrá el primer laboratorio espacial en una universidad colombiana",
     "url": "https://www.eltiempo.com/colombia/santander/nuevo-edificio-de-ingenierias-fisicomecanicas-de-la-uis-tendra-el-primer-laboratorio-espacial-en-una-universidad-colombiana-3582545",
     "published": "2026-08-31T19:39:19-05:00",
@@ -905,14 +911,6 @@
     "published": "2026-08-31T17:34:58-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/31/6a95f9cebafeb.r_d.885-488-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Bomberos atendieron 50 incendios forestales en agosto: temporada seca y manos criminales tienen a Medellín en máxima alerta",
-    "url": "https://www.eltiempo.com/colombia/medellin/bomberos-atendieron-50-incendios-forestales-en-agosto-temporada-seca-y-manos-criminales-tienen-a-medellin-en-maxima-alerta-3582498",
-    "published": "2026-08-31T16:50:02-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a95f3eba97ef.jpeg",
     "media_type": "image"
    }
   ],
@@ -986,15 +984,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-31T21:01:25-04:00",
+  "fetched_at": "2026-08-31T21:16:03-04:00",
   "items": [],
-  "scanned": 2,
+  "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-31T21:01:25-04:00",
+  "fetched_at": "2026-08-31T21:16:03-04:00",
   "countries": [
    {
     "iso": "VEN",
@@ -1027,20 +1025,20 @@
     "name": "Colombia",
     "stories": [
      {
+      "title": "¿Por qué el influencer Kevin Thobias sigue en su lujosa mansión de Las Palmas, en Medellín, luego de que le impusieran medida de extinción de dominio?",
+      "url": "https://www.eltiempo.com/colombia/medellin/por-que-el-influencer-kevin-thobias-sigue-en-su-lujosa-mansion-de-las-palmas-en-medellin-luego-de-que-le-impusieran-medida-de-extincion-de-dominio-3582544",
+      "published": "2026-08-31T20:06:06-05:00",
+      "section": "colombia"
+     },
+     {
       "title": "Video: las conclusiones de la mesa técnica entre Camacol e ingenieros sobre afectación de edificaciones en Cali, según tipos de sismos y la norma",
       "url": "https://www.eltiempo.com/colombia/cali/cuales-son-las-conclusiones-de-mesa-tecnica-entre-camacol-e-ingenieros-sobre-afectacion-de-edificaciones-en-cali-segun-tipos-de-sismos-y-la-norma-3582529",
       "published": "2026-08-31T19:18:20-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Bomberos atendieron 50 incendios forestales en agosto: temporada seca y manos criminales tienen a Medellín en máxima alerta",
-      "url": "https://www.eltiempo.com/colombia/medellin/bomberos-atendieron-50-incendios-forestales-en-agosto-temporada-seca-y-manos-criminales-tienen-a-medellin-en-maxima-alerta-3582498",
-      "published": "2026-08-31T16:50:02-05:00",
-      "section": "colombia"
      }
     ],
     "count": 2,
-    "issue": "Video: las conclusiones de la mesa técnica entre Camacol e ingenieros sobre afectación de edificaciones en Cali, según tipos de sismos y la norma"
+    "issue": "¿Por qué el influencer Kevin Thobias sigue en su lujosa mansión de Las Palmas, en Medellín, luego de que le impusieran medida de extinción de dominio?"
    },
    {
     "iso": "IRN",
@@ -1123,8 +1121,6 @@
   "countries_matched": 7,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "alerts"
- ],
- "health": "9/10 sources ok"
+ "failures": [],
+ "health": "10/10 sources ok"
 }
