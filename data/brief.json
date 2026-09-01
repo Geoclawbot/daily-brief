@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-31T20:45:56-04:00",
- "generated_at_utc": "2026-09-01T00:45:56+00:00",
+ "generated_at": "2026-08-31T21:00:55-04:00",
+ "generated_at_utc": "2026-09-01T01:00:55+00:00",
  "weekday": "Monday",
  "date_label": "Monday, August 31",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-31T20:45:57-04:00",
+  "fetched_at": "2026-08-31T21:00:55-04:00",
   "curve": [
    {
     "time": "2026-08-31T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 82.7,
-   "feels": 94.7,
-   "humidity": 86,
-   "wind_mph": 2.1,
-   "wind_dir": 311,
-   "observed_at": "2026-08-31T20:45"
+   "temp": 82.5,
+   "feels": 94.4,
+   "humidity": 87,
+   "wind_mph": 2.7,
+   "wind_dir": 312,
+   "observed_at": "2026-08-31T21:00"
   },
   "today": {
    "high": 90.4,
@@ -164,16 +164,15 @@
   "peak_hour": 15
  },
  "alerts": {
-  "ok": true,
-  "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-31T20:45:57-04:00",
-  "alerts": [],
-  "count": 0
+  "ok": false,
+  "source": "NWS alerts",
+  "fetched_at": "2026-08-31T21:01:20-04:00",
+  "error": "HTTPSConnectionPool(host='api.weather.gov', port=443): Read timed out. (read timeout=25)"
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-31T20:45:58-04:00",
+  "fetched_at": "2026-08-31T21:01:21-04:00",
   "aqi": 34,
   "category": "Good",
   "pollutant": "PM2.5",
@@ -221,7 +220,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-31T20:45:58-04:00",
+  "fetched_at": "2026-08-31T21:01:22-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -234,7 +233,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -244,7 +243,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -289,32 +288,63 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-968"
+     "US-1",
+     "FL-5"
     ],
-    "delay_s": 164,
+    "delay_s": 175,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T00:43:00Z"
+    "start": "2026-09-01T00:56:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-854"
+     "FL-836 E"
     ],
-    "delay_s": 157,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T00:43:30Z"
+    "delay_s": 128,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-01T00:58:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-976"
+     "I-95 S"
     ],
-    "delay_s": 135,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T00:43:00Z"
+    "delay_s": 85,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-01T00:56:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 78,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-01T00:57:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-84"
+    ],
+    "delay_s": 64,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-01T00:54:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-985"
+    ],
+    "delay_s": 57,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-01T00:58:30Z"
    },
    {
     "county": "Broward",
@@ -322,30 +352,21 @@
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 93,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T00:20:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-84"
-    ],
-    "delay_s": 88,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T00:33:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 63,
+    "delay_s": 29,
     "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-08-31T23:54:30Z"
+    "description": "Slow traffic",
+    "start": "2026-09-01T00:58:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 N",
+     "Florida's Tpke N"
+    ],
+    "delay_s": 27,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-01T00:58:30Z"
    },
    {
     "county": "Broward",
@@ -466,28 +487,6 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-31T21:45:20Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-08-31T21:45:20Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-886"
     ],
     "delay_s": null,
@@ -530,24 +529,23 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "FL-5"
+     "FL-934"
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-08-31T20:45:00Z"
+    "description": "Roadworks",
+    "start": "2026-08-26T14:23:00Z"
    }
   ],
-  "incident_count": 244,
-  "named_count": 31,
+  "incident_count": 240,
+  "named_count": 30,
   "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-31T20:45:59-04:00",
+  "fetched_at": "2026-08-31T21:01:23-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -598,7 +596,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-31T20:46:00-04:00",
+  "fetched_at": "2026-08-31T21:01:23-04:00",
   "issued": "800 PM EDT Mon Aug 31 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 312350\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Mon Aug 31 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on recently \nupgraded Tropical Storm Edouard, located over the northern Gulf of \nAmerica.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\nPublic Advisories on Tropical Storm Edouard are issued under WMO \nheader WTNT35 KNHC and under AWIPS header MIATCPAT5.\nForecast/Advisories on Tropical Storm Edouard are issued under WMO \nheader WTNT25 KNHC and under AWIPS header MIATCMAT5.\n\n$$\nForecaster Kelly"
@@ -606,7 +604,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-31T20:46:00-04:00",
+  "fetched_at": "2026-08-31T21:01:23-04:00",
   "florida": "$3.8781",
   "national": "$4.0807",
   "diesel": "$5.4232",
@@ -615,7 +613,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-31T20:46:02-04:00",
+  "fetched_at": "2026-08-31T21:01:25-04:00",
   "streams": {
    "local": [
     {
@@ -854,6 +852,14 @@
   ],
   "colombia": [
    {
+    "title": "Nuevo edificio de Ingenierías Fisicomecánicas de la UIS tendrá el primer laboratorio espacial en una universidad colombiana",
+    "url": "https://www.eltiempo.com/colombia/santander/nuevo-edificio-de-ingenierias-fisicomecanicas-de-la-uis-tendra-el-primer-laboratorio-espacial-en-una-universidad-colombiana-3582545",
+    "published": "2026-08-31T19:39:19-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a961db90802e.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Atlántico | Tristeza en Soledad por violento crimen de joven futbolista que había pasado por la cantera de Millonarios: ‘Aquí te arrebataron el sueño’",
     "url": "https://www.eltiempo.com/colombia/barranquilla/atlantico-tristeza-en-soledad-por-violento-crimen-de-joven-futbolista-que-habia-pasado-por-la-cantera-de-millonarios-aqui-te-arrebataron-el-sueno-3582539",
     "published": "2026-08-31T19:04:23-05:00",
@@ -908,14 +914,6 @@
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a95f3eba97ef.jpeg",
     "media_type": "image"
-   },
-   {
-    "title": "No habrá clases presenciales este martes en Barranquilla por corte de agua: conozca cómo será la jornada en colegios distritales",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/no-habra-clases-presenciales-este-martes-en-barranquilla-por-corte-de-agua-conozca-como-sera-la-jornada-en-colegios-distritales-3582496",
-    "published": "2026-08-31T16:48:08-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2025/12/11/693ad36ceb704.jpeg",
-    "media_type": "image"
    }
   ],
   "world": [
@@ -968,16 +966,16 @@
     "media_type": null
    },
    {
-    "title": "Hit shows from Edinburgh's Fringe festival are coming to America. Here are our top picks",
-    "url": "https://www.npr.org/2026/08/31/nx-s1-5949346/edinburgh-fringe-scotland-best-shows-coming-to-america",
+    "title": "The U.S.-Venezuela oil deal won't lower your gas prices. Here's what you need to know",
+    "url": "https://www.npr.org/2026/08/31/nx-s1-5949407/us-venezuelan-oil-deal",
     "published": "Mon, 31 Aug 2026 05:00:00 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
    },
    {
-    "title": "The U.S.-Venezuela oil deal won't lower your gas prices. Here's what you need to know",
-    "url": "https://www.npr.org/2026/08/31/nx-s1-5949407/us-venezuelan-oil-deal",
+    "title": "Hit shows from Edinburgh's Fringe festival are coming to America. Here are our top picks",
+    "url": "https://www.npr.org/2026/08/31/nx-s1-5949346/edinburgh-fringe-scotland-best-shows-coming-to-america",
     "published": "Mon, 31 Aug 2026 05:00:00 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
@@ -988,7 +986,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-31T20:46:02-04:00",
+  "fetched_at": "2026-08-31T21:01:25-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -996,7 +994,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-31T20:46:02-04:00",
+  "fetched_at": "2026-08-31T21:01:25-04:00",
   "countries": [
    {
     "iso": "VEN",
@@ -1125,6 +1123,8 @@
   "countries_matched": 7,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [],
- "health": "10/10 sources ok"
+ "failures": [
+  "alerts"
+ ],
+ "health": "9/10 sources ok"
 }
