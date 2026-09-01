@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-08-31T21:20:51-04:00",
- "generated_at_utc": "2026-09-01T01:20:51+00:00",
+ "generated_at": "2026-08-31T21:30:54-04:00",
+ "generated_at_utc": "2026-09-01T01:30:54+00:00",
  "weekday": "Monday",
  "date_label": "Monday, August 31",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-08-31T21:20:52-04:00",
+  "fetched_at": "2026-08-31T21:30:54-04:00",
   "curve": [
    {
     "time": "2026-08-31T05:00",
@@ -143,16 +143,16 @@
     "temp": 82.4,
     "feels": 93.5,
     "humidity": 87,
-    "pop": 37
+    "pop": 42
    }
   ],
   "current": {
-   "temp": 82.4,
-   "feels": 93.8,
-   "humidity": 88,
-   "wind_mph": 4.1,
-   "wind_dir": 292,
-   "observed_at": "2026-08-31T21:15"
+   "temp": 82.0,
+   "feels": 93.1,
+   "humidity": 89,
+   "wind_mph": 4.7,
+   "wind_dir": 287,
+   "observed_at": "2026-08-31T21:30"
   },
   "today": {
    "high": 90.4,
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-08-31T21:20:52-04:00",
+  "fetched_at": "2026-08-31T21:30:54-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-08-31T21:20:54-04:00",
-  "aqi": 32,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-08-31T21:31:05-04:00",
+  "aqi": 45,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-08-31 20:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-01",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-01",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 7.3,
+  "pm10": 8.0,
+  "observed": "2026-08-31T21:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-08-31T21:20:54-04:00",
+  "fetched_at": "2026-08-31T21:31:05-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -294,48 +258,77 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-08-02T04:33:30Z"
+    "start": "2026-09-01T01:16:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 W"
+     "FL-934"
     ],
-    "delay_s": 272,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T01:10:00Z"
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-08-02T04:33:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-836 E"
     ],
-    "delay_s": 186,
-    "magnitude": 1,
-    "description": "Slow traffic",
+    "delay_s": 203,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-09-01T00:58:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1",
-     "FL-5"
-    ],
-    "delay_s": 178,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T00:56:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 99,
+    "delay_s": 137,
     "magnitude": 1,
     "description": "Heavy traffic",
     "start": "2026-09-01T00:57:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 119,
+    "magnitude": 1,
+    "description": "Heavy traffic",
+    "start": "2026-09-01T00:56:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 114,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T01:06:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 75,
+    "magnitude": 1,
+    "description": "Heavy traffic",
+    "start": "2026-09-01T01:00:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 74,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T01:10:00Z"
    },
    {
     "county": "Broward",
@@ -343,89 +336,9 @@
      "FL-91 N",
      "Florida's Tpke N"
     ],
-    "delay_s": 93,
+    "delay_s": 65,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-01T00:58:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 89,
-    "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-09-01T00:56:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-84"
-    ],
-    "delay_s": 75,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T01:18:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 72,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T01:06:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-969"
-    ],
-    "delay_s": 64,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T01:15:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-948"
-    ],
-    "delay_s": 63,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T01:18:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 63,
-    "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-09-01T01:00:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 55,
-    "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-09-01T01:00:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-985"
-    ],
-    "delay_s": 55,
-    "magnitude": 1,
-    "description": "Slow traffic",
     "start": "2026-09-01T00:58:30Z"
    },
    {
@@ -532,17 +445,70 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-08-21T08:47:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-03T13:43:04Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-886"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-08-31T18:44:42Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-886"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-08-27T13:25:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-07-20T13:16:51Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-07-20T13:16:51Z"
    }
   ],
-  "incident_count": 253,
-  "named_count": 36,
-  "major_count": 7,
+  "incident_count": 250,
+  "named_count": 31,
+  "major_count": 8,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-08-31T21:20:55-04:00",
+  "fetched_at": "2026-08-31T21:31:06-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -593,7 +559,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-08-31T21:20:55-04:00",
+  "fetched_at": "2026-08-31T21:31:06-04:00",
   "issued": "800 PM EDT Mon Aug 31 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 312350\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Mon Aug 31 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on recently \nupgraded Tropical Storm Edouard, located over the northern Gulf of \nAmerica.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\nPublic Advisories on Tropical Storm Edouard are issued under WMO \nheader WTNT35 KNHC and under AWIPS header MIATCPAT5.\nForecast/Advisories on Tropical Storm Edouard are issued under WMO \nheader WTNT25 KNHC and under AWIPS header MIATCMAT5.\n\n$$\nForecaster Kelly"
@@ -601,7 +567,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-08-31T21:20:55-04:00",
+  "fetched_at": "2026-08-31T21:31:06-04:00",
   "florida": "$3.8781",
   "national": "$4.0807",
   "diesel": "$5.4232",
@@ -610,7 +576,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-08-31T21:20:56-04:00",
+  "fetched_at": "2026-08-31T21:31:08-04:00",
   "streams": {
    "local": [
     {
@@ -851,7 +817,7 @@
    {
     "title": "¿Por qué el influencer Kevin Thobias sigue en su lujosa mansión de Las Palmas, en Medellín, luego de que le impusieran medida de extinción de dominio?",
     "url": "https://www.eltiempo.com/colombia/medellin/por-que-el-influencer-kevin-thobias-sigue-en-su-lujosa-mansion-de-las-palmas-en-medellin-luego-de-que-le-impusieran-medida-de-extincion-de-dominio-3582544",
-    "published": "2026-08-31T20:06:06-05:00",
+    "published": "2026-08-31T20:07:59-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/31/6a96192ed3137.png",
     "media_type": "image"
@@ -983,7 +949,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-08-31T21:20:56-04:00",
+  "fetched_at": "2026-08-31T21:31:08-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -991,7 +957,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-08-31T21:20:56-04:00",
+  "fetched_at": "2026-08-31T21:31:08-04:00",
   "countries": [
    {
     "iso": "VEN",
@@ -1026,7 +992,7 @@
      {
       "title": "¿Por qué el influencer Kevin Thobias sigue en su lujosa mansión de Las Palmas, en Medellín, luego de que le impusieran medida de extinción de dominio?",
       "url": "https://www.eltiempo.com/colombia/medellin/por-que-el-influencer-kevin-thobias-sigue-en-su-lujosa-mansion-de-las-palmas-en-medellin-luego-de-que-le-impusieran-medida-de-extincion-de-dominio-3582544",
-      "published": "2026-08-31T20:06:06-05:00",
+      "published": "2026-08-31T20:07:59-05:00",
       "section": "colombia"
      },
      {
