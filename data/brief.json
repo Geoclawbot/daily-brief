@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-01T00:15:56-04:00",
- "generated_at_utc": "2026-09-01T04:15:56+00:00",
+ "generated_at": "2026-09-01T00:30:57-04:00",
+ "generated_at_utc": "2026-09-01T04:30:57+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 1",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-01T00:15:56-04:00",
+  "fetched_at": "2026-09-01T00:30:57-04:00",
   "curve": [
    {
     "time": "2026-09-01T05:00",
@@ -61,7 +61,7 @@
     "time": "2026-09-01T11:00",
     "hour": 11,
     "temp": 82.2,
-    "feels": 95.1,
+    "feels": 95.7,
     "humidity": 89,
     "pop": 11
    },
@@ -69,7 +69,7 @@
     "time": "2026-09-01T12:00",
     "hour": 12,
     "temp": 84.8,
-    "feels": 97.9,
+    "feels": 98.1,
     "humidity": 83,
     "pop": 16
    },
@@ -77,7 +77,7 @@
     "time": "2026-09-01T13:00",
     "hour": 13,
     "temp": 85.2,
-    "feels": 97.2,
+    "feels": 97.3,
     "humidity": 79,
     "pop": 17
    },
@@ -85,7 +85,7 @@
     "time": "2026-09-01T14:00",
     "hour": 14,
     "temp": 87.0,
-    "feels": 98.8,
+    "feels": 98.2,
     "humidity": 75,
     "pop": 21
    },
@@ -93,7 +93,7 @@
     "time": "2026-09-01T15:00",
     "hour": 15,
     "temp": 87.1,
-    "feels": 96.9,
+    "feels": 98.1,
     "humidity": 73,
     "pop": 28
    },
@@ -101,7 +101,7 @@
     "time": "2026-09-01T16:00",
     "hour": 16,
     "temp": 87.7,
-    "feels": 96.7,
+    "feels": 96.6,
     "humidity": 72,
     "pop": 31
    },
@@ -147,81 +147,45 @@
    }
   ],
   "current": {
-   "temp": 77.0,
-   "feels": 86.6,
-   "humidity": 94,
-   "wind_mph": 3.4,
-   "wind_dir": 157,
-   "observed_at": "2026-09-01T00:15"
+   "temp": 77.2,
+   "feels": 85.6,
+   "humidity": 93,
+   "wind_mph": 5.8,
+   "wind_dir": 152,
+   "observed_at": "2026-09-01T00:30"
   },
   "today": {
    "high": 87.7,
    "low": 74.2,
-   "feels_max": 98.8,
+   "feels_max": 98.2,
    "pop_max": 45
   },
-  "peak_feels": 98.8,
+  "peak_feels": 98.2,
   "peak_hour": 14
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-01T00:15:57-04:00",
+  "fetched_at": "2026-09-01T00:30:57-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-01T00:15:58-04:00",
-  "aqi": 31,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-01T00:31:08-04:00",
+  "aqi": 43,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-08-31 23:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-01",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-01",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 9.1,
+  "pm10": 9.5,
+  "observed": "2026-09-01T00:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-01T00:15:58-04:00",
+  "fetched_at": "2026-09-01T00:31:08-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -404,20 +368,10 @@
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 137,
+    "delay_s": 93,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-01T03:05:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 93,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T02:49:30Z"
    },
    {
     "county": "Broward",
@@ -534,17 +488,27 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-08-03T13:43:04Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-886"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-08-31T18:44:42Z"
    }
   ],
-  "incident_count": 261,
-  "named_count": 35,
+  "incident_count": 259,
+  "named_count": 34,
   "major_count": 17,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-01T00:15:58-04:00",
+  "fetched_at": "2026-09-01T00:31:09-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -595,7 +559,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-01T00:15:59-04:00",
+  "fetched_at": "2026-09-01T00:31:09-04:00",
   "issued": "800 PM EDT Mon Aug 31 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 312350\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Mon Aug 31 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on recently \nupgraded Tropical Storm Edouard, located over the northern Gulf of \nAmerica.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\nPublic Advisories on Tropical Storm Edouard are issued under WMO \nheader WTNT35 KNHC and under AWIPS header MIATCPAT5.\nForecast/Advisories on Tropical Storm Edouard are issued under WMO \nheader WTNT25 KNHC and under AWIPS header MIATCMAT5.\n\n$$\nForecaster Kelly"
@@ -603,7 +567,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-01T00:15:59-04:00",
+  "fetched_at": "2026-09-01T00:31:09-04:00",
   "florida": "$3.8781",
   "national": "$4.0807",
   "diesel": "$5.4232",
@@ -612,7 +576,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-01T00:16:00-04:00",
+  "fetched_at": "2026-09-01T00:31:10-04:00",
   "streams": {
    "local": [
     {
@@ -851,6 +815,14 @@
   ],
   "colombia": [
    {
+    "title": "Última pista de Michelle Dayana, menor de seis años reportada como desaparecida, antes de ser hallada muerta en Antioquia: un video clave",
+    "url": "https://www.eltiempo.com/colombia/medellin/ultima-pista-de-michelle-dayana-menor-de-seis-anos-reportada-como-desaparecida-antes-de-ser-hallada-muerta-en-antioquia-un-video-clave-3582564",
+    "published": "2026-08-31T23:20:44-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/31/6a96475bf221e.r_d.924-358-0.png",
+    "media_type": "image"
+   },
+   {
     "title": "¿Por qué el influencer Kevin Thobias sigue en su lujosa mansión de Las Palmas, en Medellín, luego de que le impusieran medida de extinción de dominio?",
     "url": "https://www.eltiempo.com/colombia/medellin/por-que-el-influencer-kevin-thobias-sigue-en-su-lujosa-mansion-de-las-palmas-en-medellin-luego-de-que-le-impusieran-medida-de-extincion-de-dominio-3582544",
     "published": "2026-08-31T20:07:59-05:00",
@@ -904,14 +876,6 @@
     "published": "2026-08-31T22:32:57-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/27/6a9096bca8c1d.r_d.383-160-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "El patrimonio religioso del Valle entra en fase crítica tras el terremoto: así se harán demoliciones de 17 cúpulas de iglesias por riesgo de colapso",
-    "url": "https://www.eltiempo.com/colombia/cali/el-patrimonio-religioso-del-valle-entra-en-fase-critica-tras-el-terremoto-asi-se-haran-demoliciones-de-17-cupulas-de-iglesias-por-riesgo-de-colapso-3582502",
-    "published": "2026-08-31T17:34:58-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/31/6a95f9cebafeb.r_d.885-488-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -985,7 +949,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-01T00:16:01-04:00",
+  "fetched_at": "2026-09-01T00:31:14-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -993,7 +957,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-01T00:16:01-04:00",
+  "fetched_at": "2026-09-01T00:31:14-04:00",
   "countries": [
    {
     "iso": "VEN",
