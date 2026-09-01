@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-01T18:15:58-04:00",
- "generated_at_utc": "2026-09-01T22:15:58+00:00",
+ "generated_at": "2026-09-01T18:30:57-04:00",
+ "generated_at_utc": "2026-09-01T22:30:57+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 1",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-01T18:15:58-04:00",
+  "fetched_at": "2026-09-01T18:30:58-04:00",
   "curve": [
    {
     "time": "2026-09-01T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 86.0,
-   "feels": 94.5,
-   "humidity": 75,
-   "wind_mph": 8.8,
-   "wind_dir": 60,
-   "observed_at": "2026-09-01T18:15"
+   "temp": 85.9,
+   "feels": 95.7,
+   "humidity": 74,
+   "wind_mph": 5.1,
+   "wind_dir": 41,
+   "observed_at": "2026-09-01T18:30"
   },
   "today": {
    "high": 89.2,
@@ -166,106 +166,37 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-01T18:15:58-04:00",
+  "fetched_at": "2026-09-01T18:30:58-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-01T18:15:59-04:00",
-  "aqi": 29,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-01 17:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-01",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-01",
-    "aqi": 36,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-01T18:31:24-04:00",
+  "aqi": 53,
+  "category": "Moderate",
+  "pm25": 7.8,
+  "pm10": 10.0,
+  "observed": "2026-09-01T18:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-01T18:15:59-04:00",
+  "fetched_at": "2026-09-01T18:31:24-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 2166,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:44:44Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-395 W",
-     "FL-836 W"
-    ],
-    "delay_s": 1791,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T20:29:21Z"
-   },
    {
     "county": "Miami-Dade",
     "roads": [
      "US-1 N",
      "I-95 N"
     ],
-    "delay_s": 1715,
+    "delay_s": 1795,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T15:32:30Z"
@@ -273,40 +204,10 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 S"
-    ],
-    "delay_s": 1297,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:06:37Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 1215,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T17:29:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-985"
-    ],
-    "delay_s": 1066,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T20:56:35Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 1029,
+    "delay_s": 1572,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T21:24:42Z"
@@ -318,7 +219,7 @@
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 956,
+    "delay_s": 1324,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T18:13:15Z"
@@ -326,12 +227,53 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 N"
+     "FL-985"
     ],
-    "delay_s": 952,
+    "delay_s": 1226,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T20:31:05Z"
+    "start": "2026-09-01T20:56:35Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 1114,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T17:29:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 1029,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T20:58:32Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 S"
+    ],
+    "delay_s": 969,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T19:06:37Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 916,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T19:44:44Z"
    },
    {
     "county": "Broward",
@@ -396,51 +338,31 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-823"
+     "US-1 N",
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 842,
+    "delay_s": 811,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T22:04:49Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 S",
-     "US-41 N"
-    ],
-    "delay_s": 841,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T20:58:32Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Snapper Creek Expy W",
-     "FL-878 W"
-    ],
-    "delay_s": 721,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:27:01Z"
+    "start": "2026-09-01T18:38:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826 N"
     ],
-    "delay_s": 716,
+    "delay_s": 810,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-01T16:35:00Z"
+    "start": "2026-09-01T20:31:05Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 701,
+    "delay_s": 798,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T19:23:01Z"
@@ -448,20 +370,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 699,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T19:43:58Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-836 W"
     ],
-    "delay_s": 688,
+    "delay_s": 795,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T19:44:44Z"
@@ -469,59 +380,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-986"
-    ],
-    "delay_s": 666,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:27:01Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-972"
-    ],
-    "delay_s": 662,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T18:52:08Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 S"
-    ],
-    "delay_s": 614,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T20:58:32Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 613,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T18:04:03Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-932"
-    ],
-    "delay_s": 604,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T21:38:36Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-94"
     ],
-    "delay_s": 521,
+    "delay_s": 791,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T20:03:31Z"
@@ -529,9 +390,80 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-976"
+    ],
+    "delay_s": 762,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T19:38:46Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-860"
+    ],
+    "delay_s": 712,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T22:10:56Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-823"
+    ],
+    "delay_s": 701,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T22:04:49Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 675,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T21:46:23Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 N"
+    ],
+    "delay_s": 664,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-01T16:35:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Snapper Creek Expy W",
+     "FL-878 W"
+    ],
+    "delay_s": 620,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T19:27:01Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-825"
+    ],
+    "delay_s": 616,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T19:45:47Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-907"
     ],
-    "delay_s": 503,
+    "delay_s": 606,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T21:23:18Z"
@@ -539,23 +471,44 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 E"
+     "FL-836",
+     "FL-836 W"
     ],
-    "delay_s": 479,
+    "delay_s": 587,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T21:12:18Z"
+    "start": "2026-09-01T20:18:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": 530,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T18:52:08Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-75 N"
+    ],
+    "delay_s": 521,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T22:08:33Z"
    }
   ],
-  "incident_count": 608,
-  "named_count": 208,
+  "incident_count": 586,
+  "named_count": 199,
   "major_count": 27,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-01T18:16:00-04:00",
+  "fetched_at": "2026-09-01T18:31:25-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -592,14 +545,17 @@
   ],
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
-   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 1 2026, 6:10 PM"
+   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 1 2026, 6:10 PM",
+   "Southeast | Palm Beach | There is scheduled road work on Florida?'s Turnpike, northbound at exit 98, Jog Road. All lanes are scheduled to be closed from 8pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike at exit 99, Okeechobee Boulevard. | Sep 1 2026, 6:30 PM"
   ],
-  "fl511_local": []
+  "fl511_local": [
+   "Southeast | Palm Beach | There is scheduled road work on Florida?'s Turnpike, northbound at exit 98, Jog Road. All lanes are scheduled to be closed from 8pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike at exit 99, Okeechobee Boulevard. | Sep 1 2026, 6:30 PM"
+  ]
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-01T18:16:00-04:00",
+  "fetched_at": "2026-09-01T18:31:26-04:00",
   "issued": "200 PM EDT Tue Sep 1 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 011724\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\nIssued by the NWS Weather Prediction Center College Park MD\n200 PM EDT Tue Sep 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Edouard, located over the northwestern Gulf of America.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Bann"
@@ -607,7 +563,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-01T18:16:00-04:00",
+  "fetched_at": "2026-09-01T18:31:26-04:00",
   "florida": "$3.9420",
   "national": "$4.0954",
   "diesel": "$5.5763",
@@ -616,7 +572,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-01T18:16:02-04:00",
+  "fetched_at": "2026-09-01T18:31:27-04:00",
   "streams": {
    "local": [
     {
@@ -733,6 +689,14 @@
     "media_type": null
    },
    {
+    "title": "Man says Instagram video of him molesting boy in Deerfield Beach was ‘just a joke,’ deputies say",
+    "url": "https://www.local10.com/news/local/2026/09/01/man-says-instagram-video-of-him-molesting-boy-in-deerfield-beach-was-just-a-joke-deputies-say/",
+    "published": "Tue, 01 Sep 2026 22:21:05 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/ORZWVMLDEVEYROOK2NAVUA6PLQ.jpg?auth=e61c8ab349bfc97e1a6bad8bfd0959e52bc44823e7b560c4052a293f4dcfd133&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
     "title": "A 68-year wait ends as 90-year-old veteran earns University of Miami degree",
     "url": "https://www.local10.com/news/local/2026/09/01/a-68-year-wait-ends-as-90-year-old-veteran-earns-university-of-miami-degree/",
     "published": "Tue, 01 Sep 2026 21:05:59 +0000",
@@ -781,14 +745,6 @@
     "media_type": null
    },
    {
-    "title": "Speakers escorted out as Miami-Dade commission votes to increase cap on Israel Bonds",
-    "url": "https://www.local10.com/news/local/2026/09/01/speakers-escorted-out-as-miami-dade-commission-votes-to-increase-cap-on-israel-bonds/",
-    "published": "Tue, 01 Sep 2026 20:09:48 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "Memorial honoring victims of Marjory Stoneman Douglas mass shooting set to begin construction",
     "url": "https://wsvn.com/news/local/broward/memorial-honoring-victims-of-marjory-stoneman-douglas-mass-shooting-set-to-begin-construction/",
     "published": "Mon, 31 Aug 2026 20:03:14 +0000",
@@ -821,11 +777,11 @@
     "media_type": "video"
    },
    {
-    "title": "MDSO: 3 arrested after brawl leads to stabbing at Miami Northwestern Senior High",
+    "title": "M-DCPS: 3 arrested after brawl leads to stabbing at Miami Northwestern Senior High",
     "url": "https://wsvn.com/news/local/miami-dade/m-dcps-3-arrested-after-brawl-leads-to-stabbing-at-miami-northwestern-senior-high/",
     "published": "Tue, 01 Sep 2026 21:17:24 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/cac0d195-5d0f-4683-b44d-60ad5f09ed3f/ad4dee5d-2c23-4f96-9060-ed18e3b775d8/main.mp4?fastly_token=NmE5N2EyMDNfYzkyZDgyNTRiZWJjMzNiOWQzOTUxOWViYTJmZmM3MzJiNDI2N2FiMDRhN2ZjODFhZWU0YmJkYjI2MmI3ZjhiYV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jYWMwZDE5NS01ZDBmLTQ2ODMtYjQ0ZC02MGFkNWYwOWVkM2YvYWQ0ZGVlNWQtMmMyMy00Zjk2LTkwNjAtZWQxOGUzYjc3NWQ4L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/62769317-c31a-494c-9ddf-835941ad4357/43774912-2813-4df4-8c0c-4e099e00b762/main.mp4?fastly_token=NmE5Nzk5NzhfY2UyOWEyNGM2ODZmY2ZlM2NmZmJlZGI0ZDZkZDVlY2Q1OWU1YjJkMWU2MDNmMDQ3NDJkZjRhYTdjZThlY2RhZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82Mjc2OTMxNy1jMzFhLTQ5NGMtOWRkZi04MzU5NDFhZDQzNTcvNDM3NzQ5MTItMjgxMy00ZGY0LThjMGMtNGUwOTllMDBiNzYyL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -833,7 +789,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/miami-beach-mayor-vows-to-fight-fdot-order-that-removes-flock-cameras-from-state-roads/",
     "published": "Tue, 01 Sep 2026 20:59:09 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/65e1df35-e955-4c6c-842e-8551a3e8a0d7/9afc6dbf-899e-4e60-a30e-f7d1e69a7248/main.mp4?fastly_token=NmE5N2EyMmNfMzQ5MzVlZDc5ZDA5Y2M3ODU4MDA5MTQxOWU1OTY3NmRhOWNkMWU0YjgzZmRhYTlmNmNmNmY0M2JjZWYzYTQ2Ml8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82NWUxZGYzNS1lOTU1LTRjNmMtODQyZS04NTUxYTNlOGEwZDcvOWFmYzZkYmYtODk5ZS00ZTYwLWEzMGUtZjdkMWU2OWE3MjQ4L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/65e1df35-e955-4c6c-842e-8551a3e8a0d7/9afc6dbf-899e-4e60-a30e-f7d1e69a7248/main.mp4?fastly_token=NmE5Nzk1NTJfNzQ3ZTc2YjVlNDcxMWVkOWJhOWU2MDU5NWQ1MTBmN2Q3ZjcxYjJhMWMwYTBjZTc3MTBmZmUzZWEwMjExYTNiZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82NWUxZGYzNS1lOTU1LTRjNmMtODQyZS04NTUxYTNlOGEwZDcvOWFmYzZkYmYtODk5ZS00ZTYwLWEzMGUtZjdkMWU2OWE3MjQ4L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -897,7 +853,7 @@
    {
     "title": "Alias Pirry, cabecilla de la sanguinaria banda 'El Mesa', fue capturado: es señalado como el determinador de la masacre de siete personas en Antioquia",
     "url": "https://www.eltiempo.com/colombia/medellin/alias-pirry-cabecilla-de-la-sanguinaria-banda-el-mesa-fue-capturado-es-senalado-como-el-determinador-de-la-masacre-de-siete-personas-en-antioquia-3582762",
-    "published": "2026-09-01T15:25:46-05:00",
+    "published": "2026-09-01T17:08:45-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/01/6a973478acdd6.png",
     "media_type": "image"
@@ -989,15 +945,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-01T18:16:03-04:00",
+  "fetched_at": "2026-09-01T18:31:28-04:00",
   "items": [],
-  "scanned": 3,
+  "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-01T18:16:03-04:00",
+  "fetched_at": "2026-09-01T18:31:28-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -1068,20 +1024,6 @@
     "issue": "Trump's plan for economic D-day for Iran has one big hole: China"
    },
    {
-    "iso": "ISR",
-    "name": "Israel",
-    "stories": [
-     {
-      "title": "Speakers escorted out as Miami-Dade commission votes to increase cap on Israel Bonds",
-      "url": "https://www.local10.com/news/local/2026/09/01/speakers-escorted-out-as-miami-dade-commission-votes-to-increase-cap-on-israel-bonds/",
-      "published": "Tue, 01 Sep 2026 20:09:48 +0000",
-      "section": "local"
-     }
-    ],
-    "count": 1,
-    "issue": "Speakers escorted out as Miami-Dade commission votes to increase cap on Israel Bonds"
-   },
-   {
     "iso": "USA",
     "name": "United States",
     "stories": [
@@ -1111,7 +1053,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 7,
+  "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
