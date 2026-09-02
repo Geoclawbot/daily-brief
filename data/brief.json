@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-02T19:30:54-04:00",
- "generated_at_utc": "2026-09-02T23:30:54+00:00",
+ "generated_at": "2026-09-02T19:45:58-04:00",
+ "generated_at_utc": "2026-09-02T23:45:58+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 2",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-02T19:30:54-04:00",
+  "fetched_at": "2026-09-02T19:45:59-04:00",
   "curve": [
    {
     "time": "2026-09-02T05:00",
@@ -117,42 +117,42 @@
     "time": "2026-09-02T18:00",
     "hour": 18,
     "temp": 88.4,
-    "feels": 96.9,
-    "humidity": 67,
+    "feels": 99.2,
+    "humidity": 75,
     "pop": 42
    },
    {
     "time": "2026-09-02T19:00",
     "hour": 19,
     "temp": 87.7,
-    "feels": 97.1,
-    "humidity": 72,
+    "feels": 96.0,
+    "humidity": 68,
     "pop": 41
    },
    {
     "time": "2026-09-02T20:00",
     "hour": 20,
     "temp": 85.0,
-    "feels": 97.7,
-    "humidity": 91,
+    "feels": 94.4,
+    "humidity": 78,
     "pop": 35
    },
    {
     "time": "2026-09-02T21:00",
     "hour": 21,
     "temp": 84.1,
-    "feels": 98.9,
-    "humidity": 91,
+    "feels": 96.4,
+    "humidity": 81,
     "pop": 35
    }
   ],
   "current": {
-   "temp": 86.2,
-   "feels": 97.1,
-   "humidity": 82,
-   "wind_mph": 8.0,
-   "wind_dir": 153,
-   "observed_at": "2026-09-02T19:30"
+   "temp": 85.6,
+   "feels": 94.0,
+   "humidity": 76,
+   "wind_mph": 9.1,
+   "wind_dir": 147,
+   "observed_at": "2026-09-02T19:45"
   },
   "today": {
    "high": 91.2,
@@ -166,41 +166,78 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-02T19:30:56-04:00",
+  "fetched_at": "2026-09-02T19:45:59-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-02T19:31:40-04:00",
-  "aqi": 62,
-  "category": "Moderate",
-  "pm25": 8.8,
-  "pm10": 11.0,
-  "observed": "2026-09-02T19:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-02T19:46:00-04:00",
+  "aqi": 35,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-02 18:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-02",
+    "aqi": 34,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-02",
+    "aqi": 34,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-04",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-04",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-05",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-05",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-02T19:31:40-04:00",
+  "fetched_at": "2026-09-02T19:46:00-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 1073,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T16:48:30Z"
-   },
    {
     "county": "Broward",
     "roads": [
@@ -249,6 +286,16 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
+    "start": "2026-09-02T23:41:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
     "start": "2026-02-23T10:56:30Z"
    },
    {
@@ -264,19 +311,30 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-825"
+     "FL-821 S",
+     "Florida's Tpke S"
     ],
-    "delay_s": 812,
+    "delay_s": 561,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T16:48:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 405,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-02T18:56:00Z"
+    "start": "2026-09-02T23:25:30Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-854"
     ],
-    "delay_s": 610,
+    "delay_s": 322,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-02T20:11:25Z"
@@ -284,9 +342,30 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 288,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T23:23:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-825"
+    ],
+    "delay_s": 277,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T18:56:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-934"
     ],
-    "delay_s": 357,
+    "delay_s": 221,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-02T23:18:00Z"
@@ -294,24 +373,125 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 S",
-     "FL-5"
+     "US-41 S"
     ],
-    "delay_s": 318,
+    "delay_s": 214,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-02T23:25:30Z"
+    "start": "2026-09-02T23:43:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 S",
-     "FL-5"
+     "FL-985"
     ],
-    "delay_s": 280,
+    "delay_s": 177,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-02T23:23:00Z"
+    "start": "2026-09-02T23:22:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S"
+    ],
+    "delay_s": 163,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T20:26:40Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 158,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T15:57:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 157,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T23:41:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 152,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-09-02T18:36:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 120,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-02T23:28:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 72,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T23:37:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-986"
+    ],
+    "delay_s": 66,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T23:36:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "County Hwy-913",
+     "FL-973"
+    ],
+    "delay_s": 52,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-02T23:37:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 51,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T16:48:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-820"
+    ],
+    "delay_s": 49,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T23:17:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -320,196 +500,64 @@
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 232,
+    "delay_s": 37,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-02T20:17:12Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-9"
+     "FL-822",
+     "FL-A1A"
     ],
-    "delay_s": 226,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T23:25:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": 189,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T23:23:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 176,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T15:57:30Z"
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-07-29T01:44:00Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-858"
+     "FL-842"
     ],
-    "delay_s": 174,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-02T23:26:00Z"
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-07T21:06:54Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-985"
+     "US-27 S",
+     "FL-25"
     ],
-    "delay_s": 164,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T23:22:30Z"
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-04-29T18:52:55Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-934"
+     "US-27 S",
+     "FL-25"
     ],
-    "delay_s": 164,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T23:22:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 163,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-09-02T18:36:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 141,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T23:29:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 133,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-02T23:27:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-974"
-    ],
-    "delay_s": 94,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T23:14:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 79,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T23:00:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S"
-    ],
-    "delay_s": 71,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T20:26:40Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 71,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-02T23:21:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 69,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-02T23:23:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 65,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-02T23:28:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-817"
-    ],
-    "delay_s": 64,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T23:29:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-84"
-    ],
-    "delay_s": 64,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-02T23:28:30Z"
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-04-30T20:30:11Z"
    }
   ],
-  "incident_count": 328,
-  "named_count": 56,
-  "major_count": 9,
+  "incident_count": 302,
+  "named_count": 47,
+  "major_count": 7,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-02T19:31:41-04:00",
+  "fetched_at": "2026-09-02T19:46:01-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -556,7 +604,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-02T19:31:41-04:00",
+  "fetched_at": "2026-09-02T19:46:01-04:00",
   "issued": "800 PM EDT Wed Sep 2 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 022306\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Wed Sep 2 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe Weather Prediction Center is issuing advisories on Tropical \nDepression Edouard, located inland over eastern Texas.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Katz/Hagen"
@@ -564,7 +612,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-02T19:31:41-04:00",
+  "fetched_at": "2026-09-02T19:46:01-04:00",
   "florida": "$3.9755",
   "national": "$4.1203",
   "diesel": "$5.6323",
@@ -573,7 +621,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-02T19:31:42-04:00",
+  "fetched_at": "2026-09-02T19:46:05-04:00",
   "streams": {
    "local": [
     {
@@ -812,6 +860,30 @@
   ],
   "colombia": [
    {
+    "title": "Indicios y pistas que precedieron crimen de los líderes asesinados en un territorio de paz en Cauca: en video, sus peticiones por masacre de Cajibío",
+    "url": "https://www.eltiempo.com/colombia/cali/indicios-y-pistas-que-precedieron-crimen-de-los-lideres-asesinados-en-un-territorio-de-paz-en-cauca-en-video-sus-peticiones-por-masacre-de-cajibio-3583097",
+    "published": "2026-09-02T18:30:45-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a98adf60a24d.r_d.347-308-1.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Andicom: La Unión Europea sella alianza estratégica con Colombia para impulsar la transformación digital y las regiones serán beneficiadas",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/andicom-la-union-europea-sella-alianza-estrategica-con-colombia-para-impulsar-la-transformacion-digital-y-las-regiones-seran-beneficiadas-3583098",
+    "published": "2026-09-02T18:25:04-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/02/6a98a1a5c630d.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Alcalde de Cúcuta se disculpó con Abelardo De La Espriella por no estar en el consejo de seguridad tras carro bomba: dio las razones del atentado",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/alcalde-de-cucuta-se-disculpo-con-abelardo-de-la-espriella-por-no-estar-en-el-consejo-de-seguridad-tras-carro-bomba-dio-las-razones-del-atentado-3583115",
+    "published": "2026-09-02T18:22:38-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2025/04/24/680aca762e417.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "De la tragedia a la renovación: así es el plan de Cali para reconstruir su infraestructura turística tras el terremoto",
     "url": "https://www.eltiempo.com/colombia/cali/de-la-tragedia-a-la-renovacion-asi-es-el-plan-de-cali-para-reconstruir-su-infraestructura-turistica-tras-el-terremoto-3583100",
     "published": "2026-09-02T17:38:19-05:00",
@@ -849,30 +921,6 @@
     "published": "2026-09-02T16:02:50-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a988e9fee785.r_d.660-203-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Cartagena: médicos y personal asistencial del Nuevo Hospital Bocagrande completan cinco meses sin sueldo",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/cartagena-medicos-y-personal-asistencial-del-nuevo-hospital-bocagrande-completan-cinco-meses-sin-sueldo-3583058",
-    "published": "2026-09-02T15:46:17-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/06/21/6a380d24c39ab.r_d.476-400-1.png",
-    "media_type": "image"
-   },
-   {
-    "title": "¿Está lista Cali para reactivar la fiesta del fútbol en el estadio Pascual Guerrero tras el terremoto?",
-    "url": "https://www.eltiempo.com/colombia/cali/esta-lista-cali-para-reactivar-la-fiesta-del-futbol-en-el-estadio-pascual-guerrero-tras-el-terremoto-3583050",
-    "published": "2026-09-02T15:35:02-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/03/27/69c7297d4bbe1.r_d.172-481-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "¡Atención! Se suspenden los cortes de agua en Medellín, pero EPM lanza una dura advertencia: si no se ahorra, volverán y durarán más",
-    "url": "https://www.eltiempo.com/colombia/medellin/atencion-se-suspenden-los-cortes-de-agua-en-medellin-pero-epm-lanza-una-dura-advertencia-si-no-se-ahorra-volveran-y-duraran-mas-3583043",
-    "published": "2026-09-02T14:59:09-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2025/02/11/67ab831a98ad0.png",
     "media_type": "image"
    }
   ],
@@ -946,7 +994,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-02T19:31:43-04:00",
+  "fetched_at": "2026-09-02T19:46:06-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -954,33 +1002,27 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-02T19:31:43-04:00",
+  "fetched_at": "2026-09-02T19:46:06-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
      {
+      "title": "Andicom: La Unión Europea sella alianza estratégica con Colombia para impulsar la transformación digital y las regiones serán beneficiadas",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/andicom-la-union-europea-sella-alianza-estrategica-con-colombia-para-impulsar-la-transformacion-digital-y-las-regiones-seran-beneficiadas-3583098",
+      "published": "2026-09-02T18:25:04-05:00",
+      "section": "colombia"
+     },
+     {
       "title": "De la tragedia a la renovación: así es el plan de Cali para reconstruir su infraestructura turística tras el terremoto",
       "url": "https://www.eltiempo.com/colombia/cali/de-la-tragedia-a-la-renovacion-asi-es-el-plan-de-cali-para-reconstruir-su-infraestructura-turistica-tras-el-terremoto-3583100",
       "published": "2026-09-02T17:38:19-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "¿Está lista Cali para reactivar la fiesta del fútbol en el estadio Pascual Guerrero tras el terremoto?",
-      "url": "https://www.eltiempo.com/colombia/cali/esta-lista-cali-para-reactivar-la-fiesta-del-futbol-en-el-estadio-pascual-guerrero-tras-el-terremoto-3583050",
-      "published": "2026-09-02T15:35:02-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "¡Atención! Se suspenden los cortes de agua en Medellín, pero EPM lanza una dura advertencia: si no se ahorra, volverán y durarán más",
-      "url": "https://www.eltiempo.com/colombia/medellin/atencion-se-suspenden-los-cortes-de-agua-en-medellin-pero-epm-lanza-una-dura-advertencia-si-no-se-ahorra-volveran-y-duraran-mas-3583043",
-      "published": "2026-09-02T14:59:09-05:00",
-      "section": "colombia"
      }
     ],
-    "count": 3,
-    "issue": "De la tragedia a la renovación: así es el plan de Cali para reconstruir su infraestructura turística tras el terremoto"
+    "count": 2,
+    "issue": "Andicom: La Unión Europea sella alianza estratégica con Colombia para impulsar la transformación digital y las regiones serán beneficiadas"
    },
    {
     "iso": "IND",
