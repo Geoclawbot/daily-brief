@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-01T20:46:02-04:00",
- "generated_at_utc": "2026-09-02T00:46:02+00:00",
+ "generated_at": "2026-09-01T21:00:55-04:00",
+ "generated_at_utc": "2026-09-02T01:00:55+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 1",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-01T20:46:02-04:00",
+  "fetched_at": "2026-09-01T21:00:56-04:00",
   "curve": [
    {
     "time": "2026-09-01T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 79.6,
-   "feels": 88.3,
-   "humidity": 87,
-   "wind_mph": 5.4,
-   "wind_dir": 199,
-   "observed_at": "2026-09-01T20:45"
+   "temp": 79.4,
+   "feels": 89.5,
+   "humidity": 88,
+   "wind_mph": 2.5,
+   "wind_dir": 225,
+   "observed_at": "2026-09-01T21:00"
   },
   "today": {
    "high": 89.2,
@@ -164,16 +164,15 @@
   "peak_hour": 13
  },
  "alerts": {
-  "ok": true,
-  "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-01T20:46:03-04:00",
-  "alerts": [],
-  "count": 0
+  "ok": false,
+  "source": "NWS alerts",
+  "fetched_at": "2026-09-01T21:00:56-04:00",
+  "error": "502 Server Error: Bad Gateway for url: https://api.weather.gov/alerts/active?point=25.971228%2C-80.362648"
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-01T20:46:04-04:00",
+  "fetched_at": "2026-09-01T21:00:57-04:00",
   "aqi": 32,
   "category": "Good",
   "pollutant": "PM2.5",
@@ -221,7 +220,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-01T20:46:04-04:00",
+  "fetched_at": "2026-09-01T21:00:57-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -289,9 +288,20 @@
    {
     "county": "Broward",
     "roads": [
+     "FL-91 N",
+     "Florida's Tpke N"
+    ],
+    "delay_s": 596,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T00:26:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
      "FL-817"
     ],
-    "delay_s": 699,
+    "delay_s": 554,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-02T00:06:30Z"
@@ -301,7 +311,7 @@
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 571,
+    "delay_s": 483,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T23:53:30Z"
@@ -309,75 +319,43 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 390,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T00:26:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 321,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T19:44:44Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 302,
+    "delay_s": 346,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-02T00:33:30Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-817"
+     "FL-922"
     ],
-    "delay_s": 138,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-02T00:43:00Z"
+    "delay_s": 203,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T00:58:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-94"
+     "FL-836 W"
     ],
-    "delay_s": 93,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T00:15:30Z"
+    "delay_s": 94,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-02T00:53:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-112 W"
     ],
-    "delay_s": 39,
+    "delay_s": 41,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-02T00:43:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-395 W",
-     "FL-836 W"
-    ],
-    "delay_s": 36,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-02T00:44:00Z"
+    "start": "2026-09-02T00:57:30Z"
    },
    {
     "county": "Broward",
@@ -429,18 +407,18 @@
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-01T13:47:00Z"
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-05-07T11:50:15Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-972"
+     "FL-953"
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-05-07T11:50:15Z"
+    "description": "Roadworks",
+    "start": "2026-09-02T00:49:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -455,26 +433,6 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-01T21:48:55Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 E"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-01T23:49:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-7",
      "US-441 N"
     ],
@@ -482,16 +440,6 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-09-01T08:36:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-01T22:49:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -532,19 +480,64 @@
     ],
     "delay_s": null,
     "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-07-20T13:16:51Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-07-20T13:16:51Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
     "description": "Roadworks",
-    "start": "2026-09-01T21:48:55Z"
+    "start": "2026-08-26T14:23:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-06-18T20:48:14Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-06-27T16:41:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-06-27T16:08:00Z"
    }
   ],
-  "incident_count": 256,
-  "named_count": 36,
-  "major_count": 7,
+  "incident_count": 244,
+  "named_count": 27,
+  "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-01T20:46:05-04:00",
+  "fetched_at": "2026-09-01T21:00:58-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -582,7 +575,8 @@
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 1 2026, 6:10 PM",
-   "Southeast | Palm Beach | There is scheduled road work on Florida's Turnpike northbound and southbound from exit 98, Jog Road, to exit 99, Okeechobee Boulevard. All lanes are scheduled to be closed from 8pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 1 2026, 7:15 PM"
+   "Southeast | Palm Beach | There is scheduled road work on Florida's Turnpike northbound and southbound from exit 98, Jog Road, to exit 99, Okeechobee Boulevard. All lanes are scheduled to be closed from 8pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 1 2026, 7:15 PM",
+   "Northeast | Duval | Jacksonville: there is lane blocking construction on SR-228/Normandy Blvd at SR-23. Use caution in the area and seek alternate routes. | Sep 1 2026, 8:59 PM"
   ],
   "fl511_local": [
    "Southeast | Palm Beach | There is scheduled road work on Florida's Turnpike northbound and southbound from exit 98, Jog Road, to exit 99, Okeechobee Boulevard. All lanes are scheduled to be closed from 8pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 1 2026, 7:15 PM"
@@ -591,7 +585,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-01T20:46:05-04:00",
+  "fetched_at": "2026-09-01T21:00:58-04:00",
   "issued": "800 PM EDT Tue Sep 1 2026",
   "areas": [],
   "raw": "en Español\n\n600 \nABNT20 KNHC 012335\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Tue Sep 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Edouard, located inland over southeastern Texas.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Kelly"
@@ -599,7 +593,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-01T20:46:05-04:00",
+  "fetched_at": "2026-09-01T21:00:58-04:00",
   "florida": "$3.9420",
   "national": "$4.0954",
   "diesel": "$5.5763",
@@ -608,7 +602,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-01T20:46:08-04:00",
+  "fetched_at": "2026-09-01T21:01:00-04:00",
   "streams": {
    "local": [
     {
@@ -981,7 +975,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-01T20:46:08-04:00",
+  "fetched_at": "2026-09-01T21:01:00-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -989,7 +983,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-01T20:46:08-04:00",
+  "fetched_at": "2026-09-01T21:01:00-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -1098,6 +1092,8 @@
   "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [],
- "health": "10/10 sources ok"
+ "failures": [
+  "alerts"
+ ],
+ "health": "9/10 sources ok"
 }
