@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-02T11:15:59-04:00",
- "generated_at_utc": "2026-09-02T15:15:59+00:00",
+ "generated_at": "2026-09-02T11:31:01-04:00",
+ "generated_at_utc": "2026-09-02T15:31:01+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 2",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-02T11:16:00-04:00",
+  "fetched_at": "2026-09-02T11:31:02-04:00",
   "curve": [
    {
     "time": "2026-09-02T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 86.6,
-   "feels": 98.1,
-   "humidity": 74,
-   "wind_mph": 2.7,
-   "wind_dir": 235,
-   "observed_at": "2026-09-02T11:15"
+   "temp": 87.0,
+   "feels": 99.5,
+   "humidity": 73,
+   "wind_mph": 1.1,
+   "wind_dir": 259,
+   "observed_at": "2026-09-02T11:30"
   },
   "today": {
    "high": 91.4,
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-02T11:16:00-04:00",
+  "fetched_at": "2026-09-02T11:31:02-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-02T11:16:01-04:00",
-  "aqi": 10,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-02 10:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-02T11:31:28-04:00",
+  "aqi": 60,
+  "category": "Moderate",
+  "pm25": 14.8,
+  "pm10": 18.3,
+  "observed": "2026-09-02T11:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-02T11:16:01-04:00",
+  "fetched_at": "2026-09-02T11:31:28-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -231,7 +195,7 @@
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 1136,
+    "delay_s": 959,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-02T12:53:04Z"
@@ -329,9 +293,20 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 468,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T15:16:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "US-41 S"
     ],
-    "delay_s": 587,
+    "delay_s": 352,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-02T12:31:24Z"
@@ -339,59 +314,29 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-990"
-    ],
-    "delay_s": 586,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T14:47:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-858"
-    ],
-    "delay_s": 383,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T15:10:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-959"
-    ],
-    "delay_s": 361,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T15:10:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-934"
     ],
-    "delay_s": 296,
+    "delay_s": 326,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-02T14:04:32Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-824"
+     "FL-836 E"
     ],
-    "delay_s": 273,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T15:09:30Z"
+    "delay_s": 319,
+    "magnitude": 2,
+    "description": "Queuing traffic; Roadworks",
+    "start": "2026-09-02T13:04:12Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-953"
     ],
-    "delay_s": 246,
+    "delay_s": 303,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-02T14:53:30Z"
@@ -401,7 +346,7 @@
     "roads": [
      "FL-934"
     ],
-    "delay_s": 216,
+    "delay_s": 229,
     "magnitude": 3,
     "description": "Stationary traffic; Roadworks",
     "start": "2026-09-02T14:56:00Z"
@@ -409,13 +354,53 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "FL-5"
+     "US-41 S",
+     "US-41 N"
     ],
-    "delay_s": 214,
+    "delay_s": 211,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T15:22:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-990"
+    ],
+    "delay_s": 210,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-02T14:32:30Z"
+    "start": "2026-09-02T14:47:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 208,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T15:29:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-959"
+    ],
+    "delay_s": 198,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T15:10:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 194,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T15:20:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -423,121 +408,105 @@
      "US-41 W",
      "US-41 E"
     ],
-    "delay_s": 210,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 183,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-09-02T14:42:30Z"
    },
    {
-    "county": "Broward",
-    "roads": [
-     "FL-858"
-    ],
-    "delay_s": 206,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T15:11:00Z"
-   },
-   {
     "county": "Miami-Dade",
     "roads": [
-     "FL-9"
+     "US-1 N",
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 199,
+    "delay_s": 177,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-02T15:11:00Z"
+    "start": "2026-09-02T15:29:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 E"
+     "FL-953"
     ],
-    "delay_s": 182,
-    "magnitude": 1,
-    "description": "Slow traffic; Roadworks",
-    "start": "2026-09-02T13:04:12Z"
+    "delay_s": 171,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T15:29:00Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-A1A"
+     "FL-968"
     ],
-    "delay_s": 172,
+    "delay_s": 161,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-02T15:08:30Z"
+    "start": "2026-09-02T15:26:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 155,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T15:12:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 167,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T14:40:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-932"
-    ],
-    "delay_s": 166,
+    "delay_s": 134,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-02T15:11:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-994"
-    ],
-    "delay_s": 163,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T15:13:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-824"
-    ],
-    "delay_s": 156,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T15:08:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-9"
-    ],
-    "delay_s": 147,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-02T15:14:00Z"
+    "start": "2026-09-02T15:27:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-972"
     ],
-    "delay_s": 141,
+    "delay_s": 112,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-02T15:12:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-948"
+    ],
+    "delay_s": 97,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T15:22:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Florida's Tpke N",
+     "FL-821 N"
+    ],
+    "delay_s": 90,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-02T13:59:00Z"
    }
   ],
-  "incident_count": 302,
-  "named_count": 63,
+  "incident_count": 300,
+  "named_count": 59,
   "major_count": 10,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-02T11:16:02-04:00",
+  "fetched_at": "2026-09-02T11:31:29-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -585,7 +554,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-02T11:16:02-04:00",
+  "fetched_at": "2026-09-02T11:31:29-04:00",
   "issued": "800 AM EDT Wed Sep 2 2026",
   "areas": [],
   "raw": "en Español\n\n345 \nABNT20 KNHC 021129\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Wed Sep 2 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe Weather Prediction Center is issuing advisories on Tropical \nDepression Edouard, located inland over southeastern Texas.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Reinhart"
@@ -593,7 +562,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-02T11:16:02-04:00",
+  "fetched_at": "2026-09-02T11:31:30-04:00",
   "florida": "$3.9755",
   "national": "$4.1203",
   "diesel": "$5.6323",
@@ -602,7 +571,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-02T11:16:04-04:00",
+  "fetched_at": "2026-09-02T11:31:31-04:00",
   "streams": {
    "local": [
     {
@@ -711,6 +680,14 @@
   ],
   "local": [
    {
+    "title": "Man, 75, accused of stabbing wife while she was sleeping",
+    "url": "https://www.local10.com/news/local/2026/09/02/man-75-accused-of-stabbing-wife-while-she-was-sleeping/",
+    "published": "Wed, 02 Sep 2026 15:25:08 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/D6E4NRCGFZHKVKOOOEVRDSVZGM.jpg?auth=58d3e5b0c3d3b59c21f6fe8e670e97d1f5da0cba03fecd49b9c2b4d5eafae756&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
     "title": "Teen accused of stabbing peer at Miami Northwestern Senior High School identified; 2 others also arrested",
     "url": "https://www.local10.com/news/local/2026/09/02/teen-accused-of-stabbing-peer-at-miami-northwestern-senior-high-school-identified-2-others-also-arrested/",
     "published": "Wed, 02 Sep 2026 15:02:52 +0000",
@@ -762,14 +739,6 @@
     "title": "DeSantis’ Flock camera removal order ‘going to take a hit on public safety,’ local officials say",
     "url": "https://www.local10.com/news/local/2026/09/01/desantis-flock-camera-removal-order-going-to-take-a-hit-on-public-safety-local-officials-say/",
     "published": "Tue, 01 Sep 2026 21:14:43 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Miami Beach officers honored for helping save man in crisis",
-    "url": "https://www.local10.com/news/local/2026/09/01/miami-beach-officers-honored-for-helping-save-man-in-crisis/",
-    "published": "Tue, 01 Sep 2026 21:42:04 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -841,6 +810,30 @@
   ],
   "colombia": [
    {
+    "title": "Feminicidio estremeció a Barrancabermeja: ofrecen recompensa y la ciudad se paraliza para buscar al sujeto responsable de este crimen",
+    "url": "https://www.eltiempo.com/colombia/santander/feminicidio-estremecio-a-barrancabermeja-ofrecen-recompensa-y-la-ciudad-se-paraliza-para-buscar-al-sujeto-responsable-de-este-crimen-3582941",
+    "published": "2026-09-02T10:26:49-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a983ef532d94.r_d.213-220-2.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "El conmovedor reencuentro de Diana Troncoso, uno de los símbolos de esperanza por el terremoto, con el alcalde de Cali: 'Hoy respiro por ustedes'",
+    "url": "https://www.eltiempo.com/colombia/cali/el-conmovedor-reencuentro-de-diana-troncoso-uno-de-los-simbolos-de-esperanza-por-el-terremoto-con-el-alcalde-de-cali-hoy-respiro-por-ustedes-3582940",
+    "published": "2026-09-02T10:22:13-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a9838f75c8c7.r_d.222-498-0.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "La tecnología de videovigilancia acorrala al crimen en Medellín: en promedio son 4 capturas diarias y más de 6 vehículos recuperados en 2026",
+    "url": "https://www.eltiempo.com/colombia/medellin/la-tecnologia-de-videovigilancia-acorrala-al-crimen-en-medellin-en-promedio-son-4-capturas-diarias-y-mas-de-6-vehiculos-recuperados-en-3582951",
+    "published": "2026-09-02T10:14:03-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2025/11/15/6918997447ec7.png",
+    "media_type": "image"
+   },
+   {
     "title": "Cúcuta amanece bajo máxima alerta tras ataque con carro bomba a estación de Policía de Los Patios y segundo ataque neutralizado: aún no hay capturas",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/cucuta-amanece-bajo-maxima-alerta-tras-ataque-con-carro-bomba-a-estacion-de-policia-de-los-patios-y-segundo-ataque-neutralizado-aun-no-hay-capturas-3582932",
     "published": "2026-09-02T09:50:04-05:00",
@@ -879,33 +872,17 @@
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/02/6a9823c29e6ae.jpeg",
     "media_type": "image"
-   },
-   {
-    "title": "El nuevo comienzo para los primeros damnificados del terremoto en Cali y el plan estratégico de reconstrucción, según Minvivienda: 'Es una bendición'",
-    "url": "https://www.eltiempo.com/colombia/cali/el-nuevo-comienzo-para-primeros-damnificados-del-terremoto-en-cali-y-el-plan-estrategico-de-reconstruccion-segun-minvivienda-es-una-bendicion-3582890",
-    "published": "2026-09-02T09:23:32-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/02/6a981f3c8beff.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Totoró bajo vigilancia por enjambre sísmico cerca del volcán Puracé: continúa la alerta naranja tras un mes de actividad",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/totoro-bajo-vigilancia-por-enjambre-sismico-cerca-del-volcan-purace-continua-la-alerta-naranja-tras-un-mes-de-actividad-3582881",
-    "published": "2026-09-02T07:26:41-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a980ff5e8e1c.r_d.1110-237-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "¿Por qué no habrá racionamiento de agua en Cali, pese a El Niño? Esto informaron en la Alcaldía y en la empresa de servicios públicos de la ciudad",
-    "url": "https://www.eltiempo.com/colombia/cali/por-que-no-habra-racionamiento-de-agua-en-cali-pese-a-el-nino-esto-informaron-en-la-alcaldia-y-en-la-empresa-de-servicios-publicos-de-la-ciudad-3582879",
-    "published": "2026-09-02T07:20:44-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/05/26/6a15e4d3eb987.jpeg",
-    "media_type": "image"
    }
   ],
   "world": [
+   {
+    "title": "Iran fires on its Gulf neighbors, retaliating for U.S. strikes after a monthlong lull",
+    "url": "https://www.npr.org/2026/09/02/nx-s1-5954013/us-iran-war-latest-updates",
+    "published": "Wed, 02 Sep 2026 11:18:09 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
    {
     "title": "Greetings from the Royal Pavilion, a stunning reminder of India in southern England",
     "url": "https://www.npr.org/2026/09/02/nx-s1-5952243/royal-pavilion-brighton-england-architecture-india",
@@ -961,21 +938,13 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "U.S. military strikes Iran, while Trump vows more for Tehran's retaliation",
-    "url": "https://www.npr.org/2026/09/02/g-s1-141500/us-iran-war",
-    "published": "Wed, 02 Sep 2026 02:15:11 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-02T11:16:04-04:00",
+  "fetched_at": "2026-09-02T11:31:32-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -983,27 +952,27 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-02T11:16:04-04:00",
+  "fetched_at": "2026-09-02T11:31:32-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
      {
-      "title": "El nuevo comienzo para los primeros damnificados del terremoto en Cali y el plan estratégico de reconstrucción, según Minvivienda: 'Es una bendición'",
-      "url": "https://www.eltiempo.com/colombia/cali/el-nuevo-comienzo-para-primeros-damnificados-del-terremoto-en-cali-y-el-plan-estrategico-de-reconstruccion-segun-minvivienda-es-una-bendicion-3582890",
-      "published": "2026-09-02T09:23:32-05:00",
+      "title": "El conmovedor reencuentro de Diana Troncoso, uno de los símbolos de esperanza por el terremoto, con el alcalde de Cali: 'Hoy respiro por ustedes'",
+      "url": "https://www.eltiempo.com/colombia/cali/el-conmovedor-reencuentro-de-diana-troncoso-uno-de-los-simbolos-de-esperanza-por-el-terremoto-con-el-alcalde-de-cali-hoy-respiro-por-ustedes-3582940",
+      "published": "2026-09-02T10:22:13-05:00",
       "section": "colombia"
      },
      {
-      "title": "¿Por qué no habrá racionamiento de agua en Cali, pese a El Niño? Esto informaron en la Alcaldía y en la empresa de servicios públicos de la ciudad",
-      "url": "https://www.eltiempo.com/colombia/cali/por-que-no-habra-racionamiento-de-agua-en-cali-pese-a-el-nino-esto-informaron-en-la-alcaldia-y-en-la-empresa-de-servicios-publicos-de-la-ciudad-3582879",
-      "published": "2026-09-02T07:20:44-05:00",
+      "title": "La tecnología de videovigilancia acorrala al crimen en Medellín: en promedio son 4 capturas diarias y más de 6 vehículos recuperados en 2026",
+      "url": "https://www.eltiempo.com/colombia/medellin/la-tecnologia-de-videovigilancia-acorrala-al-crimen-en-medellin-en-promedio-son-4-capturas-diarias-y-mas-de-6-vehiculos-recuperados-en-3582951",
+      "published": "2026-09-02T10:14:03-05:00",
       "section": "colombia"
      }
     ],
     "count": 2,
-    "issue": "El nuevo comienzo para los primeros damnificados del terremoto en Cali y el plan estratégico de reconstrucción, según Minvivienda: 'Es una bendición'"
+    "issue": "El conmovedor reencuentro de Diana Troncoso, uno de los símbolos de esperanza por el terremoto, con el alcalde de Cali: 'Hoy respiro por ustedes'"
    },
    {
     "iso": "IND",
@@ -1030,20 +999,20 @@
     "name": "Iran",
     "stories": [
      {
+      "title": "Iran fires on its Gulf neighbors, retaliating for U.S. strikes after a monthlong lull",
+      "url": "https://www.npr.org/2026/09/02/nx-s1-5954013/us-iran-war-latest-updates",
+      "published": "Wed, 02 Sep 2026 11:18:09 -0400",
+      "section": "world"
+     },
+     {
       "title": "Putin signals support for Iran in ongoing war with the U.S.",
       "url": "https://www.npr.org/2026/09/02/nx-s1-5953036/putin-signals-support-for-iran-in-ongoing-war-with-the-u-s",
       "published": "Wed, 02 Sep 2026 04:41:42 -0400",
       "section": "world"
-     },
-     {
-      "title": "U.S. military strikes Iran, while Trump vows more for Tehran's retaliation",
-      "url": "https://www.npr.org/2026/09/02/g-s1-141500/us-iran-war",
-      "published": "Wed, 02 Sep 2026 02:15:11 -0400",
-      "section": "world"
      }
     ],
     "count": 2,
-    "issue": "Putin signals support for Iran in ongoing war with the U.S."
+    "issue": "Iran fires on its Gulf neighbors, retaliating for U.S. strikes after a monthlong lull"
    },
    {
     "iso": "RUS",
