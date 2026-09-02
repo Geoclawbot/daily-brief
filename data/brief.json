@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-01T22:45:58-04:00",
- "generated_at_utc": "2026-09-02T02:45:58+00:00",
+ "generated_at": "2026-09-01T23:00:56-04:00",
+ "generated_at_utc": "2026-09-02T03:00:56+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 1",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-01T22:45:59-04:00",
+  "fetched_at": "2026-09-01T23:00:56-04:00",
   "curve": [
    {
     "time": "2026-09-01T05:00",
@@ -148,11 +148,11 @@
   ],
   "current": {
    "temp": 78.6,
-   "feels": 87.9,
-   "humidity": 89,
-   "wind_mph": 3.8,
-   "wind_dir": 315,
-   "observed_at": "2026-09-01T22:45"
+   "feels": 88.3,
+   "humidity": 90,
+   "wind_mph": 3.3,
+   "wind_dir": 340,
+   "observed_at": "2026-09-01T23:00"
   },
   "today": {
    "high": 89.2,
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-01T22:45:59-04:00",
+  "fetched_at": "2026-09-01T23:00:56-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-01T22:46:00-04:00",
-  "aqi": 38,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-01 21:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-01T23:01:22-04:00",
+  "aqi": 53,
+  "category": "Moderate",
+  "pm25": 8.7,
+  "pm10": 9.2,
+  "observed": "2026-09-01T23:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-01T22:46:00-04:00",
+  "fetched_at": "2026-09-01T23:01:22-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -234,7 +198,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -244,7 +208,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -362,27 +326,27 @@
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 336,
+    "delay_s": 492,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-02T02:21:00Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-836 E"
+     "I-95 N"
     ],
-    "delay_s": 193,
+    "delay_s": 285,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-02T01:09:00Z"
+    "start": "2026-09-02T02:47:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 154,
+    "delay_s": 200,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-02T02:26:30Z"
@@ -390,22 +354,76 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-7",
+     "FL-9",
+     "US-441 S"
+    ],
+    "delay_s": 179,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T02:59:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "I-95 S"
     ],
-    "delay_s": 145,
+    "delay_s": 126,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-02T02:16:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 E"
+    ],
+    "delay_s": 96,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-02T01:09:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 51,
+    "delay_s": 75,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-02T02:32:30Z"
+    "start": "2026-09-02T02:58:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 73,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-02T02:47:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 57,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T02:55:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 N",
+     "Florida's Tpke N"
+    ],
+    "delay_s": 42,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-09-02T02:49:30Z"
    },
    {
     "county": "Broward",
@@ -467,81 +485,29 @@
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-05-07T11:50:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
     "description": "Roadworks",
-    "start": "2026-09-02T00:49:00Z"
+    "start": "2026-09-02T02:49:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-934"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-01T04:46:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-7",
-     "US-441 N"
+     "FL-972"
     ],
     "delay_s": null,
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-01T08:36:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-13T10:30:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-395 W"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-08-21T08:47:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-03T13:43:04Z"
+    "start": "2026-05-07T11:50:15Z"
    }
   ],
-  "incident_count": 261,
-  "named_count": 34,
+  "incident_count": 267,
+  "named_count": 40,
   "major_count": 13,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-01T22:46:01-04:00",
+  "fetched_at": "2026-09-01T23:01:23-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -593,7 +559,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-01T22:46:01-04:00",
+  "fetched_at": "2026-09-01T23:01:23-04:00",
   "issued": "800 PM EDT Tue Sep 1 2026",
   "areas": [],
   "raw": "en Español\n\n600 \nABNT20 KNHC 012335\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Tue Sep 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Edouard, located inland over southeastern Texas.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Kelly"
@@ -601,7 +567,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-01T22:46:01-04:00",
+  "fetched_at": "2026-09-01T23:01:23-04:00",
   "florida": "$3.9420",
   "national": "$4.0954",
   "diesel": "$5.5763",
@@ -610,7 +576,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-01T22:46:03-04:00",
+  "fetched_at": "2026-09-01T23:01:25-04:00",
   "streams": {
    "local": [
     {
@@ -783,35 +749,35 @@
     "media_type": null
    },
    {
-    "title": "Memorial honoring victims of Marjory Stoneman Douglas mass shooting set to begin construction",
-    "url": "https://wsvn.com/news/local/broward/memorial-honoring-victims-of-marjory-stoneman-douglas-mass-shooting-set-to-begin-construction/",
-    "published": "Mon, 31 Aug 2026 20:03:14 +0000",
+    "title": "Miccosukee Tribe opens new plaza along Tamiami Trail for Everglades tourists",
+    "url": "https://wsvn.com/news/local/miami-dade/miccosukee-tribe-opens-new-plaza-along-tamiami-trail-for-everglades-tourists/",
+    "published": "Tue, 01 Sep 2026 22:14:59 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/34dff28b-3c4b-4ee5-80ab-2e5afea7b6e0/56c2ad15-52fa-4ec0-b535-efaa6722a3b1/main.mp4?fastly_token=NmE5NjNiNTJfYTVhZDJiYjA4ZWY5N2ZkNGRmZWM2NWZkYmExNmMzZGEzODFjOGRhYzRjNGFiMzlhZGE3YzEzYmU3NTFhY2YwMl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zNGRmZjI4Yi0zYzRiLTRlZTUtODBhYi0yZTVhZmVhN2I2ZTAvNTZjMmFkMTUtNTJmYS00ZWMwLWI1MzUtZWZhYTY3MjJhM2IxL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/048953dc-107c-409c-884a-41442e8def2b/ff58b71d-d0a7-47cc-8909-976e064a0f38/main.mp4?fastly_token=NmE5N2E2NmNfMjY3NDg1Y2I3MWQzMDBmOGFmYWJkZjUwZDg2ZTcyZDRkY2M4MDQyMzQ3MmJkNTYwNjg0ZGU4YzdmYTMwMjFkYV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8wNDg5NTNkYy0xMDdjLTQwOWMtODg0YS00MTQ0MmU4ZGVmMmIvZmY1OGI3MWQtZDBhNy00N2NjLTg5MDktOTc2ZTA2NGEwZjM4L21haW4ubXA0",
     "media_type": "video"
    },
    {
-    "title": "Man accused of injuring 3 during high-speed pursuit on I-95 makes court appearance",
-    "url": "https://wsvn.com/news/local/miami-dade/man-accused-of-injuring-3-during-high-speed-pursuit-on-i-95-makes-court-appearance/",
-    "published": "Mon, 31 Aug 2026 21:11:17 +0000",
+    "title": "Driver hospitalized after crashing into building in Sunrise",
+    "url": "https://wsvn.com/news/local/broward/driver-hospitalized-after-crashing-into-building-in-sunrise/",
+    "published": "Tue, 01 Sep 2026 23:42:47 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/617666b6-d8c1-4208-92fb-9e5981c6dacf/28596161-158f-4d49-99e6-5d3fd84b1329/main.mp4?fastly_token=NmE5NjQ2MGRfYTlmNTRlYzMwMWQyMTYxNGM1MGNjMTAxNWNiNWYxYjU0NmQxNWE5MjAwNzY4ODFiOWEwMWFiMmQ0NjUxNjY0OF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82MTc2NjZiNi1kOGMxLTQyMDgtOTJmYi05ZTU5ODFjNmRhY2YvMjg1OTYxNjEtMTU4Zi00ZDQ5LTk5ZTYtNWQzZmQ4NGIxMzI5L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1d637373-16d9-4c6e-9c20-66106a73f8bb/3456b42a-c760-4f71-a5fb-ec316dafccb1/main.mp4?fastly_token=NmE5N2JhZjhfZWRlY2ZhY2M0NzdjZTI1NjI2YjE4OGQ1NmUwZDIzNzNiOGY1Y2YwZDQ5YjJkZTEwODIyMDY4MjM3ZWNjYjMxYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xZDYzNzM3My0xNmQ5LTRjNmUtOWMyMC02NjEwNmE3M2Y4YmIvMzQ1NmI0MmEtYzc2MC00ZjcxLWE1ZmItZWMzMTZkYWZjY2IxL21haW4ubXA0",
     "media_type": "video"
    },
    {
-    "title": "Man arrested after joking about grenade in luggage at MIA, deputies say",
-    "url": "https://wsvn.com/news/local/miami-dade/man-arrested-after-joking-about-grenade-in-luggage-at-mia-deputies-say/",
-    "published": "Mon, 31 Aug 2026 18:55:28 +0000",
+    "title": "Search underway for 14-year-old reported missing from Miami Gardens",
+    "url": "https://wsvn.com/news/local/miami-dade/search-underway-for-14-year-old-reported-missing-from-miami-gardens/",
+    "published": "Wed, 02 Sep 2026 01:21:29 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/08/Osniel-Blanco-Lopez.png",
+    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Screenshot-2026-09-01-185305.png",
     "media_type": "image"
    },
    {
-    "title": "5 arrested after confrontation with PBSO at funeral procession in Boynton Beach; family questions deputies’ use of force",
-    "url": "https://wsvn.com/news/local/florida/5-arrested-after-confrontation-with-pbso-at-funeral-procession-in-boynton-beach-family-questions-deputies-use-of-force/",
-    "published": "Mon, 31 Aug 2026 21:38:40 +0000",
+    "title": "FBI renews reward for information about South Florida woman missing in Spain",
+    "url": "https://wsvn.com/news/us-world/fbi-renews-reward-for-information-about-south-florida-woman-missing-in-spain/",
+    "published": "Tue, 01 Sep 2026 21:05:30 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/976baac1-0490-4d6c-84c0-4975cfbff5f3/a1ab484c-fa22-4646-9401-a845e5e4e8f4/main.mp4?fastly_token=NmE5NmYxOThfODI5NTU5ZGZjODJhNTA0OGIyNjY1NTc2MzA3MjU1MTVmNjk3NzI5YzdkMzlmMjg1YTQ0NzZhZjc3MTAzZWMzZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85NzZiYWFjMS0wNDkwLTRkNmMtODRjMC00OTc1Y2ZiZmY1ZjMvYTFhYjQ4NGMtZmEyMi00NjQ2LTk0MDEtYTg0NWU1ZTRlOGY0L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/56743d99-e300-4513-9487-c9437488bb3c/fcf49b57-01bd-4c34-9fd6-fd5b1f9dfdcf/main.mp4?fastly_token=NmE5Nzk2MjVfMWQ3NjI0Mzc5OTI2YTM0ZGJmOWVmZGMwZTk1YTU5OTI0YzUwOWNlNmY4NWFkN2Y1MTcyZjE3NTk4YWIzYTRiZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81Njc0M2Q5OS1lMzAwLTQ1MTMtOTQ4Ny1jOTQzNzQ4OGJiM2MvZmNmNDliNTctMDFiZC00YzM0LTlmZDYtZmQ1YjFmOWRmZGNmL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -843,7 +809,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/mdso-3-arrested-after-brawl-leads-to-stabbing-at-miami-northwestern-senior-high/",
     "published": "Tue, 01 Sep 2026 21:17:24 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1c03bc2b-5cde-48a3-aa79-920b1bf3e743/410f4a08-a0b8-4620-a597-a6b98bcfd996/main.mp4?fastly_token=NmE5N2RmM2RfZmM0ZjIyY2U4M2MxODRkMTZmMjRiYzgwNzMwNTZjZjJkNTgwMzYwMjAzY2RlNmIwMTViOGVkNmFhOGM2ODcyM18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xYzAzYmMyYi01Y2RlLTQ4YTMtYWE3OS05MjBiMWJmM2U3NDMvNDEwZjRhMDgtYTBiOC00NjIwLWE1OTctYTZiOThiY2ZkOTk2L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1c03bc2b-5cde-48a3-aa79-920b1bf3e743/410f4a08-a0b8-4620-a597-a6b98bcfd996/main.mp4?fastly_token=NmE5N2U0M2NfY2QyOGJkOWQ4ODBmYzI0YWE5NDE3MzM0MmQyZWQwMTA5NGQzNTYwMzk0NmI3ZDU2ZDc5Mjg3MjI5ZmYwMDg0Zl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xYzAzYmMyYi01Y2RlLTQ4YTMtYWE3OS05MjBiMWJmM2U3NDMvNDEwZjRhMDgtYTBiOC00NjIwLWE1OTctYTZiOThiY2ZkOTk2L21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -851,7 +817,7 @@
    {
     "title": "Temblor hoy en Colombia | Sismo de magnitud mayor a 3 fue reportado este 1.º de septiembre en Chocó: alertan que se sintió en Cali y otras ciudades",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-sismo-de-magnitud-mayor-a-3-en-choco-fue-reportado-en-la-noche-de-este-martes-1-o-de-septiembre-profundidad-y-epicentro-3582850",
-    "published": "2026-09-01T21:32:41-05:00",
+    "published": "2026-09-01T21:49:27-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/02/17/6994ddc945ce2.r_d.354-162-0.jpeg",
     "media_type": "image"
@@ -983,7 +949,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-01T22:46:04-04:00",
+  "fetched_at": "2026-09-01T23:01:25-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -991,7 +957,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-01T22:46:04-04:00",
+  "fetched_at": "2026-09-01T23:01:25-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -1000,7 +966,7 @@
      {
       "title": "Temblor hoy en Colombia | Sismo de magnitud mayor a 3 fue reportado este 1.º de septiembre en Chocó: alertan que se sintió en Cali y otras ciudades",
       "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-sismo-de-magnitud-mayor-a-3-en-choco-fue-reportado-en-la-noche-de-este-martes-1-o-de-septiembre-profundidad-y-epicentro-3582850",
-      "published": "2026-09-01T21:32:41-05:00",
+      "published": "2026-09-01T21:49:27-05:00",
       "section": "colombia"
      },
      {
@@ -1068,6 +1034,20 @@
     "issue": "Trump's plan for economic D-day for Iran has one big hole: China"
    },
    {
+    "iso": "ESP",
+    "name": "Spain",
+    "stories": [
+     {
+      "title": "FBI renews reward for information about South Florida woman missing in Spain",
+      "url": "https://wsvn.com/news/us-world/fbi-renews-reward-for-information-about-south-florida-woman-missing-in-spain/",
+      "published": "Tue, 01 Sep 2026 21:05:30 +0000",
+      "section": "local"
+     }
+    ],
+    "count": 1,
+    "issue": "FBI renews reward for information about South Florida woman missing in Spain"
+   },
+   {
     "iso": "USA",
     "name": "United States",
     "stories": [
@@ -1097,7 +1077,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 6,
+  "countries_matched": 7,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
