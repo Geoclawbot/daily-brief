@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-02T18:30:57-04:00",
- "generated_at_utc": "2026-09-02T22:30:57+00:00",
+ "generated_at": "2026-09-02T18:45:55-04:00",
+ "generated_at_utc": "2026-09-02T22:45:55+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 2",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-02T18:30:58-04:00",
+  "fetched_at": "2026-09-02T18:45:56-04:00",
   "curve": [
    {
     "time": "2026-09-02T05:00",
@@ -109,50 +109,50 @@
     "time": "2026-09-02T17:00",
     "hour": 17,
     "temp": 90.1,
-    "feels": 98.8,
-    "humidity": 59,
+    "feels": 100.9,
+    "humidity": 66,
     "pop": 51
    },
    {
     "time": "2026-09-02T18:00",
     "hour": 18,
     "temp": 88.7,
-    "feels": 97.0,
-    "humidity": 64,
+    "feels": 97.8,
+    "humidity": 67,
     "pop": 42
    },
    {
     "time": "2026-09-02T19:00",
     "hour": 19,
     "temp": 86.2,
-    "feels": 96.7,
-    "humidity": 75,
+    "feels": 95.9,
+    "humidity": 72,
     "pop": 53
    },
    {
     "time": "2026-09-02T20:00",
     "hour": 20,
     "temp": 79.4,
-    "feels": 88.5,
-    "humidity": 85,
+    "feels": 89.8,
+    "humidity": 91,
     "pop": 43
    },
    {
     "time": "2026-09-02T21:00",
     "hour": 21,
     "temp": 78.9,
-    "feels": 88.1,
-    "humidity": 89,
+    "feels": 88.6,
+    "humidity": 91,
     "pop": 33
    }
   ],
   "current": {
-   "temp": 87.5,
-   "feels": 96.4,
-   "humidity": 69,
-   "wind_mph": 6.2,
-   "wind_dir": 139,
-   "observed_at": "2026-09-02T18:30"
+   "temp": 87.1,
+   "feels": 94.1,
+   "humidity": 70,
+   "wind_mph": 10.7,
+   "wind_dir": 157,
+   "observed_at": "2026-09-02T18:45"
   },
   "today": {
    "high": 91.2,
@@ -166,26 +166,74 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-02T18:30:58-04:00",
+  "fetched_at": "2026-09-02T18:45:56-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-02T18:31:24-04:00",
-  "aqi": 61,
-  "category": "Moderate",
-  "pm25": 9.1,
-  "pm10": 11.6,
-  "observed": "2026-09-02T18:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-02T18:45:57-04:00",
+  "aqi": 32,
+  "category": "Good",
+  "pollutant": "O3",
+  "reporting_area": "Miami",
+  "observed": "2026-09-02 17:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-02",
+    "aqi": 34,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-02",
+    "aqi": 34,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-04",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-04",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-05",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-05",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-02T18:31:25-04:00",
+  "fetched_at": "2026-09-02T18:45:57-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -195,7 +243,7 @@
     "roads": [
      "FL-825"
     ],
-    "delay_s": 3197,
+    "delay_s": 2183,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-02T18:56:00Z"
@@ -205,7 +253,7 @@
     "roads": [
      "FL-854"
     ],
-    "delay_s": 2056,
+    "delay_s": 1556,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-02T20:11:25Z"
@@ -216,20 +264,10 @@
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 1680,
+    "delay_s": 1521,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-02T16:48:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-25"
-    ],
-    "delay_s": 1654,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T19:01:41Z"
    },
    {
     "county": "Broward",
@@ -272,17 +310,6 @@
     "start": "2026-07-16T20:45:02Z"
    },
    {
-    "county": "Broward",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-02T20:15:29Z"
-   },
-   {
     "county": "Miami-Dade",
     "roads": [
      "FL-986"
@@ -319,7 +346,7 @@
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 895,
+    "delay_s": 784,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-02T20:17:12Z"
@@ -327,9 +354,19 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 694,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T17:41:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-953"
     ],
-    "delay_s": 891,
+    "delay_s": 662,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-02T20:21:14Z"
@@ -337,90 +374,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 825,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T17:41:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 S"
-    ],
-    "delay_s": 728,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T18:47:33Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-948"
-    ],
-    "delay_s": 725,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T20:55:23Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 610,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-02T19:21:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 576,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T20:07:14Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 569,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-02T19:55:43Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 453,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-02T22:10:34Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-997"
-    ],
-    "delay_s": 398,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T21:54:23Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-953"
     ],
-    "delay_s": 390,
+    "delay_s": 590,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-02T15:57:30Z"
@@ -428,29 +384,29 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-986"
+     "FL-948"
     ],
-    "delay_s": 371,
+    "delay_s": 575,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-02T21:24:17Z"
+    "start": "2026-09-02T20:55:23Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-860"
+     "FL-826 S"
     ],
-    "delay_s": 368,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-02T21:39:01Z"
+    "delay_s": 537,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T18:47:33Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 349,
+    "delay_s": 420,
     "magnitude": 3,
     "description": "Stationary traffic; Roadworks",
     "start": "2026-09-02T18:36:30Z"
@@ -458,13 +414,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 S",
-     "FL-5"
+     "FL-860"
     ],
-    "delay_s": 342,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T20:58:55Z"
+    "delay_s": 418,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T21:39:01Z"
    },
    {
     "county": "Miami-Dade",
@@ -472,7 +427,7 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 337,
+    "delay_s": 365,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-02T21:24:52Z"
@@ -480,33 +435,126 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 N"
+     "FL-986"
     ],
-    "delay_s": 332,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-02T16:57:00Z"
+    "delay_s": 357,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T22:35:06Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-934"
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 332,
+    "delay_s": 288,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-02T22:03:17Z"
+    "start": "2026-09-02T21:27:34Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-992"
+    ],
+    "delay_s": 287,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T21:25:28Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 284,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-02T19:21:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 281,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T22:25:59Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 271,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T22:21:43Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-94"
+    ],
+    "delay_s": 265,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T18:19:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 251,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T21:02:53Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 249,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T21:11:06Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-997"
+    ],
+    "delay_s": 245,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T21:54:23Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S"
+    ],
+    "delay_s": 244,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T20:26:40Z"
    }
   ],
-  "incident_count": 524,
-  "named_count": 159,
-  "major_count": 18,
+  "incident_count": 447,
+  "named_count": 115,
+  "major_count": 13,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-02T18:31:25-04:00",
+  "fetched_at": "2026-09-02T18:45:58-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -551,7 +599,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-02T18:31:25-04:00",
+  "fetched_at": "2026-09-02T18:45:58-04:00",
   "issued": "200 PM EDT Wed Sep 2 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 021716\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Wed Sep 2 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe Weather Prediction Center is issuing advisories on Tropical \nDepression Edouard, located inland over eastern Texas.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Reinhart"
@@ -559,7 +607,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-02T18:31:25-04:00",
+  "fetched_at": "2026-09-02T18:45:58-04:00",
   "florida": "$3.9755",
   "national": "$4.1203",
   "diesel": "$5.6323",
@@ -568,7 +616,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-02T18:31:26-04:00",
+  "fetched_at": "2026-09-02T18:46:00-04:00",
   "streams": {
    "local": [
     {
@@ -773,11 +821,27 @@
     "media_type": "video"
    },
    {
+    "title": "Educators, community leaders meet with United Way Miami to discuss college funding for Miami-Dade students",
+    "url": "https://wsvn.com/news/local/miami-dade/educators-community-leaders-meet-with-united-way-miami-to-discuss-college-funding-for-miami-dade-students/",
+    "published": "Wed, 02 Sep 2026 21:57:29 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Screenshot-2026-09-02-170009.png",
+    "media_type": "image"
+   },
+   {
+    "title": "‘Amendment 3 is deceiving’: Miami-Dade leaders make push against property tax amendment",
+    "url": "https://wsvn.com/news/local/miami-dade/amendment-3-is-deceiving-miami-dade-leaders-make-push-against-property-tax-amendment/",
+    "published": "Wed, 02 Sep 2026 21:33:51 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/2059d8b6-a08d-4463-b97a-365f9e7073e4/6da47952-f333-41fc-a15b-c117f3fcd96a/main.mp4?fastly_token=NmE5OGVlZmRfODFhM2RhNDk0YmJiNThjM2E3MjFjMTc4NTI5ZGIwMzYyZTc2NGI1ZjQ1ZGUzZTdlYzk1YjM5NWUyMzQ3Yjk2OF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yMDU5ZDhiNi1hMDhkLTQ0NjMtYjk3YS0zNjVmOWU3MDczZTQvNmRhNDc5NTItZjMzMy00MWZjLWExNWItYzExN2YzZmNkOTZhL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "Man behind bars after defrauding parents of $86,000 in life savings, prosecutors say",
     "url": "https://wsvn.com/news/local/miami-dade/man-behind-bars-after-defrauding-parents-of-86000-in-life-savings-prosecutors-say/",
     "published": "Wed, 02 Sep 2026 21:11:53 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6761c313-e484-4e13-96cd-0d122da9880c/a1ce5a7c-934b-44db-977e-d249825a6659/main.mp4?fastly_token=NmE5OGU5OGZfNWI0NGE5ZmRlNjJhOTY0MWIyM2FjNThhNjhkMGNiMGY2OGY3YWQ0MzY3ODBmMTY5ODIzYjdjNmZkNDI1NmEyZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82NzYxYzMxMy1lNDg0LTRlMTMtOTZjZC0wZDEyMmRhOTg4MGMvYTFjZTVhN2MtOTM0Yi00NGRiLTk3N2UtZDI0OTgyNWE2NjU5L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/5236364b-7f8d-48c3-86ad-29ac3fd90b1f/f3f833d6-7301-424c-9440-19152c3df4c7/main.mp4?fastly_token=NmE5OGYzN2ZfMWYwOTFlMGYzMzdkYzZmN2M5Yjc3NzU0ZjllMWFjNjY5ZDYwNjM1YzEyZTZkOWY3NTc1Y2I2ZDg3NDNiMGI5Yl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81MjM2MzY0Yi03ZjhkLTQ4YzMtODZhZC0yOWFjM2ZkOTBiMWYvZjNmODMzZDYtNzMwMS00MjRjLTk0NDAtMTkxNTJjM2RmNGM3L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -785,27 +849,19 @@
     "url": "https://wsvn.com/news/local/miami-dade/substitute-teacher-charged-with-felony-after-bringing-gun-to-westland-senior-high-school/",
     "published": "Wed, 02 Sep 2026 20:48:58 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/01c08ef9-6771-4df2-aa12-084b85647fdc/32460038-4207-4e08-ba06-39d05a1dec59/main.mp4?fastly_token=NmE5OGU0MjhfMmUxYjc1ZDIyNDE5NWJjN2Q3ZGQ4YzYyZjU0MjQ5YzNlZDc0ZDk2YzRmYzZmNGFiZDI3YTVjMDA1NjFiOGVmOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8wMWMwOGVmOS02NzcxLTRkZjItYWExMi0wODRiODU2NDdmZGMvMzI0NjAwMzgtNDIwNy00ZTA4LWJhMDYtMzlkMDVhMWRlYzU5L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/28222ba3-83e4-488b-9af3-bba3edf42e15/19f2b2cf-2032-4318-b50d-3f9cd0590ee0/main.mp4?fastly_token=NmE5OGY3OGVfZjQzNTRiNWE0NzIyNDQ0N2VkZDE1NmYzNzgyOTg5YTNlNjljMGNlNTI3YWQ5YTg5ZWU5MGY5MTU4MjU5NzBkN18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yODIyMmJhMy04M2U0LTQ4OGItOWFmMy1iYmEzZWRmNDJlMTUvMTlmMmIyY2YtMjAzMi00MzE4LWI1MGQtM2Y5Y2QwNTkwZWUwL21haW4ubXA0",
     "media_type": "video"
-   },
-   {
-    "title": "Rollover crash shuts down EB lanes of SR 112 at NW 22nd Ave; 2 hospitalized",
-    "url": "https://wsvn.com/news/local/miami-dade/rollover-crash-shuts-down-eb-lanes-of-sr-112-at-nw-22nd-ave-2-hospitalized/",
-    "published": "Wed, 02 Sep 2026 20:37:15 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6b280f5a-843b-42b5-812a-dafa5ef3213d/488070a8-727c-46ea-a478-cfc528ffae89/main.mp4?fastly_token=NmE5OGViYzFfZGI4ODg0MzM5ZGQ3MjcyODAzMmU5Njg5MGFmZGZkN2Y4YjMxM2RjYzgxYjQ0MmY3MWQ2YjE3NzlkYzFkZDY4NV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82YjI4MGY1YS04NDNiLTQyYjUtODEyYS1kYWZhNWVmMzIxM2QvNDg4MDcwYTgtNzI3Yy00NmVhLWE0NzgtY2ZjNTI4ZmZhZTg5L21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Husband accused of stabbing wife while she slept, police say",
-    "url": "https://wsvn.com/news/local/miami-dade/husband-accused-of-stabbing-wife-while-she-slept-police-say/",
-    "published": "Wed, 02 Sep 2026 19:40:35 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Pratapsinh-K.-Thakor.png",
-    "media_type": "image"
    }
   ],
   "colombia": [
+   {
+    "title": "Campesinos del Tolima lanzan alerta por la escasez de comida para animales tras incendios forestales: denuncian que el ganado se está muriendo",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/campesinos-del-tolima-lanzan-alerta-por-la-escasez-de-comida-para-animales-tras-incendios-forestales-denuncian-que-el-ganado-se-esta-muriendo-3583077",
+    "published": "2026-09-02T17:17:36-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/02/6a989f81e0523.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Alias 'Perjuicio', despiadado jefe de sicarios del 'clan del Golfo' en Andes, Antioquia, fue abatido: dinamizó la guerra con 'La Terraza' en la zona",
     "url": "https://www.eltiempo.com/colombia/medellin/alias-perjuicio-despiadado-jefe-de-sicarios-del-clan-del-golfo-en-andes-antioquia-fue-abatido-dinamizo-la-guerra-con-la-terraza-en-la-zona-3583073",
@@ -860,14 +916,6 @@
     "published": "2026-09-02T15:41:30-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/02/6a9879796c173.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Cali ratifica ser la sede del Giro de Rigo 2026: el reconocido ciclista llegó con ayuda y un plan social con la empresa privada tras el terremoto",
-    "url": "https://www.eltiempo.com/colombia/cali/cali-ratifica-ser-la-sede-del-giro-de-rigo-2026-el-reconocido-ciclista-llego-con-ayuda-y-un-plan-social-con-la-empresa-privada-tras-el-terremoto-3583025",
-    "published": "2026-09-02T13:40:52-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/02/6a986a5205a29.jpeg",
     "media_type": "image"
    }
   ],
@@ -941,7 +989,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-02T18:31:27-04:00",
+  "fetched_at": "2026-09-02T18:46:00-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -949,7 +997,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-02T18:31:27-04:00",
+  "fetched_at": "2026-09-02T18:46:00-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -966,15 +1014,9 @@
       "url": "https://www.eltiempo.com/colombia/medellin/atencion-se-suspenden-los-cortes-de-agua-en-medellin-pero-epm-lanza-una-dura-advertencia-si-no-se-ahorra-volveran-y-duraran-mas-3583043",
       "published": "2026-09-02T14:59:09-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Cali ratifica ser la sede del Giro de Rigo 2026: el reconocido ciclista llegó con ayuda y un plan social con la empresa privada tras el terremoto",
-      "url": "https://www.eltiempo.com/colombia/cali/cali-ratifica-ser-la-sede-del-giro-de-rigo-2026-el-reconocido-ciclista-llego-con-ayuda-y-un-plan-social-con-la-empresa-privada-tras-el-terremoto-3583025",
-      "published": "2026-09-02T13:40:52-05:00",
-      "section": "colombia"
      }
     ],
-    "count": 3,
+    "count": 2,
     "issue": "¿Está lista Cali para reactivar la fiesta del fútbol en el estadio Pascual Guerrero tras el terremoto?"
    },
    {
