@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-01T21:00:55-04:00",
- "generated_at_utc": "2026-09-02T01:00:55+00:00",
+ "generated_at": "2026-09-01T21:15:59-04:00",
+ "generated_at_utc": "2026-09-02T01:15:59+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 1",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-01T21:00:56-04:00",
+  "fetched_at": "2026-09-01T21:15:59-04:00",
   "curve": [
    {
     "time": "2026-09-01T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 79.4,
-   "feels": 89.5,
-   "humidity": 88,
-   "wind_mph": 2.5,
-   "wind_dir": 225,
-   "observed_at": "2026-09-01T21:00"
+   "temp": 79.3,
+   "feels": 90.0,
+   "humidity": 89,
+   "wind_mph": 1.4,
+   "wind_dir": 189,
+   "observed_at": "2026-09-01T21:15"
   },
   "today": {
    "high": 89.2,
@@ -164,20 +164,21 @@
   "peak_hour": 13
  },
  "alerts": {
-  "ok": false,
-  "source": "NWS alerts",
-  "fetched_at": "2026-09-01T21:00:56-04:00",
-  "error": "502 Server Error: Bad Gateway for url: https://api.weather.gov/alerts/active?point=25.971228%2C-80.362648"
+  "ok": true,
+  "source": "NWS api.weather.gov/alerts",
+  "fetched_at": "2026-09-01T21:15:59-04:00",
+  "alerts": [],
+  "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-01T21:00:57-04:00",
-  "aqi": 32,
+  "fetched_at": "2026-09-01T21:16:01-04:00",
+  "aqi": 31,
   "category": "Good",
-  "pollutant": "PM2.5",
+  "pollutant": "O3",
   "reporting_area": "Miami",
-  "observed": "2026-09-01 19:00 EST",
+  "observed": "2026-09-01 20:00 EST",
   "forecast": [
    {
     "date": "2026-09-02",
@@ -220,7 +221,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-01T21:00:57-04:00",
+  "fetched_at": "2026-09-01T21:16:01-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -233,7 +234,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -243,7 +244,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -288,74 +289,94 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
+     "FL-91 S",
+     "Florida's Tpke S"
     ],
-    "delay_s": 596,
+    "delay_s": 526,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-02T00:26:00Z"
+    "start": "2026-09-02T00:33:30Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-817"
+     "FL-91 N",
+     "Florida's Tpke N"
     ],
-    "delay_s": 554,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T00:06:30Z"
+    "delay_s": 449,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T00:26:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 483,
+    "delay_s": 285,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T23:53:30Z"
    },
    {
-    "county": "Broward",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 346,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T00:33:30Z"
-   },
-   {
     "county": "Miami-Dade",
     "roads": [
-     "FL-922"
+     "FL-836 E"
     ],
-    "delay_s": 203,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-02T00:58:00Z"
+    "delay_s": 147,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-02T01:09:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-817"
+    ],
+    "delay_s": 113,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T01:11:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-84"
+    ],
+    "delay_s": 111,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T01:07:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-836 W"
     ],
-    "delay_s": 94,
+    "delay_s": 86,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-02T00:53:00Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-112 W"
+     "FL-818"
     ],
-    "delay_s": 41,
+    "delay_s": 77,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-02T00:57:30Z"
+    "start": "2026-09-02T01:12:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 S"
+    ],
+    "delay_s": 52,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T01:14:00Z"
    },
    {
     "county": "Broward",
@@ -511,33 +532,17 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-06-18T20:48:14Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-27T16:41:35Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-27T16:08:00Z"
    }
   ],
-  "incident_count": 244,
-  "named_count": 27,
+  "incident_count": 250,
+  "named_count": 29,
   "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-01T21:00:58-04:00",
+  "fetched_at": "2026-09-01T21:16:02-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -576,7 +581,10 @@
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 1 2026, 6:10 PM",
    "Southeast | Palm Beach | There is scheduled road work on Florida's Turnpike northbound and southbound from exit 98, Jog Road, to exit 99, Okeechobee Boulevard. All lanes are scheduled to be closed from 8pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 1 2026, 7:15 PM",
-   "Northeast | Duval | Jacksonville: there is lane blocking construction on SR-228/Normandy Blvd at SR-23. Use caution in the area and seek alternate routes. | Sep 1 2026, 8:59 PM"
+   "Northeast | Duval | Jacksonville: there is lane blocking construction on SR-228/Normandy Blvd at SR-23. Use caution in the area and seek alternate routes. | Sep 1 2026, 8:59 PM",
+   "Northeast | Clay | Green Cove Springs: there is lane blocking construction on US-17 between Oak St and Blackcreek Bridge. Use caution in the area. | Sep 1 2026, 9:06 PM",
+   "Northeast | Nassau | Jacksonville: there is lane blocking construction on US-17 between I-95 and Owens Farm Rd. Use caution in the area. | Sep 1 2026, 9:13 PM",
+   "Northeast | Duval | Jacksonville: there is lane blocking construction on US-17 between I-95 and Owens Farm Rd. Use caution in the area. | Sep 1 2026, 9:13 PM"
   ],
   "fl511_local": [
    "Southeast | Palm Beach | There is scheduled road work on Florida's Turnpike northbound and southbound from exit 98, Jog Road, to exit 99, Okeechobee Boulevard. All lanes are scheduled to be closed from 8pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 1 2026, 7:15 PM"
@@ -585,7 +593,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-01T21:00:58-04:00",
+  "fetched_at": "2026-09-01T21:16:02-04:00",
   "issued": "800 PM EDT Tue Sep 1 2026",
   "areas": [],
   "raw": "en Español\n\n600 \nABNT20 KNHC 012335\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Tue Sep 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Edouard, located inland over southeastern Texas.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Kelly"
@@ -593,7 +601,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-01T21:00:58-04:00",
+  "fetched_at": "2026-09-01T21:16:02-04:00",
   "florida": "$3.9420",
   "national": "$4.0954",
   "diesel": "$5.5763",
@@ -602,7 +610,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-01T21:01:00-04:00",
+  "fetched_at": "2026-09-01T21:16:04-04:00",
   "streams": {
    "local": [
     {
@@ -711,17 +719,17 @@
   ],
   "local": [
    {
-    "title": "Student accused of stabbing 2 at Miami Northwestern Senior High School to remain behind bars",
-    "url": "https://www.local10.com/news/local/2026/09/01/student-accused-of-stabbing-2-at-miami-northwestern-senior-high-school-ordered-to-home-detention/",
-    "published": "Tue, 01 Sep 2026 17:19:42 +0000",
+    "title": "All clear given after 2 Hollywood schools placed on lockdown over reported bomb threat, officials say",
+    "url": "https://www.local10.com/news/local/2026/09/01/hollywood-hills-high-school-placed-on-lockdown-over-potential-threat-officials-say/",
+    "published": "Tue, 01 Sep 2026 14:05:22 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
    },
    {
-    "title": "All clear given after 2 Hollywood schools placed on lockdown over reported bomb threat, officials say",
-    "url": "https://www.local10.com/news/local/2026/09/01/hollywood-hills-high-school-placed-on-lockdown-over-potential-threat-officials-say/",
-    "published": "Tue, 01 Sep 2026 14:05:22 +0000",
+    "title": "Student accused of stabbing 2 at Miami Northwestern Senior High School to remain behind bars",
+    "url": "https://www.local10.com/news/local/2026/09/01/student-accused-of-stabbing-2-at-miami-northwestern-senior-high-school-ordered-to-home-detention/",
+    "published": "Tue, 01 Sep 2026 17:19:42 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -841,6 +849,14 @@
   ],
   "colombia": [
    {
+    "title": "Barranquillero quería llegar a EE.UU. para ayudar a sus padres, pero murió en la travesía por el desierto: familia pide ayuda para repatriar su cuerpo",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/barranquillero-queria-llegar-a-ee-uu-para-ayudar-a-sus-padres-pero-murio-en-la-travesia-por-el-desierto-familia-pide-ayuda-para-repatriar-su-cuerpo-3582832",
+    "published": "2026-09-01T20:01:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/01/6a976e033e39f.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Terremoto en Colombia: desde Barranquilla se suman a la reconstrucción en Pereira y envían 22 toneladas de cemento y 9.000 bloques",
     "url": "https://www.eltiempo.com/colombia/barranquilla/terremoto-en-colombia-desde-barranquilla-se-suman-a-la-reconstruccion-en-pereira-y-envian-22-toneladas-de-cemento-y-9-000-bloques-3582825",
     "published": "2026-09-01T19:05:09-05:00",
@@ -894,14 +910,6 @@
     "published": "2026-09-01T16:44:24-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/01/6a974416df9a3.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Desde Bucaramanga se oponen al anuncio del traslado de más de 50 delincuentes de alta peligrosidad a la cárcel Palogordo de máxima seguridad",
-    "url": "https://www.eltiempo.com/colombia/santander/desde-bucaramanga-se-oponen-al-anuncio-del-traslado-de-mas-de-50-delincuentes-de-alta-peligrosidad-a-la-carcel-palogordo-de-maxima-seguridad-3582738",
-    "published": "2026-09-01T16:14:48-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2025/11/12/6914889abb2c0.r_d.600-267-0.png",
     "media_type": "image"
    }
   ],
@@ -975,7 +983,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-01T21:01:00-04:00",
+  "fetched_at": "2026-09-01T21:16:05-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -983,7 +991,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-01T21:01:00-04:00",
+  "fetched_at": "2026-09-01T21:16:05-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -1092,8 +1100,6 @@
   "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "alerts"
- ],
- "health": "9/10 sources ok"
+ "failures": [],
+ "health": "10/10 sources ok"
 }
