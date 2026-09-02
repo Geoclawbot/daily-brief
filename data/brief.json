@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-01T20:00:57-04:00",
- "generated_at_utc": "2026-09-02T00:00:57+00:00",
+ "generated_at": "2026-09-01T20:15:55-04:00",
+ "generated_at_utc": "2026-09-02T00:15:55+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 1",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-01T20:00:58-04:00",
+  "fetched_at": "2026-09-01T20:15:55-04:00",
   "curve": [
    {
     "time": "2026-09-01T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 81.3,
-   "feels": 89.7,
-   "humidity": 84,
-   "wind_mph": 7.1,
-   "wind_dir": 208,
-   "observed_at": "2026-09-01T20:00"
+   "temp": 80.3,
+   "feels": 89.3,
+   "humidity": 86,
+   "wind_mph": 5.4,
+   "wind_dir": 161,
+   "observed_at": "2026-09-01T20:15"
   },
   "today": {
    "high": 89.2,
@@ -164,21 +164,20 @@
   "peak_hour": 13
  },
  "alerts": {
-  "ok": true,
-  "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-01T20:00:59-04:00",
-  "alerts": [],
-  "count": 0
+  "ok": false,
+  "source": "NWS alerts",
+  "fetched_at": "2026-09-01T20:15:55-04:00",
+  "error": "502 Server Error: Bad Gateway for url: https://api.weather.gov/alerts/active?point=25.971228%2C-80.362648"
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-01T20:01:03-04:00",
-  "aqi": 52,
-  "category": "Moderate",
-  "pollutant": "PM2.5",
+  "fetched_at": "2026-09-01T20:15:56-04:00",
+  "aqi": 28,
+  "category": "Good",
+  "pollutant": "O3",
   "reporting_area": "Miami",
-  "observed": "2026-09-01 18:00 EST",
+  "observed": "2026-09-01 19:00 EST",
   "forecast": [
    {
     "date": "2026-09-02",
@@ -221,7 +220,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-01T20:01:03-04:00",
+  "fetched_at": "2026-09-01T20:15:56-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -234,7 +233,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -244,7 +243,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -289,11 +288,21 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 595,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-01T23:53:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "Don Shula Expy S",
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 742,
+    "delay_s": 322,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-01T18:13:15Z"
@@ -301,31 +310,82 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 N"
+     "US-41 N"
     ],
-    "delay_s": 493,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-01T23:09:00Z"
+    "delay_s": 258,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T00:01:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 228,
+    "delay_s": 257,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T23:36:00Z"
+    "start": "2026-09-02T00:13:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-94"
+    ],
+    "delay_s": 253,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T00:10:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 244,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T00:02:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 233,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T00:10:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-817"
+    ],
+    "delay_s": 225,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-02T00:06:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-825"
+    ],
+    "delay_s": 169,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-02T00:10:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-854"
     ],
-    "delay_s": 208,
-    "magnitude": 3,
-    "description": "Stationary traffic",
+    "delay_s": 157,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-09-01T19:44:44Z"
    },
    {
@@ -333,7 +393,7 @@
     "roads": [
      "FL-953"
     ],
-    "delay_s": 204,
+    "delay_s": 150,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-01T23:37:30Z"
@@ -341,86 +401,23 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 S",
-     "FL-5"
+     "I-95 N"
     ],
-    "delay_s": 192,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T23:53:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 162,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T23:03:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-94"
-    ],
-    "delay_s": 159,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T23:56:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 123,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T23:53:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 115,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-01T23:53:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-825"
-    ],
-    "delay_s": 68,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-01T23:38:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 N"
-    ],
-    "delay_s": 56,
+    "delay_s": 146,
     "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-09-01T16:35:00Z"
+    "description": "Slow traffic",
+    "start": "2026-09-01T23:09:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-825"
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 55,
+    "delay_s": 79,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-01T23:56:30Z"
+    "start": "2026-09-02T00:12:30Z"
    },
    {
     "county": "Broward",
@@ -537,15 +534,15 @@
     "start": "2026-09-01T22:49:00Z"
    }
   ],
-  "incident_count": 274,
+  "incident_count": 273,
   "named_count": 40,
-  "major_count": 7,
+  "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-01T20:01:04-04:00",
+  "fetched_at": "2026-09-01T20:15:57-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -592,7 +589,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-01T20:01:05-04:00",
+  "fetched_at": "2026-09-01T20:15:57-04:00",
   "issued": "800 PM EDT Tue Sep 1 2026",
   "areas": [],
   "raw": "en Español\n\n600 \nABNT20 KNHC 012335\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Tue Sep 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Edouard, located inland over southeastern Texas.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Kelly"
@@ -600,7 +597,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-01T20:01:05-04:00",
+  "fetched_at": "2026-09-01T20:15:57-04:00",
   "florida": "$3.9420",
   "national": "$4.0954",
   "diesel": "$5.5763",
@@ -609,7 +606,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-01T20:01:06-04:00",
+  "fetched_at": "2026-09-01T20:15:59-04:00",
   "streams": {
    "local": [
     {
@@ -848,6 +845,14 @@
   ],
   "colombia": [
    {
+    "title": "Terremoto en Colombia: desde Barranquilla se suman a la reconstrucción en Pereira y envían 22 toneladas de cemento y 9.000 bloques",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/terremoto-en-colombia-desde-barranquilla-se-suman-a-la-reconstruccion-en-pereira-y-envian-22-toneladas-de-cemento-y-9-000-bloques-3582825",
+    "published": "2026-09-01T19:05:09-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/01/6a97678d8a798.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "De la emergencia a la descentralización: la estrategia regional para proteger la formación médica tras el terremoto en el Valle del Cauca",
     "url": "https://www.eltiempo.com/colombia/cali/de-la-emergencia-a-la-descentralizacion-la-estrategia-regional-para-proteger-la-formacion-medica-tras-el-terremoto-en-el-valle-del-cauca-3582807",
     "published": "2026-09-01T18:27:31-05:00",
@@ -901,14 +906,6 @@
     "published": "2026-09-01T16:14:48-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2025/11/12/6914889abb2c0.r_d.600-267-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Así fue hallazgo del cuerpo de Michelle Dayana, menor desaparecida en Antioquia: no habría llegado por sus medios al lugar donde fue encontrada",
-    "url": "https://www.eltiempo.com/colombia/medellin/detalles-del-caso-de-michelle-dayana-menor-de-seis-anos-hallada-muerta-en-antioquia-no-habria-llegado-por-sus-medios-al-lugar-donde-fue-encontrada-3582746",
-    "published": "2026-09-01T16:39:04-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/01/6a9737cf0d68b.r_d.156-273-0.png",
     "media_type": "image"
    }
   ],
@@ -982,20 +979,26 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-01T20:01:06-04:00",
+  "fetched_at": "2026-09-01T20:15:59-04:00",
   "items": [],
-  "scanned": 4,
+  "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-01T20:01:06-04:00",
+  "fetched_at": "2026-09-01T20:15:59-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "Terremoto en Colombia: desde Barranquilla se suman a la reconstrucción en Pereira y envían 22 toneladas de cemento y 9.000 bloques",
+      "url": "https://www.eltiempo.com/colombia/barranquilla/terremoto-en-colombia-desde-barranquilla-se-suman-a-la-reconstruccion-en-pereira-y-envian-22-toneladas-de-cemento-y-9-000-bloques-3582825",
+      "published": "2026-09-01T19:05:09-05:00",
+      "section": "colombia"
+     },
      {
       "title": "¿Cierres en el Tranvía de Ayacucho? La drástica medida que evalúa Medellín tras cientos de fallas por invasiones",
       "url": "https://www.eltiempo.com/colombia/medellin/cierres-en-el-tranvia-de-ayacucho-la-drastica-medida-que-evalua-medellin-tras-cientos-de-fallas-por-invasiones-3582781",
@@ -1009,8 +1012,8 @@
       "section": "colombia"
      }
     ],
-    "count": 2,
-    "issue": "¿Cierres en el Tranvía de Ayacucho? La drástica medida que evalúa Medellín tras cientos de fallas por invasiones"
+    "count": 3,
+    "issue": "Terremoto en Colombia: desde Barranquilla se suman a la reconstrucción en Pereira y envían 22 toneladas de cemento y 9.000 bloques"
    },
    {
     "iso": "IRN",
@@ -1093,6 +1096,8 @@
   "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [],
- "health": "10/10 sources ok"
+ "failures": [
+  "alerts"
+ ],
+ "health": "9/10 sources ok"
 }
