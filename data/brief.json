@@ -1,74 +1,191 @@
 {
- "generated_at": "2026-09-02T22:16:09-04:00",
- "generated_at_utc": "2026-09-03T02:16:09+00:00",
+ "generated_at": "2026-09-02T22:31:10-04:00",
+ "generated_at_utc": "2026-09-03T02:31:10+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 2",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-09-02T22:16:34-04:00",
-  "error": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=25)"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-09-02T22:31:10-04:00",
+  "curve": [
+   {
+    "time": "2026-09-02T05:00",
+    "hour": 5,
+    "temp": 77.7,
+    "feels": 88.7,
+    "humidity": 95,
+    "pop": 1
+   },
+   {
+    "time": "2026-09-02T06:00",
+    "hour": 6,
+    "temp": 77.9,
+    "feels": 89.1,
+    "humidity": 95,
+    "pop": 2
+   },
+   {
+    "time": "2026-09-02T07:00",
+    "hour": 7,
+    "temp": 77.9,
+    "feels": 88.6,
+    "humidity": 95,
+    "pop": 4
+   },
+   {
+    "time": "2026-09-02T08:00",
+    "hour": 8,
+    "temp": 78.4,
+    "feels": 89.1,
+    "humidity": 95,
+    "pop": 6
+   },
+   {
+    "time": "2026-09-02T09:00",
+    "hour": 9,
+    "temp": 81.8,
+    "feels": 94.1,
+    "humidity": 91,
+    "pop": 3
+   },
+   {
+    "time": "2026-09-02T10:00",
+    "hour": 10,
+    "temp": 84.4,
+    "feels": 98.2,
+    "humidity": 85,
+    "pop": 1
+   },
+   {
+    "time": "2026-09-02T11:00",
+    "hour": 11,
+    "temp": 87.7,
+    "feels": 102.6,
+    "humidity": 80,
+    "pop": 3
+   },
+   {
+    "time": "2026-09-02T12:00",
+    "hour": 12,
+    "temp": 89.4,
+    "feels": 101.7,
+    "humidity": 71,
+    "pop": 4
+   },
+   {
+    "time": "2026-09-02T13:00",
+    "hour": 13,
+    "temp": 89.7,
+    "feels": 101.3,
+    "humidity": 68,
+    "pop": 7
+   },
+   {
+    "time": "2026-09-02T14:00",
+    "hour": 14,
+    "temp": 91.2,
+    "feels": 102.3,
+    "humidity": 62,
+    "pop": 21
+   },
+   {
+    "time": "2026-09-02T15:00",
+    "hour": 15,
+    "temp": 91.2,
+    "feels": 100.1,
+    "humidity": 67,
+    "pop": 33
+   },
+   {
+    "time": "2026-09-02T16:00",
+    "hour": 16,
+    "temp": 88.6,
+    "feels": 98.9,
+    "humidity": 73,
+    "pop": 52
+   },
+   {
+    "time": "2026-09-02T17:00",
+    "hour": 17,
+    "temp": 90.1,
+    "feels": 100.9,
+    "humidity": 66,
+    "pop": 51
+   },
+   {
+    "time": "2026-09-02T18:00",
+    "hour": 18,
+    "temp": 88.4,
+    "feels": 99.2,
+    "humidity": 75,
+    "pop": 42
+   },
+   {
+    "time": "2026-09-02T19:00",
+    "hour": 19,
+    "temp": 87.5,
+    "feels": 97.8,
+    "humidity": 74,
+    "pop": 41
+   },
+   {
+    "time": "2026-09-02T20:00",
+    "hour": 20,
+    "temp": 86.4,
+    "feels": 99.3,
+    "humidity": 80,
+    "pop": 40
+   },
+   {
+    "time": "2026-09-02T21:00",
+    "hour": 21,
+    "temp": 85.1,
+    "feels": 94.4,
+    "humidity": 77,
+    "pop": 33
+   }
+  ],
+  "current": {
+   "temp": 83.4,
+   "feels": 95.9,
+   "humidity": 87,
+   "wind_mph": 2.7,
+   "wind_dir": 5,
+   "observed_at": "2026-09-02T22:30"
+  },
+  "today": {
+   "high": 91.2,
+   "low": 77.7,
+   "feels_max": 102.6,
+   "pop_max": 52
+  },
+  "peak_feels": 102.6,
+  "peak_hour": 11
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-02T22:16:34-04:00",
+  "fetched_at": "2026-09-02T22:31:11-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-02T22:16:35-04:00",
-  "aqi": 52,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-02T22:31:36-04:00",
+  "aqi": 62,
   "category": "Moderate",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-02 21:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-05",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-05",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 7.0,
+  "pm10": 7.7,
+  "observed": "2026-09-02T22:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-02T22:16:35-04:00",
+  "fetched_at": "2026-09-02T22:31:37-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -227,42 +344,65 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 301,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-03T01:42:30Z"
-   },
-   {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 257,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 213,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-09-03T02:05:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-976"
+     "FL-7",
+     "FL-9",
+     "US-441 S"
     ],
-    "delay_s": 140,
+    "delay_s": 188,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-03T02:29:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 N",
+     "Florida's Tpke N"
+    ],
+    "delay_s": 171,
+    "magnitude": 1,
+    "description": "Heavy rain; Slow traffic",
+    "start": "2026-09-03T02:19:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 N",
+     "Florida's Tpke N"
+    ],
+    "delay_s": 110,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-03T01:56:30Z"
+    "start": "2026-09-03T01:42:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 106,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-03T02:22:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-836 E"
     ],
-    "delay_s": 101,
+    "delay_s": 90,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-03T01:12:36Z"
@@ -272,7 +412,7 @@
     "roads": [
      "FL-836 W"
     ],
-    "delay_s": 94,
+    "delay_s": 85,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-03T01:09:30Z"
@@ -280,44 +420,22 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-84"
+     "I-95 S"
     ],
-    "delay_s": 71,
+    "delay_s": 51,
     "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-03T02:13:00Z"
+    "description": "Heavy traffic",
+    "start": "2026-09-03T02:17:00Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "I-595 E"
+     "I-95 N"
     ],
-    "delay_s": 61,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-03T02:08:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 48,
+    "delay_s": 25,
     "magnitude": 1,
-    "description": "Heavy rain; Slow traffic",
-    "start": "2026-09-03T01:40:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 27,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-03T02:14:00Z"
+    "description": "Heavy traffic",
+    "start": "2026-09-03T02:15:00Z"
    },
    {
     "county": "Broward",
@@ -385,7 +503,7 @@
     "start": "2026-04-30T20:30:11Z"
    }
   ],
-  "incident_count": 280,
+  "incident_count": 281,
   "named_count": 40,
   "major_count": 15,
   "coverage": "Miami-Dade + Broward"
@@ -393,7 +511,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-02T22:16:36-04:00",
+  "fetched_at": "2026-09-02T22:31:38-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -441,7 +559,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-02T22:16:36-04:00",
+  "fetched_at": "2026-09-02T22:31:38-04:00",
   "issued": "800 PM EDT Wed Sep 2 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 022306\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Wed Sep 2 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe Weather Prediction Center is issuing advisories on Tropical \nDepression Edouard, located inland over eastern Texas.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Katz/Hagen"
@@ -449,7 +567,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-02T22:16:36-04:00",
+  "fetched_at": "2026-09-02T22:31:38-04:00",
   "florida": "$3.9755",
   "national": "$4.1203",
   "diesel": "$5.6323",
@@ -458,7 +576,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-02T22:16:38-04:00",
+  "fetched_at": "2026-09-02T22:31:39-04:00",
   "streams": {
    "local": [
     {
@@ -663,6 +781,14 @@
     "media_type": "video"
    },
    {
+    "title": "Officer-involved rollover crash leaves 1 hospitalized in NW Miami-Dade",
+    "url": "https://wsvn.com/news/local/miami-dade/officer-involved-rollover-crash-leaves-1-hospitalized-in-nw-miami-dade/",
+    "published": "Thu, 03 Sep 2026 02:17:43 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/36e269ae-8633-4143-9b62-f338c8ae1023/f9c80003-4323-4deb-99f2-82eb750de0e0/main.mp4?fastly_token=NmE5OTMxMjhfMGNkZGZhOTNkYjc5NTI3YTZjZDg2N2UxM2U1OTZlMzE4YzBjZjFjNGQyMGFmMjIwZWJmYzEyYmJjMzc5MmM3NF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zNmUyNjlhZS04NjMzLTQxNDMtOWI2Mi1mMzM4YzhhZTEwMjMvZjljODAwMDMtNDMyMy00ZGViLTk5ZjItODJlYjc1MGRlMGUwL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "Search underway for missing 35-year-old woman from NE Miami-Dade",
     "url": "https://wsvn.com/news/local/miami-dade/search-underway-for-missing-35-year-old-woman-from-ne-miami-dade/",
     "published": "Thu, 03 Sep 2026 00:51:47 +0000",
@@ -684,14 +810,6 @@
     "published": "Wed, 02 Sep 2026 21:33:51 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/04b6d483-cbc2-48a4-8449-3724cf0a740c/374249bb-a86f-4ff5-9228-0319077cdcc5/main.mp4?fastly_token=NmE5OTA3MWFfYzY3OWVjNzdhMDA2YjQxOTJhMzVlODk0YTNiZWEwMTNkN2ExN2NmMGQwMjZiZDZlNTdmYjU4Zjc4MTU5YjE2ZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8wNGI2ZDQ4My1jYmMyLTQ4YTQtODQ0OS0zNzI0Y2YwYTc0MGMvMzc0MjQ5YmItYTg2Zi00ZmY1LTkyMjgtMDMxOTA3N2NkY2M1L21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Man behind bars after defrauding parents of $86,000 in life savings, prosecutors say",
-    "url": "https://wsvn.com/news/local/miami-dade/man-behind-bars-after-defrauding-parents-of-86000-in-life-savings-prosecutors-say/",
-    "published": "Wed, 02 Sep 2026 21:11:53 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/5236364b-7f8d-48c3-86ad-29ac3fd90b1f/f3f833d6-7301-424c-9440-19152c3df4c7/main.mp4?fastly_token=NmE5OTBmNGNfZmY3ZTM3OWYxYTZiYzgzMzE0ZWU1MTkyN2FmYjgyODA3NjcyZTE4YmVkMDNiNTMyZDMzMmM0ZTgzN2ZlOTIxOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81MjM2MzY0Yi03ZjhkLTQ4YzMtODZhZC0yOWFjM2ZkOTBiMWYvZjNmODMzZDYtNzMwMS00MjRjLTk0NDAtMTkxNTJjM2RmNGM3L21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -831,7 +949,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-02T22:16:38-04:00",
+  "fetched_at": "2026-09-02T22:31:40-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -839,7 +957,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-02T22:16:38-04:00",
+  "fetched_at": "2026-09-02T22:31:40-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -1004,8 +1122,6 @@
   "countries_matched": 10,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "9/10 sources ok"
+ "failures": [],
+ "health": "10/10 sources ok"
 }
