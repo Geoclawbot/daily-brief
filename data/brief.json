@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-03T03:31:13-04:00",
- "generated_at_utc": "2026-09-03T07:31:13+00:00",
+ "generated_at": "2026-09-03T03:46:09-04:00",
+ "generated_at_utc": "2026-09-03T07:46:09+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, September 3",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-03T03:31:13-04:00",
+  "fetched_at": "2026-09-03T03:46:10-04:00",
   "curve": [
    {
     "time": "2026-09-03T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 78.9,
-   "feels": 89.1,
+   "temp": 78.7,
+   "feels": 88.4,
    "humidity": 88,
-   "wind_mph": 1.8,
-   "wind_dir": 60,
-   "observed_at": "2026-09-03T03:30"
+   "wind_mph": 2.6,
+   "wind_dir": 70,
+   "observed_at": "2026-09-03T03:45"
   },
   "today": {
    "high": 89.5,
@@ -166,26 +166,62 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-03T03:31:14-04:00",
+  "fetched_at": "2026-09-03T03:46:10-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-03T03:31:25-04:00",
-  "aqi": 58,
-  "category": "Moderate",
-  "pm25": 10.9,
-  "pm10": 12.3,
-  "observed": "2026-09-03T03:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-03T03:46:12-04:00",
+  "aqi": 34,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-03 2:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-03",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-03",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-04",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-04",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-05",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-05",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-03T03:31:27-04:00",
+  "fetched_at": "2026-09-03T03:46:14-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
@@ -357,6 +393,16 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-03T07:40:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-112 E"
     ],
     "delay_s": null,
@@ -402,7 +448,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-02-23T10:56:30Z"
+    "start": "2026-09-03T01:36:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -412,7 +458,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-09-03T01:36:00Z"
+    "start": "2026-02-23T10:56:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -550,27 +596,17 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-08-03T13:43:04Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-886"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-03T01:54:30Z"
    }
   ],
-  "incident_count": 273,
-  "named_count": 33,
-  "major_count": 19,
+  "incident_count": 275,
+  "named_count": 34,
+  "major_count": 20,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-03T03:31:27-04:00",
+  "fetched_at": "2026-09-03T03:46:15-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -618,7 +654,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-03T03:31:28-04:00",
+  "fetched_at": "2026-09-03T03:46:15-04:00",
   "issued": "200 AM EDT Thu Sep 3 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 030526\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Thu Sep 3 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe Weather Prediction Center is issuing advisories on Tropical \nDepression Edouard, located inland over eastern Texas.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Pasch"
@@ -626,7 +662,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-03T03:31:28-04:00",
+  "fetched_at": "2026-09-03T03:46:15-04:00",
   "florida": "$3.9755",
   "national": "$4.1203",
   "diesel": "$5.6323",
@@ -635,7 +671,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-03T03:31:29-04:00",
+  "fetched_at": "2026-09-03T03:46:17-04:00",
   "streams": {
    "local": [
     {
@@ -874,6 +910,14 @@
   ],
   "colombia": [
    {
+    "title": "¡Ojo! Hay pico y placa en Cali este jueves 3 de septiembre de 2026: estas son las placas con restricción",
+    "url": "https://www.eltiempo.com/colombia/cali/ojo-hay-pico-y-placa-en-cali-este-jueves-3-de-septiembre-de-2026-estas-son-las-placas-con-restriccion-3583005",
+    "published": "2026-09-03T02:27:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2025/03/19/67db22373a74d.r_d.1151-114-0.png",
+    "media_type": "image"
+   },
+   {
     "title": "¡Sea precavido! Pico y placa en Medellín este jueves 3 de septiembre de 2026: carros, motos y taxis que tienen restricción",
     "url": "https://www.eltiempo.com/colombia/medellin/sea-precavido-pico-y-placa-en-medellin-este-jueves-3-de-septiembre-de-2026-carros-motos-y-taxis-que-tienen-restriccion-3583003",
     "published": "2026-09-03T02:20:00-05:00",
@@ -927,14 +971,6 @@
     "published": "2026-09-02T21:41:49-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/02/6a98dc529f5bc.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Advierten por presunta estafa con línea de WhatsApp asociada al Centro de Bienestar Animal en Cali: el caso ya está en la Fiscalía",
-    "url": "https://www.eltiempo.com/colombia/cali/advierten-por-presunta-estafa-con-linea-de-whatsapp-asociada-al-centro-de-bienestar-animal-en-cali-el-caso-ya-esta-en-la-fiscalia-3583157",
-    "published": "2026-09-02T21:07:21-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/02/6a98d4cdd9908.jpeg",
     "media_type": "image"
    }
   ],
@@ -1008,7 +1044,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-03T03:31:29-04:00",
+  "fetched_at": "2026-09-03T03:46:17-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1016,12 +1052,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-03T03:31:29-04:00",
+  "fetched_at": "2026-09-03T03:46:17-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "¡Ojo! Hay pico y placa en Cali este jueves 3 de septiembre de 2026: estas son las placas con restricción",
+      "url": "https://www.eltiempo.com/colombia/cali/ojo-hay-pico-y-placa-en-cali-este-jueves-3-de-septiembre-de-2026-estas-son-las-placas-con-restriccion-3583005",
+      "published": "2026-09-03T02:27:00-05:00",
+      "section": "colombia"
+     },
      {
       "title": "¡Sea precavido! Pico y placa en Medellín este jueves 3 de septiembre de 2026: carros, motos y taxis que tienen restricción",
       "url": "https://www.eltiempo.com/colombia/medellin/sea-precavido-pico-y-placa-en-medellin-este-jueves-3-de-septiembre-de-2026-carros-motos-y-taxis-que-tienen-restriccion-3583003",
@@ -1045,16 +1087,10 @@
       "url": "https://www.eltiempo.com/colombia/medellin/personeria-de-medellin-formulo-pliego-de-cargos-contra-un-funcionario-del-metro-por-presuntas-conductas-sexuales-contra-dos-menores-de-edad-3583167",
       "published": "2026-09-02T22:57:42-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Advierten por presunta estafa con línea de WhatsApp asociada al Centro de Bienestar Animal en Cali: el caso ya está en la Fiscalía",
-      "url": "https://www.eltiempo.com/colombia/cali/advierten-por-presunta-estafa-con-linea-de-whatsapp-asociada-al-centro-de-bienestar-animal-en-cali-el-caso-ya-esta-en-la-fiscalia-3583157",
-      "published": "2026-09-02T21:07:21-05:00",
-      "section": "colombia"
      }
     ],
     "count": 5,
-    "issue": "¡Sea precavido! Pico y placa en Medellín este jueves 3 de septiembre de 2026: carros, motos y taxis que tienen restricción"
+    "issue": "¡Ojo! Hay pico y placa en Cali este jueves 3 de septiembre de 2026: estas son las placas con restricción"
    },
    {
     "iso": "IND",
