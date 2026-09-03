@@ -1,26 +1,178 @@
 {
- "generated_at": "2026-09-03T02:46:14-04:00",
- "generated_at_utc": "2026-09-03T06:46:14+00:00",
+ "generated_at": "2026-09-03T03:01:20-04:00",
+ "generated_at_utc": "2026-09-03T07:01:20+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, September 3",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-09-03T02:46:39-04:00",
-  "error": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=25)"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-09-03T03:01:20-04:00",
+  "curve": [
+   {
+    "time": "2026-09-03T05:00",
+    "hour": 5,
+    "temp": 78.3,
+    "feels": 88.7,
+    "humidity": 93,
+    "pop": 12
+   },
+   {
+    "time": "2026-09-03T06:00",
+    "hour": 6,
+    "temp": 78.7,
+    "feels": 89.2,
+    "humidity": 93,
+    "pop": 16
+   },
+   {
+    "time": "2026-09-03T07:00",
+    "hour": 7,
+    "temp": 78.7,
+    "feels": 90.3,
+    "humidity": 95,
+    "pop": 18
+   },
+   {
+    "time": "2026-09-03T08:00",
+    "hour": 8,
+    "temp": 79.8,
+    "feels": 91.3,
+    "humidity": 93,
+    "pop": 9
+   },
+   {
+    "time": "2026-09-03T09:00",
+    "hour": 9,
+    "temp": 83.4,
+    "feels": 95.7,
+    "humidity": 86,
+    "pop": 7
+   },
+   {
+    "time": "2026-09-03T10:00",
+    "hour": 10,
+    "temp": 85.9,
+    "feels": 97.7,
+    "humidity": 81,
+    "pop": 6
+   },
+   {
+    "time": "2026-09-03T11:00",
+    "hour": 11,
+    "temp": 87.7,
+    "feels": 98.3,
+    "humidity": 71,
+    "pop": 9
+   },
+   {
+    "time": "2026-09-03T12:00",
+    "hour": 12,
+    "temp": 85.8,
+    "feels": 92.8,
+    "humidity": 78,
+    "pop": 10
+   },
+   {
+    "time": "2026-09-03T13:00",
+    "hour": 13,
+    "temp": 84.6,
+    "feels": 94.2,
+    "humidity": 79,
+    "pop": 15
+   },
+   {
+    "time": "2026-09-03T14:00",
+    "hour": 14,
+    "temp": 87.7,
+    "feels": 102.2,
+    "humidity": 72,
+    "pop": 26
+   },
+   {
+    "time": "2026-09-03T15:00",
+    "hour": 15,
+    "temp": 90.0,
+    "feels": 99.5,
+    "humidity": 61,
+    "pop": 46
+   },
+   {
+    "time": "2026-09-03T16:00",
+    "hour": 16,
+    "temp": 89.4,
+    "feels": 97.0,
+    "humidity": 66,
+    "pop": 46
+   },
+   {
+    "time": "2026-09-03T17:00",
+    "hour": 17,
+    "temp": 79.1,
+    "feels": 84.9,
+    "humidity": 86,
+    "pop": 38
+   },
+   {
+    "time": "2026-09-03T18:00",
+    "hour": 18,
+    "temp": 82.3,
+    "feels": 90.8,
+    "humidity": 76,
+    "pop": 48
+   },
+   {
+    "time": "2026-09-03T19:00",
+    "hour": 19,
+    "temp": 81.6,
+    "feels": 90.2,
+    "humidity": 77,
+    "pop": 35
+   },
+   {
+    "time": "2026-09-03T20:00",
+    "hour": 20,
+    "temp": 78.2,
+    "feels": 87.7,
+    "humidity": 93,
+    "pop": 19
+   },
+   {
+    "time": "2026-09-03T21:00",
+    "hour": 21,
+    "temp": 78.2,
+    "feels": 89.3,
+    "humidity": 94,
+    "pop": 17
+   }
+  ],
+  "current": {
+   "temp": 78.8,
+   "feels": 88.0,
+   "humidity": 86,
+   "wind_mph": 2.9,
+   "wind_dir": 360,
+   "observed_at": "2026-09-03T03:00"
+  },
+  "today": {
+   "high": 90.0,
+   "low": 77.8,
+   "feels_max": 102.2,
+   "pop_max": 48
+  },
+  "peak_feels": 102.2,
+  "peak_hour": 14
  },
  "alerts": {
-  "ok": true,
-  "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-03T02:46:39-04:00",
-  "alerts": [],
-  "count": 0
+  "ok": false,
+  "source": "NWS alerts",
+  "fetched_at": "2026-09-03T03:01:20-04:00",
+  "error": "503 Server Error: Service Unavailable for url: https://api.weather.gov/alerts/active?point=25.971228%2C-80.362648"
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-03T02:46:40-04:00",
+  "fetched_at": "2026-09-03T03:01:21-04:00",
   "aqi": 51,
   "category": "Moderate",
   "pollutant": "PM2.5",
@@ -67,11 +219,73 @@
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-09-03T02:46:40-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-09-03T03:01:23-04:00",
+  "route_shown": true,
+  "leg": "Home → Jackson Memorial",
+  "direction": "outbound",
+  "depart_clock": "5:45 AM",
+  "depart_at": "2026-09-03T05:45:00-04:00",
+  "miles": 19.9,
+  "minutes": 40,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 27.1,
+    "minutes": 37,
+    "toll": true,
+    "saves": 3
+   },
+   {
+    "miles": 24.7,
+    "minutes": 37,
+    "toll": true,
+    "saves": 3
+   },
+   {
+    "miles": 23.9,
+    "minutes": 38,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 19.9,
+    "minutes": 40,
+    "toll": false,
+    "saves": 0
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 19.9,
+    "minutes": 40,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 21.9,
+    "minutes": 40,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 24.9,
+    "minutes": 51,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.8,
+    "minutes": 55,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 19.9,
+   "minutes": 40,
+   "delay_minutes": 0,
+   "saves": 0
+  },
   "incidents": [
    {
     "county": "Broward",
@@ -81,7 +295,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -91,7 +305,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -144,16 +358,6 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-07-16T20:45:02Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-03T02:01:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -290,26 +494,6 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-842"
-    ],
-    "delay_s": 94,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-07T21:06:54Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-886"
-    ],
-    "delay_s": 31,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-03T01:54:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
      "I-95 S"
     ],
     "delay_s": null,
@@ -329,15 +513,14 @@
     "start": "2026-07-29T01:44:00Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
+     "FL-842"
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-09-03T05:54:30Z"
+    "description": "Roadworks",
+    "start": "2026-08-07T21:06:54Z"
    },
    {
     "county": "Miami-Dade",
@@ -381,17 +564,47 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-09-02T02:49:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-05-07T11:50:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-09-01T04:46:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-13T10:30:30Z"
    }
   ],
-  "incident_count": 281,
-  "named_count": 37,
-  "major_count": 21,
+  "incident_count": 277,
+  "named_count": 35,
+  "major_count": 20,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-03T02:46:41-04:00",
+  "fetched_at": "2026-09-03T03:01:23-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -439,7 +652,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-03T02:46:42-04:00",
+  "fetched_at": "2026-09-03T03:01:24-04:00",
   "issued": "200 AM EDT Thu Sep 3 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 030526\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Thu Sep 3 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe Weather Prediction Center is issuing advisories on Tropical \nDepression Edouard, located inland over eastern Texas.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Pasch"
@@ -447,7 +660,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-03T02:46:42-04:00",
+  "fetched_at": "2026-09-03T03:01:24-04:00",
   "florida": "$3.9755",
   "national": "$4.1203",
   "diesel": "$5.6323",
@@ -456,7 +669,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-03T02:46:43-04:00",
+  "fetched_at": "2026-09-03T03:01:25-04:00",
   "streams": {
    "local": [
     {
@@ -695,6 +908,14 @@
   ],
   "colombia": [
    {
+    "title": "Asobares Risaralda activa plan de choque y ayuda humanitaria tras devastador terremoto en Pereira",
+    "url": "https://www.eltiempo.com/colombia/asobares-risaralda-activa-plan-de-choque-y-ayuda-humanitaria-tras-devastador-terremoto-en-pereira-3583176",
+    "published": "2026-09-03T01:43:56-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/03/6a99160c9972a.r_d.1134-82-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Murió José Manuel Restrepo Fernández, expresidente de Caracol Radio, en Cali: estuvo 32 años en la empresa y contribuyó a la consolidación de 6AM",
     "url": "https://www.eltiempo.com/colombia/cali/murio-jose-manuel-restrepo-fernandez-expresidente-de-caracol-radio-en-cali-estuvo-32-anos-en-la-empresa-y-contribuyo-a-la-consolidacion-de-6am-3583173",
     "published": "2026-09-03T00:17:07-05:00",
@@ -748,14 +969,6 @@
     "published": "2026-09-02T20:27:02-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a98c72573749.r_d.892-261-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Creador de contenido alemán denunció que un bar de Cartagena negó el ingreso a su novia, a quien señalaron como trabajadora sexual",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/creador-de-contenido-aleman-denuncio-que-un-bar-de-cartagena-nego-el-ingreso-a-su-novia-a-quien-senalaron-como-trabajadora-sexual-3583009",
-    "published": "2026-09-02T19:47:07-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a98a778a6baf.r_d.269-271-0.png",
     "media_type": "image"
    }
   ],
@@ -829,7 +1042,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-03T02:46:43-04:00",
+  "fetched_at": "2026-09-03T03:01:26-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -837,7 +1050,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-03T02:46:43-04:00",
+  "fetched_at": "2026-09-03T03:01:26-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -993,7 +1206,7 @@
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [
-  "weather"
+  "alerts"
  ],
  "health": "9/10 sources ok"
 }
