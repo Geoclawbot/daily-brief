@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-02T21:16:09-04:00",
- "generated_at_utc": "2026-09-03T01:16:09+00:00",
+ "generated_at": "2026-09-02T21:31:13-04:00",
+ "generated_at_utc": "2026-09-03T01:31:13+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 2",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-02T21:16:09-04:00",
+  "fetched_at": "2026-09-02T21:31:14-04:00",
   "curve": [
    {
     "time": "2026-09-02T05:00",
@@ -132,31 +132,31 @@
    {
     "time": "2026-09-02T20:00",
     "hour": 20,
-    "temp": 86.0,
-    "feels": 96.4,
+    "temp": 86.4,
+    "feels": 98.7,
     "humidity": 78,
     "pop": 40
    },
    {
     "time": "2026-09-02T21:00",
     "hour": 21,
-    "temp": 83.8,
-    "feels": 94.0,
+    "temp": 86.3,
+    "feels": 99.8,
     "humidity": 87,
     "pop": 33
    }
   ],
   "current": {
-   "temp": 81.2,
-   "feels": 88.1,
-   "humidity": 89,
-   "wind_mph": 13.3,
-   "wind_dir": 155,
-   "observed_at": "2026-09-02T21:15"
+   "temp": 83.8,
+   "feels": 92.8,
+   "humidity": 90,
+   "wind_mph": 13.0,
+   "wind_dir": 119,
+   "observed_at": "2026-09-02T21:30"
   },
   "today": {
    "high": 91.2,
-   "low": 76.0,
+   "low": 77.7,
    "feels_max": 102.6,
    "pop_max": 52
   },
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-02T21:16:10-04:00",
+  "fetched_at": "2026-09-02T21:31:14-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-02T21:16:10-04:00",
-  "aqi": 48,
-  "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-02 20:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-05",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-05",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-02T21:31:40-04:00",
+  "aqi": 62,
+  "category": "Moderate",
+  "pm25": 9.5,
+  "pm10": 10.3,
+  "observed": "2026-09-02T21:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-02T21:16:10-04:00",
+  "fetched_at": "2026-09-02T21:31:40-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -234,7 +198,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -244,7 +208,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -299,30 +263,29 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-25",
-     "US-27 N"
-    ],
-    "delay_s": 137,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-03T01:08:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-836 E"
     ],
-    "delay_s": 118,
-    "magnitude": 1,
-    "description": "Slow traffic",
+    "delay_s": 308,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-09-03T01:12:36Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-817"
+    ],
+    "delay_s": 261,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-03T01:28:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-836 W"
     ],
-    "delay_s": 109,
+    "delay_s": 224,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-03T01:11:00Z"
@@ -330,9 +293,20 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-821 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 180,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-03T01:14:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-836 W"
     ],
-    "delay_s": 107,
+    "delay_s": 72,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-03T01:09:30Z"
@@ -340,45 +314,33 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 S",
-     "FL-826 W"
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 42,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-03T01:10:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 40,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-03T01:14:30Z"
+    "delay_s": 67,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-03T01:19:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
+     "FL-985"
     ],
-    "delay_s": 39,
+    "delay_s": 65,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-03T01:14:00Z"
+    "start": "2026-09-03T01:17:00Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "I-95 N"
     ],
-    "delay_s": 37,
+    "delay_s": 49,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-03T01:14:30Z"
+    "start": "2026-09-03T01:25:00Z"
    },
    {
     "county": "Broward",
@@ -539,7 +501,7 @@
     "start": "2026-08-26T14:23:00Z"
    }
   ],
-  "incident_count": 265,
+  "incident_count": 266,
   "named_count": 30,
   "major_count": 7,
   "coverage": "Miami-Dade + Broward"
@@ -547,7 +509,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-02T21:16:11-04:00",
+  "fetched_at": "2026-09-02T21:31:41-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -586,18 +548,16 @@
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 2 2026, 6:26 PM",
    "Southeast | Palm Beach | There is scheduled road work on Florida's Turnpike northbound and southbound from exit 98, Jog Road, to exit 99, Okeechobee Boulevard. All lanes are scheduled to be closed from 8pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 2 2026, 7:07 PM",
-   "Southeast | Miami-Dade | There is scheduled road work on the Florida's Turnpike Northbound at exit 2, Campbell Drive. All lanes are scheduled to be closed from 10pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike at exit 5, Biscayne Drive. | Sep 2 2026, 8:14 PM",
    "Northeast | Duval | Jacksonville: Due to construction EB Union St will be blocked from Jefferson to Hogan. Please use caution in the area. | Sep 2 2026, 9:02 PM"
   ],
   "fl511_local": [
-   "Southeast | Palm Beach | There is scheduled road work on Florida's Turnpike northbound and southbound from exit 98, Jog Road, to exit 99, Okeechobee Boulevard. All lanes are scheduled to be closed from 8pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 2 2026, 7:07 PM",
-   "Southeast | Miami-Dade | There is scheduled road work on the Florida's Turnpike Northbound at exit 2, Campbell Drive. All lanes are scheduled to be closed from 10pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike at exit 5, Biscayne Drive. | Sep 2 2026, 8:14 PM"
+   "Southeast | Palm Beach | There is scheduled road work on Florida's Turnpike northbound and southbound from exit 98, Jog Road, to exit 99, Okeechobee Boulevard. All lanes are scheduled to be closed from 8pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 2 2026, 7:07 PM"
   ]
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-02T21:16:12-04:00",
+  "fetched_at": "2026-09-02T21:31:42-04:00",
   "issued": "800 PM EDT Wed Sep 2 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 022306\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Wed Sep 2 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe Weather Prediction Center is issuing advisories on Tropical \nDepression Edouard, located inland over eastern Texas.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Katz/Hagen"
@@ -605,7 +565,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-02T21:16:12-04:00",
+  "fetched_at": "2026-09-02T21:31:42-04:00",
   "florida": "$3.9755",
   "national": "$4.1203",
   "diesel": "$5.6323",
@@ -614,7 +574,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-02T21:16:13-04:00",
+  "fetched_at": "2026-09-02T21:31:43-04:00",
   "streams": {
    "local": [
     {
@@ -853,6 +813,14 @@
   ],
   "colombia": [
    {
+    "title": "Barranquilla tendrá $130.000 millones para nuevas obras: el Banco de Bogotá aprobó crédito gestionado con Alejandro Char",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-tendra-130-000-millones-para-nuevas-obras-el-banco-de-bogota-aprobo-credito-gestionado-con-alejandro-char-3583147",
+    "published": "2026-09-02T20:27:02-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a98c72573749.r_d.892-261-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Creador de contenido alemán denunció que un bar de Cartagena negó el ingreso a su novia, a quien señalaron como trabajadora sexual",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/creador-de-contenido-aleman-denuncio-que-un-bar-de-cartagena-nego-el-ingreso-a-su-novia-a-quien-senalaron-como-trabajadora-sexual-3583009",
     "published": "2026-09-02T19:47:07-05:00",
@@ -906,14 +874,6 @@
     "published": "2026-09-02T18:30:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2024/12/04/6750ba4bb0dca.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Andicom: La Unión Europea sella alianza estratégica con Colombia para impulsar la transformación digital y las regiones serán beneficiadas",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/andicom-la-union-europea-sella-alianza-estrategica-con-colombia-para-impulsar-la-transformacion-digital-y-las-regiones-seran-beneficiadas-3583098",
-    "published": "2026-09-02T18:25:04-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/02/6a98a1a5c630d.jpeg",
     "media_type": "image"
    }
   ],
@@ -987,7 +947,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-02T21:16:14-04:00",
+  "fetched_at": "2026-09-02T21:31:44-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -995,12 +955,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-02T21:16:14-04:00",
+  "fetched_at": "2026-09-02T21:31:44-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "Barranquilla tendrá $130.000 millones para nuevas obras: el Banco de Bogotá aprobó crédito gestionado con Alejandro Char",
+      "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-tendra-130-000-millones-para-nuevas-obras-el-banco-de-bogota-aprobo-credito-gestionado-con-alejandro-char-3583147",
+      "published": "2026-09-02T20:27:02-05:00",
+      "section": "colombia"
+     },
      {
       "title": "Tres audiencias caídas y un expediente explosivo: el accidentado camino del juicio de Miguel Quintero por el megaescándalo de corrupción en Medellín",
       "url": "https://www.eltiempo.com/colombia/medellin/tres-audiencias-caidas-y-un-expediente-explosivo-el-accidentado-camino-del-juicio-de-miguel-quintero-por-el-megaescandalo-de-corrupcion-en-medellin-3583090",
@@ -1012,16 +978,10 @@
       "url": "https://www.eltiempo.com/colombia/barranquilla/carteles-de-tierra-del-atlantico-pusieron-la-mira-en-predios-publicos-frente-al-mar-en-puerto-colombia-pero-la-burocracia-freno-el-intento-3583126",
       "published": "2026-09-02T18:30:00-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Andicom: La Unión Europea sella alianza estratégica con Colombia para impulsar la transformación digital y las regiones serán beneficiadas",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/andicom-la-union-europea-sella-alianza-estrategica-con-colombia-para-impulsar-la-transformacion-digital-y-las-regiones-seran-beneficiadas-3583098",
-      "published": "2026-09-02T18:25:04-05:00",
-      "section": "colombia"
      }
     ],
     "count": 3,
-    "issue": "Tres audiencias caídas y un expediente explosivo: el accidentado camino del juicio de Miguel Quintero por el megaescándalo de corrupción en Medellín"
+    "issue": "Barranquilla tendrá $130.000 millones para nuevas obras: el Banco de Bogotá aprobó crédito gestionado con Alejandro Char"
    },
    {
     "iso": "IND",
