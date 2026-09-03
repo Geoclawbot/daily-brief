@@ -1,74 +1,191 @@
 {
- "generated_at": "2026-09-03T03:16:09-04:00",
- "generated_at_utc": "2026-09-03T07:16:09+00:00",
+ "generated_at": "2026-09-03T03:31:13-04:00",
+ "generated_at_utc": "2026-09-03T07:31:13+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, September 3",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-09-03T03:16:34-04:00",
-  "error": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=25)"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-09-03T03:31:13-04:00",
+  "curve": [
+   {
+    "time": "2026-09-03T05:00",
+    "hour": 5,
+    "temp": 78.8,
+    "feels": 89.1,
+    "humidity": 93,
+    "pop": 18
+   },
+   {
+    "time": "2026-09-03T06:00",
+    "hour": 6,
+    "temp": 78.9,
+    "feels": 90.6,
+    "humidity": 93,
+    "pop": 20
+   },
+   {
+    "time": "2026-09-03T07:00",
+    "hour": 7,
+    "temp": 77.8,
+    "feels": 85.2,
+    "humidity": 95,
+    "pop": 22
+   },
+   {
+    "time": "2026-09-03T08:00",
+    "hour": 8,
+    "temp": 79.4,
+    "feels": 90.7,
+    "humidity": 93,
+    "pop": 14
+   },
+   {
+    "time": "2026-09-03T09:00",
+    "hour": 9,
+    "temp": 83.7,
+    "feels": 95.6,
+    "humidity": 86,
+    "pop": 10
+   },
+   {
+    "time": "2026-09-03T10:00",
+    "hour": 10,
+    "temp": 85.8,
+    "feels": 98.2,
+    "humidity": 81,
+    "pop": 7
+   },
+   {
+    "time": "2026-09-03T11:00",
+    "hour": 11,
+    "temp": 78.7,
+    "feels": 83.4,
+    "humidity": 71,
+    "pop": 10
+   },
+   {
+    "time": "2026-09-03T12:00",
+    "hour": 12,
+    "temp": 84.9,
+    "feels": 96.5,
+    "humidity": 78,
+    "pop": 11
+   },
+   {
+    "time": "2026-09-03T13:00",
+    "hour": 13,
+    "temp": 86.6,
+    "feels": 97.0,
+    "humidity": 79,
+    "pop": 15
+   },
+   {
+    "time": "2026-09-03T14:00",
+    "hour": 14,
+    "temp": 88.6,
+    "feels": 101.3,
+    "humidity": 72,
+    "pop": 31
+   },
+   {
+    "time": "2026-09-03T15:00",
+    "hour": 15,
+    "temp": 89.5,
+    "feels": 99.2,
+    "humidity": 61,
+    "pop": 44
+   },
+   {
+    "time": "2026-09-03T16:00",
+    "hour": 16,
+    "temp": 87.9,
+    "feels": 95.5,
+    "humidity": 66,
+    "pop": 49
+   },
+   {
+    "time": "2026-09-03T17:00",
+    "hour": 17,
+    "temp": 77.9,
+    "feels": 84.7,
+    "humidity": 86,
+    "pop": 40
+   },
+   {
+    "time": "2026-09-03T18:00",
+    "hour": 18,
+    "temp": 79.4,
+    "feels": 86.4,
+    "humidity": 76,
+    "pop": 44
+   },
+   {
+    "time": "2026-09-03T19:00",
+    "hour": 19,
+    "temp": 80.4,
+    "feels": 88.5,
+    "humidity": 77,
+    "pop": 36
+   },
+   {
+    "time": "2026-09-03T20:00",
+    "hour": 20,
+    "temp": 78.3,
+    "feels": 88.4,
+    "humidity": 93,
+    "pop": 20
+   },
+   {
+    "time": "2026-09-03T21:00",
+    "hour": 21,
+    "temp": 78.2,
+    "feels": 89.3,
+    "humidity": 94,
+    "pop": 19
+   }
+  ],
+  "current": {
+   "temp": 78.9,
+   "feels": 89.1,
+   "humidity": 88,
+   "wind_mph": 1.8,
+   "wind_dir": 60,
+   "observed_at": "2026-09-03T03:30"
+  },
+  "today": {
+   "high": 89.5,
+   "low": 77.8,
+   "feels_max": 101.3,
+   "pop_max": 49
+  },
+  "peak_feels": 101.3,
+  "peak_hour": 14
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-03T03:16:34-04:00",
+  "fetched_at": "2026-09-03T03:31:14-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-03T03:16:35-04:00",
-  "aqi": 28,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-03 2:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-03",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-05",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-05",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-03T03:31:25-04:00",
+  "aqi": 58,
+  "category": "Moderate",
+  "pm25": 10.9,
+  "pm10": 12.3,
+  "observed": "2026-09-03T03:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-03T03:16:36-04:00",
+  "fetched_at": "2026-09-03T03:31:27-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
@@ -143,7 +260,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -153,7 +270,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -312,16 +429,6 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-09-03T02:55:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-112 E"
     ],
     "delay_s": null,
@@ -443,17 +550,27 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-08-03T13:43:04Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-886"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-09-03T01:54:30Z"
    }
   ],
-  "incident_count": 274,
-  "named_count": 34,
-  "major_count": 20,
+  "incident_count": 273,
+  "named_count": 33,
+  "major_count": 19,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-03T03:16:37-04:00",
+  "fetched_at": "2026-09-03T03:31:27-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -501,7 +618,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-03T03:16:37-04:00",
+  "fetched_at": "2026-09-03T03:31:28-04:00",
   "issued": "200 AM EDT Thu Sep 3 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 030526\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Thu Sep 3 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe Weather Prediction Center is issuing advisories on Tropical \nDepression Edouard, located inland over eastern Texas.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Pasch"
@@ -509,7 +626,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-03T03:16:38-04:00",
+  "fetched_at": "2026-09-03T03:31:28-04:00",
   "florida": "$3.9755",
   "national": "$4.1203",
   "diesel": "$5.6323",
@@ -518,7 +635,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-03T03:16:39-04:00",
+  "fetched_at": "2026-09-03T03:31:29-04:00",
   "streams": {
    "local": [
     {
@@ -757,6 +874,14 @@
   ],
   "colombia": [
    {
+    "title": "¡Sea precavido! Pico y placa en Medellín este jueves 3 de septiembre de 2026: carros, motos y taxis que tienen restricción",
+    "url": "https://www.eltiempo.com/colombia/medellin/sea-precavido-pico-y-placa-en-medellin-este-jueves-3-de-septiembre-de-2026-carros-motos-y-taxis-que-tienen-restriccion-3583003",
+    "published": "2026-09-03T02:20:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2023/08/22/64e4ed6cbadd8.png",
+    "media_type": "image"
+   },
+   {
     "title": "Asobares Risaralda activa plan de choque y ayuda humanitaria tras devastador terremoto en Pereira",
     "url": "https://www.eltiempo.com/colombia/asobares-risaralda-activa-plan-de-choque-y-ayuda-humanitaria-tras-devastador-terremoto-en-pereira-3583176",
     "published": "2026-09-03T01:43:56-05:00",
@@ -810,14 +935,6 @@
     "published": "2026-09-02T21:07:21-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/02/6a98d4cdd9908.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Barranquilla tendrá $130.000 millones para nuevas obras: el Banco de Bogotá aprobó crédito gestionado con Alejandro Char",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-tendra-130-000-millones-para-nuevas-obras-el-banco-de-bogota-aprobo-credito-gestionado-con-alejandro-char-3583147",
-    "published": "2026-09-02T20:27:02-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/02/6a98c72573749.r_d.892-261-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -891,7 +1008,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-03T03:16:39-04:00",
+  "fetched_at": "2026-09-03T03:31:29-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -899,12 +1016,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-03T03:16:39-04:00",
+  "fetched_at": "2026-09-03T03:31:29-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "¡Sea precavido! Pico y placa en Medellín este jueves 3 de septiembre de 2026: carros, motos y taxis que tienen restricción",
+      "url": "https://www.eltiempo.com/colombia/medellin/sea-precavido-pico-y-placa-en-medellin-este-jueves-3-de-septiembre-de-2026-carros-motos-y-taxis-que-tienen-restriccion-3583003",
+      "published": "2026-09-03T02:20:00-05:00",
+      "section": "colombia"
+     },
      {
       "title": "Murió José Manuel Restrepo Fernández, expresidente de Caracol Radio, en Cali: estuvo 32 años en la empresa y contribuyó a la consolidación de 6AM",
       "url": "https://www.eltiempo.com/colombia/cali/murio-jose-manuel-restrepo-fernandez-expresidente-de-caracol-radio-en-cali-estuvo-32-anos-en-la-empresa-y-contribuyo-a-la-consolidacion-de-6am-3583173",
@@ -928,16 +1051,10 @@
       "url": "https://www.eltiempo.com/colombia/cali/advierten-por-presunta-estafa-con-linea-de-whatsapp-asociada-al-centro-de-bienestar-animal-en-cali-el-caso-ya-esta-en-la-fiscalia-3583157",
       "published": "2026-09-02T21:07:21-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Barranquilla tendrá $130.000 millones para nuevas obras: el Banco de Bogotá aprobó crédito gestionado con Alejandro Char",
-      "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-tendra-130-000-millones-para-nuevas-obras-el-banco-de-bogota-aprobo-credito-gestionado-con-alejandro-char-3583147",
-      "published": "2026-09-02T20:27:02-05:00",
-      "section": "colombia"
      }
     ],
     "count": 5,
-    "issue": "Murió José Manuel Restrepo Fernández, expresidente de Caracol Radio, en Cali: estuvo 32 años en la empresa y contribuyó a la consolidación de 6AM"
+    "issue": "¡Sea precavido! Pico y placa en Medellín este jueves 3 de septiembre de 2026: carros, motos y taxis que tienen restricción"
    },
    {
     "iso": "IND",
@@ -1054,8 +1171,6 @@
   "countries_matched": 8,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "9/10 sources ok"
+ "failures": [],
+ "health": "10/10 sources ok"
 }
