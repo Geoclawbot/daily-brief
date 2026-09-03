@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-03T11:46:16-04:00",
- "generated_at_utc": "2026-09-03T15:46:16+00:00",
+ "generated_at": "2026-09-03T12:01:18-04:00",
+ "generated_at_utc": "2026-09-03T16:01:18+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, September 3",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-03T11:46:16-04:00",
+  "fetched_at": "2026-09-03T12:01:19-04:00",
   "curve": [
    {
     "time": "2026-09-03T05:00",
@@ -87,7 +87,7 @@
     "temp": 82.5,
     "feels": 91.7,
     "humidity": 77,
-    "pop": 21
+    "pop": 28
    },
    {
     "time": "2026-09-03T15:00",
@@ -95,7 +95,7 @@
     "temp": 86.7,
     "feels": 101.3,
     "humidity": 81,
-    "pop": 25
+    "pop": 41
    },
    {
     "time": "2026-09-03T16:00",
@@ -111,7 +111,7 @@
     "temp": 84.5,
     "feels": 94.6,
     "humidity": 80,
-    "pop": 40
+    "pop": 37
    },
    {
     "time": "2026-09-03T18:00",
@@ -119,7 +119,7 @@
     "temp": 81.8,
     "feels": 92.0,
     "humidity": 87,
-    "pop": 35
+    "pop": 42
    },
    {
     "time": "2026-09-03T19:00",
@@ -127,7 +127,7 @@
     "temp": 82.4,
     "feels": 95.0,
     "humidity": 88,
-    "pop": 31
+    "pop": 40
    },
    {
     "time": "2026-09-03T20:00",
@@ -135,7 +135,7 @@
     "temp": 81.6,
     "feels": 93.8,
     "humidity": 90,
-    "pop": 17
+    "pop": 19
    },
    {
     "time": "2026-09-03T21:00",
@@ -147,18 +147,18 @@
    }
   ],
   "current": {
-   "temp": 90.2,
-   "feels": 101.5,
+   "temp": 89.6,
+   "feels": 99.2,
    "humidity": 66,
-   "wind_mph": 5.8,
-   "wind_dir": 148,
-   "observed_at": "2026-09-03T11:45"
+   "wind_mph": 5.7,
+   "wind_dir": 141,
+   "observed_at": "2026-09-03T12:00"
   },
   "today": {
    "high": 90.2,
    "low": 78.7,
    "feels_max": 101.3,
-   "pop_max": 41
+   "pop_max": 42
   },
   "peak_feels": 101.3,
   "peak_hour": 15
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-03T11:46:17-04:00",
+  "fetched_at": "2026-09-03T12:01:19-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-03T11:46:18-04:00",
+  "fetched_at": "2026-09-03T12:01:20-04:00",
   "aqi": 47,
   "category": "Good",
   "pollutant": "PM2.5",
@@ -220,22 +220,74 @@
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-09-03T11:46:18-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
-  "incidents": [
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-09-03T12:01:23-04:00",
+  "route_shown": true,
+  "leg": "Jackson Memorial → Home",
+  "direction": "return",
+  "depart_clock": "3:30 PM",
+  "depart_at": "2026-09-03T15:30:00-04:00",
+  "miles": 20.6,
+  "minutes": 63,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
    {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 1194,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-03T13:08:30Z"
+    "miles": 22.6,
+    "minutes": 57,
+    "toll": true,
+    "saves": 6
    },
+   {
+    "miles": 28.6,
+    "minutes": 61,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 20.8,
+    "minutes": 62,
+    "toll": true,
+    "saves": 1
+   },
+   {
+    "miles": 26.8,
+    "minutes": 63,
+    "toll": true,
+    "saves": 0
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 63,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 23.4,
+    "minutes": 72,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.1,
+    "minutes": 77,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.5,
+    "minutes": 73,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 63,
+   "delay_minutes": 0,
+   "saves": 0
+  },
+  "incidents": [
    {
     "county": "Broward",
     "roads": [
@@ -339,112 +391,19 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S"
-    ],
-    "delay_s": 344,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-03T14:19:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 338,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-03T15:28:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-990"
-    ],
-    "delay_s": 303,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-03T15:40:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 271,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-03T15:14:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-934"
     ],
-    "delay_s": 264,
+    "delay_s": 538,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-03T14:51:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 257,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-03T14:55:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-9"
-    ],
-    "delay_s": 255,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-03T15:41:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 254,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-03T14:57:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": 239,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-03T15:35:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 239,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-03T15:35:00Z"
+    "start": "2026-09-03T13:08:30Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-824"
     ],
-    "delay_s": 227,
+    "delay_s": 365,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-03T15:42:30Z"
@@ -452,30 +411,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 226,
-    "magnitude": 2,
-    "description": "Queuing traffic; Lane closed",
-    "start": "2026-09-03T15:18:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 215,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-03T14:43:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-953"
     ],
-    "delay_s": 208,
+    "delay_s": 352,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-03T14:33:30Z"
@@ -483,12 +421,42 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-934"
+     "US-41 S"
     ],
-    "delay_s": 206,
+    "delay_s": 337,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-03T15:16:30Z"
+    "start": "2026-09-03T14:19:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-820"
+    ],
+    "delay_s": 303,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-03T15:48:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 283,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-09-03T13:55:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 279,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-03T15:14:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -496,51 +464,145 @@
      "US-41 S",
      "US-41 N"
     ],
-    "delay_s": 205,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 268,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-09-03T15:05:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-94"
+     "FL-968"
     ],
-    "delay_s": 199,
+    "delay_s": 256,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-03T15:34:30Z"
+    "start": "2026-09-03T15:45:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-9"
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 190,
+    "delay_s": 255,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-03T15:41:30Z"
+    "start": "2026-09-03T15:18:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-811"
+    ],
+    "delay_s": 247,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-03T15:50:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "County Hwy-913",
+     "FL-973"
+    ],
+    "delay_s": 238,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-03T15:48:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-820"
+    ],
+    "delay_s": 224,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-03T15:47:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 217,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-03T15:38:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-A1A"
+    ],
+    "delay_s": 209,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-03T15:53:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 173,
+    "delay_s": 191,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-09-03T15:43:31Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-968"
+    ],
+    "delay_s": 183,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-03T13:55:00Z"
+    "start": "2026-09-03T15:58:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-816"
+    ],
+    "delay_s": 179,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-03T15:56:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 177,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-03T15:53:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 169,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-03T15:45:30Z"
    }
   ],
-  "incident_count": 337,
-  "named_count": 78,
-  "major_count": 11,
+  "incident_count": 357,
+  "named_count": 87,
+  "major_count": 10,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-03T11:46:19-04:00",
+  "fetched_at": "2026-09-03T12:01:24-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -580,15 +642,14 @@
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 3 2026, 6:04 AM",
    "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Sep 3 2026, 7:16 AM",
    "Northeast | Alachua | Gainesville: There is lane blocking construction on SW 34th Ave / SR-121 from Hull Rd to SW 20th Ave. Use caution in the area. | Sep 3 2026, 9:46 AM",
-   "Northeast | Gilchrist | Bell: There is lane blocking construction on US-129 between Pine Ave to Oak Ave. Use caution in the area. | Sep 3 2026, 9:44 AM",
-   "Northeast | Duval | Jacksonville: There is lane blocking construction on Normandy Blvd / FL-228 between Herlong Rd and Granville Rd. Use caution in the area. | Sep 3 2026, 9:47 AM"
+   "Northeast | Gilchrist | Bell: There is lane blocking construction on US-129 between Pine Ave to Oak Ave. Use caution in the area. | Sep 3 2026, 9:44 AM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-03T11:46:19-04:00",
+  "fetched_at": "2026-09-03T12:01:24-04:00",
   "issued": "800 AM EDT Thu Sep 3 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 031123\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Thu Sep 3 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe Weather Prediction Center has issued the last advisory on the \nremnants of Edouard, located inland over eastern Texas.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Adams"
@@ -596,7 +657,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-03T11:46:19-04:00",
+  "fetched_at": "2026-09-03T12:01:24-04:00",
   "florida": "$3.9813",
   "national": "$4.1436",
   "diesel": "$5.6779",
@@ -605,7 +666,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-03T11:46:21-04:00",
+  "fetched_at": "2026-09-03T12:01:26-04:00",
   "streams": {
    "local": [
     {
@@ -714,6 +775,14 @@
   ],
   "local": [
    {
+    "title": "Man accused of fatally shooting victim outside Homestead market",
+    "url": "https://www.local10.com/news/local/2026/09/03/man-accused-of-fatally-shooting-victim-outside-homestead-market/",
+    "published": "Thu, 03 Sep 2026 15:39:44 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/OOVW7KZNMZDHXLBKUCQPHWBI5M.jpg?auth=b0b2e0780bef837dcdcc664609551bddb94f4ffd3ed4f27acf134cad746633e6&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
     "title": "‘I had a few’: Video shows DUI arrest of Key West police officer",
     "url": "https://www.local10.com/news/local/2026/09/03/i-had-a-few-video-shows-dui-arrest-of-key-west-police-officer/",
     "published": "Thu, 03 Sep 2026 14:45:28 +0000",
@@ -770,19 +839,19 @@
     "media_type": null
    },
    {
-    "title": "Endangered Species Act protections face rollback as conservation groups push back",
-    "url": "https://www.local10.com/news/local/2026/09/02/endangered-species-act-protections-face-rollback-as-conservation-groups-push-back/",
-    "published": "Thu, 03 Sep 2026 03:05:59 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
+    "title": "Nourish Miami repurposes restaurant leftovers to fight food insecurity in South Florida",
+    "url": "https://wsvn.com/news/local/miami-dade/nourish-miami-repurposes-restaurant-leftovers-to-fight-food-insecurity-in-south-florida/",
+    "published": "Thu, 03 Sep 2026 15:48:24 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/a8be6a34-959c-4174-b2dd-f40597f2a104/a163f95a-f1eb-4123-b3f5-0091d6bb2791/main.mp4?fastly_token=NmE5OWVmOWVfY2QwMGM4YWY0MzliN2RmMDU3MmFlNzZkOWM0Y2YyM2ExMzViNjQ1ZDM0OWM3NGU0OTY2ODc1MmI4ZjVhZjIzM18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hOGJlNmEzNC05NTljLTQxNzQtYjJkZC1mNDA1OTdmMmExMDQvYTE2M2Y5NWEtZjFlYi00MTIzLWIzZjUtMDA5MWQ2YmIyNzkxL21haW4ubXA0",
+    "media_type": "video"
    },
    {
-    "title": "‘Beautiful gesture’: DraftKings, former Dolphin Chad ‘Ochocinco’ Johnson team up to give away free gas in North Miami-Dade",
-    "url": "https://wsvn.com/sports/miami-dolphins/beautiful-gesture-draftkings-former-dolphin-chad-ochocinco-johnson-team-up-to-give-away-free-gas-in-north-miami-dade/",
-    "published": "Wed, 02 Sep 2026 18:05:20 +0000",
+    "title": "Police arrest man accused of hitting 11-year-old girl with dirt bike while fleeing officers on Ocean Drive",
+    "url": "https://wsvn.com/news/local/miami-dade/police-arrest-man-accused-of-hitting-11-year-old-girl-with-dirt-bike-while-fleeing-officers-on-ocean-drive/",
+    "published": "Thu, 03 Sep 2026 14:54:44 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/5fde543c-d542-4146-9613-d87e48d748e9/d1ff63bf-d2cf-45bf-8e71-708dc727fd9d/main.mp4?fastly_token=NmE5OGJlMmRfODE3ZTZmYTgzMzI4ZWE3ODRjMjNkNGJjZGZhODc5ZTQ4ZDUwOWUwMDc2NTlmYTJhOGQ5NTE5ZTYyNWJhMDRlOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81ZmRlNTQzYy1kNTQyLTQxNDYtOTYxMy1kODdlNDhkNzQ4ZTkvZDFmZjYzYmYtZDJjZi00NWJmLThlNzEtNzA4ZGM3MjdmZDlkL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/7b7226ee-8eb3-445a-bee9-c9bb9b38cf73/90314da2-3730-4ea4-9314-ba7c4647f0ed/main.mp4?fastly_token=NmE5OWU1MGZfNmI5M2EzNmE3M2E5OGJmMmYyMzhlZGUxMzBlZDhkMTkxNmI0NmQ2OTEzNmE2OTdmMmFkMGQyMThmMTdmY2M3OV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83YjcyMjZlZS04ZWIzLTQ0NWEtYmVlOS1jOWJiOWIzOGNmNzMvOTAzMTRkYTItMzczMC00ZWE0LTkzMTQtYmE3YzQ2NDdmMGVkL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -794,19 +863,19 @@
     "media_type": "image"
    },
    {
-    "title": "Therapist intern arrested over alleged sexual relationship with client",
-    "url": "https://wsvn.com/news/local/miami-dade/therapist-intern-arrested-over-alleged-sexual-relationship-with-client/",
-    "published": "Wed, 02 Sep 2026 15:20:32 +0000",
+    "title": "‘Beautiful gesture’: DraftKings, former Dolphin Chad ‘Ochocinco’ Johnson team up to give away free gas in North Miami-Dade",
+    "url": "https://wsvn.com/sports/miami-dolphins/beautiful-gesture-draftkings-former-dolphin-chad-ochocinco-johnson-team-up-to-give-away-free-gas-in-north-miami-dade/",
+    "published": "Wed, 02 Sep 2026 18:05:20 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Michelle-Luchau-Rebora.png",
-    "media_type": "image"
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/5fde543c-d542-4146-9613-d87e48d748e9/d1ff63bf-d2cf-45bf-8e71-708dc727fd9d/main.mp4?fastly_token=NmE5OGJlMmRfODE3ZTZmYTgzMzI4ZWE3ODRjMjNkNGJjZGZhODc5ZTQ4ZDUwOWUwMDc2NTlmYTJhOGQ5NTE5ZTYyNWJhMDRlOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81ZmRlNTQzYy1kNTQyLTQxNDYtOTYxMy1kODdlNDhkNzQ4ZTkvZDFmZjYzYmYtZDJjZi00NWJmLThlNzEtNzA4ZGM3MjdmZDlkL21haW4ubXA0",
+    "media_type": "video"
    },
    {
-    "title": "South Florida dominates WalletHub’s 2026 rankings of best cities for Hispanic entrepreneurs",
-    "url": "https://wsvn.com/news/local/miami-dade/south-florida-dominates-wallethubs-2026-rankings-of-best-cities-for-hispanic-entrepreneurs/",
-    "published": "Wed, 02 Sep 2026 15:56:35 +0000",
+    "title": "Nourish Miami repurposes restaurant leftovers to fight food insecurity in South Florida",
+    "url": "https://wsvn.com/news/local/miami-dade/nourish-miami-repurposes-restaurant-leftovers-to-fight-food-insecurity-in-south-florida/",
+    "published": "Thu, 03 Sep 2026 15:48:24 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/ddd06f76-33a0-44ad-bcd5-60c991a69618/392fe0e1-4b07-430f-be54-0fa5c2e0f470/main.mp4?fastly_token=NmE5ODlmNTBfYWU1ZjAzODJjYWQyMThiN2EzNjFhOWI3YWVmODczOWM4ZTYwYTMzZjY3MDM0NjNiMDNiNGE0MDgwNTAyYTBkNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kZGQwNmY3Ni0zM2EwLTQ0YWQtYmNkNS02MGM5OTFhNjk2MTgvMzkyZmUwZTEtNGIwNy00MzBmLWJlNTQtMGZhNWMyZTBmNDcwL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/a8be6a34-959c-4174-b2dd-f40597f2a104/a163f95a-f1eb-4123-b3f5-0091d6bb2791/main.mp4?fastly_token=NmE5OWVmOWVfY2QwMGM4YWY0MzliN2RmMDU3MmFlNzZkOWM0Y2YyM2ExMzViNjQ1ZDM0OWM3NGU0OTY2ODc1MmI4ZjVhZjIzM18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hOGJlNmEzNC05NTljLTQxNzQtYjJkZC1mNDA1OTdmMmExMDQvYTE2M2Y5NWEtZjFlYi00MTIzLWIzZjUtMDA5MWQ2YmIyNzkxL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -832,17 +901,17 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/7b7226ee-8eb3-445a-bee9-c9bb9b38cf73/90314da2-3730-4ea4-9314-ba7c4647f0ed/main.mp4?fastly_token=NmE5OWU1MGZfNmI5M2EzNmE3M2E5OGJmMmYyMzhlZGUxMzBlZDhkMTkxNmI0NmQ2OTEzNmE2OTdmMmFkMGQyMThmMTdmY2M3OV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83YjcyMjZlZS04ZWIzLTQ0NWEtYmVlOS1jOWJiOWIzOGNmNzMvOTAzMTRkYTItMzczMC00ZWE0LTkzMTQtYmE3YzQ2NDdmMGVkL21haW4ubXA0",
     "media_type": "video"
-   },
-   {
-    "title": "Around 20 vehicles burglarized at The Corinthian Apartments in NW Miami-Dade",
-    "url": "https://wsvn.com/news/local/miami-dade/around-20-vehicles-burglarized-at-the-corinthian-apartments-in-nw-miami-dade/",
-    "published": "Thu, 03 Sep 2026 13:03:51 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/8e035dc5-fc5c-4b65-b955-99115a500ef6/5601ff3b-cac5-4d67-b73d-a787a6768942/main.mp4?fastly_token=NmE5OWRjNmVfY2U0MjNhZmZjMzE3Y2M4MDlkMDBlNTczZTk3YmU2ODYzOGUwOGI1YjBmMWU5ZmExMjYzOTEwZDc4ZjRlNWZjZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84ZTAzNWRjNS1mYzVjLTRiNjUtYjk1NS05OTExNWE1MDBlZjYvNTYwMWZmM2ItY2FjNS00ZDY3LWI3M2QtYTc4N2E2NzY4OTQyL21haW4ubXA0",
-    "media_type": "video"
    }
   ],
   "colombia": [
+   {
+    "title": "Nariño | Homicidio de un firmante de paz conmociona a Samaniego tras el reciente crimen del notario único",
+    "url": "https://www.eltiempo.com/colombia/cali/narino-homicidio-de-un-firmante-de-paz-conmociona-a-samaniego-tras-el-reciente-crimen-del-notario-unico-3583272",
+    "published": "2026-09-03T10:43:51-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/06/09/6a2883057c765.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Alarma en el sur del Magdalena por posibles retenes del EGC en Guamal: gobernadora pide consejo de seguridad al presidente Abelardo De La Espriella",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/alarma-en-el-sur-del-magdalena-por-posibles-retenes-del-egc-en-guamal-gobernadora-pide-consejo-de-seguridad-al-presidente-abelardo-de-la-espriella-3583264",
@@ -897,14 +966,6 @@
     "published": "2026-09-03T09:16:11-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/03/6a99811f69cd1.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Frustran posible atentado terrorista del ELN en Santander: hallan 250 kilos de explosivos cerca de una escuela",
-    "url": "https://www.eltiempo.com/colombia/santander/frustran-posible-atentado-terrorista-del-eln-en-santander-hallan-250-kilos-de-explosivos-cerca-de-una-escuela-3583229",
-    "published": "2026-09-03T09:09:51-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/03/6a997ec9a5161.r_d.360-570-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -978,7 +1039,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-03T11:46:22-04:00",
+  "fetched_at": "2026-09-03T12:01:26-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -986,7 +1047,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-03T11:46:22-04:00",
+  "fetched_at": "2026-09-03T12:01:26-04:00",
   "countries": [
    {
     "iso": "CHN",
