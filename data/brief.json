@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-04T16:16:08-04:00",
- "generated_at_utc": "2026-09-04T20:16:08+00:00",
+ "generated_at": "2026-09-04T16:31:12-04:00",
+ "generated_at_utc": "2026-09-04T20:31:12+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 4",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-04T16:16:08-04:00",
+  "fetched_at": "2026-09-04T16:31:12-04:00",
   "curve": [
    {
     "time": "2026-09-04T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 74.6,
-   "feels": 79.0,
-   "humidity": 94,
-   "wind_mph": 12.2,
-   "wind_dir": 257,
-   "observed_at": "2026-09-04T16:15"
+   "temp": 75.2,
+   "feels": 82.2,
+   "humidity": 92,
+   "wind_mph": 6.2,
+   "wind_dir": 251,
+   "observed_at": "2026-09-04T16:30"
   },
   "today": {
    "high": 87.1,
@@ -166,113 +166,65 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-04T16:16:08-04:00",
+  "fetched_at": "2026-09-04T16:31:12-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-04T16:16:09-04:00",
-  "aqi": 27,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-04T16:31:38-04:00",
+  "aqi": 50,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-04 15:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-04",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-04",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-05",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-05",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 7.1,
+  "pm10": 9.0,
+  "observed": "2026-09-04T16:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-04T16:16:11-04:00",
+  "fetched_at": "2026-09-04T16:31:41-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
   "miles": 21.9,
-  "minutes": 74,
-  "delay_minutes": 3,
+  "minutes": 75,
+  "delay_minutes": 5,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 22.6,
+    "miles": 26.4,
     "minutes": 64,
-    "toll": true,
-    "saves": 10
-   },
-   {
-    "miles": 25.5,
-    "minutes": 63,
     "toll": true,
     "saves": 11
    },
    {
-    "miles": 22.1,
-    "minutes": 71,
+    "miles": 22.6,
+    "minutes": 65,
     "toll": true,
-    "saves": 3
+    "saves": 10
    },
    {
-    "miles": 28.8,
+    "miles": 23.2,
     "minutes": 74,
     "toll": true,
-    "saves": 0
+    "saves": 1
+   },
+   {
+    "miles": 29.2,
+    "minutes": 76,
+    "toll": true,
+    "saves": -1
    }
   ],
   "alternates_worth_taking": [
    {
-    "miles": 25.5,
-    "minutes": 63,
+    "miles": 26.4,
+    "minutes": 64,
     "toll": true,
     "saves": 11
    }
@@ -280,8 +232,8 @@
   "free_alternates": [
    {
     "miles": 21.9,
-    "minutes": 74,
-    "delay_minutes": 3,
+    "minutes": 75,
+    "delay_minutes": 5,
     "saves": 0
    },
    {
@@ -295,15 +247,15 @@
     "delay_minutes": 1
    },
    {
-    "miles": 23.0,
-    "minutes": 83,
-    "delay_minutes": 1
+    "miles": 23.7,
+    "minutes": 86,
+    "delay_minutes": 0
    }
   ],
   "best_free": {
    "miles": 21.9,
-   "minutes": 74,
-   "delay_minutes": 3,
+   "minutes": 75,
+   "delay_minutes": 5,
    "saves": 0
   },
   "incidents": [
@@ -313,21 +265,10 @@
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 2689,
+    "delay_s": 3016,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-04T19:21:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "I-95 N"
-    ],
-    "delay_s": 2043,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-04T19:58:19Z"
    },
    {
     "county": "Miami-Dade",
@@ -336,7 +277,7 @@
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 1327,
+    "delay_s": 1625,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-04T19:26:55Z"
@@ -344,35 +285,13 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-972"
-    ],
-    "delay_s": 1168,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-04T17:58:01Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 1131,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-04T18:25:07Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "US-1 N",
-     "US-1 S",
-     "FL-5"
+     "I-95 N"
     ],
-    "delay_s": 1096,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-04T17:59:00Z"
+    "delay_s": 1536,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-04T19:58:19Z"
    },
    {
     "county": "Miami-Dade",
@@ -380,7 +299,7 @@
      "I-95 S",
      "US-1 S"
     ],
-    "delay_s": 1050,
+    "delay_s": 1320,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-04T19:23:58Z"
@@ -388,12 +307,22 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-860"
+     "FL-997"
     ],
-    "delay_s": 917,
+    "delay_s": 1209,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-04T19:24:30Z"
+    "start": "2026-09-04T19:31:09Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-823"
+    ],
+    "delay_s": 969,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-04T20:15:55Z"
    },
    {
     "county": "Broward",
@@ -448,29 +377,72 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-823"
+     "FL-976"
     ],
-    "delay_s": 869,
+    "delay_s": 838,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-04T19:56:37Z"
+    "start": "2026-09-04T18:21:41Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 840,
+    "delay_s": 825,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-04T19:15:47Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-860"
+    ],
+    "delay_s": 823,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-04T19:24:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 813,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-04T17:59:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-7",
+     "US-441 S"
+    ],
+    "delay_s": 733,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-04T20:07:37Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-922"
+    ],
+    "delay_s": 717,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-04T19:31:09Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-854"
     ],
-    "delay_s": 839,
+    "delay_s": 687,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-04T19:10:11Z"
@@ -478,101 +450,10 @@
    {
     "county": "Broward",
     "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 765,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-04T19:14:23Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826"
-    ],
-    "delay_s": 713,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-04T19:32:28Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 711,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-04T18:40:07Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-994"
-    ],
-    "delay_s": 680,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-04T19:36:46Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-997"
-    ],
-    "delay_s": 675,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-04T19:31:09Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-825"
-    ],
-    "delay_s": 655,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-04T17:09:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-817"
-    ],
-    "delay_s": 643,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-04T19:35:09Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-395 W",
-     "FL-836 W"
-    ],
-    "delay_s": 631,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-04T19:02:04Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-916"
-    ],
-    "delay_s": 625,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-04T19:59:38Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 619,
+    "delay_s": 681,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-04T19:35:44Z"
@@ -580,53 +461,125 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-986"
+     "FL-916"
     ],
-    "delay_s": 571,
+    "delay_s": 676,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-04T20:07:01Z"
+    "start": "2026-09-04T19:59:38Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-825"
+    ],
+    "delay_s": 656,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-04T17:09:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 W",
+     "FL-A1A S"
+    ],
+    "delay_s": 613,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-04T18:08:35Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 W",
+     "US-41 E"
+    ],
+    "delay_s": 599,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-04T20:16:29Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-836 W"
     ],
-    "delay_s": 566,
+    "delay_s": 597,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-04T17:58:31Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-953"
+     "I-95 S"
     ],
-    "delay_s": 552,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-04T20:05:01Z"
+    "delay_s": 593,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-04T17:29:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 575,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-04T19:14:23Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-976"
+     "FL-817"
     ],
-    "delay_s": 541,
+    "delay_s": 539,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-04T18:21:41Z"
+    "start": "2026-09-04T20:14:49Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 N"
+    ],
+    "delay_s": 485,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-04T17:31:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": 485,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-04T17:58:01Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-858"
+    ],
+    "delay_s": 475,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-04T20:19:08Z"
    }
   ],
-  "incident_count": 686,
-  "named_count": 275,
-  "major_count": 26,
+  "incident_count": 689,
+  "named_count": 278,
+  "major_count": 22,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-04T16:16:14-04:00",
+  "fetched_at": "2026-09-04T16:31:42-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -666,17 +619,19 @@
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 4 2026, 4:48 AM",
    "Northeast | Alachua | Gainesville: There is lane blocking construction on SR-222 at NW 78 Ter. Use caution in the area. | Sep 4 2026, 8:54 AM",
    "Southeast | Broward | test | Sep 4 2026, 1:43 PM",
-   "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Purple Alert has been issued for Michael Simpson out of Tampa. Look for a 2006 Black Honda Crv Fl Tag CW31IE. CALL *347. | Sep 4 2026, 3:33 PM"
+   "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Purple Alert has been issued for Michael Simpson out of Tampa. Look for a 2006 Black Honda Crv Fl Tag CW31IE. CALL *347. | Sep 4 2026, 3:33 PM",
+   "Southeast | Martin | Turnpike - test | Sep 4 2026, 4:26 PM"
   ],
   "fl511_local": [
    "Southeast | Broward | test | Sep 4 2026, 1:43 PM",
-   "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Purple Alert has been issued for Michael Simpson out of Tampa. Look for a 2006 Black Honda Crv Fl Tag CW31IE. CALL *347. | Sep 4 2026, 3:33 PM"
+   "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Purple Alert has been issued for Michael Simpson out of Tampa. Look for a 2006 Black Honda Crv Fl Tag CW31IE. CALL *347. | Sep 4 2026, 3:33 PM",
+   "Southeast | Martin | Turnpike - test | Sep 4 2026, 4:26 PM"
   ]
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-04T16:16:14-04:00",
+  "fetched_at": "2026-09-04T16:31:43-04:00",
   "issued": "200 PM EDT Fri Sep 4 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 041714\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Fri Sep 4 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Cangialosi"
@@ -684,7 +639,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-04T16:16:14-04:00",
+  "fetched_at": "2026-09-04T16:31:43-04:00",
   "florida": "$3.9516",
   "national": "$4.1474",
   "diesel": "$5.6781",
@@ -693,7 +648,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-04T16:16:15-04:00",
+  "fetched_at": "2026-09-04T16:31:44-04:00",
   "streams": {
    "local": [
     {
@@ -802,6 +757,14 @@
   ],
   "local": [
    {
+    "title": "Woman dies after being stabbed multiple times inside Brickell high-rise",
+    "url": "https://www.local10.com/news/local/2026/09/04/woman-stabbed-multiple-times-in-miamis-brickell-neighborhood/",
+    "published": "Fri, 04 Sep 2026 12:11:32 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Man once linked to Russian package-stealing ring now accused of FedEx Rolex theft in Broward",
     "url": "https://www.local10.com/news/local/2026/09/04/man-once-linked-to-russian-package-stealing-ring-now-accused-of-fedex-rolex-theft-in-broward/",
     "published": "Fri, 04 Sep 2026 18:36:55 +0000",
@@ -824,14 +787,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/CY73TWOEIRBYJN5KTKAPZRB65U.jpeg?auth=3061f6769bf585e5124cf8c6f06e5cd183173a3777ea4f62dec5e89f86b860dc&smart=true&width=1200&height=900",
     "media_type": "image"
-   },
-   {
-    "title": "Woman dies after being stabbed multiple times inside Brickell high-rise",
-    "url": "https://www.local10.com/news/local/2026/09/04/woman-stabbed-multiple-times-in-miamis-brickell-neighborhood/",
-    "published": "Fri, 04 Sep 2026 12:11:32 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
    },
    {
     "title": "Family separated by immigration arrest faces another painful goodbye at MIA",
@@ -932,6 +887,14 @@
   ],
   "colombia": [
    {
+    "title": "Migración Colombia capturó en el Aeropuerto de Cartagena a un ciudadano peruano requerido con Circular Roja de la Interpol",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/migracion-colombia-capturo-en-el-aeropuerto-de-cartagena-a-un-ciudadano-peruano-requerido-con-circular-roja-de-la-interpol-3583663",
+    "published": "2026-09-04T14:56:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/04/6a9b1e212e845.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Crearon el vino de hormiga culona y estará expuesto en la 'Feria Bonita' de Bucaramanga: este es el emprendimiento que varía en sabores de esta bebida",
     "url": "https://www.eltiempo.com/colombia/santander/crearon-el-vino-de-hormiga-culona-y-estara-expuesto-en-la-feria-bonita-de-bucaramanga-este-es-el-emprendimiento-que-varia-en-sabores-de-esta-bebida-3583640",
     "published": "2026-09-04T14:38:55-05:00",
@@ -986,17 +949,17 @@
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/04/6a9b0e1fa0215.png",
     "media_type": "image"
-   },
-   {
-    "title": "Habló amigo de Pablo Carrizo, argentino desaparecido en Colombia y que fue hallado sin vida: no sabía que había viajado y reveló dónde lo encontraron",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/hablo-amigo-de-pablo-carrizo-argentino-desaparecido-en-colombia-y-que-fue-hallado-sin-vida-no-sabia-que-habia-viajado-y-revelo-donde-lo-encontraron-3583650",
-    "published": "2026-09-04T13:53:45-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/04/6a9ac78b8fd4a.r_d.97-150-0.jpeg",
-    "media_type": "image"
    }
   ],
   "world": [
+   {
+    "title": "Kyiv's new reality: Russian drones by night — and now by day",
+    "url": "https://www.npr.org/2026/09/04/nx-s1-5957488/kyivs-new-reality-russian-drones-by-night-and-now-by-day",
+    "published": "Fri, 04 Sep 2026 16:25:27 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
    {
     "title": "Philippine vice president is ordered arrested for threats against the president",
     "url": "https://www.npr.org/2026/09/04/g-s1-142016/philippine-vice-president-is-ordered-arrested-for-threats-against-the-president",
@@ -1052,29 +1015,21 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "As El Niño intensifies, Rio turns to science — and a spiritual adviser",
-    "url": "https://www.npr.org/2026/09/03/nx-s1-5944344/as-el-nino-intensifies-rio-turns-to-science-and-a-spiritual-advisor",
-    "published": "Thu, 03 Sep 2026 16:32:11 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-04T16:16:16-04:00",
+  "fetched_at": "2026-09-04T16:31:45-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (458) + USGS (13)",
-  "fetched_at": "2026-09-04T16:16:19-04:00",
+  "source": "GDACS (463) + USGS (12)",
+  "fetched_at": "2026-09-04T16:31:49-04:00",
   "events": [
    {
     "lat": 27.2952744,
@@ -1087,19 +1042,6 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104124",
     "when": "Tue, 01 Sep 2026 13:57:04 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": 52.0506,
-    "lon": -169.1387,
-    "kind": "earthquake",
-    "level": "orange",
-    "title": "M5.5 — 100 km S of Nikolski, Alaska",
-    "place": "100 km S of Nikolski, Alaska",
-    "severity": "M5.5",
-    "mag": 5.5,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000te4b",
-    "when": 1788466875216,
-    "source": "USGS"
    },
    {
     "lat": 23.8,
@@ -1330,13 +1272,13 @@
     "source": "USGS"
    },
    {
-    "lat": 22.4,
-    "lon": 137.8,
+    "lat": 24.0,
+    "lon": 137.1,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone TWENTYTHREE-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
     "place": null,
-    "severity": "Tropical Storm (maximum wind speed of 74 km/h)",
+    "severity": "Tropical Depression (maximum wind speed of 56 km/h)",
     "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001319",
     "when": "Fri, 04 Sep 2026 15:42:34 GMT",
     "source": "GDACS"
@@ -1474,6 +1416,18 @@
     "source": "GDACS"
    },
    {
+    "lat": -15.568138449155576,
+    "lon": 14.485039971980909,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 6464 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031595",
+    "when": "Fri, 04 Sep 2026 05:01:24 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -20.82597251626279,
     "lon": 19.771598099752936,
     "kind": "wildfire",
@@ -1495,18 +1449,6 @@
     "severity": "Green impact for forestfire in 5543 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031599",
     "when": "Fri, 04 Sep 2026 17:01:56 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -15.568138449155576,
-    "lon": 14.485039971980909,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 6464 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031595",
-    "when": "Fri, 04 Sep 2026 05:01:24 GMT",
     "source": "GDACS"
    },
    {
@@ -1546,13 +1488,13 @@
     "source": "GDACS"
    },
    {
-    "lat": 28.7,
-    "lon": 127.4,
+    "lat": 28.4,
+    "lon": 127.1,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone KROVANH-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
     "place": "Japan",
-    "severity": "Tropical Storm (maximum wind speed of 74 km/h)",
+    "severity": "Tropical Storm (maximum wind speed of 83 km/h)",
     "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001318",
     "when": "Tue, 01 Sep 2026 09:28:20 GMT",
     "source": "GDACS"
@@ -1582,18 +1524,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -10.20479962937371,
-    "lon": -50.31135439486944,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 5222 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031580",
-    "when": "Fri, 04 Sep 2026 19:08:47 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -11.296193023591837,
     "lon": -50.59154146482598,
     "kind": "wildfire",
@@ -1603,6 +1533,18 @@
     "severity": "Green impact for forestfire in 6897 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031480",
     "when": "Wed, 02 Sep 2026 11:01:46 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -10.20479962937371,
+    "lon": -50.31135439486944,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 5222 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031580",
+    "when": "Fri, 04 Sep 2026 19:08:47 GMT",
     "source": "GDACS"
    },
    {
@@ -1618,27 +1560,15 @@
     "source": "GDACS"
    },
    {
-    "lat": -21.374381775389878,
-    "lon": 145.0155105796085,
+    "lat": -30.24926009876475,
+    "lon": 152.3472966762593,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Australia",
     "place": "Australia",
-    "severity": "Green impact for forestfire in 8012 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031549",
-    "when": "Thu, 03 Sep 2026 11:04:53 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -8.459770223740415,
-    "lon": -54.69617837040406,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 7779 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031550",
-    "when": "Thu, 03 Sep 2026 11:05:00 GMT",
+    "severity": "Green impact for forestfire in 6137 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031579",
+    "when": "Fri, 04 Sep 2026 09:03:48 GMT",
     "source": "GDACS"
    },
    {
@@ -1714,6 +1644,30 @@
     "source": "GDACS"
    },
    {
+    "lat": -21.374381775389878,
+    "lon": 145.0155105796085,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 8012 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031549",
+    "when": "Thu, 03 Sep 2026 11:04:53 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -8.459770223740415,
+    "lon": -54.69617837040406,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 7779 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031550",
+    "when": "Thu, 03 Sep 2026 11:05:00 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -6.72152923181637,
     "lon": 16.40778945961119,
     "kind": "wildfire",
@@ -1747,18 +1701,6 @@
     "severity": "Green impact for forestfire in 6446 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031559",
     "when": "Thu, 03 Sep 2026 19:05:31 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -30.24926009876475,
-    "lon": 152.3472966762593,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 6137 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031579",
-    "when": "Fri, 04 Sep 2026 09:03:48 GMT",
     "source": "GDACS"
    },
    {
@@ -1822,30 +1764,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -6.549819181418248,
-    "lon": 15.827216177865376,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 8597 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031501",
-    "when": "Wed, 02 Sep 2026 19:02:56 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -11.640909345564646,
-    "lon": 37.71911672760667,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Mozambique, Tanzania",
-    "place": "Mozambique, Tanzania",
-    "severity": "Green impact for forestfire in 7226 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031503",
-    "when": "Thu, 03 Sep 2026 15:06:12 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -17.577307005577094,
     "lon": 20.239813205972993,
     "kind": "wildfire",
@@ -1879,6 +1797,30 @@
     "severity": "Green impact for forestfire in 5857 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031446",
     "when": "Wed, 02 Sep 2026 15:03:41 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -6.549819181418248,
+    "lon": 15.827216177865376,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 8597 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031501",
+    "when": "Wed, 02 Sep 2026 19:02:56 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -11.640909345564646,
+    "lon": 37.71911672760667,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Mozambique, Tanzania",
+    "place": "Mozambique, Tanzania",
+    "severity": "Green impact for forestfire in 7226 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031503",
+    "when": "Thu, 03 Sep 2026 15:06:12 GMT",
     "source": "GDACS"
    },
    {
@@ -1927,6 +1869,18 @@
     "severity": "Green impact for forestfire in 8032 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031563",
     "when": "Fri, 04 Sep 2026 17:07:27 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -12.329633711712889,
+    "lon": -65.4602604942179,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Bolivia",
+    "place": "Bolivia",
+    "severity": "Green impact for forestfire in 10670 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031551",
+    "when": "Thu, 03 Sep 2026 11:06:44 GMT",
     "source": "GDACS"
    },
    {
@@ -2158,18 +2112,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -12.329633711712889,
-    "lon": -65.4602604942179,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Bolivia",
-    "place": "Bolivia",
-    "severity": "Green impact for forestfire in 10670 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031551",
-    "when": "Thu, 03 Sep 2026 11:06:44 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": 9.3168374,
     "lon": -83.8124194,
     "kind": "flood",
@@ -2230,18 +2172,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -7.95121434381569,
-    "lon": -44.28223497221752,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 9408 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031379",
-    "when": "Mon, 31 Aug 2026 11:01:14 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -5.2245406895774,
     "lon": 21.374416804839715,
     "kind": "wildfire",
@@ -2275,6 +2205,18 @@
     "severity": "Green impact for forestfire in 6032 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031569",
     "when": "Fri, 04 Sep 2026 19:22:25 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -7.95121434381569,
+    "lon": -44.28223497221752,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 9408 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031379",
+    "when": "Mon, 31 Aug 2026 11:01:14 GMT",
     "source": "GDACS"
    },
    {
@@ -2323,18 +2265,6 @@
     "severity": "Green impact for forestfire in 21951 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031411",
     "when": "Mon, 31 Aug 2026 23:01:45 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -12.450234979973798,
-    "lon": 132.06899667085955,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 5382 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031552",
-    "when": "Thu, 03 Sep 2026 11:09:31 GMT",
     "source": "GDACS"
    },
    {
@@ -2528,13 +2458,37 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031634",
     "when": "Fri, 04 Sep 2026 19:26:02 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -16.6251793150018,
+    "lon": 36.848786560523266,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Mozambique",
+    "place": "Mozambique",
+    "severity": "Green impact for forestfire in 11326 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031582",
+    "when": "Fri, 04 Sep 2026 17:12:10 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -9.693931159001497,
+    "lon": 29.66935408407217,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Zambia",
+    "place": "Zambia",
+    "severity": "Green impact for forestfire in 15094 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031449",
+    "when": "Wed, 02 Sep 2026 11:05:00 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 471,
+  "event_count": 475,
   "counts": {
    "red": 1,
-   "orange": 7,
-   "green": 463
+   "orange": 6,
+   "green": 468
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2542,7 +2496,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-04T16:16:19-04:00",
+  "fetched_at": "2026-09-04T16:31:49-04:00",
   "countries": [
    {
     "iso": "RUS",
@@ -2555,6 +2509,32 @@
       "section": "local"
      },
      {
+      "title": "Kyiv's new reality: Russian drones by night — and now by day",
+      "url": "https://www.npr.org/2026/09/04/nx-s1-5957488/kyivs-new-reality-russian-drones-by-night-and-now-by-day",
+      "published": "Fri, 04 Sep 2026 16:25:27 -0400",
+      "section": "world"
+     },
+     {
+      "title": "Russia intensifies attacks on Ukraine's capital",
+      "url": "https://www.npr.org/2026/09/04/nx-s1-5955596/russia-intensifies-attacks-on-ukraines-capital",
+      "published": "Fri, 04 Sep 2026 04:00:24 -0400",
+      "section": "world"
+     }
+    ],
+    "count": 3,
+    "issue": "Man once linked to Russian package-stealing ring now accused of FedEx Rolex theft in Broward"
+   },
+   {
+    "iso": "UKR",
+    "name": "Ukraine",
+    "stories": [
+     {
+      "title": "Kyiv's new reality: Russian drones by night — and now by day",
+      "url": "https://www.npr.org/2026/09/04/nx-s1-5957488/kyivs-new-reality-russian-drones-by-night-and-now-by-day",
+      "published": "Fri, 04 Sep 2026 16:25:27 -0400",
+      "section": "world"
+     },
+     {
       "title": "Russia intensifies attacks on Ukraine's capital",
       "url": "https://www.npr.org/2026/09/04/nx-s1-5955596/russia-intensifies-attacks-on-ukraines-capital",
       "published": "Fri, 04 Sep 2026 04:00:24 -0400",
@@ -2562,7 +2542,7 @@
      }
     ],
     "count": 2,
-    "issue": "Man once linked to Russian package-stealing ring now accused of FedEx Rolex theft in Broward"
+    "issue": "Kyiv's new reality: Russian drones by night — and now by day"
    },
    {
     "iso": "ARG",
@@ -2583,14 +2563,14 @@
     "name": "Colombia",
     "stories": [
      {
-      "title": "Habló amigo de Pablo Carrizo, argentino desaparecido en Colombia y que fue hallado sin vida: no sabía que había viajado y reveló dónde lo encontraron",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/hablo-amigo-de-pablo-carrizo-argentino-desaparecido-en-colombia-y-que-fue-hallado-sin-vida-no-sabia-que-habia-viajado-y-revelo-donde-lo-encontraron-3583650",
-      "published": "2026-09-04T13:53:45-05:00",
+      "title": "Migración Colombia capturó en el Aeropuerto de Cartagena a un ciudadano peruano requerido con Circular Roja de la Interpol",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/migracion-colombia-capturo-en-el-aeropuerto-de-cartagena-a-un-ciudadano-peruano-requerido-con-circular-roja-de-la-interpol-3583663",
+      "published": "2026-09-04T14:56:00-05:00",
       "section": "colombia"
      }
     ],
     "count": 1,
-    "issue": "Habló amigo de Pablo Carrizo, argentino desaparecido en Colombia y que fue hallado sin vida: no sabía que había viajado y reveló dónde lo encontraron"
+    "issue": "Migración Colombia capturó en el Aeropuerto de Cartagena a un ciudadano peruano requerido con Circular Roja de la Interpol"
    },
    {
     "iso": "DEU",
@@ -2619,20 +2599,6 @@
     ],
     "count": 1,
     "issue": "Myanmar military head visits Vietnam to normalize relations"
-   },
-   {
-    "iso": "UKR",
-    "name": "Ukraine",
-    "stories": [
-     {
-      "title": "Russia intensifies attacks on Ukraine's capital",
-      "url": "https://www.npr.org/2026/09/04/nx-s1-5955596/russia-intensifies-attacks-on-ukraines-capital",
-      "published": "Fri, 04 Sep 2026 04:00:24 -0400",
-      "section": "world"
-     }
-    ],
-    "count": 1,
-    "issue": "Russia intensifies attacks on Ukraine's capital"
    },
    {
     "iso": "VNM",
