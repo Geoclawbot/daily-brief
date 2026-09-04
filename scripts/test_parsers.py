@@ -367,6 +367,66 @@ check("every story keeps its link",
 check("busiest country sorts first", w["countries"][0]["count"] >= w["countries"][-1]["count"])
 check("headline count is reported", w["headlines_scanned"] == 5)
 
+# ---------------------------------------------------------------- global events
+GD = b"""<?xml version="1.0"?>
+<rss xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:gdacs="http://www.gdacs.org"><channel>
+<item><title>Red alert cyclone DOLLY-26</title><link>https://g.test/1</link>
+  <pubDate>Thu, 27 Aug 2026 10:00:00 GMT</pubDate>
+  <geo:lat>-18.4</geo:lat><geo:long>47.5</geo:long>
+  <gdacs:alertlevel>Red</gdacs:alertlevel><gdacs:eventtype>TC</gdacs:eventtype>
+  <gdacs:country>Madagascar</gdacs:country><gdacs:severity>210 km/h</gdacs:severity></item>
+<item><title>Green forest fire in Australia</title><link>https://g.test/2</link>
+  <pubDate>Thu, 27 Aug 2026 09:00:00 GMT</pubDate>
+  <geo:lat>-33.9</geo:lat><geo:long>151.2</geo:long>
+  <gdacs:alertlevel>Green</gdacs:alertlevel><gdacs:eventtype>WF</gdacs:eventtype></item>
+<item><title>Event with no usable coordinates</title><link>https://g.test/3</link>
+  <gdacs:alertlevel>Orange</gdacs:alertlevel><gdacs:eventtype>FL</gdacs:eventtype></item>
+<item><title>Event off the edge of the earth</title><link>https://g.test/4</link>
+  <geo:lat>999</geo:lat><geo:long>12</geo:long>
+  <gdacs:alertlevel>Red</gdacs:alertlevel><gdacs:eventtype>EQ</gdacs:eventtype></item>
+</channel></rss>"""
+with mock.patch.object(F, "get", lambda *a, **k: fake_response(content=GD)):
+    g = F._gdacs_events()
+check("gdacs events parsed", len(g) == 2, f"got {len(g)}")
+check("alert level lowercased", g[0]["level"] == "red")
+check("event code becomes a readable kind", g[0]["kind"] == "cyclone" and g[1]["kind"] == "wildfire")
+check("coordinates survive intact", g[0]["lat"] == -18.4 and g[0]["lon"] == 47.5)
+check("an event with no point is dropped, not placed at 0,0",
+      not [e for e in g if e["lat"] == 0 and e["lon"] == 0])
+check("an impossible latitude is dropped", "edge of the earth" not in str(g))
+
+USGS = {"features": [
+    {"geometry": {"coordinates": [121.57, 22.84, 10]},
+     "properties": {"mag": 7.1, "place": "Taiwan", "url": "https://u.test/1", "time": 1}},
+    {"geometry": {"coordinates": [-122.0, 37.5, 8]},
+     "properties": {"mag": 4.6, "place": "California", "url": "https://u.test/2", "time": 2}},
+    {"geometry": {"coordinates": [1.0]},
+     "properties": {"mag": 5.0, "place": "truncated", "url": "x", "time": 3}},
+]}
+with mock.patch.object(F, "get", lambda *a, **k: fake_response(USGS)):
+    u = F._usgs_events()
+check("quakes parsed", len(u) == 2)
+check("lon/lat are not transposed", u[0]["lat"] == 22.84 and u[0]["lon"] == 121.57)
+check("a big quake is red", u[0]["level"] == "red")
+check("a moderate quake is green", u[1]["level"] == "green")
+check("a truncated geometry is skipped", all(e["place"] != "truncated" for e in u))
+
+seq3 = [fake_response(content=GD), fake_response(USGS)]
+with mock.patch.object(F, "get", lambda *a, **k: seq3.pop(0)):
+    ev = F.fetch_events()
+check("events block ok", ev["ok"] and ev["event_count"] == 4)
+check("red events sort to the front", ev["events"][0]["level"] == "red")
+check("levels are counted", ev["counts"]["red"] == 2 and ev["counts"]["green"] == 2)
+check("both sources named", "GDACS" in ev["source"] and "USGS" in ev["source"])
+
+def _boom(*a, **k):
+    raise RuntimeError("network down")
+with mock.patch.object(F, "get", _boom):
+    ev2 = F.fetch_events()
+check("total outage fails loudly", ev2["ok"] is False)
+check("failed sources are named", set(ev2["failed_sources"]) == {"GDACS", "USGS"})
+
 # ---------------------------------------------------------------- failure shape
 f = F.fail("SomeSource", "boom")
 check("failure block has ok False", f["ok"] is False)

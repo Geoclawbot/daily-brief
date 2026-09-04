@@ -338,8 +338,92 @@ footer b{color:var(--ink2)}
   display:flex;align-items:baseline;gap:9px}
 .mapdet-empty{margin-top:11px}
 
+
+/* ---- global situation: events, layers, ranking ---- */
+.evt{cursor:pointer;stroke:#0b0d14;stroke-width:.8;vector-effect:non-scaling-stroke}
+.e-red{fill:#ef4b3f} .e-orange{fill:#f0913a} .e-green{fill:#43c9a0}
+.evt:hover,.evt:focus{stroke:#fff;stroke-width:1.6;outline:none}
+.evt.sel{stroke:#fff;stroke-width:2}
+.pulse{animation:pl 2.2s ease-in-out infinite}
+@keyframes pl{0%,100%{opacity:1}50%{opacity:.42}}
+.mleg{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px}
+.lay{display:inline-flex;align-items:center;gap:7px;cursor:pointer;font:inherit;
+  font-size:11.5px;font-weight:700;padding:6px 11px;border-radius:999px;
+  background:var(--surface2);border:1px solid var(--grid);color:var(--muted)}
+.lay.on{color:var(--ink);border-color:#3a4152}
+.lay:not(.on) .sw{opacity:.28}
+.sw{width:9px;height:9px;border-radius:50%;flex:none}
+.sw-news{background:#c23c34} .sw-red{background:#ef4b3f} .sw-org{background:#f0913a}
+.rank{margin-top:14px;border-top:1px solid var(--grid);padding-top:11px}
+.rankrow{display:flex;align-items:center;gap:10px;width:100%;cursor:pointer;
+  font:inherit;background:none;border:0;padding:5px 0;color:var(--ink)}
+.rankrow:hover .rankname{color:#fff}
+.rankname{font-size:13px;font-weight:650;min-width:118px;text-align:left;color:var(--ink2)}
+.rankbar{flex:1;height:7px;border-radius:99px;background:var(--surface2);overflow:hidden}
+.rankbar i{display:block;height:100%;background:linear-gradient(90deg,#a8641f,#ef4b3f)}
+.rankn{font-size:12px;font-weight:800;font-variant-numeric:tabular-nums;
+  min-width:20px;text-align:right;color:var(--ink2)}
+
+
+/* ---- section nav ---- */
+.snav{position:sticky;top:52px;z-index:35;background:rgba(7,7,10,.94);
+  backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.07)}
+.snav-in{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;
+  max-width:640px;margin:0 auto;padding:9px 15px}
+.snav-in::-webkit-scrollbar{display:none}
+.stab{flex:none;font:inherit;font-size:12.5px;font-weight:700;letter-spacing:.01em;
+  padding:7px 13px;border-radius:999px;background:transparent;color:var(--muted);
+  border:1px solid transparent;cursor:pointer;white-space:nowrap;
+  display:inline-flex;align-items:center;gap:7px;transition:color .18s,background .18s}
+.stab:active{transform:scale(.96)}
+.stab.on{color:var(--ink);background:var(--surface2);border-color:var(--grid)}
+.stab .sdot{width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.5}
+.stab.on .sdot{opacity:1}
+.stab.s-good .sdot{background:var(--good)}
+.stab.s-warn .sdot{background:var(--warn)}
+.stab.s-crit .sdot{background:var(--crit)}
+
+/* ---- metric tiles with icons ---- */
+.tile{position:relative;overflow:hidden}
+.tile::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(120% 90% at 100% 0%,rgba(255,255,255,.05),transparent 60%)}
+.thead{display:flex;align-items:center;gap:7px;margin-bottom:2px}
+.tico{width:15px;height:15px;flex:none;opacity:.75}
+.tico svg{width:100%;height:100%;display:block}
+.tone-good .tico{color:var(--good)} .tone-warn .tico{color:var(--warn)}
+.tone-crit .tico{color:var(--crit)} .tone-cool .tico{color:var(--s1)}
+
+/* ---- alert block, icon-led ---- */
+.alert{display:flex;gap:13px;align-items:flex-start}
+.aico{width:34px;height:34px;flex:none;border-radius:50%;display:flex;
+  align-items:center;justify-content:center;background:rgba(250,178,25,.14);
+  color:var(--warn);border:1px solid rgba(250,178,25,.3)}
+.alert.crit .aico{background:rgba(208,59,59,.15);color:var(--crit);
+  border-color:rgba(208,59,59,.32)}
+.alert.calm .aico{background:rgba(12,163,12,.14);color:var(--good);
+  border-color:rgba(12,163,12,.3)}
+.aico svg{width:17px;height:17px}
+
+/* ---- entrance, first paint only ---- */
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.anim .hero,.anim .alert,.anim .tiles,.anim .quads>.quad>*{
+  animation:rise .5s cubic-bezier(.22,.7,.3,1) both}
+.anim .hero{animation-delay:.02s}
+.anim .alert{animation-delay:.08s}
+.anim .tiles{animation-delay:.14s}
+.anim .quads>.quad:nth-child(1)>*{animation-delay:.20s}
+.anim .quads>.quad:nth-child(2)>*{animation-delay:.26s}
+.anim .quads>.quad:nth-child(3)>*{animation-delay:.32s}
+.anim .quads>.quad:nth-child(4)>*{animation-delay:.38s}
+
+/* ---- card polish ---- */
+.card{transition:border-color .2s}
+.card summary{transition:background .18s}
+.card summary:active{background:rgba(255,255,255,.03)}
+
 @media (prefers-reduced-motion: reduce){
   /* Motion is kept on purpose. Only large positional movement is softened. */
+  .anim .hero,.anim .alert,.anim .tiles,.anim .quads>.quad>*{animation:none}
   .car{animation-name:fadeonly} .sunrise{animation-name:none}
   @keyframes fadeonly{0%,100%{opacity:.85}50%{opacity:1}}
 }
@@ -356,6 +440,16 @@ footer b{color:var(--ink2)}
   </button>
 </div></div>
 
+<nav class="snav" id="snav" aria-label="Jump to section">
+  <div class="snav-in">
+    <button type="button" class="stab on" data-go="top"><span class="sdot"></span>Overview</button>
+    <button type="button" class="stab" data-go="weather"><span class="sdot"></span>Weather</button>
+    <button type="button" class="stab" data-go="commute"><span class="sdot"></span>Traffic</button>
+    <button type="button" class="stab" data-go="worldmap"><span class="sdot"></span>World</button>
+    <button type="button" class="stab" data-go="livetv"><span class="sdot"></span>Live TV</button>
+    <button type="button" class="stab" data-go="local"><span class="sdot"></span>News</button>
+  </div>
+</nav>
 <div class="fresh f-live" id="fresh"><span class="fdot"></span><span id="freshtxt">Loading…</span></div>
 
 <div class="wrap" id="app"></div>
@@ -405,6 +499,23 @@ function card(id, dotClass, title, body, srcLabel, srcUrl, open = true) {
     </summary><div class="cpad">${body}</div></details>`;
 }
 
+const ICON = {
+  temp:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 14.76V4a2 2 0 1 0-4 0v10.76a4 4 0 1 0 4 0z"/></svg>',
+  air:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h11a3 3 0 1 0-3-3"/><path d="M3 13h15a3 3 0 1 1-3 3"/><path d="M3 18h8"/></svg>',
+  car:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M6 17l-1.4-5.2A2 2 0 0 1 6.5 9h11a2 2 0 0 1 1.9 2.8L18 17"/><circle cx="7.5" cy="17.5" r="1.6"/><circle cx="16.5" cy="17.5" r="1.6"/></svg>',
+  cone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 20h14L12 3z"/><path d="M8.6 12h6.8"/><path d="M3 20h18"/></svg>',
+  bell:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>',
+  check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 5.5 5.5L20 7"/></svg>',
+};
+
+function tile(icon, tone, lab, val, note) {
+  return `<div class="tile ${tone}">
+    <div class="thead"><span class="tico">${ICON[icon] || ''}</span>
+      <div class="lab">${esc(lab)}</div></div>
+    <div class="val">${val}</div>
+    <div class="note">${note}</div></div>`;
+}
+
 /* ---------------------------------------------------------------- hero */
 function hero(d) {
   return `<div class="hero">
@@ -450,13 +561,13 @@ function alertBlock(d) {
   const al = d.alerts, air = d.air, cm = d.commute;
   if (al?.ok && al.count > 0) {
     const a = al.alerts[0];
-    return `<div class="alert"><span class="beacon"></span><div>
+    return `<div class="alert crit"><span class="aico">${ICON.bell}</span><div>
       <div class="at">${esc(a.event || 'Weather alert')}</div>
       <div class="ab">${esc(a.headline || '')}${a.description ? '<br><br>' + esc(a.description.slice(0, 420)) : ''}</div>
     </div></div>`;
   }
   if (air?.ok && air.aqi >= 101) {
-    return `<div class="alert warn"><span class="beacon"></span><div>
+    return `<div class="alert warn"><span class="aico">${ICON.air}</span><div>
       <div class="at">Air quality ${esc(air.category || '')} · AQI ${esc(air.aqi)}</div>
       <div class="ab">Above the Moderate band. A real risk for asthma, COPD and older
       patients — the people who turn up at Jackson — rather than a general one.
@@ -464,13 +575,13 @@ function alertBlock(d) {
     </div></div>`;
   }
   if (cm?.ok && cm.delay_minutes >= 10) {
-    return `<div class="alert"><span class="beacon"></span><div>
+    return `<div class="alert crit"><span class="aico">${ICON.car}</span><div>
       <div class="at">${esc(cm.delay_minutes)} minutes of delay on your route</div>
       <div class="ab">TomTom has live congestion on the toll-free line this morning.
       See the commute card for whether an alternate actually beats it.</div>
     </div></div>`;
   }
-  return `<div class="alert calm"><span class="beacon"></span><div>
+  return `<div class="alert calm"><span class="aico">${ICON.check}</span><div>
     <div class="at">Nothing urgent</div>
     <div class="ab">No active NWS alert for Miramar, air quality below the sensitive-groups
     band, and no significant delay on the route. Detail below.</div>
@@ -803,76 +914,127 @@ function streamBar(list) {
 }
 
 /* ------------------------------------------------------------- world map */
-let WORLD = null;          // country outlines, fetched once, never changes
-let MAPSEL = null;         // iso of the country the reader tapped
+let WORLD  = null;                                   // outlines, fetched once
+let MAPSEL = null;                                   // {type:'country'|'event', key}
+const LAYERS = { news: true, disasters: true, quakes: true };
+
+const projX = (lon, w) => (lon + 180) / 360 * w;
+const projY = (lat, h) => (90 - lat) / 180 * h;
 
 function worldCard(d) {
-  const w = d.world;
-  if (!w) return '';
-  if (!w.ok) return card('worldmap', 'crit', 'World map',
-    `<div class="err">Could not read the headlines for country names: ${esc(w.error || '')}</div>`,
-    null, null);
+  const w = d.world, ev = d.events;
+  if (!w && !ev) return '';
 
-  const hot = new Map((w.countries || []).map(c => [c.iso, c]));
+  const hot = new Map(((w?.ok && w.countries) || []).map(c => [c.iso, c]));
   const max = Math.max(1, ...[...hot.values()].map(c => c.count));
+  const events = (ev?.ok && ev.events) || [];
+  const shown = events.filter(e =>
+    e.kind === 'earthquake' ? LAYERS.quakes : LAYERS.disasters);
 
   const svg = !WORLD
-    ? `<div class="maploading">Loading the map…</div>`
-    : `<svg class="wmap" viewBox="0 0 ${WORLD.width} ${WORLD.height}"
-         role="img" aria-label="World map, countries named in today's headlines">
+    ? `<div class="maploading">Loading country outlines…<br>
+        <span class="meta">If this stays, data/world.json has not been built yet —
+        it is written by the workflow on its first run.</span></div>`
+    : `<svg class="wmap" viewBox="0 0 ${WORLD.width} ${WORLD.height}" role="img"
+         aria-label="World map of countries in today's headlines and recorded global events">
+        <rect width="${WORLD.width}" height="${WORLD.height}" fill="#070910"/>
         ${WORLD.countries.map(c => {
-          const h = hot.get(c.iso);
+          const h = LAYERS.news ? hot.get(c.iso) : null;
           const lvl = h ? (h.count >= max ? 3 : h.count > 1 ? 2 : 1) : 0;
-          return `<path d="${c.d}" class="cty${lvl ? ' h' + lvl : ''}${
-            MAPSEL === c.iso ? ' sel' : ''}"${
-            h ? ` data-iso="${esc(c.iso)}" data-name="${esc(h.name)}" data-issue="${esc(h.issue)}" data-n="${h.count}" tabindex="0"` : ''}
-            ></path>`;
+          const on = MAPSEL?.type === 'country' && MAPSEL.key === c.iso;
+          return `<path d="${c.d}" class="cty${lvl ? ' h' + lvl : ''}${on ? ' sel' : ''}"${
+            h ? ` data-iso="${esc(c.iso)}" data-name="${esc(h.name)}" data-issue="${esc(h.issue)}" data-n="${h.count}" tabindex="0"` : ''}></path>`;
+        }).join('')}
+        ${shown.map((e, i) => {
+          const r = e.level === 'red' ? 4.6 : e.level === 'orange' ? 3.6 : 2.6;
+          const on = MAPSEL?.type === 'event' && MAPSEL.key === String(i);
+          return `<circle cx="${projX(e.lon, WORLD.width).toFixed(1)}"
+            cy="${projY(e.lat, WORLD.height).toFixed(1)}" r="${on ? r + 2 : r}"
+            class="evt e-${esc(e.level)}${e.level === 'red' ? ' pulse' : ''}${on ? ' sel' : ''}"
+            data-ev="${i}" data-name="${esc(e.place || e.kind)}"
+            data-issue="${esc(e.title)}" data-n="${esc(e.severity || e.kind)}"
+            tabindex="0"></circle>`;
         }).join('')}
       </svg>
       <div id="maptip" class="maptip" hidden></div>`;
 
-  const sel = MAPSEL ? hot.get(MAPSEL) : null;
-  const detail = sel
-    ? `<div class="mapdet">
-        <div class="mapdet-h">${esc(sel.name)}
-          <span class="meta">${sel.count} ${sel.count === 1 ? 'story' : 'stories'}</span></div>
-        ${sel.stories.map(st => `<a class="nrow" href="${esc(st.url || '#')}"
-            target="_blank" rel="noopener">
-            <div class="ntitle">${esc(st.title)}</div>
-            <div class="nmeta">${esc(st.published || '')}</div></a>`).join('')}
-      </div>`
-    : `<div class="meta mapdet-empty">Tap a highlighted country to read what was said about it.</div>`;
+  const legend = `<div class="mleg">
+    <button type="button" class="lay${LAYERS.news ? ' on' : ''}" data-layer="news">
+      <span class="sw sw-news"></span>In the headlines</button>
+    <button type="button" class="lay${LAYERS.disasters ? ' on' : ''}" data-layer="disasters">
+      <span class="sw sw-red"></span>Disasters &amp; storms</button>
+    <button type="button" class="lay${LAYERS.quakes ? ' on' : ''}" data-layer="quakes">
+      <span class="sw sw-org"></span>Earthquakes</button>
+  </div>`;
 
-  const body = `<div class="mapwrap">${svg}</div>${detail}
-    <div class="meta" style="margin-top:11px">${w.countries_matched} ${
-      w.countries_matched === 1 ? 'country' : 'countries'} named across ${
-      w.headlines_scanned} headlines in this brief. ${esc(w.note || '')}</div>`;
+  let detail = `<div class="meta mapdet-empty">Tap a country or a dot to see what it is.</div>`;
+  if (MAPSEL?.type === 'country') {
+    const c = hot.get(MAPSEL.key);
+    if (c) detail = `<div class="mapdet">
+      <div class="mapdet-h">${esc(c.name)}<span class="meta">${c.count} ${
+        c.count === 1 ? 'story' : 'stories'}</span></div>
+      ${c.stories.map(st => `<a class="nrow" href="${esc(st.url || '#')}" target="_blank"
+        rel="noopener"><div class="ntitle">${esc(st.title)}</div>
+        <div class="nmeta">${esc(st.published || '')}</div></a>`).join('')}</div>`;
+  } else if (MAPSEL?.type === 'event') {
+    const e = shown[+MAPSEL.key];
+    if (e) detail = `<div class="mapdet">
+      <div class="mapdet-h">${esc(e.place || e.kind)}
+        <span class="pill ${e.level === 'red' ? 'crit' : e.level === 'orange' ? 'warn' : 'good'}"
+          >${esc(e.level)}</span></div>
+      <a class="nrow" href="${esc(e.url || '#')}" target="_blank" rel="noopener">
+        <div class="ntitle">${esc(e.title)}</div>
+        <div class="nmeta">${esc(e.kind)}${e.severity ? ' · ' + esc(e.severity) : ''} · ${
+          esc(e.source)}</div></a></div>`;
+  }
 
-  return card('worldmap', w.countries_matched ? 'warn' : 'good', 'World map', body, null, null);
+  const top = [...hot.values()].slice(0, 6);
+  const ranked = top.length ? `<div class="rank">
+    <div class="chlab">Most named in this brief</div>
+    ${top.map(c => `<button type="button" class="rankrow" data-iso="${esc(c.iso)}">
+      <span class="rankname">${esc(c.name)}</span>
+      <span class="rankbar"><i style="width:${Math.round(c.count / max * 100)}%"></i></span>
+      <span class="rankn">${c.count}</span></button>`).join('')}
+    <div class="meta" style="margin-top:8px">Headline count, nothing more. Not a
+      severity ranking — this brief has no source that grades one.</div></div>` : '';
+
+  const counts = ev?.ok ? ev.counts : null;
+  const body = `${legend}<div class="mapwrap">${svg}</div>${detail}${ranked}
+    <div class="meta" style="margin-top:11px">
+      ${w?.ok ? `${w.countries_matched} ${w.countries_matched === 1 ? 'country' : 'countries'}
+        named across ${w.headlines_scanned} headlines.` : 'Headline matching unavailable.'}
+      ${ev?.ok ? ` ${ev.event_count} recorded events —
+        <b>${counts.red} red</b>, ${counts.orange} orange, ${counts.green} green.
+        Source: ${esc(ev.source)}.` : ' Event feeds not sourced this run.'}
+      ${ev?.failed_sources?.length ? ` <b>${esc(ev.failed_sources.join(', '))} did not answer.</b>` : ''}
+    </div>`;
+
+  const worst = counts?.red ? 'crit' : counts?.orange ? 'warn' : 'good';
+  return card('worldmap', worst, 'Global situation', body, null, null);
 }
 
 function mapTip(el, show) {
   const tip = document.getElementById('maptip');
   if (!tip) return;
   if (!show) { tip.hidden = true; return; }
-  tip.innerHTML = `<b>${esc(el.dataset.name)}</b> · ${el.dataset.n} ${
-    el.dataset.n === '1' ? 'story' : 'stories'}<br><span>${esc(el.dataset.issue)}</span>`;
+  tip.innerHTML = `<b>${esc(el.dataset.name)}</b> · ${esc(el.dataset.n)}<br>
+    <span>${esc(el.dataset.issue)}</span>`;
   tip.hidden = false;
   const box = el.ownerSVGElement.getBoundingClientRect();
   const r = el.getBoundingClientRect();
-  tip.style.left = Math.max(4, Math.min(box.width - 220,
-    r.left - box.left + r.width / 2 - 110)) + 'px';
-  tip.style.top = Math.max(4, r.top - box.top - 8) + 'px';
+  tip.style.left = Math.max(4, Math.min(box.width - 224,
+    r.left - box.left + r.width / 2 - 112)) + 'px';
+  tip.style.top = Math.max(14, r.top - box.top - 8) + 'px';
 }
 
 async function loadWorldGeometry() {
   if (WORLD) return;
   try {
     const r = await fetch('data/world.json');
-    if (!r.ok) return;                     // no map yet; the card says so
+    if (!r.ok) return;
     WORLD = await r.json();
     if (window.__brief) render(window.__brief);
-  } catch (e) { /* map is optional; the brief is not */ }
+  } catch (e) { /* the map is optional; the brief is not */ }
 }
 
 /* ------------------------------------------------------------- live TV */
@@ -943,20 +1105,19 @@ function render(d) {
   const parts = [hero(d), alertBlock(d)];
 
   const w = d.weather, air = d.air, c = d.commute;
+  const aqiTone = !air?.ok ? '' : air.aqi >= 101 ? 'tone-crit' : air.aqi >= 51 ? 'tone-warn' : 'tone-good';
   parts.push(`<div class="tiles">
-    <div class="tile"><div class="lab">Now</div>
-      <div class="val">${num(w?.current?.temp, '°')}</div>
-      <div class="note">feels ${num(w?.current?.feels, '°')}</div></div>
-    <div class="tile"><div class="lab">Air quality</div>
-      <div class="val">${num(air?.aqi)}</div>
-      <div class="note">${esc(air?.category || (air?.ok ? '' : 'not sourced'))}</div></div>
+    ${tile('temp','tone-warn','Now', num(w?.current?.temp,'\u00b0'),
+      `feels ${num(w?.current?.feels,'\u00b0')}`)}
+    ${tile('air',aqiTone,'Air quality', num(air?.aqi),
+      esc(air?.category || (air?.ok ? '' : 'not sourced')))}
     ${c?.route_shown
-      ? `<div class="tile"><div class="lab">Drive · ${esc(c.depart_clock || '')}</div>
-          <div class="val">${c.ok ? num(c.minutes, ' min') : NS}</div>
-          <div class="note">${c.ok ? num(c.miles, ' mi', 1) : 'routing down'}</div></div>`
-      : `<div class="tile"><div class="lab">Traffic</div>
-          <div class="val">${c?.ok ? num(c.incident_count) : NS}</div>
-          <div class="note">${c?.ok ? (c.major_count || 0) + ' major · both counties' : 'not sourced'}</div></div>`}
+      ? tile('car','tone-cool',`Drive \u00b7 ${esc(c.depart_clock || '')}`,
+          c.ok ? num(c.minutes,' min') : NS,
+          c.ok ? num(c.miles,' mi',1) : 'routing down')
+      : tile('cone', c?.major_count ? 'tone-crit' : 'tone-cool','Traffic',
+          c?.ok ? num(c.incident_count) : NS,
+          c?.ok ? `${c.major_count || 0} major \u00b7 both counties` : 'not sourced')}
   </div>`);
 
   const st = d.news?.streams || {};
@@ -1013,6 +1174,8 @@ async function load(force) {
     if (!r.ok) throw new Error('HTTP ' + r.status);
     const d = await r.json();
     render(d);
+    if (!window.__painted) { app.classList.add('anim'); window.__painted = true;
+      setTimeout(() => app.classList.remove('anim'), 1400); }
     paintFreshness(d);
     window.__brief = d;   // handy when poking at it in devtools
   } catch (e) {
@@ -1028,31 +1191,57 @@ async function load(force) {
 }
 
 document.addEventListener('click', e => {
-  const b = e.target.closest('.chbtn[data-ch]');
-  if (b) { playLive(b.dataset.ch, b.dataset.name || ''); return; }
-  const c = e.target.closest('.cty[data-iso]');
-  if (c) {
-    MAPSEL = MAPSEL === c.dataset.iso ? null : c.dataset.iso;
-    if (window.__brief) render(window.__brief);
+  const tab = e.target.closest('.stab[data-go]');
+  if (tab) {
+    const id = tab.dataset.go;
+    if (id === 'top') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const el = document.getElementById(id);
+      if (el) { el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    }
+    document.querySelectorAll('.stab').forEach(t => t.classList.toggle('on', t === tab));
     return;
   }
-  if (e.target.closest('.wmap')) { MAPSEL = null; if (window.__brief) render(window.__brief); }
-});
-document.addEventListener('mouseover', e => {
+  const b = e.target.closest('.chbtn[data-ch]');
+  if (b) { playLive(b.dataset.ch, b.dataset.name || ''); return; }
+  const lay = e.target.closest('.lay[data-layer]');
+  if (lay) { LAYERS[lay.dataset.layer] = !LAYERS[lay.dataset.layer]; return redraw(); }
+  const rr = e.target.closest('.rankrow[data-iso]');
+  if (rr) { MAPSEL = { type: 'country', key: rr.dataset.iso }; return redraw(); }
+  const dot = e.target.closest('.evt[data-ev]');
+  if (dot) {
+    const k = dot.dataset.ev;
+    MAPSEL = (MAPSEL?.type === 'event' && MAPSEL.key === k) ? null : { type: 'event', key: k };
+    return redraw();
+  }
   const c = e.target.closest('.cty[data-iso]');
+  if (c) {
+    const k = c.dataset.iso;
+    MAPSEL = (MAPSEL?.type === 'country' && MAPSEL.key === k) ? null : { type: 'country', key: k };
+    return redraw();
+  }
+  if (e.target.closest('.wmap')) { MAPSEL = null; redraw(); }
+});
+
+function redraw() { if (window.__brief) render(window.__brief); }
+document.addEventListener('mouseover', e => {
+  const c = e.target.closest('.cty[data-iso],.evt[data-ev]');
   if (c) mapTip(c, true);
 });
 document.addEventListener('mouseout', e => {
-  if (e.target.closest('.cty[data-iso]')) mapTip(null, false);
+  if (e.target.closest('.cty[data-iso],.evt[data-ev]')) mapTip(null, false);
 });
 document.addEventListener('focusin', e => {
-  const c = e.target.closest('.cty[data-iso]');
+  const c = e.target.closest('.cty[data-iso],.evt[data-ev]');
   if (c) mapTip(c, true);
 });
 document.addEventListener('keydown', e => {
   if (e.key !== 'Enter' && e.key !== ' ') return;
   const c = e.target.closest?.('.cty[data-iso]');
-  if (c) { e.preventDefault(); MAPSEL = c.dataset.iso; if (window.__brief) render(window.__brief); }
+  const v = e.target.closest?.('.evt[data-ev]');
+  if (c) { e.preventDefault(); MAPSEL = { type: 'country', key: c.dataset.iso }; redraw(); }
+  else if (v) { e.preventDefault(); MAPSEL = { type: 'event', key: v.dataset.ev }; redraw(); }
 });
 $('#refresh').addEventListener('click', () => load(true));
 document.addEventListener('visibilitychange', () => { if (!document.hidden) load(true); });

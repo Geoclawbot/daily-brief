@@ -822,6 +822,119 @@ def fetch_world(news):
         return fail("World map", e)
 
 
+# --------------------------------------------------------------------------
+# GLOBAL EVENTS — real, geolocated, free to fetch, every one traceable.
+#
+# What this deliberately is NOT: an instability index, a threat score, a
+# posture rating. Those need curated or paid intelligence feeds. Inventing
+# them would put a confident number on the screen with nothing behind it,
+# which is the one thing this brief refuses to do. Everything here is an
+# event somebody official recorded, with its own link back.
+# --------------------------------------------------------------------------
+GDACS_RSS = "https://www.gdacs.org/xml/rss.xml"
+USGS_QUAKES = ("https://earthquake.usgs.gov/earthquakes/feed/v1.0/"
+               "summary/4.5_day.geojson")
+
+# GDACS event type codes -> what to call them on the map.
+GDACS_KIND = {"EQ": "earthquake", "TC": "cyclone", "FL": "flood",
+              "VO": "volcano", "DR": "drought", "WF": "wildfire"}
+
+
+def _txt(node, *names):
+    for n in names:
+        t = node.find(n)
+        if t and t.text and t.text.strip():
+            return t.text.strip()
+    return None
+
+
+def _gdacs_point(it):
+    """GDACS publishes coordinates two ways. Accept either, trust neither
+    blindly — a point that will not parse is dropped, not defaulted to 0,0,
+    which is a real place in the Atlantic."""
+    lat, lon = _txt(it, "lat"), _txt(it, "long")
+    if lat is None or lon is None:
+        p = _txt(it, "point")
+        if p and len(p.split()) == 2:
+            lat, lon = p.split()
+    try:
+        la, lo = float(lat), float(lon)
+    except (TypeError, ValueError):
+        return None
+    if not (-90 <= la <= 90 and -180 <= lo <= 180):
+        return None
+    return la, lo
+
+
+def _gdacs_events():
+    out = []
+    soup = BeautifulSoup(get(GDACS_RSS).content, "xml")
+    for it in soup.find_all("item"):
+        pt = _gdacs_point(it)
+        if not pt:
+            continue
+        level = (_txt(it, "alertlevel") or "green").lower()
+        code = (_txt(it, "eventtype") or "").upper()
+        link = _txt(it, "link")
+        out.append({
+            "lat": pt[0], "lon": pt[1],
+            "kind": GDACS_KIND.get(code, "event"),
+            "level": level if level in ("red", "orange", "green") else "green",
+            "title": re.sub(r"\s+", " ", _txt(it, "title") or "").strip(),
+            "place": _txt(it, "country"),
+            "severity": _txt(it, "severity"),
+            "url": link,
+            "when": _txt(it, "pubDate"),
+            "source": "GDACS",
+        })
+    return out
+
+
+def _usgs_events():
+    j = get(USGS_QUAKES).json()
+    out = []
+    for f in j.get("features", []):
+        c = ((f.get("geometry") or {}).get("coordinates") or [])
+        if len(c) < 2:
+            continue
+        p = f.get("properties") or {}
+        mag = p.get("mag")
+        if mag is None:
+            continue
+        # USGS ships [lon, lat]; getting this backwards puts California in Asia.
+        lon, lat = float(c[0]), float(c[1])
+        out.append({
+            "lat": lat, "lon": lon, "kind": "earthquake",
+            "level": "red" if mag >= 6.5 else "orange" if mag >= 5.5 else "green",
+            "title": f"M{mag} — {p.get('place') or 'earthquake'}",
+            "place": p.get("place"), "severity": f"M{mag}",
+            "mag": mag, "url": p.get("url"), "when": p.get("time"),
+            "source": "USGS",
+        })
+    return out
+
+
+def fetch_events():
+    events, sources, failed = [], [], []
+    for name, fn in (("GDACS", _gdacs_events), ("USGS", _usgs_events)):
+        try:
+            got = fn()
+            events += got
+            sources.append(f"{name} ({len(got)})")
+        except Exception as e:
+            print(f"  .. {name}: {e}", file=sys.stderr)
+            failed.append(name)
+
+    rank = {"red": 0, "orange": 1, "green": 2}
+    events.sort(key=lambda e: (rank.get(e["level"], 3), -(e.get("mag") or 0)))
+    counts = {lv: sum(1 for e in events if e["level"] == lv)
+              for lv in ("red", "orange", "green")}
+    return block(" + ".join(sources) if sources else "no event source reached",
+                 ok=bool(events), events=events[:120], event_count=len(events),
+                 counts=counts, failed_sources=failed,
+                 note="Recorded events with coordinates. Not a threat assessment.")
+
+
 def main():
     n = now_et()
     print(f"Collecting at {n.isoformat(timespec='seconds')}")
@@ -830,6 +943,7 @@ def main():
         ("commute", fetch_commute), ("closures", fetch_closures),
         ("tropics", fetch_tropics), ("fuel", fetch_fuel),
         ("news", fetch_news), ("fires", fetch_fires),
+        ("events", fetch_events),
     ]
     data = {
         "generated_at": stamp(),
