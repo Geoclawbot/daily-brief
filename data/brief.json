@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-04T22:16:11-04:00",
- "generated_at_utc": "2026-09-05T02:16:11+00:00",
+ "generated_at": "2026-09-04T22:31:17-04:00",
+ "generated_at_utc": "2026-09-05T02:31:17+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 4",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-04T22:16:12-04:00",
+  "fetched_at": "2026-09-04T22:31:17-04:00",
   "curve": [
    {
     "time": "2026-09-04T05:00",
@@ -140,19 +140,19 @@
    {
     "time": "2026-09-04T21:00",
     "hour": 21,
-    "temp": 81.6,
-    "feels": 93.1,
+    "temp": 81.8,
+    "feels": 93.8,
     "humidity": 90,
     "pop": 2
    }
   ],
   "current": {
-   "temp": 81.2,
-   "feels": 94.0,
+   "temp": 81.4,
+   "feels": 94.5,
    "humidity": 93,
-   "wind_mph": 1.5,
-   "wind_dir": 333,
-   "observed_at": "2026-09-04T22:15"
+   "wind_mph": 1.1,
+   "wind_dir": 217,
+   "observed_at": "2026-09-04T22:30"
   },
   "today": {
    "high": 87.1,
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-04T22:16:13-04:00",
+  "fetched_at": "2026-09-04T22:31:18-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-04T22:16:14-04:00",
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-04T22:31:44-04:00",
   "aqi": 52,
   "category": "Moderate",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-04 21:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-05",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-05",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 16.2,
+  "pm10": 17.8,
+  "observed": "2026-09-04T22:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-04T22:16:14-04:00",
+  "fetched_at": "2026-09-04T22:31:44-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -285,7 +249,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-09-05T01:43:00Z"
+    "start": "2026-09-05T01:56:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -296,7 +260,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-09-05T01:56:30Z"
+    "start": "2026-09-05T01:43:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -321,32 +285,73 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-84"
+     "FL-842"
     ],
-    "delay_s": 61,
+    "delay_s": 425,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-05T02:13:00Z"
+    "start": "2026-09-05T02:17:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-932"
+     "FL-9"
     ],
-    "delay_s": 57,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-05T01:49:00Z"
+    "delay_s": 195,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T02:21:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-441 N",
+     "US-441 S"
+    ],
+    "delay_s": 182,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T02:28:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 44,
+    "delay_s": 148,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T02:10:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 135,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T02:29:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-84"
+    ],
+    "delay_s": 89,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T02:29:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 70,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-05T02:10:30Z"
+    "start": "2026-09-05T02:18:30Z"
    },
    {
     "county": "Broward",
@@ -493,58 +498,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-09-03T08:51:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-13T10:30:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-395 W"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-03T17:49:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-03T13:43:04Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-886"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-03T14:55:00Z"
    }
   ],
-  "incident_count": 246,
-  "named_count": 33,
+  "incident_count": 261,
+  "named_count": 37,
   "major_count": 9,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-04T22:16:15-04:00",
+  "fetched_at": "2026-09-04T22:31:45-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -588,7 +552,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-04T22:16:15-04:00",
+  "fetched_at": "2026-09-04T22:31:45-04:00",
   "issued": "800 PM EDT Fri Sep 4 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 042321\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Fri Sep 4 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
@@ -596,7 +560,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-04T22:16:15-04:00",
+  "fetched_at": "2026-09-04T22:31:45-04:00",
   "florida": "$3.9516",
   "national": "$4.1474",
   "diesel": "$5.6781",
@@ -605,7 +569,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-04T22:16:16-04:00",
+  "fetched_at": "2026-09-04T22:31:46-04:00",
   "streams": {
    "local": [
     {
@@ -714,6 +678,14 @@
   ],
   "local": [
    {
+    "title": "Family mourns mother and 2-year-old daughter killed by lightning strike",
+    "url": "https://www.local10.com/news/local/2026/09/04/family-mourns-mother-and-2-year-old-daughter-killed-by-lightning-strike/",
+    "published": "Sat, 05 Sep 2026 02:25:18 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "ATF director says agency tackling violent crime in South Florida, beyond",
     "url": "https://www.local10.com/news/local/2026/09/04/atf-director-says-agency-tackling-violent-crime-in-south-florida-beyond/",
     "published": "Fri, 04 Sep 2026 22:45:19 +0000",
@@ -767,14 +739,6 @@
     "published": "Fri, 04 Sep 2026 18:36:55 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/FQJWMSJL2NHKDFVZ2F6IKAAJDA.jpg?auth=ed7b5526f9c6d112f4057fd120098acff97933f6dd7963b9b77b268de25b2c2f&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "Feds accuse Broward duo in multimillion-dollar nationwide fraud scheme involving fake coupons",
-    "url": "https://www.local10.com/news/local/2026/09/04/feds-accuse-broward-duo-in-multimillion-dollar-nationwide-fraud-scheme-involving-fake-coupons/",
-    "published": "Fri, 04 Sep 2026 18:08:28 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/Y7L2Y643MZACXCPA4HXO2T33AI.png?auth=637eaa44e76db0ab22df4adbc118af98efc0b1980c4f0b176402238e2a722639&smart=true&width=1200&height=900",
     "media_type": "image"
    },
    {
@@ -846,9 +810,9 @@
    {
     "title": "Atacaron con drones cargados con artefactos explosivos el batallón de Ocaña, en Norte de Santander; Ejército atribuye la acción criminal al Eln",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/atacaron-con-enjambre-de-drones-cargados-con-artefactos-explosivos-el-batallon-de-ocana-en-norte-de-santander-la-accion-criminal-se-atribuye-al-eln-3583761",
-    "published": "2026-09-04T21:02:04-05:00",
+    "published": "2026-09-04T21:28:40-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2025/04/23/68094deca2a5c.r_d.235-226-0.jpeg",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/04/6a9b7d31208a6.png",
     "media_type": "image"
    },
    {
@@ -978,15 +942,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-04T22:16:17-04:00",
+  "fetched_at": "2026-09-04T22:31:47-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (440) + USGS (14)",
-  "fetched_at": "2026-09-04T22:16:21-04:00",
+  "source": "GDACS (440) + USGS (13)",
+  "fetched_at": "2026-09-04T22:31:51-04:00",
   "events": [
    {
     "lat": 27.2952744,
@@ -1151,19 +1115,6 @@
     "source": "USGS"
    },
    {
-    "lat": 51.9555,
-    "lon": 176.3482,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M5 — 236 km ESE of Attu Station, Alaska",
-    "place": "236 km ESE of Attu Station, Alaska",
-    "severity": "M5",
-    "mag": 5,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000te7l",
-    "when": 1788488918697,
-    "source": "USGS"
-   },
-   {
     "lat": -25.8505,
     "lon": -177.0721,
     "kind": "earthquake",
@@ -1267,13 +1218,13 @@
     "source": "GDACS"
    },
    {
-    "lat": 24.0,
-    "lon": 137.1,
+    "lat": 26.3,
+    "lon": 136.3,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone TWENTYTHREE-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
     "place": null,
-    "severity": "Tropical Depression (maximum wind speed of 56 km/h)",
+    "severity": "Tropical Depression (maximum wind speed of 46 km/h)",
     "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001319",
     "when": "Fri, 04 Sep 2026 15:42:34 GMT",
     "source": "GDACS"
@@ -1435,30 +1386,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -20.825734862878,
-    "lon": 19.772073952901177,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Namibia",
-    "place": "Namibia",
-    "severity": "Green impact for forestfire in 16790 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031598",
-    "when": "Fri, 04 Sep 2026 17:03:17 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -21.007102715819578,
-    "lon": 130.65954142321252,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 5543 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031599",
-    "when": "Fri, 04 Sep 2026 17:01:56 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -6.786033562246511,
     "lon": 17.26044455512927,
     "kind": "wildfire",
@@ -1480,6 +1407,30 @@
     "severity": "Green impact for forestfire in 6682 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031595",
     "when": "Fri, 04 Sep 2026 05:01:24 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -20.825734862878,
+    "lon": 19.772073952901177,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Namibia",
+    "place": "Namibia",
+    "severity": "Green impact for forestfire in 16790 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031598",
+    "when": "Fri, 04 Sep 2026 17:03:17 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -21.007102715819578,
+    "lon": 130.65954142321252,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 5543 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031599",
+    "when": "Fri, 04 Sep 2026 17:01:56 GMT",
     "source": "GDACS"
    },
    {
@@ -1507,13 +1458,13 @@
     "source": "GDACS"
    },
    {
-    "lat": 28.4,
-    "lon": 127.1,
+    "lat": 27.8,
+    "lon": 126.7,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone KROVANH-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
     "place": "Japan",
-    "severity": "Tropical Storm (maximum wind speed of 83 km/h)",
+    "severity": "Tropical Storm (maximum wind speed of 74 km/h)",
     "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001318",
     "when": "Tue, 01 Sep 2026 09:28:20 GMT",
     "source": "GDACS"
@@ -2441,13 +2392,25 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031620",
     "when": "Fri, 04 Sep 2026 19:17:38 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -16.039242943940653,
+    "lon": 37.79692454742185,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Mozambique",
+    "place": "Mozambique",
+    "severity": "Green impact for forestfire in 8818 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031621",
+    "when": "Fri, 04 Sep 2026 19:18:15 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 454,
+  "event_count": 453,
   "counts": {
    "red": 1,
    "orange": 7,
-   "green": 446
+   "green": 445
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2455,7 +2418,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-04T22:16:21-04:00",
+  "fetched_at": "2026-09-04T22:31:51-04:00",
   "countries": [
    {
     "iso": "COL",
