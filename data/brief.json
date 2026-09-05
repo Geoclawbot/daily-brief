@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-05T15:31:12-04:00",
- "generated_at_utc": "2026-09-05T19:31:12+00:00",
+ "generated_at": "2026-09-05T15:46:11-04:00",
+ "generated_at_utc": "2026-09-05T19:46:11+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, September 5",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-05T15:31:13-04:00",
+  "fetched_at": "2026-09-05T15:46:11-04:00",
   "curve": [
    {
     "time": "2026-09-05T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 88.4,
-   "feels": 101.5,
-   "humidity": 73,
-   "wind_mph": 5.0,
-   "wind_dir": 122,
-   "observed_at": "2026-09-05T15:30"
+   "temp": 88.3,
+   "feels": 101.0,
+   "humidity": 74,
+   "wind_mph": 6.8,
+   "wind_dir": 117,
+   "observed_at": "2026-09-05T15:45"
   },
   "today": {
    "high": 88.2,
@@ -166,26 +166,62 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-05T15:31:13-04:00",
+  "fetched_at": "2026-09-05T15:46:12-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-05T15:31:39-04:00",
-  "aqi": 51,
-  "category": "Moderate",
-  "pm25": 7.3,
-  "pm10": 9.4,
-  "observed": "2026-09-05T15:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-05T15:46:12-04:00",
+  "aqi": 29,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-05 14:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-05",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-05",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-06",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-06",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-07",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-07",
+    "aqi": 40,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-05T15:31:39-04:00",
+  "fetched_at": "2026-09-05T15:46:12-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +234,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -208,7 +244,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -243,29 +279,61 @@
    {
     "county": "Broward",
     "roads": [
-     "I-95 S"
+     "FL-91 N",
+     "Florida's Tpke N"
     ],
-    "delay_s": 655,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T18:35:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 449,
+    "delay_s": 674,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-05T18:34:08Z"
+    "start": "2026-09-05T19:32:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 338,
+    "delay_s": 579,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-05T18:35:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 454,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-09-05T18:34:08Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 378,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T18:34:08Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 374,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T17:03:41Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 286,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-05T18:40:31Z"
@@ -275,41 +343,20 @@
     "roads": [
      "FL-934"
     ],
-    "delay_s": 334,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-09-05T18:34:08Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 329,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T17:03:41Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 302,
+    "delay_s": 259,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-05T18:57:00Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-854"
+     "I-95 N"
     ],
-    "delay_s": 281,
+    "delay_s": 227,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-05T19:23:30Z"
+    "start": "2026-09-05T16:22:42Z"
    },
    {
     "county": "Miami-Dade",
@@ -317,72 +364,10 @@
      "US-1 N",
      "FL-5"
     ],
-    "delay_s": 266,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T19:25:39Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-997"
-    ],
-    "delay_s": 261,
+    "delay_s": 226,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-05T19:21:37Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 217,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T17:58:03Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-9"
-    ],
-    "delay_s": 211,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T19:18:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-823"
-    ],
-    "delay_s": 209,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T19:22:05Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-932"
-    ],
-    "delay_s": 181,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T19:23:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 181,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-05T18:59:17Z"
+    "start": "2026-09-05T19:39:04Z"
    },
    {
     "county": "Miami-Dade",
@@ -390,122 +375,179 @@
      "US-41 S",
      "US-41 N"
     ],
-    "delay_s": 179,
+    "delay_s": 209,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T19:43:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 207,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-05T17:58:03Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "FL-A1A"
+    ],
+    "delay_s": 196,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-05T18:59:50Z"
+    "start": "2026-09-05T19:28:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-441 N",
+     "US-441 S"
+    ],
+    "delay_s": 192,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T19:38:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 182,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T19:18:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 165,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T19:25:39Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 163,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T18:59:17Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 154,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T19:09:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 144,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-09-05T19:28:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-932"
-    ],
-    "delay_s": 139,
+    "delay_s": 161,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-05T16:01:42Z"
+    "start": "2026-09-05T19:09:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "US-441 S"
     ],
-    "delay_s": 139,
-    "magnitude": 3,
-    "description": "Stationary traffic",
+    "delay_s": 160,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-09-05T19:26:05Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 136,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T19:20:31Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-932"
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 135,
+    "delay_s": 156,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-05T19:37:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-907"
+    ],
+    "delay_s": 154,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-05T19:29:30Z"
+    "start": "2026-09-05T19:41:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-814"
     ],
-    "delay_s": 133,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T19:27:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826"
-    ],
-    "delay_s": 129,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T19:26:35Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 127,
+    "delay_s": 152,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-05T16:22:42Z"
+    "start": "2026-09-05T19:39:34Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-915"
+     "FL-997"
     ],
-    "delay_s": 126,
+    "delay_s": 148,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T19:21:37Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-7",
+     "FL-9",
+     "US-441 S"
+    ],
+    "delay_s": 146,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T19:42:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-A1A"
+    ],
+    "delay_s": 146,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T19:41:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-932"
+    ],
+    "delay_s": 139,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-05T19:24:00Z"
+    "start": "2026-09-05T19:23:30Z"
    }
   ],
-  "incident_count": 303,
-  "named_count": 64,
+  "incident_count": 306,
+  "named_count": 58,
   "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-05T15:31:40-04:00",
+  "fetched_at": "2026-09-05T15:46:13-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -545,8 +587,7 @@
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 5 2026, 5:32 AM",
    "Northeast | Duval | Due to a special event, expect delays in the downtown Jacksonville area. | Sep 5 2026, 1:36 PM",
    "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Silver Alert has been issued for Donald Edmondson out of Bonifay. Look for a 2025 Black Nissan Rogue, FL Tag VZ0HX. Call *347. | Sep 5 2026, 1:50 PM",
-   "Northeast | Alachua | Due to a special event, expect delays in the Gainesville area. | Sep 5 2026, 1:55 PM",
-   "Northeast | Duval | Jacksonville: All lanes are blocked due to crash at I-295 Northbound before Mile Marker 27. Use caution in the area. | Sep 5 2026, 3:12 PM"
+   "Northeast | Alachua | Due to a special event, expect delays in the Gainesville area. | Sep 5 2026, 1:55 PM"
   ],
   "fl511_local": [
    "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Silver Alert has been issued for Donald Edmondson out of Bonifay. Look for a 2025 Black Nissan Rogue, FL Tag VZ0HX. Call *347. | Sep 5 2026, 1:50 PM"
@@ -555,7 +596,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-05T15:31:40-04:00",
+  "fetched_at": "2026-09-05T15:46:14-04:00",
   "issued": "200 PM EDT Sat Sep 5 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 051722\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Sat Sep 5 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Berg"
@@ -563,7 +604,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-05T15:31:40-04:00",
+  "fetched_at": "2026-09-05T15:46:14-04:00",
   "florida": "$3.9265",
   "national": "$4.1459",
   "diesel": "$5.6880",
@@ -572,7 +613,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-05T15:31:42-04:00",
+  "fetched_at": "2026-09-05T15:46:15-04:00",
   "streams": {
    "local": [
     {
@@ -945,7 +986,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-05T15:31:42-04:00",
+  "fetched_at": "2026-09-05T15:46:16-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -953,7 +994,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (481) + USGS (14)",
-  "fetched_at": "2026-09-05T15:31:47-04:00",
+  "fetched_at": "2026-09-05T15:46:18-04:00",
   "events": [
    {
     "lat": 27.2952744,
@@ -2422,7 +2463,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-05T15:31:47-04:00",
+  "fetched_at": "2026-09-05T15:46:18-04:00",
   "countries": [
    {
     "iso": "IRN",
