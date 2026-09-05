@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-04T22:46:09-04:00",
- "generated_at_utc": "2026-09-05T02:46:09+00:00",
+ "generated_at": "2026-09-04T23:01:09-04:00",
+ "generated_at_utc": "2026-09-05T03:01:09+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 4",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-04T22:46:09-04:00",
+  "fetched_at": "2026-09-04T23:01:09-04:00",
   "curve": [
    {
     "time": "2026-09-04T05:00",
@@ -150,9 +150,9 @@
    "temp": 81.2,
    "feels": 94.2,
    "humidity": 94,
-   "wind_mph": 1.6,
-   "wind_dir": 188,
-   "observed_at": "2026-09-04T22:45"
+   "wind_mph": 1.4,
+   "wind_dir": 198,
+   "observed_at": "2026-09-04T23:00"
   },
   "today": {
    "high": 87.1,
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-04T22:46:10-04:00",
+  "fetched_at": "2026-09-04T23:01:09-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-04T22:46:11-04:00",
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-04T23:01:35-04:00",
   "aqi": 52,
   "category": "Moderate",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-04 21:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-05",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-05",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 16.5,
+  "pm10": 17.7,
+  "observed": "2026-09-04T23:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-04T22:46:11-04:00",
+  "fetched_at": "2026-09-04T23:01:35-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -234,7 +198,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -244,7 +208,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -321,57 +285,6 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 369,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T02:10:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": 359,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-05T02:17:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-441 N",
-     "US-441 S"
-    ],
-    "delay_s": 252,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T02:31:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-9"
-    ],
-    "delay_s": 162,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T02:21:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 86,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-05T02:31:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-9"
     ],
     "delay_s": 67,
@@ -382,12 +295,43 @@
    {
     "county": "Broward",
     "roads": [
+     "US-1",
+     "FL-5"
+    ],
+    "delay_s": 64,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T02:45:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 63,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-05T02:31:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
      "FL-818"
     ],
-    "delay_s": 56,
+    "delay_s": 54,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-05T02:33:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 34,
+    "magnitude": 1,
+    "description": "Heavy traffic",
+    "start": "2026-09-05T02:10:30Z"
    },
    {
     "county": "Broward",
@@ -534,17 +478,37 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-09-03T08:51:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-13T10:30:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-395 W"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-03T17:49:00Z"
    }
   ],
-  "incident_count": 251,
-  "named_count": 37,
+  "incident_count": 248,
+  "named_count": 35,
   "major_count": 9,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-04T22:46:11-04:00",
+  "fetched_at": "2026-09-04T23:01:36-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -588,7 +552,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-04T22:46:12-04:00",
+  "fetched_at": "2026-09-04T23:01:36-04:00",
   "issued": "800 PM EDT Fri Sep 4 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 042321\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Fri Sep 4 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
@@ -596,7 +560,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-04T22:46:12-04:00",
+  "fetched_at": "2026-09-04T23:01:36-04:00",
   "florida": "$3.9516",
   "national": "$4.1474",
   "diesel": "$5.6781",
@@ -605,7 +569,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-04T22:46:14-04:00",
+  "fetched_at": "2026-09-04T23:01:37-04:00",
   "streams": {
    "local": [
     {
@@ -978,7 +942,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-04T22:46:15-04:00",
+  "fetched_at": "2026-09-04T23:01:38-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -986,7 +950,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (440) + USGS (13)",
-  "fetched_at": "2026-09-04T22:46:18-04:00",
+  "fetched_at": "2026-09-04T23:01:42-04:00",
   "events": [
    {
     "lat": 27.2952744,
@@ -1422,30 +1386,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -6.786033562246511,
-    "lon": 17.26044455512927,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in The Democratic Republic of Congo",
-    "place": "The Democratic Republic of Congo",
-    "severity": "Green impact for forestfire in 5248 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031667",
-    "when": "Fri, 04 Sep 2026 23:03:25 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -15.569098861032046,
-    "lon": 14.486570044183058,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 6682 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031595",
-    "when": "Fri, 04 Sep 2026 05:01:24 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -20.825734862878,
     "lon": 19.772073952901177,
     "kind": "wildfire",
@@ -1467,6 +1407,30 @@
     "severity": "Green impact for forestfire in 5543 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031599",
     "when": "Fri, 04 Sep 2026 17:01:56 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -6.786033562246511,
+    "lon": 17.26044455512927,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in The Democratic Republic of Congo",
+    "place": "The Democratic Republic of Congo",
+    "severity": "Green impact for forestfire in 5248 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031667",
+    "when": "Fri, 04 Sep 2026 23:03:25 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -15.569098861032046,
+    "lon": 14.486570044183058,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 6682 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031595",
+    "when": "Fri, 04 Sep 2026 05:01:24 GMT",
     "source": "GDACS"
    },
    {
@@ -2454,7 +2418,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-04T22:46:18-04:00",
+  "fetched_at": "2026-09-04T23:01:42-04:00",
   "countries": [
    {
     "iso": "COL",
