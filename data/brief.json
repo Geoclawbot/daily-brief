@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-04T21:16:12-04:00",
- "generated_at_utc": "2026-09-05T01:16:12+00:00",
+ "generated_at": "2026-09-04T21:31:12-04:00",
+ "generated_at_utc": "2026-09-05T01:31:12+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 4",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-04T21:16:12-04:00",
+  "fetched_at": "2026-09-04T21:31:12-04:00",
   "curve": [
    {
     "time": "2026-09-04T05:00",
@@ -132,27 +132,27 @@
    {
     "time": "2026-09-04T20:00",
     "hour": 20,
-    "temp": 81.4,
-    "feels": 94.0,
+    "temp": 82.6,
+    "feels": 96.3,
     "humidity": 92,
     "pop": 6
    },
    {
     "time": "2026-09-04T21:00",
     "hour": 21,
-    "temp": 80.8,
-    "feels": 93.1,
+    "temp": 81.6,
+    "feels": 94.0,
     "humidity": 94,
     "pop": 5
    }
   ],
   "current": {
-   "temp": 80.7,
-   "feels": 93.1,
+   "temp": 81.4,
+   "feels": 93.8,
    "humidity": 94,
-   "wind_mph": 2.4,
-   "wind_dir": 49,
-   "observed_at": "2026-09-04T21:15"
+   "wind_mph": 3.2,
+   "wind_dir": 352,
+   "observed_at": "2026-09-04T21:30"
   },
   "today": {
    "high": 87.1,
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-04T21:16:13-04:00",
+  "fetched_at": "2026-09-04T21:31:12-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-04T21:16:14-04:00",
-  "aqi": 40,
-  "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-04 20:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-05",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-05",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-04T21:31:23-04:00",
+  "aqi": 51,
+  "category": "Moderate",
+  "pm25": 14.5,
+  "pm10": 16.5,
+  "observed": "2026-09-04T21:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-04T21:16:14-04:00",
+  "fetched_at": "2026-09-04T21:31:23-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -234,7 +198,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -244,7 +208,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -299,63 +263,74 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-824"
+     "FL-842"
     ],
-    "delay_s": 245,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T01:08:00Z"
+    "delay_s": 229,
+    "magnitude": 1,
+    "description": "Slow traffic; Roadworks",
+    "start": "2026-09-05T01:25:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-441 N",
-     "US-441 S"
+     "FL-976"
     ],
-    "delay_s": 189,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T01:10:30Z"
+    "delay_s": 169,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T01:28:00Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-736"
-    ],
-    "delay_s": 147,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T01:13:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
+     "US-41 S",
+     "FL-5"
     ],
     "delay_s": 144,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-05T01:10:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-816"
-    ],
-    "delay_s": 73,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-05T01:08:00Z"
+    "start": "2026-09-05T01:29:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-932"
+     "FL-A1A"
     ],
-    "delay_s": 71,
+    "delay_s": 106,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-05T01:09:00Z"
+    "start": "2026-09-05T01:18:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-814"
+    ],
+    "delay_s": 84,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T01:26:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 62,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T01:24:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826"
+    ],
+    "delay_s": 60,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T01:20:00Z"
    },
    {
     "county": "Broward",
@@ -522,27 +497,17 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-08-03T13:43:04Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-886"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-03T14:55:00Z"
    }
   ],
-  "incident_count": 248,
-  "named_count": 33,
+  "incident_count": 241,
+  "named_count": 34,
   "major_count": 7,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-04T21:16:15-04:00",
+  "fetched_at": "2026-09-04T21:31:24-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -589,7 +554,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-04T21:16:15-04:00",
+  "fetched_at": "2026-09-04T21:31:24-04:00",
   "issued": "800 PM EDT Fri Sep 4 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 042321\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Fri Sep 4 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
@@ -597,7 +562,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-04T21:16:15-04:00",
+  "fetched_at": "2026-09-04T21:31:24-04:00",
   "florida": "$3.9516",
   "national": "$4.1474",
   "diesel": "$5.6781",
@@ -606,7 +571,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-04T21:16:16-04:00",
+  "fetched_at": "2026-09-04T21:31:25-04:00",
   "streams": {
    "local": [
     {
@@ -979,7 +944,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-04T21:16:17-04:00",
+  "fetched_at": "2026-09-04T21:31:26-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -987,7 +952,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (440) + USGS (13)",
-  "fetched_at": "2026-09-04T21:16:21-04:00",
+  "fetched_at": "2026-09-04T21:31:29-04:00",
   "events": [
    {
     "lat": 27.2952744,
@@ -2455,7 +2420,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-04T21:16:21-04:00",
+  "fetched_at": "2026-09-04T21:31:29-04:00",
   "countries": [
    {
     "iso": "COL",
