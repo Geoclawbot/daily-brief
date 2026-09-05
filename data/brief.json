@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-05T14:16:05-04:00",
- "generated_at_utc": "2026-09-05T18:16:05+00:00",
+ "generated_at": "2026-09-05T14:31:01-04:00",
+ "generated_at_utc": "2026-09-05T18:31:01+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, September 5",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-05T14:16:05-04:00",
+  "fetched_at": "2026-09-05T14:31:02-04:00",
   "curve": [
    {
     "time": "2026-09-05T05:00",
@@ -77,7 +77,7 @@
     "time": "2026-09-05T13:00",
     "hour": 13,
     "temp": 87.7,
-    "feels": 101.8,
+    "feels": 101.5,
     "humidity": 72,
     "pop": 14
    },
@@ -85,7 +85,7 @@
     "time": "2026-09-05T14:00",
     "hour": 14,
     "temp": 88.6,
-    "feels": 102.9,
+    "feels": 102.5,
     "humidity": 71,
     "pop": 18
    },
@@ -93,7 +93,7 @@
     "time": "2026-09-05T15:00",
     "hour": 15,
     "temp": 88.8,
-    "feels": 102.9,
+    "feels": 102.8,
     "humidity": 70,
     "pop": 29
    },
@@ -101,7 +101,7 @@
     "time": "2026-09-05T16:00",
     "hour": 16,
     "temp": 86.1,
-    "feels": 98.1,
+    "feels": 96.0,
     "humidity": 76,
     "pop": 36
    },
@@ -109,7 +109,7 @@
     "time": "2026-09-05T17:00",
     "hour": 17,
     "temp": 77.1,
-    "feels": 81.9,
+    "feels": 84.7,
     "humidity": 93,
     "pop": 53
    },
@@ -117,7 +117,7 @@
     "time": "2026-09-05T18:00",
     "hour": 18,
     "temp": 78.3,
-    "feels": 86.4,
+    "feels": 80.4,
     "humidity": 84,
     "pop": 59
    },
@@ -125,7 +125,7 @@
     "time": "2026-09-05T19:00",
     "hour": 19,
     "temp": 78.9,
-    "feels": 88.4,
+    "feels": 89.5,
     "humidity": 89,
     "pop": 51
    },
@@ -133,7 +133,7 @@
     "time": "2026-09-05T20:00",
     "hour": 20,
     "temp": 78.1,
-    "feels": 87.3,
+    "feels": 87.5,
     "humidity": 89,
     "pop": 42
    },
@@ -141,87 +141,51 @@
     "time": "2026-09-05T21:00",
     "hour": 21,
     "temp": 77.8,
-    "feels": 88.1,
+    "feels": 88.0,
     "humidity": 91,
     "pop": 25
    }
   ],
   "current": {
-   "temp": 88.6,
-   "feels": 101.7,
-   "humidity": 71,
-   "wind_mph": 6.0,
-   "wind_dir": 124,
-   "observed_at": "2026-09-05T14:15"
+   "temp": 88.8,
+   "feels": 102.8,
+   "humidity": 70,
+   "wind_mph": 5.6,
+   "wind_dir": 119,
+   "observed_at": "2026-09-05T14:30"
   },
   "today": {
    "high": 88.8,
    "low": 76.9,
-   "feels_max": 102.9,
+   "feels_max": 102.8,
    "pop_max": 59
   },
-  "peak_feels": 102.9,
-  "peak_hour": 14
+  "peak_feels": 102.8,
+  "peak_hour": 15
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-05T14:16:05-04:00",
+  "fetched_at": "2026-09-05T14:31:02-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-05T14:16:06-04:00",
-  "aqi": 29,
-  "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-05 13:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-05",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-05",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-05T14:31:28-04:00",
+  "aqi": 51,
+  "category": "Moderate",
+  "pm25": 7.9,
+  "pm10": 10.1,
+  "observed": "2026-09-05T14:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-05T14:16:06-04:00",
+  "fetched_at": "2026-09-05T14:31:28-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -279,22 +243,22 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 S"
+     "FL-985"
     ],
-    "delay_s": 587,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T17:49:37Z"
+    "delay_s": 841,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T18:12:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-948"
+     "FL-985"
     ],
-    "delay_s": 483,
+    "delay_s": 774,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-05T17:54:32Z"
+    "start": "2026-09-05T18:13:43Z"
    },
    {
     "county": "Miami-Dade",
@@ -302,20 +266,20 @@
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 403,
+    "delay_s": 405,
     "magnitude": 3,
     "description": "Stationary traffic; Incident",
     "start": "2026-09-05T16:43:39Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-953"
+     "FL-817"
     ],
-    "delay_s": 344,
+    "delay_s": 380,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-05T16:27:37Z"
+    "start": "2026-09-05T16:53:32Z"
    },
    {
     "county": "Miami-Dade",
@@ -323,7 +287,7 @@
      "US-41 S",
      "US-41 N"
     ],
-    "delay_s": 330,
+    "delay_s": 361,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-05T14:50:00Z"
@@ -331,13 +295,32 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
+     "FL-932"
     ],
-    "delay_s": 329,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T16:41:31Z"
+    "delay_s": 337,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T16:01:42Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 S"
+    ],
+    "delay_s": 325,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-05T17:49:37Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-948"
+    ],
+    "delay_s": 321,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T17:54:32Z"
    },
    {
     "county": "Miami-Dade",
@@ -345,20 +328,116 @@
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 309,
-    "magnitude": 3,
-    "description": "Stationary traffic",
+    "delay_s": 307,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-09-05T17:03:41Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-817"
+     "FL-953"
     ],
-    "delay_s": 293,
+    "delay_s": 290,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-05T16:53:32Z"
+    "start": "2026-09-05T16:27:37Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 248,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T17:23:44Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-990"
+    ],
+    "delay_s": 230,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T18:27:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 227,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T18:25:38Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-932"
+    ],
+    "delay_s": 217,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T18:27:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 203,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T17:43:04Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 199,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T18:24:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-970"
+    ],
+    "delay_s": 194,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T18:17:40Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 181,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T18:20:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 179,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-05T18:14:34Z"
    },
    {
     "county": "Miami-Dade",
@@ -367,7 +446,7 @@
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 266,
+    "delay_s": 178,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-05T17:24:09Z"
@@ -375,43 +454,19 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-932"
+     "FL-934"
     ],
-    "delay_s": 260,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T16:01:42Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 257,
+    "delay_s": 173,
     "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T17:43:04Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826",
-     "FL-826 E",
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 255,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T18:09:41Z"
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-09-05T18:16:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 251,
+    "delay_s": 169,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-05T16:22:42Z"
@@ -419,136 +474,44 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 N"
+     "Florida's Tpke N",
+     "FL-821 N"
     ],
-    "delay_s": 250,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-05T17:51:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-907"
-    ],
-    "delay_s": 235,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T18:11:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 198,
+    "delay_s": 164,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-05T17:23:44Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-985"
-    ],
-    "delay_s": 193,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T18:13:43Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-A1A"
-    ],
-    "delay_s": 185,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T18:09:41Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-441 N",
-     "US-441 S"
-    ],
-    "delay_s": 185,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T18:14:07Z"
+    "start": "2026-09-05T16:41:31Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 182,
+    "delay_s": 162,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-05T17:57:37Z"
+    "start": "2026-09-05T17:46:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S",
-     "US-41 N"
+     "FL-976"
     ],
-    "delay_s": 181,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T18:07:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-968"
-    ],
-    "delay_s": 178,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T15:18:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-968"
-    ],
-    "delay_s": 171,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T18:09:41Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 166,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T17:31:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 165,
+    "delay_s": 157,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-05T18:11:30Z"
+    "start": "2026-09-05T18:28:30Z"
    }
   ],
-  "incident_count": 320,
-  "named_count": 75,
-  "major_count": 5,
+  "incident_count": 329,
+  "named_count": 76,
+  "major_count": 7,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-05T14:16:07-04:00",
+  "fetched_at": "2026-09-05T14:31:29-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -599,7 +562,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-05T14:16:08-04:00",
+  "fetched_at": "2026-09-05T14:31:29-04:00",
   "issued": "200 PM EDT Sat Sep 5 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 051722\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Sat Sep 5 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Berg"
@@ -607,7 +570,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-05T14:16:08-04:00",
+  "fetched_at": "2026-09-05T14:31:29-04:00",
   "florida": "$3.9265",
   "national": "$4.1459",
   "diesel": "$5.6880",
@@ -616,7 +579,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-05T14:16:09-04:00",
+  "fetched_at": "2026-09-05T14:31:30-04:00",
   "streams": {
    "local": [
     {
@@ -855,6 +818,22 @@
   ],
   "colombia": [
    {
+    "title": "La academia busca aliados en el sector empresarial para apoyar a los damnificados del terremoto: esta es la propuesta para mitigar la emergencia",
+    "url": "https://www.eltiempo.com/colombia/medellin/la-academia-busca-aliados-en-el-sector-empresarial-para-apoyar-a-los-damnificados-del-terremoto-esta-es-la-propuesta-para-mitigar-la-emergencia-3583848",
+    "published": "2026-09-05T13:06:59-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/05/6a9c5940e679b.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "La emboscada que esperaba a los militares tras el ataque con drones explosivos al cantón: así fue la acción terrorista en Ocaña, Norte de Santander",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/la-emboscada-que-esperaba-a-los-militares-tras-el-ataque-con-drones-explosivos-al-canton-asi-fue-la-accion-terrorista-en-ocana-norte-de-santander-3583841",
+    "published": "2026-09-05T13:24:10-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/05/6a9c55e935e80.r_d.384-215-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Enseñaron a leer y a sumar sin tener título: 216 magdalenenses mayores de 45 años se graduaron en un programa inédito en el país",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/ensenaron-a-leer-y-a-sumar-sin-tener-titulo-216-magdalenenses-mayores-de-45-anos-se-graduaron-en-un-programa-inedito-en-el-pais-3583839",
     "published": "2026-09-05T12:48:17-05:00",
@@ -901,22 +880,6 @@
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/05/6a9c2da78e043.jpeg",
     "media_type": "image"
-   },
-   {
-    "title": "Desempleo juvenil en Barranquilla llega al 18,8 %, casi el doble que entre los adultos: 175.000 jóvenes están fuera del empleo formal",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/desempleo-juvenil-en-barranquilla-llega-al-18-8-casi-el-doble-que-entre-los-adultos-175-000-jovenes-estan-fuera-del-empleo-formal-3583813",
-    "published": "2026-09-05T09:34:27-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/05/6a9c244ef30ca.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Retorno de la Ciclovida en Cali queda a la espera de un concepto de seguridad tras el terremoto del 10 de agosto",
-    "url": "https://www.eltiempo.com/colombia/cali/retorno-de-la-ciclovida-en-cali-queda-a-la-espera-de-un-concepto-de-seguridad-tras-el-terremoto-del-10-de-agosto-3583802",
-    "published": "2026-09-05T07:29:50-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/05/6a9c08f8b1edd.png",
-    "media_type": "image"
    }
   ],
   "world": [
@@ -932,6 +895,14 @@
     "title": "How the U.S. focus on Iran is fueling a more aggressive Putin",
     "url": "https://www.npr.org/2026/09/05/nx-s1-5955705/how-the-u-s-focus-on-iran-is-fueling-a-more-aggressive-putin",
     "published": "Sat, 05 Sep 2026 07:43:20 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "U.S.-Venezuela oil deal puts opposition in a political bind",
+    "url": "https://www.npr.org/2026/09/05/nx-s1-5954177/venezuelan-opposition-slams-new-u-s-oil-deal-warning-it-delays-democracy",
+    "published": "Sat, 05 Sep 2026 07:43:14 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
@@ -975,21 +946,13 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "Trump asks SCOTUS to OK changes to mail-in ballots. And, diesel prices hit record high",
-    "url": "https://www.npr.org/2026/09/04/g-s1-141972/up-first-newsletter-usps-mail-in-voting-irs-schools-christian-castro",
-    "published": "Fri, 04 Sep 2026 07:29:11 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-05T14:16:09-04:00",
+  "fetched_at": "2026-09-05T14:31:36-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -997,7 +960,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (466) + USGS (15)",
-  "fetched_at": "2026-09-05T14:16:13-04:00",
+  "fetched_at": "2026-09-05T14:31:39-04:00",
   "events": [
    {
     "lat": 27.2952744,
@@ -2467,7 +2430,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-05T14:16:13-04:00",
+  "fetched_at": "2026-09-05T14:31:39-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2484,15 +2447,9 @@
       "url": "https://www.eltiempo.com/colombia/cali/tragedia-en-siloe-consternacion-en-cali-por-el-brutal-asesinato-de-alejandra-moreno-joven-lideresa-y-artista-de-la-comuna-3583818",
       "published": "2026-09-05T10:03:35-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Retorno de la Ciclovida en Cali queda a la espera de un concepto de seguridad tras el terremoto del 10 de agosto",
-      "url": "https://www.eltiempo.com/colombia/cali/retorno-de-la-ciclovida-en-cali-queda-a-la-espera-de-un-concepto-de-seguridad-tras-el-terremoto-del-10-de-agosto-3583802",
-      "published": "2026-09-05T07:29:50-05:00",
-      "section": "colombia"
      }
     ],
-    "count": 3,
+    "count": 2,
     "issue": "Más de 10 años de cárcel para falsa empresaria que estafó a 30 personas con el negocio de bolsas ecológicas en Medellín y Bucaramanga"
    },
    {
@@ -2578,6 +2535,20 @@
     "issue": "U.S. envoys in Moscow in new push for peace between Russia and Ukraine"
    },
    {
+    "iso": "VEN",
+    "name": "Venezuela",
+    "stories": [
+     {
+      "title": "U.S.-Venezuela oil deal puts opposition in a political bind",
+      "url": "https://www.npr.org/2026/09/05/nx-s1-5954177/venezuelan-opposition-slams-new-u-s-oil-deal-warning-it-delays-democracy",
+      "published": "Sat, 05 Sep 2026 07:43:14 -0400",
+      "section": "world"
+     }
+    ],
+    "count": 1,
+    "issue": "U.S.-Venezuela oil deal puts opposition in a political bind"
+   },
+   {
     "iso": "VNM",
     "name": "Vietnam",
     "stories": [
@@ -2593,7 +2564,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 7,
+  "countries_matched": 8,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
