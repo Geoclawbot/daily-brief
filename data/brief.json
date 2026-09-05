@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-04T22:31:17-04:00",
- "generated_at_utc": "2026-09-05T02:31:17+00:00",
+ "generated_at": "2026-09-04T22:46:09-04:00",
+ "generated_at_utc": "2026-09-05T02:46:09+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 4",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-04T22:31:17-04:00",
+  "fetched_at": "2026-09-04T22:46:09-04:00",
   "curve": [
    {
     "time": "2026-09-04T05:00",
@@ -141,18 +141,18 @@
     "time": "2026-09-04T21:00",
     "hour": 21,
     "temp": 81.8,
-    "feels": 93.8,
-    "humidity": 90,
+    "feels": 93.5,
+    "humidity": 89,
     "pop": 2
    }
   ],
   "current": {
-   "temp": 81.4,
-   "feels": 94.5,
-   "humidity": 93,
-   "wind_mph": 1.1,
-   "wind_dir": 217,
-   "observed_at": "2026-09-04T22:30"
+   "temp": 81.2,
+   "feels": 94.2,
+   "humidity": 94,
+   "wind_mph": 1.6,
+   "wind_dir": 188,
+   "observed_at": "2026-09-04T22:45"
   },
   "today": {
    "high": 87.1,
@@ -166,26 +166,62 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-04T22:31:18-04:00",
+  "fetched_at": "2026-09-04T22:46:10-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-04T22:31:44-04:00",
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-04T22:46:11-04:00",
   "aqi": 52,
   "category": "Moderate",
-  "pm25": 16.2,
-  "pm10": 17.8,
-  "observed": "2026-09-04T22:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-04 21:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-05",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-05",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-06",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-06",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-07",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-07",
+    "aqi": 40,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-04T22:31:44-04:00",
+  "fetched_at": "2026-09-04T22:46:11-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +234,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -208,7 +244,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -249,7 +285,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-09-05T01:56:30Z"
+    "start": "2026-09-05T01:43:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -260,7 +296,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-09-05T01:43:00Z"
+    "start": "2026-09-05T01:56:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -283,11 +319,21 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 369,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T02:10:30Z"
+   },
+   {
     "county": "Broward",
     "roads": [
      "FL-842"
     ],
-    "delay_s": 425,
+    "delay_s": 359,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-05T02:17:00Z"
@@ -295,63 +341,53 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-9"
-    ],
-    "delay_s": 195,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T02:21:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "US-441 N",
      "US-441 S"
     ],
-    "delay_s": 182,
+    "delay_s": 252,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-05T02:28:30Z"
+    "start": "2026-09-05T02:31:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 N"
+     "FL-9"
     ],
-    "delay_s": 148,
+    "delay_s": 162,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-05T02:10:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 135,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T02:29:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-84"
-    ],
-    "delay_s": 89,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-05T02:29:00Z"
+    "start": "2026-09-05T02:21:30Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 70,
+    "delay_s": 86,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-05T02:18:30Z"
+    "start": "2026-09-05T02:31:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 67,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T02:44:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-818"
+    ],
+    "delay_s": 56,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-05T02:33:00Z"
    },
    {
     "county": "Broward",
@@ -500,7 +536,7 @@
     "start": "2026-09-03T08:51:30Z"
    }
   ],
-  "incident_count": 261,
+  "incident_count": 251,
   "named_count": 37,
   "major_count": 9,
   "coverage": "Miami-Dade + Broward"
@@ -508,7 +544,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-04T22:31:45-04:00",
+  "fetched_at": "2026-09-04T22:46:11-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -552,7 +588,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-04T22:31:45-04:00",
+  "fetched_at": "2026-09-04T22:46:12-04:00",
   "issued": "800 PM EDT Fri Sep 4 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 042321\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Fri Sep 4 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
@@ -560,7 +596,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-04T22:31:45-04:00",
+  "fetched_at": "2026-09-04T22:46:12-04:00",
   "florida": "$3.9516",
   "national": "$4.1474",
   "diesel": "$5.6781",
@@ -569,7 +605,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-04T22:31:46-04:00",
+  "fetched_at": "2026-09-04T22:46:14-04:00",
   "streams": {
    "local": [
     {
@@ -678,6 +714,14 @@
   ],
   "local": [
    {
+    "title": "Hollywood residents frustrated over school pickup parking problems",
+    "url": "https://www.local10.com/news/local/2026/09/04/hollywood-residents-frustrated-over-school-pickup-parking-problems/",
+    "published": "Sat, 05 Sep 2026 02:27:55 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Family mourns mother and 2-year-old daughter killed by lightning strike",
     "url": "https://www.local10.com/news/local/2026/09/04/family-mourns-mother-and-2-year-old-daughter-killed-by-lightning-strike/",
     "published": "Sat, 05 Sep 2026 02:25:18 +0000",
@@ -732,14 +776,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "Man once linked to Russian package-stealing ring now accused of FedEx Rolex theft in Broward",
-    "url": "https://www.local10.com/news/local/2026/09/04/man-once-linked-to-russian-package-stealing-ring-now-accused-of-fedex-rolex-theft-in-broward/",
-    "published": "Fri, 04 Sep 2026 18:36:55 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/FQJWMSJL2NHKDFVZ2F6IKAAJDA.jpg?auth=ed7b5526f9c6d112f4057fd120098acff97933f6dd7963b9b77b268de25b2c2f&smart=true&width=1200&height=900",
-    "media_type": "image"
    },
    {
     "title": "Former school resource officer fired for inappropriate behavior at Coral Springs school",
@@ -942,7 +978,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-04T22:31:47-04:00",
+  "fetched_at": "2026-09-04T22:46:15-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -950,7 +986,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (440) + USGS (13)",
-  "fetched_at": "2026-09-04T22:31:51-04:00",
+  "fetched_at": "2026-09-04T22:46:18-04:00",
   "events": [
    {
     "lat": 27.2952744,
@@ -2418,7 +2454,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-04T22:31:51-04:00",
+  "fetched_at": "2026-09-04T22:46:18-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2439,26 +2475,6 @@
     ],
     "count": 2,
     "issue": "Se 'lanzó al ruedo' por la Alcaldía de Cali: exgobernadora del Valle del Cauca, Clara Luz Roldán, confirmó que será candidata por el Partido de La U"
-   },
-   {
-    "iso": "RUS",
-    "name": "Russia",
-    "stories": [
-     {
-      "title": "Man once linked to Russian package-stealing ring now accused of FedEx Rolex theft in Broward",
-      "url": "https://www.local10.com/news/local/2026/09/04/man-once-linked-to-russian-package-stealing-ring-now-accused-of-fedex-rolex-theft-in-broward/",
-      "published": "Fri, 04 Sep 2026 18:36:55 +0000",
-      "section": "local"
-     },
-     {
-      "title": "Russia intensifies attacks on Ukraine's capital",
-      "url": "https://www.npr.org/2026/09/04/nx-s1-5955596/russia-intensifies-attacks-on-ukraines-capital",
-      "published": "Fri, 04 Sep 2026 04:00:24 -0400",
-      "section": "world"
-     }
-    ],
-    "count": 2,
-    "issue": "Man once linked to Russian package-stealing ring now accused of FedEx Rolex theft in Broward"
    },
    {
     "iso": "ARG",
@@ -2501,6 +2517,20 @@
     ],
     "count": 1,
     "issue": "Myanmar military head visits Vietnam to normalize relations"
+   },
+   {
+    "iso": "RUS",
+    "name": "Russia",
+    "stories": [
+     {
+      "title": "Russia intensifies attacks on Ukraine's capital",
+      "url": "https://www.npr.org/2026/09/04/nx-s1-5955596/russia-intensifies-attacks-on-ukraines-capital",
+      "published": "Fri, 04 Sep 2026 04:00:24 -0400",
+      "section": "world"
+     }
+    ],
+    "count": 1,
+    "issue": "Russia intensifies attacks on Ukraine's capital"
    },
    {
     "iso": "UKR",
