@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-05T21:16:14-04:00",
- "generated_at_utc": "2026-09-06T01:16:14+00:00",
+ "generated_at": "2026-09-05T21:31:03-04:00",
+ "generated_at_utc": "2026-09-06T01:31:03+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, September 5",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-05T21:16:15-04:00",
+  "fetched_at": "2026-09-05T21:31:03-04:00",
   "curve": [
    {
     "time": "2026-09-05T05:00",
@@ -132,31 +132,31 @@
    {
     "time": "2026-09-05T20:00",
     "hour": 20,
-    "temp": 78.4,
-    "feels": 88.9,
+    "temp": 78.7,
+    "feels": 89.8,
     "humidity": 92,
     "pop": 68
    },
    {
     "time": "2026-09-05T21:00",
     "hour": 21,
-    "temp": 78.0,
-    "feels": 87.4,
+    "temp": 77.2,
+    "feels": 86.6,
     "humidity": 93,
     "pop": 57
    }
   ],
   "current": {
-   "temp": 77.8,
-   "feels": 87.1,
+   "temp": 76.9,
+   "feels": 83.7,
    "humidity": 94,
-   "wind_mph": 4.8,
-   "wind_dir": 28,
-   "observed_at": "2026-09-05T21:15"
+   "wind_mph": 9.9,
+   "wind_dir": 147,
+   "observed_at": "2026-09-05T21:30"
   },
   "today": {
    "high": 89.7,
-   "low": 75.8,
+   "low": 77.2,
    "feels_max": 103.3,
    "pop_max": 68
   },
@@ -166,64 +166,39 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-05T21:16:15-04:00",
+  "fetched_at": "2026-09-05T21:31:03-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-05T21:16:16-04:00",
-  "aqi": 30,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-05T21:31:04-04:00",
+  "aqi": 44,
   "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-05 20:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-06",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 6.3,
+  "pm10": 6.8,
+  "observed": "2026-09-05T21:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-05T21:16:16-04:00",
+  "fetched_at": "2026-09-05T21:31:04-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "US-1 N",
-     "FL-970"
+     "FL-827"
     ],
-    "delay_s": 1349,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T23:01:00Z"
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -234,16 +209,6 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -289,22 +254,13 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-968"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-06T00:44:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
+     "US-1 N",
      "FL-970"
     ],
-    "delay_s": 854,
+    "delay_s": 898,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-05T23:08:30Z"
+    "start": "2026-09-05T23:01:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -313,7 +269,7 @@
      "US-41 S",
      "FL-5"
     ],
-    "delay_s": 599,
+    "delay_s": 544,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-05T23:32:31Z"
@@ -321,23 +277,43 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-970"
+    ],
+    "delay_s": 424,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T23:08:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S"
+    ],
+    "delay_s": 363,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-06T01:19:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "US-41 N"
     ],
-    "delay_s": 453,
+    "delay_s": 283,
     "magnitude": 2,
-    "description": "Heavy rain; Queuing traffic",
+    "description": "Queuing traffic",
     "start": "2026-09-06T00:34:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-441 N",
-     "US-441 S"
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 351,
+    "delay_s": 148,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-06T00:24:00Z"
+    "start": "2026-09-06T01:29:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -345,7 +321,7 @@
      "US-441 N",
      "US-441 S"
     ],
-    "delay_s": 277,
+    "delay_s": 145,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-06T00:53:00Z"
@@ -355,71 +331,51 @@
     "roads": [
      "FL-968"
     ],
-    "delay_s": 207,
+    "delay_s": 128,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-05T23:43:00Z"
+    "start": "2026-09-06T01:26:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 N"
+     "FL-970"
     ],
-    "delay_s": 142,
-    "magnitude": 1,
-    "description": "Heavy rain; Slow traffic",
-    "start": "2026-09-06T01:14:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": 130,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-06T01:14:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 86,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-06T01:13:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-858"
-    ],
-    "delay_s": 77,
+    "delay_s": 72,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-06T00:59:30Z"
+    "start": "2026-09-06T01:27:00Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "I-95 N"
+     "FL-84"
     ],
-    "delay_s": 43,
-    "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-09-06T01:09:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 36,
+    "delay_s": 70,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-05T16:22:42Z"
+    "start": "2026-09-06T01:23:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-818"
+    ],
+    "delay_s": 65,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T01:29:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "FL-A1A"
+    ],
+    "delay_s": 54,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-06T01:27:00Z"
    },
    {
     "county": "Broward",
@@ -524,17 +480,38 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-09-01T04:46:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-7",
+     "US-441 N"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-03T08:51:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-09-05T11:15:30Z"
    }
   ],
-  "incident_count": 279,
-  "named_count": 40,
-  "major_count": 9,
+  "incident_count": 281,
+  "named_count": 38,
+  "major_count": 7,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-05T21:16:17-04:00",
+  "fetched_at": "2026-09-05T21:31:05-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -579,7 +556,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-05T21:16:17-04:00",
+  "fetched_at": "2026-09-05T21:31:05-04:00",
   "issued": "800 PM EDT Sat Sep 5 2026",
   "areas": [],
   "raw": "en Español\n\n717 \nABNT20 KNHC 052314\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Sat Sep 5 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Adams"
@@ -587,7 +564,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-05T21:16:18-04:00",
+  "fetched_at": "2026-09-05T21:31:05-04:00",
   "florida": "$3.9265",
   "national": "$4.1459",
   "diesel": "$5.6880",
@@ -596,7 +573,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-05T21:16:19-04:00",
+  "fetched_at": "2026-09-05T21:31:06-04:00",
   "streams": {
    "local": [
     {
@@ -835,6 +812,14 @@
   ],
   "colombia": [
    {
+    "title": "Tembló cerca de Bogotá: sismo de magnitud 3,1 se registró este sábado en Cundinamarca y tuvo una profundidad de 145 kilómetros",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblo-cerca-de-bogota-sismo-de-magnitud-3-1-se-registro-este-sabado-en-cundinamarca-y-tuvo-una-profundidad-de-145-kilometros-3583905",
+    "published": "2026-09-05T20:04:43-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/05/6a9cbb457a734.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Organizaciones denuncian un incremento de feminicidios en la región: 'A las mujeres nariñenses nos están matando'",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/organizaciones-denuncian-un-incremento-de-feminicidios-en-la-region-a-las-mujeres-narinenses-nos-estan-matando-3583904",
     "published": "2026-09-05T19:15:54-05:00",
@@ -888,14 +873,6 @@
     "published": "2026-09-05T16:32:58-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/05/6a9c881f06a45.r_d.687-219-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "La Procuraduría investiga al alcalde de Barbosa, Santander, por presuntas irregularidades en la polémica corraleja de enero de este año",
-    "url": "https://www.eltiempo.com/colombia/santander/la-procuraduria-investiga-al-alcalde-de-barbosa-santander-por-presuntas-irregularidades-en-la-polemica-corraleja-de-enero-de-este-ano-3583879",
-    "published": "2026-09-05T16:18:07-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/05/6a9c82cd900f0.r_d.233-447-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -969,7 +946,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-05T21:16:20-04:00",
+  "fetched_at": "2026-09-05T21:31:07-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -977,7 +954,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (458) + USGS (12)",
-  "fetched_at": "2026-09-05T21:16:23-04:00",
+  "fetched_at": "2026-09-05T21:31:10-04:00",
   "events": [
    {
     "lat": -19.807,
@@ -2444,12 +2421,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-05T21:16:23-04:00",
+  "fetched_at": "2026-09-05T21:31:10-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "Tembló cerca de Bogotá: sismo de magnitud 3,1 se registró este sábado en Cundinamarca y tuvo una profundidad de 145 kilómetros",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblo-cerca-de-bogota-sismo-de-magnitud-3-1-se-registro-este-sabado-en-cundinamarca-y-tuvo-una-profundidad-de-145-kilometros-3583905",
+      "published": "2026-09-05T20:04:43-05:00",
+      "section": "colombia"
+     },
      {
       "title": "Ola de calor en Colombia: estos son los municipios que registraron las temperaturas más altas, según el último informe del Ideam",
       "url": "https://www.eltiempo.com/colombia/ola-de-calor-en-colombia-estos-son-los-municipios-que-registraron-las-temperaturas-mas-altas-segun-el-ultimo-informe-del-ideam-3583902",
@@ -2469,8 +2452,8 @@
       "section": "colombia"
      }
     ],
-    "count": 3,
-    "issue": "Ola de calor en Colombia: estos son los municipios que registraron las temperaturas más altas, según el último informe del Ideam"
+    "count": 4,
+    "issue": "Tembló cerca de Bogotá: sismo de magnitud 3,1 se registró este sábado en Cundinamarca y tuvo una profundidad de 145 kilómetros"
    },
    {
     "iso": "IRN",
