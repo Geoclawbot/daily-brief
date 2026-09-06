@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-06T09:30:59-04:00",
- "generated_at_utc": "2026-09-06T13:30:59+00:00",
+ "generated_at": "2026-09-06T09:46:08-04:00",
+ "generated_at_utc": "2026-09-06T13:46:08+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 6",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-06T09:31:00-04:00",
+  "fetched_at": "2026-09-06T09:46:09-04:00",
   "curve": [
    {
     "time": "2026-09-06T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 80.4,
-   "feels": 90.3,
-   "humidity": 91,
-   "wind_mph": 6.0,
-   "wind_dir": 45,
-   "observed_at": "2026-09-06T09:30"
+   "temp": 79.5,
+   "feels": 89.1,
+   "humidity": 90,
+   "wind_mph": 4.8,
+   "wind_dir": 28,
+   "observed_at": "2026-09-06T09:45"
   },
   "today": {
    "high": 84.1,
@@ -166,26 +166,50 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-06T09:31:00-04:00",
+  "fetched_at": "2026-09-06T09:46:09-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-06T09:31:26-04:00",
-  "aqi": 44,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-06T09:46:10-04:00",
+  "aqi": 37,
   "category": "Good",
-  "pm25": 9.9,
-  "pm10": 11.4,
-  "observed": "2026-09-06T09:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-06 8:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-06",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-06",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-07",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-07",
+    "aqi": 40,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-06T09:31:26-04:00",
+  "fetched_at": "2026-09-06T09:46:10-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +222,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -208,7 +232,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -293,34 +317,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-948"
-    ],
-    "delay_s": 138,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-06T13:28:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-826 N"
     ],
-    "delay_s": 46,
+    "delay_s": 37,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-06T12:38:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "S Dade Expy N",
-     "Don Shula Expy N",
-     "FL-874 N"
-    ],
-    "delay_s": 40,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-06T13:08:30Z"
    },
    {
     "county": "Broward",
@@ -497,17 +499,33 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-06-18T20:48:14Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-06-27T16:08:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-06-27T16:41:35Z"
    }
   ],
-  "incident_count": 249,
-  "named_count": 29,
+  "incident_count": 244,
+  "named_count": 27,
   "major_count": 10,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-06T09:31:27-04:00",
+  "fetched_at": "2026-09-06T09:46:11-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -552,7 +570,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-06T09:31:27-04:00",
+  "fetched_at": "2026-09-06T09:46:12-04:00",
   "issued": "800 AM EDT Sun Sep 6 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 061126\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Sun Sep 6 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
@@ -560,7 +578,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-06T09:31:27-04:00",
+  "fetched_at": "2026-09-06T09:46:12-04:00",
   "florida": "$3.9131",
   "national": "$4.1473",
   "diesel": "$5.6868",
@@ -569,7 +587,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-06T09:31:29-04:00",
+  "fetched_at": "2026-09-06T09:46:13-04:00",
   "streams": {
    "local": [
     {
@@ -678,6 +696,14 @@
   ],
   "local": [
    {
+    "title": "Surveillance video shows man accused of stealing mail in Fort Lauderdale",
+    "url": "https://www.local10.com/news/local/2026/09/05/surveillance-video-shows-man-accused-of-stealing-mail-in-fort-lauderdale/",
+    "published": "Sat, 05 Sep 2026 21:32:57 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "1 man injured in shooting after police break up fight in Fort Lauderdale",
     "url": "https://www.local10.com/news/local/2026/09/06/1-man-injured-in-shooting-after-police-break-up-fight-in-fort-lauderdale/",
     "published": "Sun, 06 Sep 2026 13:12:48 +0000",
@@ -689,14 +715,6 @@
     "title": "Man accused of killing his mother in Miami’s Brickell apartment appears in court",
     "url": "https://www.local10.com/news/local/2026/09/05/judge-denies-bond-for-man-accused-of-killing-his-mother-in-miamis-brickell-apartment/",
     "published": "Sat, 05 Sep 2026 20:53:02 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Surveillance video shows man accused of stealing mail in Fort Lauderdale",
-    "url": "https://www.local10.com/news/local/2026/09/05/surveillance-video-shows-man-accused-of-stealing-mail-in-fort-lauderdale/",
-    "published": "Sat, 05 Sep 2026 21:32:57 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -942,15 +960,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-06T09:31:29-04:00",
+  "fetched_at": "2026-09-06T09:46:14-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (462) + USGS (17)",
-  "fetched_at": "2026-09-06T09:31:34-04:00",
+  "source": "GDACS (462) + USGS (18)",
+  "fetched_at": "2026-09-06T09:46:18-04:00",
   "events": [
    {
     "lat": -11.0595,
@@ -1203,6 +1221,19 @@
     "mag": 4.7,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tel1",
     "when": 1788642361351,
+    "source": "USGS"
+   },
+   {
+    "lat": 33.2038,
+    "lon": 140.9156,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.6 — 219 km SSE of Wada, Japan",
+    "place": "219 km SSE of Wada, Japan",
+    "severity": "M4.6",
+    "mag": 4.6,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teq4",
+    "when": 1788697034956,
     "source": "USGS"
    },
    {
@@ -2396,25 +2427,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031448",
     "when": "Wed, 02 Sep 2026 07:02:47 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -3.8892831214463515,
-    "lon": 17.299799993349545,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in The Democratic Republic of Congo",
-    "place": "The Democratic Republic of Congo",
-    "severity": "Green impact for forestfire in 5699 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031609",
-    "when": "Fri, 04 Sep 2026 19:11:27 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 479,
+  "event_count": 480,
   "counts": {
    "red": 0,
    "orange": 10,
-   "green": 469
+   "green": 470
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2422,7 +2441,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-06T09:31:34-04:00",
+  "fetched_at": "2026-09-06T09:46:18-04:00",
   "countries": [
    {
     "iso": "COL",
