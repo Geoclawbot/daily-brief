@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-06T19:31:10-04:00",
- "generated_at_utc": "2026-09-06T23:31:10+00:00",
+ "generated_at": "2026-09-06T19:41:46-04:00",
+ "generated_at_utc": "2026-09-06T23:41:46+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 6",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-06T19:31:11-04:00",
+  "fetched_at": "2026-09-06T19:41:46-04:00",
   "curve": [
    {
     "time": "2026-09-06T05:00",
@@ -166,26 +166,50 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-06T19:31:11-04:00",
+  "fetched_at": "2026-09-06T19:41:47-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-06T19:31:38-04:00",
-  "aqi": 49,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-06T19:41:48-04:00",
+  "aqi": 22,
   "category": "Good",
-  "pm25": 7.8,
-  "pm10": 8.8,
-  "observed": "2026-09-06T19:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "O3",
+  "reporting_area": "Miami",
+  "observed": "2026-09-06 18:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-06",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-06",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-07",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-07",
+    "aqi": 40,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-06T19:31:38-04:00",
+  "fetched_at": "2026-09-06T19:41:48-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -243,23 +267,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "FL-970"
+     "FL-934"
     ],
-    "delay_s": 462,
+    "delay_s": 434,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-06T23:14:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-970"
-    ],
-    "delay_s": 417,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-06T23:24:00Z"
+    "start": "2026-09-06T23:38:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -267,7 +280,39 @@
      "US-41 N",
      "FL-5"
     ],
-    "delay_s": 376,
+    "delay_s": 193,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T23:25:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": 152,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T23:31:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 141,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T23:39:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "US-41 N",
+     "FL-5"
+    ],
+    "delay_s": 129,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-06T23:25:00Z"
@@ -275,35 +320,33 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "US-1 S",
      "US-41 S",
-     "FL-5"
+     "FL-A1A"
     ],
-    "delay_s": 203,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-06T23:28:00Z"
+    "delay_s": 84,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T23:36:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-814"
+    ],
+    "delay_s": 80,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-06T23:37:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 198,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 77,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-09-06T23:04:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 191,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-06T23:24:00Z"
    },
    {
     "county": "Broward",
@@ -318,13 +361,13 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S",
-     "FL-A1A"
+     "US-1 N",
+     "FL-5"
     ],
-    "delay_s": 47,
+    "delay_s": 54,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-06T23:26:06Z"
+    "start": "2026-09-06T23:33:00Z"
    },
    {
     "county": "Broward",
@@ -483,35 +526,17 @@
     "magnitude": 0,
     "description": "Lane closed; Roadworks",
     "start": "2026-07-20T13:16:51Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-26T14:23:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-18T20:48:14Z"
    }
   ],
-  "incident_count": 240,
-  "named_count": 29,
+  "incident_count": 235,
+  "named_count": 31,
   "major_count": 5,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-06T19:31:39-04:00",
+  "fetched_at": "2026-09-06T19:41:49-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -555,7 +580,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-06T19:31:39-04:00",
+  "fetched_at": "2026-09-06T19:41:49-04:00",
   "issued": "800 PM EDT Sun Sep 6 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 062320\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Sun Sep 6 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Papin"
@@ -563,7 +588,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-06T19:31:39-04:00",
+  "fetched_at": "2026-09-06T19:41:49-04:00",
   "florida": "$3.9131",
   "national": "$4.1473",
   "diesel": "$5.6868",
@@ -572,7 +597,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-06T19:31:41-04:00",
+  "fetched_at": "2026-09-06T19:41:51-04:00",
   "streams": {
    "local": [
     {
@@ -811,6 +836,14 @@
   ],
   "colombia": [
    {
+    "title": "Cortes de luz este lunes 7 de septiembre en Barranquilla: estas son las direcciones y horarios anunciados por Air-e",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/cortes-de-luz-este-lunes-7-de-septiembre-en-barranquilla-estas-son-las-direcciones-y-horarios-anunciados-por-air-e-3584032",
+    "published": "2026-09-06T18:21:20-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/06/6a9df5038dcdd.r_d.788-499-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Más de mil toneladas de materiales ponen en marcha la reconstrucción de viviendas tras el terremoto en Antioquia",
     "url": "https://www.eltiempo.com/colombia/medellin/mas-de-mil-toneladas-de-materiales-ponen-en-marcha-la-reconstruccion-de-viviendas-tras-el-terremoto-en-antioquia-3584029",
     "published": "2026-09-06T18:06:51-05:00",
@@ -864,14 +897,6 @@
     "published": "2026-09-06T14:41:18-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/06/6a9dc07109690.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Familiares del ‘Bendito Menor’ y de alias ‘Casi Loco’ organizan una caravana para sus sepelios en Riohacha",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/familiares-del-bendito-menor-y-de-alias-casi-loco-organizan-una-caravana-para-sus-sepelios-en-riohacha-3584007",
-    "published": "2026-09-06T14:26:01-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/06/6a9dc55c72bef.png",
     "media_type": "image"
    }
   ],
@@ -945,7 +970,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-06T19:31:42-04:00",
+  "fetched_at": "2026-09-06T19:41:52-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -953,7 +978,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (426) + USGS (16)",
-  "fetched_at": "2026-09-06T19:31:46-04:00",
+  "fetched_at": "2026-09-06T19:41:57-04:00",
   "events": [
    {
     "lat": -11.0595,
@@ -2424,7 +2449,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-06T19:31:46-04:00",
+  "fetched_at": "2026-09-06T19:41:57-04:00",
   "countries": [
    {
     "iso": "RUS",
