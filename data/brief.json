@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-06T19:01:17-04:00",
- "generated_at_utc": "2026-09-06T23:01:17+00:00",
+ "generated_at": "2026-09-06T19:15:58-04:00",
+ "generated_at_utc": "2026-09-06T23:15:58+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 6",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-06T19:01:17-04:00",
+  "fetched_at": "2026-09-06T19:15:58-04:00",
   "curve": [
    {
     "time": "2026-09-06T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 79.7,
-   "feels": 87.4,
-   "humidity": 84,
-   "wind_mph": 6.8,
-   "wind_dir": 172,
-   "observed_at": "2026-09-06T19:00"
+   "temp": 79.5,
+   "feels": 87.3,
+   "humidity": 85,
+   "wind_mph": 6.5,
+   "wind_dir": 176,
+   "observed_at": "2026-09-06T19:15"
   },
   "today": {
    "high": 89.4,
@@ -166,19 +166,19 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-06T19:01:17-04:00",
+  "fetched_at": "2026-09-06T19:15:58-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-06T19:01:18-04:00",
-  "aqi": 31,
+  "fetched_at": "2026-09-06T19:15:59-04:00",
+  "aqi": 22,
   "category": "Good",
-  "pollutant": "PM2.5",
+  "pollutant": "O3",
   "reporting_area": "Miami",
-  "observed": "2026-09-06 17:00 EST",
+  "observed": "2026-09-06 18:00 EST",
   "forecast": [
    {
     "date": "2026-09-06",
@@ -209,21 +209,11 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-06T19:01:18-04:00",
+  "fetched_at": "2026-09-06T19:15:59-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 1095,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-06T22:09:00Z"
-   },
    {
     "county": "Broward",
     "roads": [
@@ -275,44 +265,44 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-934"
+     "I-95 S"
     ],
-    "delay_s": 155,
+    "delay_s": 226,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-06T22:52:30Z"
+    "start": "2026-09-06T23:04:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 152,
+    "delay_s": 158,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-06T22:59:00Z"
+    "start": "2026-09-06T23:05:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 135,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T22:09:00Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-858"
+     "FL-816"
     ],
-    "delay_s": 144,
+    "delay_s": 113,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-06T22:54:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826"
-    ],
-    "delay_s": 71,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-06T22:53:30Z"
+    "start": "2026-09-06T23:13:30Z"
    },
    {
     "county": "Broward",
@@ -433,13 +423,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 S",
-     "FL-5"
+     "FL-886"
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-06T19:08:00Z"
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-06T23:08:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -514,17 +503,25 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-02-18T17:07:36Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-06-19T12:50:30Z"
    }
   ],
-  "incident_count": 240,
-  "named_count": 26,
-  "major_count": 6,
+  "incident_count": 235,
+  "named_count": 25,
+  "major_count": 5,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-06T19:01:19-04:00",
+  "fetched_at": "2026-09-06T19:16:00-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -568,7 +565,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-06T19:01:19-04:00",
+  "fetched_at": "2026-09-06T19:16:00-04:00",
   "issued": "200 PM EDT Sun Sep 6 2026",
   "areas": [],
   "raw": "en Español\n\n080 \nABNT20 KNHC 061706\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Sun Sep 6 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
@@ -576,7 +573,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-06T19:01:19-04:00",
+  "fetched_at": "2026-09-06T19:16:01-04:00",
   "florida": "$3.9131",
   "national": "$4.1473",
   "diesel": "$5.6868",
@@ -585,7 +582,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-06T19:01:20-04:00",
+  "fetched_at": "2026-09-06T19:16:01-04:00",
   "streams": {
    "local": [
     {
@@ -702,17 +699,17 @@
     "media_type": null
    },
    {
-    "title": "Cargo plane crashes after going off Miami International Airport runway, killing 5",
-    "url": "https://www.local10.com/news/local/2026/09/06/cargo-plane-crashes-after-going-off-miami-international-airport-runway/",
-    "published": "Sun, 06 Sep 2026 19:14:05 +0000",
+    "title": "5 dead, 5 injured after Amazon cargo planes goes off Miami International Airport runway",
+    "url": "https://www.local10.com/news/local/2026/09/06/watch-live-officials-give-updates-on-amazon-cargo-plane-that-went-off-miami-international-airport-runway/",
+    "published": "Sun, 06 Sep 2026 21:22:08 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
    },
    {
-    "title": "5 dead, 5 injured after Amazon cargo planes goes off Miami International Airport runway",
-    "url": "https://www.local10.com/news/local/2026/09/06/watch-live-officials-give-updates-on-amazon-cargo-plane-that-went-off-miami-international-airport-runway/",
-    "published": "Sun, 06 Sep 2026 21:22:08 +0000",
+    "title": "Cargo plane crashes after going off Miami International Airport runway, killing 5",
+    "url": "https://www.local10.com/news/local/2026/09/06/cargo-plane-crashes-after-going-off-miami-international-airport-runway/",
+    "published": "Sun, 06 Sep 2026 19:14:05 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -790,6 +787,14 @@
     "media_type": "video"
    },
    {
+    "title": "Passengers at MIA left frustrated by ground stop due to cargo plane that overran runway",
+    "url": "https://wsvn.com/news/local/miami-dade/passengers-at-mia-left-frustrated-by-ground-stop-due-to-cargo-plane-that-overran-runway/",
+    "published": "Sun, 06 Sep 2026 22:53:56 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/65268943-770b-45b5-b8bf-2d52e490ada1/6b0c1a17-4be8-4cd8-a0ac-4751e6a76568/main.mp4?fastly_token=NmE5ZTQ3OTZfN2Q4NmZmYTA5Mjc2OTdiMzg2YmZiOTA2NGQxYWMyNzc3MzFhY2I5ZmYxMWVhZGE2NDM5YmQ0NjYwM2E5NzNkOF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82NTI2ODk0My03NzBiLTQ1YjUtYjhiZi0yZDUyZTQ5MGFkYTEvNmIwYzFhMTctNGJlOC00Y2Q4LWEwYWMtNDc1MWU2YTc2NTY4L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "At least 5 dead, 5 injured after cargo plane overruns runway, strikes multiple vehicles near MIA",
     "url": "https://wsvn.com/news/local/miami-dade/at-least-5-dead-5-injured-after-cargo-plane-overruns-runway-strikes-multiple-vehicles-near-mia/",
     "published": "Sun, 06 Sep 2026 18:31:52 +0000",
@@ -812,14 +817,6 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/9626-Police-Chief-Edwin-Lopez-FIU.png",
     "media_type": "image"
-   },
-   {
-    "title": "Local and state officials gather at placard unveiling ceremony honoring late US Rep. Carrie Meek",
-    "url": "https://wsvn.com/news/local/miami-dade/local-and-state-officials-gather-at-placard-unveiling-ceremony-honoring-late-us-rep-carrie-meek/",
-    "published": "Sun, 06 Sep 2026 15:35:45 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/0b62b85b-43cb-495c-9d7a-4f76496b54c2/0ec42d64-186c-490c-8294-5cf587653ca6/main.mp4?fastly_token=NmE5ZGUyZDdfN2RlYmJlNDdjMWNlMTU0NzhjMzA1OWI1NGM5ODQ4N2I5ZjVhMGYxMDk4OTY0ZWE1ZTFjMGUxOTE5YTVjZTM1MF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8wYjYyYjg1Yi00M2NiLTQ5NWMtOWQ3YS00Zjc2NDk2YjU0YzIvMGVjNDJkNjQtMTg2Yy00OTBjLTgyOTQtNWNmNTg3NjUzY2E2L21haW4ubXA0",
-    "media_type": "video"
    }
   ],
   "colombia": [
@@ -958,7 +955,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-06T19:01:21-04:00",
+  "fetched_at": "2026-09-06T19:16:02-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -966,7 +963,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (426) + USGS (16)",
-  "fetched_at": "2026-09-06T19:01:24-04:00",
+  "fetched_at": "2026-09-06T19:16:05-04:00",
   "events": [
    {
     "lat": -11.0595,
@@ -1285,13 +1282,13 @@
     "source": "GDACS"
    },
    {
-    "lat": -18.155848233144294,
-    "lon": 138.0948372370796,
+    "lat": -18.163792936063953,
+    "lon": 138.10638207673102,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Australia",
     "place": "Australia",
-    "severity": "Green impact for forestfire in 7349 ha",
+    "severity": "Green impact for forestfire in 9501 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031728",
     "when": "Sun, 06 Sep 2026 11:01:16 GMT",
     "source": "GDACS"
@@ -1305,7 +1302,7 @@
     "place": "Angola",
     "severity": "Green impact for forestfire in 5046 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031731",
-    "when": "Sun, 06 Sep 2026 19:01:14 GMT",
+    "when": "Sun, 06 Sep 2026 23:01:48 GMT",
     "source": "GDACS"
    },
    {
@@ -1389,7 +1386,7 @@
     "place": "Angola",
     "severity": "Green impact for forestfire in 6429 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031732",
-    "when": "Sun, 06 Sep 2026 19:01:57 GMT",
+    "when": "Sun, 06 Sep 2026 23:03:03 GMT",
     "source": "GDACS"
    },
    {
@@ -1401,7 +1398,7 @@
     "place": "Angola",
     "severity": "Green impact for forestfire in 6382 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031733",
-    "when": "Sun, 06 Sep 2026 19:02:52 GMT",
+    "when": "Sun, 06 Sep 2026 23:04:32 GMT",
     "source": "GDACS"
    },
    {
@@ -1413,7 +1410,7 @@
     "place": "The Democratic Republic of Congo",
     "severity": "Green impact for forestfire in 6204 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031734",
-    "when": "Sun, 06 Sep 2026 19:03:25 GMT",
+    "when": "Sun, 06 Sep 2026 23:02:22 GMT",
     "source": "GDACS"
    },
    {
@@ -1425,7 +1422,7 @@
     "place": "Zambia",
     "severity": "Green impact for forestfire in 6334 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031735",
-    "when": "Sun, 06 Sep 2026 19:03:40 GMT",
+    "when": "Sun, 06 Sep 2026 23:04:40 GMT",
     "source": "GDACS"
    },
    {
@@ -1437,29 +1434,29 @@
     "place": "Zambia",
     "severity": "Green impact for forestfire in 5422 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031736",
-    "when": "Sun, 06 Sep 2026 19:03:47 GMT",
+    "when": "Sun, 06 Sep 2026 23:03:14 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -12.357287218070711,
-    "lon": 37.15365893395408,
+    "lat": -12.356981814140584,
+    "lon": 37.15349790846414,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Mozambique",
     "place": "Mozambique",
-    "severity": "Green impact for forestfire in 5222 ha",
+    "severity": "Green impact for forestfire in 5261 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031737",
     "when": "Sun, 06 Sep 2026 19:04:22 GMT",
     "source": "GDACS"
    },
    {
-    "lat": 43.774905247211244,
-    "lon": 17.38168853356404,
+    "lat": 43.77379082087382,
+    "lon": 17.38151310437461,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Bosnia and Herzegovina",
     "place": "Bosnia and Herzegovina",
-    "severity": "Green impact for forestfire in 11892 ha",
+    "severity": "Green impact for forestfire in 12095 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031684",
     "when": "Sat, 05 Sep 2026 15:02:36 GMT",
     "source": "GDACS"
@@ -1477,13 +1474,13 @@
     "source": "GDACS"
    },
    {
-    "lat": -3.0019210765606466,
-    "lon": 111.0566654925686,
+    "lat": -3.0018035159496055,
+    "lon": 111.05668714436894,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Indonesia",
     "place": "Indonesia",
-    "severity": "Green impact for forestfire in 6645 ha",
+    "severity": "Green impact for forestfire in 6669 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031724",
     "when": "Sun, 06 Sep 2026 03:03:31 GMT",
     "source": "GDACS"
@@ -1633,13 +1630,13 @@
     "source": "GDACS"
    },
    {
-    "lat": -16.040730922010436,
-    "lon": 136.00213211216533,
+    "lat": -16.038346403207598,
+    "lon": 136.00275849767553,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Australia",
     "place": "Australia",
-    "severity": "Green impact for forestfire in 5634 ha",
+    "severity": "Green impact for forestfire in 5944 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031679",
     "when": "Sat, 05 Sep 2026 19:04:54 GMT",
     "source": "GDACS"
@@ -1677,7 +1674,7 @@
     "place": "Angola",
     "severity": "Green impact for forestfire in 7201 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031739",
-    "when": "Sun, 06 Sep 2026 19:05:04 GMT",
+    "when": "Sun, 06 Sep 2026 23:04:57 GMT",
     "source": "GDACS"
    },
    {
@@ -2437,7 +2434,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-06T19:01:24-04:00",
+  "fetched_at": "2026-09-06T19:16:05-04:00",
   "countries": [
    {
     "iso": "RUS",
