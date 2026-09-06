@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-05T20:16:02-04:00",
- "generated_at_utc": "2026-09-06T00:16:02+00:00",
+ "generated_at": "2026-09-05T20:31:00-04:00",
+ "generated_at_utc": "2026-09-06T00:31:00+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, September 5",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-05T20:16:02-04:00",
+  "fetched_at": "2026-09-05T20:31:01-04:00",
   "curve": [
    {
     "time": "2026-09-05T05:00",
@@ -125,7 +125,7 @@
     "time": "2026-09-05T19:00",
     "hour": 19,
     "temp": 80.7,
-    "feels": 89.0,
+    "feels": 90.9,
     "humidity": 86,
     "pop": 47
    },
@@ -133,7 +133,7 @@
     "time": "2026-09-05T20:00",
     "hour": 20,
     "temp": 76.9,
-    "feels": 82.2,
+    "feels": 82.3,
     "humidity": 93,
     "pop": 68
    },
@@ -141,18 +141,18 @@
     "time": "2026-09-05T21:00",
     "hour": 21,
     "temp": 76.6,
-    "feels": 83.4,
+    "feels": 83.7,
     "humidity": 92,
     "pop": 57
    }
   ],
   "current": {
-   "temp": 76.5,
+   "temp": 76.6,
    "feels": 82.0,
    "humidity": 93,
-   "wind_mph": 11.7,
-   "wind_dir": 348,
-   "observed_at": "2026-09-05T20:15"
+   "wind_mph": 11.9,
+   "wind_dir": 30,
+   "observed_at": "2026-09-05T20:30"
   },
   "today": {
    "high": 89.7,
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-05T20:16:09-04:00",
+  "fetched_at": "2026-09-05T20:31:01-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-05T20:16:09-04:00",
-  "aqi": 18,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-05T20:31:27-04:00",
+  "aqi": 46,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-05 19:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-06",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 6.7,
+  "pm10": 7.4,
+  "observed": "2026-09-05T20:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-05T20:16:10-04:00",
+  "fetched_at": "2026-09-05T20:31:27-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -220,31 +196,10 @@
      "US-1 N",
      "FL-970"
     ],
-    "delay_s": 1558,
+    "delay_s": 1233,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-05T23:39:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-970"
-    ],
-    "delay_s": 1550,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T23:01:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-970"
-    ],
-    "delay_s": 1375,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T23:08:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -253,20 +208,21 @@
      "US-41 S",
      "FL-5"
     ],
-    "delay_s": 1270,
+    "delay_s": 1152,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-05T23:32:31Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-827"
+     "US-1 N",
+     "FL-970"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "delay_s": 952,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T23:01:00Z"
    },
    {
     "county": "Broward",
@@ -277,6 +233,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -322,9 +288,19 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-970"
+    ],
+    "delay_s": 836,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-05T23:08:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-968"
     ],
-    "delay_s": 763,
+    "delay_s": 541,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-05T23:43:00Z"
@@ -334,7 +310,7 @@
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 562,
+    "delay_s": 466,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-05T22:01:30Z"
@@ -342,9 +318,31 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-441 N",
+     "US-441 S"
+    ],
+    "delay_s": 373,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T00:24:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-441 N",
+     "US-441 S"
+    ],
+    "delay_s": 363,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T00:22:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "I-95 N"
     ],
-    "delay_s": 416,
+    "delay_s": 350,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-05T16:22:42Z"
@@ -352,39 +350,29 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-968"
-    ],
-    "delay_s": 348,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-06T00:01:07Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-968"
-    ],
-    "delay_s": 281,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-06T00:06:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-5"
+     "FL-9"
     ],
     "delay_s": 239,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-05T23:49:00Z"
+    "start": "2026-09-06T00:09:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-968"
+    ],
+    "delay_s": 231,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T00:09:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "US-41 N"
     ],
-    "delay_s": 233,
+    "delay_s": 171,
     "magnitude": 1,
     "description": "Heavy rain; Slow traffic",
     "start": "2026-09-05T23:53:00Z"
@@ -392,105 +380,62 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-25",
-     "US-27 N"
+     "FL-968"
     ],
-    "delay_s": 215,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-06T00:10:00Z"
+    "delay_s": 169,
+    "magnitude": 2,
+    "description": "Heavy rain; Queuing traffic",
+    "start": "2026-09-06T00:20:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-968"
     ],
-    "delay_s": 196,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-06T00:09:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 196,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T22:12:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-9"
-    ],
-    "delay_s": 153,
+    "delay_s": 148,
     "magnitude": 2,
-    "description": "Heavy rain; Queuing traffic",
-    "start": "2026-09-06T00:09:30Z"
+    "description": "Queuing traffic",
+    "start": "2026-09-06T00:26:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
      "FL-5"
     ],
-    "delay_s": 146,
+    "delay_s": 137,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-05T23:49:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S"
+    ],
+    "delay_s": 123,
     "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-06T00:02:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 117,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-05T23:47:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-817"
-    ],
-    "delay_s": 72,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-06T00:13:06Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-970"
-    ],
-    "delay_s": 72,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-06T00:10:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "I-95 N"
-    ],
-    "delay_s": 66,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-05T16:22:42Z"
+    "description": "Heavy rain; Slow traffic",
+    "start": "2026-09-06T00:27:30Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-816"
     ],
-    "delay_s": 63,
+    "delay_s": 91,
+    "magnitude": 2,
+    "description": "Heavy rain; Queuing traffic",
+    "start": "2026-09-06T00:18:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-970"
+    ],
+    "delay_s": 68,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-06T00:14:30Z"
+    "start": "2026-09-06T00:27:00Z"
    },
    {
     "county": "Broward",
@@ -505,33 +450,65 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 E"
+     "I-95 S"
     ],
-    "delay_s": 44,
+    "delay_s": 37,
     "magnitude": 1,
     "description": "Heavy rain; Heavy traffic",
-    "start": "2026-09-05T22:40:30Z"
+    "start": "2026-09-05T23:58:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "US-1 N",
+     "I-95 N"
     ],
-    "delay_s": 43,
+    "delay_s": 27,
     "magnitude": 1,
-    "description": "Heavy rain; Heavy traffic",
-    "start": "2026-09-05T23:58:00Z"
+    "description": "Slow traffic",
+    "start": "2026-09-06T00:29:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-736"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-09-05T23:05:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-822",
+     "FL-A1A"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-07-29T01:44:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-07T21:06:54Z"
    }
   ],
-  "incident_count": 327,
-  "named_count": 55,
-  "major_count": 11,
+  "incident_count": 318,
+  "named_count": 49,
+  "major_count": 10,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-05T20:16:10-04:00",
+  "fetched_at": "2026-09-05T20:31:28-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -576,7 +553,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-05T20:16:10-04:00",
+  "fetched_at": "2026-09-05T20:31:29-04:00",
   "issued": "800 PM EDT Sat Sep 5 2026",
   "areas": [],
   "raw": "en Español\n\n717 \nABNT20 KNHC 052314\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Sat Sep 5 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Adams"
@@ -584,7 +561,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-05T20:16:11-04:00",
+  "fetched_at": "2026-09-05T20:31:29-04:00",
   "florida": "$3.9265",
   "national": "$4.1459",
   "diesel": "$5.6880",
@@ -593,7 +570,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-05T20:16:12-04:00",
+  "fetched_at": "2026-09-05T20:31:30-04:00",
   "streams": {
    "local": [
     {
@@ -832,6 +809,22 @@
   ],
   "colombia": [
    {
+    "title": "Organizaciones denuncian un incremento de feminicidios en la región: 'A las mujeres nariñenses nos están matando'",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/organizaciones-denuncian-un-incremento-de-feminicidios-en-la-region-a-las-mujeres-narinenses-nos-estan-matando-3583904",
+    "published": "2026-09-05T19:15:54-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/05/6a9cae42eebed.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Ola de calor en Colombia: estos son los municipios que registraron las temperaturas más altas, según el último informe del Ideam",
+    "url": "https://www.eltiempo.com/colombia/ola-de-calor-en-colombia-estos-son-los-municipios-que-registraron-las-temperaturas-mas-altas-segun-el-ultimo-informe-del-ideam-3583902",
+    "published": "2026-09-05T19:09:25-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/05/6a9caedbb68c3.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Golpe a ‘los Flacos’ de Cartago, Valle, banda señalada de asesinatos, desapariciones y tráfico de drogas: van 130 capturas de la estructura en el año",
     "url": "https://www.eltiempo.com/colombia/cali/golpe-a-los-flacos-de-cartago-valle-banda-senalada-de-asesinatos-desapariciones-y-trafico-de-drogas-van-130-capturas-de-esta-estructura-en-el-ano-3583901",
     "published": "2026-09-05T19:01:43-05:00",
@@ -877,22 +870,6 @@
     "published": "2026-09-05T16:18:07-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/05/6a9c82cd900f0.r_d.233-447-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Comunidad de colombianos en Nueva York pide ayuda para enviar 34 toneladas de asistencia humanitaria a los afectados por el terremoto",
-    "url": "https://www.eltiempo.com/colombia/comunidad-de-colombianos-en-nueva-york-pide-ayuda-para-enviar-34-toneladas-de-asistencia-humanitaria-a-los-afectados-por-el-terremoto-3583872",
-    "published": "2026-09-05T15:51:09-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/05/6a9c77a20b66d.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Barranquilla: ANI confirma audiencia pública el 28 de octubre por la modernización del aeropuerto Ernesto Cortissoz",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-ani-confirma-audiencia-publica-el-28-de-octubre-por-la-modernizacion-del-aeropuerto-ernesto-cortissoz-3583868",
-    "published": "2026-09-05T15:26:34-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/05/6a9c782abe8a2.jpeg",
     "media_type": "image"
    }
   ],
@@ -966,15 +943,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-05T20:16:12-04:00",
+  "fetched_at": "2026-09-05T20:31:30-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (457) + USGS (13)",
-  "fetched_at": "2026-09-05T20:16:16-04:00",
+  "source": "GDACS (458) + USGS (12)",
+  "fetched_at": "2026-09-05T20:31:34-04:00",
   "events": [
    {
     "lat": -19.807,
@@ -1217,19 +1194,6 @@
     "source": "USGS"
    },
    {
-    "lat": 40.6426,
-    "lon": 143.5636,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.5 — 159 km ENE of Noda, Japan",
-    "place": "159 km ENE of Noda, Japan",
-    "severity": "M4.5",
-    "mag": 4.5,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teg7",
-    "when": 1788567765357,
-    "source": "USGS"
-   },
-   {
     "lat": -19.807,
     "lon": 170.1576,
     "kind": "earthquake",
@@ -1434,27 +1398,15 @@
     "source": "GDACS"
    },
    {
-    "lat": -16.04390146386962,
-    "lon": 136.00183259312576,
+    "lat": -17.088075006062123,
+    "lon": 21.647736421159312,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 5156 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031679",
-    "when": "Sat, 05 Sep 2026 19:04:54 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -17.389752795050033,
-    "lon": 123.74618124900515,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 6808 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031680",
-    "when": "Sat, 05 Sep 2026 11:05:29 GMT",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 13643 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031677",
+    "when": "Sat, 05 Sep 2026 11:03:09 GMT",
     "source": "GDACS"
    },
    {
@@ -1482,18 +1434,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -17.088075006062123,
-    "lon": 21.647736421159312,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 13643 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031677",
-    "when": "Sat, 05 Sep 2026 11:03:09 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -17.666076801265447,
     "lon": 21.146385044714474,
     "kind": "wildfire",
@@ -1503,6 +1443,30 @@
     "severity": "Green impact for forestfire in 11763 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031675",
     "when": "Sat, 05 Sep 2026 07:02:21 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -16.04390146386962,
+    "lon": 136.00183259312576,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 5156 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031679",
+    "when": "Sat, 05 Sep 2026 19:04:54 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -17.389752795050033,
+    "lon": 123.74618124900515,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 6808 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031680",
+    "when": "Sat, 05 Sep 2026 11:05:29 GMT",
     "source": "GDACS"
    },
    {
@@ -1626,15 +1590,15 @@
     "source": "GDACS"
    },
    {
-    "lat": -6.78455244504648,
-    "lon": 17.25712897315334,
+    "lat": -21.021470520712352,
+    "lon": 130.67458168050618,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in The Democratic Republic of Congo",
-    "place": "The Democratic Republic of Congo",
-    "severity": "Green impact for forestfire in 6905 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031667",
-    "when": "Sat, 05 Sep 2026 15:12:13 GMT",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 8317 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031599",
+    "when": "Fri, 04 Sep 2026 17:01:56 GMT",
     "source": "GDACS"
    },
    {
@@ -1662,18 +1626,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -21.021470520712352,
-    "lon": 130.67458168050618,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 8317 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031599",
-    "when": "Fri, 04 Sep 2026 17:01:56 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": 64.76035480172943,
     "lon": 115.99130582979018,
     "kind": "wildfire",
@@ -1695,6 +1647,18 @@
     "severity": "Green impact for forestfire in 5566 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031547",
     "when": "Thu, 03 Sep 2026 07:02:12 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -6.78455244504648,
+    "lon": 17.25712897315334,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in The Democratic Republic of Congo",
+    "place": "The Democratic Republic of Congo",
+    "severity": "Green impact for forestfire in 6905 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031667",
+    "when": "Sat, 05 Sep 2026 15:12:13 GMT",
     "source": "GDACS"
    },
    {
@@ -1782,6 +1746,18 @@
     "source": "GDACS"
    },
    {
+    "lat": -3.6638421424013172,
+    "lon": 13.589184084108899,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Congo",
+    "place": "Congo",
+    "severity": "Green impact for forestfire in 8182 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031440",
+    "when": "Tue, 01 Sep 2026 19:00:56 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -4.664611576680867,
     "lon": 14.284596699589654,
     "kind": "wildfire",
@@ -1815,30 +1791,6 @@
     "severity": "Green impact for forestfire in 5301 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031607",
     "when": "Fri, 04 Sep 2026 19:08:58 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -3.6638421424013172,
-    "lon": 13.589184084108899,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Congo",
-    "place": "Congo",
-    "severity": "Green impact for forestfire in 8182 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031440",
-    "when": "Tue, 01 Sep 2026 19:00:56 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -8.905393057905032,
-    "lon": 140.87904856352444,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Indonesia",
-    "place": "Indonesia",
-    "severity": "Green impact for forestfire in 6140 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031681",
-    "when": "Sat, 05 Sep 2026 23:08:05 GMT",
     "source": "GDACS"
    },
    {
@@ -1878,15 +1830,15 @@
     "source": "GDACS"
    },
    {
-    "lat": -15.143945146713573,
-    "lon": 38.868610130075275,
+    "lat": -8.905393057905032,
+    "lon": 140.87904856352444,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Mozambique",
-    "place": "Mozambique",
-    "severity": "Green impact for forestfire in 7194 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031668",
-    "when": "Sat, 05 Sep 2026 11:15:39 GMT",
+    "title": "Green forest fire notification in Indonesia",
+    "place": "Indonesia",
+    "severity": "Green impact for forestfire in 6140 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031681",
+    "when": "Sat, 05 Sep 2026 23:08:05 GMT",
     "source": "GDACS"
    },
    {
@@ -1899,6 +1851,66 @@
     "severity": "Green impact for forestfire in 5007 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031685",
     "when": "Sat, 05 Sep 2026 15:21:50 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -15.143945146713573,
+    "lon": 38.868610130075275,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Mozambique",
+    "place": "Mozambique",
+    "severity": "Green impact for forestfire in 7194 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031668",
+    "when": "Sat, 05 Sep 2026 11:15:39 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -10.879264350160343,
+    "lon": 30.718862040040335,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Zambia",
+    "place": "Zambia",
+    "severity": "Green impact for forestfire in 8650 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031603",
+    "when": "Fri, 04 Sep 2026 23:04:24 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -4.621473871280297,
+    "lon": 19.120982045239856,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in The Democratic Republic of Congo",
+    "place": "The Democratic Republic of Congo",
+    "severity": "Green impact for forestfire in 8097 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031606",
+    "when": "Sat, 05 Sep 2026 15:16:42 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -21.390416571360753,
+    "lon": 145.0186549893931,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 10360 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031549",
+    "when": "Thu, 03 Sep 2026 11:04:53 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -8.460747849003942,
+    "lon": -54.6958840750387,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 8070 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031550",
+    "when": "Thu, 03 Sep 2026 11:05:00 GMT",
     "source": "GDACS"
    },
    {
@@ -1947,54 +1959,6 @@
     "severity": "Green impact for forestfire in 7342 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031579",
     "when": "Fri, 04 Sep 2026 09:03:48 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -21.390416571360753,
-    "lon": 145.0186549893931,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 10360 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031549",
-    "when": "Thu, 03 Sep 2026 11:04:53 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -8.460747849003942,
-    "lon": -54.6958840750387,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 8070 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031550",
-    "when": "Thu, 03 Sep 2026 11:05:00 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -10.879264350160343,
-    "lon": 30.718862040040335,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Zambia",
-    "place": "Zambia",
-    "severity": "Green impact for forestfire in 8650 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031603",
-    "when": "Fri, 04 Sep 2026 23:04:24 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -4.621473871280297,
-    "lon": 19.120982045239856,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in The Democratic Republic of Congo",
-    "place": "The Democratic Republic of Congo",
-    "severity": "Green impact for forestfire in 8097 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031606",
-    "when": "Sat, 05 Sep 2026 15:16:42 GMT",
     "source": "GDACS"
    },
    {
@@ -2118,18 +2082,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -16.024798977814235,
-    "lon": 25.644330109796584,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Zambia",
-    "place": "Zambia",
-    "severity": "Green impact for forestfire in 6262 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031505",
-    "when": "Thu, 03 Sep 2026 15:03:39 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -15.306224620722789,
     "lon": 38.13364637077612,
     "kind": "wildfire",
@@ -2187,6 +2139,18 @@
     "severity": "Green impact for forestfire in 7453 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031617",
     "when": "Sat, 05 Sep 2026 11:22:00 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -16.024798977814235,
+    "lon": 25.644330109796584,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Zambia",
+    "place": "Zambia",
+    "severity": "Green impact for forestfire in 6262 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031505",
+    "when": "Thu, 03 Sep 2026 15:03:39 GMT",
     "source": "GDACS"
    },
    {
@@ -2262,6 +2226,54 @@
     "source": "GDACS"
    },
    {
+    "lat": -17.60351821329803,
+    "lon": 20.240850863176906,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 9587 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031560",
+    "when": "Sat, 05 Sep 2026 15:47:35 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -8.771607068875253,
+    "lon": 30.205996649841136,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Zambia",
+    "place": "Zambia",
+    "severity": "Green impact for forestfire in 7809 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031562",
+    "when": "Fri, 04 Sep 2026 17:05:51 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -16.35739444801449,
+    "lon": 39.53965223617948,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Mozambique",
+    "place": "Mozambique",
+    "severity": "Green impact for forestfire in 8482 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031563",
+    "when": "Fri, 04 Sep 2026 17:07:27 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -12.32069596217735,
+    "lon": -65.44842246881215,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Bolivia",
+    "place": "Bolivia",
+    "severity": "Green impact for forestfire in 12797 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031551",
+    "when": "Thu, 03 Sep 2026 11:06:44 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -3.8892831214463515,
     "lon": 17.299799993349545,
     "kind": "wildfire",
@@ -2334,51 +2346,15 @@
     "source": "GDACS"
    },
    {
-    "lat": -12.32069596217735,
-    "lon": -65.44842246881215,
+    "lat": -13.395294737165047,
+    "lon": -65.03898743885766,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Bolivia",
     "place": "Bolivia",
-    "severity": "Green impact for forestfire in 12797 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031551",
-    "when": "Thu, 03 Sep 2026 11:06:44 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -17.60351821329803,
-    "lon": 20.240850863176906,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 9587 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031560",
-    "when": "Sat, 05 Sep 2026 15:47:35 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -8.771607068875253,
-    "lon": 30.205996649841136,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Zambia",
-    "place": "Zambia",
-    "severity": "Green impact for forestfire in 7809 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031562",
-    "when": "Fri, 04 Sep 2026 17:05:51 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -16.35739444801449,
-    "lon": 39.53965223617948,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Mozambique",
-    "place": "Mozambique",
-    "severity": "Green impact for forestfire in 8482 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031563",
-    "when": "Fri, 04 Sep 2026 17:07:27 GMT",
+    "severity": "Green impact for forestfire in 5813 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031682",
+    "when": "Sat, 05 Sep 2026 11:23:43 GMT",
     "source": "GDACS"
    },
    {
@@ -2442,8 +2418,34 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-05T20:16:16-04:00",
+  "fetched_at": "2026-09-05T20:31:34-04:00",
   "countries": [
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "Ola de calor en Colombia: estos son los municipios que registraron las temperaturas más altas, según el último informe del Ideam",
+      "url": "https://www.eltiempo.com/colombia/ola-de-calor-en-colombia-estos-son-los-municipios-que-registraron-las-temperaturas-mas-altas-segun-el-ultimo-informe-del-ideam-3583902",
+      "published": "2026-09-05T19:09:25-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "Ideam alerta por deslizamientos en Colombia: estos son los departamentos y municipios bajo mayor riesgo",
+      "url": "https://www.eltiempo.com/colombia/ideam-alerta-por-deslizamientos-en-colombia-estos-son-los-departamentos-y-municipios-bajo-mayor-riesgo-3583894",
+      "published": "2026-09-05T18:20:00-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "La historia no contada detrás del fatal viaje de Pablo Carrizo a Colombia y las horas críticas en carretera que terminaron con su vida",
+      "url": "https://www.eltiempo.com/colombia/medellin/la-historia-no-contada-detras-del-fatal-viaje-de-pablo-carrizo-a-colombia-y-las-horas-criticas-en-carretera-que-terminaron-con-su-vida-3583889",
+      "published": "2026-09-05T17:32:17-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 3,
+    "issue": "Ola de calor en Colombia: estos son los municipios que registraron las temperaturas más altas, según el último informe del Ideam"
+   },
    {
     "iso": "IRN",
     "name": "Iran",
@@ -2469,26 +2471,6 @@
     ],
     "count": 3,
     "issue": "U.S. strikes three Iranian oil tankers in renewal of hostilities"
-   },
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Ideam alerta por deslizamientos en Colombia: estos son los departamentos y municipios bajo mayor riesgo",
-      "url": "https://www.eltiempo.com/colombia/ideam-alerta-por-deslizamientos-en-colombia-estos-son-los-departamentos-y-municipios-bajo-mayor-riesgo-3583894",
-      "published": "2026-09-05T18:20:00-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "La historia no contada detrás del fatal viaje de Pablo Carrizo a Colombia y las horas críticas en carretera que terminaron con su vida",
-      "url": "https://www.eltiempo.com/colombia/medellin/la-historia-no-contada-detras-del-fatal-viaje-de-pablo-carrizo-a-colombia-y-las-horas-criticas-en-carretera-que-terminaron-con-su-vida-3583889",
-      "published": "2026-09-05T17:32:17-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 2,
-    "issue": "Ideam alerta por deslizamientos en Colombia: estos son los departamentos y municipios bajo mayor riesgo"
    },
    {
     "iso": "RUS",
