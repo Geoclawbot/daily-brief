@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-05T22:16:04-04:00",
- "generated_at_utc": "2026-09-06T02:16:04+00:00",
+ "generated_at": "2026-09-05T22:31:00-04:00",
+ "generated_at_utc": "2026-09-06T02:31:00+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, September 5",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-05T22:16:05-04:00",
+  "fetched_at": "2026-09-05T22:31:01-04:00",
   "curve": [
    {
     "time": "2026-09-05T05:00",
@@ -140,23 +140,23 @@
    {
     "time": "2026-09-05T21:00",
     "hour": 21,
-    "temp": 77.2,
-    "feels": 87.6,
+    "temp": 78.1,
+    "feels": 89.9,
     "humidity": 98,
     "pop": 63
    }
   ],
   "current": {
-   "temp": 77.3,
-   "feels": 85.2,
-   "humidity": 88,
-   "wind_mph": 4.7,
-   "wind_dir": 239,
-   "observed_at": "2026-09-05T22:15"
+   "temp": 77.7,
+   "feels": 85.6,
+   "humidity": 89,
+   "wind_mph": 5.6,
+   "wind_dir": 203,
+   "observed_at": "2026-09-05T22:30"
   },
   "today": {
    "high": 89.7,
-   "low": 77.2,
+   "low": 77.5,
    "feels_max": 103.3,
    "pop_max": 68
   },
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-05T22:16:05-04:00",
+  "fetched_at": "2026-09-05T22:31:01-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-05T22:16:06-04:00",
-  "aqi": 24,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-05T22:31:26-04:00",
+  "aqi": 42,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-05 21:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-06",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 4.7,
+  "pm10": 4.9,
+  "observed": "2026-09-05T22:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-05T22:16:06-04:00",
+  "fetched_at": "2026-09-05T22:31:27-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -287,57 +263,23 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "FL-970"
+     "I-395 W",
+     "FL-836 W"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Bridge closed",
-    "start": "2026-09-06T00:08:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "US-41 S",
-     "FL-5"
-    ],
-    "delay_s": 181,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-06T02:11:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-41 N",
-     "FL-5"
-    ],
-    "delay_s": 160,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-06T02:03:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-395 W"
-    ],
-    "delay_s": 77,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 250,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-09-06T02:11:00Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-811"
+     "FL-836 E"
     ],
-    "delay_s": 61,
+    "delay_s": 42,
     "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-06T02:12:30Z"
+    "description": "Heavy traffic",
+    "start": "2026-09-06T02:27:30Z"
    },
    {
     "county": "Broward",
@@ -526,17 +468,43 @@
     "magnitude": 0,
     "description": "Lane closed; Roadworks",
     "start": "2026-07-20T13:16:51Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-08-26T14:23:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-06-18T20:48:14Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-05T22:53:00Z"
    }
   ],
-  "incident_count": 261,
-  "named_count": 31,
-  "major_count": 8,
+  "incident_count": 251,
+  "named_count": 28,
+  "major_count": 7,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-05T22:16:07-04:00",
+  "fetched_at": "2026-09-05T22:31:28-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -581,7 +549,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-05T22:16:08-04:00",
+  "fetched_at": "2026-09-05T22:31:28-04:00",
   "issued": "800 PM EDT Sat Sep 5 2026",
   "areas": [],
   "raw": "en Español\n\n717 \nABNT20 KNHC 052314\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Sat Sep 5 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Adams"
@@ -589,7 +557,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-05T22:16:08-04:00",
+  "fetched_at": "2026-09-05T22:31:28-04:00",
   "florida": "$3.9265",
   "national": "$4.1459",
   "diesel": "$5.6880",
@@ -598,7 +566,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-05T22:16:09-04:00",
+  "fetched_at": "2026-09-05T22:31:29-04:00",
   "streams": {
    "local": [
     {
@@ -971,7 +939,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-05T22:16:10-04:00",
+  "fetched_at": "2026-09-05T22:31:29-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -979,7 +947,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (458) + USGS (11)",
-  "fetched_at": "2026-09-05T22:16:14-04:00",
+  "fetched_at": "2026-09-05T22:31:32-04:00",
   "events": [
    {
     "lat": -19.807,
@@ -1237,7 +1205,7 @@
     "lon": 149.9838,
     "kind": "earthquake",
     "level": "green",
-    "title": "Green earthquake (Magnitude 5.5M, Depth:32km) in Russia 04/09/2026 23:52 UTC, Few people affected in 100km.",
+    "title": "Green earthquake (Magnitude 5.5M, Depth:32km) in Russia 04/09/2026 23:52 UTC, 3 thousand in MMI III.",
     "place": "Russia",
     "severity": "Magnitude 5.5M, Depth:32km",
     "url": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1563697",
@@ -2445,7 +2413,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-05T22:16:14-04:00",
+  "fetched_at": "2026-09-05T22:31:32-04:00",
   "countries": [
    {
     "iso": "COL",
