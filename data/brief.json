@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-06T18:15:59-04:00",
- "generated_at_utc": "2026-09-06T22:15:59+00:00",
+ "generated_at": "2026-09-06T18:31:01-04:00",
+ "generated_at_utc": "2026-09-06T22:31:01+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 6",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-06T18:16:00-04:00",
+  "fetched_at": "2026-09-06T18:31:02-04:00",
   "curve": [
    {
     "time": "2026-09-06T05:00",
@@ -108,8 +108,8 @@
    {
     "time": "2026-09-06T17:00",
     "hour": 17,
-    "temp": 81.7,
-    "feels": 93.5,
+    "temp": 81.5,
+    "feels": 92.5,
     "humidity": 87,
     "pop": 38
    },
@@ -117,42 +117,42 @@
     "time": "2026-09-06T18:00",
     "hour": 18,
     "temp": 81.4,
-    "feels": 90.5,
+    "feels": 92.5,
     "humidity": 87,
     "pop": 26
    },
    {
     "time": "2026-09-06T19:00",
     "hour": 19,
-    "temp": 80.4,
-    "feels": 88.7,
+    "temp": 79.7,
+    "feels": 88.3,
     "humidity": 85,
     "pop": 25
    },
    {
     "time": "2026-09-06T20:00",
     "hour": 20,
-    "temp": 79.6,
-    "feels": 89.9,
+    "temp": 79.0,
+    "feels": 89.0,
     "humidity": 90,
     "pop": 14
    },
    {
     "time": "2026-09-06T21:00",
     "hour": 21,
-    "temp": 79.7,
-    "feels": 91.2,
+    "temp": 79.5,
+    "feels": 90.8,
     "humidity": 92,
     "pop": 9
    }
   ],
   "current": {
-   "temp": 81.4,
-   "feels": 91.0,
+   "temp": 80.5,
+   "feels": 90.0,
    "humidity": 86,
-   "wind_mph": 5.5,
-   "wind_dir": 117,
-   "observed_at": "2026-09-06T18:15"
+   "wind_mph": 4.3,
+   "wind_dir": 141,
+   "observed_at": "2026-09-06T18:30"
   },
   "today": {
    "high": 89.4,
@@ -166,63 +166,40 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-06T18:16:00-04:00",
+  "fetched_at": "2026-09-06T18:31:02-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-06T18:16:01-04:00",
-  "aqi": 22,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-06T18:31:28-04:00",
+  "aqi": 44,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-06 17:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-06",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 6.5,
+  "pm10": 7.6,
+  "observed": "2026-09-06T18:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-06T18:16:01-04:00",
+  "fetched_at": "2026-09-06T18:31:28-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-827"
+     "US-1 N",
+     "FL-970"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "delay_s": 901,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T22:20:00Z"
    },
    {
     "county": "Broward",
@@ -233,6 +210,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -267,19 +254,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 282,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-06T21:41:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "I-95 S"
     ],
-    "delay_s": 255,
+    "delay_s": 892,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-06T22:09:00Z"
@@ -287,32 +264,76 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 N"
+     "FL-970"
     ],
-    "delay_s": 104,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-06T21:46:30Z"
+    "delay_s": 421,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T22:27:30Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-A1A"
     ],
-    "delay_s": 84,
+    "delay_s": 224,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-06T21:56:00Z"
+    "start": "2026-09-06T22:23:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826"
+     "US-1 N",
+     "US-1 S",
+     "US-41 S",
+     "FL-5"
     ],
-    "delay_s": 73,
+    "delay_s": 191,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T22:28:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-822",
+     "FL-A1A"
+    ],
+    "delay_s": 152,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-09-06T22:29:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 92,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-06T22:00:00Z"
+    "start": "2026-09-06T21:41:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-84"
+    ],
+    "delay_s": 51,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T22:16:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 N"
+    ],
+    "delay_s": 24,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T21:46:30Z"
    },
    {
     "county": "Broward",
@@ -482,49 +503,17 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-08-26T14:23:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-18T20:48:14Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-27T16:41:35Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-27T16:08:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-02-18T17:07:36Z"
    }
   ],
-  "incident_count": 237,
-  "named_count": 26,
-  "major_count": 5,
+  "incident_count": 235,
+  "named_count": 30,
+  "major_count": 7,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-06T18:16:02-04:00",
+  "fetched_at": "2026-09-06T18:31:29-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -568,7 +557,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-06T18:16:03-04:00",
+  "fetched_at": "2026-09-06T18:31:30-04:00",
   "issued": "200 PM EDT Sun Sep 6 2026",
   "areas": [],
   "raw": "en Español\n\n080 \nABNT20 KNHC 061706\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Sun Sep 6 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
@@ -576,7 +565,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-06T18:16:03-04:00",
+  "fetched_at": "2026-09-06T18:31:30-04:00",
   "florida": "$3.9131",
   "national": "$4.1473",
   "diesel": "$5.6868",
@@ -585,7 +574,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-06T18:16:04-04:00",
+  "fetched_at": "2026-09-06T18:31:31-04:00",
   "streams": {
    "local": [
     {
@@ -694,6 +683,14 @@
   ],
   "local": [
    {
+    "title": "Passengers inside Miami International Airport dealing with delays following fatal plane crash",
+    "url": "https://www.local10.com/news/local/2026/09/06/passengers-inside-miami-international-airport-dealing-with-delays-following-fatal-plane-crash/",
+    "published": "Sun, 06 Sep 2026 22:27:14 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Cargo plane crashes after going off Miami International Airport runway, killing 5",
     "url": "https://www.local10.com/news/local/2026/09/06/cargo-plane-crashes-after-going-off-miami-international-airport-runway/",
     "published": "Sun, 06 Sep 2026 19:14:05 +0000",
@@ -748,14 +745,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "Coral Springs ex-school resource officer fired after probe sustains sexual battery allegation",
-    "url": "https://www.local10.com/news/local/2026/09/04/coral-springs-ex-school-resource-officer-fired-after-probe-sustains-sexual-battery-allegation/",
-    "published": "Fri, 04 Sep 2026 21:12:44 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/T36PW2ATWNA3LH2CZGCJ4SBFXE.jpg?auth=1df2bbc590543032a72fd0550bd1d6b10920f3545db8d2a7124ee657f736d3b7&smart=true&width=1200&height=900",
-    "media_type": "image"
    },
    {
     "title": "Miami Beach bar celebrates 100 year anniversary with block party",
@@ -824,6 +813,14 @@
   ],
   "colombia": [
    {
+    "title": "Temblor hoy en Colombia | Reportan sismo de magnitud mayor 3 en la tarde de este domingo 6 de septiembre: epicentro y profundidad",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-sismo-de-magnitud-mayor-3-en-la-tarde-de-este-domingo-6-de-septiembre-epicentro-y-profundidad-3584021",
+    "published": "2026-09-06T17:05:22-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/06/6a9de1750f982.png",
+    "media_type": "image"
+   },
+   {
     "title": "Barranquilla tendrá nuevas fuentes y refugios climáticos para enfrentar el calor: estos son los sectores donde podrían ubicarse",
     "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-tendra-nuevas-fuentes-y-refugios-climaticos-para-enfrentar-el-calor-estos-son-los-sectores-donde-podrian-ubicarse-3584019",
     "published": "2026-09-06T16:46:58-05:00",
@@ -877,14 +874,6 @@
     "published": "2026-09-06T13:51:34-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/06/6a9dafdc6ac47.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Cali confirma que sus vías y puentes son seguros tras el terremoto y acelera su recuperación",
-    "url": "https://www.eltiempo.com/colombia/cali/cali-confirma-que-sus-vias-y-puentes-son-seguros-tras-el-terremoto-y-acelera-su-recuperacion-3583998",
-    "published": "2026-09-06T13:12:06-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/27/6a9083a557815.r_d.730-548-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -958,15 +947,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-06T18:16:05-04:00",
+  "fetched_at": "2026-09-06T18:31:32-04:00",
   "items": [],
-  "scanned": 1,
+  "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
   "source": "GDACS (426) + USGS (16)",
-  "fetched_at": "2026-09-06T18:16:09-04:00",
+  "fetched_at": "2026-09-06T18:31:35-04:00",
   "events": [
    {
     "lat": -11.0595,
@@ -2437,12 +2426,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-06T18:16:09-04:00",
+  "fetched_at": "2026-09-06T18:31:35-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "Temblor hoy en Colombia | Reportan sismo de magnitud mayor 3 en la tarde de este domingo 6 de septiembre: epicentro y profundidad",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-sismo-de-magnitud-mayor-3-en-la-tarde-de-este-domingo-6-de-septiembre-epicentro-y-profundidad-3584021",
+      "published": "2026-09-06T17:05:22-05:00",
+      "section": "colombia"
+     },
      {
       "title": "Dos corredores sufrieron complicaciones de salud durante la Maratón Medellín: reporte del alcalde Federico Gutiérrez",
       "url": "https://www.eltiempo.com/colombia/medellin/dos-corredores-sufrieron-complicaciones-de-salud-durante-la-maraton-medellin-reporte-del-alcalde-federico-gutierrez-3584010",
@@ -2454,16 +2449,10 @@
       "url": "https://www.eltiempo.com/colombia/medellin/dramatismo-en-la-maraton-medellin-dos-participantes-luchan-por-su-vida-tras-sufrir-colapsos-en-plena-competencia-3584002",
       "published": "2026-09-06T13:51:34-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Cali confirma que sus vías y puentes son seguros tras el terremoto y acelera su recuperación",
-      "url": "https://www.eltiempo.com/colombia/cali/cali-confirma-que-sus-vias-y-puentes-son-seguros-tras-el-terremoto-y-acelera-su-recuperacion-3583998",
-      "published": "2026-09-06T13:12:06-05:00",
-      "section": "colombia"
      }
     ],
     "count": 3,
-    "issue": "Dos corredores sufrieron complicaciones de salud durante la Maratón Medellín: reporte del alcalde Federico Gutiérrez"
+    "issue": "Temblor hoy en Colombia | Reportan sismo de magnitud mayor 3 en la tarde de este domingo 6 de septiembre: epicentro y profundidad"
    },
    {
     "iso": "RUS",
