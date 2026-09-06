@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-06T16:31:02-04:00",
- "generated_at_utc": "2026-09-06T20:31:02+00:00",
+ "generated_at": "2026-09-06T16:46:04-04:00",
+ "generated_at_utc": "2026-09-06T20:46:04+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 6",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-06T16:31:02-04:00",
+  "fetched_at": "2026-09-06T16:46:05-04:00",
   "curve": [
    {
     "time": "2026-09-06T05:00",
@@ -93,66 +93,66 @@
     "time": "2026-09-06T15:00",
     "hour": 15,
     "temp": 82.6,
-    "feels": 82.5,
-    "humidity": 57,
+    "feels": 89.9,
+    "humidity": 88,
     "pop": 31
    },
    {
     "time": "2026-09-06T16:00",
     "hour": 16,
     "temp": 82.2,
-    "feels": 92.1,
-    "humidity": 81,
+    "feels": 92.3,
+    "humidity": 82,
     "pop": 26
    },
    {
     "time": "2026-09-06T17:00",
     "hour": 17,
     "temp": 79.8,
-    "feels": 86.8,
-    "humidity": 78,
+    "feels": 89.4,
+    "humidity": 90,
     "pop": 36
    },
    {
     "time": "2026-09-06T18:00",
     "hour": 18,
     "temp": 81.3,
-    "feels": 89.5,
-    "humidity": 80,
+    "feels": 90.9,
+    "humidity": 86,
     "pop": 38
    },
    {
     "time": "2026-09-06T19:00",
     "hour": 19,
     "temp": 81.3,
-    "feels": 91.0,
-    "humidity": 85,
+    "feels": 91.9,
+    "humidity": 89,
     "pop": 32
    },
    {
     "time": "2026-09-06T20:00",
     "hour": 20,
     "temp": 79.4,
-    "feels": 87.9,
-    "humidity": 87,
+    "feels": 88.8,
+    "humidity": 91,
     "pop": 14
    },
    {
     "time": "2026-09-06T21:00",
     "hour": 21,
     "temp": 79.0,
-    "feels": 87.3,
-    "humidity": 86,
+    "feels": 88.2,
+    "humidity": 90,
     "pop": 8
    }
   ],
   "current": {
-   "temp": 79.2,
-   "feels": 83.4,
-   "humidity": 81,
-   "wind_mph": 12.6,
-   "wind_dir": 78,
-   "observed_at": "2026-09-06T16:30"
+   "temp": 79.3,
+   "feels": 87.3,
+   "humidity": 89,
+   "wind_mph": 7.9,
+   "wind_dir": 83,
+   "observed_at": "2026-09-06T16:45"
   },
   "today": {
    "high": 89.4,
@@ -166,26 +166,50 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-06T16:31:03-04:00",
+  "fetched_at": "2026-09-06T16:46:05-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-06T16:31:29-04:00",
-  "aqi": 45,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-06T16:46:06-04:00",
+  "aqi": 28,
   "category": "Good",
-  "pm25": 5.3,
-  "pm10": 6.5,
-  "observed": "2026-09-06T16:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "O3",
+  "reporting_area": "Miami",
+  "observed": "2026-09-06 15:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-06",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-06",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-07",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-07",
+    "aqi": 40,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-06T16:31:29-04:00",
+  "fetched_at": "2026-09-06T16:46:06-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -223,16 +247,6 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-969"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-06T19:51:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-934"
     ],
     "delay_s": null,
@@ -251,22 +265,33 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
+     "US-441 N",
+     "US-441 S"
     ],
-    "delay_s": 407,
+    "delay_s": 322,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-06T19:41:30Z"
+    "start": "2026-09-06T20:42:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-441 N",
+     "US-441 S"
+    ],
+    "delay_s": 266,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T20:42:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 246,
+    "delay_s": 260,
     "magnitude": 3,
     "description": "Stationary traffic; Roadworks",
     "start": "2026-09-06T17:49:00Z"
@@ -274,62 +299,32 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S"
+     "US-1 N",
+     "US-1 S",
+     "US-41 S",
+     "FL-5"
     ],
     "delay_s": 207,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-06T20:27:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 173,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-06T20:21:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 S",
-     "FL-5"
-    ],
-    "delay_s": 156,
-    "magnitude": 1,
-    "description": "Slow traffic",
     "start": "2026-09-06T20:20:00Z"
    },
    {
-    "county": "Broward",
-    "roads": [
-     "FL-838",
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 139,
-    "magnitude": 1,
-    "description": "Heavy rain; Slow traffic",
-    "start": "2026-09-06T20:29:00Z"
-   },
-   {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 N"
+     "US-41 S"
     ],
-    "delay_s": 138,
+    "delay_s": 159,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-06T20:19:30Z"
+    "start": "2026-09-06T20:27:30Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-848"
     ],
-    "delay_s": 122,
+    "delay_s": 155,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-06T20:18:30Z"
@@ -337,34 +332,114 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-41 N"
+    ],
+    "delay_s": 154,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T20:19:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 138,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-06T20:35:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": 135,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T20:42:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-968"
+    ],
+    "delay_s": 135,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T20:43:02Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "US-1 N",
      "FL-5"
     ],
-    "delay_s": 113,
+    "delay_s": 134,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-06T20:16:30Z"
+    "start": "2026-09-06T20:44:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 N"
+    ],
+    "delay_s": 121,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-06T20:43:02Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 113,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-06T20:21:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 78,
+    "delay_s": 80,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-06T20:17:30Z"
    },
    {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 76,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T20:41:30Z"
+   },
+   {
     "county": "Broward",
     "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
+     "FL-91 N",
+     "Florida's Tpke N"
+    ],
+    "delay_s": 73,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-06T19:41:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 E"
     ],
     "delay_s": 51,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-06T19:33:30Z"
+    "start": "2026-09-06T20:40:00Z"
    },
    {
     "county": "Broward",
@@ -450,69 +525,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-09-03T08:51:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-05T11:15:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-395 W"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-03T17:49:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-03T13:43:04Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-06T19:08:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-886"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-03T14:55:00Z"
    }
   ],
-  "incident_count": 260,
-  "named_count": 34,
-  "major_count": 6,
+  "incident_count": 266,
+  "named_count": 39,
+  "major_count": 5,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-06T16:31:30-04:00",
+  "fetched_at": "2026-09-06T16:46:07-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -556,7 +579,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-06T16:31:30-04:00",
+  "fetched_at": "2026-09-06T16:46:07-04:00",
   "issued": "200 PM EDT Sun Sep 6 2026",
   "areas": [],
   "raw": "en Español\n\n080 \nABNT20 KNHC 061706\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Sun Sep 6 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
@@ -564,7 +587,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-06T16:31:30-04:00",
+  "fetched_at": "2026-09-06T16:46:07-04:00",
   "florida": "$3.9131",
   "national": "$4.1473",
   "diesel": "$5.6868",
@@ -573,7 +596,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-06T16:31:31-04:00",
+  "fetched_at": "2026-09-06T16:46:08-04:00",
   "streams": {
    "local": [
     {
@@ -812,6 +835,14 @@
   ],
   "colombia": [
    {
+    "title": "El presidente De La Espriella dice tener identificados a quienes dispararon al aire en el recibimiento del cuerpo de 'Bendito Menor' en Riohacha",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/el-presidente-de-la-espriella-dice-tener-identificados-a-quienes-dispararon-al-aire-en-el-recibimiento-del-cuerpo-de-bendito-menor-en-riohacha-3584012",
+    "published": "2026-09-06T15:36:08-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/06/6a9dc947e0394.png",
+    "media_type": "image"
+   },
+   {
     "title": "Dos corredores sufrieron complicaciones de salud durante la Maratón Medellín: reporte del alcalde Federico Gutiérrez",
     "url": "https://www.eltiempo.com/colombia/medellin/dos-corredores-sufrieron-complicaciones-de-salud-durante-la-maraton-medellin-reporte-del-alcalde-federico-gutierrez-3584010",
     "published": "2026-09-06T15:10:34-05:00",
@@ -865,14 +896,6 @@
     "published": "2026-09-06T14:10:12-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/06/6a9da67e1dd2a.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Tres personas murieron tras un aparatoso choque de motocicletas en la vía Medellín-Costa Atlántica: estas son las identidades de las víctimas",
-    "url": "https://www.eltiempo.com/colombia/medellin/tres-personas-murieron-tras-un-aparatoso-choque-de-motocicletas-en-la-via-medellin-costa-atlantica-estas-son-las-identidades-de-las-victimas-3583997",
-    "published": "2026-09-06T12:58:46-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/06/6a9da82ede38e.jpeg",
     "media_type": "image"
    }
   ],
@@ -946,7 +969,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-06T16:31:32-04:00",
+  "fetched_at": "2026-09-06T16:46:09-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -954,7 +977,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (497) + USGS (16)",
-  "fetched_at": "2026-09-06T16:31:36-04:00",
+  "fetched_at": "2026-09-06T16:46:12-04:00",
   "events": [
    {
     "lat": -11.0595,
@@ -2425,7 +2448,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-06T16:31:36-04:00",
+  "fetched_at": "2026-09-06T16:46:12-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2448,15 +2471,9 @@
       "url": "https://www.eltiempo.com/colombia/cali/cali-confirma-que-sus-vias-y-puentes-son-seguros-tras-el-terremoto-y-acelera-su-recuperacion-3583998",
       "published": "2026-09-06T13:12:06-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Tres personas murieron tras un aparatoso choque de motocicletas en la vía Medellín-Costa Atlántica: estas son las identidades de las víctimas",
-      "url": "https://www.eltiempo.com/colombia/medellin/tres-personas-murieron-tras-un-aparatoso-choque-de-motocicletas-en-la-via-medellin-costa-atlantica-estas-son-las-identidades-de-las-victimas-3583997",
-      "published": "2026-09-06T12:58:46-05:00",
-      "section": "colombia"
      }
     ],
-    "count": 4,
+    "count": 3,
     "issue": "Dos corredores sufrieron complicaciones de salud durante la Maratón Medellín: reporte del alcalde Federico Gutiérrez"
    },
    {
