@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-06T14:16:04-04:00",
- "generated_at_utc": "2026-09-06T18:16:04+00:00",
+ "generated_at": "2026-09-06T14:31:03-04:00",
+ "generated_at_utc": "2026-09-06T18:31:03+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 6",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-06T14:16:04-04:00",
+  "fetched_at": "2026-09-06T14:31:04-04:00",
   "curve": [
    {
     "time": "2026-09-06T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 88.5,
-   "feels": 100.5,
-   "humidity": 69,
-   "wind_mph": 5.4,
-   "wind_dir": 265,
-   "observed_at": "2026-09-06T14:15"
+   "temp": 88.8,
+   "feels": 102.5,
+   "humidity": 70,
+   "wind_mph": 6.3,
+   "wind_dir": 278,
+   "observed_at": "2026-09-06T14:30"
   },
   "today": {
    "high": 88.6,
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-06T14:16:04-04:00",
+  "fetched_at": "2026-09-06T14:31:04-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-06T14:16:05-04:00",
-  "aqi": 29,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-06T14:31:30-04:00",
+  "aqi": 46,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-06 13:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-06",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-06",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 4.9,
+  "pm10": 6.3,
+  "observed": "2026-09-06T14:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-06T14:16:05-04:00",
+  "fetched_at": "2026-09-06T14:31:30-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -220,7 +196,7 @@
      "US-27 S",
      "FL-25"
     ],
-    "delay_s": 2227,
+    "delay_s": 2978,
     "magnitude": 3,
     "description": "Stationary traffic; Roadworks",
     "start": "2026-09-06T17:49:30Z"
@@ -244,16 +220,6 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-595 W"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-06T12:20:00Z"
    },
    {
     "county": "Broward",
@@ -288,30 +254,19 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-854"
+     "FL-A1A"
     ],
-    "delay_s": 428,
+    "delay_s": 458,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-06T18:06:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
-    ],
-    "delay_s": 266,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-06T17:23:30Z"
+    "start": "2026-09-06T18:14:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 256,
+    "delay_s": 429,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-06T17:49:00Z"
@@ -319,126 +274,34 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-932"
+     "Florida's Tpke N",
+     "FL-821 N"
     ],
-    "delay_s": 208,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-06T18:11:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 197,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-06T16:58:37Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 E",
-     "I-395 E"
-    ],
-    "delay_s": 195,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-06T17:53:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 N",
-     "FL-A1A"
-    ],
-    "delay_s": 170,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-06T18:13:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-823"
-    ],
-    "delay_s": 169,
+    "delay_s": 283,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-06T17:48:30Z"
+    "start": "2026-09-06T17:23:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-934"
-    ],
-    "delay_s": 143,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-09-06T18:13:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 S",
-     "US-41 N"
-    ],
-    "delay_s": 119,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-06T18:07:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-195 W"
-    ],
-    "delay_s": 115,
-    "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-09-06T18:07:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 S",
      "FL-A1A"
     ],
-    "delay_s": 113,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-06T18:11:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-817"
-    ],
-    "delay_s": 103,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-06T18:12:30Z"
+    "delay_s": 273,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T18:25:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-195 E"
+     "US-1 N",
+     "FL-970"
     ],
-    "delay_s": 79,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-06T18:12:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 71,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-06T17:55:35Z"
+    "delay_s": 248,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T18:21:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -446,94 +309,203 @@
      "US-1 N",
      "FL-5"
     ],
-    "delay_s": 69,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-06T18:13:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826"
-    ],
-    "delay_s": 69,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-06T17:30:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-823"
-    ],
-    "delay_s": 66,
+    "delay_s": 241,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-06T18:02:00Z"
+    "start": "2026-09-06T18:25:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 S",
-     "US-1 S"
+     "FL-9"
     ],
-    "delay_s": 65,
-    "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-09-06T17:45:30Z"
+    "delay_s": 238,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-06T18:26:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
+     "FL-948"
+    ],
+    "delay_s": 216,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T18:26:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-75 S"
+    ],
+    "delay_s": 215,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T18:22:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-932"
+    ],
+    "delay_s": 215,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T18:11:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-75 N"
+    ],
+    "delay_s": 208,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-06T18:20:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "I-95 N"
     ],
-    "delay_s": 65,
+    "delay_s": 208,
     "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-09-06T17:47:30Z"
+    "description": "Slow traffic",
+    "start": "2026-09-06T16:58:37Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-A1A"
+    ],
+    "delay_s": 197,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T18:22:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 189,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T18:26:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826"
     ],
-    "delay_s": 64,
+    "delay_s": 185,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-06T18:10:05Z"
+    "start": "2026-09-06T18:27:00Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "FL-969"
     ],
-    "delay_s": 53,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-06T17:59:00Z"
+    "delay_s": 177,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T18:26:30Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-822",
+     "FL-814"
+    ],
+    "delay_s": 176,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-06T18:28:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-817"
+    ],
+    "delay_s": 174,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T18:26:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-A1A"
     ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-07-29T01:44:00Z"
+    "delay_s": 173,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T18:29:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 140,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-06T18:26:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 137,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-06T18:23:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 N",
+     "FL-A1A"
+    ],
+    "delay_s": 136,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-06T18:20:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 129,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-06T18:29:34Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-395 E"
+    ],
+    "delay_s": 122,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-06T18:17:00Z"
    }
   ],
-  "incident_count": 287,
-  "named_count": 45,
-  "major_count": 7,
+  "incident_count": 319,
+  "named_count": 67,
+  "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-06T14:16:07-04:00",
+  "fetched_at": "2026-09-06T14:31:31-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -571,7 +543,6 @@
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 6 2026, 11:31 AM",
-   "Central | Volusia | Due to a crash, I-4 eastbound at MM 122 has all lanes blocked. Motorists are advised to use Exit 118 as an alternate route. | Sep 6 2026, 5:11 AM",
    "Northeast | Duval | Due to a special event, expect delays in the downtown Jacksonville area. | Sep 6 2026, 11:26 AM"
   ],
   "fl511_local": []
@@ -579,7 +550,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-06T14:16:07-04:00",
+  "fetched_at": "2026-09-06T14:31:31-04:00",
   "issued": "200 PM EDT Sun Sep 6 2026",
   "areas": [],
   "raw": "en Español\n\n080 \nABNT20 KNHC 061706\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Sun Sep 6 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
@@ -587,7 +558,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-06T14:16:07-04:00",
+  "fetched_at": "2026-09-06T14:31:31-04:00",
   "florida": "$3.9131",
   "national": "$4.1473",
   "diesel": "$5.6868",
@@ -596,7 +567,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-06T14:16:09-04:00",
+  "fetched_at": "2026-09-06T14:31:32-04:00",
   "streams": {
    "local": [
     {
@@ -835,6 +806,22 @@
   ],
   "colombia": [
    {
+    "title": "Cali confirma que sus vías y puentes son seguros tras el terremoto y acelera su recuperación",
+    "url": "https://www.eltiempo.com/colombia/cali/cali-confirma-que-sus-vias-y-puentes-son-seguros-tras-el-terremoto-y-acelera-su-recuperacion-3583998",
+    "published": "2026-09-06T13:12:06-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/27/6a9083a557815.r_d.730-548-0.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Refugio entre las cenizas: el rescate de la fauna silvestre que sobrevive a los devastadores incendios que azotan el departamento del Tolima",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/refugio-entre-las-cenizas-el-rescate-de-la-fauna-silvestre-que-sobrevive-a-los-devastadores-incendios-que-azotan-el-departamento-del-tolima-3583996",
+    "published": "2026-09-06T13:02:40-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/06/6a9da67e1dd2a.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Tres personas murieron tras un aparatoso choque de motocicletas en la vía Medellín-Costa Atlántica: estas son las identidades de las víctimas",
     "url": "https://www.eltiempo.com/colombia/medellin/tres-personas-murieron-tras-un-aparatoso-choque-de-motocicletas-en-la-via-medellin-costa-atlantica-estas-son-las-identidades-de-las-victimas-3583997",
     "published": "2026-09-06T12:58:46-05:00",
@@ -845,7 +832,7 @@
    {
     "title": "Así va reconstrucción en Cali tras terremoto con 864 casas y 24 bienes de narcos para los damnificados: 'El Presidente escuchó las preocupaciones'",
     "url": "https://www.eltiempo.com/colombia/cali/asi-va-la-reconstruccion-en-cali-tras-el-terremoto-de-7-4-864-casas-y-24-bienes-de-narcos-se-destinaran-a-los-damnificados-3583993",
-    "published": "2026-09-06T12:49:39-05:00",
+    "published": "2026-09-06T13:06:16-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/06/6a9da3165d1c9.jpeg",
     "media_type": "image"
@@ -880,22 +867,6 @@
     "published": "2026-09-06T11:32:28-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/06/6a9d90b0b0942.r_d.479-280-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Entre disparos al aire, pancartas y música popular llegaron a Riohacha los cuerpos de alias 'Bendito Menor' y sus tres acompañantes este domingo",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/entre-disparos-al-aire-pancartas-y-musica-popular-llegaron-a-riohacha-los-cuerpos-de-alias-bendito-menor-y-sus-tres-acompanantes-este-domingo-3583969",
-    "published": "2026-09-06T10:37:59-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/06/6a9d86cfcbb74.r_d.382-382-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Lo que oculta el asesinato de Alejandra Moreno Paz en la ladera de Cali: las hipótesis detrás del adiós a la lideresa y los tambores mudos de Siloé",
-    "url": "https://www.eltiempo.com/colombia/cali/lo-que-oculta-el-asesinato-de-alejandra-moreno-paz-en-la-ladera-de-cali-las-hipotesis-detras-del-adios-a-la-lideresa-y-los-tambores-mudos-de-siloe-3583957",
-    "published": "2026-09-06T10:31:53-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/06/6a9d8117c20e9.r_d.757-345-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -969,7 +940,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-06T14:16:09-04:00",
+  "fetched_at": "2026-09-06T14:31:33-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -977,7 +948,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (463) + USGS (14)",
-  "fetched_at": "2026-09-06T14:16:14-04:00",
+  "fetched_at": "2026-09-06T14:31:35-04:00",
   "events": [
    {
     "lat": -11.0595,
@@ -2446,12 +2417,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-06T14:16:14-04:00",
+  "fetched_at": "2026-09-06T14:31:35-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "Cali confirma que sus vías y puentes son seguros tras el terremoto y acelera su recuperación",
+      "url": "https://www.eltiempo.com/colombia/cali/cali-confirma-que-sus-vias-y-puentes-son-seguros-tras-el-terremoto-y-acelera-su-recuperacion-3583998",
+      "published": "2026-09-06T13:12:06-05:00",
+      "section": "colombia"
+     },
      {
       "title": "Tres personas murieron tras un aparatoso choque de motocicletas en la vía Medellín-Costa Atlántica: estas son las identidades de las víctimas",
       "url": "https://www.eltiempo.com/colombia/medellin/tres-personas-murieron-tras-un-aparatoso-choque-de-motocicletas-en-la-via-medellin-costa-atlantica-estas-son-las-identidades-de-las-victimas-3583997",
@@ -2461,18 +2438,12 @@
      {
       "title": "Así va reconstrucción en Cali tras terremoto con 864 casas y 24 bienes de narcos para los damnificados: 'El Presidente escuchó las preocupaciones'",
       "url": "https://www.eltiempo.com/colombia/cali/asi-va-la-reconstruccion-en-cali-tras-el-terremoto-de-7-4-864-casas-y-24-bienes-de-narcos-se-destinaran-a-los-damnificados-3583993",
-      "published": "2026-09-06T12:49:39-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Lo que oculta el asesinato de Alejandra Moreno Paz en la ladera de Cali: las hipótesis detrás del adiós a la lideresa y los tambores mudos de Siloé",
-      "url": "https://www.eltiempo.com/colombia/cali/lo-que-oculta-el-asesinato-de-alejandra-moreno-paz-en-la-ladera-de-cali-las-hipotesis-detras-del-adios-a-la-lideresa-y-los-tambores-mudos-de-siloe-3583957",
-      "published": "2026-09-06T10:31:53-05:00",
+      "published": "2026-09-06T13:06:16-05:00",
       "section": "colombia"
      }
     ],
     "count": 3,
-    "issue": "Tres personas murieron tras un aparatoso choque de motocicletas en la vía Medellín-Costa Atlántica: estas son las identidades de las víctimas"
+    "issue": "Cali confirma que sus vías y puentes son seguros tras el terremoto y acelera su recuperación"
    },
    {
     "iso": "IRN",
