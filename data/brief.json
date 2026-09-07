@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-07T09:31:16-04:00",
- "generated_at_utc": "2026-09-07T13:31:16+00:00",
+ "generated_at": "2026-09-07T09:46:03-04:00",
+ "generated_at_utc": "2026-09-07T13:46:03+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 7",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-07T09:31:17-04:00",
+  "fetched_at": "2026-09-07T09:46:04-04:00",
   "curve": [
    {
     "time": "2026-09-07T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 83.7,
-   "feels": 96.0,
-   "humidity": 84,
-   "wind_mph": 1.8,
-   "wind_dir": 270,
-   "observed_at": "2026-09-07T09:30"
+   "temp": 84.0,
+   "feels": 96.3,
+   "humidity": 83,
+   "wind_mph": 1.4,
+   "wind_dir": 279,
+   "observed_at": "2026-09-07T09:45"
   },
   "today": {
    "high": 88.7,
@@ -166,26 +166,38 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-07T09:31:17-04:00",
+  "fetched_at": "2026-09-07T09:46:04-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-07T09:31:43-04:00",
-  "aqi": 46,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-07T09:46:05-04:00",
+  "aqi": 41,
   "category": "Good",
-  "pm25": 5.5,
-  "pm10": 6.3,
-  "observed": "2026-09-07T09:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-07 8:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-07",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-07",
+    "aqi": 40,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-07T09:31:43-04:00",
+  "fetched_at": "2026-09-07T09:46:05-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -245,7 +257,7 @@
     "roads": [
      "FL-932"
     ],
-    "delay_s": 422,
+    "delay_s": 417,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-07T10:50:00Z"
@@ -253,42 +265,72 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-A1A"
+     "FL-848"
     ],
-    "delay_s": 151,
+    "delay_s": 192,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-07T13:40:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-823"
+    ],
+    "delay_s": 120,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-07T13:25:00Z"
+    "start": "2026-09-07T13:37:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-395 W"
     ],
-    "delay_s": 100,
+    "delay_s": 112,
     "magnitude": 2,
     "description": "Queuing traffic; Roadworks",
     "start": "2026-09-07T13:23:30Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "I-395 W"
+     "I-95 N"
     ],
-    "delay_s": 60,
+    "delay_s": 75,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-07T13:42:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-84"
+    ],
+    "delay_s": 63,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-07T13:22:00Z"
+    "start": "2026-09-07T13:39:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-887 N"
+     "FL-972"
     ],
-    "delay_s": 33,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-07T13:29:30Z"
+    "delay_s": 62,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-07T13:41:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-395 W"
+    ],
+    "delay_s": 42,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-07T13:22:00Z"
    },
    {
     "county": "Broward",
@@ -462,42 +504,18 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-06-27T16:08:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
     "start": "2026-06-27T16:41:35Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-02-18T17:07:36Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-20T07:04:00Z"
    }
   ],
-  "incident_count": 225,
-  "named_count": 25,
+  "incident_count": 230,
+  "named_count": 28,
   "major_count": 5,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-07T09:31:44-04:00",
+  "fetched_at": "2026-09-07T09:46:06-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -546,7 +564,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-07T09:31:45-04:00",
+  "fetched_at": "2026-09-07T09:46:07-04:00",
   "issued": "800 AM EDT Mon Sep 7 2026",
   "areas": [],
   "raw": "en Español\n\n903 \nABNT20 KNHC 071110\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Mon Sep 7 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
@@ -554,7 +572,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-07T09:31:45-04:00",
+  "fetched_at": "2026-09-07T09:46:07-04:00",
   "florida": "$3.9054",
   "national": "$4.1505",
   "diesel": "$5.6822",
@@ -563,7 +581,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-07T09:31:46-04:00",
+  "fetched_at": "2026-09-07T09:46:08-04:00",
   "streams": {
    "local": [
     {
@@ -768,11 +786,11 @@
     "media_type": "video"
    },
    {
-    "title": "Investigators hunt for what went wrong after Amazon cargo plane from SJU crashed at MIA, killing at least 5",
-    "url": "https://wsvn.com/news/local/miami-dade/investigators-hunt-for-what-went-wrong-after-amazon-cargo-plane-from-sju-crashed-at-mia-killing-at-least-5/",
+    "title": "Federal investigators probe Amazon cargo jet’s fiery runway crash that killed 5 at MIA",
+    "url": "https://wsvn.com/news/local/miami-dade/federal-investigators-probe-amazon-cargo-jets-fiery-runway-crash-that-killed-5-at-mia/",
     "published": "Mon, 07 Sep 2026 10:50:30 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1b96ab03-cdab-4f69-ad65-84a582e9e220/f1db24c8-3238-4f83-908f-6f106f4b3b6a/main.mp4?fastly_token=NmE5ZjBiZWZfMTlkODMwMjkwNjFkN2E3NGE2Y2I3ZjBmZDc4NzFkMmFhYjFjOTk3NTdiZTVjMjJhYmZhMWNjNTNiZWU3MGQ4M18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xYjk2YWIwMy1jZGFiLTRmNjktYWQ2NS04NGE1ODJlOWUyMjAvZjFkYjI0YzgtMzIzOC00ZjgzLTkwOGYtNmYxMDZmNGIzYjZhL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/8a5e90cf-b941-452a-99a5-9c5fe7319a89/af070b34-df02-42b8-ac81-4a6ef9e40915/main.mp4?fastly_token=NmE5ZjE1NDlfODExOTQzMTRiZDQ4ODU0YTUzODhlMzI0ZGE0MjI4MTQ1OGU0MjQwMzRjNmUzOWQwNWY5OGFkNzZhYmI4MGQ1YV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84YTVlOTBjZi1iOTQxLTQ1MmEtOTlhNS05YzVmZTczMTlhODkvYWYwNzBiMzQtZGYwMi00MmI4LWFjODEtNGE2ZWY5ZTQwOTE1L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -788,7 +806,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/passengers-at-mia-left-frustrated-by-ground-stop-due-to-cargo-plane-that-overran-runway/",
     "published": "Sun, 06 Sep 2026 22:53:56 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/2bf8e331-1811-4bb5-b3b2-52c7e436226e/58af3db2-5304-483f-aef6-67b66b45d4e8/main.mp4?fastly_token=NmE5ZjBhOGJfNjg2NTI0OWRkNmRhNGE5NDBhZDM1MzY3YTdkZjcxNzg1NGZmY2UxYTE4Y2UwYWI2NzZkZmFiZDdmOWQ5MmQyNl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yYmY4ZTMzMS0xODExLTRiYjUtYjNiMi01MmM3ZTQzNjIyNmUvNThhZjNkYjItNTMwNC00ODNmLWFlZjYtNjdiNjZiNDVkNGU4L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/2d3ef625-9e20-485e-b2af-8b89855d4805/ba599868-5870-46a0-a500-ee05bccf26d7/main.mp4?fastly_token=NmE5ZjEyYWFfYzNhNzg0ZjJkMjBiMzk0OGI3Njg1ZTMzOTk4NTkzMmJhNGM1ODhmMjhjMzUxMzRiNDdiYmVkMDQxMTg2MThlZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yZDNlZjYyNS05ZTIwLTQ4NWUtYjJhZi04Yjg5ODU1ZDQ4MDUvYmE1OTk4NjgtNTg3MC00NmEwLWE1MDAtZWUwNWJjY2YyNmQ3L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -801,6 +819,30 @@
    }
   ],
   "colombia": [
+   {
+    "title": "Gobernador Verano le pide a De la Espriella aprovechar la visita de Marco Rubio para impulsar la apertura de un consulado de EE. UU. en Barranquilla",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/gobernador-verano-le-pide-a-de-la-espriella-aprovechar-la-visita-de-marco-rubio-para-impulsar-la-apertura-de-un-consulado-de-ee-uu-en-barranquilla-3584118",
+    "published": "2026-09-07T08:30:49-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/04/6a9acd5422062.r_d.229-124-0.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Terrorismo con drones sacude al Cauca: ataques coordinados en Cajibío, Patía e Inzá dejan cuatro uniformados heridos",
+    "url": "https://www.eltiempo.com/colombia/cali/terrorismo-con-drones-sacude-al-cauca-ataques-coordinados-en-cajibio-patia-e-inza-dejan-cuatro-uniformados-heridos-3584122",
+    "published": "2026-09-07T08:30:32-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/07/6a9ebb4e0f87c.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Vendaval golpea Cúcuta: vientos de más de 50 km/h derriban árboles, dejan tres heridos y daños en viviendas",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/vendaval-golpea-cucuta-vientos-de-mas-de-50-km-h-derriban-arboles-dejan-tres-heridos-y-danos-en-viviendas-3584116",
+    "published": "2026-09-07T08:16:46-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/07/6a9eb7781a064.png",
+    "media_type": "image"
+   },
    {
     "title": "La reconstrucción del hallazgo del cuerpo de Michel Dahiana Henao y el misterio detrás de su muerte: 'Es imposible que llegara hasta allá sola'",
     "url": "https://www.eltiempo.com/colombia/medellin/la-reconstruccion-del-hallazgo-del-cuerpo-de-michel-dahiana-henao-y-el-misterio-detras-de-su-muerte-es-imposible-que-llegara-hasta-alla-sola-3584079",
@@ -840,33 +882,17 @@
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/06/6a9e29356a28a.jpeg",
     "media_type": "image"
-   },
-   {
-    "title": "Seis temblores de magnitudes 3 y 4 se sintieron en el país en la tarde y noche de este domingo: epicentros",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/seis-temblores-de-magnitudes-3-y-4-se-sintieron-en-el-pais-en-la-tarde-y-noche-de-este-domingo-epicentros-3584059",
-    "published": "2026-09-06T22:07:03-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/06/6a9e2a5032ba9.r_d.127-228-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "La historia del nuevo comandante de la Policía Valle, coronel Amaury Lynsay Aguilera López: 'Busco fortalecer las estrategias contra el crimen'",
-    "url": "https://www.eltiempo.com/colombia/cali/la-historia-del-nuevo-comandante-de-la-policia-valle-coronel-amaury-lynsay-aguilera-lopez-busco-fortalecer-las-estrategias-contra-el-crimen-3584056",
-    "published": "2026-09-06T21:50:31-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/06/6a9e2210e80c5.r_d.288-191-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "El último adiós al capitán Pirajón: Sogamoso recibió con honores al oficial asesinado en el ataque con drones explosivos en Ocaña, Norte de Santander",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/el-ultimo-adios-al-capitan-pirajon-sogamoso-recibe-con-honores-al-oficial-asesinado-en-el-ataque-con-drones-explosivos-en-ocana-norte-de-santander-3584050",
-    "published": "2026-09-06T22:20:17-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/06/6a9e19160ac74.jpeg",
-    "media_type": "image"
    }
   ],
   "world": [
+   {
+    "title": "As Nepal identifies those killed in the floods, questions grow over China's reporting",
+    "url": "https://www.npr.org/2026/09/07/nx-s1-5960357/nepal-floods-questions-over-chinas-reporting",
+    "published": "Mon, 07 Sep 2026 09:31:16 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
    {
     "title": "5 dead after crash at Miami Airport. And, Germany's far-right wins state election",
     "url": "https://www.npr.org/2026/09/07/g-s1-142210/up-first-newsletter-miami-plane-crash-ukraine-affirmative-for-germany",
@@ -922,21 +948,13 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "Germany's far-right achieves an electoral breakthrough in key state election",
-    "url": "https://www.npr.org/2026/09/06/nx-s1-5955677/german-afd-far-right",
-    "published": "Sun, 06 Sep 2026 12:36:48 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-07T09:31:46-04:00",
+  "fetched_at": "2026-09-07T09:46:09-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -944,7 +962,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (433) + USGS (9)",
-  "fetched_at": "2026-09-07T09:31:50-04:00",
+  "fetched_at": "2026-09-07T09:46:12-04:00",
   "events": [
    {
     "lat": -23.4192,
@@ -2408,7 +2426,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-07T09:31:50-04:00",
+  "fetched_at": "2026-09-07T09:46:12-04:00",
   "countries": [
    {
     "iso": "RUS",
@@ -2469,29 +2487,15 @@
     "issue": "Kushner and Witkoff visit Ukraine with hopes of restarting peace talks with Russia"
    },
    {
-    "iso": "DEU",
-    "name": "Germany",
-    "stories": [
-     {
-      "title": "5 dead after crash at Miami Airport. And, Germany's far-right wins state election",
-      "url": "https://www.npr.org/2026/09/07/g-s1-142210/up-first-newsletter-miami-plane-crash-ukraine-affirmative-for-germany",
-      "published": "Mon, 07 Sep 2026 07:11:51 -0400",
-      "section": "world"
-     },
-     {
-      "title": "Germany's far-right achieves an electoral breakthrough in key state election",
-      "url": "https://www.npr.org/2026/09/06/nx-s1-5955677/german-afd-far-right",
-      "published": "Sun, 06 Sep 2026 12:36:48 -0400",
-      "section": "world"
-     }
-    ],
-    "count": 2,
-    "issue": "5 dead after crash at Miami Airport. And, Germany's far-right wins state election"
-   },
-   {
     "iso": "CHN",
     "name": "China",
     "stories": [
+     {
+      "title": "As Nepal identifies those killed in the floods, questions grow over China's reporting",
+      "url": "https://www.npr.org/2026/09/07/nx-s1-5960357/nepal-floods-questions-over-chinas-reporting",
+      "published": "Mon, 07 Sep 2026 09:31:16 -0400",
+      "section": "world"
+     },
      {
       "title": "What Russia and China learned from America after 9/11",
       "url": "https://www.npr.org/2026/09/06/nx-s1-5938065/what-russia-and-china-learned-from-america-after-9-11",
@@ -2499,8 +2503,8 @@
       "section": "world"
      }
     ],
-    "count": 1,
-    "issue": "What Russia and China learned from America after 9/11"
+    "count": 2,
+    "issue": "As Nepal identifies those killed in the floods, questions grow over China's reporting"
    },
    {
     "iso": "COL",
@@ -2515,6 +2519,20 @@
     ],
     "count": 1,
     "issue": "Alcalde 'Fico' Gutiérrez agradece al FBI por la alianza contra la corrupción en Medellín y envía mensaje a criminales: 'Lo mejor es que se entreguen'"
+   },
+   {
+    "iso": "DEU",
+    "name": "Germany",
+    "stories": [
+     {
+      "title": "5 dead after crash at Miami Airport. And, Germany's far-right wins state election",
+      "url": "https://www.npr.org/2026/09/07/g-s1-142210/up-first-newsletter-miami-plane-crash-ukraine-affirmative-for-germany",
+      "published": "Mon, 07 Sep 2026 07:11:51 -0400",
+      "section": "world"
+     }
+    ],
+    "count": 1,
+    "issue": "5 dead after crash at Miami Airport. And, Germany's far-right wins state election"
    },
    {
     "iso": "USA",
