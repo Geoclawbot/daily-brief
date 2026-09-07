@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-07T15:31:03-04:00",
- "generated_at_utc": "2026-09-07T19:31:03+00:00",
+ "generated_at": "2026-09-07T15:46:09-04:00",
+ "generated_at_utc": "2026-09-07T19:46:09+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 7",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-07T15:31:03-04:00",
+  "fetched_at": "2026-09-07T15:46:10-04:00",
   "curve": [
    {
     "time": "2026-09-07T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 89.0,
-   "feels": 105.0,
-   "humidity": 89,
-   "wind_mph": 5.8,
-   "wind_dir": 148,
-   "observed_at": "2026-09-07T15:30"
+   "temp": 89.4,
+   "feels": 106.4,
+   "humidity": 87,
+   "wind_mph": 5.1,
+   "wind_dir": 139,
+   "observed_at": "2026-09-07T15:45"
   },
   "today": {
    "high": 90.1,
@@ -166,57 +166,79 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-07T15:31:04-04:00",
-  "alerts": [],
-  "count": 0
+  "fetched_at": "2026-09-07T15:46:10-04:00",
+  "alerts": [
+   {
+    "event": "Special Weather Statement",
+    "severity": "Moderate",
+    "urgency": "Expected",
+    "headline": "Special Weather Statement issued September 7 at 3:36PM EDT by NWS Miami FL",
+    "description": "At 335 PM EDT, National Weather Service meteorologists were tracking\na strong thunderstorm near Mile Marker 30 On Alligator Alley, or 13\nmiles west of Pembroke Pines, moving east at 20 mph.\n\nHAZARD...Wind gusts of 50 to 55 mph and nickel size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Minor damage to outdoor objects is\npossible.\n\nLocations impacted include...\nPembroke Pines, Miramar, Davie, Plantation, Sunrise, Weston, Cooper\nCity, Sawgrass Mills Mall, Intersection I-75 And U.S. 27,\nIntersection I-75 And Griffin Road, Mile Marker 30 On Alligator\nAlley, Intersection Alligator Alley And Miami Canal, East Toll Gate\nOn Alligator Alley, Markham Park, and West Broward Rec. Area On\nAlligator Alley.",
+    "onset": "2026-09-07T15:36:00-04:00",
+    "ends": "2026-09-07T16:15:00-04:00"
+   }
+  ],
+  "count": 1
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-07T15:31:29-04:00",
-  "aqi": 42,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-07T15:46:11-04:00",
+  "aqi": 26,
   "category": "Good",
-  "pm25": 7.2,
-  "pm10": 9.1,
-  "observed": "2026-09-07T15:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "O3",
+  "reporting_area": "Miami",
+  "observed": "2026-09-07 14:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-07",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-07",
+    "aqi": 40,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-07T15:31:32-04:00",
+  "fetched_at": "2026-09-07T15:46:14-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
   "miles": 20.6,
-  "minutes": 54,
+  "minutes": 56,
   "delay_minutes": 0,
   "toll_free": true,
   "alternates": [
    {
     "miles": 26.8,
-    "minutes": 43,
+    "minutes": 41,
     "toll": true,
-    "saves": 11
+    "saves": 15
    },
    {
-    "miles": 28.7,
+    "miles": 28.6,
     "minutes": 43,
     "toll": true,
-    "saves": 11
+    "saves": 13
    },
    {
     "miles": 25.1,
-    "minutes": 44,
+    "minutes": 46,
     "toll": true,
     "saves": 10
    },
    {
     "miles": 25.1,
-    "minutes": 44,
+    "minutes": 46,
     "toll": true,
     "saves": 10
    }
@@ -224,43 +246,43 @@
   "alternates_worth_taking": [
    {
     "miles": 26.8,
-    "minutes": 43,
+    "minutes": 41,
     "toll": true,
-    "saves": 11
+    "saves": 15
    },
    {
-    "miles": 28.7,
+    "miles": 28.6,
     "minutes": 43,
     "toll": true,
-    "saves": 11
+    "saves": 13
    }
   ],
   "free_alternates": [
    {
     "miles": 20.6,
-    "minutes": 54,
+    "minutes": 56,
     "delay_minutes": 0,
     "saves": 0
    },
    {
     "miles": 28.2,
-    "minutes": 56,
-    "delay_minutes": 3
+    "minutes": 58,
+    "delay_minutes": 2
    },
    {
     "miles": 22.7,
-    "minutes": 62,
+    "minutes": 63,
     "delay_minutes": 0
    },
    {
     "miles": 23.1,
-    "minutes": 71,
+    "minutes": 72,
     "delay_minutes": 0
    }
   ],
   "best_free": {
    "miles": 20.6,
-   "minutes": 54,
+   "minutes": 56,
    "delay_minutes": 0,
    "saves": 0
   },
@@ -293,7 +315,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -303,7 +325,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -361,7 +383,7 @@
      "US-1 N",
      "FL-970"
     ],
-    "delay_s": 516,
+    "delay_s": 763,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-07T19:18:33Z"
@@ -369,21 +391,10 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 N",
-     "FL-5"
-    ],
-    "delay_s": 415,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-07T19:21:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "Florida's Tpke N",
      "FL-821 N"
     ],
-    "delay_s": 406,
+    "delay_s": 428,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-07T15:28:30Z"
@@ -391,19 +402,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 E"
-    ],
-    "delay_s": 304,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-07T19:10:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-94"
     ],
-    "delay_s": 267,
+    "delay_s": 349,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-07T18:49:00Z"
@@ -411,12 +412,23 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-A1A"
+     "US-41 N",
+     "FL-5"
     ],
-    "delay_s": 265,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-07T19:28:30Z"
+    "delay_s": 277,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-07T19:21:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-75 N"
+    ],
+    "delay_s": 240,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-07T19:36:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -426,7 +438,7 @@
      "US-41 S",
      "FL-5"
     ],
-    "delay_s": 248,
+    "delay_s": 226,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-07T19:27:30Z"
@@ -435,49 +447,79 @@
     "county": "Miami-Dade",
     "roads": [
      "US-1 N",
-     "FL-970"
+     "FL-5"
     ],
-    "delay_s": 228,
+    "delay_s": 216,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-07T19:26:30Z"
+    "start": "2026-09-07T19:44:00Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-826 W"
+     "FL-838"
     ],
-    "delay_s": 217,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-07T19:10:00Z"
+    "delay_s": 201,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-07T19:40:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-854"
     ],
-    "delay_s": 198,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 192,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-09-07T17:56:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826"
+    ],
+    "delay_s": 184,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-07T19:43:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 N"
+    ],
+    "delay_s": 177,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-07T19:39:30Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-A1A"
+     "FL-814"
     ],
-    "delay_s": 170,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-07T19:22:30Z"
+    "delay_s": 176,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-07T19:44:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-814"
+    ],
+    "delay_s": 167,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-07T19:40:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 167,
+    "delay_s": 163,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-07T18:22:30Z"
@@ -485,104 +527,88 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-934"
+     "FL-826 E"
     ],
-    "delay_s": 164,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-07T19:26:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-84"
-    ],
-    "delay_s": 158,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-07T19:29:30Z"
+    "delay_s": 156,
+    "magnitude": 1,
+    "description": "Heavy traffic",
+    "start": "2026-09-07T19:10:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-990"
-    ],
-    "delay_s": 156,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-07T19:29:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-858"
+     "FL-934"
     ],
     "delay_s": 147,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-07T19:19:30Z"
+    "start": "2026-09-07T19:28:04Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "US-1 N",
-     "FL-5"
+     "FL-854"
     ],
-    "delay_s": 77,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-07T19:12:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-5"
-    ],
-    "delay_s": 74,
+    "delay_s": 142,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-07T19:24:00Z"
+    "start": "2026-09-07T19:44:30Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "I-95 S"
+     "I-75 S"
     ],
-    "delay_s": 68,
+    "delay_s": 135,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-07T19:27:30Z"
+    "start": "2026-09-07T19:34:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-825"
+     "Gratigny Pkwy E",
+     "FL-924 E"
     ],
-    "delay_s": 57,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-07T19:24:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 N"
-    ],
-    "delay_s": 54,
+    "delay_s": 124,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-07T19:29:30Z"
+    "start": "2026-09-07T19:38:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-75 S",
+     "FL-84 E",
+     "Everglades Pkwy E",
+     "Alligator Aly E"
+    ],
+    "delay_s": 113,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-07T19:42:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Gratigny Pkwy W",
+     "FL-924 W"
+    ],
+    "delay_s": 113,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-07T19:38:30Z"
    }
   ],
-  "incident_count": 281,
-  "named_count": 51,
-  "major_count": 9,
+  "incident_count": 292,
+  "named_count": 63,
+  "major_count": 10,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-07T15:31:33-04:00",
+  "fetched_at": "2026-09-07T15:46:15-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -626,7 +652,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-07T15:31:33-04:00",
+  "fetched_at": "2026-09-07T15:46:15-04:00",
   "issued": "200 PM EDT Mon Sep 7 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 071713\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Mon Sep 7 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
@@ -634,7 +660,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-07T15:31:33-04:00",
+  "fetched_at": "2026-09-07T15:46:15-04:00",
   "florida": "$3.9054",
   "national": "$4.1505",
   "diesel": "$5.6822",
@@ -643,7 +669,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-07T15:31:34-04:00",
+  "fetched_at": "2026-09-07T15:46:17-04:00",
   "streams": {
    "local": [
     {
@@ -882,6 +908,14 @@
   ],
   "colombia": [
    {
+    "title": "Bolívar exige una solución a la crisis energética y cuestiona a la CREG y Afinia por tarifas y fallas en el servicio en el Caribe colombiano",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/bolivar-exige-una-solucion-a-la-crisis-energetica-y-cuestiona-a-la-creg-y-afinia-por-tarifas-y-fallas-en-el-servicio-en-el-caribe-colombiano-3584230",
+    "published": "2026-09-07T14:21:08-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/07/6a9f0bdcbc876.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Anillo vial externo metropolitano| No hay presupuesto completo para retomar una de las obras más importantes de Santander: esto se sabe",
     "url": "https://www.eltiempo.com/colombia/santander/anillo-vial-externo-metropolitano-no-hay-presupuesto-completo-para-retomar-una-de-las-obras-mas-importantes-de-santander-esto-se-sabe-3584227",
     "published": "2026-09-07T14:15:01-05:00",
@@ -935,14 +969,6 @@
     "published": "2026-09-07T12:09:11-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/07/6a9eee3075c85.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Entregaron la primera de las 500 'Casas Pacífico' para las víctimas del terremoto en Chocó: una familia de cinco personas fue la primera beneficiaria",
-    "url": "https://www.eltiempo.com/colombia/medellin/entregaron-la-primera-de-las-500-casas-pacifico-para-las-victimas-del-terremoto-en-choco-una-familia-de-cinco-personas-fue-la-primera-beneficiaria-3584187",
-    "published": "2026-09-07T12:02:16-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/07/6a9eec48b29e1.png",
     "media_type": "image"
    }
   ],
@@ -1016,7 +1042,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-07T15:31:35-04:00",
+  "fetched_at": "2026-09-07T15:46:18-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1024,7 +1050,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (466) + USGS (7)",
-  "fetched_at": "2026-09-07T15:31:38-04:00",
+  "fetched_at": "2026-09-07T15:46:22-04:00",
   "events": [
    {
     "lat": -23.4192,
@@ -2486,7 +2512,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-07T15:31:38-04:00",
+  "fetched_at": "2026-09-07T15:46:22-04:00",
   "countries": [
    {
     "iso": "COL",
