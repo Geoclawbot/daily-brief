@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-07T08:16:04-04:00",
- "generated_at_utc": "2026-09-07T12:16:04+00:00",
+ "generated_at": "2026-09-07T08:31:05-04:00",
+ "generated_at_utc": "2026-09-07T12:31:05+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 7",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-07T08:16:05-04:00",
+  "fetched_at": "2026-09-07T08:31:05-04:00",
   "curve": [
    {
     "time": "2026-09-07T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 81.1,
-   "feels": 91.7,
+   "temp": 81.6,
+   "feels": 92.7,
    "humidity": 88,
-   "wind_mph": 3.9,
-   "wind_dir": 260,
-   "observed_at": "2026-09-07T08:15"
+   "wind_mph": 3.6,
+   "wind_dir": 266,
+   "observed_at": "2026-09-07T08:30"
   },
   "today": {
    "high": 89.5,
@@ -166,38 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-07T08:16:05-04:00",
+  "fetched_at": "2026-09-07T08:31:06-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-07T08:16:06-04:00",
-  "aqi": 18,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-07T08:31:31-04:00",
+  "aqi": 47,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-07 7:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-07",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 5.0,
+  "pm10": 5.7,
+  "observed": "2026-09-07T08:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-07T08:16:07-04:00",
+  "fetched_at": "2026-09-07T08:31:33-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
@@ -209,25 +197,25 @@
   "toll_free": true,
   "alternates": [
    {
-    "miles": 27.1,
+    "miles": 27.0,
     "minutes": 35,
     "toll": true,
     "saves": 6
    },
    {
-    "miles": 24.7,
+    "miles": 24.6,
     "minutes": 36,
     "toll": true,
     "saves": 5
    },
    {
     "miles": 22.7,
-    "minutes": 40,
+    "minutes": 39,
     "toll": true,
-    "saves": 1
+    "saves": 2
    },
    {
-    "miles": 28.2,
+    "miles": 28.1,
     "minutes": 37,
     "toll": true,
     "saves": 4
@@ -243,7 +231,7 @@
    },
    {
     "miles": 19.9,
-    "minutes": 43,
+    "minutes": 42,
     "delay_minutes": 0
    },
    {
@@ -253,7 +241,7 @@
    },
    {
     "miles": 22.8,
-    "minutes": 61,
+    "minutes": 60,
     "delay_minutes": 0
    }
   ],
@@ -272,7 +260,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -282,7 +270,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -319,7 +307,7 @@
     "roads": [
      "FL-932"
     ],
-    "delay_s": 301,
+    "delay_s": 414,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-07T10:50:00Z"
@@ -329,20 +317,20 @@
     "roads": [
      "FL-887 N"
     ],
-    "delay_s": 179,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 382,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-09-07T12:00:00Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-84"
+     "FL-972"
     ],
-    "delay_s": 60,
+    "delay_s": 86,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-07T12:03:30Z"
+    "start": "2026-09-07T12:25:30Z"
    },
    {
     "county": "Broward",
@@ -540,7 +528,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-06-19T12:50:30Z"
+    "start": "2026-06-20T07:04:00Z"
    },
    {
     "county": "Broward",
@@ -548,7 +536,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-06-20T07:04:00Z"
+    "start": "2026-06-19T12:50:30Z"
    },
    {
     "county": "Broward",
@@ -559,7 +547,7 @@
     "start": "2026-08-14T16:04:30Z"
    }
   ],
-  "incident_count": 219,
+  "incident_count": 221,
   "named_count": 23,
   "major_count": 5,
   "coverage": "Miami-Dade + Broward"
@@ -567,7 +555,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-07T08:16:08-04:00",
+  "fetched_at": "2026-09-07T08:31:33-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -613,7 +601,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-07T08:16:08-04:00",
+  "fetched_at": "2026-09-07T08:31:34-04:00",
   "issued": "800 AM EDT Mon Sep 7 2026",
   "areas": [],
   "raw": "en Español\n\n903 \nABNT20 KNHC 071110\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Mon Sep 7 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
@@ -621,7 +609,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-07T08:16:08-04:00",
+  "fetched_at": "2026-09-07T08:31:34-04:00",
   "florida": "$3.9054",
   "national": "$4.1505",
   "diesel": "$5.6822",
@@ -630,7 +618,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-07T08:16:09-04:00",
+  "fetched_at": "2026-09-07T08:31:35-04:00",
   "streams": {
    "local": [
     {
@@ -739,6 +727,14 @@
   ],
   "local": [
    {
+    "title": "Passengers inside Miami International Airport dealing with delays following fatal plane crash",
+    "url": "https://www.local10.com/news/local/2026/09/06/passengers-inside-miami-international-airport-dealing-with-delays-following-fatal-plane-crash/",
+    "published": "Sun, 06 Sep 2026 22:27:14 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Delays, cancellations continue at MIA following Amazon cargo plane crash that killed 5 people",
     "url": "https://www.local10.com/news/local/2026/09/07/delays-cancellations-continue-at-mia-following-amazon-cargo-plane-crash-that-killed-5-people/",
     "published": "Mon, 07 Sep 2026 10:53:05 +0000",
@@ -758,14 +754,6 @@
     "title": "3 in critical condition after deadly plane crash at Miami International Airport",
     "url": "https://www.local10.com/news/local/2026/09/06/3-in-critical-condition-after-deadly-plane-crash-at-miami-international-airport/",
     "published": "Mon, 07 Sep 2026 02:18:35 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Passengers inside Miami International Airport dealing with delays following fatal plane crash",
-    "url": "https://www.local10.com/news/local/2026/09/06/passengers-inside-miami-international-airport-dealing-with-delays-following-fatal-plane-crash/",
-    "published": "Sun, 06 Sep 2026 22:27:14 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -855,7 +843,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/passengers-at-mia-left-frustrated-by-ground-stop-due-to-cargo-plane-that-overran-runway/",
     "published": "Sun, 06 Sep 2026 22:53:56 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/707d469f-86f4-43fe-b5db-7cfffbef5587/3a67033c-b32f-4e77-b062-e87ba0561cb9/main.mp4?fastly_token=NmE5ZWZkMDVfNjRkYjIyMDIwNzk5ZWU1Nzk1MTNkMzY2NDUwZTBlNTllM2QyZmQwY2U4OGViMDg3YmQwYWE5MTE1OTU3YTg4Yl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83MDdkNDY5Zi04NmY0LTQzZmUtYjVkYi03Y2ZmZmJlZjU1ODcvM2E2NzAzM2MtYjMyZi00ZTc3LWIwNjItZTg3YmEwNTYxY2I5L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/707d469f-86f4-43fe-b5db-7cfffbef5587/3a67033c-b32f-4e77-b062-e87ba0561cb9/main.mp4?fastly_token=NmE5ZjAyMDFfNmYyZThiOGIzMDcxNGE0NDk1YmZmNjQ3MjE4NjNkYWM3ZDYyZjRhYjkzYzZkY2I0MDJiMzhjYjRhNTY5ZTM4ZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83MDdkNDY5Zi04NmY0LTQzZmUtYjVkYi03Y2ZmZmJlZjU1ODcvM2E2NzAzM2MtYjMyZi00ZTc3LWIwNjItZTg3YmEwNTYxY2I5L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -1003,15 +991,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-07T08:16:10-04:00",
+  "fetched_at": "2026-09-07T08:31:35-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (433) + USGS (11)",
-  "fetched_at": "2026-09-07T08:16:14-04:00",
+  "source": "GDACS (433) + USGS (10)",
+  "fetched_at": "2026-09-07T08:31:38-04:00",
   "events": [
    {
     "lat": -23.4192,
@@ -1174,19 +1162,6 @@
     "mag": 4.7,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teq9",
     "when": 1788699034778,
-    "source": "USGS"
-   },
-   {
-    "lat": 33.2038,
-    "lon": 140.9156,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.6 — 219 km SSE of Wada, Japan",
-    "place": "219 km SSE of Wada, Japan",
-    "severity": "M4.6",
-    "mag": 4.6,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000teq4",
-    "when": 1788697034956,
     "source": "USGS"
    },
    {
@@ -1625,18 +1600,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -18.156342302003218,
-    "lon": 138.1076598264065,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 13184 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031728",
-    "when": "Sun, 06 Sep 2026 11:01:16 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -7.765698564249831,
     "lon": 34.34381344711041,
     "kind": "wildfire",
@@ -1694,6 +1657,18 @@
     "severity": "Green impact for forestfire in 5127 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031769",
     "when": "Mon, 07 Sep 2026 11:10:00 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -18.156342302003218,
+    "lon": 138.1076598264065,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 13184 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031728",
+    "when": "Sun, 06 Sep 2026 11:01:16 GMT",
     "source": "GDACS"
    },
    {
@@ -2463,13 +2438,25 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031563",
     "when": "Fri, 04 Sep 2026 17:07:27 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -19.386573070356594,
+    "lon": 20.261712403505268,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Namibia",
+    "place": "Namibia",
+    "severity": "Green impact for forestfire in 34319 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031448",
+    "when": "Wed, 02 Sep 2026 07:02:47 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 444,
+  "event_count": 443,
   "counts": {
    "red": 0,
    "orange": 7,
-   "green": 437
+   "green": 436
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2477,7 +2464,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-07T08:16:14-04:00",
+  "fetched_at": "2026-09-07T08:31:38-04:00",
   "countries": [
    {
     "iso": "RUS",
