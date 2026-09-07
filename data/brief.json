@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-07T06:16:15-04:00",
- "generated_at_utc": "2026-09-07T10:16:15+00:00",
+ "generated_at": "2026-09-07T06:31:20-04:00",
+ "generated_at_utc": "2026-09-07T10:31:20+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 7",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-07T06:16:15-04:00",
+  "fetched_at": "2026-09-07T06:31:21-04:00",
   "curve": [
    {
     "time": "2026-09-07T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 78.9,
-   "feels": 88.7,
+   "temp": 78.8,
+   "feels": 88.5,
    "humidity": 90,
-   "wind_mph": 3.6,
-   "wind_dir": 223,
-   "observed_at": "2026-09-07T06:15"
+   "wind_mph": 3.8,
+   "wind_dir": 225,
+   "observed_at": "2026-09-07T06:30"
   },
   "today": {
    "high": 90.8,
@@ -166,45 +166,33 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-07T06:16:15-04:00",
+  "fetched_at": "2026-09-07T06:31:21-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-07T06:16:17-04:00",
-  "aqi": 27,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-07T06:31:24-04:00",
+  "aqi": 50,
   "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-07 5:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-07",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 4.3,
+  "pm10": 5.0,
+  "observed": "2026-09-07T06:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-07T06:16:18-04:00",
+  "fetched_at": "2026-09-07T06:31:25-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
   "depart_clock": "5:45 AM",
   "depart_at": "now",
-  "miles": 19.9,
-  "minutes": 40,
+  "miles": 29.3,
+  "minutes": 41,
   "delay_minutes": 0,
   "toll_free": true,
   "alternates": [
@@ -212,23 +200,23 @@
     "miles": 27.1,
     "minutes": 34,
     "toll": true,
-    "saves": 6
+    "saves": 7
    },
    {
     "miles": 24.6,
-    "minutes": 34,
+    "minutes": 35,
     "toll": true,
     "saves": 6
    },
    {
-    "miles": 20.7,
-    "minutes": 37,
+    "miles": 22.7,
+    "minutes": 38,
     "toll": true,
     "saves": 3
    },
    {
     "miles": 23.9,
-    "minutes": 37,
+    "minutes": 38,
     "toll": true,
     "saves": 3
    }
@@ -236,30 +224,30 @@
   "alternates_worth_taking": [],
   "free_alternates": [
    {
-    "miles": 19.9,
-    "minutes": 40,
+    "miles": 29.3,
+    "minutes": 41,
     "delay_minutes": 0,
     "saves": 0
    },
    {
-    "miles": 29.3,
-    "minutes": 40,
+    "miles": 21.9,
+    "minutes": 42,
     "delay_minutes": 0
    },
    {
-    "miles": 21.9,
-    "minutes": 40,
+    "miles": 19.9,
+    "minutes": 43,
     "delay_minutes": 0
    },
    {
     "miles": 24.9,
-    "minutes": 50,
+    "minutes": 55,
     "delay_minutes": 0
    }
   ],
   "best_free": {
-   "miles": 19.9,
-   "minutes": 40,
+   "miles": 29.3,
+   "minutes": 41,
    "delay_minutes": 0,
    "saves": 0
   },
@@ -295,17 +283,6 @@
     "start": "2026-07-16T20:45:02Z"
    },
    {
-    "county": "Broward",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-07T02:16:30Z"
-   },
-   {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
@@ -324,16 +301,6 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-08-02T04:33:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-820"
-    ],
-    "delay_s": 172,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-07T05:03:30Z"
    },
    {
     "county": "Broward",
@@ -369,17 +336,6 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-04T08:47:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-25",
      "US-27 N"
     ],
@@ -387,6 +343,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-09-05T02:02:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 S",
+     "FL-25"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-04T08:47:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -459,6 +426,16 @@
     "delay_s": null,
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-07T10:09:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-886"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
     "start": "2026-09-03T14:55:00Z"
    },
    {
@@ -507,7 +484,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-06-27T16:41:35Z"
+    "start": "2026-06-27T16:08:00Z"
    },
    {
     "county": "Broward",
@@ -515,7 +492,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-06-27T16:08:00Z"
+    "start": "2026-06-27T16:41:35Z"
    },
    {
     "county": "Broward",
@@ -531,7 +508,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-06-19T12:50:30Z"
+    "start": "2026-06-20T07:04:00Z"
    },
    {
     "county": "Broward",
@@ -539,7 +516,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-06-20T07:04:00Z"
+    "start": "2026-06-19T12:50:30Z"
    },
    {
     "county": "Broward",
@@ -556,17 +533,25 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-06-24T13:39:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-04T20:58:14Z"
    }
   ],
-  "incident_count": 231,
-  "named_count": 22,
-  "major_count": 6,
+  "incident_count": 220,
+  "named_count": 21,
+  "major_count": 5,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-07T06:16:19-04:00",
+  "fetched_at": "2026-09-07T06:31:26-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -611,7 +596,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-07T06:16:19-04:00",
+  "fetched_at": "2026-09-07T06:31:26-04:00",
   "issued": "200 AM EDT Mon Sep 7 2026",
   "areas": [],
   "raw": "en Español\n\n445 \nABNT20 KNHC 070512\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Mon Sep 7 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Katz/Beven"
@@ -619,7 +604,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-07T06:16:19-04:00",
+  "fetched_at": "2026-09-07T06:31:26-04:00",
   "florida": "$3.9054",
   "national": "$4.1505",
   "diesel": "$5.6822",
@@ -628,7 +613,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-07T06:16:20-04:00",
+  "fetched_at": "2026-09-07T06:31:27-04:00",
   "streams": {
    "local": [
     {
@@ -1001,7 +986,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-07T06:16:21-04:00",
+  "fetched_at": "2026-09-07T06:31:28-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1009,7 +994,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (430) + USGS (16)",
-  "fetched_at": "2026-09-07T06:16:25-04:00",
+  "fetched_at": "2026-09-07T06:31:31-04:00",
   "events": [
    {
     "lat": -23.4192,
@@ -2480,7 +2465,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-07T06:16:25-04:00",
+  "fetched_at": "2026-09-07T06:31:31-04:00",
   "countries": [
    {
     "iso": "RUS",
