@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-06T22:45:57-04:00",
- "generated_at_utc": "2026-09-07T02:45:57+00:00",
+ "generated_at": "2026-09-06T23:01:12-04:00",
+ "generated_at_utc": "2026-09-07T03:01:12+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 6",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-06T22:45:57-04:00",
+  "fetched_at": "2026-09-06T23:01:12-04:00",
   "curve": [
    {
     "time": "2026-09-06T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 82.3,
-   "feels": 93.1,
+   "temp": 82.1,
+   "feels": 92.4,
    "humidity": 85,
-   "wind_mph": 3.8,
-   "wind_dir": 220,
-   "observed_at": "2026-09-06T22:45"
+   "wind_mph": 4.3,
+   "wind_dir": 215,
+   "observed_at": "2026-09-06T23:00"
   },
   "today": {
    "high": 89.4,
@@ -166,38 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-06T22:45:57-04:00",
+  "fetched_at": "2026-09-06T23:01:12-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-06T22:45:58-04:00",
-  "aqi": 33,
-  "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-06 21:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-07",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-07",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-06T23:01:38-04:00",
+  "aqi": 51,
+  "category": "Moderate",
+  "pm25": 11.4,
+  "pm10": 12.1,
+  "observed": "2026-09-06T23:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-06T22:45:58-04:00",
+  "fetched_at": "2026-09-06T23:01:38-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -264,35 +252,24 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-842"
+     "FL-907"
     ],
-    "delay_s": 279,
+    "delay_s": 154,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-07T02:09:00Z"
+    "start": "2026-09-07T02:59:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S",
-     "FL-5"
+     "US-41 N"
     ],
-    "delay_s": 153,
+    "delay_s": 102,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-07T02:39:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-817"
-    ],
-    "delay_s": 52,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-07T02:37:30Z"
+    "start": "2026-09-07T02:53:30Z"
    },
    {
     "county": "Broward",
@@ -500,18 +477,26 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
+    "start": "2026-06-20T07:04:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
     "start": "2026-06-19T12:50:30Z"
    }
   ],
-  "incident_count": 233,
-  "named_count": 25,
+  "incident_count": 234,
+  "named_count": 24,
   "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-06T22:45:59-04:00",
+  "fetched_at": "2026-09-06T23:01:40-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -548,15 +533,14 @@
   ],
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
-   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 6 2026, 5:54 PM",
-   "Panhandle | Jackson | I-10: A major incident has closed all Eastbound lanes in Jackson County. Motorists are advised to seek alternate route and use caution in the area. | Sep 6 2026, 10:33 PM"
+   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 6 2026, 5:54 PM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-06T22:45:59-04:00",
+  "fetched_at": "2026-09-06T23:01:40-04:00",
   "issued": "800 PM EDT Sun Sep 6 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 062320\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Sun Sep 6 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Papin"
@@ -564,7 +548,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-06T22:45:59-04:00",
+  "fetched_at": "2026-09-06T23:01:40-04:00",
   "florida": "$3.9131",
   "national": "$4.1473",
   "diesel": "$5.6868",
@@ -573,7 +557,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-06T22:46:00-04:00",
+  "fetched_at": "2026-09-06T23:01:41-04:00",
   "streams": {
    "local": [
     {
@@ -682,17 +666,17 @@
   ],
   "local": [
    {
-    "title": "3 in critical condition after deadly plane crash at Miami International Airport",
-    "url": "https://www.local10.com/news/local/2026/09/06/3-in-critical-condition-after-deadly-plane-crash-at-miami-international-airport/",
-    "published": "Mon, 07 Sep 2026 02:18:35 +0000",
+    "title": "Cargo plane crashes after going off Miami International Airport runway, killing 5",
+    "url": "https://www.local10.com/news/local/2026/09/06/cargo-plane-crashes-after-going-off-miami-international-airport-runway/",
+    "published": "Sun, 06 Sep 2026 19:14:05 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
    },
    {
-    "title": "Cargo plane crashes after going off Miami International Airport runway, killing 5",
-    "url": "https://www.local10.com/news/local/2026/09/06/cargo-plane-crashes-after-going-off-miami-international-airport-runway/",
-    "published": "Sun, 06 Sep 2026 19:14:05 +0000",
+    "title": "3 in critical condition after deadly plane crash at Miami International Airport",
+    "url": "https://www.local10.com/news/local/2026/09/06/3-in-critical-condition-after-deadly-plane-crash-at-miami-international-airport/",
+    "published": "Mon, 07 Sep 2026 02:18:35 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -812,6 +796,14 @@
   ],
   "colombia": [
    {
+    "title": "La historia del nuevo comandante de la Policía Valle, coronel Amaury Lynsay Aguilera López: 'Busco fortalecer las estrategias contra el crimen'",
+    "url": "https://www.eltiempo.com/colombia/cali/la-historia-del-nuevo-comandante-de-la-policia-valle-coronel-amaury-lynsay-aguilera-lopez-busco-fortalecer-las-estrategias-contra-el-crimen-3584056",
+    "published": "2026-09-06T21:45:13-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/06/6a9e2210e80c5.r_d.288-191-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "El último adiós al capitán Pirajón: Sogamoso recibe con honores al oficial asesinado en el ataque con drones explosivos en Ocaña, Norte de Santander",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/el-ultimo-adios-al-capitan-pirajon-sogamoso-recibe-con-honores-al-oficial-asesinado-en-el-ataque-con-drones-explosivos-en-ocana-norte-de-santander-3584050",
     "published": "2026-09-06T21:08:40-05:00",
@@ -865,14 +857,6 @@
     "published": "2026-09-06T17:05:22-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/06/6a9de1750f982.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Barranquilla tendrá nuevas fuentes y refugios climáticos para enfrentar el calor: estos son los sectores donde podrían ubicarse",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-tendra-nuevas-fuentes-y-refugios-climaticos-para-enfrentar-el-calor-estos-son-los-sectores-donde-podrian-ubicarse-3584019",
-    "published": "2026-09-06T16:46:58-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/06/6a9ddb9c92eac.r_d.719-529-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -946,7 +930,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-06T22:46:01-04:00",
+  "fetched_at": "2026-09-06T23:01:42-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -954,7 +938,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (428) + USGS (18)",
-  "fetched_at": "2026-09-06T22:46:04-04:00",
+  "fetched_at": "2026-09-06T23:01:45-04:00",
   "events": [
    {
     "lat": -11.0595,
@@ -1052,19 +1036,6 @@
     "mag": 5.3,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tesi",
     "when": 1788744624930,
-    "source": "USGS"
-   },
-   {
-    "lat": 14.1551,
-    "lon": -93.2487,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M5.3 — 108 km SW of Puerto Madero, Mexico",
-    "place": "108 km SW of Puerto Madero, Mexico",
-    "severity": "M5.3",
-    "mag": 5.3,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tem2",
-    "when": 1788663392601,
     "source": "USGS"
    },
    {
@@ -1169,6 +1140,19 @@
     "mag": 4.8,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tep0",
     "when": 1788691172174,
+    "source": "USGS"
+   },
+   {
+    "lat": -31.2726,
+    "lon": 178.6194,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.7 — Kermadec Islands region",
+    "place": "Kermadec Islands region",
+    "severity": "M4.7",
+    "mag": 4.7,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tet6",
+    "when": 1788748221719,
     "source": "USGS"
    },
    {
@@ -2427,7 +2411,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-06T22:46:04-04:00",
+  "fetched_at": "2026-09-06T23:01:45-04:00",
   "countries": [
    {
     "iso": "COL",
