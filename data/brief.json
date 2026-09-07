@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-07T16:16:00-04:00",
- "generated_at_utc": "2026-09-07T20:16:00+00:00",
+ "generated_at": "2026-09-07T16:25:43-04:00",
+ "generated_at_utc": "2026-09-07T20:25:43+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 7",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-07T16:16:00-04:00",
+  "fetched_at": "2026-09-07T16:25:43-04:00",
   "curve": [
    {
     "time": "2026-09-07T05:00",
@@ -166,14 +166,24 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-07T16:16:01-04:00",
-  "alerts": [],
-  "count": 0
+  "fetched_at": "2026-09-07T16:25:43-04:00",
+  "alerts": [
+   {
+    "event": "Special Weather Statement",
+    "severity": "Moderate",
+    "urgency": "Expected",
+    "headline": "Special Weather Statement issued September 7 at 4:22PM EDT by NWS Miami FL",
+    "description": "At 422 PM EDT, National Weather Service meteorologists were tracking\nstrong thunderstorms along a line extending from Boca Raton to\nMiramar Parkway And University Drive. Movement was east at 15 mph.\n\nHAZARD...Wind gusts of 45 to 50 mph.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects.\n\nLocations impacted include...\nFort Lauderdale, Pembroke Pines, Hollywood, Miramar, Pompano Beach,\nDavie, Plantation, Sunrise, Boca Raton, Deerfield Beach, Tamarac,\nMargate, Lighthouse Point, Lauderdale-By-The-Sea, Hallandale, Miami\nGardens, Lauderhill, Coconut Creek, North Miami Beach, and Oakland\nPark.",
+    "onset": "2026-09-07T16:22:00-04:00",
+    "ends": "2026-09-07T17:15:00-04:00"
+   }
+  ],
+  "count": 1
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-07T16:16:01-04:00",
+  "fetched_at": "2026-09-07T16:25:44-04:00",
   "aqi": 28,
   "category": "Good",
   "pollutant": "O3",
@@ -203,80 +213,94 @@
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-07T16:16:04-04:00",
+  "fetched_at": "2026-09-07T16:25:46-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
   "miles": 20.6,
-  "minutes": 60,
+  "minutes": 59,
   "delay_minutes": 4,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 24.5,
-    "minutes": 48,
+    "miles": 26.8,
+    "minutes": 49,
     "toll": true,
-    "saves": 12
+    "saves": 10
    },
    {
     "miles": 28.6,
     "minutes": 51,
     "toll": true,
-    "saves": 9
+    "saves": 8
    },
    {
-    "miles": 25.1,
-    "minutes": 53,
+    "miles": 25.2,
+    "minutes": 54,
     "toll": true,
-    "saves": 7
+    "saves": 5
    },
    {
-    "miles": 24.2,
-    "minutes": 56,
+    "miles": 25.3,
+    "minutes": 58,
     "toll": true,
-    "saves": 4
+    "saves": 1
    }
   ],
-  "alternates_worth_taking": [
-   {
-    "miles": 24.5,
-    "minutes": 48,
-    "toll": true,
-    "saves": 12
-   }
-  ],
+  "alternates_worth_taking": [],
   "free_alternates": [
    {
     "miles": 20.6,
-    "minutes": 60,
-    "delay_minutes": 3,
+    "minutes": 59,
+    "delay_minutes": 4,
     "saves": 0
    },
    {
+    "miles": 23.7,
+    "minutes": 67,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.6,
+    "minutes": 67,
+    "delay_minutes": 0
+   },
+   {
     "miles": 23.1,
-    "minutes": 68,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 22.3,
-    "minutes": 70,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 24.8,
-    "minutes": 70,
+    "minutes": 72,
     "delay_minutes": 0
    }
   ],
   "best_free": {
    "miles": 20.6,
-   "minutes": 60,
-   "delay_minutes": 3,
+   "minutes": 59,
+   "delay_minutes": 4,
    "saves": 0
   },
   "incidents": [
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 1367,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-07T19:54:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-970"
+    ],
+    "delay_s": 1001,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-07T19:18:33Z"
+   },
    {
     "county": "Broward",
     "roads": [
@@ -335,7 +359,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-09-07T14:43:00Z"
+    "start": "2026-09-07T14:10:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -345,7 +369,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-09-07T14:10:00Z"
+    "start": "2026-09-07T14:43:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -368,106 +392,76 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "I-95 N"
+     "FL-826 N"
     ],
-    "delay_s": 851,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-07T19:54:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-A1A"
-    ],
-    "delay_s": 804,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-07T19:53:00Z"
+    "delay_s": 818,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-07T19:10:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 679,
+    "delay_s": 787,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-07T19:56:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-970"
-    ],
-    "delay_s": 594,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-07T19:18:33Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-75 N"
-    ],
-    "delay_s": 579,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-07T19:49:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-75 S"
-    ],
-    "delay_s": 498,
-    "magnitude": 1,
-    "description": "Heavy rain; Slow traffic",
-    "start": "2026-09-07T20:01:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
-    ],
-    "delay_s": 486,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-07T20:03:30Z"
+    "start": "2026-09-07T20:17:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826 N"
     ],
-    "delay_s": 464,
+    "delay_s": 523,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-07T19:46:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 S"
+    ],
+    "delay_s": 522,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-07T19:10:00Z"
+    "start": "2026-09-07T19:41:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-75 S",
+     "Gratigny Pkwy E",
+     "FL-924 E"
+    ],
+    "delay_s": 453,
+    "magnitude": 1,
+    "description": "Heavy rain; Slow traffic",
+    "start": "2026-09-07T20:18:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-A1A"
     ],
-    "delay_s": 443,
+    "delay_s": 416,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-07T19:52:05Z"
+    "start": "2026-09-07T19:53:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 N"
+     "I-95 N"
     ],
-    "delay_s": 407,
+    "delay_s": 413,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-07T19:46:00Z"
+    "start": "2026-09-07T18:22:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -477,9 +471,9 @@
      "US-41 S",
      "FL-5"
     ],
-    "delay_s": 359,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 380,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-09-07T19:52:05Z"
    },
    {
@@ -487,7 +481,7 @@
     "roads": [
      "FL-810"
     ],
-    "delay_s": 349,
+    "delay_s": 356,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-07T20:05:00Z"
@@ -495,19 +489,30 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 N"
+     "US-1 N",
+     "FL-970"
     ],
-    "delay_s": 311,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-07T18:22:30Z"
+    "delay_s": 325,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-07T19:54:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-814"
+    ],
+    "delay_s": 317,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-07T20:16:35Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-976"
     ],
-    "delay_s": 279,
+    "delay_s": 299,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-07T19:55:30Z"
@@ -515,86 +520,85 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
+     "Florida's Tpke N",
+     "FL-821 N"
     ],
-    "delay_s": 258,
+    "delay_s": 286,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-07T20:06:31Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 250,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-07T19:57:06Z"
+    "start": "2026-09-07T20:03:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826 S"
     ],
-    "delay_s": 247,
+    "delay_s": 285,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-07T19:41:30Z"
+    "start": "2026-09-07T20:15:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-934"
+     "FL-976"
     ],
-    "delay_s": 224,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-07T19:28:04Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
-    ],
-    "delay_s": 215,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-07T15:28:30Z"
+    "delay_s": 280,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-07T19:57:06Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-822",
-     "FL-A1A"
+     "I-75 N"
     ],
-    "delay_s": 210,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-07T20:03:30Z"
+    "delay_s": 275,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-07T19:49:00Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-94"
+     "FL-821 S",
+     "Florida's Tpke S"
     ],
-    "delay_s": 202,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-07T20:09:30Z"
+    "delay_s": 213,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-07T20:06:31Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-820"
+    ],
+    "delay_s": 200,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-07T20:20:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-A1A"
+    ],
+    "delay_s": 197,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-07T19:52:05Z"
    }
   ],
   "incident_count": 327,
-  "named_count": 91,
-  "major_count": 12,
+  "named_count": 87,
+  "major_count": 13,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-07T16:16:07-04:00",
+  "fetched_at": "2026-09-07T16:25:47-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -638,7 +642,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-07T16:16:07-04:00",
+  "fetched_at": "2026-09-07T16:25:48-04:00",
   "issued": "200 PM EDT Mon Sep 7 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 071713\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Mon Sep 7 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
@@ -646,7 +650,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-07T16:16:07-04:00",
+  "fetched_at": "2026-09-07T16:25:48-04:00",
   "florida": "$3.9054",
   "national": "$4.1505",
   "diesel": "$5.6822",
@@ -655,7 +659,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-07T16:16:08-04:00",
+  "fetched_at": "2026-09-07T16:25:49-04:00",
   "streams": {
    "local": [
     {
@@ -894,6 +898,22 @@
   ],
   "colombia": [
    {
+    "title": "Familia lo perdió todo en un incendio ocurrido en un pueblo del Tolima: sus niñas necesitan camas, ropa, útiles y juguetes para volver a empezar",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/familia-lo-perdio-todo-en-un-incendio-ocurrido-en-un-pueblo-del-tolima-sus-ninas-necesitan-camas-ropa-utiles-y-juguetes-para-volver-a-empezar-3584233",
+    "published": "2026-09-07T15:15:08-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/07/6a9f15beac3f2.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Cuatreros ingresan encapuchados a fincas de Sucre y sacrifican animales para robar su carne: pérdidas de ganaderos superarían los 4.000 millones",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/cuatreros-ingresan-encapuchados-a-fincas-de-sucre-y-sacrifican-animales-para-robar-su-carne-perdidas-de-ganaderos-superarian-los-4-000-millones-3584242",
+    "published": "2026-09-07T15:05:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/07/6a9f18d5617be.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Hospital Regional del Magdalena Medio, en Barrancabermeja, intervenido por Supersalud, aumentó sus pasivos, está en crisis y tiene deudas disparadas",
     "url": "https://www.eltiempo.com/colombia/santander/hospital-regional-del-magdalena-medio-en-barrancabermeja-intervenido-por-supersalud-aumento-sus-pasivos-esta-en-crisis-y-tiene-deudas-disparadas-3584234",
     "published": "2026-09-07T14:45:17-05:00",
@@ -939,22 +959,6 @@
     "published": "2026-09-07T13:02:39-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/07/6a9efb7e5b0b2.png",
-    "media_type": "image"
-   },
-   {
-    "title": "180.000 huevos, cuatro furgones y 15 hombres armados: este fue el millonario robo a una granja avícola del Atlántico que fue frustrado por la Policía",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/180-000-huevos-cuatro-furgones-y-15-hombres-armados-este-fue-el-millonario-robo-a-una-granja-avicola-del-atlantico-que-fue-frustrado-por-la-policia-3584197",
-    "published": "2026-09-07T12:30:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/07/6a9ef029d45dc.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Colombia registra este 7 de septiembre 21 incendios forestales activos en seis departamentos: autoridades trabajan para contener focos",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/colombia-registra-21-incendios-forestales-activos-y-dos-controlados-en-seis-departamentos-autoridades-trabajan-para-contener-los-focos-3584204",
-    "published": "2026-09-07T12:35:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/07/6a9ec48357c0c.png",
     "media_type": "image"
    }
   ],
@@ -1028,7 +1032,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-07T16:16:09-04:00",
+  "fetched_at": "2026-09-07T16:25:49-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1036,7 +1040,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (476) + USGS (7)",
-  "fetched_at": "2026-09-07T16:16:12-04:00",
+  "fetched_at": "2026-09-07T16:25:52-04:00",
   "events": [
    {
     "lat": -23.4192,
@@ -2498,7 +2502,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-07T16:16:12-04:00",
+  "fetched_at": "2026-09-07T16:25:52-04:00",
   "countries": [
    {
     "iso": "RUS",
@@ -2531,32 +2535,6 @@
     ],
     "count": 4,
     "issue": "Kushner and Witkoff visit Ukraine with hopes of restarting peace talks with Russia"
-   },
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Duro golpe a ‘Los Del Puerto’, presunta red de microtráfico en Puerto Colombia: generarían una renta ilícita cercana a los 10 millones mensuales",
-      "url": "https://www.eltiempo.com/colombia/barranquilla/duro-golpe-a-los-del-puerto-presunta-red-de-microtrafico-en-puerto-colombia-generarian-una-renta-ilicita-cercana-a-los-10-millones-mensuales-3584228",
-      "published": "2026-09-07T14:15:00-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Cuatro personas señaladas de distribuir y comercializar material de abuso sexual a menores ya fueron judicializadas en Colombia: esto se sabe",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/cuatro-personas-senaladas-de-distribuir-y-comercializar-material-de-abuso-sexual-a-menores-ya-fueron-judicializadas-en-colombia-esto-se-sabe-3584209",
-      "published": "2026-09-07T13:02:39-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Colombia registra este 7 de septiembre 21 incendios forestales activos en seis departamentos: autoridades trabajan para contener focos",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/colombia-registra-21-incendios-forestales-activos-y-dos-controlados-en-seis-departamentos-autoridades-trabajan-para-contener-los-focos-3584204",
-      "published": "2026-09-07T12:35:00-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 3,
-    "issue": "Duro golpe a ‘Los Del Puerto’, presunta red de microtráfico en Puerto Colombia: generarían una renta ilícita cercana a los 10 millones mensuales"
    },
    {
     "iso": "UKR",
@@ -2603,6 +2581,26 @@
     ],
     "count": 2,
     "issue": "As Nepal identifies those killed in the floods, questions grow over China's reporting"
+   },
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "Duro golpe a ‘Los Del Puerto’, presunta red de microtráfico en Puerto Colombia: generarían una renta ilícita cercana a los 10 millones mensuales",
+      "url": "https://www.eltiempo.com/colombia/barranquilla/duro-golpe-a-los-del-puerto-presunta-red-de-microtrafico-en-puerto-colombia-generarian-una-renta-ilicita-cercana-a-los-10-millones-mensuales-3584228",
+      "published": "2026-09-07T14:15:00-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "Cuatro personas señaladas de distribuir y comercializar material de abuso sexual a menores ya fueron judicializadas en Colombia: esto se sabe",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/cuatro-personas-senaladas-de-distribuir-y-comercializar-material-de-abuso-sexual-a-menores-ya-fueron-judicializadas-en-colombia-esto-se-sabe-3584209",
+      "published": "2026-09-07T13:02:39-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 2,
+    "issue": "Duro golpe a ‘Los Del Puerto’, presunta red de microtráfico en Puerto Colombia: generarían una renta ilícita cercana a los 10 millones mensuales"
    },
    {
     "iso": "DEU",
