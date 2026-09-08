@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-08T06:31:03-04:00",
- "generated_at_utc": "2026-09-08T10:31:03+00:00",
+ "generated_at": "2026-09-08T06:45:58-04:00",
+ "generated_at_utc": "2026-09-08T10:45:58+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 8",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-08T06:31:04-04:00",
+  "fetched_at": "2026-09-08T06:45:59-04:00",
   "curve": [
    {
     "time": "2026-09-08T05:00",
@@ -148,11 +148,11 @@
   ],
   "current": {
    "temp": 77.3,
-   "feels": 87.3,
+   "feels": 87.2,
    "humidity": 95,
-   "wind_mph": 3.1,
-   "wind_dir": 21,
-   "observed_at": "2026-09-08T06:30"
+   "wind_mph": 3.4,
+   "wind_dir": 8,
+   "observed_at": "2026-09-08T06:45"
   },
   "today": {
    "high": 86.6,
@@ -166,57 +166,63 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-08T06:31:04-04:00",
+  "fetched_at": "2026-09-08T06:45:59-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-08T06:31:05-04:00",
-  "aqi": 44,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-08T06:46:00-04:00",
+  "aqi": 34,
   "category": "Good",
-  "pm25": 10.9,
-  "pm10": 11.5,
-  "observed": "2026-09-08T06:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-08 5:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-08",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "O3"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-08T06:31:07-04:00",
+  "fetched_at": "2026-09-08T06:46:02-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
   "depart_clock": "5:45 AM",
   "depart_at": "now",
   "miles": 19.9,
-  "minutes": 51,
-  "delay_minutes": 2,
+  "minutes": 57,
+  "delay_minutes": 4,
   "toll_free": true,
   "alternates": [
-   {
-    "miles": 21.9,
-    "minutes": 48,
-    "toll": true,
-    "saves": 3
-   },
    {
     "miles": 27.1,
     "minutes": 51,
     "toll": true,
-    "saves": 0
+    "saves": 6
    },
    {
-    "miles": 23.0,
-    "minutes": 49,
+    "miles": 21.9,
+    "minutes": 51,
     "toll": true,
-    "saves": 2
+    "saves": 6
    },
    {
-    "miles": 29.0,
-    "minutes": 52,
+    "miles": 29.5,
+    "minutes": 56,
+    "toll": true,
+    "saves": 1
+   },
+   {
+    "miles": 22.1,
+    "minutes": 58,
     "toll": true,
     "saves": -1
    }
@@ -225,30 +231,30 @@
   "free_alternates": [
    {
     "miles": 19.9,
-    "minutes": 51,
-    "delay_minutes": 2,
+    "minutes": 57,
+    "delay_minutes": 4,
     "saves": 0
    },
    {
+    "miles": 26.3,
+    "minutes": 61,
+    "delay_minutes": 0
+   },
+   {
     "miles": 22.1,
-    "minutes": 57,
+    "minutes": 62,
     "delay_minutes": 0
    },
    {
-    "miles": 23.1,
-    "minutes": 63,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 23.1,
-    "minutes": 66,
+    "miles": 22.8,
+    "minutes": 70,
     "delay_minutes": 0
    }
   ],
   "best_free": {
    "miles": 19.9,
-   "minutes": 51,
-   "delay_minutes": 2,
+   "minutes": 57,
+   "delay_minutes": 4,
    "saves": 0
   },
   "incidents": [
@@ -258,10 +264,21 @@
      "Florida's Tpke N",
      "FL-821 N"
     ],
-    "delay_s": 1611,
+    "delay_s": 2263,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-08T09:10:30Z"
+    "start": "2026-09-08T10:43:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 2138,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-08T10:23:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -269,10 +286,20 @@
      "Florida's Tpke N",
      "FL-821 N"
     ],
-    "delay_s": 1145,
+    "delay_s": 1439,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-08T09:56:32Z"
+    "start": "2026-09-08T09:10:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 N"
+    ],
+    "delay_s": 1245,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-08T10:30:00Z"
    },
    {
     "county": "Broward",
@@ -329,17 +356,27 @@
     "roads": [
      "FL-821 N"
     ],
-    "delay_s": 849,
+    "delay_s": 704,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-08T09:56:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 641,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-08T10:18:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-997"
     ],
-    "delay_s": 775,
+    "delay_s": 572,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-08T10:05:00Z"
@@ -350,38 +387,7 @@
      "US-1 N",
      "FL-5"
     ],
-    "delay_s": 651,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-08T10:23:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 592,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-08T10:18:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-994"
-    ],
-    "delay_s": 433,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-08T09:59:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 433,
+    "delay_s": 563,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-08T10:25:00Z"
@@ -389,93 +395,60 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "I-75 S"
     ],
-    "delay_s": 327,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-08T10:02:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 309,
+    "delay_s": 509,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-08T10:26:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 259,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-08T10:21:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 E"
-    ],
-    "delay_s": 241,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-08T10:17:00Z"
+    "start": "2026-09-08T10:16:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-997"
     ],
-    "delay_s": 185,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 475,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-09-08T10:24:30Z"
    },
    {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 457,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-08T10:21:30Z"
+   },
+   {
     "county": "Miami-Dade",
     "roads": [
-     "US-27 S",
-     "FL-25"
+     "I-95 S"
     ],
-    "delay_s": 180,
+    "delay_s": 430,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-08T10:29:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 E"
+    ],
+    "delay_s": 422,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-08T10:23:00Z"
+    "start": "2026-09-08T10:17:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-953"
+     "FL-826 S",
+     "FL-826 W"
     ],
-    "delay_s": 180,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-08T10:24:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 163,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-08T10:25:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 140,
+    "delay_s": 368,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-08T10:27:30Z"
@@ -485,7 +458,7 @@
     "roads": [
      "FL-826 S"
     ],
-    "delay_s": 133,
+    "delay_s": 312,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-08T10:20:30Z"
@@ -493,51 +466,30 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-75 S"
+     "FL-91 S",
+     "Florida's Tpke S"
     ],
-    "delay_s": 132,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-08T10:16:30Z"
+    "delay_s": 295,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-08T09:34:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "FL-5"
+     "FL-94"
     ],
-    "delay_s": 126,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-08T10:25:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 119,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-08T10:23:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
-    ],
-    "delay_s": 114,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-08T10:16:30Z"
+    "delay_s": 250,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-08T10:34:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 109,
+    "delay_s": 247,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-08T10:28:00Z"
@@ -545,35 +497,84 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 S",
-     "FL-826 W"
+     "FL-821 N"
     ],
-    "delay_s": 74,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-08T10:27:30Z"
+    "delay_s": 242,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-08T10:39:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "FL-5"
+     "FL-994"
     ],
-    "delay_s": 68,
+    "delay_s": 230,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-08T10:32:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-94"
+    ],
+    "delay_s": 209,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-08T10:38:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 E"
+    ],
+    "delay_s": 179,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-08T10:21:30Z"
+    "start": "2026-09-08T10:24:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-878 E",
+     "Snapper Creek Expy E"
+    ],
+    "delay_s": 175,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-08T10:38:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-94"
+    ],
+    "delay_s": 170,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-08T10:44:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-948"
+    ],
+    "delay_s": 167,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-08T10:43:30Z"
    }
   ],
-  "incident_count": 289,
-  "named_count": 53,
-  "major_count": 10,
+  "incident_count": 334,
+  "named_count": 73,
+  "major_count": 11,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-08T06:31:07-04:00",
+  "fetched_at": "2026-09-08T06:46:03-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -618,7 +619,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-08T06:31:08-04:00",
+  "fetched_at": "2026-09-08T06:46:03-04:00",
   "issued": "200 AM EDT Tue Sep 8 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 080512\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Tue Sep 8 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Gibbs"
@@ -626,7 +627,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-08T06:31:08-04:00",
+  "fetched_at": "2026-09-08T06:46:03-04:00",
   "florida": "$3.8958",
   "national": "$4.1514",
   "diesel": "$5.6750",
@@ -635,7 +636,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-08T06:31:09-04:00",
+  "fetched_at": "2026-09-08T06:46:05-04:00",
   "streams": {
    "local": [
     {
@@ -874,6 +875,14 @@
   ],
   "colombia": [
    {
+    "title": "Temblor hoy en Colombia | Sismo durante la madrugada de este martes 8 de septiembre: epicentro, profundidad y detalles",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-sismo-durante-la-madrugada-de-este-martes-8-de-septiembre-epicentro-profundidad-y-detalles-3584370",
+    "published": "2026-09-08T05:27:23-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/06/6a9cf711c5418.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "¡Ojo al pico y placa en Medellín! Estas son las placas de carros, motos y taxis que no podrán circular este martes 8 de septiembre",
     "url": "https://www.eltiempo.com/colombia/medellin/ojo-al-pico-y-placa-en-medellin-estas-son-las-placas-de-carros-motos-y-taxis-que-no-podran-circular-este-martes-8-de-septiembre-3584215",
     "published": "2026-09-08T03:44:00-05:00",
@@ -927,14 +936,6 @@
     "published": "2026-09-07T23:10:23-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/06/6a9e29356a28a.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Extorsionaban a camioneros y quemaban tractomulas en el Valle del Cauca: así era el engranaje criminal de 'el Crespo' y 'Sinisterra'",
-    "url": "https://www.eltiempo.com/colombia/cali/extorsionaban-a-camioneros-y-quemaban-tractomulas-en-el-valle-del-cauca-asi-era-el-engranaje-criminal-de-el-crespo-y-sinisterra-3584351",
-    "published": "2026-09-07T23:00:02-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/07/6a9f7d68bf7bf.jpeg",
     "media_type": "image"
    }
   ],
@@ -1008,7 +1009,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-08T06:31:10-04:00",
+  "fetched_at": "2026-09-08T06:46:06-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1016,7 +1017,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (410) + USGS (7)",
-  "fetched_at": "2026-09-08T06:31:14-04:00",
+  "fetched_at": "2026-09-08T06:46:10-04:00",
   "events": [
    {
     "lat": -6.1009,
@@ -2478,12 +2479,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-08T06:31:14-04:00",
+  "fetched_at": "2026-09-08T06:46:10-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "Temblor hoy en Colombia | Sismo durante la madrugada de este martes 8 de septiembre: epicentro, profundidad y detalles",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-sismo-durante-la-madrugada-de-este-martes-8-de-septiembre-epicentro-profundidad-y-detalles-3584370",
+      "published": "2026-09-08T05:27:23-05:00",
+      "section": "colombia"
+     },
      {
       "title": "¡Ojo al pico y placa en Medellín! Estas son las placas de carros, motos y taxis que no podrán circular este martes 8 de septiembre",
       "url": "https://www.eltiempo.com/colombia/medellin/ojo-al-pico-y-placa-en-medellin-estas-son-las-placas-de-carros-motos-y-taxis-que-no-podran-circular-este-martes-8-de-septiembre-3584215",
@@ -2497,8 +2504,8 @@
       "section": "colombia"
      }
     ],
-    "count": 2,
-    "issue": "¡Ojo al pico y placa en Medellín! Estas son las placas de carros, motos y taxis que no podrán circular este martes 8 de septiembre"
+    "count": 3,
+    "issue": "Temblor hoy en Colombia | Sismo durante la madrugada de este martes 8 de septiembre: epicentro, profundidad y detalles"
    },
    {
     "iso": "YEM",
