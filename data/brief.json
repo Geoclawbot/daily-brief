@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-08T05:28:59-04:00",
- "generated_at_utc": "2026-09-08T09:28:59+00:00",
+ "generated_at": "2026-09-08T05:31:11-04:00",
+ "generated_at_utc": "2026-09-08T09:31:11+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 8",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-08T05:29:00-04:00",
+  "fetched_at": "2026-09-08T05:31:11-04:00",
   "curve": [
    {
     "time": "2026-09-08T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 77.2,
-   "feels": 87.5,
-   "humidity": 95,
-   "wind_mph": 2.3,
-   "wind_dir": 29,
-   "observed_at": "2026-09-08T05:15"
+   "temp": 77.3,
+   "feels": 87.1,
+   "humidity": 94,
+   "wind_mph": 3.2,
+   "wind_dir": 25,
+   "observed_at": "2026-09-08T05:30"
   },
   "today": {
    "high": 85.9,
@@ -166,32 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-08T05:29:00-04:00",
+  "fetched_at": "2026-09-08T05:31:12-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-08T05:29:01-04:00",
-  "aqi": 32,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-08T05:31:38-04:00",
+  "aqi": 39,
   "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-08 4:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-08",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "O3"
-   }
-  ]
+  "pm25": 9.4,
+  "pm10": 9.7,
+  "observed": "2026-09-08T05:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-08T05:29:02-04:00",
+  "fetched_at": "2026-09-08T05:31:39-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
@@ -215,34 +209,34 @@
     "saves": 3
    },
    {
-    "miles": 23.9,
+    "miles": 20.7,
     "minutes": 37,
     "toll": true,
     "saves": 2
    },
    {
-    "miles": 20.7,
-    "minutes": 38,
+    "miles": 23.9,
+    "minutes": 36,
     "toll": true,
-    "saves": 1
+    "saves": 3
    }
   ],
   "alternates_worth_taking": [],
   "free_alternates": [
    {
     "miles": 19.9,
-    "minutes": 40,
+    "minutes": 39,
     "delay_minutes": 0,
-    "saves": -1
+    "saves": 0
    },
    {
     "miles": 29.3,
-    "minutes": 43,
+    "minutes": 42,
     "delay_minutes": 0
    },
    {
-    "miles": 21.7,
-    "minutes": 46,
+    "miles": 21.9,
+    "minutes": 40,
     "delay_minutes": 0
    },
    {
@@ -253,9 +247,9 @@
   ],
   "best_free": {
    "miles": 19.9,
-   "minutes": 40,
+   "minutes": 39,
    "delay_minutes": 0,
-   "saves": -1
+   "saves": 0
   },
   "incidents": [
    {
@@ -264,7 +258,7 @@
      "Florida's Tpke N",
      "FL-821 N"
     ],
-    "delay_s": 927,
+    "delay_s": 1002,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-08T09:10:30Z"
@@ -287,7 +281,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -297,7 +291,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -443,7 +437,7 @@
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Lane closed; Roadworks",
+    "description": "Roadworks",
     "start": "2026-09-07T13:07:38Z"
    },
    {
@@ -453,7 +447,7 @@
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Roadworks",
+    "description": "Lane closed; Roadworks",
     "start": "2026-09-07T13:07:38Z"
    },
    {
@@ -562,10 +556,10 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-06-27T16:08:00Z"
+    "start": "2026-06-27T16:41:35Z"
    }
   ],
-  "incident_count": 226,
+  "incident_count": 227,
   "named_count": 27,
   "major_count": 7,
   "coverage": "Miami-Dade + Broward"
@@ -573,7 +567,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-08T05:29:03-04:00",
+  "fetched_at": "2026-09-08T05:31:40-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -618,7 +612,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-08T05:29:04-04:00",
+  "fetched_at": "2026-09-08T05:31:41-04:00",
   "issued": "200 AM EDT Tue Sep 8 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 080512\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Tue Sep 8 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Gibbs"
@@ -626,7 +620,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-08T05:29:04-04:00",
+  "fetched_at": "2026-09-08T05:31:41-04:00",
   "florida": "$3.8958",
   "national": "$4.1514",
   "diesel": "$5.6750",
@@ -635,7 +629,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-08T05:29:05-04:00",
+  "fetched_at": "2026-09-08T05:31:43-04:00",
   "streams": {
    "local": [
     {
@@ -1008,7 +1002,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-08T05:29:06-04:00",
+  "fetched_at": "2026-09-08T05:31:43-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1016,7 +1010,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (410) + USGS (7)",
-  "fetched_at": "2026-09-08T05:29:12-04:00",
+  "fetched_at": "2026-09-08T05:31:47-04:00",
   "events": [
    {
     "lat": -6.1009,
@@ -2478,7 +2472,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-08T05:29:12-04:00",
+  "fetched_at": "2026-09-08T05:31:47-04:00",
   "countries": [
    {
     "iso": "COL",
