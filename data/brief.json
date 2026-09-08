@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-08T19:16:05-04:00",
- "generated_at_utc": "2026-09-08T23:16:05+00:00",
+ "generated_at": "2026-09-08T19:31:08-04:00",
+ "generated_at_utc": "2026-09-08T23:31:08+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 8",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-08T19:16:05-04:00",
+  "fetched_at": "2026-09-08T19:31:08-04:00",
   "curve": [
    {
     "time": "2026-09-08T05:00",
@@ -116,47 +116,47 @@
    {
     "time": "2026-09-08T18:00",
     "hour": 18,
-    "temp": 83.4,
-    "feels": 94.5,
+    "temp": 84.8,
+    "feels": 95.3,
     "humidity": 83,
     "pop": 34
    },
    {
     "time": "2026-09-08T19:00",
     "hour": 19,
-    "temp": 83.7,
-    "feels": 95.2,
+    "temp": 83.6,
+    "feels": 94.9,
     "humidity": 85,
     "pop": 35
    },
    {
     "time": "2026-09-08T20:00",
     "hour": 20,
-    "temp": 82.3,
-    "feels": 93.8,
+    "temp": 78.9,
+    "feels": 85.8,
     "humidity": 88,
     "pop": 25
    },
    {
     "time": "2026-09-08T21:00",
     "hour": 21,
-    "temp": 81.7,
-    "feels": 93.3,
+    "temp": 77.8,
+    "feels": 84.7,
     "humidity": 89,
     "pop": 18
    }
   ],
   "current": {
-   "temp": 83.4,
-   "feels": 94.9,
-   "humidity": 86,
-   "wind_mph": 4.5,
-   "wind_dir": 93,
-   "observed_at": "2026-09-08T19:15"
+   "temp": 83.5,
+   "feels": 96.6,
+   "humidity": 87,
+   "wind_mph": 1.2,
+   "wind_dir": 112,
+   "observed_at": "2026-09-08T19:30"
   },
   "today": {
    "high": 88.9,
-   "low": 76.5,
+   "low": 76.4,
    "feels_max": 101.2,
    "pop_max": 35
   },
@@ -166,38 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-08T19:16:05-04:00",
+  "fetched_at": "2026-09-08T19:31:09-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-08T19:16:07-04:00",
-  "aqi": 33,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-08 18:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-08",
-    "aqi": 42,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-09",
-    "aqi": 41,
-    "category": "Good",
-    "pollutant": "O3"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-08T19:31:15-04:00",
+  "aqi": 55,
+  "category": "Moderate",
+  "pm25": 10.4,
+  "pm10": 12.5,
+  "observed": "2026-09-08T19:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-08T19:16:07-04:00",
+  "fetched_at": "2026-09-08T19:31:15-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -209,21 +197,10 @@
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 1140,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 1053,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-09-08T19:49:17Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 1099,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-08T18:53:30Z"
    },
    {
     "county": "Broward",
@@ -278,19 +255,6 @@
    {
     "county": "Broward",
     "roads": [
-     "US-1 N",
-     "US-1 S",
-     "FL-A1A",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-08T22:42:03Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
      "FL-838"
     ],
     "delay_s": null,
@@ -319,11 +283,22 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 647,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-08T18:53:30Z"
+   },
+   {
     "county": "Broward",
     "roads": [
      "FL-854"
     ],
-    "delay_s": 600,
+    "delay_s": 550,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-08T19:57:48Z"
@@ -331,42 +306,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-976"
-    ],
-    "delay_s": 474,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-08T19:56:48Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S"
-    ],
-    "delay_s": 350,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-08T19:04:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-825"
     ],
-    "delay_s": 314,
+    "delay_s": 447,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-08T20:59:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-869"
-    ],
-    "delay_s": 303,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-08T22:19:29Z"
    },
    {
     "county": "Miami-Dade",
@@ -374,7 +319,7 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 293,
+    "delay_s": 341,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-08T22:41:08Z"
@@ -382,23 +327,22 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 N"
+     "FL-821 S"
     ],
-    "delay_s": 264,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-08T20:11:15Z"
+    "delay_s": 315,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-08T19:04:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "County Hwy-913",
-     "FL-973"
+     "FL-976"
     ],
-    "delay_s": 258,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-08T23:06:00Z"
+    "delay_s": 199,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-08T19:56:48Z"
    },
    {
     "county": "Miami-Dade",
@@ -406,81 +350,20 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 256,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-08T22:02:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-985"
-    ],
-    "delay_s": 250,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-08T21:18:44Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S"
-    ],
-    "delay_s": 247,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-08T19:48:54Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 213,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-08T21:04:06Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 197,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-08T18:11:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-997"
-    ],
-    "delay_s": 183,
+    "delay_s": 189,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-08T20:20:51Z"
+    "start": "2026-09-08T22:41:08Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "US-441 N",
-     "US-441 S"
+     "FL-816"
     ],
-    "delay_s": 182,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-08T23:11:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-972"
-    ],
-    "delay_s": 161,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-08T23:09:30Z"
+    "delay_s": 177,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-08T23:17:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -488,9 +371,19 @@
      "FL-934"
     ],
     "delay_s": 159,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-08T23:29:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 S"
+    ],
+    "delay_s": 157,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-08T18:30:00Z"
+    "start": "2026-09-08T20:34:06Z"
    },
    {
     "county": "Miami-Dade",
@@ -498,31 +391,123 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 149,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-08T23:12:30Z"
+    "delay_s": 148,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-08T23:26:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-953"
+     "FL-823"
     ],
-    "delay_s": 147,
+    "delay_s": 142,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-08T23:16:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 138,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-08T22:56:00Z"
+    "start": "2026-09-08T23:01:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-932"
+    ],
+    "delay_s": 126,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-08T23:27:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 120,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-08T22:38:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 109,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-08T23:21:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 103,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-08T20:11:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S"
+    ],
+    "delay_s": 96,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-08T19:48:54Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-817"
+    ],
+    "delay_s": 77,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-08T23:29:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "County Hwy-913",
+     "FL-973"
+    ],
+    "delay_s": 53,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-08T23:19:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-986"
+    ],
+    "delay_s": 49,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-08T22:58:00Z"
    }
   ],
-  "incident_count": 324,
-  "named_count": 70,
-  "major_count": 12,
+  "incident_count": 301,
+  "named_count": 57,
+  "major_count": 10,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-08T19:16:08-04:00",
+  "fetched_at": "2026-09-08T19:31:16-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -559,24 +544,22 @@
   ],
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
-   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 8 2026, 6:03 PM",
-   "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Sep 8 2026, 6:03 PM",
-   "Northeast | Duval | Jacksonville: There is a vehicle crash on I-295 SB blocking all SB lanes at MM 44. Use caution in the area. | Sep 8 2026, 6:24 PM"
+   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 8 2026, 6:03 PM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-08T19:16:08-04:00",
-  "issued": "200 PM EDT Tue Sep 8 2026",
+  "fetched_at": "2026-09-08T19:31:16-04:00",
+  "issued": "800 PM EDT Tue Sep 8 2026",
   "areas": [],
-  "raw": "en Español\n\n498 \nABNT20 KNHC 081716\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\nIssued by the NWS Weather Prediction Center College Park MD\n200 PM EDT Tue Sep 8 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Bann"
+  "raw": "en Español\n\n000\nABNT20 KNHC 082324\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Tue Sep 8 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Pasch"
  },
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-08T19:16:08-04:00",
+  "fetched_at": "2026-09-08T19:31:17-04:00",
   "florida": "$3.8958",
   "national": "$4.1514",
   "diesel": "$5.6750",
@@ -585,7 +568,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-08T19:16:11-04:00",
+  "fetched_at": "2026-09-08T19:31:18-04:00",
   "streams": {
    "local": [
     {
@@ -802,7 +785,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/questions-arise-over-mias-lack-of-safety-system-that-could-have-slowed-plane-that-overshot-runway-and-killed-5-people/",
     "published": "Tue, 08 Sep 2026 21:26:13 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/edbbe419-2325-4dd8-80c4-54a75f3b754e/4204a05f-737c-47f9-9a75-1dc7a73ad482/main.mp4?fastly_token=NmFhMGRmZjhfMjJmM2UzOTBiZTNiMjYyZjM3Yjg1NmQ4MTdhM2IzZTBjMDZhYWM5MWNjZTY5N2I4YWM1ZDBiZmUwMmYwMzJjZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9lZGJiZTQxOS0yMzI1LTRkZDgtODBjNC01NGE3NWYzYjc1NGUvNDIwNGEwNWYtNzM3Yy00N2Y5LTlhNzUtMWRjN2E3M2FkNDgyL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/edbbe419-2325-4dd8-80c4-54a75f3b754e/4204a05f-737c-47f9-9a75-1dc7a73ad482/main.mp4?fastly_token=NmFhMGU5ZjNfMDQ1MzZiNzVlNDRlNDdjOTZkYTFkY2U1ZGE1ZGRiNDk4N2VmMGJiNGE4YzYxNTMyMWQ2MmMwMGE0MzdhNmM1MF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9lZGJiZTQxOS0yMzI1LTRkZDgtODBjNC01NGE3NWYzYjc1NGUvNDIwNGEwNWYtNzM3Yy00N2Y5LTlhNzUtMWRjN2E3M2FkNDgyL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -823,6 +806,30 @@
    }
   ],
   "colombia": [
+   {
+    "title": "Video: Migración Colombia asegura que operativos en busca de ciudadanos extranjeros irregulares no han sufrido alteraciones",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/video-migracion-colombia-asegura-que-operativos-en-busca-de-ciudadanos-extranjeros-irregulares-no-han-sufrido-alteraciones-3584600",
+    "published": "2026-09-08T18:17:52-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/08/6aa0934721f5e.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "En video: Tensión en Manrique por operativo de evacuación de familias de 73 viviendas en zona de alto riesgo de la quebrada La Tebaida",
+    "url": "https://www.eltiempo.com/colombia/medellin/en-video-tension-en-manrique-por-operativo-de-evacuacion-de-familias-de-73-viviendas-en-zona-de-alto-riesgo-de-la-quebrada-la-tebaida-3584606",
+    "published": "2026-09-08T18:07:37-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/08/6aa092b9a3ee8.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "El Festival Son de Negro de Santa Lucía tendrá Casa Museo, monumento y escuelas de formación gracias a la ley que lo declaró patrimonio de la Nación",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/el-festival-son-de-negro-de-santa-lucia-tendra-casa-museo-monumento-y-escuelas-de-formacion-gracias-a-la-ley-que-lo-declaro-patrimonio-de-la-nacion-3584584",
+    "published": "2026-09-08T18:01:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2024/09/19/66ecab9fcf4de.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Rubio le responde a Verano que EE. UU. estudiará la reapertura de la Agencia Consular en Barranquilla tras recibir la carta de intención formal",
     "url": "https://www.eltiempo.com/colombia/barranquilla/rubio-le-responde-a-verano-que-ee-uu-estudiara-la-reapertura-de-la-agencia-consular-en-barranquilla-tras-recibir-la-carta-de-intencion-formal-3584595",
@@ -861,30 +868,6 @@
     "published": "2026-09-08T17:04:10-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/05/21/6a0f69e021e9a.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Santander reaccionó a la visita de Marco Rubio a Colombia: esto fue lo que dijo el gobernador tras su llegada a Barranquilla",
-    "url": "https://www.eltiempo.com/colombia/santander/santander-reacciono-a-la-visita-de-marco-rubio-a-colombia-esto-fue-lo-que-dijo-el-gobernador-tras-su-llegada-a-barranquilla-3584570",
-    "published": "2026-09-08T16:47:53-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/08/6aa07bc492e4b.r_d.1011-776-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "El Teatro Adolfo Mejía de Cartagena abrió las puertas para la temporada de espectáculos culturales en septiembre",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/el-teatro-adolfo-mejia-de-cartagena-abrio-las-puertas-para-la-temporada-de-espectaculos-culturales-en-septiembre-3584558",
-    "published": "2026-09-08T16:09:38-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2025/04/02/67ed65dfd7361.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Así reaccionaron políticos vallecaucanos al anuncio del presidente Abelardo De La Espriella de levantar la suspensión del porte de armas",
-    "url": "https://www.eltiempo.com/colombia/cali/asi-reaccionaron-politicos-vallecaucanos-al-anuncio-del-presidente-abelardo-de-la-espriella-de-levantar-la-suspension-del-porte-de-armas-3584544",
-    "published": "2026-09-08T15:36:27-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/08/6aa06ea3870f5.r_d.502-514-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -958,7 +941,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-08T19:16:12-04:00",
+  "fetched_at": "2026-09-08T19:31:19-04:00",
   "items": [],
   "scanned": 7,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -966,7 +949,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (377) + USGS (14)",
-  "fetched_at": "2026-09-08T19:16:16-04:00",
+  "fetched_at": "2026-09-08T19:31:23-04:00",
   "events": [
    {
     "lat": 28.0,
@@ -2435,12 +2418,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-08T19:16:16-04:00",
+  "fetched_at": "2026-09-08T19:31:23-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "Video: Migración Colombia asegura que operativos en busca de ciudadanos extranjeros irregulares no han sufrido alteraciones",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/video-migracion-colombia-asegura-que-operativos-en-busca-de-ciudadanos-extranjeros-irregulares-no-han-sufrido-alteraciones-3584600",
+      "published": "2026-09-08T18:17:52-05:00",
+      "section": "colombia"
+     },
      {
       "title": "Medellín registró mejores cifras de ahorro de agua, pero aún está lejos de las metas: Federico Gutiérrez volvió a lanzar advertencias ante la crisis",
       "url": "https://www.eltiempo.com/colombia/medellin/medellin-registro-mejores-cifras-de-ahorro-de-agua-pero-aun-esta-lejos-de-las-metas-federico-gutierrez-volvio-a-lanzar-advertencias-ante-la-crisis-3584580",
@@ -2452,16 +2441,10 @@
       "url": "https://www.eltiempo.com/colombia/medellin/la-drastica-sancion-a-un-medico-en-medellin-por-un-caso-de-abuso-sexual-dentro-de-su-consultorio-3584591",
       "published": "2026-09-08T17:23:13-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Santander reaccionó a la visita de Marco Rubio a Colombia: esto fue lo que dijo el gobernador tras su llegada a Barranquilla",
-      "url": "https://www.eltiempo.com/colombia/santander/santander-reacciono-a-la-visita-de-marco-rubio-a-colombia-esto-fue-lo-que-dijo-el-gobernador-tras-su-llegada-a-barranquilla-3584570",
-      "published": "2026-09-08T16:47:53-05:00",
-      "section": "colombia"
      }
     ],
     "count": 3,
-    "issue": "Medellín registró mejores cifras de ahorro de agua, pero aún está lejos de las metas: Federico Gutiérrez volvió a lanzar advertencias ante la crisis"
+    "issue": "Video: Migración Colombia asegura que operativos en busca de ciudadanos extranjeros irregulares no han sufrido alteraciones"
    },
    {
     "iso": "CAN",
