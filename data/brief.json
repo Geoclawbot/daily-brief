@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-07T22:45:52-04:00",
- "generated_at_utc": "2026-09-08T02:45:52+00:00",
+ "generated_at": "2026-09-07T23:01:01-04:00",
+ "generated_at_utc": "2026-09-08T03:01:01+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 7",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-07T22:45:53-04:00",
+  "fetched_at": "2026-09-07T23:01:02-04:00",
   "curve": [
    {
     "time": "2026-09-07T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 77.0,
+   "temp": 77.1,
    "feels": 87.1,
    "humidity": 92,
-   "wind_mph": 1.1,
-   "wind_dir": 143,
-   "observed_at": "2026-09-07T22:45"
+   "wind_mph": 1.4,
+   "wind_dir": 129,
+   "observed_at": "2026-09-07T23:00"
   },
   "today": {
    "high": 90.4,
@@ -166,32 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-07T22:45:53-04:00",
+  "fetched_at": "2026-09-07T23:01:02-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-07T22:45:54-04:00",
-  "aqi": 37,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-07T23:01:28-04:00",
+  "aqi": 38,
   "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-07 21:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-08",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "O3"
-   }
-  ]
+  "pm25": 10.4,
+  "pm10": 10.7,
+  "observed": "2026-09-07T23:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-07T22:45:54-04:00",
+  "fetched_at": "2026-09-07T23:01:29-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -224,7 +218,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -234,7 +228,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -259,7 +253,19 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-441 N"
+     "US-441 N",
+     "US-441 S"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-08T02:47:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-441 N",
+     "US-441 S"
     ],
     "delay_s": null,
     "magnitude": 4,
@@ -275,6 +281,26 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-08-02T04:33:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 S"
+    ],
+    "delay_s": 45,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-08T02:58:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 34,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-08T02:59:30Z"
    },
    {
     "county": "Broward",
@@ -475,41 +501,17 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-08-26T14:57:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-18T20:48:14Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-07T23:21:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-27T16:08:00Z"
    }
   ],
-  "incident_count": 230,
-  "named_count": 27,
-  "major_count": 8,
+  "incident_count": 233,
+  "named_count": 30,
+  "major_count": 9,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-07T22:45:55-04:00",
+  "fetched_at": "2026-09-07T23:01:29-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -553,7 +555,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-07T22:45:55-04:00",
+  "fetched_at": "2026-09-07T23:01:29-04:00",
   "issued": "800 PM EDT Mon Sep 7 2026",
   "areas": [],
   "raw": "en Español\n\n786 \nABNT20 KNHC 072311\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Mon Sep 7 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Pasch"
@@ -561,7 +563,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-07T22:45:55-04:00",
+  "fetched_at": "2026-09-07T23:01:30-04:00",
   "florida": "$3.9054",
   "national": "$4.1505",
   "diesel": "$5.6822",
@@ -570,7 +572,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-07T22:45:56-04:00",
+  "fetched_at": "2026-09-07T23:01:31-04:00",
   "streams": {
    "local": [
     {
@@ -799,11 +801,11 @@
     "media_type": "video"
    },
    {
-    "title": "5 dead after Amazon cargo jet careens off Miami runway, leaving trail of destruction and striking vehicles with people inside",
-    "url": "https://wsvn.com/news/local/miami-dade/5-dead-after-amazon-cargo-jet-careens-off-miami-runway-leaving-trail-of-destruction-and-striking-vehicles-with-people-inside/",
+    "title": "Amazon cargo plane that killed 5 in Miami struck a van carrying 7 people as it careened off runway",
+    "url": "https://wsvn.com/news/local/miami-dade/amazon-cargo-plane-that-killed-5-in-miami-struck-a-van-carrying-7-people-as-it-careened-off-runway/",
     "published": "Mon, 07 Sep 2026 14:51:19 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c6fb7391-340d-460c-b65a-b699c33607a8/c1ad64d3-ec30-4633-842e-8968678ba60c/main.mp4?fastly_token=NmE5ZmM5ZTFfMDdhZTE2YWY3MDQ0YWE5NTJjZDJkOGU3ZGRjNmJmZWRlNTFkYTE0OWZmMjg0MGFhNGExNzQ3OWRmOWY4ZGM0Zl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jNmZiNzM5MS0zNDBkLTQ2MGMtYjY1YS1iNjk5YzMzNjA3YTgvYzFhZDY0ZDMtZWMzMC00NjMzLTg0MmUtODk2ODY3OGJhNjBjL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c6fb7391-340d-460c-b65a-b699c33607a8/c1ad64d3-ec30-4633-842e-8968678ba60c/main.mp4?fastly_token=NmE5ZjkyMDJfM2ZhYmVjYWFmMmUwYjFhMWU0MmI3NDEzMDAzNTFmYzlhZDkwMDM2OGE2N2ZiYjY4MmFmMjBmMTBkNjliMmU2NV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jNmZiNzM5MS0zNDBkLTQ2MGMtYjY1YS1iNjk5YzMzNjA3YTgvYzFhZDY0ZDMtZWMzMC00NjMzLTg0MmUtODk2ODY3OGJhNjBjL21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -943,7 +945,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-07T22:45:57-04:00",
+  "fetched_at": "2026-09-07T23:01:32-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -951,7 +953,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (409) + USGS (4)",
-  "fetched_at": "2026-09-07T22:46:01-04:00",
+  "fetched_at": "2026-09-07T23:01:36-04:00",
   "events": [
    {
     "lat": -23.4192,
@@ -2410,7 +2412,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-07T22:46:01-04:00",
+  "fetched_at": "2026-09-07T23:01:36-04:00",
   "countries": [
    {
     "iso": "COL",
