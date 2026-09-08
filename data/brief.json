@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-07T21:20:35-04:00",
- "generated_at_utc": "2026-09-08T01:20:35+00:00",
+ "generated_at": "2026-09-07T21:30:59-04:00",
+ "generated_at_utc": "2026-09-08T01:30:59+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 7",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-07T21:20:36-04:00",
+  "fetched_at": "2026-09-07T21:30:59-04:00",
   "curve": [
    {
     "time": "2026-09-07T05:00",
@@ -143,16 +143,16 @@
     "temp": 77.0,
     "feels": 86.0,
     "humidity": 93,
-    "pop": 27
+    "pop": 20
    }
   ],
   "current": {
    "temp": 77.0,
-   "feels": 86.2,
+   "feels": 86.5,
    "humidity": 93,
-   "wind_mph": 3.9,
-   "wind_dir": 239,
-   "observed_at": "2026-09-07T21:15"
+   "wind_mph": 3.2,
+   "wind_dir": 231,
+   "observed_at": "2026-09-07T21:30"
   },
   "today": {
    "high": 90.4,
@@ -166,32 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-07T21:20:36-04:00",
+  "fetched_at": "2026-09-07T21:30:59-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-07T21:20:37-04:00",
-  "aqi": 34,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-07T21:31:25-04:00",
+  "aqi": 39,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-07 20:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-08",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "O3"
-   }
-  ]
+  "pm25": 7.8,
+  "pm10": 8.0,
+  "observed": "2026-09-07T21:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-07T21:20:37-04:00",
+  "fetched_at": "2026-09-07T21:31:25-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -224,7 +218,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -234,7 +228,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -267,15 +261,34 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
+    "county": "Broward",
+    "roads": [
+     "FL-814"
+    ],
+    "delay_s": 86,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-08T01:29:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-84"
+    ],
+    "delay_s": 69,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-08T01:21:30Z"
+   },
+   {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "FL-5"
+     "FL-826 S"
     ],
-    "delay_s": 138,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-08T01:01:30Z"
+    "delay_s": 40,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-08T01:24:30Z"
    },
    {
     "county": "Broward",
@@ -480,37 +493,21 @@
    {
     "county": "Broward",
     "roads": [],
-    "delay_s": 1138,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-08T00:19:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-06-18T20:48:14Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-07T23:21:30Z"
    }
   ],
-  "incident_count": 238,
-  "named_count": 27,
+  "incident_count": 242,
+  "named_count": 29,
   "major_count": 7,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-07T21:20:38-04:00",
+  "fetched_at": "2026-09-07T21:31:26-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -555,7 +552,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-07T21:20:38-04:00",
+  "fetched_at": "2026-09-07T21:31:26-04:00",
   "issued": "800 PM EDT Mon Sep 7 2026",
   "areas": [],
   "raw": "en Español\n\n786 \nABNT20 KNHC 072311\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Mon Sep 7 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Pasch"
@@ -563,7 +560,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-07T21:20:38-04:00",
+  "fetched_at": "2026-09-07T21:31:26-04:00",
   "florida": "$3.9054",
   "national": "$4.1505",
   "diesel": "$5.6822",
@@ -572,7 +569,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-07T21:20:39-04:00",
+  "fetched_at": "2026-09-07T21:31:27-04:00",
   "streams": {
    "local": [
     {
@@ -681,12 +678,12 @@
   ],
   "local": [
    {
-    "title": "Motorcyclist killed in crash at Bird and Red roads",
-    "url": "https://www.local10.com/news/local/2026/09/07/motorcyclist-killed-in-crash-at-bird-and-red-roads/",
-    "published": "Mon, 07 Sep 2026 23:05:13 +0000",
+    "title": "Officials searching for small plane that went missing off Bahamian cost",
+    "url": "https://www.local10.com/news/local/2026/09/07/officials-searching-for-small-plane-that-went-missing-off-bahamian-cost/",
+    "published": "Tue, 08 Sep 2026 01:22:42 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/XLM3XWR2PFH4TBF2BR4RROZRLE.jpg?auth=e06de6e16cb00de7cf81440d325696646970713113bb9b4f87fdc17644fc954f&smart=true&width=1200&height=900",
-    "media_type": "image"
+    "media": null,
+    "media_type": null
    },
    {
     "title": "NTSB: Cargo plane struck cleaning van, SUV before coming to stop outside MIA",
@@ -695,6 +692,14 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
+   },
+   {
+    "title": "Motorcyclist killed in crash at Bird and Red roads",
+    "url": "https://www.local10.com/news/local/2026/09/07/motorcyclist-killed-in-crash-at-bird-and-red-roads/",
+    "published": "Mon, 07 Sep 2026 23:05:13 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/XLM3XWR2PFH4TBF2BR4RROZRLE.jpg?auth=e06de6e16cb00de7cf81440d325696646970713113bb9b4f87fdc17644fc954f&smart=true&width=1200&height=900",
+    "media_type": "image"
    },
    {
     "title": "Dolphins legend Jason Taylor gives back with back-to-school shopping spree",
@@ -737,19 +742,11 @@
     "media_type": null
    },
    {
-    "title": "MIA cargo plane crash snarls Labor Day travel",
-    "url": "https://www.local10.com/news/local/2026/09/07/mia-cargo-plane-crash-snarls-labor-day-travel/",
-    "published": "Mon, 07 Sep 2026 15:33:41 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Volunteers, civic leaders hand out meals to hundreds in Davie to help fight food insecurity ahead of Rosh Hashanah",
-    "url": "https://wsvn.com/news/local/broward/volunteers-civic-leaders-hand-out-meals-to-hundreds-in-davie-to-help-fight-food-insecurity-ahead-of-rosh-hashanah/",
+    "title": "Volunteers, local leaders hand out meals to hundreds in Davie to help fight food insecurity ahead of Rosh Hashanah",
+    "url": "https://wsvn.com/news/local/broward/volunteers-local-leaders-hand-out-meals-to-hundreds-in-davie-to-help-fight-food-insecurity-ahead-of-rosh-hashanah/",
     "published": "Mon, 07 Sep 2026 15:29:12 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c03921d7-df79-4f3d-bbdd-3be307d04ff4/3c0c76fe-e8d8-46a9-8288-518d1c070377/main.mp4?fastly_token=NmE5ZjMwNzVfYmMzNTZlMTUxMmRmNTc1NTk4NDAzNWM2ZGMwMDFiYzcwOWFhMTFlZGU3Mjc3MTk0ZWIxZDA0YWQ4MDc1NjVlYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jMDM5MjFkNy1kZjc5LTRmM2QtYmJkZC0zYmUzMDdkMDRmZjQvM2MwYzc2ZmUtZThkOC00NmE5LTgyODgtNTE4ZDFjMDcwMzc3L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c03921d7-df79-4f3d-bbdd-3be307d04ff4/3c0c76fe-e8d8-46a9-8288-518d1c070377/main.mp4?fastly_token=NmE5ZmI2ZTBfYWY0M2UzZjI2NDQ4NjE4MGI5Zjc4YTZlYWY3ZTkyZWY4YjMyYmFkNTBkNzRmMGI5NWViOGY0NjQ0Njk0NTYzOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jMDM5MjFkNy1kZjc5LTRmM2QtYmJkZC0zYmUzMDdkMDRmZjQvM2MwYzc2ZmUtZThkOC00NmE5LTgyODgtNTE4ZDFjMDcwMzc3L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -945,15 +942,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-07T21:20:40-04:00",
+  "fetched_at": "2026-09-07T21:31:28-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (409) + USGS (8)",
-  "fetched_at": "2026-09-07T21:20:45-04:00",
+  "source": "GDACS (409) + USGS (7)",
+  "fetched_at": "2026-09-07T21:31:31-04:00",
   "events": [
    {
     "lat": -23.4192,
@@ -1027,19 +1024,6 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018431",
     "when": "Thu, 30 Apr 2026 13:07:35 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": 43.9019,
-    "lon": -128.2038,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M5.3 — off the coast of Oregon",
-    "place": "off the coast of Oregon",
-    "severity": "M5.3",
-    "mag": 5.3,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tesi",
-    "when": 1788744624930,
-    "source": "USGS"
    },
    {
     "lat": -19.8408,
@@ -2402,13 +2386,25 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031549",
     "when": "Thu, 03 Sep 2026 11:04:53 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -4.8332412404568705,
+    "lon": 13.218325289754107,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in The Democratic Republic of Congo",
+    "place": "The Democratic Republic of Congo",
+    "severity": "Green impact for forestfire in 5684 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031607",
+    "when": "Fri, 04 Sep 2026 19:08:58 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 417,
+  "event_count": 416,
   "counts": {
    "red": 0,
    "orange": 6,
-   "green": 411
+   "green": 410
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2416,7 +2412,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-07T21:20:45-04:00",
+  "fetched_at": "2026-09-07T21:31:31-04:00",
   "countries": [
    {
     "iso": "COL",
