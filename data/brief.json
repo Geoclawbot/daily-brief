@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-09T02:46:06-04:00",
- "generated_at_utc": "2026-09-09T06:46:06+00:00",
+ "generated_at": "2026-09-09T03:01:15-04:00",
+ "generated_at_utc": "2026-09-09T07:01:15+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 9",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-09T02:46:07-04:00",
+  "fetched_at": "2026-09-09T03:01:17-04:00",
   "curve": [
    {
     "time": "2026-09-09T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 80.5,
-   "feels": 92.1,
-   "humidity": 90,
-   "wind_mph": 1.8,
-   "wind_dir": 194,
-   "observed_at": "2026-09-09T02:45"
+   "temp": 80.4,
+   "feels": 91.9,
+   "humidity": 91,
+   "wind_mph": 2.2,
+   "wind_dir": 217,
+   "observed_at": "2026-09-09T03:00"
   },
   "today": {
    "high": 87.5,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-09T02:46:07-04:00",
+  "fetched_at": "2026-09-09T03:01:18-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-09T02:46:08-04:00",
+  "fetched_at": "2026-09-09T03:01:18-04:00",
   "aqi": 34,
   "category": "Good",
   "pollutant": "PM2.5",
@@ -190,22 +190,74 @@
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-09-09T02:46:09-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
-  "incidents": [
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-09-09T03:01:20-04:00",
+  "route_shown": true,
+  "leg": "Home → Jackson Memorial",
+  "direction": "outbound",
+  "depart_clock": "5:45 AM",
+  "depart_at": "2026-09-09T05:45:00-04:00",
+  "miles": 19.9,
+  "minutes": 39,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
    {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-08T15:31:00Z"
+    "miles": 27.1,
+    "minutes": 37,
+    "toll": true,
+    "saves": 2
    },
+   {
+    "miles": 24.4,
+    "minutes": 37,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 20.7,
+    "minutes": 37,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 23.9,
+    "minutes": 38,
+    "toll": true,
+    "saves": 1
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 19.9,
+    "minutes": 39,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 29.3,
+    "minutes": 44,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 21.7,
+    "minutes": 46,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.8,
+    "minutes": 55,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 19.9,
+   "minutes": 39,
+   "delay_minutes": 0,
+   "saves": 0
+  },
+  "incidents": [
    {
     "county": "Broward",
     "roads": [
@@ -223,8 +275,8 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "description": "Closed",
+    "start": "2026-09-08T15:31:00Z"
    },
    {
     "county": "Broward",
@@ -235,6 +287,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:05:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -523,7 +585,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-09T02:46:09-04:00",
+  "fetched_at": "2026-09-09T03:01:21-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -568,7 +630,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-09T02:46:10-04:00",
+  "fetched_at": "2026-09-09T03:01:21-04:00",
   "issued": "200 AM EDT Wed Sep 9 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 090508\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Wed Sep 9 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Katz/Reinhart"
@@ -576,7 +638,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-09T02:46:10-04:00",
+  "fetched_at": "2026-09-09T03:01:21-04:00",
   "florida": "$3.8958",
   "national": "$4.1514",
   "diesel": "$5.6750",
@@ -585,7 +647,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-09T02:46:11-04:00",
+  "fetched_at": "2026-09-09T03:01:24-04:00",
   "streams": {
    "local": [
     {
@@ -958,15 +1020,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-09T02:46:12-04:00",
+  "fetched_at": "2026-09-09T03:01:24-04:00",
   "items": [],
   "scanned": 6,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (384) + USGS (13)",
-  "fetched_at": "2026-09-09T02:46:16-04:00",
+  "source": "GDACS (384) + USGS (11)",
+  "fetched_at": "2026-09-09T03:01:27-04:00",
   "events": [
    {
     "lat": 28.0,
@@ -1043,19 +1105,6 @@
     "source": "USGS"
    },
    {
-    "lat": -58.1213,
-    "lon": -26.2578,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M5.1 — South Sandwich Islands region",
-    "place": "South Sandwich Islands region",
-    "severity": "M5.1",
-    "mag": 5.1,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfs3",
-    "when": 1788850246470,
-    "source": "USGS"
-   },
-   {
     "lat": 16.5996,
     "lon": 148.4279,
     "kind": "earthquake",
@@ -1118,19 +1167,6 @@
     "mag": 4.7,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfty",
     "when": 1788874928931,
-    "source": "USGS"
-   },
-   {
-    "lat": 10.733,
-    "lon": -69.1624,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.7 — 43 km NW of Aroa, Venezuela",
-    "place": "43 km NW of Aroa, Venezuela",
-    "severity": "M4.7",
-    "mag": 4.7,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tfs1",
-    "when": 1788850188990,
     "source": "USGS"
    },
    {
@@ -2420,13 +2456,37 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031606",
     "when": "Sat, 05 Sep 2026 15:16:42 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -21.39044636187277,
+    "lon": 145.018538090516,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 10414 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031549",
+    "when": "Thu, 03 Sep 2026 11:04:53 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -16.979130190315736,
+    "lon": 21.680404737558007,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 5385 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031699",
+    "when": "Wed, 09 Sep 2026 03:17:49 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 397,
+  "event_count": 395,
   "counts": {
    "red": 0,
    "orange": 4,
-   "green": 393
+   "green": 391
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2434,7 +2494,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-09T02:46:16-04:00",
+  "fetched_at": "2026-09-09T03:01:27-04:00",
   "countries": [
    {
     "iso": "COL",
