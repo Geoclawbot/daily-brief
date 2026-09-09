@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-08T22:01:23-04:00",
- "generated_at_utc": "2026-09-09T02:01:23+00:00",
+ "generated_at": "2026-09-08T22:15:25-04:00",
+ "generated_at_utc": "2026-09-09T02:15:25+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 8",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-08T22:01:24-04:00",
+  "fetched_at": "2026-09-08T22:15:25-04:00",
   "curve": [
    {
     "time": "2026-09-08T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 82.8,
-   "feels": 95.9,
+   "temp": 82.9,
+   "feels": 95.6,
    "humidity": 91,
-   "wind_mph": 2.4,
-   "wind_dir": 221,
-   "observed_at": "2026-09-08T22:00"
+   "wind_mph": 3.4,
+   "wind_dir": 262,
+   "observed_at": "2026-09-08T22:15"
   },
   "today": {
    "high": 88.9,
@@ -166,19 +166,19 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-08T22:01:25-04:00",
+  "fetched_at": "2026-09-08T22:15:25-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-08T22:01:26-04:00",
-  "aqi": 55,
-  "category": "Moderate",
-  "pollutant": "PM2.5",
+  "fetched_at": "2026-09-08T22:15:26-04:00",
+  "aqi": 32,
+  "category": "Good",
+  "pollutant": "O3",
   "reporting_area": "Miami",
-  "observed": "2026-09-08 20:00 EST",
+  "observed": "2026-09-08 21:00 EST",
   "forecast": [
    {
     "date": "2026-09-09",
@@ -191,7 +191,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-08T22:01:26-04:00",
+  "fetched_at": "2026-09-08T22:15:26-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -199,12 +199,12 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-827"
+     "I-95 N"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-08T15:31:00Z"
+    "delay_s": 1270,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-09T01:48:00Z"
    },
    {
     "county": "Broward",
@@ -215,6 +215,16 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-09-08T20:08:34Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-08T15:31:00Z"
    },
    {
     "county": "Broward",
@@ -288,33 +298,13 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Broward",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 531,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T01:48:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826"
-    ],
-    "delay_s": 242,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T01:45:30Z"
-   },
-   {
     "county": "Miami-Dade",
     "roads": [
      "FL-7",
      "FL-9",
      "US-441 N"
     ],
-    "delay_s": 194,
+    "delay_s": 286,
     "magnitude": 3,
     "description": "Stationary traffic; Roadworks",
     "start": "2026-09-09T01:56:30Z"
@@ -324,9 +314,9 @@
     "roads": [
      "FL-836 W"
     ],
-    "delay_s": 145,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 202,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-09-09T01:06:00Z"
    },
    {
@@ -334,7 +324,7 @@
     "roads": [
      "FL-836 E"
     ],
-    "delay_s": 144,
+    "delay_s": 198,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-09T01:16:00Z"
@@ -342,9 +332,31 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-826"
+    ],
+    "delay_s": 147,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-09T01:45:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 E",
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 104,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-09T02:04:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "I-95 S"
     ],
-    "delay_s": 92,
+    "delay_s": 94,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-09T01:39:00Z"
@@ -352,31 +364,10 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-814"
-    ],
-    "delay_s": 76,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-09T01:55:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
-    ],
-    "delay_s": 65,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-09T01:30:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
      "FL-91 N",
      "Florida's Tpke N"
     ],
-    "delay_s": 38,
+    "delay_s": 77,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-09T01:57:30Z"
@@ -384,12 +375,24 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 W"
+     "FL-972"
     ],
-    "delay_s": 31,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T01:58:00Z"
+    "delay_s": 57,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-09T02:13:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Don Shula Expy S",
+     "FL-874 S",
+     "S Dade Expy S"
+    ],
+    "delay_s": 37,
+    "magnitude": 1,
+    "description": "Heavy traffic",
+    "start": "2026-09-09T02:03:30Z"
    },
    {
     "county": "Broward",
@@ -510,15 +513,15 @@
     "start": "2026-05-07T11:50:15Z"
    }
   ],
-  "incident_count": 273,
+  "incident_count": 278,
   "named_count": 40,
-  "major_count": 9,
+  "major_count": 10,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-08T22:01:27-04:00",
+  "fetched_at": "2026-09-08T22:15:27-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -565,7 +568,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-08T22:01:27-04:00",
+  "fetched_at": "2026-09-08T22:15:27-04:00",
   "issued": "800 PM EDT Tue Sep 8 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 082324\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Tue Sep 8 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Pasch"
@@ -573,7 +576,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-08T22:01:27-04:00",
+  "fetched_at": "2026-09-08T22:15:27-04:00",
   "florida": "$3.8958",
   "national": "$4.1514",
   "diesel": "$5.6750",
@@ -582,7 +585,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-08T22:01:29-04:00",
+  "fetched_at": "2026-09-08T22:15:28-04:00",
   "streams": {
    "local": [
     {
@@ -955,7 +958,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-08T22:01:30-04:00",
+  "fetched_at": "2026-09-08T22:15:28-04:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -963,7 +966,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (380) + USGS (13)",
-  "fetched_at": "2026-09-08T22:01:34-04:00",
+  "fetched_at": "2026-09-08T22:15:31-04:00",
   "events": [
    {
     "lat": 28.0,
@@ -1355,7 +1358,7 @@
     "lon": 153.6766,
     "kind": "earthquake",
     "level": "green",
-    "title": "Green earthquake (Magnitude 5.5M, Depth:114.364km) in Papua New Guinea 05/09/2026 14:12 UTC, 290 thousand in MMI III.",
+    "title": "Green earthquake (Magnitude 5.5M, Depth:114.364km) in Papua New Guinea 05/09/2026 14:12 UTC, 6 thousand in MMI -.",
     "place": "Papua New Guinea",
     "severity": "Magnitude 5.5M, Depth:114.4km",
     "url": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1563786",
@@ -2191,8 +2194,8 @@
     "source": "GDACS"
    },
    {
-    "lat": 33.1,
-    "lon": 133.5,
+    "lat": 33.6,
+    "lon": 134.4,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone KROVANH-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
@@ -2431,7 +2434,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-08T22:01:34-04:00",
+  "fetched_at": "2026-09-08T22:15:31-04:00",
   "countries": [
    {
     "iso": "COL",
