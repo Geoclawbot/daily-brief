@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-09T19:46:06-04:00",
- "generated_at_utc": "2026-09-09T23:46:06+00:00",
+ "generated_at": "2026-09-09T19:59:46-04:00",
+ "generated_at_utc": "2026-09-09T23:59:46+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 9",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-09T19:46:07-04:00",
+  "fetched_at": "2026-09-09T19:59:46-04:00",
   "curve": [
    {
     "time": "2026-09-09T05:00",
@@ -166,41 +166,78 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-09T19:46:07-04:00",
+  "fetched_at": "2026-09-09T19:59:47-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-09T19:46:09-04:00",
-  "aqi": 52,
-  "category": "Moderate",
-  "pm25": 7.2,
-  "pm10": 8.6,
-  "observed": "2026-09-09T19:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-09T19:59:48-04:00",
+  "aqi": 28,
+  "category": "Good",
+  "pollutant": "O3",
+  "reporting_area": "Miami",
+  "observed": "2026-09-09 17:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-09",
+    "aqi": 33,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-09",
+    "aqi": 44,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-10",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-10",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-11",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-11",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-12",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-12",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-09T19:46:09-04:00",
+  "fetched_at": "2026-09-09T19:59:48-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 1115,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-09T22:14:05Z"
-   },
    {
     "county": "Broward",
     "roads": [
@@ -292,24 +329,197 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-854"
+     "FL-821 S",
+     "Florida's Tpke S"
     ],
-    "delay_s": 598,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T20:00:58Z"
+    "delay_s": 470,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-09T22:14:05Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-825"
+     "FL-821 S"
     ],
-    "delay_s": 563,
+    "delay_s": 247,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-09T22:15:12Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 203,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-09T19:34:00Z"
+    "start": "2026-09-09T23:39:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-838"
+    ],
+    "delay_s": 202,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-09T23:55:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-822",
+     "FL-A1A"
+    ],
+    "delay_s": 178,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-09-09T23:54:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S"
+    ],
+    "delay_s": 169,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-09T18:54:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 N"
+    ],
+    "delay_s": 165,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-09T23:47:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 161,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-09T23:50:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-986"
+    ],
+    "delay_s": 156,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-09T23:46:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 146,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-09T23:36:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-A1A"
+    ],
+    "delay_s": 141,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-09T23:57:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 135,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-09-09T23:45:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 132,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-09T16:29:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 127,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-09T23:56:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 110,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-09T23:53:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-990"
+    ],
+    "delay_s": 104,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-09T23:54:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": 89,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-09T23:40:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-986"
+    ],
+    "delay_s": 85,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-09T23:53:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 76,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-09T22:53:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -318,9 +528,9 @@
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 487,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 70,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-09-09T19:54:20Z"
    },
    {
@@ -328,188 +538,21 @@
     "roads": [
      "FL-836 E"
     ],
-    "delay_s": 447,
-    "magnitude": 3,
-    "description": "Stationary traffic",
+    "delay_s": 67,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-09-09T22:38:54Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": 439,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T21:07:22Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-985"
-    ],
-    "delay_s": 420,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T21:01:31Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 417,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-09T16:29:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S"
-    ],
-    "delay_s": 412,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-09T18:54:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 408,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T22:06:21Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-948"
-    ],
-    "delay_s": 405,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T21:59:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 381,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T18:59:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-992"
-    ],
-    "delay_s": 344,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T20:57:38Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-1 S",
-     "US-41 S",
-     "FL-5"
-    ],
-    "delay_s": 325,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-09T22:54:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 316,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T20:56:24Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S"
-    ],
-    "delay_s": 298,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-09T22:15:12Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-860"
-    ],
-    "delay_s": 291,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-09T21:45:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 281,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T21:10:43Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S"
-    ],
-    "delay_s": 259,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T19:53:51Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 251,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T22:20:56Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-985"
-    ],
-    "delay_s": 240,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T22:25:31Z"
    }
   ],
-  "incident_count": 375,
-  "named_count": 95,
-  "major_count": 10,
+  "incident_count": 305,
+  "named_count": 58,
+  "major_count": 9,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-09T19:46:10-04:00",
+  "fetched_at": "2026-09-09T19:59:49-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -555,7 +598,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-09T19:46:10-04:00",
+  "fetched_at": "2026-09-09T19:59:49-04:00",
   "issued": "800 PM EDT Wed Sep 9 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 092312\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Wed Sep 9 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Pasch"
@@ -563,7 +606,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-09T19:46:10-04:00",
+  "fetched_at": "2026-09-09T19:59:49-04:00",
   "florida": "$4.0771",
   "national": "$4.2245",
   "diesel": "$5.8108",
@@ -572,7 +615,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-09T19:46:11-04:00",
+  "fetched_at": "2026-09-09T19:59:50-04:00",
   "streams": {
    "local": [
     {
@@ -745,35 +788,43 @@
     "media_type": "image"
    },
    {
-    "title": "Pembroke Pines Police officer honors uncle — firefighter killed on 9/11 — ahead of attacks’ 25th anniversary",
-    "url": "https://wsvn.com/news/us-world/pembroke-pines-police-officer-honors-uncle-firefighter-killed-on-9-11-ahead-of-attacks-25th-anniversary/",
-    "published": "Wed, 09 Sep 2026 12:39:40 +0000",
+    "title": "Miami Beach Police’s youngest K-9 makes quick impact on fending off illicit narcotics",
+    "url": "https://wsvn.com/news/local/miami-dade/miami-beach-polices-youngest-k-9-makes-quick-impact-on-fending-off-illicit-narcotics/",
+    "published": "Wed, 09 Sep 2026 23:43:02 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/27a80e7c-8e90-4547-8dc1-c2d08886bf51/b55fc468-68e9-4aa6-b066-62e77f0e9f49/main.mp4?fastly_token=NmFhMWFkMzBfMzE4ZDg1MTIyYTVjZTJkZTQ4ZGExMWY1OWIwOTNiMGQwMmQxNWRmNGQ4ZDQ4MDk0OWZlYjM1YjdlOWJkOGRmNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yN2E4MGU3Yy04ZTkwLTQ1NDctOGRjMS1jMmQwODg4NmJmNTEvYjU1ZmM0NjgtNjhlOS00YWE2LWIwNjYtNjJlNzdmMGU5ZjQ5L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/5e3a0020-58ad-49b6-8819-8ca7239a67bd/f373fca4-65b6-44be-88e2-b4d95b061168/main.mp4?fastly_token=NmFhMjQ3MThfMTljM2I1MmIzZjdjZDI2MmVkNzg1NjljYjQ5ZDZlY2FjMGZmZDU1NGQwNjZiMmJkM2Q5OTIwMmE0MGNiZTc1MF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81ZTNhMDAyMC01OGFkLTQ5YjYtODgxOS04Y2E3MjM5YTY3YmQvZjM3M2ZjYTQtNjViNi00NGJlLTg4ZTItYjRkOTViMDYxMTY4L21haW4ubXA0",
     "media_type": "video"
    },
    {
-    "title": "Woman arrested after $15K Rolex taken from man’s wrist, police say",
-    "url": "https://wsvn.com/news/local/miami-dade/woman-arrested-after-15k-rolex-taken-from-mans-wrist-police-say/",
-    "published": "Wed, 09 Sep 2026 15:32:41 +0000",
+    "title": "911 call reveals new details on fatal hit-and-run crash in Deerfield Beach as BSO continues search for driver",
+    "url": "https://wsvn.com/news/local/broward/911-call-reveals-new-details-on-fatal-hit-and-run-crash-in-deerfield-beach-as-bso-continues-search-for-driver/",
+    "published": "Wed, 09 Sep 2026 23:26:12 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6b35ba10-0403-49a2-bf19-3bb51f5c3493/c5b92d37-a11e-409b-ba24-00303efbcaa4/main.mp4?fastly_token=NmFhMWRkYjJfNjg3YzNlZTQyODA3ZjdkM2NkNmZhMDRmZGVlYzFjMDQ3MTI1MmI3ZjdjODk0MTU0NjQwMTI3YmE4MTEyNjRlYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82YjM1YmExMC0wNDAzLTQ5YTItYmYxOS0zYmI1MWY1YzM0OTMvYzViOTJkMzctYTExZS00MDliLWJhMjQtMDAzMDNlZmJjYWE0L21haW4ubXA0",
+    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/090926-lacurtis-knight.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Prosecutors seek body camera footage in indecent exposure case against Secret Service employee",
+    "url": "https://wsvn.com/news/local/miami-dade/prosecutors-seek-body-camera-footage-in-indecent-exposure-case-against-secret-service-employee/",
+    "published": "Wed, 09 Sep 2026 20:51:32 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/beca7e54-1f40-4bd5-8284-64eb4f8f2a8e/cb2b1eb4-66ab-48ff-9d61-dc2426ad0d4f/main.mp4?fastly_token=NmFhMjIxNWNfMGU3NDAxZTZkZjc4ODg1Y2I2MDEwNzNhODQxYmIwNjExYmEyNmQzNmZmZTE0YmQ5MjlmZTMzM2ExODM0ZjVlZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iZWNhN2U1NC0xZjQwLTRiZDUtODI4NC02NGViNGY4ZjJhOGUvY2IyYjFlYjQtNjZhYi00OGZmLTlkNjEtZGMyNDI2YWQwZDRmL21haW4ubXA0",
     "media_type": "video"
    },
    {
-    "title": "FIU’s Wall of Wind receives $15M donation to expand hurricane research facility",
-    "url": "https://wsvn.com/news/local/miami-dade/fius-wall-of-wind-receives-15m-donation-to-expand-hurricane-research-facility/",
-    "published": "Wed, 09 Sep 2026 13:52:33 +0000",
+    "title": "BSO fire station hosts traveling fire engine memorial that honors FDNY members lost on 9/11",
+    "url": "https://wsvn.com/news/local/broward/bso-fire-station-hosts-traveling-fire-engine-memorial-that-honors-fdny-members-lost-on-9-11/",
+    "published": "Wed, 09 Sep 2026 22:51:16 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/cf772a43-1c07-464b-8751-79579233daca/17a5f374-6853-4285-a0dd-d3a03f85d575/main.mp4?fastly_token=NmFhMWJjYzBfNWQxNjVkYjU4NTQ2Y2M5YTc5MGQyMWFhNWJmZWVhZThmZmRkYjkwOTE5NmM2NGYxNmI2ZDU2Mzg0NDBlNjk3Zl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jZjc3MmE0My0xYzA3LTQ2NGItODc1MS03OTU3OTIzM2RhY2EvMTdhNWYzNzQtNjg1My00Mjg1LWEwZGQtZDNhMDNmODVkNTc1L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/0555f5bf-8376-49e1-a097-4b1ae17d167b/2c899ec5-0db7-4a14-9c46-e1352a4c73c5/main.mp4?fastly_token=NmFhMjNiZDhfZDBmMjRhOGI1YTY3OTg5NDNmN2Y2OTcyMDY4NjZiYzc0ODY2OTBlNDhmNjlhMmQ4OTg5YTg0ZjdkODNjMWNhM18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8wNTU1ZjViZi04Mzc2LTQ5ZTEtYTA5Ny00YjFhZTE3ZDE2N2IvMmM4OTllYzUtMGRiNy00YTE0LTljNDYtZTEzNTJhNGM3M2M1L21haW4ubXA0",
     "media_type": "video"
    },
    {
-    "title": "Good Samaritan recounts saving elderly woman from burning home in Lauderhill; victim’s daughter says home is unlivable",
-    "url": "https://wsvn.com/news/local/broward/good-samaritan-recounts-saving-elderly-woman-from-burning-home-in-lauderhill-victims-daughter-says-home-is-unlivable/",
-    "published": "Tue, 08 Sep 2026 23:27:19 +0000",
+    "title": "Miami Beach Police’s youngest K-9 makes quick impact on fending off illicit narcotics",
+    "url": "https://wsvn.com/news/local/miami-dade/miami-beach-polices-youngest-k-9-makes-quick-impact-on-fending-off-illicit-narcotics/",
+    "published": "Wed, 09 Sep 2026 23:43:02 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b6a148ec-88bb-4e7d-a0d7-0b4d4d2e21d7/f410706b-deab-4d20-ad83-0aaf6b6cb27d/main.mp4?fastly_token=NmFhMGY0NmJfYTlmZWY5Mzk2OWIxZDExMGU2NTgxNzI5MmZiZjY0NTBjM2ViYjQzYzAwMTJmMDgzNDk5MjUyZGFlNjk2YWU1MF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iNmExNDhlYy04OGJiLTRlN2QtYTBkNy0wYjRkNGQyZTIxZDcvZjQxMDcwNmItZGVhYi00ZDIwLWFkODMtMGFhZjZiNmNiMjdkL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/5e3a0020-58ad-49b6-8819-8ca7239a67bd/f373fca4-65b6-44be-88e2-b4d95b061168/main.mp4?fastly_token=NmFhMjQ3MThfMTljM2I1MmIzZjdjZDI2MmVkNzg1NjljYjQ5ZDZlY2FjMGZmZDU1NGQwNjZiMmJkM2Q5OTIwMmE0MGNiZTc1MF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81ZTNhMDAyMC01OGFkLTQ5YjYtODgxOS04Y2E3MjM5YTY3YmQvZjM3M2ZjYTQtNjViNi00NGJlLTg4ZTItYjRkOTViMDYxMTY4L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -799,17 +850,25 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "Widow, family of victims of cargo plane crash near MIA file lawsuits against Amazon and pilots",
-    "url": "https://wsvn.com/news/local/miami-dade/widow-family-of-victims-of-cargo-plane-crash-near-mia-files-lawsuits-against-amazon-and-pilots/",
-    "published": "Wed, 09 Sep 2026 17:21:46 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/8f3933ac-f90b-4389-baf4-45160d0103a2/3fce738d-46e5-4226-a3ad-8aecc8be2895/main.mp4?fastly_token=NmFhMjI0ZDlfNjM2YTIxMmQwNTc2Y2FlMzRjZDkzOGEwNTI4ZmUzODU0NTNlYjJkMWRmYTcxYzg2OWIzMWM0NGI2YWEyNDU2ZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84ZjM5MzNhYy1mOTBiLTQzODktYmFmNC00NTE2MGQwMTAzYTIvM2ZjZTczOGQtNDZlNS00MjI2LWEzYWQtOGFlY2M4YmUyODk1L21haW4ubXA0",
-    "media_type": "video"
    }
   ],
   "colombia": [
+   {
+    "title": "La otra tragedia en Pereira tras un mes del terremoto en Colombia: miles de personas que perdieron sus casas aún no han recibido subsidios",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/la-otra-tragedia-en-pereira-tras-un-mes-del-terremoto-en-colombia-miles-de-personas-que-perdieron-sus-casas-aun-no-han-recibido-subsidios-3584920",
+    "published": "2026-09-09T18:56:31-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/08/15/6a813ff762f36.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Emergencia en Tolima: masivo operativo por aire y tierra para sofocar voraz incendio forestal en las montañas de San Luis",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/emergencia-en-tolima-masivo-operativo-por-aire-y-tierra-para-sofocar-voraz-incendio-forestal-en-las-montanas-de-san-luis-3584929",
+    "published": "2026-09-09T18:52:17-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/09/6aa1ee9c6b9a0.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Un mes del terremoto en Colombia: el dilema del Quindío que no tuvo edificios colapsados, pero hay más de 74.000 damnificados",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/un-mes-del-terremoto-en-colombia-el-dilema-del-quindio-que-no-tuvo-edificios-colapsados-pero-hay-mas-de-74-000-damnificados-3584915",
@@ -856,22 +915,6 @@
     "published": "2026-09-09T18:30:07-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/09/6aa1d0156f5d6.r_d.1835-512-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "La cúpula por encima de ‘Bendito Menor’: quiénes son los otros hombres fuertes de las Autodefensas Conquistadoras de la Sierra Nevada",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/la-cupula-por-encima-de-bendito-menor-quienes-son-los-otros-hombres-fuertes-de-las-autodefensas-conquistadoras-de-la-sierra-nevada-3584872",
-    "published": "2026-09-09T16:30:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2025/12/24/694c008a8d234.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Portales de Metrolínea en ruinas: Piedecuesta y Girón, los más grandes, fueron vandalizados; se robaron hasta las escaleras eléctricas y ascensores",
-    "url": "https://www.eltiempo.com/colombia/santander/portales-de-metrolinea-en-ruinas-piedecuesta-y-giron-los-mas-grandes-fueron-vandalizados-se-robaron-hasta-las-escaleras-electricas-y-ascensores-3584849",
-    "published": "2026-09-09T15:54:44-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/09/6aa1c64f78b87.r_d.600-184-1.jpeg",
     "media_type": "image"
    }
   ],
@@ -945,7 +988,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-09T19:46:12-04:00",
+  "fetched_at": "2026-09-09T19:59:52-04:00",
   "items": [],
   "scanned": 8,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -953,7 +996,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (348) + USGS (12)",
-  "fetched_at": "2026-09-09T19:46:16-04:00",
+  "fetched_at": "2026-09-09T19:59:54-04:00",
   "events": [
    {
     "lat": 28.0,
@@ -1400,18 +1443,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -17.36100176105795,
-    "lon": 130.68603578882554,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 7687 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031853",
-    "when": "Wed, 09 Sep 2026 19:06:05 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": 37.451951672145185,
     "lon": 35.52357114930326,
     "kind": "wildfire",
@@ -1421,6 +1452,18 @@
     "severity": "Green impact for forestfire in 7842 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031851",
     "when": "Wed, 09 Sep 2026 07:01:12 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -17.36100176105795,
+    "lon": 130.68603578882554,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 7687 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031853",
+    "when": "Wed, 09 Sep 2026 19:06:05 GMT",
     "source": "GDACS"
    },
    {
@@ -2420,12 +2463,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-09T19:46:16-04:00",
+  "fetched_at": "2026-09-09T19:59:54-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "La otra tragedia en Pereira tras un mes del terremoto en Colombia: miles de personas que perdieron sus casas aún no han recibido subsidios",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/la-otra-tragedia-en-pereira-tras-un-mes-del-terremoto-en-colombia-miles-de-personas-que-perdieron-sus-casas-aun-no-han-recibido-subsidios-3584920",
+      "published": "2026-09-09T18:56:31-05:00",
+      "section": "colombia"
+     },
      {
       "title": "Un mes del terremoto en Colombia: el dilema del Quindío que no tuvo edificios colapsados, pero hay más de 74.000 damnificados",
       "url": "https://www.eltiempo.com/colombia/otras-ciudades/un-mes-del-terremoto-en-colombia-el-dilema-del-quindio-que-no-tuvo-edificios-colapsados-pero-hay-mas-de-74-000-damnificados-3584915",
@@ -2445,8 +2494,8 @@
       "section": "colombia"
      }
     ],
-    "count": 3,
-    "issue": "Un mes del terremoto en Colombia: el dilema del Quindío que no tuvo edificios colapsados, pero hay más de 74.000 damnificados"
+    "count": 4,
+    "issue": "La otra tragedia en Pereira tras un mes del terremoto en Colombia: miles de personas que perdieron sus casas aún no han recibido subsidios"
    },
    {
     "iso": "IRN",
