@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-08T20:16:05-04:00",
- "generated_at_utc": "2026-09-09T00:16:05+00:00",
+ "generated_at": "2026-09-08T20:31:14-04:00",
+ "generated_at_utc": "2026-09-09T00:31:14+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 8",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-08T20:16:05-04:00",
+  "fetched_at": "2026-09-08T20:31:14-04:00",
   "curve": [
    {
     "time": "2026-09-08T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 78.2,
-   "feels": 85.7,
+   "temp": 78.4,
+   "feels": 86.0,
    "humidity": 91,
    "wind_mph": 8.4,
-   "wind_dir": 214,
-   "observed_at": "2026-09-08T20:15"
+   "wind_dir": 226,
+   "observed_at": "2026-09-08T20:30"
   },
   "today": {
    "high": 88.9,
@@ -164,18 +164,19 @@
   "peak_hour": 11
  },
  "alerts": {
-  "ok": false,
-  "source": "NWS alerts",
-  "fetched_at": "2026-09-08T20:16:06-04:00",
-  "error": "502 Server Error: Bad Gateway for url: https://api.weather.gov/alerts/active?point=25.971228%2C-80.362648"
+  "ok": true,
+  "source": "NWS api.weather.gov/alerts",
+  "fetched_at": "2026-09-08T20:31:15-04:00",
+  "alerts": [],
+  "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-08T20:16:06-04:00",
-  "aqi": 32,
-  "category": "Good",
-  "pollutant": "O3",
+  "fetched_at": "2026-09-08T20:31:34-04:00",
+  "aqi": 55,
+  "category": "Moderate",
+  "pollutant": "PM2.5",
   "reporting_area": "Miami",
   "observed": "2026-09-08 19:00 EST",
   "forecast": [
@@ -190,7 +191,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-08T20:16:06-04:00",
+  "fetched_at": "2026-09-08T20:31:34-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -276,12 +277,23 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
+    "county": "Broward",
+    "roads": [
+     "FL-91 N",
+     "Florida's Tpke N"
+    ],
+    "delay_s": 555,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-09T00:08:00Z"
+   },
+   {
     "county": "Miami-Dade",
     "roads": [
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 560,
+    "delay_s": 415,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-08T23:30:30Z"
@@ -291,7 +303,7 @@
     "roads": [
      "FL-825"
     ],
-    "delay_s": 317,
+    "delay_s": 241,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-08T20:59:30Z"
@@ -301,113 +313,60 @@
     "roads": [
      "FL-821 S"
     ],
-    "delay_s": 304,
+    "delay_s": 207,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-08T23:30:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-A1A"
+    ],
+    "delay_s": 153,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-08T19:04:00Z"
+    "start": "2026-09-09T00:26:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-821 S"
     ],
-    "delay_s": 282,
+    "delay_s": 87,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-08T23:30:30Z"
+    "start": "2026-09-08T19:04:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-992"
+     "I-95 N"
     ],
-    "delay_s": 229,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-08T23:42:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 219,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T00:08:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 183,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T00:10:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 181,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-09T00:12:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-992"
-    ],
-    "delay_s": 175,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-09T00:05:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 144,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T00:13:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-992"
-    ],
-    "delay_s": 95,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T00:14:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 93,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T00:06:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-84"
-    ],
-    "delay_s": 57,
+    "delay_s": 81,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-09T00:08:30Z"
+    "start": "2026-09-09T00:20:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": 77,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-09T00:16:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-992"
+    ],
+    "delay_s": 47,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-09T00:14:00Z"
    },
    {
     "county": "Broward",
@@ -503,17 +462,59 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-09-04T08:47:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-25",
+     "US-27 N"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-05T00:54:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 S",
+     "FL-25"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-04T08:48:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-05-07T11:50:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-916"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-09-07T13:07:38Z"
    }
   ],
-  "incident_count": 277,
-  "named_count": 45,
+  "incident_count": 271,
+  "named_count": 41,
   "major_count": 8,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-08T20:16:08-04:00",
+  "fetched_at": "2026-09-08T20:31:35-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -557,7 +558,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-08T20:16:08-04:00",
+  "fetched_at": "2026-09-08T20:31:35-04:00",
   "issued": "800 PM EDT Tue Sep 8 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 082324\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Tue Sep 8 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Pasch"
@@ -565,7 +566,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-08T20:16:08-04:00",
+  "fetched_at": "2026-09-08T20:31:35-04:00",
   "florida": "$3.8958",
   "national": "$4.1514",
   "diesel": "$5.6750",
@@ -574,7 +575,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-08T20:16:10-04:00",
+  "fetched_at": "2026-09-08T20:31:37-04:00",
   "streams": {
    "local": [
     {
@@ -947,7 +948,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-08T20:16:10-04:00",
+  "fetched_at": "2026-09-08T20:31:37-04:00",
   "items": [],
   "scanned": 6,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -955,7 +956,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (380) + USGS (14)",
-  "fetched_at": "2026-09-08T20:16:15-04:00",
+  "fetched_at": "2026-09-08T20:31:40-04:00",
   "events": [
    {
     "lat": 28.0,
@@ -2424,7 +2425,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-08T20:16:15-04:00",
+  "fetched_at": "2026-09-08T20:31:40-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2567,8 +2568,6 @@
   "countries_matched": 8,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "alerts"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
