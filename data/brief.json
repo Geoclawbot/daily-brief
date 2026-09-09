@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-09T11:45:24-04:00",
- "generated_at_utc": "2026-09-09T15:45:24+00:00",
+ "generated_at": "2026-09-09T12:00:57-04:00",
+ "generated_at_utc": "2026-09-09T16:00:57+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 9",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-09T11:45:25-04:00",
+  "fetched_at": "2026-09-09T12:00:57-04:00",
   "curve": [
    {
     "time": "2026-09-09T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 84.9,
-   "feels": 95.6,
-   "humidity": 83,
-   "wind_mph": 10.9,
-   "wind_dir": 71,
-   "observed_at": "2026-09-09T11:45"
+   "temp": 84.5,
+   "feels": 95.2,
+   "humidity": 84,
+   "wind_mph": 8.6,
+   "wind_dir": 75,
+   "observed_at": "2026-09-09T12:00"
   },
   "today": {
    "high": 87.4,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-09T11:45:25-04:00",
+  "fetched_at": "2026-09-09T12:00:57-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-09T11:45:26-04:00",
+  "fetched_at": "2026-09-09T12:00:58-04:00",
   "aqi": 22,
   "category": "Good",
   "pollutant": "O3",
@@ -190,11 +190,73 @@
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-09-09T11:45:26-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-09-09T12:01:00-04:00",
+  "route_shown": true,
+  "leg": "Jackson Memorial → Home",
+  "direction": "return",
+  "depart_clock": "3:30 PM",
+  "depart_at": "2026-09-09T15:30:00-04:00",
+  "miles": 20.6,
+  "minutes": 63,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 22.6,
+    "minutes": 56,
+    "toll": true,
+    "saves": 7
+   },
+   {
+    "miles": 28.6,
+    "minutes": 61,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 25.5,
+    "minutes": 62,
+    "toll": true,
+    "saves": 1
+   },
+   {
+    "miles": 24.0,
+    "minutes": 62,
+    "toll": true,
+    "saves": 1
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 63,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 23.4,
+    "minutes": 71,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.1,
+    "minutes": 76,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.6,
+    "minutes": 72,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 63,
+   "delay_minutes": 0,
+   "saves": 0
+  },
   "incidents": [
    {
     "county": "Broward",
@@ -202,20 +264,21 @@
      "FL-91 N",
      "Florida's Tpke N"
     ],
-    "delay_s": 1134,
+    "delay_s": 1649,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-09T13:58:30Z"
+    "start": "2026-09-09T15:37:00Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-827"
+     "Florida's Tpke N",
+     "FL-821 N"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "delay_s": 1143,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-09T15:47:00Z"
    },
    {
     "county": "Broward",
@@ -226,6 +289,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:05:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -250,12 +323,52 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-823"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-09T15:50:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-823"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-09T15:53:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-959"
     ],
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-09-09T14:27:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-09T15:47:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-09T15:46:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -278,44 +391,45 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 828,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T15:37:00Z"
-   },
-   {
     "county": "Miami-Dade",
     "roads": [
      "US-1 N",
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 609,
+    "delay_s": 638,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-09T13:11:37Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-934"
+     "FL-91 N",
+     "Florida's Tpke N"
     ],
-    "delay_s": 569,
+    "delay_s": 495,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-09T15:29:00Z"
+    "start": "2026-09-09T13:58:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 420,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-09T15:36:33Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-823"
     ],
-    "delay_s": 544,
+    "delay_s": 384,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-09T15:35:00Z"
@@ -327,109 +441,37 @@
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 262,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 366,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-09-09T15:39:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S",
-     "US-41 N"
+     "FL-934"
     ],
-    "delay_s": 255,
+    "delay_s": 325,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-09T15:14:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 247,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T15:36:33Z"
+    "start": "2026-09-09T15:55:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 245,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-09T13:46:32Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-94"
-    ],
-    "delay_s": 236,
+    "delay_s": 280,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-09T14:35:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-736"
-    ],
-    "delay_s": 230,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-09-09T15:25:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 226,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T15:31:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-985"
-    ],
-    "delay_s": 194,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T15:18:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 190,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T15:25:02Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 186,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-09-09T15:24:00Z"
+    "start": "2026-09-09T15:29:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-948"
     ],
-    "delay_s": 175,
+    "delay_s": 260,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-09T14:56:00Z"
@@ -440,51 +482,30 @@
      "US-41 S",
      "US-41 N"
     ],
-    "delay_s": 173,
+    "delay_s": 232,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-09T15:41:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 E"
-    ],
-    "delay_s": 172,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-09T13:18:13Z"
+    "start": "2026-09-09T15:48:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 146,
+    "delay_s": 228,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-09T15:35:30Z"
+    "start": "2026-09-09T15:49:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "FL-5"
+     "I-95 N"
     ],
-    "delay_s": 145,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-09T15:43:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-838"
-    ],
-    "delay_s": 144,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-09T15:39:30Z"
+    "delay_s": 221,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-09T14:36:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -492,31 +513,71 @@
      "US-41 S",
      "US-41 N"
     ],
-    "delay_s": 139,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-09T15:43:04Z"
+    "delay_s": 202,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-09T15:14:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-736"
+    ],
+    "delay_s": 188,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-09-09T15:25:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 N"
+     "FL-934"
     ],
-    "delay_s": 134,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-09T14:36:30Z"
+    "delay_s": 186,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-09T13:46:32Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-823"
+    ],
+    "delay_s": 181,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-09T15:52:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-968"
+    ],
+    "delay_s": 178,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-09T15:50:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 174,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-09T15:25:02Z"
    }
   ],
-  "incident_count": 339,
+  "incident_count": 354,
   "named_count": 79,
-  "major_count": 10,
+  "major_count": 14,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-09T11:45:27-04:00",
+  "fetched_at": "2026-09-09T12:01:01-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -569,7 +630,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-09T11:45:28-04:00",
+  "fetched_at": "2026-09-09T12:01:02-04:00",
   "issued": "800 AM EDT Wed Sep 9 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 091114\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Wed Sep 9 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Cangialosi"
@@ -577,7 +638,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-09T11:45:28-04:00",
+  "fetched_at": "2026-09-09T12:01:02-04:00",
   "florida": "$4.0771",
   "national": "$4.2245",
   "diesel": "$5.8108",
@@ -586,7 +647,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-09T11:45:29-04:00",
+  "fetched_at": "2026-09-09T12:01:03-04:00",
   "streams": {
    "local": [
     {
@@ -695,6 +756,14 @@
   ],
   "local": [
    {
+    "title": "Ohio woman dies after cosmetic surgery while recovering at Miami-Dade assisted living facility",
+    "url": "https://www.local10.com/news/local/2026/09/08/ohio-woman-dies-after-cosmetic-surgery-while-recovering-at-miami-dade-assisted-living-facility/",
+    "published": "Wed, 09 Sep 2026 03:19:25 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "St. Thomas University president resigns after being placed on leave during policy investigation",
     "url": "https://www.local10.com/news/local/2026/09/09/st-thomas-university-president-resigns-after-being-placed-on-leave-during-policy-investigation/",
     "published": "Wed, 09 Sep 2026 14:35:07 +0000",
@@ -706,14 +775,6 @@
     "title": "NTSB provides latest updates on investigation into MIA cargo plane crash",
     "url": "https://www.local10.com/news/local/2026/09/08/ntsb-provides-latest-updates-on-investigation-into-mia-cargo-plane-crash/",
     "published": "Tue, 08 Sep 2026 23:54:15 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Ohio woman dies after cosmetic surgery while recovering at Miami-Dade assisted living facility",
-    "url": "https://www.local10.com/news/local/2026/09/08/ohio-woman-dies-after-cosmetic-surgery-while-recovering-at-miami-dade-assisted-living-facility/",
-    "published": "Wed, 09 Sep 2026 03:19:25 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -825,6 +886,14 @@
   ],
   "colombia": [
    {
+    "title": "Concejal de Villa de Leyva se queda sin curul: su propio padre se dio a la tarea de demostrarle al Consejo de Estado por qué estaba inhabilitado",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/concejal-de-villa-de-leyva-se-queda-sin-curul-su-propio-padre-se-dio-a-la-tarea-de-demostrarle-al-consejo-de-estado-por-que-estaba-inhabilitado-3584742",
+    "published": "2026-09-09T10:42:01-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/09/6aa179219c6e9.r_d.642-377-1.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Indignación en Risaralda: hombre que abusó y causó la muerte de su propio hijo de apenas tres meses en Dosquebradas fue capturado",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/indignacion-en-risaralda-hombre-que-abuso-y-causo-la-muerte-de-su-propio-hijo-de-apenas-tres-meses-en-dosquebradas-fue-capturado-3584737",
     "published": "2026-09-09T10:29:19-05:00",
@@ -849,9 +918,9 @@
     "media_type": "image"
    },
    {
-    "title": "Atención: Metro de Medellín rehabilitó su operación comercial en todas las estaciones tras reparar vehículo auxiliar varado en las vías férreas",
+    "title": "Atención: Metro de Medellín restableció su operación comercial en todas las estaciones tras reparar vehículo auxiliar varado en las vías férreas",
     "url": "https://www.eltiempo.com/colombia/medellin/atencion-metro-de-medellin-rehabilito-su-operacion-comercial-en-todas-las-estaciones-tras-reparar-vehiculo-auxiliar-varado-en-las-vias-ferreas-3584738",
-    "published": "2026-09-09T10:23:58-05:00",
+    "published": "2026-09-09T10:37:14-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/09/6aa1774ef387b.r_d.1184-671-0.png",
     "media_type": "image"
@@ -878,14 +947,6 @@
     "published": "2026-09-09T09:57:28-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/09/6aa17262aa6a0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Ataque a la autonomía indígena: hombres armados irrumpen en centro de armonización de Toribío y liberan a tres detenidos",
-    "url": "https://www.eltiempo.com/colombia/cali/ataque-a-la-autonomia-indigena-hombres-armados-irrumpen-en-centro-de-armonizacion-de-toribio-y-liberan-a-tres-detenidos-3584722",
-    "published": "2026-09-09T09:52:18-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/09/6aa170bab2977.jpeg",
     "media_type": "image"
    }
   ],
@@ -959,7 +1020,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-09T11:45:29-04:00",
+  "fetched_at": "2026-09-09T12:01:03-04:00",
   "items": [],
   "scanned": 6,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -967,7 +1028,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (386) + USGS (9)",
-  "fetched_at": "2026-09-09T11:45:32-04:00",
+  "fetched_at": "2026-09-09T12:01:06-04:00",
   "events": [
    {
     "lat": 28.0,
@@ -1687,15 +1748,15 @@
     "source": "GDACS"
    },
    {
-    "lat": -15.882785842696839,
-    "lon": 130.58146480737418,
+    "lat": -2.985269633140196,
+    "lon": 111.06878685500364,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 19440 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031772",
-    "when": "Mon, 07 Sep 2026 15:05:33 GMT",
+    "title": "Green forest fire notification in Indonesia",
+    "place": "Indonesia",
+    "severity": "Green impact for forestfire in 10656 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031724",
+    "when": "Sun, 06 Sep 2026 03:03:31 GMT",
     "source": "GDACS"
    },
    {
@@ -1708,18 +1769,6 @@
     "severity": "Green impact for forestfire in 15950 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031684",
     "when": "Sat, 05 Sep 2026 15:02:36 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -2.985269633140196,
-    "lon": 111.06878685500364,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Indonesia",
-    "place": "Indonesia",
-    "severity": "Green impact for forestfire in 10656 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031724",
-    "when": "Sun, 06 Sep 2026 03:03:31 GMT",
     "source": "GDACS"
    },
    {
@@ -1756,6 +1805,18 @@
     "severity": "Green impact for forestfire in 5417 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031824",
     "when": "Tue, 08 Sep 2026 19:13:29 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -15.882785842696839,
+    "lon": 130.58146480737418,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 19440 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031772",
+    "when": "Mon, 07 Sep 2026 15:05:33 GMT",
     "source": "GDACS"
    },
    {
@@ -1891,18 +1952,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -18.1660206486489,
-    "lon": 138.10315133126693,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 19164 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031728",
-    "when": "Sun, 06 Sep 2026 11:01:16 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -16.01838529542994,
     "lon": 136.00220208842728,
     "kind": "wildfire",
@@ -1912,6 +1961,18 @@
     "severity": "Green impact for forestfire in 8861 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031679",
     "when": "Sat, 05 Sep 2026 19:04:54 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -18.1660206486489,
+    "lon": 138.10315133126693,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 19164 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031728",
+    "when": "Sun, 06 Sep 2026 11:01:16 GMT",
     "source": "GDACS"
    },
    {
@@ -2227,18 +2288,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -30.25600156998129,
-    "lon": 152.33537617178268,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 11927 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031579",
-    "when": "Fri, 04 Sep 2026 09:03:48 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -2.93048549859348,
     "lon": 105.26753813369646,
     "kind": "wildfire",
@@ -2248,6 +2297,18 @@
     "severity": "Green impact for forestfire in 8068 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031701",
     "when": "Sun, 06 Sep 2026 07:08:10 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -30.25600156998129,
+    "lon": 152.33537617178268,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 11927 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031579",
+    "when": "Fri, 04 Sep 2026 09:03:48 GMT",
     "source": "GDACS"
    },
    {
@@ -2431,16 +2492,16 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-09T11:45:32-04:00",
+  "fetched_at": "2026-09-09T12:01:06-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
      {
-      "title": "Atención: Metro de Medellín rehabilitó su operación comercial en todas las estaciones tras reparar vehículo auxiliar varado en las vías férreas",
+      "title": "Atención: Metro de Medellín restableció su operación comercial en todas las estaciones tras reparar vehículo auxiliar varado en las vías férreas",
       "url": "https://www.eltiempo.com/colombia/medellin/atencion-metro-de-medellin-rehabilito-su-operacion-comercial-en-todas-las-estaciones-tras-reparar-vehiculo-auxiliar-varado-en-las-vias-ferreas-3584738",
-      "published": "2026-09-09T10:23:58-05:00",
+      "published": "2026-09-09T10:37:14-05:00",
       "section": "colombia"
      },
      {
@@ -2451,7 +2512,7 @@
      }
     ],
     "count": 2,
-    "issue": "Atención: Metro de Medellín rehabilitó su operación comercial en todas las estaciones tras reparar vehículo auxiliar varado en las vías férreas"
+    "issue": "Atención: Metro de Medellín restableció su operación comercial en todas las estaciones tras reparar vehículo auxiliar varado en las vías férreas"
    },
    {
     "iso": "IRN",
