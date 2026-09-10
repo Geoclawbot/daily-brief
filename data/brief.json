@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-10T04:01:14-04:00",
- "generated_at_utc": "2026-09-10T08:01:14+00:00",
+ "generated_at": "2026-09-10T04:16:07-04:00",
+ "generated_at_utc": "2026-09-10T08:16:07+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, September 10",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-10T04:01:14-04:00",
+  "fetched_at": "2026-09-10T04:16:08-04:00",
   "curve": [
    {
     "time": "2026-09-10T05:00",
@@ -117,7 +117,7 @@
     "time": "2026-09-10T18:00",
     "hour": 18,
     "temp": 76.5,
-    "feels": 83.1,
+    "feels": 82.9,
     "humidity": 95,
     "pop": 28
    },
@@ -125,7 +125,7 @@
     "time": "2026-09-10T19:00",
     "hour": 19,
     "temp": 76.9,
-    "feels": 85.3,
+    "feels": 84.6,
     "humidity": 93,
     "pop": 11
    },
@@ -133,7 +133,7 @@
     "time": "2026-09-10T20:00",
     "hour": 20,
     "temp": 78.0,
-    "feels": 89.0,
+    "feels": 88.7,
     "humidity": 94,
     "pop": 10
    },
@@ -141,18 +141,18 @@
     "time": "2026-09-10T21:00",
     "hour": 21,
     "temp": 78.3,
-    "feels": 89.5,
+    "feels": 90.1,
     "humidity": 95,
     "pop": 17
    }
   ],
   "current": {
-   "temp": 81.8,
-   "feels": 94.1,
+   "temp": 81.7,
+   "feels": 93.8,
    "humidity": 90,
-   "wind_mph": 2.2,
+   "wind_mph": 2.5,
    "wind_dir": 45,
-   "observed_at": "2026-09-10T04:00"
+   "observed_at": "2026-09-10T04:15"
   },
   "today": {
    "high": 88.0,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-10T04:01:15-04:00",
+  "fetched_at": "2026-09-10T04:16:08-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-10T04:01:17-04:00",
+  "fetched_at": "2026-09-10T04:16:09-04:00",
   "aqi": 43,
   "category": "Good",
   "pm25": 6.2,
@@ -185,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-10T04:01:18-04:00",
+  "fetched_at": "2026-09-10T04:16:11-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
@@ -197,7 +197,13 @@
   "toll_free": true,
   "alternates": [
    {
-    "miles": 24.6,
+    "miles": 27.1,
+    "minutes": 37,
+    "toll": true,
+    "saves": 3
+   },
+   {
+    "miles": 24.7,
     "minutes": 37,
     "toll": true,
     "saves": 3
@@ -209,16 +215,10 @@
     "saves": 2
    },
    {
-    "miles": 27.2,
-    "minutes": 42,
+    "miles": 23.9,
+    "minutes": 38,
     "toll": true,
-    "saves": -2
-   },
-   {
-    "miles": 21.9,
-    "minutes": 40,
-    "toll": true,
-    "saves": 0
+    "saves": 2
    }
   ],
   "alternates_worth_taking": [],
@@ -366,6 +366,16 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "I-95 S"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-09-10T03:04:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-826 W"
     ],
     "delay_s": null,
@@ -405,16 +415,6 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-09-10T02:15:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-09-10T03:04:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -483,6 +483,16 @@
     "magnitude": 4,
     "description": "Tunnel closed",
     "start": "2026-09-10T03:48:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 E"
+    ],
+    "delay_s": 41,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-10T08:14:00Z"
    },
    {
     "county": "Broward",
@@ -557,28 +567,17 @@
     "magnitude": 0,
     "description": "Lane closed; Roadworks",
     "start": "2026-09-07T13:07:38Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-07T13:07:38Z"
    }
   ],
-  "incident_count": 304,
-  "named_count": 46,
+  "incident_count": 305,
+  "named_count": 48,
   "major_count": 22,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-10T04:01:19-04:00",
+  "fetched_at": "2026-09-10T04:16:12-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -625,7 +624,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-10T04:01:19-04:00",
+  "fetched_at": "2026-09-10T04:16:12-04:00",
   "issued": "200 AM EDT Thu Sep 10 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 100508\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Thu Sep 10 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Katz/Reinhart"
@@ -633,16 +632,16 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-10T04:01:19-04:00",
-  "florida": "$4.0771",
-  "national": "$4.2245",
-  "diesel": "$5.8108",
-  "as_of": "9/9/26"
+  "fetched_at": "2026-09-10T04:16:12-04:00",
+  "florida": "$4.1490",
+  "national": "$4.2770",
+  "diesel": "$5.8589",
+  "as_of": "9/10/26"
  },
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-10T04:01:20-04:00",
+  "fetched_at": "2026-09-10T04:16:14-04:00",
   "streams": {
    "local": [
     {
@@ -1015,7 +1014,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-10T04:01:21-04:00",
+  "fetched_at": "2026-09-10T04:16:14-04:00",
   "items": [],
   "scanned": 11,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1023,7 +1022,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (352) + USGS (11)",
-  "fetched_at": "2026-09-10T04:01:25-04:00",
+  "fetched_at": "2026-09-10T04:16:18-04:00",
   "events": [
    {
     "lat": 28.0,
@@ -2489,7 +2488,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-10T04:01:25-04:00",
+  "fetched_at": "2026-09-10T04:16:18-04:00",
   "countries": [
    {
     "iso": "COL",
