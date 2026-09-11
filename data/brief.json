@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-10T21:15:35-04:00",
- "generated_at_utc": "2026-09-11T01:15:35+00:00",
+ "generated_at": "2026-09-10T21:30:40-04:00",
+ "generated_at_utc": "2026-09-11T01:30:40+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, September 10",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-10T21:15:36-04:00",
+  "fetched_at": "2026-09-10T21:30:40-04:00",
   "curve": [
    {
     "time": "2026-09-10T05:00",
@@ -132,8 +132,8 @@
    {
     "time": "2026-09-10T20:00",
     "hour": 20,
-    "temp": 80.8,
-    "feels": 91.3,
+    "temp": 81.2,
+    "feels": 91.7,
     "humidity": 89,
     "pop": 6
    },
@@ -141,18 +141,18 @@
     "time": "2026-09-10T21:00",
     "hour": 21,
     "temp": 80.3,
-    "feels": 92.4,
+    "feels": 90.6,
     "humidity": 92,
     "pop": 9
    }
   ],
   "current": {
    "temp": 80.3,
-   "feels": 91.9,
+   "feels": 91.4,
    "humidity": 92,
-   "wind_mph": 2.2,
-   "wind_dir": 354,
-   "observed_at": "2026-09-10T21:15"
+   "wind_mph": 3.5,
+   "wind_dir": 15,
+   "observed_at": "2026-09-10T21:30"
   },
   "today": {
    "high": 89.3,
@@ -166,76 +166,30 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-10T21:15:36-04:00",
+  "fetched_at": "2026-09-10T21:30:40-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-10T21:15:37-04:00",
-  "aqi": 22,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-10T21:31:06-04:00",
+  "aqi": 45,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-10 20:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-11",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-11",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-12",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-12",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-13",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-13",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 14.3,
+  "pm10": 17.2,
+  "observed": "2026-09-10T21:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-10T21:15:37-04:00",
+  "fetched_at": "2026-09-10T21:31:06-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-01-12T19:06:35Z"
-   },
    {
     "county": "Broward",
     "roads": [
@@ -253,8 +207,8 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "description": "Closed",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -265,6 +219,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -325,8 +289,8 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-11T00:56:00Z"
+    "description": "Closed; Roadworks",
+    "start": "2026-09-11T00:50:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -337,18 +301,8 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-09-11T00:50:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 467,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-11T01:07:00Z"
+    "description": "Closed",
+    "start": "2026-09-11T00:56:00Z"
    },
    {
     "county": "Broward",
@@ -356,18 +310,7 @@
      "FL-91 N",
      "Florida's Tpke N"
     ],
-    "delay_s": 382,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-10T22:24:18Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 310,
+    "delay_s": 419,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-11T00:03:30Z"
@@ -375,9 +318,29 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 262,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-11T01:07:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 251,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-11T01:18:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-836 E"
     ],
-    "delay_s": 211,
+    "delay_s": 158,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-11T01:02:00Z"
@@ -387,40 +350,20 @@
     "roads": [
      "FL-836 W"
     ],
-    "delay_s": 143,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 99,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-09-11T01:03:00Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-84"
+     "FL-816"
     ],
-    "delay_s": 70,
+    "delay_s": 67,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-11T01:12:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-9"
-    ],
-    "delay_s": 56,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-11T00:46:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-817"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-09-10T21:21:41Z"
+    "start": "2026-09-11T01:26:00Z"
    },
    {
     "county": "Broward",
@@ -538,17 +481,37 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-05-07T11:50:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-916"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-09-07T13:07:38Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-916"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-09-07T13:07:38Z"
    }
   ],
-  "incident_count": 266,
-  "named_count": 46,
+  "incident_count": 260,
+  "named_count": 44,
   "major_count": 11,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-10T21:15:38-04:00",
+  "fetched_at": "2026-09-10T21:31:07-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -596,7 +559,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-10T21:15:38-04:00",
+  "fetched_at": "2026-09-10T21:31:07-04:00",
   "issued": "800 PM EDT Thu Sep 10 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 102314\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Thu Sep 10 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Blake"
@@ -604,7 +567,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-10T21:15:38-04:00",
+  "fetched_at": "2026-09-10T21:31:07-04:00",
   "florida": "$4.1490",
   "national": "$4.2770",
   "diesel": "$5.8589",
@@ -613,7 +576,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-10T21:15:40-04:00",
+  "fetched_at": "2026-09-10T21:31:08-04:00",
   "streams": {
    "local": [
     {
@@ -852,6 +815,14 @@
   ],
   "colombia": [
    {
+    "title": "El caso de Miguel Quintero entra en etapa decisiva; la Fiscalía solicitará medida de aseguramiento: esta es la fecha de la nueva audiencia",
+    "url": "https://www.eltiempo.com/colombia/medellin/el-caso-de-miguel-quintero-entra-en-etapa-decisiva-la-fiscalia-solicitara-medida-de-aseguramiento-esta-es-la-fecha-de-la-nueva-audiencia-3585228",
+    "published": "2026-09-10T20:06:30-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/10/6aa3070ac64e6.r_d.240-180-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Un respiro para las víctimas del terremoto en Cali: avanza en el Concejo proyecto que busca exonerarlas de impuestos a predios e industrias",
     "url": "https://www.eltiempo.com/colombia/cali/un-respiro-para-las-victimas-del-terremoto-en-cali-avanza-en-el-concejo-proyecto-que-busca-exonerarlas-de-impuestos-a-predios-e-industrias-3585211",
     "published": "2026-09-10T19:07:16-05:00",
@@ -905,14 +876,6 @@
     "published": "2026-09-10T17:34:05-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/10/6aa32fd3179b5.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Video | Hombre sacó un arma de fuego y lanzó amenazas en medio de discusión tras accidente de tránsito en Piedecuesta, Santander; lo inmovilizaron",
-    "url": "https://www.eltiempo.com/colombia/santander/video-hombre-saco-un-arma-de-fuego-y-lanzo-amenazas-en-medio-de-discusion-tras-accidente-de-transito-en-piedecuesta-santander-lo-inmovilizaron-3585086",
-    "published": "2026-09-10T17:23:46-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/10/6aa2ea5d5215f.r_d.164-301-0.png",
     "media_type": "image"
    }
   ],
@@ -986,7 +949,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-10T21:15:41-04:00",
+  "fetched_at": "2026-09-10T21:31:09-04:00",
   "items": [],
   "scanned": 8,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -994,7 +957,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (324) + USGS (9)",
-  "fetched_at": "2026-09-10T21:15:44-04:00",
+  "fetched_at": "2026-09-10T21:31:11-04:00",
   "events": [
    {
     "lat": 28.0,
@@ -2458,7 +2421,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-10T21:15:44-04:00",
+  "fetched_at": "2026-09-10T21:31:11-04:00",
   "countries": [
    {
     "iso": "COL",
