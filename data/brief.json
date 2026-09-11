@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-11T01:45:37-04:00",
- "generated_at_utc": "2026-09-11T05:45:37+00:00",
+ "generated_at": "2026-09-11T02:01:02-04:00",
+ "generated_at_utc": "2026-09-11T06:01:02+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 11",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-11T01:45:38-04:00",
+  "fetched_at": "2026-09-11T02:01:02-04:00",
   "curve": [
    {
     "time": "2026-09-11T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 79.1,
+   "temp": 79.0,
    "feels": 89.1,
    "humidity": 90,
-   "wind_mph": 3.4,
-   "wind_dir": 11,
-   "observed_at": "2026-09-11T01:45"
+   "wind_mph": 2.9,
+   "wind_dir": 9,
+   "observed_at": "2026-09-11T02:00"
   },
   "today": {
    "high": 89.0,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-11T01:45:38-04:00",
+  "fetched_at": "2026-09-11T02:01:02-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-11T01:45:39-04:00",
+  "fetched_at": "2026-09-11T02:01:20-04:00",
   "aqi": 38,
   "category": "Good",
   "pollutant": "PM2.5",
@@ -221,11 +221,21 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-11T01:45:39-04:00",
+  "fetched_at": "2026-09-11T02:01:20-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-01-12T19:06:35Z"
+   },
    {
     "county": "Broward",
     "roads": [
@@ -243,28 +253,18 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-01-12T19:06:35Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:05:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -417,6 +417,16 @@
    {
     "county": "Broward",
     "roads": [
+     "I-595 E"
+    ],
+    "delay_s": 44,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-11T05:54:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
      "FL-91 N",
      "Florida's Tpke N"
     ],
@@ -531,19 +541,9 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-09-04T08:48:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-972"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-05-07T11:50:15Z"
    }
   ],
-  "incident_count": 289,
+  "incident_count": 290,
   "named_count": 48,
   "major_count": 18,
   "coverage": "Miami-Dade + Broward"
@@ -551,7 +551,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-11T01:45:40-04:00",
+  "fetched_at": "2026-09-11T02:01:22-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -600,15 +600,15 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-11T01:45:40-04:00",
+  "fetched_at": "2026-09-11T02:01:22-04:00",
   "issued": "200 AM EDT Fri Sep 11 2026",
   "areas": [],
-  "raw": "en Español\n\n291 \nABNT20 KNHC 110514\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Fri Sep 11 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Adams"
+  "raw": "en Español\n\n000\nABNT20 KNHC 110553\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Fri Sep 11 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Adams"
  },
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-11T01:45:40-04:00",
+  "fetched_at": "2026-09-11T02:01:22-04:00",
   "florida": "$4.1490",
   "national": "$4.2770",
   "diesel": "$5.8589",
@@ -617,7 +617,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-11T01:45:41-04:00",
+  "fetched_at": "2026-09-11T02:01:24-04:00",
   "streams": {
    "local": [
     {
@@ -922,6 +922,14 @@
   ],
   "world": [
    {
+    "title": "Iran-backed Houthi rebels seize strategic Red Sea port in Yemen",
+    "url": "https://www.npr.org/2026/09/11/g-s1-142822/houthis-red-sea-port",
+    "published": "Fri, 11 Sep 2026 01:40:21 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Scientists say August was Earth's hottest month they've measured",
     "url": "https://www.npr.org/2026/09/10/nx-s1-5964676/scientists-august-hottest",
     "published": "Thu, 10 Sep 2026 04:54:00 -0400",
@@ -976,21 +984,13 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "Iceland summons U.S. ambassador after Trump posts countries draped with American flag",
-    "url": "https://www.npr.org/2026/09/09/nx-s1-5961412/iceland-summons-u-s-ambassador-after-trump-posts-countries-draped-with-american-flag",
-    "published": "Wed, 09 Sep 2026 04:44:40 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-11T01:45:42-04:00",
+  "fetched_at": "2026-09-11T02:01:24-04:00",
   "items": [],
   "scanned": 7,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -998,7 +998,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (326) + USGS (10)",
-  "fetched_at": "2026-09-11T01:45:45-04:00",
+  "fetched_at": "2026-09-11T02:01:27-04:00",
   "events": [
    {
     "lat": 28.0,
@@ -2463,7 +2463,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-11T01:45:45-04:00",
+  "fetched_at": "2026-09-11T02:01:27-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2486,6 +2486,26 @@
     "issue": "Un respiro para las víctimas del terremoto en Cali: avanza en el Concejo proyecto que busca exonerarlas de impuestos a predios e industrias"
    },
    {
+    "iso": "IRN",
+    "name": "Iran",
+    "stories": [
+     {
+      "title": "Iran-backed Houthi rebels seize strategic Red Sea port in Yemen",
+      "url": "https://www.npr.org/2026/09/11/g-s1-142822/houthis-red-sea-port",
+      "published": "Fri, 11 Sep 2026 01:40:21 -0400",
+      "section": "world"
+     },
+     {
+      "title": "U.S. military destroys 5 Iranian oil tankers. And, the Smithsonian head resigns",
+      "url": "https://www.npr.org/2026/09/09/g-s1-142496/up-first-newsletter-iran-us-uk-israel-palestine-lonnie-bunch-smithsonian",
+      "published": "Wed, 09 Sep 2026 07:12:27 -0400",
+      "section": "world"
+     }
+    ],
+    "count": 2,
+    "issue": "Iran-backed Houthi rebels seize strategic Red Sea port in Yemen"
+   },
+   {
     "iso": "FRA",
     "name": "France",
     "stories": [
@@ -2498,20 +2518,6 @@
     ],
     "count": 1,
     "issue": "Greetings from Paris, where the 2024 Olympics balloon rises again"
-   },
-   {
-    "iso": "IRN",
-    "name": "Iran",
-    "stories": [
-     {
-      "title": "U.S. military destroys 5 Iranian oil tankers. And, the Smithsonian head resigns",
-      "url": "https://www.npr.org/2026/09/09/g-s1-142496/up-first-newsletter-iran-us-uk-israel-palestine-lonnie-bunch-smithsonian",
-      "published": "Wed, 09 Sep 2026 07:12:27 -0400",
-      "section": "world"
-     }
-    ],
-    "count": 1,
-    "issue": "U.S. military destroys 5 Iranian oil tankers. And, the Smithsonian head resigns"
    },
    {
     "iso": "ISR",
@@ -2542,18 +2548,18 @@
     "issue": "After 900 years, the Bayeux Tapestry returns to England and goes on display in London"
    },
    {
-    "iso": "USA",
-    "name": "United States",
+    "iso": "YEM",
+    "name": "Yemen",
     "stories": [
      {
-      "title": "Iceland summons U.S. ambassador after Trump posts countries draped with American flag",
-      "url": "https://www.npr.org/2026/09/09/nx-s1-5961412/iceland-summons-u-s-ambassador-after-trump-posts-countries-draped-with-american-flag",
-      "published": "Wed, 09 Sep 2026 04:44:40 -0400",
+      "title": "Iran-backed Houthi rebels seize strategic Red Sea port in Yemen",
+      "url": "https://www.npr.org/2026/09/11/g-s1-142822/houthis-red-sea-port",
+      "published": "Fri, 11 Sep 2026 01:40:21 -0400",
       "section": "world"
      }
     ],
     "count": 1,
-    "issue": "Iceland summons U.S. ambassador after Trump posts countries draped with American flag"
+    "issue": "Iran-backed Houthi rebels seize strategic Red Sea port in Yemen"
    }
   ],
   "headlines_scanned": 32,
