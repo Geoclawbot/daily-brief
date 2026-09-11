@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-10T22:45:32-04:00",
- "generated_at_utc": "2026-09-11T02:45:32+00:00",
+ "generated_at": "2026-09-10T23:00:41-04:00",
+ "generated_at_utc": "2026-09-11T03:00:41+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, September 10",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-10T22:45:32-04:00",
+  "fetched_at": "2026-09-10T23:00:41-04:00",
   "curve": [
    {
     "time": "2026-09-10T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 79.8,
-   "feels": 90.3,
+   "temp": 79.4,
+   "feels": 89.4,
    "humidity": 91,
-   "wind_mph": 3.9,
-   "wind_dir": 10,
-   "observed_at": "2026-09-10T22:45"
+   "wind_mph": 4.1,
+   "wind_dir": 13,
+   "observed_at": "2026-09-10T23:00"
   },
   "today": {
    "high": 89.3,
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-10T22:45:33-04:00",
+  "fetched_at": "2026-09-10T23:00:42-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-10T22:45:34-04:00",
-  "aqi": 45,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-10T23:01:08-04:00",
+  "aqi": 47,
   "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-10 21:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-11",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-11",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-12",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-12",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-13",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-13",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 17.6,
+  "pm10": 20.6,
+  "observed": "2026-09-10T23:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-10T22:45:34-04:00",
+  "fetched_at": "2026-09-10T23:01:08-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -234,7 +198,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-09-10T12:58:15Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -244,7 +208,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-09-10T12:58:15Z"
    },
    {
     "county": "Broward",
@@ -373,14 +337,24 @@
     "start": "2026-09-11T00:56:00Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "FL-887 S"
     ],
-    "delay_s": 407,
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-11T02:55:02Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 470,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-11T02:33:00Z"
+    "start": "2026-09-11T02:11:00Z"
    },
    {
     "county": "Broward",
@@ -388,7 +362,7 @@
      "FL-91 N",
      "Florida's Tpke N"
     ],
-    "delay_s": 376,
+    "delay_s": 444,
     "magnitude": 3,
     "description": "Stationary traffic; Lane closed",
     "start": "2026-09-11T00:03:30Z"
@@ -396,52 +370,11 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 E"
+     "FL-854"
     ],
-    "delay_s": 293,
+    "delay_s": 401,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-11T01:02:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-817"
-    ],
-    "delay_s": 277,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-11T02:15:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 274,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-11T02:11:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 164,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-11T01:56:03Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 142,
-    "magnitude": 2,
-    "description": "Queuing traffic",
     "start": "2026-09-11T01:53:30Z"
    },
    {
@@ -449,10 +382,90 @@
     "roads": [
      "FL-836 W"
     ],
-    "delay_s": 80,
+    "delay_s": 175,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-11T02:51:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 E"
+    ],
+    "delay_s": 169,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-11T01:02:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 160,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-11T02:33:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 157,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-11T02:58:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-817"
+    ],
+    "delay_s": 150,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-11T02:15:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 68,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-11T01:03:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-112 E"
+    ],
+    "delay_s": 64,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-11T02:57:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-992"
+    ],
+    "delay_s": 63,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-11T02:47:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-112 W"
+    ],
+    "delay_s": 63,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-11T02:55:30Z"
    },
    {
     "county": "Broward",
@@ -485,70 +498,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-07-29T01:44:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-838"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-10T03:16:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-08-27T17:50:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-09-08T03:00:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-09-07T13:07:38Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-07T13:07:38Z"
    }
   ],
-  "incident_count": 289,
-  "named_count": 51,
-  "major_count": 14,
+  "incident_count": 297,
+  "named_count": 56,
+  "major_count": 15,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-10T22:45:35-04:00",
+  "fetched_at": "2026-09-10T23:01:09-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -596,7 +556,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-10T22:45:35-04:00",
+  "fetched_at": "2026-09-10T23:01:09-04:00",
   "issued": "800 PM EDT Thu Sep 10 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 102314\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Thu Sep 10 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Blake"
@@ -604,7 +564,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-10T22:45:35-04:00",
+  "fetched_at": "2026-09-10T23:01:09-04:00",
   "florida": "$4.1490",
   "national": "$4.2770",
   "diesel": "$5.8589",
@@ -613,7 +573,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-10T22:45:37-04:00",
+  "fetched_at": "2026-09-10T23:01:11-04:00",
   "streams": {
    "local": [
     {
@@ -726,8 +686,8 @@
     "url": "https://www.local10.com/news/local/2026/09/10/2-men-busted-in-alleged-hoa-kickback-scheme-authorities-say/",
     "published": "Thu, 10 Sep 2026 22:37:29 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/5PWHTRO6CJBMPCLDSYYEQNCCV4.jpg?auth=c40b5b266dd3aaa2d581e06b2d704b6b4d3b8170105703c9b03db0a99a4399fb&smart=true&width=1200&height=900",
-    "media_type": "image"
+    "media": null,
+    "media_type": null
    },
    {
     "title": "Flight instructor says cargo plane co-pilot was good student, ‘very safety-conscious’",
@@ -852,6 +812,14 @@
   ],
   "colombia": [
    {
+    "title": "'El Valle lo reconstruimos juntos': la apuesta del departamento para levantarse tras un mes del terremoto",
+    "url": "https://www.eltiempo.com/colombia/cali/el-valle-lo-reconstruimos-juntos-la-apuesta-del-departamento-para-levantarse-tras-un-mes-del-terremoto-3585237",
+    "published": "2026-09-10T21:40:42-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/08/6aa0c3330682d.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "El caso de Miguel Quintero entra en etapa decisiva; la Fiscalía solicitará medida de aseguramiento: esta es la fecha de la nueva audiencia",
     "url": "https://www.eltiempo.com/colombia/medellin/el-caso-de-miguel-quintero-entra-en-etapa-decisiva-la-fiscalia-solicitara-medida-de-aseguramiento-esta-es-la-fecha-de-la-nueva-audiencia-3585228",
     "published": "2026-09-10T20:06:30-05:00",
@@ -878,7 +846,7 @@
    {
     "title": "Video | Reapareció Ana María Saavedra, única trilliza que sobrevivió al terremoto de 7,4 en el que murieron sus padres y hermanas: homenaje que hizo",
     "url": "https://www.eltiempo.com/colombia/cali/video-reaparecio-ana-maria-saavedra-unica-trilliza-que-sobrevivio-al-terremoto-de-7-4-que-mato-a-su-familia-y-a-sus-hermanas-el-homenaje-que-hizo-3585212",
-    "published": "2026-09-10T18:40:15-05:00",
+    "published": "2026-09-10T21:40:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/10/6aa33fae58d17.r_d.965-98-0.png",
     "media_type": "image"
@@ -905,14 +873,6 @@
     "published": "2026-09-10T18:05:28-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/10/6aa3377c79a3a.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Investigan desaparición de ambulancia con su conductor en Tibú, Norte de Santander: hombres armados se la llevaron y retuvieron al personal",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/investigan-desaparicion-de-ambulancia-con-su-conductor-en-tibu-norte-de-santander-hombres-armados-se-la-llevaron-y-retuvieron-al-personal-3585193",
-    "published": "2026-09-10T17:34:05-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/10/6aa32fd3179b5.png",
     "media_type": "image"
    }
   ],
@@ -986,15 +946,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-10T22:45:38-04:00",
+  "fetched_at": "2026-09-10T23:01:11-04:00",
   "items": [],
   "scanned": 8,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (324) + USGS (9)",
-  "fetched_at": "2026-09-10T22:45:41-04:00",
+  "source": "GDACS (324) + USGS (10)",
+  "fetched_at": "2026-09-10T23:01:15-04:00",
   "events": [
    {
     "lat": 28.0,
@@ -1110,6 +1070,19 @@
     "source": "USGS"
    },
    {
+    "lat": -18.9259,
+    "lon": 169.3953,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.9 — 69 km N of Isangel, Vanuatu",
+    "place": "69 km N of Isangel, Vanuatu",
+    "severity": "M4.9",
+    "mag": 4.9,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgij",
+    "when": 1789093693071,
+    "source": "USGS"
+   },
+   {
     "lat": -13.3249,
     "lon": 167.3321,
     "kind": "earthquake",
@@ -1178,7 +1151,7 @@
     "lon": 18.811092037739215,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Namibia",
+    "title": "Green forest fire notification in Angola",
     "place": "Angola",
     "severity": "Green impact for forestfire in 6187 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031879",
@@ -1226,7 +1199,7 @@
     "lon": 35.52357099613919,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Australia",
+    "title": "Green forest fire notification in Türkiye",
     "place": "Türkiye",
     "severity": "Green impact for forestfire in 7842 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031851",
@@ -2432,25 +2405,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031440",
     "when": "Tue, 01 Sep 2026 19:00:56 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -15.120369267474013,
-    "lon": 38.866762269123264,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Mozambique",
-    "place": "Mozambique",
-    "severity": "Green impact for forestfire in 11024 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031668",
-    "when": "Sat, 05 Sep 2026 11:15:39 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 333,
+  "event_count": 334,
   "counts": {
    "red": 0,
    "orange": 4,
-   "green": 329
+   "green": 330
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2458,7 +2419,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-10T22:45:41-04:00",
+  "fetched_at": "2026-09-10T23:01:15-04:00",
   "countries": [
    {
     "iso": "COL",
