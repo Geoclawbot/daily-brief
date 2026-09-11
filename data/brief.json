@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-11T12:16:07-04:00",
- "generated_at_utc": "2026-09-11T16:16:07+00:00",
+ "generated_at": "2026-09-11T12:31:12-04:00",
+ "generated_at_utc": "2026-09-11T16:31:12+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 11",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-11T12:16:07-04:00",
+  "fetched_at": "2026-09-11T12:31:12-04:00",
   "curve": [
    {
     "time": "2026-09-11T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 87.6,
-   "feels": 98.7,
+   "temp": 87.1,
+   "feels": 96.9,
    "humidity": 74,
-   "wind_mph": 8.0,
-   "wind_dir": 162,
-   "observed_at": "2026-09-11T12:15"
+   "wind_mph": 6.9,
+   "wind_dir": 193,
+   "observed_at": "2026-09-11T12:30"
   },
   "today": {
    "high": 87.9,
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-11T12:16:07-04:00",
+  "fetched_at": "2026-09-11T12:31:13-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-11T12:16:09-04:00",
-  "aqi": 17,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-11 11:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-11",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-11",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-12",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-12",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-13",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-13",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-11T12:31:39-04:00",
+  "aqi": 60,
+  "category": "Moderate",
+  "pm25": 9.7,
+  "pm10": 25.0,
+  "observed": "2026-09-11T12:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-11T12:16:11-04:00",
+  "fetched_at": "2026-09-11T12:31:41-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
@@ -293,30 +257,10 @@
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 1107,
+    "delay_s": 1086,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-11T15:35:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 976,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-11T12:06:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -327,6 +271,16 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-09-11T13:50:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -381,19 +335,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 767,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-11T12:06:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-948"
     ],
-    "delay_s": 571,
+    "delay_s": 700,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-11T15:06:12Z"
@@ -401,29 +345,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 E"
-    ],
-    "delay_s": 522,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-11T10:11:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 462,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-11T15:34:03Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-934"
     ],
-    "delay_s": 441,
+    "delay_s": 405,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-11T13:27:00Z"
@@ -431,83 +355,51 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-94"
-    ],
-    "delay_s": 404,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-11T14:47:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 380,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-11T15:47:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "US-41 S",
      "US-41 N"
     ],
-    "delay_s": 281,
+    "delay_s": 380,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-11T15:26:00Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-972"
+     "FL-A1A"
     ],
-    "delay_s": 276,
+    "delay_s": 297,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-11T15:56:30Z"
+    "start": "2026-09-11T16:24:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
+     "FL-836 E",
+     "I-395 E"
     ],
-    "delay_s": 268,
+    "delay_s": 292,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-11T10:11:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": 284,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-11T14:19:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-959"
-    ],
-    "delay_s": 259,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-11T16:02:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 251,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-11T15:55:01Z"
+    "start": "2026-09-11T16:26:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826"
     ],
-    "delay_s": 248,
+    "delay_s": 270,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-11T15:56:30Z"
@@ -515,73 +407,69 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-934"
+     "FL-976"
     ],
-    "delay_s": 246,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-11T15:59:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": 231,
+    "delay_s": 266,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-11T15:59:30Z"
+    "start": "2026-09-11T16:17:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-736"
+    ],
+    "delay_s": 262,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-11T16:21:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-932"
+     "FL-972"
     ],
-    "delay_s": 205,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-09-11T15:59:00Z"
+    "delay_s": 254,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-11T15:56:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 205,
+    "delay_s": 240,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-11T14:26:00Z"
+    "start": "2026-09-11T15:54:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-825"
+     "FL-823"
     ],
-    "delay_s": 204,
+    "delay_s": 239,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-11T16:19:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-907"
+    ],
+    "delay_s": 230,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-11T16:06:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-1 S",
-     "US-41 S",
-     "FL-5"
-    ],
-    "delay_s": 197,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-11T16:10:05Z"
+    "start": "2026-09-11T16:29:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826 N"
     ],
-    "delay_s": 195,
+    "delay_s": 229,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-11T14:53:30Z"
@@ -590,24 +478,95 @@
     "county": "Miami-Dade",
     "roads": [
      "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 217,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-11T16:29:32Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 204,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-11T15:57:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-869"
+    ],
+    "delay_s": 202,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-11T16:27:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-932"
+    ],
+    "delay_s": 199,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-11T15:59:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 191,
+    "delay_s": 189,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-11T16:10:05Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-985"
+    ],
+    "delay_s": 186,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-11T16:01:00Z"
+    "start": "2026-09-11T16:23:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-932"
+    ],
+    "delay_s": 182,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-11T16:15:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 181,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-11T16:11:30Z"
    }
   ],
-  "incident_count": 389,
-  "named_count": 111,
-  "major_count": 10,
+  "incident_count": 397,
+  "named_count": 116,
+  "major_count": 9,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-11T12:16:13-04:00",
+  "fetched_at": "2026-09-11T12:31:42-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -660,7 +619,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-11T12:16:13-04:00",
+  "fetched_at": "2026-09-11T12:31:42-04:00",
   "issued": "800 AM EDT Fri Sep 11 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 111120\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Fri Sep 11 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
@@ -668,7 +627,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-11T12:16:13-04:00",
+  "fetched_at": "2026-09-11T12:31:42-04:00",
   "florida": "$4.1551",
   "national": "$4.2950",
   "diesel": "$6.0621",
@@ -677,7 +636,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-11T12:16:15-04:00",
+  "fetched_at": "2026-09-11T12:31:44-04:00",
   "streams": {
    "local": [
     {
@@ -786,6 +745,38 @@
   ],
   "local": [
    {
+    "title": "Opa-locka mom attacked 12-year-old son with hammer, pepper spray ‘without warning,’ police say",
+    "url": "https://www.local10.com/news/local/2026/09/11/opa-locka-mom-attacked-12-year-old-son-with-hammer-pepper-spray-without-warning-police-say/",
+    "published": "Fri, 11 Sep 2026 15:14:10 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/CHWT3CMDX5BJ7KQWXG24OIG7CI.jpg?auth=34cd484712d92068408d8db0c4b6beefcc107adf9d3a32f8111ffb3efff31a5c&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Man hid under couple’s Doral hotel room bed as they slept, police say",
+    "url": "https://www.local10.com/news/local/2026/09/11/man-hid-under-couples-doral-hotel-room-bed-as-they-slept-police-say/",
+    "published": "Fri, 11 Sep 2026 16:18:55 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/4PZAGCVQZJG6TGPFGFDLUFHFRQ.jpg?auth=5c8eb22829f93719633a50f051ff3007f9372f5ddf494c6a19b53f861eca26aa&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Miramar holds moments of silence for Sept. 11 victims",
+    "url": "https://www.local10.com/news/local/2026/09/11/miramar-holds-moments-of-silence-for-sept-11-victims/",
+    "published": "Fri, 11 Sep 2026 16:17:12 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Miami police, firefighters honor first responders killed in Sept. 11 attacks",
+    "url": "https://www.local10.com/news/local/2026/09/11/miami-police-firefighters-honor-first-responders-killed-in-sept-11-attacks/",
+    "published": "Fri, 11 Sep 2026 16:15:22 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "4 in custody after shooting investigation leads to police chase from Hallandale Beach, police say",
     "url": "https://www.local10.com/news/local/2026/09/11/4-in-custody-after-shooting-investigation-leads-to-police-chase-from-hallandale-beach-police-say/",
     "published": "Fri, 11 Sep 2026 15:00:45 +0000",
@@ -799,14 +790,6 @@
     "published": "Fri, 11 Sep 2026 15:25:13 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/KKQDKV3SLNFITPW7ARH76A7XJM.jpg?auth=95ac67c1189fe637bce31ecf9a0f13d5beb88267aacd5ae3ea1d5a8ab5661265&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "Opa-locka mom attacked 12-year-old son with hammer, pepper spray ‘without warning,’ police say",
-    "url": "https://www.local10.com/news/local/2026/09/11/opa-locka-mom-attacked-12-year-old-son-with-hammer-pepper-spray-without-warning-police-say/",
-    "published": "Fri, 11 Sep 2026 15:14:10 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/CHWT3CMDX5BJ7KQWXG24OIG7CI.jpg?auth=34cd484712d92068408d8db0c4b6beefcc107adf9d3a32f8111ffb3efff31a5c&smart=true&width=1200&height=900",
     "media_type": "image"
    },
    {
@@ -824,30 +807,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/PB3PWSUCLFDSFFK4PCG4O67RYQ.jpg?auth=5f52ab435a0fb037b3c4b8fc13232ca9aa46e10dd13020ab7b3a9a225a1897ee&smart=true&width=1200&height=900",
     "media_type": "image"
-   },
-   {
-    "title": "Miami won’t abandon historic City Hall in Coconut Grove: ‘This is the people’s place’",
-    "url": "https://www.local10.com/news/local/2026/09/10/miami-wont-abandon-historic-city-hall-in-coconut-grove-this-is-the-peoples-place/",
-    "published": "Thu, 10 Sep 2026 19:40:14 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "South Florida duo made $1 million running stolen baby formula ring, AG says",
-    "url": "https://www.local10.com/news/local/2026/09/10/south-florida-duo-made-1-million-running-stolen-baby-formula-ring-ag-says/",
-    "published": "Thu, 10 Sep 2026 22:10:31 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "2 men busted in alleged HOA kickback scheme, authorities say",
-    "url": "https://www.local10.com/news/local/2026/09/10/2-men-busted-in-alleged-hoa-kickback-scheme-authorities-say/",
-    "published": "Thu, 10 Sep 2026 22:37:29 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
    },
    {
     "title": "Commissioners, residents voice support for keeping Miami City Hall as city plans move to Miami Freedom Park",
@@ -882,11 +841,19 @@
     "media_type": "video"
    },
    {
-    "title": "South Florida father and son firefighter duo, recalling moments they were called to help in NYC after 9/11",
-    "url": "https://wsvn.com/news/us-world/south-florida-father-son-firefighter-duo-recalling-moments-they-were-called-to-help-in-nyc-after-9-11/",
+    "title": "Hialeah mother arrested after 10-year-old daughter reports being burned as punishment",
+    "url": "https://wsvn.com/news/local/miami-dade/hialeah-mother-arrested-after-10-year-old-daughter-reports-being-burned-as-punishment/",
+    "published": "Fri, 11 Sep 2026 15:49:45 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Gineth-Ramirez-2.png",
+    "media_type": "image"
+   },
+   {
+    "title": "South Florida father and son firefighter duo recall moments they were called to help in NYC after 9/11",
+    "url": "https://wsvn.com/news/us-world/south-florida-father-and-son-firefighter-duo-recall-moments-they-were-called-to-help-in-nyc-after-9-11/",
     "published": "Fri, 11 Sep 2026 12:12:58 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/f7145783-d65f-4d18-91c1-116a5457cfbf/74e7e30c-a03e-4cd9-8aa8-ee8defc53977/main.mp4?fastly_token=NmFhNDc0ZjRfMDZiMDU5NjhmOTdlN2IzZGFiMGE1YmQyNjI0NDdhNzBjZjI0ODdmNWRjY2FjY2ZjZTNmM2I1MjZkOWM3OGJiN18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9mNzE0NTc4My1kNjVmLTRkMTgtOTFjMS0xMTZhNTQ1N2NmYmYvNzRlN2UzMGMtYTAzZS00Y2Q5LThhYTgtZWU4ZGVmYzUzOTc3L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/8454928c-059c-454b-9635-bdb3c2bee729/2cf07e4c-bcd1-4e67-a370-d0f4b841efbc/main.mp4?fastly_token=NmFhNDgzZWJfODc4NDEzYzMxNzU3YmMxMjI5MjYwMDE5OWI5YWI0ZjNjNTUwZDNiZGE1YjYyMzZiMzg1ZDI1NWYxZmQxYTQ3MV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84NDU0OTI4Yy0wNTljLTQ1NGItOTYzNS1iZGIzYzJiZWU3MjkvMmNmMDdlNGMtYmNkMS00ZTY3LWEzNzAtZDBmNGI4NDFlZmJjL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -904,17 +871,25 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6025ea78-6d78-4fe5-9fd7-feecb6c50624/5e58ef54-5422-4178-9dfd-3bc026194d07/main.mp4?fastly_token=NmFhM2JlYmVfYjU4MzY3NTQyYWI5NTRhZWU2ODlkMGE2N2IzZGU5ZjkxYzJlZjhlMWNjNGNiMTkyZGYyYTlkMDNkNzEzNmRlZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82MDI1ZWE3OC02ZDc4LTRmZTUtOWZkNy1mZWVjYjZjNTA2MjQvNWU1OGVmNTQtNTQyMi00MTc4LTlkZmQtM2JjMDI2MTk0ZDA3L21haW4ubXA0",
     "media_type": "video"
-   },
-   {
-    "title": "South Florida to host several events for the 25th anniversary of 9/11",
-    "url": "https://wsvn.com/news/local/miami-dade/south-florida-to-host-several-events-for-the-25th-anniversary-of-9-11/",
-    "published": "Thu, 10 Sep 2026 22:18:49 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b00b4d21-cec0-417a-8284-65006cec71c5/b529dabe-4608-4714-8958-6ca37dd77adc/main.mp4?fastly_token=NmFhNDRhZmFfNGIyOGZkZTExMjVkZWYzNmEzNzBiMzgwZDY2MDk1NDI0NDgzYTM3Mzg2YmRmNzE4NjU3OTIwZmE0Y2ZkNDQ2N18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iMDBiNGQyMS1jZWMwLTQxN2EtODI4NC02NTAwNmNlYzcxYzUvYjUyOWRhYmUtNDYwOC00NzE0LTg5NTgtNmNhMzdkZDc3YWRjL21haW4ubXA0",
-    "media_type": "video"
    }
   ],
   "colombia": [
+   {
+    "title": "Las cifras que preocupan en el Quindío por fuerte descenso en turismo luego del terremoto que sacudió al país: esta es su estrategia para reactivarse",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/las-cifras-que-preocupan-en-el-quindio-por-fuerte-descenso-en-turismo-luego-del-terremoto-que-sacudio-al-pais-esta-es-su-estrategia-para-reactivarse-3585358",
+    "published": "2026-09-11T11:18:12-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/11/6aa428ab20b28.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Video | Capturan a joven de 20 años en flagrancia por causar incendios forestales en cerca a importante vía del Tolima",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/video-capturan-a-joven-de-20-anos-en-flagrancia-por-causar-incendios-forestales-en-cerca-a-importante-via-del-tolima-3585318",
+    "published": "2026-09-11T11:04:45-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/11/6aa41f88bd381.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Entre pantallas encriptadas y dinero ilícito: así operaba en Cali alias Pedro, el ‘bróker digital’ que blindaba al narcotráfico",
     "url": "https://www.eltiempo.com/colombia/cali/entre-pantallas-encriptadas-y-dinero-ilicito-asi-operaba-en-cali-alias-pedro-el-broker-digital-que-blindaba-al-narcotrafico-3585312",
@@ -924,9 +899,9 @@
     "media_type": "image"
    },
    {
-    "title": "‘Negro Ober’ habría estado extorsionando desde prisión: Fiscalía revela videollamadas y exigencias de hasta $13 millones a comerciantes del Atlántico",
+    "title": "Más pruebas de extorsiones de ‘Negro Ober’ desde prisión: Fiscalía revela videollamadas y exigencias de hasta $13 millones a comerciantes",
     "url": "https://www.eltiempo.com/colombia/barranquilla/negro-ober-habria-estado-extorsionando-desde-prision-fiscalia-revela-videollamadas-y-exigencias-de-hasta-13-millones-a-comerciantes-del-atlantico-3585300",
-    "published": "2026-09-11T08:46:04-05:00",
+    "published": "2026-09-11T11:05:23-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2024/03/22/65fe38b489fa7.r_d.326-183-0.png",
     "media_type": "image"
@@ -961,22 +936,6 @@
     "published": "2026-09-11T07:52:14-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/11/6aa3f6f14b47e.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Revelan hipótesis del accidente de bus escolar que dejó dos muertos en Sucre: conductor habría protegido a menores; Mineducación se pronunció",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/revelan-hipotesis-del-accidente-de-bus-escolar-que-dejo-dos-muertos-en-sucre-conductor-habria-protegido-a-menores-mineducacion-se-pronuncio-3585261",
-    "published": "2026-09-11T09:15:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/11/6aa40eaf6556c.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Max Henríquez revela que este viernes 11 y sábado 12 de septiembre seguirán las fuertes lluvias en el centro de Colombia: esta es la razón",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/max-henriquez-revela-que-este-viernes-11-y-sabado-12-de-septiembre-seguiran-las-fuertes-lluvias-en-el-centro-de-colombia-esta-es-la-razon-3585266",
-    "published": "2026-09-11T08:55:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/05/06/69fb92cfb1826.r_d.695-61-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -1050,7 +1009,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-11T12:16:15-04:00",
+  "fetched_at": "2026-09-11T12:31:45-04:00",
   "items": [],
   "scanned": 6,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1058,7 +1017,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (334) + USGS (8)",
-  "fetched_at": "2026-09-11T12:16:19-04:00",
+  "fetched_at": "2026-09-11T12:31:48-04:00",
   "events": [
    {
     "lat": -7.2863,
@@ -2521,28 +2480,8 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-11T12:16:19-04:00",
+  "fetched_at": "2026-09-11T12:31:48-04:00",
   "countries": [
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Entre pantallas encriptadas y dinero ilícito: así operaba en Cali alias Pedro, el ‘bróker digital’ que blindaba al narcotráfico",
-      "url": "https://www.eltiempo.com/colombia/cali/entre-pantallas-encriptadas-y-dinero-ilicito-asi-operaba-en-cali-alias-pedro-el-broker-digital-que-blindaba-al-narcotrafico-3585312",
-      "published": "2026-09-11T09:36:29-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Max Henríquez revela que este viernes 11 y sábado 12 de septiembre seguirán las fuertes lluvias en el centro de Colombia: esta es la razón",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/max-henriquez-revela-que-este-viernes-11-y-sabado-12-de-septiembre-seguiran-las-fuertes-lluvias-en-el-centro-de-colombia-esta-es-la-razon-3585266",
-      "published": "2026-09-11T08:55:00-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 2,
-    "issue": "Entre pantallas encriptadas y dinero ilícito: así operaba en Cali alias Pedro, el ‘bróker digital’ que blindaba al narcotráfico"
-   },
    {
     "iso": "IRN",
     "name": "Iran",
@@ -2596,6 +2535,20 @@
     ],
     "count": 1,
     "issue": "The U.S.-Canada trade war is creating a headache for auto-parts makers"
+   },
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "Entre pantallas encriptadas y dinero ilícito: así operaba en Cali alias Pedro, el ‘bróker digital’ que blindaba al narcotráfico",
+      "url": "https://www.eltiempo.com/colombia/cali/entre-pantallas-encriptadas-y-dinero-ilicito-asi-operaba-en-cali-alias-pedro-el-broker-digital-que-blindaba-al-narcotrafico-3585312",
+      "published": "2026-09-11T09:36:29-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 1,
+    "issue": "Entre pantallas encriptadas y dinero ilícito: así operaba en Cali alias Pedro, el ‘bróker digital’ que blindaba al narcotráfico"
    },
    {
     "iso": "ISR",
