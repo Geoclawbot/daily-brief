@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-11T20:02:22-04:00",
- "generated_at_utc": "2026-09-12T00:02:22+00:00",
+ "generated_at": "2026-09-11T20:15:34-04:00",
+ "generated_at_utc": "2026-09-12T00:15:34+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 11",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-11T20:02:23-04:00",
+  "fetched_at": "2026-09-11T20:15:34-04:00",
   "curve": [
    {
     "time": "2026-09-11T05:00",
@@ -135,7 +135,7 @@
     "temp": 81.4,
     "feels": 92.0,
     "humidity": 88,
-    "pop": 24
+    "pop": 30
    },
    {
     "time": "2026-09-11T21:00",
@@ -143,16 +143,16 @@
     "temp": 81.3,
     "feels": 92.5,
     "humidity": 91,
-    "pop": 12
+    "pop": 16
    }
   ],
   "current": {
-   "temp": 81.4,
+   "temp": 81.3,
    "feels": 92.0,
-   "humidity": 88,
-   "wind_mph": 4.1,
-   "wind_dir": 119,
-   "observed_at": "2026-09-11T20:00"
+   "humidity": 89,
+   "wind_mph": 4.3,
+   "wind_dir": 125,
+   "observed_at": "2026-09-11T20:15"
   },
   "today": {
    "high": 87.4,
@@ -166,19 +166,19 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-11T20:02:23-04:00",
+  "fetched_at": "2026-09-11T20:15:34-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-11T20:02:24-04:00",
-  "aqi": 69,
-  "category": "Moderate",
-  "pollutant": "PM2.5",
+  "fetched_at": "2026-09-11T20:15:35-04:00",
+  "aqi": 23,
+  "category": "Good",
+  "pollutant": "O3",
   "reporting_area": "Miami",
-  "observed": "2026-09-11 18:00 EST",
+  "observed": "2026-09-11 19:00 EST",
   "forecast": [
    {
     "date": "2026-09-12",
@@ -221,11 +221,34 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-11T20:02:25-04:00",
+  "fetched_at": "2026-09-11T20:15:35-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "US-41 N",
+     "FL-5"
+    ],
+    "delay_s": 1347,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-11T22:57:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 E",
+     "I-395 E"
+    ],
+    "delay_s": 1120,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-11T23:06:36Z"
+   },
    {
     "county": "Broward",
     "roads": [
@@ -254,7 +277,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-09-11T13:50:00Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -264,7 +287,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-09-11T13:50:00Z"
    },
    {
     "county": "Broward",
@@ -321,33 +344,10 @@
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 709,
+    "delay_s": 624,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-11T23:17:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 E",
-     "I-395 E"
-    ],
-    "delay_s": 632,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-11T23:06:36Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-41 N",
-     "FL-5"
-    ],
-    "delay_s": 608,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-11T22:57:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -357,7 +357,7 @@
      "US-41 S",
      "FL-5"
     ],
-    "delay_s": 538,
+    "delay_s": 560,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-09-11T23:24:30Z"
@@ -365,21 +365,10 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 436,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-11T21:23:41Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "US-1 N",
      "FL-970"
     ],
-    "delay_s": 421,
+    "delay_s": 396,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-11T23:10:34Z"
@@ -387,43 +376,42 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-9"
-    ],
-    "delay_s": 376,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-11T23:55:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-441 N",
-     "US-441 S"
-    ],
-    "delay_s": 355,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-11T23:52:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "I-95 S"
     ],
-    "delay_s": 296,
+    "delay_s": 223,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-09-11T23:15:36Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-817"
+     "FL-953"
     ],
-    "delay_s": 234,
+    "delay_s": 207,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-11T23:18:00Z"
+    "start": "2026-09-12T00:05:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-922"
+    ],
+    "delay_s": 199,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-12T00:12:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-886"
+    ],
+    "delay_s": 180,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-12T00:07:00Z"
    },
    {
     "county": "Broward",
@@ -431,27 +419,17 @@
      "FL-7",
      "US-441 S"
     ],
-    "delay_s": 234,
+    "delay_s": 174,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-11T22:39:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-968"
-    ],
-    "delay_s": 220,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-11T23:50:34Z"
+    "start": "2026-09-12T00:04:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-934"
     ],
-    "delay_s": 202,
+    "delay_s": 171,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-11T23:54:30Z"
@@ -459,12 +437,22 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-953"
+     "FL-934"
     ],
-    "delay_s": 195,
+    "delay_s": 170,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-12T00:00:00Z"
+    "start": "2026-09-12T00:06:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 166,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-09-12T00:08:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -472,81 +460,93 @@
      "US-441 N",
      "US-441 S"
     ],
-    "delay_s": 184,
+    "delay_s": 166,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-11T23:23:05Z"
+    "start": "2026-09-12T00:09:31Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-195 E"
+     "FL-922"
     ],
-    "delay_s": 182,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-11T23:48:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-810"
-    ],
-    "delay_s": 171,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-12T00:00:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 170,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-11T23:14:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-395 E"
-    ],
-    "delay_s": 169,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-11T21:52:49Z"
+    "delay_s": 164,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-12T00:13:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-9"
     ],
-    "delay_s": 166,
+    "delay_s": 159,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-11T23:56:30Z"
+    "start": "2026-09-11T23:55:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S"
+     "US-27 N"
     ],
-    "delay_s": 156,
+    "delay_s": 151,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-09-11T23:56:00Z"
+    "start": "2026-09-12T00:11:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "US-41 S",
+     "FL-5"
+    ],
+    "delay_s": 151,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-09-12T00:12:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 148,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-11T23:54:04Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-195 E"
+    ],
+    "delay_s": 134,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-11T23:48:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 N"
+    ],
+    "delay_s": 133,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-12T00:10:00Z"
    }
   ],
-  "incident_count": 321,
-  "named_count": 63,
+  "incident_count": 332,
+  "named_count": 70,
   "major_count": 12,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-11T20:02:26-04:00",
+  "fetched_at": "2026-09-11T20:15:36-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -598,7 +598,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-11T20:02:26-04:00",
+  "fetched_at": "2026-09-11T20:15:37-04:00",
   "issued": "800 PM EDT Fri Sep 11 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 112327\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Fri Sep 11 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Kelly"
@@ -606,7 +606,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-11T20:02:26-04:00",
+  "fetched_at": "2026-09-11T20:15:37-04:00",
   "florida": "$4.1551",
   "national": "$4.2950",
   "diesel": "$6.0621",
@@ -615,7 +615,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-11T20:02:28-04:00",
+  "fetched_at": "2026-09-11T20:15:38-04:00",
   "streams": {
    "local": [
     {
@@ -854,6 +854,14 @@
   ],
   "colombia": [
    {
+    "title": "Investigan violento doble homicidio en la vía hacia al Aeropuerto de Barranquilla: los cuerpos fueron arrojados debajo de un puente en Soledad",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/investigan-violento-doble-homicidio-en-la-via-hacia-al-aeropuerto-de-barranquilla-los-cuerpos-fueron-arrojados-debajo-de-un-puente-en-soledad-3585495",
+    "published": "2026-09-11T18:40:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/11/6aa4913cc2b05.png",
+    "media_type": "image"
+   },
+   {
     "title": "El sueño aplazado del malecón en Barrancabermeja: promesas incumplidas, obras detenidas y cocineras desplazadas",
     "url": "https://www.eltiempo.com/colombia/santander/el-sueno-aplazado-del-malecon-en-barrancabermeja-promesas-incumplidas-obras-detenidas-y-cocineras-desplazadas-3585441",
     "published": "2026-09-11T18:25:13-05:00",
@@ -907,14 +915,6 @@
     "published": "2026-09-11T16:01:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/06/6a9df5038dcdd.r_d.788-499-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Así operaban 'carros cazafotomultas' en Colombia, que ya no podrán imponer comparendos sin un agente de tránsito: estas son las nuevas reglas",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/asi-operaban-los-carros-cazafotomultas-durante-el-gobierno-petro-y-estas-son-las-nuevas-reglas-de-la-administracion-del-presidente-de-la-espriella-3585427",
-    "published": "2026-09-11T16:46:58-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2023/10/05/651eb01388697.jpeg",
     "media_type": "image"
    }
   ],
@@ -988,7 +988,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-11T20:02:29-04:00",
+  "fetched_at": "2026-09-11T20:15:38-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -996,7 +996,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (245) + USGS (6)",
-  "fetched_at": "2026-09-11T20:02:33-04:00",
+  "fetched_at": "2026-09-11T20:15:41-04:00",
   "events": [
    {
     "lat": -5.0932,
@@ -2457,7 +2457,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-11T20:02:33-04:00",
+  "fetched_at": "2026-09-11T20:15:41-04:00",
   "countries": [
    {
     "iso": "IRN",
@@ -2526,20 +2526,6 @@
     "issue": "The U.S.-Canada trade war is creating a headache for auto-parts makers"
    },
    {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Así operaban 'carros cazafotomultas' en Colombia, que ya no podrán imponer comparendos sin un agente de tránsito: estas son las nuevas reglas",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/asi-operaban-los-carros-cazafotomultas-durante-el-gobierno-petro-y-estas-son-las-nuevas-reglas-de-la-administracion-del-presidente-de-la-espriella-3585427",
-      "published": "2026-09-11T16:46:58-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 1,
-    "issue": "Así operaban 'carros cazafotomultas' en Colombia, que ya no podrán imponer comparendos sin un agente de tránsito: estas son las nuevas reglas"
-   },
-   {
     "iso": "FRA",
     "name": "France",
     "stories": [
@@ -2569,7 +2555,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 6,
+  "countries_matched": 5,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
