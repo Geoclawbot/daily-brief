@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-12T21:15:36-04:00",
- "generated_at_utc": "2026-09-13T01:15:36+00:00",
+ "generated_at": "2026-09-12T21:30:31-04:00",
+ "generated_at_utc": "2026-09-13T01:30:31+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, September 12",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-12T21:15:36-04:00",
+  "fetched_at": "2026-09-12T21:30:31-04:00",
   "curve": [
    {
     "time": "2026-09-12T05:00",
@@ -133,7 +133,7 @@
     "time": "2026-09-12T20:00",
     "hour": 20,
     "temp": 78.5,
-    "feels": 87.2,
+    "feels": 89.1,
     "humidity": 89,
     "pop": 18
    },
@@ -141,18 +141,18 @@
     "time": "2026-09-12T21:00",
     "hour": 21,
     "temp": 77.6,
-    "feels": 86.4,
+    "feels": 86.1,
     "humidity": 90,
-    "pop": 12
+    "pop": 7
    }
   ],
   "current": {
-   "temp": 77.5,
-   "feels": 86.3,
+   "temp": 77.4,
+   "feels": 85.8,
    "humidity": 90,
-   "wind_mph": 3.9,
-   "wind_dir": 336,
-   "observed_at": "2026-09-12T21:15"
+   "wind_mph": 4.6,
+   "wind_dir": 346,
+   "observed_at": "2026-09-12T21:30"
   },
   "today": {
    "high": 90.5,
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-12T21:15:37-04:00",
+  "fetched_at": "2026-09-12T21:30:32-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-12T21:15:38-04:00",
-  "aqi": 30,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-12T21:30:33-04:00",
+  "aqi": 50,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-12 20:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-13",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-13",
-    "aqi": 55,
-    "category": "Moderate",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-14",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-14",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 11.3,
+  "pm10": 12.2,
+  "observed": "2026-09-12T21:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-12T21:15:38-04:00",
+  "fetched_at": "2026-09-12T21:30:33-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -222,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-12T21:15:39-04:00",
+  "fetched_at": "2026-09-12T21:30:34-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -271,7 +247,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-12T21:15:39-04:00",
+  "fetched_at": "2026-09-12T21:30:34-04:00",
   "issued": "800 PM EDT Sat Sep 12 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 122321\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Sat Sep 12 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Papin"
@@ -279,7 +255,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-12T21:15:39-04:00",
+  "fetched_at": "2026-09-12T21:30:34-04:00",
   "florida": "$4.1515",
   "national": "$4.3104",
   "diesel": "$6.2162",
@@ -288,7 +264,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-12T21:15:40-04:00",
+  "fetched_at": "2026-09-12T21:30:36-04:00",
   "streams": {
    "local": [
     {
@@ -527,6 +503,14 @@
   ],
   "colombia": [
    {
+    "title": "‘Estoy aquí, soy Liz’: sobrevivió horas bajo los escombros del terremoto de Pereira, pero perdió su casa, a su mamá, a su hermano y a su pareja",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/estoy-aqui-soy-liz-sobrevivio-horas-bajo-los-escombros-del-terremoto-de-pereira-pero-perdio-su-casa-a-su-mama-a-su-hermano-y-a-su-pareja-3585527",
+    "published": "2026-09-12T20:15:05-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/11/6aa4d20c74751.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Alerta por incendios forestales en Colombia: 18 siguen activos y Tolima concentra casi la mitad, según la UNGRD",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/alerta-por-incendios-forestales-en-colombia-18-siguen-activos-y-tolima-concentra-casi-la-mitad-segun-la-ungrd-3585657",
     "published": "2026-09-12T20:03:22-05:00",
@@ -580,14 +564,6 @@
     "published": "2026-09-12T14:50:16-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/12/6aa5aaba7e1bf.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Video | Bomberos de Medellín subieron tres veces las escaleras del edificio Coltejer para rendir homenaje a los rescatistas fallecidos durante el 11S",
-    "url": "https://www.eltiempo.com/colombia/medellin/video-bomberos-de-medellin-subieron-tres-veces-las-escaleras-del-edificio-coltejer-para-rendir-homenaje-a-los-rescatistas-fallecidos-durante-el-11s-3585606",
-    "published": "2026-09-12T14:23:57-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/12/6aa5a46bd661d.r_d.328-586-0.png",
     "media_type": "image"
    }
   ],
@@ -661,7 +637,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-12T21:15:41-04:00",
+  "fetched_at": "2026-09-12T21:30:37-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -669,7 +645,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (220) + USGS (11)",
-  "fetched_at": "2026-09-12T21:15:43-04:00",
+  "fetched_at": "2026-09-12T21:30:39-04:00",
   "events": [
    {
     "lat": 15.196,
@@ -2135,7 +2111,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-12T21:15:43-04:00",
+  "fetched_at": "2026-09-12T21:30:39-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2152,15 +2128,9 @@
       "url": "https://www.eltiempo.com/colombia/santander/otros-11-extranjeros-fueron-expulsados-en-bucaramanga-por-reincidir-en-conductas-ilegales-continuan-los-operativos-de-migracion-colombia-3585620",
       "published": "2026-09-12T15:34:07-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Video | Bomberos de Medellín subieron tres veces las escaleras del edificio Coltejer para rendir homenaje a los rescatistas fallecidos durante el 11S",
-      "url": "https://www.eltiempo.com/colombia/medellin/video-bomberos-de-medellin-subieron-tres-veces-las-escaleras-del-edificio-coltejer-para-rendir-homenaje-a-los-rescatistas-fallecidos-durante-el-11s-3585606",
-      "published": "2026-09-12T14:23:57-05:00",
-      "section": "colombia"
      }
     ],
-    "count": 3,
+    "count": 2,
     "issue": "Alerta por incendios forestales en Colombia: 18 siguen activos y Tolima concentra casi la mitad, según la UNGRD"
    },
    {
