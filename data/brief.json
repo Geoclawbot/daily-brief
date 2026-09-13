@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-13T09:30:54-04:00",
- "generated_at_utc": "2026-09-13T13:30:54+00:00",
+ "generated_at": "2026-09-13T09:45:51-04:00",
+ "generated_at_utc": "2026-09-13T13:45:51+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 13",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-13T09:30:55-04:00",
+  "fetched_at": "2026-09-13T09:45:52-04:00",
   "curve": [
    {
     "time": "2026-09-13T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 82.3,
-   "feels": 93.7,
+   "temp": 82.8,
+   "feels": 94.4,
    "humidity": 82,
    "wind_mph": 0.8,
-   "wind_dir": 56,
-   "observed_at": "2026-09-13T09:30"
+   "wind_dir": 146,
+   "observed_at": "2026-09-13T09:45"
   },
   "today": {
    "high": 88.0,
@@ -166,26 +166,50 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-13T09:30:55-04:00",
+  "fetched_at": "2026-09-13T09:45:52-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-13T09:31:21-04:00",
-  "aqi": 44,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-13T09:45:53-04:00",
+  "aqi": 41,
   "category": "Good",
-  "pm25": 8.6,
-  "pm10": 10.7,
-  "observed": "2026-09-13T09:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-13 8:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-13",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-13",
+    "aqi": 55,
+    "category": "Moderate",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-14",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-14",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-13T09:31:21-04:00",
+  "fetched_at": "2026-09-13T09:45:54-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +222,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-13T09:31:22-04:00",
+  "fetched_at": "2026-09-13T09:45:54-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -246,7 +270,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-13T09:31:22-04:00",
+  "fetched_at": "2026-09-13T09:45:54-04:00",
   "issued": "800 AM EDT Sun Sep 13 2026",
   "areas": [
    {
@@ -260,7 +284,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-13T09:31:23-04:00",
+  "fetched_at": "2026-09-13T09:45:55-04:00",
   "florida": "$4.1434",
   "national": "$4.3130",
   "diesel": "$6.2789",
@@ -269,7 +293,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-13T09:31:24-04:00",
+  "fetched_at": "2026-09-13T09:45:56-04:00",
   "streams": {
    "local": [
     {
@@ -378,12 +402,20 @@
   ],
   "local": [
    {
+    "title": "Traffic backed up on I-95 following multi-vehicle crash in North Miami",
+    "url": "https://www.local10.com/news/local/2026/09/13/traffic-backed-up-on-i-95-following-multi-vehicle-crash-in-north-miami/",
+    "published": "Sun, 13 Sep 2026 13:42:09 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Miami-Dade deputies locate vehicle in hit-and-run that killed 10-year-old girl, injured brother",
     "url": "https://www.local10.com/news/local/2026/09/12/miami-dade-deputies-locate-vehicle-in-hit-and-run-that-killed-10-year-old-girl-injured-brother/",
     "published": "Sun, 13 Sep 2026 00:20:45 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/56EJQ6LVOVG6FGZAWDUVCJRVSM.jpeg?auth=717364b24ba82739d0e54b4c971a7a52f2bd7f11d018201b0be27c369237ca0b&smart=true&width=1200&height=900",
-    "media_type": "image"
+    "media": null,
+    "media_type": null
    },
    {
     "title": "Former Florida City police officer accused of threatening to shoot at police station, city officials",
@@ -434,14 +466,6 @@
     "media_type": null
    },
    {
-    "title": "‘What’s going on?’: MDSO video shows dazed developer after deadly DUI crash into home, cops say",
-    "url": "https://www.local10.com/news/local/2026/09/11/whats-going-on-mdso-video-shows-dazed-developer-after-deadly-dui-crash-into-home-cops-say/",
-    "published": "Fri, 11 Sep 2026 22:10:25 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "South Florida remembers 9/11 as City of Miami welcomes 44 new firefighters",
     "url": "https://wsvn.com/news/local/miami-dade/south-florida-remembers-9-11-as-city-of-miami-welcomes-44-new-firefighters/",
     "published": "Fri, 11 Sep 2026 17:00:15 +0000",
@@ -474,14 +498,6 @@
     "media_type": "image"
    },
    {
-    "title": "First responder shares rescue of survivors from deadly cargo plane crash near MIA as crews continue wreckage removal",
-    "url": "https://wsvn.com/news/local/miami-dade/first-responder-shares-rescue-of-survivors-from-deadly-cargo-plane-crash-near-mia-as-crews-continue-wreckage-removal/",
-    "published": "Sun, 13 Sep 2026 13:14:33 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/a3443d72-2f7e-4b45-9353-9837070b8b50/a6b907f5-4e27-49d1-ae69-96358142f28e/main.mp4?fastly_token=NmFhNmZiODlfYWVmM2QxOTg3ZTI2M2M4ZjM4ZjY4ODNhNWMyNmQ0YzAyNGJiZTgxYTFlNjdlOGIwNTM0YTkxZDRmZWFkMmMzOF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hMzQ0M2Q3Mi0yZjdlLTRiNDUtOTM1My05ODM3MDcwYjhiNTAvYTZiOTA3ZjUtNGUyNy00OWQxLWFlNjktOTYzNTgxNDJmMjhlL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
     "title": "MDSO locate vehicle involved in NW Miami-Dade hit-and-run crash that killed 10-year-old girl and injured boy",
     "url": "https://wsvn.com/news/local/miami-dade/mdso-locate-vehicle-involved-in-nw-miami-dade-hit-and-run-crash-that-killed-10-year-old-girl-and-injured-boy/",
     "published": "Sun, 13 Sep 2026 12:27:46 +0000",
@@ -503,6 +519,14 @@
     "published": "Sat, 12 Sep 2026 13:00:43 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/7f66ce50-0ba5-4f3e-805a-549cc8a514a2/fa33cc70-e34a-42c8-9184-67a5e97556d4/main.mp4?fastly_token=NmFhNWE1MDFfZWQ2NDBhZWUyYTkyNjc4MGMxNWMwOWIyOTA2YzBjMzI1MTU0YmM0YThmODE4MWFjOGExYjUwNWRlNmZlZjY3Nl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83ZjY2Y2U1MC0wYmE1LTRmM2UtODA1YS01NDljYzhhNTE0YTIvZmEzM2NjNzAtZTM0YS00MmM4LTkxODQtNjdhNWU5NzU1NmQ0L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Shooting in Little Havana leaves 2 dead and 2 hospitalized; police say incident possibly domestic",
+    "url": "https://wsvn.com/news/local/miami-dade/shooting-in-little-havana-leaves-2-dead-and-2-hospitalized-police-say-incident-possibly-domestic/",
+    "published": "Sat, 12 Sep 2026 12:09:09 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c180968c-1a53-4e66-8a3e-2317e184015d/75e7a5fa-caa7-47a2-8d03-18c222990930/main.mp4?fastly_token=NmFhNmU2MGVfNjBmYjIzNjY4MWYxMjk4ZTY3ZDMwZmYyOWE2YWJlY2FjOGE2NDNkY2ZkYzlmM2VkNzFmOWRhNmM4M2QyZGJhZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jMTgwOTY4Yy0xYTUzLTRlNjYtOGEzZS0yMzE3ZTE4NDAxNWQvNzVlN2E1ZmEtY2FhNy00N2EyLThkMDMtMThjMjIyOTkwOTMwL21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -534,7 +558,7 @@
    {
     "title": "Temblor hoy en Colombia | Reportan sismo en Chocó la noche de este sábado 12 de septiembre: epicentro y profundidad",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-sismo-en-choco-la-noche-de-este-sabado-12-de-septiembre-epicentro-y-profundidad-3585675",
-    "published": "2026-09-12T22:58:22-05:00",
+    "published": "2026-09-13T08:24:38-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/12/6aa61ae9ccab2.r_d.1128-224-0.png",
     "media_type": "image"
@@ -566,7 +590,7 @@
    {
     "title": "El retorno de mujeres a Mampuján (Bolívar) fue por la no repetición de violencia",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/el-retorno-de-mujeres-a-mampujan-bolivar-fue-por-la-no-repeticion-de-violencia-3585636",
-    "published": "2026-09-12T16:55:00-05:00",
+    "published": "2026-09-13T08:23:48-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/12/6aa5c906aca64.jpeg",
     "media_type": "image"
@@ -642,7 +666,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-13T09:31:25-04:00",
+  "fetched_at": "2026-09-13T09:45:57-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -650,7 +674,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (228) + USGS (7)",
-  "fetched_at": "2026-09-13T09:31:27-04:00",
+  "fetched_at": "2026-09-13T09:46:00-04:00",
   "events": [
    {
     "lat": 15.196,
@@ -2112,7 +2136,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-13T09:31:27-04:00",
+  "fetched_at": "2026-09-13T09:46:00-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2127,7 +2151,7 @@
      {
       "title": "Temblor hoy en Colombia | Reportan sismo en Chocó la noche de este sábado 12 de septiembre: epicentro y profundidad",
       "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-sismo-en-choco-la-noche-de-este-sabado-12-de-septiembre-epicentro-y-profundidad-3585675",
-      "published": "2026-09-12T22:58:22-05:00",
+      "published": "2026-09-13T08:24:38-05:00",
       "section": "colombia"
      },
      {
@@ -2149,9 +2173,15 @@
       "url": "https://wsvn.com/news/local/miami-dade/search-underway-for-missing-83-year-old-man-from-little-havana/",
       "published": "Sat, 12 Sep 2026 02:02:39 +0000",
       "section": "local"
+     },
+     {
+      "title": "Shooting in Little Havana leaves 2 dead and 2 hospitalized; police say incident possibly domestic",
+      "url": "https://wsvn.com/news/local/miami-dade/shooting-in-little-havana-leaves-2-dead-and-2-hospitalized-police-say-incident-possibly-domestic/",
+      "published": "Sat, 12 Sep 2026 12:09:09 +0000",
+      "section": "local"
      }
     ],
-    "count": 1,
+    "count": 2,
     "issue": "Search underway for missing 83-year-old man from Little Havana"
    },
    {
