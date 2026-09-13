@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-12T23:30:47-04:00",
- "generated_at_utc": "2026-09-13T03:30:47+00:00",
+ "generated_at": "2026-09-12T23:45:28-04:00",
+ "generated_at_utc": "2026-09-13T03:45:28+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, September 12",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-12T23:30:48-04:00",
+  "fetched_at": "2026-09-12T23:45:28-04:00",
   "curve": [
    {
     "time": "2026-09-12T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 77.2,
-   "feels": 86.1,
+   "temp": 77.1,
+   "feels": 85.3,
    "humidity": 90,
-   "wind_mph": 3.2,
-   "wind_dir": 115,
-   "observed_at": "2026-09-12T23:30"
+   "wind_mph": 4.8,
+   "wind_dir": 118,
+   "observed_at": "2026-09-12T23:45"
   },
   "today": {
    "high": 90.5,
@@ -166,26 +166,50 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-12T23:30:48-04:00",
+  "fetched_at": "2026-09-12T23:45:29-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-12T23:30:59-04:00",
-  "aqi": 49,
-  "category": "Good",
-  "pm25": 12.8,
-  "pm10": 13.6,
-  "observed": "2026-09-12T23:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-12T23:45:37-04:00",
+  "aqi": 51,
+  "category": "Moderate",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-12 22:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-13",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-13",
+    "aqi": 55,
+    "category": "Moderate",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-14",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-14",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-12T23:30:59-04:00",
+  "fetched_at": "2026-09-12T23:45:37-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +222,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-12T23:31:00-04:00",
+  "fetched_at": "2026-09-12T23:45:38-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -246,7 +270,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-12T23:31:00-04:00",
+  "fetched_at": "2026-09-12T23:45:38-04:00",
   "issued": "800 PM EDT Sat Sep 12 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 122321\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Sat Sep 12 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Papin"
@@ -254,7 +278,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-12T23:31:02-04:00",
+  "fetched_at": "2026-09-12T23:45:38-04:00",
   "florida": "$4.1515",
   "national": "$4.3104",
   "diesel": "$6.2162",
@@ -263,7 +287,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-12T23:31:03-04:00",
+  "fetched_at": "2026-09-12T23:45:40-04:00",
   "streams": {
    "local": [
     {
@@ -636,15 +660,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-12T23:31:03-04:00",
+  "fetched_at": "2026-09-12T23:45:40-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (220) + USGS (10)",
-  "fetched_at": "2026-09-12T23:31:07-04:00",
+  "source": "GDACS (220) + USGS (9)",
+  "fetched_at": "2026-09-12T23:45:44-04:00",
   "events": [
    {
     "lat": 15.196,
@@ -784,19 +808,6 @@
     "mag": 4.7,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgx2",
     "when": 1789189704039,
-    "source": "USGS"
-   },
-   {
-    "lat": -8.2634,
-    "lon": 120.6778,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.6 — 45 km NNE of Ruteng, Indonesia",
-    "place": "45 km NNE of Ruteng, Indonesia",
-    "severity": "M4.6",
-    "mag": 4.6,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tgwe",
-    "when": 1789184097594,
     "source": "USGS"
    },
    {
@@ -2095,13 +2106,25 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031874",
     "when": "Thu, 10 Sep 2026 15:17:13 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -10.429135961939728,
+    "lon": 30.90048603008366,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Zambia",
+    "place": "Zambia",
+    "severity": "Green impact for forestfire in 6638 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031875",
+    "when": "Thu, 10 Sep 2026 15:17:49 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 230,
+  "event_count": 229,
   "counts": {
    "red": 0,
    "orange": 3,
-   "green": 227
+   "green": 226
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2109,7 +2132,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-12T23:31:07-04:00",
+  "fetched_at": "2026-09-12T23:45:44-04:00",
   "countries": [
    {
     "iso": "COL",
