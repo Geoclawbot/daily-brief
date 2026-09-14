@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-14T12:16:00-04:00",
- "generated_at_utc": "2026-09-14T16:16:00+00:00",
+ "generated_at": "2026-09-14T12:31:03-04:00",
+ "generated_at_utc": "2026-09-14T16:31:03+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 14",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-14T12:16:01-04:00",
+  "fetched_at": "2026-09-14T12:31:03-04:00",
   "curve": [
    {
     "time": "2026-09-14T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 87.8,
-   "feels": 100.2,
-   "humidity": 67,
-   "wind_mph": 1.5,
-   "wind_dir": 153,
-   "observed_at": "2026-09-14T12:15"
+   "temp": 88.2,
+   "feels": 100.5,
+   "humidity": 66,
+   "wind_mph": 0.6,
+   "wind_dir": 135,
+   "observed_at": "2026-09-14T12:30"
   },
   "today": {
    "high": 89.1,
@@ -166,38 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-14T12:16:01-04:00",
+  "fetched_at": "2026-09-14T12:31:03-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-14T12:16:02-04:00",
-  "aqi": 19,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-14 11:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-14",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-14",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-14T12:31:29-04:00",
+  "aqi": 53,
+  "category": "Moderate",
+  "pm25": 14.0,
+  "pm10": 18.3,
+  "observed": "2026-09-14T12:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-14T12:16:05-04:00",
+  "fetched_at": "2026-09-14T12:31:32-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
@@ -272,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-14T12:16:06-04:00",
+  "fetched_at": "2026-09-14T12:31:33-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -321,7 +309,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-14T12:16:06-04:00",
+  "fetched_at": "2026-09-14T12:31:33-04:00",
   "issued": "800 AM EDT Mon Sep 14 2026",
   "areas": [
    {
@@ -335,7 +323,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-14T12:16:06-04:00",
+  "fetched_at": "2026-09-14T12:31:33-04:00",
   "florida": "$4.1393",
   "national": "$4.3163",
   "diesel": "$6.3111",
@@ -344,7 +332,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-14T12:16:08-04:00",
+  "fetched_at": "2026-09-14T12:31:35-04:00",
   "streams": {
    "local": [
     {
@@ -453,12 +441,12 @@
   ],
   "local": [
    {
-    "title": "Man accused of raping 18-year-old he met on Miami-bound cruise",
-    "url": "https://www.local10.com/news/local/2026/09/14/man-accused-of-raping-18-year-old-he-met-on-miami-bound-cruise/",
-    "published": "Mon, 14 Sep 2026 15:23:06 +0000",
+    "title": "Miami-Dade elementary school employee showed porn to, inappropriately touched students: Police",
+    "url": "https://www.local10.com/news/local/2026/09/14/miami-dade-elementary-teacher-showed-porn-to-inappropriately-touched-multiple-students-police-say/",
+    "published": "Mon, 14 Sep 2026 14:41:06 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/JAP3QQLFG5G4DJ2QYC6EDKAYPU.jpg?auth=e063c3e6c8ab8084a9b78ff32026c7a224183153c83cdb5797195b868131d96f&smart=true&width=1200&height=900",
-    "media_type": "image"
+    "media": null,
+    "media_type": null
    },
    {
     "title": "Woman suspected of drugging man she met at Gulfstream Park, stealing $98K Rolex, police say",
@@ -466,6 +454,14 @@
     "published": "Mon, 14 Sep 2026 16:06:27 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/XBEDJ25KHJAUJJN7YHFORFXODE.jpg?auth=3e76745fd10567d577a038bee0ca558c162c3a72f282461304be3d8321f5b01c&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Man accused of raping 18-year-old he met on Miami-bound cruise",
+    "url": "https://www.local10.com/news/local/2026/09/14/man-accused-of-raping-18-year-old-he-met-on-miami-bound-cruise/",
+    "published": "Mon, 14 Sep 2026 15:23:06 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/JAP3QQLFG5G4DJ2QYC6EDKAYPU.jpg?auth=e063c3e6c8ab8084a9b78ff32026c7a224183153c83cdb5797195b868131d96f&smart=true&width=1200&height=900",
     "media_type": "image"
    },
    {
@@ -491,14 +487,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "Miami-Dade elementary school employee showed porn to, inappropriately touched students: Police",
-    "url": "https://www.local10.com/news/local/2026/09/14/miami-dade-elementary-teacher-showed-porn-to-inappropriately-touched-multiple-students-police-say/",
-    "published": "Mon, 14 Sep 2026 14:41:06 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/PVTFWIFPOJDZBLDS6OB7KNBNHE.jpg?auth=d5ef6a9c22cf61ec5c1bdad8911576be9826ffa5118b75dc2f66a1690b858dc8&smart=true&width=1200&height=900",
-    "media_type": "image"
    },
    {
     "title": "Fort Lauderdale house fire displaces 8 residents",
@@ -625,7 +613,7 @@
    {
     "title": "Atención: se suspenden medidas de racionamiento de agua sectoriales en Medellín durante esta semana; el ahorro aumentó y las lluvias ayudaron",
     "url": "https://www.eltiempo.com/colombia/medellin/atencion-se-suspenden-medidas-de-racionamiento-de-agua-sectoriales-en-medellin-durante-esta-semana-el-ahorro-aumento-y-las-lluvias-ayudaron-3585869",
-    "published": "2026-09-14T09:05:37-05:00",
+    "published": "2026-09-14T11:09:32-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/14/6aa7fe7d0ef09.png",
     "media_type": "image"
@@ -717,7 +705,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-14T12:16:08-04:00",
+  "fetched_at": "2026-09-14T12:31:36-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -725,7 +713,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (241) + USGS (12)",
-  "fetched_at": "2026-09-14T12:16:11-04:00",
+  "fetched_at": "2026-09-14T12:31:39-04:00",
   "events": [
    {
     "lat": 2.4223,
@@ -2192,7 +2180,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-14T12:16:11-04:00",
+  "fetched_at": "2026-09-14T12:31:39-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2213,7 +2201,7 @@
      {
       "title": "Atención: se suspenden medidas de racionamiento de agua sectoriales en Medellín durante esta semana; el ahorro aumentó y las lluvias ayudaron",
       "url": "https://www.eltiempo.com/colombia/medellin/atencion-se-suspenden-medidas-de-racionamiento-de-agua-sectoriales-en-medellin-durante-esta-semana-el-ahorro-aumento-y-las-lluvias-ayudaron-3585869",
-      "published": "2026-09-14T09:05:37-05:00",
+      "published": "2026-09-14T11:09:32-05:00",
       "section": "colombia"
      }
     ],
