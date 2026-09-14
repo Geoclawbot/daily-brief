@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-14T13:30:58-04:00",
- "generated_at_utc": "2026-09-14T17:30:58+00:00",
+ "generated_at": "2026-09-14T13:45:43-04:00",
+ "generated_at_utc": "2026-09-14T17:45:43+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 14",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-14T13:30:58-04:00",
+  "fetched_at": "2026-09-14T13:45:43-04:00",
   "curve": [
    {
     "time": "2026-09-14T05:00",
@@ -148,11 +148,11 @@
   ],
   "current": {
    "temp": 89.2,
-   "feels": 99.4,
+   "feels": 99.0,
    "humidity": 63,
-   "wind_mph": 1.5,
-   "wind_dir": 63,
-   "observed_at": "2026-09-14T13:30"
+   "wind_mph": 2.3,
+   "wind_dir": 61,
+   "observed_at": "2026-09-14T13:45"
   },
   "today": {
    "high": 89.1,
@@ -166,26 +166,38 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-14T13:30:58-04:00",
+  "fetched_at": "2026-09-14T13:45:44-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-14T13:31:24-04:00",
-  "aqi": 54,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-14T13:45:44-04:00",
+  "aqi": 55,
   "category": "Moderate",
-  "pm25": 15.1,
-  "pm10": 20.2,
-  "observed": "2026-09-14T13:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-14 12:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-14",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-14",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-14T13:31:27-04:00",
+  "fetched_at": "2026-09-14T13:45:47-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
@@ -209,13 +221,13 @@
     "saves": 4
    },
    {
-    "miles": 28.6,
-    "minutes": 58,
+    "miles": 20.8,
+    "minutes": 61,
     "toll": true,
-    "saves": 4
+    "saves": 1
    },
    {
-    "miles": 20.8,
+    "miles": 28.6,
     "minutes": 61,
     "toll": true,
     "saves": 1
@@ -260,7 +272,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-14T13:31:27-04:00",
+  "fetched_at": "2026-09-14T13:45:48-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -309,7 +321,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-14T13:31:28-04:00",
+  "fetched_at": "2026-09-14T13:45:48-04:00",
   "issued": "800 AM EDT Mon Sep 14 2026",
   "areas": [
    {
@@ -323,7 +335,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-14T13:31:28-04:00",
+  "fetched_at": "2026-09-14T13:45:49-04:00",
   "florida": "$4.1393",
   "national": "$4.3163",
   "diesel": "$6.3111",
@@ -332,7 +344,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-14T13:31:30-04:00",
+  "fetched_at": "2026-09-14T13:45:50-04:00",
   "streams": {
    "local": [
     {
@@ -441,6 +453,14 @@
   ],
   "local": [
    {
+    "title": "Man rescued from Fort Lauderdale house fire, rushed to hospital with life-threatening injuries",
+    "url": "https://www.local10.com/news/local/2026/09/14/man-rescued-from-fort-lauderdale-house-fire-rushed-to-hospital-with-life-threatening-injuries/",
+    "published": "Mon, 14 Sep 2026 17:35:13 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/U2W647P5M5FAZKU3FMQ3OJ5VDU.jpeg?auth=d53b3980e5281763e17ed3903eb253103c54770f96c07402f7271bebb466dfaa&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
     "title": "Red Cross helping 2 women after house fire in Hallandale Beach",
     "url": "https://www.local10.com/news/local/2026/09/14/red-cross-helping-2-women-after-house-fire-in-hallandale-beach/",
     "published": "Mon, 14 Sep 2026 17:08:25 +0000",
@@ -495,14 +515,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/GQ7GARZZGVGDZK4C6TDBMLXAKY.jpeg?auth=0d363334dad1dafe0743a1ea0354814a162290beb22631f9c0701e1bb74617f9&smart=true&width=1200&height=900",
     "media_type": "image"
-   },
-   {
-    "title": "Miami Gardens police announce they’ve found missing K-9 officer",
-    "url": "https://www.local10.com/news/local/2026/09/13/miami-gardens-police-announce-theyve-found-missing-k-9-officer/",
-    "published": "Sun, 13 Sep 2026 21:13:13 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
    },
    {
     "title": "Supreme Twins Foundation, helping children with special needs, hosts 2nd annual gala in Miami",
@@ -571,6 +583,22 @@
   ],
   "colombia": [
    {
+    "title": "Gobierno Nacional impulsa la apuesta europea de Barranquilla: destinarán $1.000 millones desde Fontur para promover el nuevo vuelo directo a Madrid",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/gobierno-nacional-impulsa-la-apuesta-europea-de-barranquilla-destinaran-1-000-millones-desde-fontur-para-promover-el-nuevo-vuelo-directo-a-madrid-3585935",
+    "published": "2026-09-14T12:30:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/14/6aa827fc453df.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Fuerza Aérea anuncia que localizó indicios de avioneta desaparecida en ruta Condoto-Guaymaral: fotos del lugar donde estarían restos de la aeronave",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/fuerza-aerea-anuncia-que-localizo-indicios-de-avioneta-desaparecida-en-ruta-condoto-guaymaral-fotos-del-lugar-donde-estaria-el-cessna-con-5-pasajeros-3585945",
+    "published": "2026-09-14T12:24:02-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/14/6aa8311929336.png",
+    "media_type": "image"
+   },
+   {
     "title": "La historia detrás de la salida de una procuradora cuyo nombre quedó ligado a un mensaje de ‘Negro Ober’ para el presidente De La Espriella",
     "url": "https://www.eltiempo.com/colombia/barranquilla/la-historia-detras-de-la-salida-de-una-procuradora-cuyo-nombre-quedo-ligado-a-un-mensaje-de-negro-ober-para-el-presidente-de-la-espriella-3585922",
     "published": "2026-09-14T11:47:10-05:00",
@@ -616,22 +644,6 @@
     "published": "2026-09-14T09:43:24-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2020/07/01/5efd2fce1e1a1.r_d.688-469-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Atención: se aplazó la audiencia del megalote Aguas Vivas en Medellín que involucra al exalcalde Daniel Quintero; ¿en qué etapa está el proceso?",
-    "url": "https://www.eltiempo.com/colombia/medellin/atencion-se-suspendio-la-audiencia-del-megalote-aguas-vivas-en-medellin-que-involucra-al-exalcalde-daniel-quintero-en-que-etapa-esta-el-proceso-3585858",
-    "published": "2026-09-14T10:31:04-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/14/6aa80451ced91.r_d.960-540-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Atención: se suspenden medidas de racionamiento de agua sectoriales en Medellín durante esta semana; el ahorro aumentó y las lluvias ayudaron",
-    "url": "https://www.eltiempo.com/colombia/medellin/atencion-se-suspenden-medidas-de-racionamiento-de-agua-sectoriales-en-medellin-durante-esta-semana-el-ahorro-aumento-y-las-lluvias-ayudaron-3585869",
-    "published": "2026-09-14T11:09:32-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/14/6aa7fe7d0ef09.png",
     "media_type": "image"
    }
   ],
@@ -705,7 +717,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-14T13:31:31-04:00",
+  "fetched_at": "2026-09-14T13:45:51-04:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -713,7 +725,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (241) + USGS (13)",
-  "fetched_at": "2026-09-14T13:31:34-04:00",
+  "fetched_at": "2026-09-14T13:45:53-04:00",
   "events": [
    {
     "lat": 2.4223,
@@ -2181,7 +2193,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-14T13:31:34-04:00",
+  "fetched_at": "2026-09-14T13:45:53-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2198,21 +2210,9 @@
       "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-nuevo-sismo-de-magnitud-4-3-en-choco-en-la-manana-de-este-lunes-14-de-septiembre-se-sintio-en-varias-ciudades-3585899",
       "published": "2026-09-14T10:56:09-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Atención: se aplazó la audiencia del megalote Aguas Vivas en Medellín que involucra al exalcalde Daniel Quintero; ¿en qué etapa está el proceso?",
-      "url": "https://www.eltiempo.com/colombia/medellin/atencion-se-suspendio-la-audiencia-del-megalote-aguas-vivas-en-medellin-que-involucra-al-exalcalde-daniel-quintero-en-que-etapa-esta-el-proceso-3585858",
-      "published": "2026-09-14T10:31:04-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Atención: se suspenden medidas de racionamiento de agua sectoriales en Medellín durante esta semana; el ahorro aumentó y las lluvias ayudaron",
-      "url": "https://www.eltiempo.com/colombia/medellin/atencion-se-suspenden-medidas-de-racionamiento-de-agua-sectoriales-en-medellin-durante-esta-semana-el-ahorro-aumento-y-las-lluvias-ayudaron-3585869",
-      "published": "2026-09-14T11:09:32-05:00",
-      "section": "colombia"
      }
     ],
-    "count": 4,
+    "count": 2,
     "issue": "Ladrón en moto intentó robarle el celular a un peatón en Bogotá, pero la víctima logró esquivarlo"
    },
    {
@@ -2292,6 +2292,20 @@
     "issue": "Russian drone hits train near Ukraine-Poland border soon after dignitaries passed through"
    },
    {
+    "iso": "ESP",
+    "name": "Spain",
+    "stories": [
+     {
+      "title": "Gobierno Nacional impulsa la apuesta europea de Barranquilla: destinarán $1.000 millones desde Fontur para promover el nuevo vuelo directo a Madrid",
+      "url": "https://www.eltiempo.com/colombia/barranquilla/gobierno-nacional-impulsa-la-apuesta-europea-de-barranquilla-destinaran-1-000-millones-desde-fontur-para-promover-el-nuevo-vuelo-directo-a-madrid-3585935",
+      "published": "2026-09-14T12:30:00-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 1,
+    "issue": "Gobierno Nacional impulsa la apuesta europea de Barranquilla: destinarán $1.000 millones desde Fontur para promover el nuevo vuelo directo a Madrid"
+   },
+   {
     "iso": "UKR",
     "name": "Ukraine",
     "stories": [
@@ -2307,7 +2321,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 7,
+  "countries_matched": 8,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
