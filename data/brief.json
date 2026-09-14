@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-14T12:31:03-04:00",
- "generated_at_utc": "2026-09-14T16:31:03+00:00",
+ "generated_at": "2026-09-14T12:45:46-04:00",
+ "generated_at_utc": "2026-09-14T16:45:46+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 14",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-14T12:31:03-04:00",
+  "fetched_at": "2026-09-14T12:45:47-04:00",
   "curve": [
    {
     "time": "2026-09-14T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 88.2,
-   "feels": 100.5,
-   "humidity": 66,
-   "wind_mph": 0.6,
-   "wind_dir": 135,
-   "observed_at": "2026-09-14T12:30"
+   "temp": 88.6,
+   "feels": 101.0,
+   "humidity": 65,
+   "wind_mph": 0.9,
+   "wind_dir": 166,
+   "observed_at": "2026-09-14T12:45"
   },
   "today": {
    "high": 89.1,
@@ -166,26 +166,38 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-14T12:31:03-04:00",
+  "fetched_at": "2026-09-14T12:45:47-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-14T12:31:29-04:00",
-  "aqi": 53,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-14T12:45:51-04:00",
+  "aqi": 55,
   "category": "Moderate",
-  "pm25": 14.0,
-  "pm10": 18.3,
-  "observed": "2026-09-14T12:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-14 11:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-14",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-14",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-14T12:31:32-04:00",
+  "fetched_at": "2026-09-14T12:45:53-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
@@ -260,7 +272,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-14T12:31:33-04:00",
+  "fetched_at": "2026-09-14T12:45:53-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -309,7 +321,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-14T12:31:33-04:00",
+  "fetched_at": "2026-09-14T12:45:54-04:00",
   "issued": "800 AM EDT Mon Sep 14 2026",
   "areas": [
    {
@@ -323,7 +335,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-14T12:31:33-04:00",
+  "fetched_at": "2026-09-14T12:45:54-04:00",
   "florida": "$4.1393",
   "national": "$4.3163",
   "diesel": "$6.3111",
@@ -332,7 +344,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-14T12:31:35-04:00",
+  "fetched_at": "2026-09-14T12:45:55-04:00",
   "streams": {
    "local": [
     {
@@ -521,11 +533,11 @@
     "media_type": "video"
    },
    {
-    "title": "8 displaced after fire sparks in Fort Lauderdale home",
-    "url": "https://wsvn.com/news/local/broward/8-displaced-after-fire-sparks-in-fort-lauderdale-home/",
-    "published": "Mon, 14 Sep 2026 10:10:15 +0000",
+    "title": "Girl dies after Deerfield Beach rollover crash that also killed motorcyclist; 2 children, 3 adults hospitalized",
+    "url": "https://wsvn.com/news/local/broward/girl-dies-after-deerfield-beach-rollover-crash-that-also-killed-motorcyclist-2-children-3-adults-hospitalized/",
+    "published": "Mon, 14 Sep 2026 16:37:49 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/cec3fb6f-99ca-4ef9-ae4b-d58cdd093110/69eff5ec-35fa-4c63-9422-efd1eecc169a/main.mp4?fastly_token=NmFhODIwMGNfNjUwZGE2ZTFlMzY3OTBlODVmM2Y0YzFlOWVjMjU0NTFiZTI1OWNhMGVhOWEwOGE3YzM1YjBlZDBjNjc5Y2RlYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jZWMzZmI2Zi05OWNhLTRlZjktYWU0Yi1kNThjZGQwOTMxMTAvNjllZmY1ZWMtMzVmYS00YzYzLTk0MjItZWZkMWVlY2MxNjlhL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/bbac9749-2753-438b-a26e-1bdad004a3ba/b8e818f9-5d6a-44f8-833d-98ac2d4e9c4c/main.mp4?fastly_token=NmFhODdhZWJfNTEwOGM1ZGI3YmE5Yzc1MDU4M2U5MzQ2ZmVhOWFjMjVkMjFlMDg1ODk1NDIzZmRiNWFjZDM4MGQ5MjAwOGZiMl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iYmFjOTc0OS0yNzUzLTQzOGItYTI2ZS0xYmRhZDAwNGEzYmEvYjhlODE4ZjktNWQ2YS00NGY4LTgzM2QtOThhYzJkNGU5YzRjL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -541,15 +553,15 @@
     "url": "https://wsvn.com/news/local/miami-dade/loved-ones-plan-candlelight-memorial-at-gwen-cherry-park-for-10-year-old-girl-killed-in-hit-and-run-in-nw-miami-dade/",
     "published": "Mon, 14 Sep 2026 14:29:26 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/aeb789d7-214b-4ae3-b1af-98dddc78a54d/e2b2a003-9c9d-4777-a9e9-4ca016d4231f/main.mp4?fastly_token=NmFhODYwYWNfNmEyODMyMmI4ZGE3MGYwY2NlMjg0ZmEzMmRmMjhkYWRjMzczMmZkZDdkNzNjZGMzOGVlZjgzYzdmYmM0YWIxM18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hZWI3ODlkNy0yMTRiLTRhZTMtYjFhZi05OGRkZGM3OGE1NGQvZTJiMmEwMDMtOWM5ZC00Nzc3LWE5ZTktNGNhMDE2ZDQyMzFmL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/a61dca59-0650-42ff-9830-03935ffe4895/efe6a329-f9f7-4c65-a24c-c52f907bd1c7/main.mp4?fastly_token=NmFhODc2NThfNTZlNGJhMzNiZGNmMGQ0MTNkYmYzMzJlZDljYTVkYjM1YzRmNTZhY2VmYmQ1MTU0OTU5MzAyZDFmMzgwMWQwNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hNjFkY2E1OS0wNjUwLTQyZmYtOTgzMC0wMzkzNWZmZTQ4OTUvZWZlNmEzMjktZjlmNy00YzY1LWEyNGMtYzUyZjkwN2JkMWM3L21haW4ubXA0",
     "media_type": "video"
    },
    {
-    "title": "3 construction workers, driver hospitalized after crane collapses on Brickell Bay Drive, sparking SUV fire",
+    "title": "3 construction workers, driver hospitalized after crane collapses onto Brickell Bay Drive, sparking SUV fire",
     "url": "https://wsvn.com/news/local/miami-dade/3-construction-workers-driver-hospitalized-after-crane-collapses-on-brickell-bay-drive-sparking-suv-fire/",
     "published": "Mon, 14 Sep 2026 13:48:56 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c4219bd0-4506-491b-975d-926b2b96dbbc/d4551b9f-c7c1-4a5c-a5aa-212a6a592d51/main.mp4?fastly_token=NmFhODZmMmJfZGUzYjA3YjQ0ZjQ2MmMwOGI1MTFhZTBmZTU1NGYwNDU1ZjQyNGUxNmY3ZGEzMGNmYTFiY2Q4M2YxYzk2MDk4N18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jNDIxOWJkMC00NTA2LTQ5MWItOTc1ZC05MjZiMmI5NmRiYmMvZDQ1NTFiOWYtYzdjMS00YTVjLWE1YWEtMjEyYTZhNTkyZDUxL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/7e3f4902-2288-4914-923d-150349985374/190a21a0-7da1-42af-a0e1-1fa0ba44a423/main.mp4?fastly_token=NmFhODc4NTJfOTA3YTkwNWJkNmMxN2FlNGUwYWYyYmEyNzVhMzNlYTc1ZTQ5MDNhNjY4ZDc4ZjA4ZDA1MzFlZjI2NDliZGNhYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83ZTNmNDkwMi0yMjg4LTQ5MTQtOTIzZC0xNTAzNDk5ODUzNzQvMTkwYTIxYTAtN2RhMS00MmFmLWEwZTEtMWZhMGJhNDRhNDIzL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -570,6 +582,14 @@
    }
   ],
   "colombia": [
+   {
+    "title": "Ladrón en moto intentó robarle el celular a un peatón en Bogotá, pero la víctima logró esquivarlo",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/ladron-en-moto-intento-robarle-el-celular-a-un-peaton-en-bogota-pero-la-victima-logro-esquivarlo-3585909",
+    "published": "2026-09-14T11:41:19-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/14/6aa821b309735.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "El intenso fenómeno de El Niño podría disparar casos de dengue en el Caribe colombiano: expertos alertan mayor reproducción del mosquito transmisor",
     "url": "https://www.eltiempo.com/colombia/barranquilla/el-intenso-fenomeno-de-el-nino-podria-disparar-casos-de-dengue-en-el-caribe-colombiano-expertos-alertan-mayor-reproduccion-del-mosquito-transmisor-3585911",
@@ -619,19 +639,11 @@
     "media_type": "image"
    },
    {
-    "title": "Barranquilla y Soledad exigen investigaciones por los audios de ‘Castor’: autoridades e implicados sostienen versiones contrariadas alrededor del caso",
+    "title": "Concejal exige investigaciones profundas por supuestos audios de ‘Castor’ que salpican a la alcaldesa de Soledad (Atlántico): esto dice su petición",
     "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-y-soledad-exigen-investigaciones-por-los-audios-de-castor-autoridades-e-implicados-sostienen-versiones-contrariadas-alrededor-del-caso-3585868",
     "published": "2026-09-14T09:05:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/06/09/6a284159d998d.r_d.406-221-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Gobierno nacional prioriza proyectos clave para Cartagena: más buses para Transcaribe, Aquabus, Vía Perimetral, aeropuerto de Bayunca y Rafael Núñez",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/gobierno-nacional-prioriza-proyectos-clave-para-cartagena-mas-buses-para-transcaribe-aquabus-via-perimetral-aeropuerto-de-bayunca-y-rafael-nunez-3585867",
-    "published": "2026-09-14T08:55:06-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/14/6aa7f96cbc8fb.jpeg",
     "media_type": "image"
    }
   ],
@@ -705,15 +717,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-14T12:31:36-04:00",
+  "fetched_at": "2026-09-14T12:45:56-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (241) + USGS (12)",
-  "fetched_at": "2026-09-14T12:31:39-04:00",
+  "source": "GDACS (241) + USGS (13)",
+  "fetched_at": "2026-09-14T12:45:59-04:00",
   "events": [
    {
     "lat": 2.4223,
@@ -812,6 +824,19 @@
     "mag": 5.4,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tha3",
     "when": 1789354577419,
+    "source": "USGS"
+   },
+   {
+    "lat": -8.9454,
+    "lon": 157.7415,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M5.2 — 135 km SE of Gizo, Solomon Islands",
+    "place": "135 km SE of Gizo, Solomon Islands",
+    "severity": "M5.2",
+    "mag": 5.2,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thea",
+    "when": 1789402505947,
     "source": "USGS"
    },
    {
@@ -2154,25 +2179,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031951",
     "when": "Mon, 14 Sep 2026 15:14:22 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -7.894543172578126,
-    "lon": 141.65895889439608,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Papua New Guinea",
-    "place": "Papua New Guinea",
-    "severity": "Green impact for forestfire in 5038 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031938",
-    "when": "Mon, 14 Sep 2026 15:12:28 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 253,
+  "event_count": 254,
   "counts": {
    "red": 0,
    "orange": 7,
-   "green": 246
+   "green": 247
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2180,12 +2193,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-14T12:31:39-04:00",
+  "fetched_at": "2026-09-14T12:45:59-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "Ladrón en moto intentó robarle el celular a un peatón en Bogotá, pero la víctima logró esquivarlo",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/ladron-en-moto-intento-robarle-el-celular-a-un-peaton-en-bogota-pero-la-victima-logro-esquivarlo-3585909",
+      "published": "2026-09-14T11:41:19-05:00",
+      "section": "colombia"
+     },
      {
       "title": "Temblor hoy en Colombia | Reportan nuevo sismo de magnitud 4,3 en Chocó en la mañana de este lunes 14 de septiembre: se sintió en varias ciudades",
       "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-nuevo-sismo-de-magnitud-4-3-en-choco-en-la-manana-de-este-lunes-14-de-septiembre-se-sintio-en-varias-ciudades-3585899",
@@ -2205,8 +2224,8 @@
       "section": "colombia"
      }
     ],
-    "count": 3,
-    "issue": "Temblor hoy en Colombia | Reportan nuevo sismo de magnitud 4,3 en Chocó en la mañana de este lunes 14 de septiembre: se sintió en varias ciudades"
+    "count": 4,
+    "issue": "Ladrón en moto intentó robarle el celular a un peatón en Bogotá, pero la víctima logró esquivarlo"
    },
    {
     "iso": "IRN",
