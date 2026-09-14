@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-13T23:00:54-04:00",
- "generated_at_utc": "2026-09-14T03:00:54+00:00",
+ "generated_at": "2026-09-13T23:15:37-04:00",
+ "generated_at_utc": "2026-09-14T03:15:37+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 13",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-13T23:00:54-04:00",
+  "fetched_at": "2026-09-13T23:15:37-04:00",
   "curve": [
    {
     "time": "2026-09-13T05:00",
@@ -148,11 +148,11 @@
   ],
   "current": {
    "temp": 78.7,
-   "feels": 89.0,
+   "feels": 89.1,
    "humidity": 89,
-   "wind_mph": 1.4,
-   "wind_dir": 288,
-   "observed_at": "2026-09-13T23:00"
+   "wind_mph": 1.3,
+   "wind_dir": 315,
+   "observed_at": "2026-09-13T23:15"
   },
   "today": {
    "high": 91.0,
@@ -166,26 +166,38 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-13T23:00:55-04:00",
+  "fetched_at": "2026-09-13T23:15:38-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-13T23:01:21-04:00",
-  "aqi": 45,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-13T23:16:02-04:00",
+  "aqi": 19,
   "category": "Good",
-  "pm25": 11.1,
-  "pm10": 11.3,
-  "observed": "2026-09-13T23:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "O3",
+  "reporting_area": "Miami",
+  "observed": "2026-09-13 22:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-14",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-14",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-13T23:01:21-04:00",
+  "fetched_at": "2026-09-13T23:16:02-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +210,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-13T23:01:22-04:00",
+  "fetched_at": "2026-09-13T23:16:03-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -248,7 +260,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-13T23:01:22-04:00",
+  "fetched_at": "2026-09-13T23:16:03-04:00",
   "issued": "800 PM EDT Sun Sep 13 2026",
   "areas": [
    {
@@ -262,7 +274,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-13T23:01:22-04:00",
+  "fetched_at": "2026-09-13T23:16:03-04:00",
   "florida": "$4.1434",
   "national": "$4.3130",
   "diesel": "$6.2789",
@@ -271,7 +283,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-13T23:01:23-04:00",
+  "fetched_at": "2026-09-13T23:16:05-04:00",
   "streams": {
    "local": [
     {
@@ -380,6 +392,22 @@
   ],
   "local": [
    {
+    "title": "Fort Lauderdale House fire displaces eight residents",
+    "url": "https://www.local10.com/news/local/2026/09/13/fort-lauderdale-house-fire-displaces-eight-residents/",
+    "published": "Mon, 14 Sep 2026 03:09:33 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "2 dead, 5 injured after motorcycle hits car making U-turn in Deerfield Beach",
+    "url": "https://www.local10.com/news/local/2026/09/13/2-dead-5-injured-after-motorcycle-hits-car-making-u-turn-in-deerfield-beach/",
+    "published": "Sun, 13 Sep 2026 21:11:19 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Professional soccer player describes weeks in ICE custody after arrest",
     "url": "https://www.local10.com/news/local/2026/09/13/professional-soccer-player-describes-weeks-in-ice-custody-after-arrest/",
     "published": "Mon, 14 Sep 2026 01:19:41 +0000",
@@ -412,14 +440,6 @@
     "media_type": null
    },
    {
-    "title": "2 dead, 5 injured after motorcycle hits car making U-turn in Deerfield Beach",
-    "url": "https://www.local10.com/news/local/2026/09/13/2-dead-5-injured-after-motorcycle-hits-car-making-u-turn-in-deerfield-beach/",
-    "published": "Sun, 13 Sep 2026 21:11:19 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "Traffic backed up on I-95 following multi-vehicle crash in North Miami",
     "url": "https://www.local10.com/news/local/2026/09/13/traffic-backed-up-on-i-95-following-multi-vehicle-crash-in-north-miami/",
     "published": "Sun, 13 Sep 2026 13:42:09 +0000",
@@ -434,14 +454,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/E6UDDV64BNHFBHZJXSKHWG4OWA.jpeg?auth=12210de7848e00c8960dc8539773c89a4a1c4775facbfd0933ed9470915f7249&smart=true&width=1200&height=900",
     "media_type": "image"
-   },
-   {
-    "title": "Annual Kennedy Kids 5K Race held at Barry University in Miami Shores",
-    "url": "https://www.local10.com/news/local/2026/09/13/annual-kennedy-kids-5k-race-held-at-barry-university-in-miami-shores/",
-    "published": "Sun, 13 Sep 2026 14:04:48 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
    },
    {
     "title": "MDSO deputy involved in hit-and-run crash after driver strikes cruiser in NW Miami-Dade",
@@ -644,7 +656,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-13T23:01:24-04:00",
+  "fetched_at": "2026-09-13T23:16:05-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -652,7 +664,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (222) + USGS (10)",
-  "fetched_at": "2026-09-13T23:01:27-04:00",
+  "fetched_at": "2026-09-13T23:16:09-04:00",
   "events": [
    {
     "lat": 15.196,
@@ -833,13 +845,13 @@
     "source": "GDACS"
    },
    {
-    "lat": -19.249913791610926,
-    "lon": 16.532664046374613,
+    "lat": -19.250200902236255,
+    "lon": 16.53328089474794,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Namibia",
     "place": "Namibia",
-    "severity": "Green impact for forestfire in 12924 ha",
+    "severity": "Green impact for forestfire in 13031 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031934",
     "when": "Sun, 13 Sep 2026 15:01:46 GMT",
     "source": "GDACS"
@@ -893,13 +905,13 @@
     "source": "GDACS"
    },
    {
-    "lat": -13.316073577433214,
-    "lon": -51.67395414257154,
+    "lat": -13.316622598717991,
+    "lon": -51.673250503730074,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Brazil",
     "place": "Brazil",
-    "severity": "Green impact for forestfire in 5552 ha",
+    "severity": "Green impact for forestfire in 5635 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031952",
     "when": "Sun, 13 Sep 2026 23:01:43 GMT",
     "source": "GDACS"
@@ -913,7 +925,7 @@
     "place": "Zambia",
     "severity": "Green impact for forestfire in 6528 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031940",
-    "when": "Sun, 13 Sep 2026 23:01:52 GMT",
+    "when": "Mon, 14 Sep 2026 03:01:33 GMT",
     "source": "GDACS"
    },
    {
@@ -949,7 +961,7 @@
     "place": "Zambia",
     "severity": "Green impact for forestfire in 5403 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031941",
-    "when": "Sun, 13 Sep 2026 23:03:07 GMT",
+    "when": "Mon, 14 Sep 2026 03:02:38 GMT",
     "source": "GDACS"
    },
    {
@@ -985,7 +997,7 @@
     "place": "Angola",
     "severity": "Green impact for forestfire in 5972 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031944",
-    "when": "Sun, 13 Sep 2026 23:02:46 GMT",
+    "when": "Mon, 14 Sep 2026 03:02:24 GMT",
     "source": "GDACS"
    },
    {
@@ -1013,13 +1025,13 @@
     "source": "GDACS"
    },
    {
-    "lat": -23.6225628836646,
-    "lon": 24.321741521300183,
+    "lat": -23.622198975826997,
+    "lon": 24.32129421984949,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Botswana",
     "place": "Botswana",
-    "severity": "Green impact for forestfire in 14859 ha",
+    "severity": "Green impact for forestfire in 14985 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031898",
     "when": "Fri, 11 Sep 2026 23:00:55 GMT",
     "source": "GDACS"
@@ -1061,8 +1073,8 @@
     "source": "GDACS"
    },
    {
-    "lat": 18.8,
-    "lon": -134.0,
+    "lat": 19.2,
+    "lon": -135.3,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone NORBERT-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
@@ -1133,13 +1145,13 @@
     "source": "GDACS"
    },
    {
-    "lat": -15.048590736214283,
-    "lon": -48.49655319202596,
+    "lat": -15.048134047874266,
+    "lon": -48.49685037952984,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Brazil",
     "place": "Brazil",
-    "severity": "Green impact for forestfire in 5075 ha",
+    "severity": "Green impact for forestfire in 5149 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031953",
     "when": "Sun, 13 Sep 2026 23:04:01 GMT",
     "source": "GDACS"
@@ -1165,7 +1177,7 @@
     "place": "Angola",
     "severity": "Green impact for forestfire in 5909 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031945",
-    "when": "Sun, 13 Sep 2026 23:04:40 GMT",
+    "when": "Mon, 14 Sep 2026 03:04:21 GMT",
     "source": "GDACS"
    },
    {
@@ -1177,7 +1189,7 @@
     "place": "The Democratic Republic of Congo",
     "severity": "Green impact for forestfire in 5110 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031946",
-    "when": "Sun, 13 Sep 2026 23:03:57 GMT",
+    "when": "Mon, 14 Sep 2026 03:03:31 GMT",
     "source": "GDACS"
    },
    {
@@ -1217,25 +1229,25 @@
     "source": "GDACS"
    },
    {
-    "lat": -8.293946869760562,
-    "lon": 118.09622876140706,
+    "lat": -8.29479135899832,
+    "lon": 118.09658951321686,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Indonesia",
     "place": "Indonesia",
-    "severity": "Green impact for forestfire in 5789 ha",
+    "severity": "Green impact for forestfire in 5955 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031925",
     "when": "Sun, 13 Sep 2026 03:02:28 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -19.026363286410476,
-    "lon": 16.670002672025145,
+    "lat": -19.026281333450793,
+    "lon": 16.66995457588413,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Namibia",
     "place": "Namibia",
-    "severity": "Green impact for forestfire in 61261 ha",
+    "severity": "Green impact for forestfire in 61358 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031888",
     "when": "Thu, 10 Sep 2026 23:01:12 GMT",
     "source": "GDACS"
@@ -1297,7 +1309,7 @@
     "place": "Angola",
     "severity": "Green impact for forestfire in 5334 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031947",
-    "when": "Sun, 13 Sep 2026 23:06:23 GMT",
+    "when": "Mon, 14 Sep 2026 03:06:08 GMT",
     "source": "GDACS"
    },
    {
@@ -1309,7 +1321,7 @@
     "place": "Zambia",
     "severity": "Green impact for forestfire in 12010 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031948",
-    "when": "Sun, 13 Sep 2026 23:05:25 GMT",
+    "when": "Mon, 14 Sep 2026 03:05:16 GMT",
     "source": "GDACS"
    },
    {
@@ -1345,7 +1357,7 @@
     "place": "Sudan",
     "severity": "Green impact for forestfire in 5663 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031926",
-    "when": "Sun, 13 Sep 2026 23:06:16 GMT",
+    "when": "Mon, 14 Sep 2026 03:06:01 GMT",
     "source": "GDACS"
    },
    {
@@ -1409,13 +1421,13 @@
     "source": "GDACS"
    },
    {
-    "lat": -9.744419833515863,
-    "lon": -43.46350503928242,
+    "lat": -9.744432619639518,
+    "lon": -43.4635127448488,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Brazil",
     "place": "Brazil",
-    "severity": "Green impact for forestfire in 19601 ha",
+    "severity": "Green impact for forestfire in 19593 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031817",
     "when": "Tue, 08 Sep 2026 07:02:41 GMT",
     "source": "GDACS"
@@ -1453,7 +1465,7 @@
     "place": "Zambia",
     "severity": "Green impact for forestfire in 12222 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031949",
-    "when": "Sun, 13 Sep 2026 23:07:08 GMT",
+    "when": "Mon, 14 Sep 2026 03:06:56 GMT",
     "source": "GDACS"
    },
    {
@@ -1469,13 +1481,13 @@
     "source": "GDACS"
    },
    {
-    "lat": -10.25676687103045,
-    "lon": -45.26154685403174,
+    "lat": -10.256744943927806,
+    "lon": -45.26155148193385,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Brazil",
     "place": "Brazil",
-    "severity": "Green impact for forestfire in 13777 ha",
+    "severity": "Green impact for forestfire in 13772 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031889",
     "when": "Thu, 10 Sep 2026 23:04:13 GMT",
     "source": "GDACS"
@@ -1553,13 +1565,13 @@
     "source": "GDACS"
    },
    {
-    "lat": -11.465165622017702,
-    "lon": 17.403427955612784,
+    "lat": -11.463753169589816,
+    "lon": 17.398728476319945,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Angola",
     "place": "Angola",
-    "severity": "Green impact for forestfire in 8697 ha",
+    "severity": "Green impact for forestfire in 9486 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031928",
     "when": "Sun, 13 Sep 2026 15:06:55 GMT",
     "source": "GDACS"
@@ -1573,7 +1585,7 @@
     "place": "Angola",
     "severity": "Green impact for forestfire in 6433 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031950",
-    "when": "Sun, 13 Sep 2026 23:08:39 GMT",
+    "when": "Mon, 14 Sep 2026 03:08:46 GMT",
     "source": "GDACS"
    },
    {
@@ -1801,7 +1813,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 5360 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031895",
-    "when": "Sun, 13 Sep 2026 23:11:58 GMT",
+    "when": "Mon, 14 Sep 2026 03:12:48 GMT",
     "source": "GDACS"
    },
    {
@@ -1921,7 +1933,7 @@
     "place": "Papua New Guinea",
     "severity": "Green impact for forestfire in 5038 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031938",
-    "when": "Sun, 13 Sep 2026 23:12:31 GMT",
+    "when": "Mon, 14 Sep 2026 03:13:24 GMT",
     "source": "GDACS"
    },
    {
@@ -2117,7 +2129,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-13T23:01:28-04:00",
+  "fetched_at": "2026-09-13T23:16:09-04:00",
   "countries": [
    {
     "iso": "COL",
