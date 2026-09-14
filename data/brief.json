@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-14T15:15:41-04:00",
- "generated_at_utc": "2026-09-14T19:15:41+00:00",
+ "generated_at": "2026-09-14T15:30:39-04:00",
+ "generated_at_utc": "2026-09-14T19:30:39+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 14",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-14T15:15:42-04:00",
+  "fetched_at": "2026-09-14T15:30:39-04:00",
   "curve": [
    {
     "time": "2026-09-14T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 86.6,
-   "feels": 94.8,
-   "humidity": 65,
-   "wind_mph": 6.9,
-   "wind_dir": 92,
-   "observed_at": "2026-09-14T15:15"
+   "temp": 86.5,
+   "feels": 96.1,
+   "humidity": 74,
+   "wind_mph": 6.1,
+   "wind_dir": 100,
+   "observed_at": "2026-09-14T15:30"
   },
   "today": {
    "high": 89.9,
@@ -166,132 +166,96 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-14T15:15:42-04:00",
+  "fetched_at": "2026-09-14T15:30:40-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-14T15:15:43-04:00",
-  "aqi": 23,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-14 14:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-14",
-    "aqi": 34,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-14",
-    "aqi": 55,
-    "category": "Moderate",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-15",
-    "aqi": 27,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-15",
-    "aqi": 55,
-    "category": "Moderate",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-16",
-    "aqi": 33,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-16",
-    "aqi": 46,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-14T15:30:41-04:00",
+  "aqi": 55,
+  "category": "Moderate",
+  "pm25": 17.5,
+  "pm10": 24.2,
+  "observed": "2026-09-14T15:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-14T15:15:46-04:00",
+  "fetched_at": "2026-09-14T15:30:43-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
-  "depart_at": "2026-09-14T15:30:00-04:00",
-  "miles": 20.6,
-  "minutes": 66,
-  "delay_minutes": 3,
+  "depart_at": "now",
+  "miles": 21.0,
+  "minutes": 68,
+  "delay_minutes": 5,
   "toll_free": true,
   "alternates": [
    {
     "miles": 25.5,
-    "minutes": 55,
+    "minutes": 52,
     "toll": true,
-    "saves": 11
+    "saves": 16
    },
    {
-    "miles": 25.0,
-    "minutes": 57,
+    "miles": 22.6,
+    "minutes": 58,
     "toll": true,
-    "saves": 9
-   },
-   {
-    "miles": 24.0,
-    "minutes": 62,
-    "toll": true,
-    "saves": 4
+    "saves": 10
    },
    {
     "miles": 28.6,
-    "minutes": 68,
+    "minutes": 61,
     "toll": true,
-    "saves": -2
+    "saves": 7
+   },
+   {
+    "miles": 46.8,
+    "minutes": 61,
+    "toll": true,
+    "saves": 7
    }
   ],
   "alternates_worth_taking": [
    {
     "miles": 25.5,
-    "minutes": 55,
+    "minutes": 52,
     "toll": true,
-    "saves": 11
+    "saves": 16
    }
   ],
   "free_alternates": [
    {
-    "miles": 20.6,
-    "minutes": 66,
-    "delay_minutes": 3,
+    "miles": 21.0,
+    "minutes": 68,
+    "delay_minutes": 5,
     "saves": 0
    },
    {
     "miles": 26.6,
-    "minutes": 69,
-    "delay_minutes": 0
+    "minutes": 70,
+    "delay_minutes": 1
    },
    {
     "miles": 23.1,
-    "minutes": 80,
-    "delay_minutes": 0
+    "minutes": 81,
+    "delay_minutes": 1
    },
    {
-    "miles": 22.5,
-    "minutes": 76,
+    "miles": 25.0,
+    "minutes": 78,
     "delay_minutes": 0
    }
   ],
   "best_free": {
-   "miles": 20.6,
-   "minutes": 66,
-   "delay_minutes": 3,
+   "miles": 21.0,
+   "minutes": 68,
+   "delay_minutes": 5,
    "saves": 0
   },
   "incidents": [],
@@ -303,7 +267,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-14T15:15:47-04:00",
+  "fetched_at": "2026-09-14T15:30:44-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -354,7 +318,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-14T15:15:47-04:00",
+  "fetched_at": "2026-09-14T15:30:44-04:00",
   "issued": "200 PM EDT Mon Sep 14 2026",
   "areas": [
    {
@@ -368,7 +332,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-14T15:15:47-04:00",
+  "fetched_at": "2026-09-14T15:30:44-04:00",
   "florida": "$4.1393",
   "national": "$4.3163",
   "diesel": "$6.3111",
@@ -377,7 +341,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-14T15:15:49-04:00",
+  "fetched_at": "2026-09-14T15:30:47-04:00",
   "streams": {
    "local": [
     {
@@ -602,7 +566,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/3-construction-workers-driver-hospitalized-after-crane-collapses-on-brickell-bay-drive-sparking-suv-fire/",
     "published": "Mon, 14 Sep 2026 13:48:56 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/7e3f4902-2288-4914-923d-150349985374/190a21a0-7da1-42af-a0e1-1fa0ba44a423/main.mp4?fastly_token=NmFhODkwMmRfNGRjNDM2NWM1OTQ0ZDhiZWZlY2MyM2IwZGIxYzVjOWRmM2MzMzYzODA1MmZmZjFlNGRlMDIyMGJhOWU1YTJhNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83ZTNmNDkwMi0yMjg4LTQ5MTQtOTIzZC0xNTAzNDk5ODUzNzQvMTkwYTIxYTAtN2RhMS00MmFmLWEwZTEtMWZhMGJhNDRhNDIzL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/7e3f4902-2288-4914-923d-150349985374/190a21a0-7da1-42af-a0e1-1fa0ba44a423/main.mp4?fastly_token=NmFhODkyYWVfOWUwNDg3ODk1ZGQzZjFjZDUxOWYyZjVmZjZlOGExYjc1ZTZlYjIyMjdkNmFiZTEwMzEzZTg4NjdhYWVkMWY4ZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83ZTNmNDkwMi0yMjg4LTQ5MTQtOTIzZC0xNTAzNDk5ODUzNzQvMTkwYTIxYTAtN2RhMS00MmFmLWEwZTEtMWZhMGJhNDRhNDIzL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -616,9 +580,17 @@
   ],
   "colombia": [
    {
+    "title": "De La Espriella respalda a Barranquilla en disputa por Corredor Universitario y Villa Campestre: el Congreso debe definir el límite definitivo ahora",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/de-la-espriella-respalda-a-barranquilla-en-disputa-por-corredor-universitario-y-villa-campestre-el-congreso-debe-definir-el-limite-definitivo-ahora-3585968",
+    "published": "2026-09-14T14:21:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/14/6aa847b9d6a20.png",
+    "media_type": "image"
+   },
+   {
     "title": "Aerocivil confirmó ubicación exacta en la que se estrelló la avioneta que volaba entre Chocó y Bogotá con cinco pasajeros: está a 9.000 pies de altura",
     "url": "https://www.eltiempo.com/colombia/medellin/aerocivil-confirmo-ubicacion-exacta-en-la-que-se-estrello-la-avioneta-que-volaba-entre-choco-y-bogota-con-cinco-pasajeros-esta-a-9-000-pies-de-altura-3585954",
-    "published": "2026-09-14T13:35:52-05:00",
+    "published": "2026-09-14T14:20:19-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/14/6aa83babe1304.png",
     "media_type": "image"
@@ -669,14 +641,6 @@
     "published": "2026-09-14T10:56:09-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/07/06/6a4b862fdeb09.r_d.246-253-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "La alerta inminente que hay en Barrancabermeja por otro avistamiento de hipopótamo en casco urbano: ¿Qué pasó con el contrato para retirar la especie?",
-    "url": "https://www.eltiempo.com/colombia/santander/la-alerta-inminente-que-hay-en-barrancabermeja-por-otro-avistamiento-de-hipopotamo-en-casco-urbano-que-paso-con-el-contrato-para-retirar-la-especie-3585875",
-    "published": "2026-09-14T09:54:13-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/01/30/697ce11e1b47f.jpeg",
     "media_type": "image"
    }
   ],
@@ -750,15 +714,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-14T15:15:49-04:00",
+  "fetched_at": "2026-09-14T15:30:48-04:00",
   "items": [],
-  "scanned": 5,
+  "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
   "source": "GDACS (241) + USGS (14)",
-  "fetched_at": "2026-09-14T15:15:52-04:00",
+  "fetched_at": "2026-09-14T15:30:52-04:00",
   "events": [
    {
     "lat": 2.4223,
@@ -2227,7 +2191,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-14T15:15:52-04:00",
+  "fetched_at": "2026-09-14T15:30:52-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2236,7 +2200,7 @@
      {
       "title": "Aerocivil confirmó ubicación exacta en la que se estrelló la avioneta que volaba entre Chocó y Bogotá con cinco pasajeros: está a 9.000 pies de altura",
       "url": "https://www.eltiempo.com/colombia/medellin/aerocivil-confirmo-ubicacion-exacta-en-la-que-se-estrello-la-avioneta-que-volaba-entre-choco-y-bogota-con-cinco-pasajeros-esta-a-9-000-pies-de-altura-3585954",
-      "published": "2026-09-14T13:35:52-05:00",
+      "published": "2026-09-14T14:20:19-05:00",
       "section": "colombia"
      },
      {
