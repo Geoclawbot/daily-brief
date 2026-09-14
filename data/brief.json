@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-14T15:30:39-04:00",
- "generated_at_utc": "2026-09-14T19:30:39+00:00",
+ "generated_at": "2026-09-14T15:45:30-04:00",
+ "generated_at_utc": "2026-09-14T19:45:30+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 14",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-14T15:30:39-04:00",
+  "fetched_at": "2026-09-14T15:45:31-04:00",
   "curve": [
    {
     "time": "2026-09-14T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 86.5,
-   "feels": 96.1,
-   "humidity": 74,
-   "wind_mph": 6.1,
-   "wind_dir": 100,
-   "observed_at": "2026-09-14T15:30"
+   "temp": 86.9,
+   "feels": 99.1,
+   "humidity": 84,
+   "wind_mph": 7.6,
+   "wind_dir": 92,
+   "observed_at": "2026-09-14T15:45"
   },
   "today": {
    "high": 89.9,
@@ -166,95 +166,137 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-14T15:30:40-04:00",
+  "fetched_at": "2026-09-14T15:45:31-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-14T15:30:41-04:00",
-  "aqi": 55,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-14T15:45:32-04:00",
+  "aqi": 59,
   "category": "Moderate",
-  "pm25": 17.5,
-  "pm10": 24.2,
-  "observed": "2026-09-14T15:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-14 14:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-14",
+    "aqi": 34,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-14",
+    "aqi": 55,
+    "category": "Moderate",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-15",
+    "aqi": 27,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-15",
+    "aqi": 55,
+    "category": "Moderate",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-16",
+    "aqi": 33,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-16",
+    "aqi": 46,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-14T15:30:43-04:00",
+  "fetched_at": "2026-09-14T15:45:35-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
   "miles": 21.0,
-  "minutes": 68,
+  "minutes": 70,
   "delay_minutes": 5,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 25.5,
-    "minutes": 52,
+    "miles": 26.8,
+    "minutes": 51,
     "toll": true,
-    "saves": 16
+    "saves": 19
    },
    {
     "miles": 22.6,
-    "minutes": 58,
+    "minutes": 59,
     "toll": true,
-    "saves": 10
+    "saves": 11
    },
    {
     "miles": 28.6,
-    "minutes": 61,
+    "minutes": 69,
     "toll": true,
-    "saves": 7
+    "saves": 1
    },
    {
-    "miles": 46.8,
-    "minutes": 61,
+    "miles": 45.3,
+    "minutes": 64,
     "toll": true,
-    "saves": 7
+    "saves": 6
    }
   ],
   "alternates_worth_taking": [
    {
-    "miles": 25.5,
-    "minutes": 52,
+    "miles": 26.8,
+    "minutes": 51,
     "toll": true,
-    "saves": 16
+    "saves": 19
+   },
+   {
+    "miles": 22.6,
+    "minutes": 59,
+    "toll": true,
+    "saves": 11
    }
   ],
   "free_alternates": [
    {
     "miles": 21.0,
-    "minutes": 68,
+    "minutes": 70,
     "delay_minutes": 5,
     "saves": 0
    },
    {
-    "miles": 26.6,
-    "minutes": 70,
+    "miles": 23.4,
+    "minutes": 78,
     "delay_minutes": 1
    },
    {
     "miles": 23.1,
-    "minutes": 81,
+    "minutes": 85,
     "delay_minutes": 1
    },
    {
-    "miles": 25.0,
-    "minutes": 78,
-    "delay_minutes": 0
+    "miles": 23.0,
+    "minutes": 82,
+    "delay_minutes": 1
    }
   ],
   "best_free": {
    "miles": 21.0,
-   "minutes": 68,
+   "minutes": 70,
    "delay_minutes": 5,
    "saves": 0
   },
@@ -267,7 +309,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-14T15:30:44-04:00",
+  "fetched_at": "2026-09-14T15:45:36-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -310,7 +352,6 @@
    "Northeast | St. Johns | St Augustine: There is lane blocking construction on A1A between Carcaba Rd and San Pelayo Court. Use caution in the area. | Sep 14 2026, 9:29 AM",
    "Northeast | Duval | Jacksonville: There is lane blocking construction on SR-134/103rd St between Rockola Rd and Old Middleburg Rd. Also on SR-134/103rd St between Monroe Smith and Connie Jean. Use caution in the area. | Sep 14 2026, 9:56 AM",
    "Northeast | Alachua | Gainesville: There is lane blocking construction on SR-26 between SW 17th to SW 143rd ST. Use caution in the area. | Sep 14 2026, 10:17 AM",
-   "Northeast | Duval | Jacksonville: Due to a crash on SR-23/ New Kings RD at Old Kings Rd, all SB lanes are blocked. Use caution and seek alternate routes. | Sep 14 2026, 2:25 PM",
    "Northeast | Duval | Jacksonville: Due to a crash on 295E SB at MM 41 all lanes are blocked. Use caution and seek alternate routes | Sep 14 2026, 3:13 PM"
   ],
   "fl511_local": []
@@ -318,7 +359,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-14T15:30:44-04:00",
+  "fetched_at": "2026-09-14T15:45:36-04:00",
   "issued": "200 PM EDT Mon Sep 14 2026",
   "areas": [
    {
@@ -332,7 +373,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-14T15:30:44-04:00",
+  "fetched_at": "2026-09-14T15:45:36-04:00",
   "florida": "$4.1393",
   "national": "$4.3163",
   "diesel": "$6.3111",
@@ -341,7 +382,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-14T15:30:47-04:00",
+  "fetched_at": "2026-09-14T15:45:38-04:00",
   "streams": {
    "local": [
     {
@@ -450,20 +491,20 @@
   ],
   "local": [
    {
-    "title": "Fort Lauderdale house fire displaces 8 residents",
-    "url": "https://www.local10.com/news/local/2026/09/13/fort-lauderdale-house-fire-displaces-eight-residents/",
-    "published": "Mon, 14 Sep 2026 03:09:33 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "Man rescued from Fort Lauderdale house fire, rushed to hospital with life-threatening injuries",
     "url": "https://www.local10.com/news/local/2026/09/14/man-rescued-from-fort-lauderdale-house-fire-rushed-to-hospital-with-life-threatening-injuries/",
     "published": "Mon, 14 Sep 2026 17:35:13 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/U2W647P5M5FAZKU3FMQ3OJ5VDU.jpeg?auth=d53b3980e5281763e17ed3903eb253103c54770f96c07402f7271bebb466dfaa&smart=true&width=1200&height=900",
     "media_type": "image"
+   },
+   {
+    "title": "Fort Lauderdale house fire displaces 8 residents",
+    "url": "https://www.local10.com/news/local/2026/09/13/fort-lauderdale-house-fire-displaces-eight-residents/",
+    "published": "Mon, 14 Sep 2026 03:09:33 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
    },
    {
     "title": "Red Cross helping 2 women after house fire in Hallandale Beach",
@@ -714,15 +755,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-14T15:30:48-04:00",
+  "fetched_at": "2026-09-14T15:45:39-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (241) + USGS (14)",
-  "fetched_at": "2026-09-14T15:30:52-04:00",
+  "source": "GDACS (241) + USGS (13)",
+  "fetched_at": "2026-09-14T15:45:43-04:00",
   "events": [
    {
     "lat": 2.4223,
@@ -850,16 +891,16 @@
     "source": "USGS"
    },
    {
-    "lat": -20.2006,
-    "lon": 168.8337,
+    "lat": -3.7302,
+    "lon": -77.3609,
     "kind": "earthquake",
     "level": "green",
-    "title": "M4.9 — 86 km SSW of Isangel, Vanuatu",
-    "place": "86 km SSW of Isangel, Vanuatu",
-    "severity": "M4.9",
-    "mag": 4.9,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th81",
-    "when": 1789328503663,
+    "title": "M4.8 — 106 km WSW of Alianza Cristiana, Peru",
+    "place": "106 km WSW of Alianza Cristiana, Peru",
+    "severity": "M4.8",
+    "mag": 4.8,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thg5",
+    "when": 1789413409927,
     "source": "USGS"
    },
    {
@@ -873,19 +914,6 @@
     "mag": 4.8,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th9m",
     "when": 1789350128967,
-    "source": "USGS"
-   },
-   {
-    "lat": -26.1559,
-    "lon": -66.5753,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.7 — 60 km W of Cafayate, Argentina",
-    "place": "60 km W of Cafayate, Argentina",
-    "severity": "M4.7",
-    "mag": 4.7,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th7y",
-    "when": 1789328425248,
     "source": "USGS"
    },
    {
@@ -2177,13 +2205,25 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031891",
     "when": "Thu, 10 Sep 2026 23:08:57 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -17.20822949277115,
+    "lon": 18.59320274807731,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 8682 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031951",
+    "when": "Mon, 14 Sep 2026 15:14:22 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 255,
+  "event_count": 254,
   "counts": {
    "red": 0,
    "orange": 7,
-   "green": 248
+   "green": 247
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2191,7 +2231,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-14T15:30:52-04:00",
+  "fetched_at": "2026-09-14T15:45:43-04:00",
   "countries": [
    {
     "iso": "COL",
