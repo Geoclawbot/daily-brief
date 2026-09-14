@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-14T09:15:39-04:00",
- "generated_at_utc": "2026-09-14T13:15:39+00:00",
+ "generated_at": "2026-09-14T09:30:51-04:00",
+ "generated_at_utc": "2026-09-14T13:30:51+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 14",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-14T09:15:40-04:00",
+  "fetched_at": "2026-09-14T09:30:51-04:00",
   "curve": [
    {
     "time": "2026-09-14T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 81.4,
-   "feels": 93.3,
-   "humidity": 88,
-   "wind_mph": 1.6,
-   "wind_dir": 360,
-   "observed_at": "2026-09-14T09:15"
+   "temp": 82.2,
+   "feels": 94.4,
+   "humidity": 87,
+   "wind_mph": 1.1,
+   "wind_dir": 37,
+   "observed_at": "2026-09-14T09:30"
   },
   "today": {
    "high": 86.6,
@@ -166,38 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-14T09:15:40-04:00",
+  "fetched_at": "2026-09-14T09:30:52-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-14T09:15:41-04:00",
-  "aqi": 17,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-14 8:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-14",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-14",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-14T09:31:18-04:00",
+  "aqi": 52,
+  "category": "Moderate",
+  "pm25": 13.7,
+  "pm10": 15.4,
+  "observed": "2026-09-14T09:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-14T09:15:41-04:00",
+  "fetched_at": "2026-09-14T09:31:18-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -210,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-14T09:15:42-04:00",
+  "fetched_at": "2026-09-14T09:31:19-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -249,14 +237,15 @@
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 14 2026, 6:35 AM",
    "Northeast | Alachua | Gainesville: there is lane blocking construction on SR-26 from SE 14th Street to SE 24th Street. There is also lane blocking construction on SR-24 from SE 2nd Street to SR-26 lasting until October 10th. Use caution in these areas and follow posted detours. | Sep 14 2026, 7:22 AM",
-   "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Sep 14 2026, 7:23 AM"
+   "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Sep 14 2026, 7:23 AM",
+   "Northeast | St. Johns | St Augustine: There is lane blocking construction on A1A between Carcaba Rd and San Pelayo Court. Use caution in the area. | Sep 14 2026, 9:29 AM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-14T09:15:42-04:00",
+  "fetched_at": "2026-09-14T09:31:19-04:00",
   "issued": "800 AM EDT Mon Sep 14 2026",
   "areas": [
    {
@@ -270,7 +259,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-14T09:15:43-04:00",
+  "fetched_at": "2026-09-14T09:31:19-04:00",
   "florida": "$4.1393",
   "national": "$4.3163",
   "diesel": "$6.3111",
@@ -279,7 +268,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-14T09:15:44-04:00",
+  "fetched_at": "2026-09-14T09:31:21-04:00",
   "streams": {
    "local": [
     {
@@ -476,11 +465,27 @@
     "media_type": "video"
    },
    {
-    "title": "‘Pile of scraps’ catches fire at Opa-Locka warehouse; no injuries reported",
-    "url": "https://wsvn.com/news/local/miami-dade/pile-of-scraps-catches-fire-at-opa-locka-warehouse-no-injuries-reported/",
-    "published": "Mon, 14 Sep 2026 12:43:39 +0000",
+    "title": "‘One step at a time’: Miami Joy Project’s Superhero 5K raises over $30K for kids with special needs",
+    "url": "https://wsvn.com/news/local/miami-dade/one-step-at-a-time-miami-joy-projects-superhero-5k-raises-over-30k-for-kids-with-special-needs/",
+    "published": "Mon, 14 Sep 2026 13:25:36 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/ad2234a2-9c42-4341-90b0-c5e8a45eeb28/8fc50af6-4289-4c1b-a3ff-5a95eca0374d/main.mp4?fastly_token=NmFhODQ0MGVfOWRiNTBjYmI3MGQxMjJjNGJjMjFkMzFkYmZmNTc1YWVlM2M3NjVmOTI5NGZiNmViNzY3Y2IyMDAyOWUzOWRhYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hZDIyMzRhMi05YzQyLTQzNDEtOTBiMC1jNWU4YTQ1ZWViMjgvOGZjNTBhZjYtNDI4OS00YzFiLWEzZmYtNWE5NWVjYTAzNzRkL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/a8e3593b-a2d9-4992-863d-78caa4076c9a/9793f319-08fa-4ad2-9a90-bc2f177f9138/main.mp4?fastly_token=NmFhODRkZmJfZTRkZmUxYTRjNTQxYzRkMTRkOWM3YTQ2NjU1YmY4NjhmMDUyNzM5NTkyZGUxMmZlMmMwYTBiODViYjVhZmVlZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hOGUzNTkzYi1hMmQ5LTQ5OTItODYzZC03OGNhYTQwNzZjOWEvOTc5M2YzMTktMDhmYS00YWQyLTlhOTAtYmMyZjE3N2Y5MTM4L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "‘One step at a time’: Miami Joy Project’s Superhero 5K raises over $30K for kids with special needs",
+    "url": "https://wsvn.com/news/local/miami-dade/one-step-at-a-time-miami-joy-projects-superhero-5k-raises-over-30k-for-kids-with-special-needs/",
+    "published": "Mon, 14 Sep 2026 13:25:36 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/a8e3593b-a2d9-4992-863d-78caa4076c9a/9793f319-08fa-4ad2-9a90-bc2f177f9138/main.mp4?fastly_token=NmFhODRkZmJfZTRkZmUxYTRjNTQxYzRkMTRkOWM3YTQ2NjU1YmY4NjhmMDUyNzM5NTkyZGUxMmZlMmMwYTBiODViYjVhZmVlZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hOGUzNTkzYi1hMmQ5LTQ5OTItODYzZC03OGNhYTQwNzZjOWEvOTc5M2YzMTktMDhmYS00YWQyLTlhOTAtYmMyZjE3N2Y5MTM4L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Swatting call brings SWAT team to rapper Blueface’s Miami home during livestream",
+    "url": "https://wsvn.com/entertainment/swatting-call-brings-swat-team-to-rapper-bluefaces-miami-home-during-livestream/",
+    "published": "Mon, 14 Sep 2026 13:09:09 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/cf6a017b-4fb7-46cd-8832-a3db59796ae6/d9a1c589-ec5b-42d1-803f-c50d7fcb5dc6/main.mp4?fastly_token=NmFhODRhMThfYmVlOWY5MDhiMjU4ZGQ4MDk3YmVjNzQ5YWQwOTI0NDNjNTNmNTI3OGVhZDY1YmUzN2YxNDVmMzc0ZmRiYTE3Yl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jZjZhMDE3Yi00ZmI3LTQ2Y2QtODgzMi1hM2RiNTk3OTZhZTYvZDlhMWM1ODktZWM1Yi00MmQxLTgwM2YtYzUwZDdmY2I1ZGM2L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -498,25 +503,17 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/ad2234a2-9c42-4341-90b0-c5e8a45eeb28/8fc50af6-4289-4c1b-a3ff-5a95eca0374d/main.mp4?fastly_token=NmFhODQ0MGVfOWRiNTBjYmI3MGQxMjJjNGJjMjFkMzFkYmZmNTc1YWVlM2M3NjVmOTI5NGZiNmViNzY3Y2IyMDAyOWUzOWRhYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hZDIyMzRhMi05YzQyLTQzNDEtOTBiMC1jNWU4YTQ1ZWViMjgvOGZjNTBhZjYtNDI4OS00YzFiLWEzZmYtNWE5NWVjYTAzNzRkL21haW4ubXA0",
     "media_type": "video"
-   },
-   {
-    "title": "Supreme Twins Foundation, helping children with special needs, hosts 2nd annual gala in Miami",
-    "url": "https://wsvn.com/news/local/miami-dade/supreme-twins-foundation-helping-children-with-special-needs-hosts-2nd-annual-gala-in-miami/",
-    "published": "Mon, 14 Sep 2026 12:02:57 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/de49816c-fa58-44df-976e-b1d5f7896d61/af110815-758a-41b4-9386-7d3f0de44d5a/main.mp4?fastly_token=NmFhODNhZTJfNzFmZjE0ZmI5ODVhM2VjMGU1MjI0MTY5MmQxMDlhMDNiOTJkZjQ5NDAxN2ZjODczMDE4YWFlNTFiMzQ3YzQ4N18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kZTQ5ODE2Yy1mYTU4LTQ0ZGYtOTc2ZS1iMWQ1Zjc4OTZkNjEvYWYxMTA4MTUtNzU4YS00MWI0LTkzODYtN2QzZjBkZTQ0ZDVhL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Miami Gardens Police K-9 found safe nearly a week after going missing, officials say",
-    "url": "https://wsvn.com/news/local/miami-dade/miami-gardens-police-k-9-found-safe-nearly-a-week-after-going-missing-officials-say/",
-    "published": "Mon, 14 Sep 2026 11:49:39 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/4a8920eb-34dc-467a-b842-335b17bb9000/64f8e426-0be3-4a20-8457-4eac5c23a87e/main.mp4?fastly_token=NmFhODM3NWJfODEyODhjZTg3ZjdhNzUxNDhhNzliM2E5ZGIzZTJmYTdkOTVmMGViYmE5MWQ0MzVhN2EyOGNiOTMyNzgwYzVlZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS80YTg5MjBlYi0zNGRjLTQ2N2EtYjg0Mi0zMzViMTdiYjkwMDAvNjRmOGU0MjYtMGJlMy00YTIwLTg0NTctNGVhYzVjMjNhODdlL21haW4ubXA0",
-    "media_type": "video"
    }
   ],
   "colombia": [
+   {
+    "title": "Esta es la zona donde se perdió avioneta en la que viajaban 5 personas desde Condoto a Guaymaral: alertan que vuelo 'no era normal'; 'Nada de rastros'",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/esta-es-la-zona-donde-se-perdio-avioneta-en-la-que-viajaban-5-personas-desde-condoto-a-guaymaral-alertan-que-vuelo-no-era-normal-nada-de-rastros-3585847",
+    "published": "2026-09-14T08:03:06-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/14/6aa7e465747e0.r_d.468-224-0.png",
+    "media_type": "image"
+   },
    {
     "title": "Contrabando con 'cortina de humo': usaban útiles escolares en las primeras cajas para esconder 19.000 pares de calzado sin declarar",
     "url": "https://www.eltiempo.com/colombia/cali/contrabando-con-cortina-de-humo-usaban-utiles-escolares-en-las-primeras-cajas-para-esconder-19-000-pares-de-calzado-de-contrabando-3585838",
@@ -571,14 +568,6 @@
     "published": "2026-09-13T19:28:24-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/13/6aa721f85e2f8.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Masacre en Simaña, Cesar: cuatro personas asesinadas en un ataque armado; hay varios heridos",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/masacre-en-simana-cesar-cuatro-personas-asesinadas-en-un-ataque-armado-hay-varios-heridos-3585766",
-    "published": "2026-09-13T18:38:48-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/01/16/696abf2b562fe.jpeg",
     "media_type": "image"
    }
   ],
@@ -652,7 +641,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-14T09:15:45-04:00",
+  "fetched_at": "2026-09-14T09:31:21-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -660,7 +649,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (238) + USGS (12)",
-  "fetched_at": "2026-09-14T09:15:48-04:00",
+  "fetched_at": "2026-09-14T09:31:24-04:00",
   "events": [
    {
     "lat": 2.4223,
@@ -2127,7 +2116,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-14T09:15:48-04:00",
+  "fetched_at": "2026-09-14T09:31:24-04:00",
   "countries": [
    {
     "iso": "IDN",
