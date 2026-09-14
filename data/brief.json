@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-14T07:15:45-04:00",
- "generated_at_utc": "2026-09-14T11:15:45+00:00",
+ "generated_at": "2026-09-14T07:31:00-04:00",
+ "generated_at_utc": "2026-09-14T11:31:00+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 14",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-14T07:15:45-04:00",
+  "fetched_at": "2026-09-14T07:31:00-04:00",
   "curve": [
    {
     "time": "2026-09-14T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 76.7,
-   "feels": 86.4,
-   "humidity": 93,
-   "wind_mph": 2.0,
-   "wind_dir": 333,
-   "observed_at": "2026-09-14T07:15"
+   "temp": 76.9,
+   "feels": 86.3,
+   "humidity": 92,
+   "wind_mph": 2.3,
+   "wind_dir": 343,
+   "observed_at": "2026-09-14T07:30"
   },
   "today": {
    "high": 89.7,
@@ -166,85 +166,73 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-14T07:15:47-04:00",
+  "fetched_at": "2026-09-14T07:31:00-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-14T07:15:48-04:00",
-  "aqi": 16,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-14 6:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-14",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-14",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-14T07:31:26-04:00",
+  "aqi": 51,
+  "category": "Moderate",
+  "pm25": 13.9,
+  "pm10": 14.8,
+  "observed": "2026-09-14T07:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-14T07:15:50-04:00",
+  "fetched_at": "2026-09-14T07:31:29-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
   "depart_clock": "5:45 AM",
   "depart_at": "now",
-  "miles": 19.9,
-  "minutes": 64,
+  "miles": 20.8,
+  "minutes": 67,
   "delay_minutes": 5,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 27.3,
-    "minutes": 55,
-    "toll": true,
-    "saves": 9
-   },
-   {
     "miles": 21.9,
     "minutes": 60,
     "toll": true,
-    "saves": 4
+    "saves": 7
    },
    {
-    "miles": 29.0,
-    "minutes": 62,
+    "miles": 26.2,
+    "minutes": 65,
     "toll": true,
     "saves": 2
    },
    {
-    "miles": 22.1,
+    "miles": 29.5,
+    "minutes": 68,
+    "toll": true,
+    "saves": -1
+   },
+   {
+    "miles": 22.7,
     "minutes": 66,
     "toll": true,
-    "saves": -2
+    "saves": 1
    }
   ],
   "alternates_worth_taking": [],
   "free_alternates": [
    {
-    "miles": 19.9,
-    "minutes": 64,
+    "miles": 20.8,
+    "minutes": 67,
     "delay_minutes": 5,
     "saves": 0
    },
    {
     "miles": 26.3,
-    "minutes": 69,
-    "delay_minutes": 1
+    "minutes": 71,
+    "delay_minutes": 2
    },
    {
     "miles": 23.0,
@@ -252,14 +240,14 @@
     "delay_minutes": 0
    },
    {
-    "miles": 22.8,
-    "minutes": 80,
-    "delay_minutes": 0
+    "miles": 19.8,
+    "minutes": 71,
+    "delay_minutes": 2
    }
   ],
   "best_free": {
-   "miles": 19.9,
-   "minutes": 64,
+   "miles": 20.8,
+   "minutes": 67,
    "delay_minutes": 5,
    "saves": 0
   },
@@ -272,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-14T07:15:51-04:00",
+  "fetched_at": "2026-09-14T07:31:29-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -310,28 +298,29 @@
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 14 2026, 6:35 AM",
-   "Northeast | Alachua | Gainesville: there is lane blocking construction on SR-26 from SE 14th Street to SE 24th Street. There is also lane blocking construction on SR-24 from SE 2nd Street to SR-26 lasting until October 10th. Use caution in these areas and follow posted detours. | Sep 14 2026, 6:03 AM"
+   "Northeast | Alachua | Gainesville: there is lane blocking construction on SR-26 from SE 14th Street to SE 24th Street. There is also lane blocking construction on SR-24 from SE 2nd Street to SR-26 lasting until October 10th. Use caution in these areas and follow posted detours. | Sep 14 2026, 7:22 AM",
+   "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Sep 14 2026, 7:23 AM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-14T07:15:51-04:00",
-  "issued": "200 AM EDT Mon Sep 14 2026",
+  "fetched_at": "2026-09-14T07:31:30-04:00",
+  "issued": "800 AM EDT Mon Sep 14 2026",
   "areas": [
    {
-    "text": "Central Subtropical Atlantic: A trough of low pressure located more than 1000 miles east-southeast of Bermuda continues to produce disorganized showers and thunderstorms. Environmental conditions over the system are currently unfavorable for development due to strong upper-level winds. However, as the system moves west",
+    "text": "Central Subtropical Atlantic: A trough of low pressure located a little more than 1000 miles east-southeast of Bermuda continues to produce disorganized showers and thunderstorms. Environmental conditions over the system are currently unfavorable for development due to strong upper-level winds. However, as the system m",
     "chance_48h": 0,
     "chance_7d": 30
    }
   ],
-  "raw": "en Español\n\n000\nABNT20 KNHC 140519\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Mon Sep 14 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nCentral Subtropical Atlantic:\nA trough of low pressure located more than 1000 miles east-southeast \nof Bermuda continues to produce disorganized showers and \nthunderstorms. Environmental conditions over the system are \ncurrently unfavorable for development due to strong upper-level \nwinds. However, as the system moves west-northwestward across the \ncentral part of the Subtropical Atlantic, it is forecast to enter a \nmore conducive environment for gradual development by the middle to \nlatter portion of this week.\n* Formation chance through 48 hours...low...near 0 percent.\n* Formation chance through 7 days...low...30 percent.\n\n$$\nForecaster Papin"
+  "raw": "en Español\n\n000\nABNT20 KNHC 141126\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Mon Sep 14 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nCentral Subtropical Atlantic:\nA trough of low pressure located a little more than 1000 miles \neast-southeast of Bermuda continues to produce disorganized showers \nand thunderstorms. Environmental conditions over the system are \ncurrently unfavorable for development due to strong upper-level \nwinds. However, as the system moves west-northwestward across the \ncentral part of the Subtropical Atlantic, it is forecast to enter a \nmore conducive environment for gradual development by the middle to \nlatter portion of this week.\n* Formation chance through 48 hours...low...near 0 percent.\n* Formation chance through 7 days...low...30 percent.\n\n$$\nForecaster Beven"
  },
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-14T07:15:51-04:00",
+  "fetched_at": "2026-09-14T07:31:30-04:00",
   "florida": "$4.1393",
   "national": "$4.3163",
   "diesel": "$6.3111",
@@ -340,7 +329,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-14T07:15:52-04:00",
+  "fetched_at": "2026-09-14T07:31:31-04:00",
   "streams": {
    "local": [
     {
@@ -449,6 +438,46 @@
   ],
   "local": [
    {
+    "title": "Miami Gardens police announce they’ve found missing K-9 officer",
+    "url": "https://www.local10.com/news/local/2026/09/13/miami-gardens-police-announce-theyve-found-missing-k-9-officer/",
+    "published": "Sun, 13 Sep 2026 21:13:13 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Snorkeler in critical condition after being pulled from water in Key Biscayne",
+    "url": "https://www.local10.com/news/local/2026/09/13/snorkeler-in-critical-condition-after-being-pulled-from-water-in-key-biscayne/",
+    "published": "Sun, 13 Sep 2026 21:14:29 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Portion of Fort Lauderdale Grand Hotel collapses, no injuries reported",
+    "url": "https://www.local10.com/news/local/2026/09/13/portion-of-historic-fort-lauderdale-grand-hotel-collapses/",
+    "published": "Sun, 13 Sep 2026 21:16:42 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Man critically injured in Miami-Dade shooting",
+    "url": "https://www.local10.com/news/local/2026/09/13/man-critically-injured-in-miami-dade-shooting/",
+    "published": "Sun, 13 Sep 2026 20:24:49 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/E6UDDV64BNHFBHZJXSKHWG4OWA.jpeg?auth=12210de7848e00c8960dc8539773c89a4a1c4775facbfd0933ed9470915f7249&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Fort Lauderdale house fire displaces 8 residents",
+    "url": "https://www.local10.com/news/local/2026/09/13/fort-lauderdale-house-fire-displaces-eight-residents/",
+    "published": "Mon, 14 Sep 2026 03:09:33 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Amazon pauses operations with 21 Air following deadly cargo plane crash at MIA",
     "url": "https://www.local10.com/news/local/2026/09/14/amazon-pauses-operations-with-21-air-following-deadly-cargo-plane-crash-at-mia/",
     "published": "Mon, 14 Sep 2026 11:13:24 +0000",
@@ -465,49 +494,9 @@
     "media_type": null
    },
    {
-    "title": "Man critically injured in Miami-Dade shooting",
-    "url": "https://www.local10.com/news/local/2026/09/13/man-critically-injured-in-miami-dade-shooting/",
-    "published": "Sun, 13 Sep 2026 20:24:49 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/E6UDDV64BNHFBHZJXSKHWG4OWA.jpeg?auth=12210de7848e00c8960dc8539773c89a4a1c4775facbfd0933ed9470915f7249&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "Portion of Fort Lauderdale Grand Hotel collapses, no injuries reported",
-    "url": "https://www.local10.com/news/local/2026/09/13/portion-of-historic-fort-lauderdale-grand-hotel-collapses/",
-    "published": "Sun, 13 Sep 2026 21:16:42 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Snorkeler in critical condition after being pulled from water in Key Biscayne",
-    "url": "https://www.local10.com/news/local/2026/09/13/snorkeler-in-critical-condition-after-being-pulled-from-water-in-key-biscayne/",
-    "published": "Sun, 13 Sep 2026 21:14:29 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Miami Gardens police announce they’ve found missing K-9 officer",
-    "url": "https://www.local10.com/news/local/2026/09/13/miami-gardens-police-announce-theyve-found-missing-k-9-officer/",
-    "published": "Sun, 13 Sep 2026 21:13:13 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Fort Lauderdale House fire displaces eight residents",
-    "url": "https://www.local10.com/news/local/2026/09/13/fort-lauderdale-house-fire-displaces-eight-residents/",
-    "published": "Mon, 14 Sep 2026 03:09:33 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Professional soccer player describes weeks in ICE custody after arrest",
-    "url": "https://www.local10.com/news/local/2026/09/13/professional-soccer-player-describes-weeks-in-ice-custody-after-arrest/",
-    "published": "Mon, 14 Sep 2026 01:19:41 +0000",
+    "title": "Annual Kennedy Kids 5K Race held at Barry University in Miami Shores",
+    "url": "https://www.local10.com/news/local/2026/09/13/annual-kennedy-kids-5k-race-held-at-barry-university-in-miami-shores/",
+    "published": "Sun, 13 Sep 2026 14:04:48 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -545,14 +534,6 @@
     "media_type": "video"
    },
    {
-    "title": "Amazon suspends use of 21 Air, cargo carrier whose plane careened off MIA runway, killing 5",
-    "url": "https://wsvn.com/news/local/miami-dade/amazon-suspends-use-of-21-air-cargo-carrier-whose-plane-careened-off-mia-runway-killing-5/",
-    "published": "Mon, 14 Sep 2026 10:34:51 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/d3fd9e05-0430-4ec9-8844-265dd32a29ad/c0eee713-5fda-4115-a636-337a7c7d04c8/main.mp4?fastly_token=NmFhODI2YjJfODVhN2U1ZTMzNmY4N2Q1ZDRiZjlkZjI5MDI0YWIyNGY1Y2NlYzJhMTgxNDcwZTRjOGI3Yjc2ODlkOTRiYTRmMV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kM2ZkOWUwNS0wNDMwLTRlYzktODg0NC0yNjVkZDMyYTI5YWQvYzBlZWU3MTMtNWZkYS00MTE1LWE2MzYtMzM3YTdjN2QwNGM4L21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
     "title": "Man critical after being found unresponsive while snorkeling near Key Biscayne",
     "url": "https://wsvn.com/news/local/miami-dade/man-critical-after-being-found-unresponsive-while-snorkeling-near-key-biscayne/",
     "published": "Mon, 14 Sep 2026 09:46:38 +0000",
@@ -575,6 +556,14 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/4bb54f5b-6aef-44d4-9939-3bbd592a0e2f/58b3b238-187a-4b60-b302-316db1725100/main.mp4?fastly_token=NmFhNzExYjNfMmNlYjQ3YzRkYzY2YTY5OTlkOGRkY2IzNDI0NzY5Y2Y1M2NlZDQ5MzgxZjFlNTEyYjYxODhjMjhjYjQxOWJjOF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS80YmI1NGY1Yi02YWVmLTQ0ZDQtOTkzOS0zYmJkNTkyYTBlMmYvNThiM2IyMzgtMTg3YS00YjYwLWIzMDItMzE2ZGIxNzI1MTAwL21haW4ubXA0",
     "media_type": "video"
+   },
+   {
+    "title": "Florida Missing Child Spectrum Alert issued for 16-year-old with autism from St. Augustine",
+    "url": "https://wsvn.com/news/local/miami-dade/florida-missing-child-spectrum-alert-issued-for-16-year-old-with-autism-from-st-augustine/",
+    "published": "Sun, 13 Sep 2026 14:22:41 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Screenshot-2026-09-13-095516.png",
+    "media_type": "image"
    }
   ],
   "colombia": [
@@ -713,15 +702,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-14T07:15:53-04:00",
+  "fetched_at": "2026-09-14T07:31:32-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (237) + USGS (11)",
-  "fetched_at": "2026-09-14T07:15:55-04:00",
+  "source": "GDACS (237) + USGS (12)",
+  "fetched_at": "2026-09-14T07:31:35-04:00",
   "events": [
    {
     "lat": 2.4223,
@@ -848,6 +837,19 @@
     "mag": 4.7,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th7y",
     "when": 1789328425248,
+    "source": "USGS"
+   },
+   {
+    "lat": 37.6068,
+    "lon": 141.5344,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.6 — 49 km E of Minami-Sōma, Japan",
+    "place": "49 km E of Minami-Sōma, Japan",
+    "severity": "M4.6",
+    "mag": 4.6,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thct",
+    "when": 1789383594677,
     "source": "USGS"
    },
    {
@@ -2161,25 +2163,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031951",
     "when": "Mon, 14 Sep 2026 07:12:46 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -13.918969396223034,
-    "lon": 136.6312667856112,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 5947 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031939",
-    "when": "Sun, 13 Sep 2026 19:11:04 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 248,
+  "event_count": 249,
   "counts": {
    "red": 0,
    "orange": 5,
-   "green": 243
+   "green": 244
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2187,7 +2177,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-14T07:15:55-04:00",
+  "fetched_at": "2026-09-14T07:31:35-04:00",
   "countries": [
    {
     "iso": "COL",
