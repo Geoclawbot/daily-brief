@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-14T00:15:46-04:00",
- "generated_at_utc": "2026-09-14T04:15:46+00:00",
+ "generated_at": "2026-09-14T00:30:48-04:00",
+ "generated_at_utc": "2026-09-14T04:30:48+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 14",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-14T00:15:47-04:00",
+  "fetched_at": "2026-09-14T00:30:49-04:00",
   "curve": [
    {
     "time": "2026-09-14T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 78.2,
+   "temp": 78.3,
    "feels": 88.5,
    "humidity": 90,
-   "wind_mph": 1.3,
-   "wind_dir": 135,
-   "observed_at": "2026-09-14T00:15"
+   "wind_mph": 1.6,
+   "wind_dir": 146,
+   "observed_at": "2026-09-14T00:30"
   },
   "today": {
    "high": 90.6,
@@ -166,38 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-14T00:15:47-04:00",
+  "fetched_at": "2026-09-14T00:30:49-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-14T00:15:47-04:00",
-  "aqi": 19,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-14T00:31:37-04:00",
+  "aqi": 45,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-13 23:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-14",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-14",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 13.3,
+  "pm10": 13.4,
+  "observed": "2026-09-14T00:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-14T00:15:47-04:00",
+  "fetched_at": "2026-09-14T00:31:37-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -210,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-14T00:15:49-04:00",
+  "fetched_at": "2026-09-14T00:31:38-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -261,7 +249,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-14T00:15:49-04:00",
+  "fetched_at": "2026-09-14T00:31:38-04:00",
   "issued": "800 PM EDT Sun Sep 13 2026",
   "areas": [
    {
@@ -275,7 +263,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-14T00:15:49-04:00",
+  "fetched_at": "2026-09-14T00:31:38-04:00",
   "florida": "$4.1434",
   "national": "$4.3130",
   "diesel": "$6.2789",
@@ -284,7 +272,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-14T00:15:51-04:00",
+  "fetched_at": "2026-09-14T00:31:40-04:00",
   "streams": {
    "local": [
     {
@@ -657,7 +645,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-14T00:15:51-04:00",
+  "fetched_at": "2026-09-14T00:31:40-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -665,7 +653,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (222) + USGS (10)",
-  "fetched_at": "2026-09-14T00:15:53-04:00",
+  "fetched_at": "2026-09-14T00:31:42-04:00",
   "events": [
    {
     "lat": 15.196,
@@ -2130,7 +2118,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-14T00:15:53-04:00",
+  "fetched_at": "2026-09-14T00:31:42-04:00",
   "countries": [
    {
     "iso": "COL",
