@@ -1,254 +1,137 @@
 {
- "generated_at": "2026-09-14T17:30:33-04:00",
- "generated_at_utc": "2026-09-14T21:30:33+00:00",
+ "generated_at": "2026-09-14T17:45:38-04:00",
+ "generated_at_utc": "2026-09-14T21:45:38+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 14",
  "is_weekend": false,
  "weather": {
-  "ok": true,
-  "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-14T17:30:34-04:00",
-  "curve": [
-   {
-    "time": "2026-09-14T05:00",
-    "hour": 5,
-    "temp": 76.7,
-    "feels": 87.2,
-    "humidity": 94,
-    "pop": 0
-   },
-   {
-    "time": "2026-09-14T06:00",
-    "hour": 6,
-    "temp": 76.8,
-    "feels": 86.6,
-    "humidity": 90,
-    "pop": 5
-   },
-   {
-    "time": "2026-09-14T07:00",
-    "hour": 7,
-    "temp": 76.6,
-    "feels": 86.2,
-    "humidity": 91,
-    "pop": 2
-   },
-   {
-    "time": "2026-09-14T08:00",
-    "hour": 8,
-    "temp": 78.0,
-    "feels": 89.4,
-    "humidity": 95,
-    "pop": 2
-   },
-   {
-    "time": "2026-09-14T09:00",
-    "hour": 9,
-    "temp": 81.3,
-    "feels": 93.3,
-    "humidity": 89,
-    "pop": 1
-   },
-   {
-    "time": "2026-09-14T10:00",
-    "hour": 10,
-    "temp": 84.2,
-    "feels": 97.1,
-    "humidity": 84,
-    "pop": 3
-   },
-   {
-    "time": "2026-09-14T11:00",
-    "hour": 11,
-    "temp": 85.9,
-    "feels": 98.1,
-    "humidity": 73,
-    "pop": 4
-   },
-   {
-    "time": "2026-09-14T12:00",
-    "hour": 12,
-    "temp": 89.4,
-    "feels": 103.9,
-    "humidity": 66,
-    "pop": 2
-   },
-   {
-    "time": "2026-09-14T13:00",
-    "hour": 13,
-    "temp": 89.9,
-    "feels": 104.7,
-    "humidity": 67,
-    "pop": 3
-   },
-   {
-    "time": "2026-09-14T14:00",
-    "hour": 14,
-    "temp": 90.2,
-    "feels": 100.3,
-    "humidity": 64,
-    "pop": 3
-   },
-   {
-    "time": "2026-09-14T15:00",
-    "hour": 15,
-    "temp": 90.2,
-    "feels": 99.1,
-    "humidity": 61,
-    "pop": 19
-   },
-   {
-    "time": "2026-09-14T16:00",
-    "hour": 16,
-    "temp": 89.8,
-    "feels": 98.7,
-    "humidity": 63,
-    "pop": 27
-   },
-   {
-    "time": "2026-09-14T17:00",
-    "hour": 17,
-    "temp": 83.8,
-    "feels": 90.8,
-    "humidity": 84,
-    "pop": 21
-   },
-   {
-    "time": "2026-09-14T18:00",
-    "hour": 18,
-    "temp": 80.7,
-    "feels": 89.7,
-    "humidity": 84,
-    "pop": 17
-   },
-   {
-    "time": "2026-09-14T19:00",
-    "hour": 19,
-    "temp": 81.6,
-    "feels": 92.6,
-    "humidity": 86,
-    "pop": 25
-   },
-   {
-    "time": "2026-09-14T20:00",
-    "hour": 20,
-    "temp": 80.8,
-    "feels": 92.1,
-    "humidity": 89,
-    "pop": 23
-   },
-   {
-    "time": "2026-09-14T21:00",
-    "hour": 21,
-    "temp": 80.5,
-    "feels": 93.1,
-    "humidity": 92,
-    "pop": 5
-   }
-  ],
-  "current": {
-   "temp": 78.0,
-   "feels": 83.0,
-   "humidity": 85,
-   "wind_mph": 11.4,
-   "wind_dir": 196,
-   "observed_at": "2026-09-14T17:30"
-  },
-  "today": {
-   "high": 90.2,
-   "low": 76.6,
-   "feels_max": 104.7,
-   "pop_max": 27
-  },
-  "peak_feels": 104.7,
-  "peak_hour": 13
+  "ok": false,
+  "source": "Open-Meteo",
+  "fetched_at": "2026-09-14T17:46:03-04:00",
+  "error": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=25)"
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-14T17:30:34-04:00",
+  "fetched_at": "2026-09-14T17:46:03-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-14T17:31:02-04:00",
-  "aqi": 57,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-14T17:46:18-04:00",
+  "aqi": 59,
   "category": "Moderate",
-  "pm25": 17.9,
-  "pm10": 25.4,
-  "observed": "2026-09-14T17:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-14 16:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-14",
+    "aqi": 34,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-14",
+    "aqi": 55,
+    "category": "Moderate",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-15",
+    "aqi": 27,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-15",
+    "aqi": 55,
+    "category": "Moderate",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-16",
+    "aqi": 33,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-16",
+    "aqi": 46,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-14T17:31:04-04:00",
+  "fetched_at": "2026-09-14T17:46:20-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 21.6,
-  "minutes": 68,
-  "delay_minutes": 9,
+  "miles": 21.2,
+  "minutes": 66,
+  "delay_minutes": 4,
   "toll_free": true,
   "alternates": [
    {
     "miles": 25.5,
-    "minutes": 58,
+    "minutes": 57,
     "toll": true,
-    "saves": 10
+    "saves": 9
    },
    {
     "miles": 22.6,
-    "minutes": 61,
+    "minutes": 60,
     "toll": true,
-    "saves": 7
+    "saves": 6
    },
    {
-    "miles": 22.3,
-    "minutes": 65,
+    "miles": 22.4,
+    "minutes": 63,
     "toll": true,
     "saves": 3
    },
    {
     "miles": 28.6,
-    "minutes": 65,
+    "minutes": 61,
     "toll": true,
-    "saves": 3
+    "saves": 5
    }
   ],
   "alternates_worth_taking": [],
   "free_alternates": [
    {
-    "miles": 21.6,
-    "minutes": 68,
-    "delay_minutes": 9,
+    "miles": 21.2,
+    "minutes": 66,
+    "delay_minutes": 4,
     "saves": 0
    },
    {
     "miles": 23.7,
-    "minutes": 73,
+    "minutes": 69,
     "delay_minutes": 2
    },
    {
-    "miles": 22.2,
-    "minutes": 72,
+    "miles": 23.5,
+    "minutes": 71,
     "delay_minutes": 0
    },
    {
-    "miles": 23.9,
-    "minutes": 78,
-    "delay_minutes": 0
+    "miles": 23.1,
+    "minutes": 75,
+    "delay_minutes": 4
    }
   ],
   "best_free": {
-   "miles": 21.6,
-   "minutes": 68,
-   "delay_minutes": 9,
+   "miles": 21.2,
+   "minutes": 66,
+   "delay_minutes": 4,
    "saves": 0
   },
   "incidents": [],
@@ -260,7 +143,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-14T17:31:05-04:00",
+  "fetched_at": "2026-09-14T17:46:22-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -308,7 +191,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-14T17:31:05-04:00",
+  "fetched_at": "2026-09-14T17:46:22-04:00",
   "issued": "200 PM EDT Mon Sep 14 2026",
   "areas": [
    {
@@ -322,7 +205,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-14T17:31:05-04:00",
+  "fetched_at": "2026-09-14T17:46:22-04:00",
   "florida": "$4.1393",
   "national": "$4.3163",
   "diesel": "$6.3111",
@@ -331,7 +214,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-14T17:31:07-04:00",
+  "fetched_at": "2026-09-14T17:46:23-04:00",
   "streams": {
    "local": [
     {
@@ -444,7 +327,7 @@
     "url": "https://www.local10.com/news/local/2026/09/14/rising-energy-costs-have-major-impact-on-small-business-owners/",
     "published": "Mon, 14 Sep 2026 21:10:29 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/TNQITESYTNAQVGR67T7W5VNI5M.jpg?auth=d55645a7405ea07c90b83919d6e6b5ffe26da4e94612cdf5fb741e7441675ebb&smart=true&width=1200&height=900",
+    "media": "https://www.local10.com/resizer/v2/J6C2EIUGU5B7NEGZF2NEMDHDPU.jpg?auth=1e1ef4372c1b77e54d38483d1ac16c3f8f2384e58ca81dfb315f1dcf1752e629&smart=true&width=1200&height=900",
     "media_type": "image"
    },
    {
@@ -704,15 +587,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-14T17:31:08-04:00",
+  "fetched_at": "2026-09-14T17:46:24-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (241) + USGS (17)",
-  "fetched_at": "2026-09-14T17:31:11-04:00",
+  "source": "GDACS (241) + USGS (18)",
+  "fetched_at": "2026-09-14T17:46:26-04:00",
   "events": [
    {
     "lat": 2.4223,
@@ -850,6 +733,19 @@
     "mag": 5.1,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000th8u",
     "when": 1789339201303,
+    "source": "USGS"
+   },
+   {
+    "lat": 4.5258,
+    "lon": -76.8931,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.9 — 31 km WSW of Sipí, Colombia",
+    "place": "31 km WSW of Sipí, Colombia",
+    "severity": "M4.9",
+    "mag": 4.9,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thh2",
+    "when": 1789420395924,
     "source": "USGS"
    },
    {
@@ -1020,8 +916,8 @@
     "source": "GDACS"
    },
    {
-    "lat": 16.3,
-    "lon": -119.7,
+    "lat": 16.9,
+    "lon": -120.5,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone FIFTEEN-E-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
@@ -1332,8 +1228,8 @@
     "source": "GDACS"
    },
    {
-    "lat": 19.4,
-    "lon": -137.8,
+    "lat": 19.7,
+    "lon": -139.2,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone NORBERT-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
@@ -2158,25 +2054,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031906",
     "when": "Sat, 12 Sep 2026 15:07:34 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -17.257646102912123,
-    "lon": 20.533462222023132,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 14476 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031731",
-    "when": "Mon, 07 Sep 2026 03:01:50 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 258,
+  "event_count": 259,
   "counts": {
    "red": 0,
    "orange": 7,
-   "green": 251
+   "green": 252
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2184,7 +2068,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-14T17:31:11-04:00",
+  "fetched_at": "2026-09-14T17:46:26-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2329,6 +2213,8 @@
   "countries_matched": 9,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [],
- "health": "11/11 sources ok"
+ "failures": [
+  "weather"
+ ],
+ "health": "10/11 sources ok"
 }
