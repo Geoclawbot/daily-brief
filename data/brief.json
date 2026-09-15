@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-15T14:15:56-04:00",
- "generated_at_utc": "2026-09-15T18:15:56+00:00",
+ "generated_at": "2026-09-15T14:30:56-04:00",
+ "generated_at_utc": "2026-09-15T18:30:56+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 15",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-15T14:15:56-04:00",
+  "fetched_at": "2026-09-15T14:30:56-04:00",
   "curve": [
    {
     "time": "2026-09-15T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 92.3,
-   "feels": 102.5,
+   "temp": 92.2,
+   "feels": 101.9,
    "humidity": 55,
-   "wind_mph": 8.1,
-   "wind_dir": 88,
-   "observed_at": "2026-09-15T14:15"
+   "wind_mph": 8.8,
+   "wind_dir": 84,
+   "observed_at": "2026-09-15T14:30"
   },
   "today": {
    "high": 92.0,
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-15T14:15:57-04:00",
+  "fetched_at": "2026-09-15T14:30:57-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-15T14:15:58-04:00",
-  "aqi": 23,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-15 13:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-15",
-    "aqi": 27,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-15",
-    "aqi": 55,
-    "category": "Moderate",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-16",
-    "aqi": 33,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-16",
-    "aqi": 46,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-15T14:31:23-04:00",
+  "aqi": 72,
+  "category": "Moderate",
+  "pm25": 19.7,
+  "pm10": 41.9,
+  "observed": "2026-09-15T14:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-15T14:16:00-04:00",
+  "fetched_at": "2026-09-15T14:31:25-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
@@ -217,7 +193,7 @@
   "depart_at": "2026-09-15T15:30:00-04:00",
   "miles": 20.6,
   "minutes": 64,
-  "delay_minutes": 0,
+  "delay_minutes": 2,
   "toll_free": true,
   "alternates": [
    {
@@ -250,7 +226,7 @@
    {
     "miles": 20.6,
     "minutes": 64,
-    "delay_minutes": 0,
+    "delay_minutes": 2,
     "saves": 0
    },
    {
@@ -272,7 +248,7 @@
   "best_free": {
    "miles": 20.6,
    "minutes": 64,
-   "delay_minutes": 0,
+   "delay_minutes": 2,
    "saves": 0
   },
   "incidents": [],
@@ -284,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-15T14:16:01-04:00",
+  "fetched_at": "2026-09-15T14:31:26-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -333,7 +309,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-15T14:16:01-04:00",
+  "fetched_at": "2026-09-15T14:31:27-04:00",
   "issued": "200 PM EDT Tue Sep 15 2026",
   "areas": [
    {
@@ -347,7 +323,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-15T14:16:02-04:00",
+  "fetched_at": "2026-09-15T14:31:27-04:00",
   "florida": "$4.1220",
   "national": "$4.3289",
   "diesel": "$6.3163",
@@ -356,7 +332,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-15T14:16:03-04:00",
+  "fetched_at": "2026-09-15T14:31:28-04:00",
   "streams": {
    "local": [
     {
@@ -465,6 +441,14 @@
   ],
   "local": [
    {
+    "title": "Shooting outside Wynwood Jamaican restaurant leaves 2 wounded, first responders say",
+    "url": "https://www.local10.com/news/local/2026/09/15/reported-shooting-outside-wynwood-jamaican-restaurant-leaves-2-wounded-first-responders-say/",
+    "published": "Tue, 15 Sep 2026 11:15:23 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Woman wanted in elderly exploitation scheme arrested after Deerfield Beach SWAT standoff: BSO",
     "url": "https://www.local10.com/news/local/2026/09/15/2-in-custody-after-swat-standoff-at-deerfield-beach-apartment-deputies-say/",
     "published": "Tue, 15 Sep 2026 12:25:41 +0000",
@@ -500,14 +484,6 @@
     "title": "Motorcyclist dies after crash involving cement truck on Don Shula Expressway",
     "url": "https://www.local10.com/news/local/2026/09/15/motorcyclist-dies-after-crash-involving-cement-truck-on-don-shula-expressway/",
     "published": "Tue, 15 Sep 2026 10:45:40 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Shooting outside Wynwood Jamaican restaurant leaves 2 wounded, first responders say",
-    "url": "https://www.local10.com/news/local/2026/09/15/reported-shooting-outside-wynwood-jamaican-restaurant-leaves-2-wounded-first-responders-say/",
-    "published": "Tue, 15 Sep 2026 11:15:23 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -621,7 +597,7 @@
    {
     "title": "Así fue el difícil hallazgo de tres cuerpos en el fondo de un pozo séptico en un resguardo indígena de Nariño: ‘Para que podamos limpiar esta tierra’",
     "url": "https://www.eltiempo.com/colombia/cali/asi-fue-la-busqueda-en-un-pozo-septico-que-permitio-hallar-tres-cuerpos-en-narino-para-que-podamos-limpiar-esta-tierra-3586225",
-    "published": "2026-09-15T12:43:30-05:00",
+    "published": "2026-09-15T13:12:32-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/15/6aa97e64b7d7a.jpeg",
     "media_type": "image"
@@ -729,7 +705,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-15T14:16:04-04:00",
+  "fetched_at": "2026-09-15T14:31:29-04:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -737,7 +713,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (245) + USGS (11)",
-  "fetched_at": "2026-09-15T14:16:07-04:00",
+  "fetched_at": "2026-09-15T14:31:32-04:00",
   "events": [
    {
     "lat": 47.2320486,
@@ -2203,7 +2179,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-15T14:16:07-04:00",
+  "fetched_at": "2026-09-15T14:31:32-04:00",
   "countries": [
    {
     "iso": "COL",
