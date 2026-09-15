@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-15T02:15:27-04:00",
- "generated_at_utc": "2026-09-15T06:15:27+00:00",
+ "generated_at": "2026-09-15T02:30:44-04:00",
+ "generated_at_utc": "2026-09-15T06:30:44+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 15",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-15T02:15:27-04:00",
+  "fetched_at": "2026-09-15T02:30:45-04:00",
   "curve": [
    {
     "time": "2026-09-15T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 81.6,
+   "temp": 81.5,
    "feels": 93.4,
    "humidity": 89,
-   "wind_mph": 2.5,
-   "wind_dir": 95,
-   "observed_at": "2026-09-15T02:15"
+   "wind_mph": 2.2,
+   "wind_dir": 90,
+   "observed_at": "2026-09-15T02:30"
   },
   "today": {
    "high": 91.0,
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-15T02:15:27-04:00",
+  "fetched_at": "2026-09-15T02:30:45-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-15T02:15:28-04:00",
-  "aqi": 22,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-15 1:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-15",
-    "aqi": 27,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-15",
-    "aqi": 55,
-    "category": "Moderate",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-16",
-    "aqi": 33,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-16",
-    "aqi": 46,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-15T02:31:11-04:00",
+  "aqi": 60,
+  "category": "Moderate",
+  "pm25": 22.8,
+  "pm10": 24.1,
+  "observed": "2026-09-15T02:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-15T02:15:28-04:00",
+  "fetched_at": "2026-09-15T02:31:12-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -222,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-15T02:15:29-04:00",
+  "fetched_at": "2026-09-15T02:31:12-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -268,7 +244,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-15T02:15:29-04:00",
+  "fetched_at": "2026-09-15T02:31:13-04:00",
   "issued": "200 AM EDT Tue Sep 15 2026",
   "areas": [
    {
@@ -282,7 +258,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-15T02:15:30-04:00",
+  "fetched_at": "2026-09-15T02:31:13-04:00",
   "florida": "$4.1393",
   "national": "$4.3163",
   "diesel": "$6.3111",
@@ -291,7 +267,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-15T02:15:31-04:00",
+  "fetched_at": "2026-09-15T02:31:14-04:00",
   "streams": {
    "local": [
     {
@@ -664,7 +640,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-15T02:15:32-04:00",
+  "fetched_at": "2026-09-15T02:31:15-04:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -672,7 +648,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (228) + USGS (17)",
-  "fetched_at": "2026-09-15T02:15:35-04:00",
+  "fetched_at": "2026-09-15T02:31:18-04:00",
   "events": [
    {
     "lat": 2.4223,
@@ -851,6 +827,19 @@
     "source": "USGS"
    },
    {
+    "lat": -6.6349,
+    "lon": 130.3422,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.8 — 289 km WSW of Tual, Indonesia",
+    "place": "289 km WSW of Tual, Indonesia",
+    "severity": "M4.8",
+    "mag": 4.8,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thjr",
+    "when": 1789452472712,
+    "source": "USGS"
+   },
+   {
     "lat": -21.5813,
     "lon": 170.0923,
     "kind": "earthquake",
@@ -952,19 +941,6 @@
     "mag": 4.5,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thbl",
     "when": 1789371184419,
-    "source": "USGS"
-   },
-   {
-    "lat": -5.0593,
-    "lon": 144.6082,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.5 — 97 km NNE of Mount Hagen, Papua New Guinea",
-    "place": "97 km NNE of Mount Hagen, Papua New Guinea",
-    "severity": "M4.5",
-    "mag": 4.5,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thb6",
-    "when": 1789366751496,
     "source": "USGS"
    },
    {
@@ -2144,7 +2120,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-15T02:15:35-04:00",
+  "fetched_at": "2026-09-15T02:31:18-04:00",
   "countries": [
    {
     "iso": "COL",
