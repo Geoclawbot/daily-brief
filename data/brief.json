@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-15T11:45:47-04:00",
- "generated_at_utc": "2026-09-15T15:45:47+00:00",
+ "generated_at": "2026-09-15T12:00:45-04:00",
+ "generated_at_utc": "2026-09-15T16:00:45+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 15",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-15T11:45:48-04:00",
+  "fetched_at": "2026-09-15T12:00:46-04:00",
   "curve": [
    {
     "time": "2026-09-15T05:00",
@@ -71,7 +71,7 @@
     "temp": 87.9,
     "feels": 98.0,
     "humidity": 70,
-    "pop": 4
+    "pop": 5
    },
    {
     "time": "2026-09-15T13:00",
@@ -79,7 +79,7 @@
     "temp": 90.6,
     "feels": 102.4,
     "humidity": 65,
-    "pop": 8
+    "pop": 13
    },
    {
     "time": "2026-09-15T14:00",
@@ -87,7 +87,7 @@
     "temp": 91.1,
     "feels": 100.0,
     "humidity": 62,
-    "pop": 9
+    "pop": 10
    },
    {
     "time": "2026-09-15T15:00",
@@ -95,7 +95,7 @@
     "temp": 90.5,
     "feels": 99.6,
     "humidity": 62,
-    "pop": 9
+    "pop": 10
    },
    {
     "time": "2026-09-15T16:00",
@@ -127,7 +127,7 @@
     "temp": 85.2,
     "feels": 93.2,
     "humidity": 74,
-    "pop": 9
+    "pop": 10
    },
    {
     "time": "2026-09-15T20:00",
@@ -135,7 +135,7 @@
     "temp": 83.2,
     "feels": 93.9,
     "humidity": 83,
-    "pop": 8
+    "pop": 10
    },
    {
     "time": "2026-09-15T21:00",
@@ -147,18 +147,18 @@
    }
   ],
   "current": {
-   "temp": 87.7,
-   "feels": 97.5,
+   "temp": 87.9,
+   "feels": 97.8,
    "humidity": 70,
-   "wind_mph": 4.7,
-   "wind_dir": 82,
-   "observed_at": "2026-09-15T11:45"
+   "wind_mph": 5.1,
+   "wind_dir": 90,
+   "observed_at": "2026-09-15T12:00"
   },
   "today": {
    "high": 91.1,
    "low": 80.1,
    "feels_max": 102.4,
-   "pop_max": 20
+   "pop_max": 14
   },
   "peak_feels": 102.4,
   "peak_hour": 13
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-15T11:45:48-04:00",
+  "fetched_at": "2026-09-15T12:00:47-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-15T11:45:49-04:00",
+  "fetched_at": "2026-09-15T12:00:48-04:00",
   "aqi": 65,
   "category": "Moderate",
   "pollutant": "PM2.5",
@@ -208,11 +208,73 @@
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-09-15T11:45:49-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-09-15T12:00:51-04:00",
+  "route_shown": true,
+  "leg": "Jackson Memorial → Home",
+  "direction": "return",
+  "depart_clock": "3:30 PM",
+  "depart_at": "2026-09-15T15:30:00-04:00",
+  "miles": 20.6,
+  "minutes": 62,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 22.6,
+    "minutes": 55,
+    "toll": true,
+    "saves": 7
+   },
+   {
+    "miles": 25.5,
+    "minutes": 60,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 28.6,
+    "minutes": 60,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 20.8,
+    "minutes": 61,
+    "toll": true,
+    "saves": 1
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 62,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 26.6,
+    "minutes": 65,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.1,
+    "minutes": 75,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.5,
+    "minutes": 72,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 62,
+   "delay_minutes": 0,
+   "saves": 0
+  },
   "incidents": [],
   "incident_count": 0,
   "named_count": 0,
@@ -222,7 +284,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-15T11:45:50-04:00",
+  "fetched_at": "2026-09-15T12:00:51-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -272,7 +334,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-15T11:45:50-04:00",
+  "fetched_at": "2026-09-15T12:00:52-04:00",
   "issued": "800 AM EDT Tue Sep 15 2026",
   "areas": [
    {
@@ -286,7 +348,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-15T11:45:51-04:00",
+  "fetched_at": "2026-09-15T12:00:52-04:00",
   "florida": "$4.1220",
   "national": "$4.3289",
   "diesel": "$6.3163",
@@ -295,7 +357,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-15T11:45:52-04:00",
+  "fetched_at": "2026-09-15T12:00:54-04:00",
   "streams": {
    "local": [
     {
@@ -668,7 +730,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-15T11:45:53-04:00",
+  "fetched_at": "2026-09-15T12:00:55-04:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -676,7 +738,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (245) + USGS (13)",
-  "fetched_at": "2026-09-15T11:45:56-04:00",
+  "fetched_at": "2026-09-15T12:00:58-04:00",
   "events": [
    {
     "lat": 47.2320486,
@@ -2144,7 +2206,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-15T11:45:56-04:00",
+  "fetched_at": "2026-09-15T12:00:58-04:00",
   "countries": [
    {
     "iso": "COL",
