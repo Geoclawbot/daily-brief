@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-15T17:15:38-04:00",
- "generated_at_utc": "2026-09-15T21:15:38+00:00",
+ "generated_at": "2026-09-15T17:30:49-04:00",
+ "generated_at_utc": "2026-09-15T21:30:49+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 15",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-15T17:15:39-04:00",
+  "fetched_at": "2026-09-15T17:30:49-04:00",
   "curve": [
    {
     "time": "2026-09-15T05:00",
@@ -100,63 +100,63 @@
    {
     "time": "2026-09-15T16:00",
     "hour": 16,
-    "temp": 91.4,
-    "feels": 97.4,
+    "temp": 91.5,
+    "feels": 97.3,
     "humidity": 55,
     "pop": 9
    },
    {
     "time": "2026-09-15T17:00",
     "hour": 17,
-    "temp": 89.8,
-    "feels": 93.4,
+    "temp": 90.1,
+    "feels": 93.7,
     "humidity": 56,
     "pop": 8
    },
    {
     "time": "2026-09-15T18:00",
     "hour": 18,
-    "temp": 87.9,
-    "feels": 93.1,
+    "temp": 87.7,
+    "feels": 92.7,
     "humidity": 62,
     "pop": 10
    },
    {
     "time": "2026-09-15T19:00",
     "hour": 19,
-    "temp": 85.9,
-    "feels": 93.9,
+    "temp": 85.5,
+    "feels": 93.4,
     "humidity": 73,
     "pop": 8
    },
    {
     "time": "2026-09-15T20:00",
     "hour": 20,
-    "temp": 84.2,
-    "feels": 94.7,
+    "temp": 84.1,
+    "feels": 93.7,
     "humidity": 78,
     "pop": 7
    },
    {
     "time": "2026-09-15T21:00",
     "hour": 21,
-    "temp": 83.5,
-    "feels": 93.9,
+    "temp": 83.3,
+    "feels": 93.7,
     "humidity": 80,
     "pop": 9
    }
   ],
   "current": {
-   "temp": 89.5,
-   "feels": 92.9,
-   "humidity": 57,
-   "wind_mph": 13.5,
-   "wind_dir": 68,
-   "observed_at": "2026-09-15T17:15"
+   "temp": 89.1,
+   "feels": 93.4,
+   "humidity": 58,
+   "wind_mph": 11.7,
+   "wind_dir": 66,
+   "observed_at": "2026-09-15T17:30"
   },
   "today": {
    "high": 93.2,
-   "low": 78.7,
+   "low": 80.1,
    "feels_max": 104.0,
    "pop_max": 18
   },
@@ -166,132 +166,89 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-15T17:15:39-04:00",
+  "fetched_at": "2026-09-15T17:30:50-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-15T17:15:40-04:00",
-  "aqi": 25,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-15 16:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-15",
-    "aqi": 27,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-15",
-    "aqi": 57,
-    "category": "Moderate",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-16",
-    "aqi": 33,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-16",
-    "aqi": 55,
-    "category": "Moderate",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-17",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-17",
-    "aqi": 28,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-15T17:31:00-04:00",
+  "aqi": 73,
+  "category": "Moderate",
+  "pm25": 15.1,
+  "pm10": 29.9,
+  "observed": "2026-09-15T17:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-15T17:15:43-04:00",
+  "fetched_at": "2026-09-15T17:31:02-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
   "miles": 21.6,
-  "minutes": 70,
-  "delay_minutes": 0,
+  "minutes": 67,
+  "delay_minutes": 5,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 26.4,
-    "minutes": 58,
-    "toll": true,
-    "saves": 12
-   },
-   {
-    "miles": 22.6,
-    "minutes": 60,
+    "miles": 25.5,
+    "minutes": 57,
     "toll": true,
     "saves": 10
    },
    {
-    "miles": 23.0,
-    "minutes": 68,
+    "miles": 22.6,
+    "minutes": 59,
     "toll": true,
-    "saves": 2
+    "saves": 8
    },
    {
-    "miles": 22.9,
+    "miles": 21.8,
+    "minutes": 63,
+    "toll": true,
+    "saves": 4
+   },
+   {
+    "miles": 24.0,
     "minutes": 67,
     "toll": true,
-    "saves": 3
+    "saves": 0
    }
   ],
-  "alternates_worth_taking": [
-   {
-    "miles": 26.4,
-    "minutes": 58,
-    "toll": true,
-    "saves": 12
-   }
-  ],
+  "alternates_worth_taking": [],
   "free_alternates": [
    {
     "miles": 21.6,
-    "minutes": 70,
-    "delay_minutes": 0,
+    "minutes": 67,
+    "delay_minutes": 5,
     "saves": 0
    },
    {
-    "miles": 26.7,
-    "minutes": 71,
+    "miles": 23.4,
+    "minutes": 72,
+    "delay_minutes": 2
+   },
+   {
+    "miles": 22.6,
+    "minutes": 69,
     "delay_minutes": 1
    },
    {
     "miles": 23.1,
     "minutes": 78,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 23.3,
-    "minutes": 77,
-    "delay_minutes": 0
+    "delay_minutes": 4
    }
   ],
   "best_free": {
    "miles": 21.6,
-   "minutes": 70,
-   "delay_minutes": 0,
+   "minutes": 67,
+   "delay_minutes": 5,
    "saves": 0
   },
   "incidents": [],
@@ -303,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-15T17:15:44-04:00",
+  "fetched_at": "2026-09-15T17:31:03-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -352,7 +309,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-15T17:15:44-04:00",
+  "fetched_at": "2026-09-15T17:31:03-04:00",
   "issued": "200 PM EDT Tue Sep 15 2026",
   "areas": [
    {
@@ -366,7 +323,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-15T17:15:44-04:00",
+  "fetched_at": "2026-09-15T17:31:03-04:00",
   "florida": "$4.1220",
   "national": "$4.3289",
   "diesel": "$6.3163",
@@ -375,7 +332,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-15T17:15:47-04:00",
+  "fetched_at": "2026-09-15T17:31:05-04:00",
   "streams": {
    "local": [
     {
@@ -484,6 +441,14 @@
   ],
   "local": [
    {
+    "title": "3 hurt after driver slams into El Palacio de los Jugos in Miami-Dade",
+    "url": "https://www.local10.com/news/local/2026/09/15/3-hurt-after-driver-slams-into-el-palacio-de-los-jugos-in-miami-dade/",
+    "published": "Tue, 15 Sep 2026 20:43:29 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Shooting outside Wynwood Jamaican restaurant leaves 2 wounded, first responders say",
     "url": "https://www.local10.com/news/local/2026/09/15/reported-shooting-outside-wynwood-jamaican-restaurant-leaves-2-wounded-first-responders-say/",
     "published": "Tue, 15 Sep 2026 11:15:23 +0000",
@@ -498,14 +463,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/S4NUBFH655BFRHHRUIN4NFWTXU.jpg?auth=0b1c4720c207b2933de3595cf771f2979744d65c63d97200f331015b73466936&smart=true&width=1200&height=900",
     "media_type": "image"
-   },
-   {
-    "title": "3 hurt after driver slams into El Palacio de los Jugos in Miami-Dade",
-    "url": "https://www.local10.com/news/local/2026/09/15/3-hurt-after-driver-slams-into-el-palacio-de-los-jugos-in-miami-dade/",
-    "published": "Tue, 15 Sep 2026 20:43:29 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
    },
    {
     "title": "Officials to revisit FLL railcar concerns after deadly MIA runway overrun",
@@ -560,7 +517,7 @@
     "url": "https://wsvn.com/news/local/broward/apartment-fire-prompts-evacuations-at-hallandale-beach-high-rise-no-injuries-reported/",
     "published": "Tue, 15 Sep 2026 11:43:44 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/300d5fae-cf0c-4670-8cbc-a77088d8fa5d/f06d492d-e31a-40ed-bb47-52e964d1bca9/main.mp4?fastly_token=NmFhOWM2NjlfM2EwZDA4YjIzNDE3ZGFjZDdkMTRlNzlhZjM2MWM4NGYzNDc4ODBiNjI1N2EyODYwNjZlYTg1NWQyNjdmODkxZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zMDBkNWZhZS1jZjBjLTQ2NzAtOGNiYy1hNzcwODhkOGZhNWQvZjA2ZDQ5MmQtZTMxYS00MGVkLWJiNDctNTJlOTY0ZDFiY2E5L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/a0505c24-64c9-4be3-a098-72eaa43ed28a/4077c2ef-eadf-4eb7-b79c-782ada2e9f8c/main.mp4?fastly_token=NmFhYTA2NzhfZmRlYzgyMzhjNTkxMTE3ODdjNGU0OTBhZGM0ZDgxZmZiNTI3MmRhMmVmOGY3NGEwMDlkMzBhNWNkMWQ3MWFmZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hMDUwNWMyNC02NGM5LTRiZTMtYTA5OC03MmVhYTQzZWQyOGEvNDA3N2MyZWYtZWFkZi00ZWI3LWI3OWMtNzgyYWRhMmU5ZjhjL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -577,6 +534,14 @@
     "published": "Tue, 15 Sep 2026 16:00:20 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/dbb97a08-6208-4c38-93a8-18c38ba83b19/7a208ea0-acd3-442b-b0b9-4a53883ebca0/main.mp4?fastly_token=NmFhOWMzYjNfOTJjMDk1M2UyMzAwZTJjNTRhYTgwODY4NDU5ODM3NmUwNjljOGZlNGYwZjM2MWM5OTFkMGFlOThmZjQyNGU4M18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kYmI5N2EwOC02MjA4LTRjMzgtOTNhOC0xOGMzOGJhODNiMTkvN2EyMDhlYTAtYWNkMy00NDJiLWIwYjktNGE1Mzg4M2ViY2EwL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "3 hospitalized after vehicle crashes into restaurant and causes gas leak in SW Miami-Dade",
+    "url": "https://wsvn.com/news/local/miami-dade/3-hospitalized-after-vehicle-crashes-into-restaurant-and-causes-gas-leak-in-sw-miami-dade/",
+    "published": "Tue, 15 Sep 2026 21:11:39 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1c7212f8-8133-4d23-87e3-138fba4ec900/62948476-f8ed-4a86-90b0-4403d43fe4ff/main.mp4?fastly_token=NmFhYTBjZGFfMDI2ZTdiNDIxNTRmNDBmYTc2MjkyZGI3MDZiZDA4NmMyMTlmMWM4NDVkYWM3NmY1MTUyOGM0ODEzNjQxNDYyN18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xYzcyMTJmOC04MTMzLTRkMjMtODdlMy0xMzhmYmE0ZWM5MDAvNjI5NDg0NzYtZjhlZC00YTg2LTkwYjAtNDQwM2Q0M2ZlNGZmL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -600,19 +565,35 @@
     "url": "https://wsvn.com/news/local/miami-dade/south-florida-school-district-officials-teachers-urge-voters-to-renew-key-sources-of-funding/",
     "published": "Tue, 15 Sep 2026 17:57:27 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/ca78137b-e856-4c2a-a8c6-d9d4f2c8bca6/6b4340f9-4d01-4908-9603-be525f021688/main.mp4?fastly_token=NmFhOWRmOGZfZTFlNDRiOTkzMzM2YTIwMDM3NTAzYjg1ZmRkMzkzZjExOTJiNjczOTFjZDU4YmVmNTBkNGUzNjk4NDAyMTdmN18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jYTc4MTM3Yi1lODU2LTRjMmEtYThjNi1kOWQ0ZjJjOGJjYTYvNmI0MzQwZjktNGQwMS00OTA4LTk2MDMtYmU1MjVmMDIxNjg4L21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Sweet return for a South Florida favorite: Knaus Berry Farm to reopen in October",
-    "url": "https://wsvn.com/news/local/miami-dade/sweet-return-for-a-south-florida-favorite-knaus-berry-farm-to-reopen-in-october/",
-    "published": "Tue, 15 Sep 2026 16:06:53 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b858af6a-87cc-4f35-934c-07044de4a1c0/04d7ca61-793a-4ef9-a4f2-dc1d1d2a250f/main.mp4?fastly_token=NmFhOWQxODJfNmQ5MGQ3YWRiYmU4Yzk1NDEyZjBiNmU0N2RlZWY0MDM5ZDBhNWYzNGE0MTg2MmJhZjEyYzUzZTk5MDliMjFjY18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iODU4YWY2YS04N2NjLTRmMzUtOTM0Yy0wNzA0NGRlNGExYzAvMDRkN2NhNjEtNzkzYS00ZWY5LWE0ZjItZGMxZDFkMmEyNTBmL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/ca78137b-e856-4c2a-a8c6-d9d4f2c8bca6/6b4340f9-4d01-4908-9603-be525f021688/main.mp4?fastly_token=NmFhYTA5MmRfMDgxNzAyZjMwYWQ5ZmE2NzQ4YzE4ZDI3Nzg0M2RkZDEwZTU5OGJiODkxODM0YTZjYTVhZGViZGNkNzVhYWNhYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jYTc4MTM3Yi1lODU2LTRjMmEtYThjNi1kOWQ0ZjJjOGJjYTYvNmI0MzQwZjktNGQwMS00OTA4LTk2MDMtYmU1MjVmMDIxNjg4L21haW4ubXA0",
     "media_type": "video"
    }
   ],
   "colombia": [
+   {
+    "title": "La Gobernación del Atlántico invierte $10.000 millones para reparar colegios afectados por vendavales en ocho municipios: en Piojó, la primera obra",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/la-gobernacion-del-atlantico-invierte-10-000-millones-para-reparar-colegios-afectados-por-vendavales-en-ocho-municipios-en-piojo-la-primera-obra-3586293",
+    "published": "2026-09-15T16:19:16-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/15/6aa9b4683d88f.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Un humilde labriego era el joven de 17 años que murió tras pisar una mina antipersonal mientras trabajaba una parcela en el Catatumbo",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/un-humilde-labriego-era-el-joven-de-17-anos-que-murio-tras-pisar-una-mina-antipersonal-mientras-trabajaba-una-parcela-en-el-catatumbo-3586295",
+    "published": "2026-09-15T16:17:16-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/11/6aa43aa57ea0d.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Cartagena Cómo Vamos en salud mental: pese a que hay una percepción positiva, los ciudadanos evidencian una crisis silenciosa",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/cartagena-como-vamos-en-salud-mental-pese-a-que-hay-una-percepcion-positiva-los-ciudadanos-evidencian-una-crisis-silenciosa-3586280",
+    "published": "2026-09-15T16:22:24-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2022/06/01/62975b0db2875.r_d.774-1181-0.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "La zona alta de Jamundí, bajo el reflector de la Fuerza Pública: la estrategia tras la llegada de 300 soldados",
     "url": "https://www.eltiempo.com/colombia/cali/la-zona-alta-de-jamundi-bajo-el-reflector-de-la-fuerza-publica-la-estrategia-tras-la-llegada-de-300-soldados-3586275",
@@ -651,30 +632,6 @@
     "published": "2026-09-15T13:01:42-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/15/6aa98355839e5.r_d.538-627-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Ofertas de empleo en Colombia: Sena y Ecopetrol abren miles de vacantes con salarios de hasta $3 millones; hay opción para prácticas profesionales",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/ofertas-de-empleo-en-colombia-sena-y-ecopetrol-abren-miles-de-vacantes-con-salarios-de-hasta-3-millones-hay-opcion-para-practicas-profesionales-3586113",
-    "published": "2026-09-15T15:44:52-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/15/6aa940af46c23.png",
-    "media_type": "image"
-   },
-   {
-    "title": "El fuego de Salamanca: lo que hay detrás de los incendios que consumen a esta importante reserva natural del Caribe y llena de humo a Barranquilla",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/el-fuego-de-salamanca-lo-que-hay-detras-de-los-incendios-que-consumen-a-esta-importante-reserva-natural-del-caribe-y-llena-de-humo-a-barranquilla-3586239",
-    "published": "2026-09-15T12:40:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2024/05/03/6635066f4b712.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Así fue el difícil hallazgo de tres cuerpos en el fondo de un pozo séptico en un resguardo indígena de Nariño: ‘Para que podamos limpiar esta tierra’",
-    "url": "https://www.eltiempo.com/colombia/cali/asi-fue-la-busqueda-en-un-pozo-septico-que-permitio-hallar-tres-cuerpos-en-narino-para-que-podamos-limpiar-esta-tierra-3586225",
-    "published": "2026-09-15T13:12:32-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/15/6aa97e64b7d7a.jpeg",
     "media_type": "image"
    }
   ],
@@ -748,7 +705,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-15T17:15:49-04:00",
+  "fetched_at": "2026-09-15T17:31:10-04:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -756,7 +713,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (245) + USGS (8)",
-  "fetched_at": "2026-09-15T17:15:52-04:00",
+  "fetched_at": "2026-09-15T17:31:13-04:00",
   "events": [
    {
     "lat": 47.2320486,
@@ -2219,22 +2176,8 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-15T17:15:52-04:00",
+  "fetched_at": "2026-09-15T17:31:13-04:00",
   "countries": [
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Ofertas de empleo en Colombia: Sena y Ecopetrol abren miles de vacantes con salarios de hasta $3 millones; hay opción para prácticas profesionales",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/ofertas-de-empleo-en-colombia-sena-y-ecopetrol-abren-miles-de-vacantes-con-salarios-de-hasta-3-millones-hay-opcion-para-practicas-profesionales-3586113",
-      "published": "2026-09-15T15:44:52-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 1,
-    "issue": "Ofertas de empleo en Colombia: Sena y Ecopetrol abren miles de vacantes con salarios de hasta $3 millones; hay opción para prácticas profesionales"
-   },
    {
     "iso": "ISR",
     "name": "Israel",
@@ -2307,7 +2250,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 6,
+  "countries_matched": 5,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
