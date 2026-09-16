@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-16T17:30:34-04:00",
- "generated_at_utc": "2026-09-16T21:30:34+00:00",
+ "generated_at": "2026-09-16T17:45:28-04:00",
+ "generated_at_utc": "2026-09-16T21:45:28+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 16",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-16T17:30:34-04:00",
+  "fetched_at": "2026-09-16T17:45:28-04:00",
   "curve": [
    {
     "time": "2026-09-16T05:00",
@@ -101,58 +101,58 @@
     "time": "2026-09-16T16:00",
     "hour": 16,
     "temp": 87.7,
-    "feels": 94.4,
-    "humidity": 68,
+    "feels": 95.5,
+    "humidity": 72,
     "pop": 14
    },
    {
     "time": "2026-09-16T17:00",
     "hour": 17,
     "temp": 87.5,
-    "feels": 91.9,
-    "humidity": 62,
+    "feels": 92.2,
+    "humidity": 63,
     "pop": 9
    },
    {
     "time": "2026-09-16T18:00",
     "hour": 18,
     "temp": 87.0,
-    "feels": 92.6,
-    "humidity": 67,
+    "feels": 92.0,
+    "humidity": 65,
     "pop": 15
    },
    {
     "time": "2026-09-16T19:00",
     "hour": 19,
     "temp": 79.8,
-    "feels": 86.3,
-    "humidity": 73,
+    "feels": 88.7,
+    "humidity": 84,
     "pop": 13
    },
    {
     "time": "2026-09-16T20:00",
     "hour": 20,
     "temp": 81.7,
-    "feels": 90.0,
-    "humidity": 79,
+    "feels": 91.8,
+    "humidity": 87,
     "pop": 13
    },
    {
     "time": "2026-09-16T21:00",
     "hour": 21,
     "temp": 77.6,
-    "feels": 77.7,
-    "humidity": 79,
+    "feels": 78.5,
+    "humidity": 83,
     "pop": 8
    }
   ],
   "current": {
-   "temp": 87.8,
-   "feels": 92.9,
-   "humidity": 64,
-   "wind_mph": 12.4,
+   "temp": 87.4,
+   "feels": 91.9,
+   "humidity": 63,
+   "wind_mph": 12.5,
    "wind_dir": 49,
-   "observed_at": "2026-09-16T17:30"
+   "observed_at": "2026-09-16T17:45"
   },
   "today": {
    "high": 91.2,
@@ -166,57 +166,105 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-16T17:30:35-04:00",
+  "fetched_at": "2026-09-16T17:45:29-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-16T17:30:44-04:00",
-  "aqi": 53,
-  "category": "Moderate",
-  "pm25": 5.9,
-  "pm10": 7.7,
-  "observed": "2026-09-16T17:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-16T17:45:30-04:00",
+  "aqi": 43,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-16 16:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-16",
+    "aqi": 26,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-16",
+    "aqi": 59,
+    "category": "Moderate",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-17",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-17",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-18",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-18",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-19",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-19",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-16T17:30:46-04:00",
+  "fetched_at": "2026-09-16T17:45:33-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
   "miles": 26.6,
-  "minutes": 70,
-  "delay_minutes": 3,
+  "minutes": 68,
+  "delay_minutes": 4,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 22.6,
-    "minutes": 61,
-    "toll": true,
-    "saves": 9
-   },
-   {
     "miles": 26.4,
-    "minutes": 61,
+    "minutes": 58,
+    "toll": true,
+    "saves": 10
+   },
+   {
+    "miles": 22.6,
+    "minutes": 59,
     "toll": true,
     "saves": 9
    },
    {
-    "miles": 23.1,
-    "minutes": 68,
+    "miles": 23.2,
+    "minutes": 67,
     "toll": true,
-    "saves": 2
+    "saves": 1
    },
    {
-    "miles": 27.6,
-    "minutes": 72,
+    "miles": 27.9,
+    "minutes": 70,
     "toll": true,
     "saves": -2
    }
@@ -225,30 +273,30 @@
   "free_alternates": [
    {
     "miles": 26.6,
-    "minutes": 70,
-    "delay_minutes": 3,
+    "minutes": 68,
+    "delay_minutes": 4,
     "saves": 0
    },
    {
-    "miles": 21.7,
-    "minutes": 71,
-    "delay_minutes": 4
+    "miles": 21.8,
+    "minutes": 69,
+    "delay_minutes": 5
    },
    {
     "miles": 23.7,
-    "minutes": 75,
-    "delay_minutes": 1
+    "minutes": 74,
+    "delay_minutes": 0
    },
    {
-    "miles": 23.1,
-    "minutes": 79,
-    "delay_minutes": 5
+    "miles": 22.9,
+    "minutes": 77,
+    "delay_minutes": 3
    }
   ],
   "best_free": {
    "miles": 26.6,
-   "minutes": 70,
-   "delay_minutes": 3,
+   "minutes": 68,
+   "delay_minutes": 4,
    "saves": 0
   },
   "incidents": [],
@@ -260,7 +308,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-16T17:30:48-04:00",
+  "fetched_at": "2026-09-16T17:45:34-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -309,7 +357,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-16T17:30:48-04:00",
+  "fetched_at": "2026-09-16T17:45:34-04:00",
   "issued": "200 PM EDT Wed Sep 16 2026",
   "areas": [
    {
@@ -323,7 +371,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-16T17:30:48-04:00",
+  "fetched_at": "2026-09-16T17:45:34-04:00",
   "florida": "$4.1987",
   "national": "$4.3672",
   "diesel": "$6.3272",
@@ -332,7 +380,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-16T17:30:49-04:00",
+  "fetched_at": "2026-09-16T17:45:36-04:00",
   "streams": {
    "local": [
     {
@@ -441,6 +489,14 @@
   ],
   "local": [
    {
+    "title": "Surveillance video shows patient attack nurse at Jackson Memorial Hospital in Miami-Dade",
+    "url": "https://www.local10.com/news/local/2026/09/16/surveillance-video-shows-patient-attack-nurse-at-jackson-memorial-hospital-in-miami-dade/",
+    "published": "Wed, 16 Sep 2026 21:37:58 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Rapper Kevhani Hicks seeks Stand Your Ground protection in murder case",
     "url": "https://www.local10.com/news/local/2026/09/16/rapper-kevhani-hicks-seeks-stand-your-ground-protection-in-murder-case/",
     "published": "Wed, 16 Sep 2026 20:59:46 +0000",
@@ -497,14 +553,6 @@
     "media_type": "image"
    },
    {
-    "title": "3 hospitalized after I-95 crash involving Boca Raton Fire Rescue truck, first responders say",
-    "url": "https://www.local10.com/news/local/2026/09/16/3-hospitalized-after-i-95-crash-involving-boca-raton-fire-rescue-truck-first-responders-say/",
-    "published": "Wed, 16 Sep 2026 13:23:20 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/BBCJC5COYVHYLEJ7KIIMHM6V2I.png?auth=49b94feab66c21fad4f040b31d0e1d4f2ec3fea2d7d3131e7425e25f0d3b79aa&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
     "title": "SUV crashes into El Palacio de los Jugos in SW Miami-Dade, injuring driver and 2 employees",
     "url": "https://wsvn.com/news/local/miami-dade/suv-crashes-into-el-palacio-de-los-jugos-in-sw-miami-dade-injuring-driver-and-2-employees/",
     "published": "Tue, 15 Sep 2026 21:11:39 +0000",
@@ -517,7 +565,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/man-arrested-after-4-year-old-says-he-touched-her-at-hialeah-lowes-police-say/",
     "published": "Wed, 16 Sep 2026 15:48:46 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b65e42b2-ac1a-4059-bdfe-6a8349f81761/140a16e6-7347-4f21-8b65-bbdcffd57834/main.mp4?fastly_token=NmFhYjYwNWRfMjllZTM3NTI5YzVkYWE3NjRkMmMxOGY2MDI0ZTkyMGY5OTM3YmZiMThlNWIzMDc4OTRkM2UzNWI4NDNjMmZmOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iNjVlNDJiMi1hYzFhLTQwNTktYmRmZS02YTgzNDlmODE3NjEvMTQwYTE2ZTYtNzM0Ny00ZjIxLThiNjUtYmJkY2ZmZDU3ODM0L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/d25a6218-9e13-4f4e-b7c0-9c991d5f7009/ffe2b572-a977-41e4-9255-6404a1050a0a/main.mp4?fastly_token=NmFhYjM2NDBfNmZlOWU1NzkwNmM0N2IyZmQ2NWFkYjJlN2I3Y2Y4NzQ0NDQzMTAwYjJjN2ZhNTZiN2Q3ZGIwOWRiYjdlZjk0OF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kMjVhNjIxOC05ZTEzLTRmNGUtYjdjMC05Yzk5MWQ1ZjcwMDkvZmZlMmI1NzItYTk3Ny00MWU0LTkyNTUtNjQwNGExMDUwYTBhL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -537,27 +585,11 @@
     "media_type": "video"
    },
    {
-    "title": "Man honored by Miami Police after rescuing woman from violent attack",
-    "url": "https://wsvn.com/news/local/miami-dade/man-honored-by-miami-police-after-rescuing-woman-from-violent-attack/",
-    "published": "Wed, 16 Sep 2026 21:14:15 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/3c349578-9f1e-4bff-a0cc-5f717c9b4e04/682e86f1-3ac2-4693-b1bf-2f4f45298514/main.mp4?fastly_token=NmFhYjVmNzdfYWI5NjYzZWU5OWVjNmJkZDhmOWE4N2YzYmVhOGQ3MTNlNTkxMTJkY2Y2N2VmYWU2M2UzZGYwMjBlNjA4NjBkN18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zYzM0OTU3OC05ZjFlLTRiZmYtYTBjYy01ZjcxN2M5YjRlMDQvNjgyZTg2ZjEtM2FjMi00NjkzLWIxYmYtMmY0ZjQ1Mjk4NTE0L21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "3 arrested after breaking into Miami apartment while resident was hospitalized, police say",
-    "url": "https://wsvn.com/news/local/miami-dade/3-arrested-after-breaking-into-miami-apartment-while-resident-was-hospitalized-police-say/",
-    "published": "Wed, 16 Sep 2026 19:44:24 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Kayla-Ivonne-Montoya.png",
-    "media_type": "image"
-   },
-   {
     "title": "Amazon cargo plane wreckage taken to ‘Cargo City’ after removal from crash site near MIA",
     "url": "https://wsvn.com/news/local/miami-dade/amazon-cargo-plane-wreckage-taken-to-cargo-city-after-removal-from-crash-site-near-mia/",
     "published": "Wed, 16 Sep 2026 17:12:34 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/77c22495-6518-44ec-9c17-18bf4911fab3/c58bcf19-6fd5-4934-930d-3302411bfa3e/main.mp4?fastly_token=NmFhYjVlM2ZfYjFmOTY3ZWViNzQ5MDgxYzM2YjlmMTI3NDY5ZTYxYmMzOTc4MmY0Y2FhNmY3ZDAxNTI5MWNmN2VjMjc1MDliOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83N2MyMjQ5NS02NTE4LTQ0ZWMtOWMxNy0xOGJmNDkxMWZhYjMvYzU4YmNmMTktNmZkNS00OTM0LTkzMGQtMzMwMjQxMWJmYTNlL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/5820bb47-7836-4c4c-83fe-f953cc6f73c6/fec07c16-4c72-445c-a908-fefec6e13165/main.mp4?fastly_token=NmFhYjI2NWVfZGI5NzBhNDQyMzU1OTU5YzM1MzYwNjZlN2NjYjFiOTU3OWY1YTBlZjhlOTZhNTY2YTRlYWMyNThlOTQwNzRlOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81ODIwYmI0Ny03ODM2LTRjNGMtODNmZS1mOTUzY2M2ZjczYzYvZmVjMDdjMTYtNGM3Mi00NDVjLWE5MDgtZmVmZWM2ZTEzMTY1L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -565,7 +597,23 @@
     "url": "https://wsvn.com/news/local/miami-dade/search-underway-for-25-year-old-man-reported-missing-from-miamis-model-city-neighborhood/",
     "published": "Wed, 16 Sep 2026 16:27:32 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/526a5a36-6c95-4759-9f33-e906f77dab7f/477f549e-0c39-407e-ab36-12ae78a234e9/main.mp4?fastly_token=NmFhYjU2MGJfYmJhMjUyYTdjNWRhYmM1MGRkY2Y4ODVmYjlmYWMzOWU2NTg3MTRjMjZjNWY5YjAzZmE2YjQ4ZjlhOWEyMDE1N18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81MjZhNWEzNi02Yzk1LTQ3NTktOWYzMy1lOTA2Zjc3ZGFiN2YvNDc3ZjU0OWUtMGMzOS00MDdlLWFiMzYtMTJhZTc4YTIzNGU5L21haW4ubXA0",
+    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/260916_Daundray_Boston_missing_man_Miami.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Mechanic arrested after $40K boat left for repairs goes missing, police say",
+    "url": "https://wsvn.com/news/local/miami-dade/mechanic-arrested-after-40k-boat-left-for-repairs-goes-missing-police-say/",
+    "published": "Wed, 16 Sep 2026 16:18:06 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Carlos-Armas.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Man arrested after 4-year-old says he touched her at Hialeah Lowe’s, police say",
+    "url": "https://wsvn.com/news/local/miami-dade/man-arrested-after-4-year-old-says-he-touched-her-at-hialeah-lowes-police-say/",
+    "published": "Wed, 16 Sep 2026 15:48:46 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/d25a6218-9e13-4f4e-b7c0-9c991d5f7009/ffe2b572-a977-41e4-9255-6404a1050a0a/main.mp4?fastly_token=NmFhYjM2NDBfNmZlOWU1NzkwNmM0N2IyZmQ2NWFkYjJlN2I3Y2Y4NzQ0NDQzMTAwYjJjN2ZhNTZiN2Q3ZGIwOWRiYjdlZjk0OF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kMjVhNjIxOC05ZTEzLTRmNGUtYjdjMC05Yzk5MWQ1ZjcwMDkvZmZlMmI1NzItYTk3Ny00MWU0LTkyNTUtNjQwNGExMDUwYTBhL21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -705,7 +753,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-16T17:30:49-04:00",
+  "fetched_at": "2026-09-16T17:45:36-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -713,7 +761,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (254) + USGS (17)",
-  "fetched_at": "2026-09-16T17:30:52-04:00",
+  "fetched_at": "2026-09-16T17:45:39-04:00",
   "events": [
    {
     "lat": 47.2320486,
@@ -2185,7 +2233,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-16T17:30:52-04:00",
+  "fetched_at": "2026-09-16T17:45:39-04:00",
   "countries": [
    {
     "iso": "CAN",
