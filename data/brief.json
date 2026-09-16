@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-16T15:15:31-04:00",
- "generated_at_utc": "2026-09-16T19:15:31+00:00",
+ "generated_at": "2026-09-16T15:30:36-04:00",
+ "generated_at_utc": "2026-09-16T19:30:36+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 16",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-16T15:15:31-04:00",
+  "fetched_at": "2026-09-16T15:30:36-04:00",
   "curve": [
    {
     "time": "2026-09-16T05:00",
@@ -84,79 +84,79 @@
    {
     "time": "2026-09-16T14:00",
     "hour": 14,
-    "temp": 90.6,
-    "feels": 97.2,
+    "temp": 91.2,
+    "feels": 98.3,
     "humidity": 55,
     "pop": 20
    },
    {
     "time": "2026-09-16T15:00",
     "hour": 15,
-    "temp": 89.9,
-    "feels": 96.4,
+    "temp": 90.6,
+    "feels": 96.6,
     "humidity": 59,
     "pop": 7
    },
    {
     "time": "2026-09-16T16:00",
     "hour": 16,
-    "temp": 89.0,
-    "feels": 95.3,
+    "temp": 87.8,
+    "feels": 93.7,
     "humidity": 65,
     "pop": 9
    },
    {
     "time": "2026-09-16T17:00",
     "hour": 17,
-    "temp": 84.5,
-    "feels": 90.2,
+    "temp": 86.8,
+    "feels": 92.8,
     "humidity": 71,
     "pop": 11
    },
    {
     "time": "2026-09-16T18:00",
     "hour": 18,
-    "temp": 85.2,
-    "feels": 92.8,
+    "temp": 85.0,
+    "feels": 92.0,
     "humidity": 75,
     "pop": 17
    },
    {
     "time": "2026-09-16T19:00",
     "hour": 19,
-    "temp": 81.9,
-    "feels": 88.2,
+    "temp": 83.2,
+    "feels": 89.8,
     "humidity": 76,
     "pop": 18
    },
    {
     "time": "2026-09-16T20:00",
     "hour": 20,
-    "temp": 81.3,
-    "feels": 88.3,
+    "temp": 81.4,
+    "feels": 87.6,
     "humidity": 74,
     "pop": 16
    },
    {
     "time": "2026-09-16T21:00",
     "hour": 21,
-    "temp": 80.7,
+    "temp": 80.9,
     "feels": 89.3,
     "humidity": 80,
     "pop": 12
    }
   ],
   "current": {
-   "temp": 90.2,
-   "feels": 96.7,
-   "humidity": 60,
-   "wind_mph": 11.1,
-   "wind_dir": 54,
-   "observed_at": "2026-09-16T15:15"
+   "temp": 89.0,
+   "feels": 94.0,
+   "humidity": 62,
+   "wind_mph": 12.7,
+   "wind_dir": 51,
+   "observed_at": "2026-09-16T15:30"
   },
   "today": {
-   "high": 90.6,
-   "low": 80.7,
+   "high": 91.2,
+   "low": 80.6,
    "feels_max": 98.9,
    "pop_max": 29
   },
@@ -166,137 +166,96 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-16T15:15:33-04:00",
+  "fetched_at": "2026-09-16T15:30:36-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-16T15:15:34-04:00",
-  "aqi": 20,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-16 14:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-16",
-    "aqi": 26,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-16",
-    "aqi": 59,
-    "category": "Moderate",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-17",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-17",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-18",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-18",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-16T15:31:02-04:00",
+  "aqi": 54,
+  "category": "Moderate",
+  "pm25": 6.3,
+  "pm10": 9.0,
+  "observed": "2026-09-16T15:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-16T15:15:36-04:00",
+  "fetched_at": "2026-09-16T15:31:05-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
-  "depart_at": "2026-09-16T15:30:00-04:00",
-  "miles": 20.6,
-  "minutes": 68,
-  "delay_minutes": 3,
+  "depart_at": "now",
+  "miles": 21.0,
+  "minutes": 70,
+  "delay_minutes": 5,
   "toll_free": true,
   "alternates": [
    {
     "miles": 25.5,
-    "minutes": 58,
+    "minutes": 55,
+    "toll": true,
+    "saves": 15
+   },
+   {
+    "miles": 22.6,
+    "minutes": 60,
     "toll": true,
     "saves": 10
    },
    {
-    "miles": 22.6,
-    "minutes": 59,
+    "miles": 21.2,
+    "minutes": 67,
     "toll": true,
-    "saves": 9
-   },
-   {
-    "miles": 20.8,
-    "minutes": 66,
-    "toll": true,
-    "saves": 2
+    "saves": 3
    },
    {
     "miles": 28.6,
-    "minutes": 66,
+    "minutes": 69,
     "toll": true,
-    "saves": 2
+    "saves": 1
    }
   ],
-  "alternates_worth_taking": [],
+  "alternates_worth_taking": [
+   {
+    "miles": 25.5,
+    "minutes": 55,
+    "toll": true,
+    "saves": 15
+   }
+  ],
   "free_alternates": [
    {
-    "miles": 20.6,
-    "minutes": 68,
-    "delay_minutes": 3,
+    "miles": 21.0,
+    "minutes": 70,
+    "delay_minutes": 5,
     "saves": 0
    },
    {
     "miles": 23.4,
-    "minutes": 75,
+    "minutes": 77,
+    "delay_minutes": 2
+   },
+   {
+    "miles": 23.1,
+    "minutes": 83,
     "delay_minutes": 0
    },
    {
     "miles": 22.5,
     "minutes": 77,
     "delay_minutes": 0
-   },
-   {
-    "miles": 23.1,
-    "minutes": 83,
-    "delay_minutes": 0
    }
   ],
   "best_free": {
-   "miles": 20.6,
-   "minutes": 68,
-   "delay_minutes": 3,
+   "miles": 21.0,
+   "minutes": 70,
+   "delay_minutes": 5,
    "saves": 0
   },
   "incidents": [],
@@ -308,7 +267,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-16T15:15:37-04:00",
+  "fetched_at": "2026-09-16T15:31:06-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -357,7 +316,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-16T15:15:37-04:00",
+  "fetched_at": "2026-09-16T15:31:06-04:00",
   "issued": "200 PM EDT Wed Sep 16 2026",
   "areas": [
    {
@@ -371,7 +330,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-16T15:15:37-04:00",
+  "fetched_at": "2026-09-16T15:31:07-04:00",
   "florida": "$4.1987",
   "national": "$4.3672",
   "diesel": "$6.3272",
@@ -380,7 +339,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-16T15:15:38-04:00",
+  "fetched_at": "2026-09-16T15:31:08-04:00",
   "streams": {
    "local": [
     {
@@ -489,6 +448,14 @@
   ],
   "local": [
    {
+    "title": "El Palacio de los Jugos closes for clean up after crash injuring 3 in Miami-Dade’s Kendall West area",
+    "url": "https://www.local10.com/news/local/2026/09/16/el-palacio-de-los-jugos-closes-for-clean-up-after-crash-injuring-3-in-miami-dades-kendall-west/",
+    "published": "Wed, 16 Sep 2026 16:26:08 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Senior arrested in hit-and-run that left motorcyclist hurt in Hialeah, cops say",
     "url": "https://www.local10.com/news/local/2026/09/16/miami-gardens-senior-arrested-in-hit-and-run-that-left-motorcyclist-hurt-cops-say/",
     "published": "Wed, 16 Sep 2026 18:41:50 +0000",
@@ -503,14 +470,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/432IRG5Q6ZCMDFVDNRJLWMVKQY.png?auth=7f0c1e570dc4b8957c2315b14a86430d87d54fb8be041dd98a6fe7b1bc95a6cf&smart=true&width=1200&height=900",
     "media_type": "image"
-   },
-   {
-    "title": "El Palacio de los Jugos closes for clean up after crash injuring 3 in Miami-Dade’s Kendall West area",
-    "url": "https://www.local10.com/news/local/2026/09/16/el-palacio-de-los-jugos-closes-for-clean-up-after-crash-injuring-3-in-miami-dades-kendall-west/",
-    "published": "Wed, 16 Sep 2026 16:26:08 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
    },
    {
     "title": "2 arrested weeks after Liberty City shooting tied to street fight leaves bullet in garage door: Cops",
@@ -619,6 +578,22 @@
   ],
   "colombia": [
    {
+    "title": "Dos jóvenes murieron en un choque de motos en Barrancabermeja, Santander: el conductor del otro vehículo huyó sin dejar rastro",
+    "url": "https://www.eltiempo.com/colombia/santander/dos-jovenes-murieron-en-un-choque-de-motos-en-barrancabermeja-santander-el-conductor-del-otro-vehiculo-huyo-sin-dejar-rastro-3586548",
+    "published": "2026-09-16T14:21:55-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/16/6aaaeab54d2ba.png",
+    "media_type": "image"
+   },
+   {
+    "title": "'Hay veces que tenemos diez a la vez': la agotadora batalla de los socorristas que ya combatieron 287 incendios forestales en Nariño",
+    "url": "https://www.eltiempo.com/colombia/cali/hay-veces-que-tenemos-diez-a-la-vez-la-agotadora-batalla-de-los-socorristas-que-ya-combatieron-287-incendios-forestales-en-narino-3586555",
+    "published": "2026-09-16T14:09:52-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/16/6aaae66bc0430.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "El contrato detrás del bus escolar de Morroa en el que murieron dos personas: $656 millones y preguntas sobre el vehículo que prestaba el servicio",
     "url": "https://www.eltiempo.com/colombia/barranquilla/el-contrato-detras-del-bus-escolar-de-morroa-en-el-que-murieron-dos-personas-656-millones-y-preguntas-sobre-el-vehiculo-que-prestaba-el-servicio-3586554",
     "published": "2026-09-16T13:55:00-05:00",
@@ -664,22 +639,6 @@
     "published": "2026-09-16T13:20:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/14/6aa8311929336.r_d.1147-144-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Bus escolar contratado por Alcaldía de Morroa tenía 17 años de servicio al momento del siniestro que dejó dos muertos; la vida útil máxima era de 10",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/bus-escolar-contratado-por-alcaldia-de-morroa-tenia-17-anos-de-servicio-al-momento-del-siniestro-que-dejo-dos-muertos-la-vida-util-maxima-era-de-3586526",
-    "published": "2026-09-16T12:30:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/09/6aa1e8c416d05.r_d.1044-430-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Buscan al responsable de atacar varias veces con un machete y arrancarle los dientes una perrita en Antioquia: ofrecen millonaria recompensa",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/buscan-al-responsable-de-atacar-varias-veces-con-un-machete-y-arrancarle-los-dientes-una-perrita-en-antioquia-ofrecen-millonaria-recompensa-3586464",
-    "published": "2026-09-16T11:38:53-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/16/6aaab75f0d29f.png",
     "media_type": "image"
    }
   ],
@@ -753,7 +712,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-16T15:15:39-04:00",
+  "fetched_at": "2026-09-16T15:31:09-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -761,7 +720,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (254) + USGS (13)",
-  "fetched_at": "2026-09-16T15:15:41-04:00",
+  "fetched_at": "2026-09-16T15:31:12-04:00",
   "events": [
    {
     "lat": 47.2320486,
@@ -2229,7 +2188,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-16T15:15:41-04:00",
+  "fetched_at": "2026-09-16T15:31:12-04:00",
   "countries": [
    {
     "iso": "CAN",
