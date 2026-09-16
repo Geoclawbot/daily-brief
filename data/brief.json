@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-16T11:15:40-04:00",
- "generated_at_utc": "2026-09-16T15:15:40+00:00",
+ "generated_at": "2026-09-16T11:30:57-04:00",
+ "generated_at_utc": "2026-09-16T15:30:57+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 16",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-16T11:15:41-04:00",
+  "fetched_at": "2026-09-16T11:30:57-04:00",
   "curve": [
    {
     "time": "2026-09-16T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 83.4,
-   "feels": 93.9,
-   "humidity": 82,
-   "wind_mph": 6.3,
-   "wind_dir": 337,
-   "observed_at": "2026-09-16T11:15"
+   "temp": 83.5,
+   "feels": 91.9,
+   "humidity": 81,
+   "wind_mph": 13.4,
+   "wind_dir": 10,
+   "observed_at": "2026-09-16T11:30"
   },
   "today": {
    "high": 85.7,
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-16T11:15:41-04:00",
+  "fetched_at": "2026-09-16T11:30:58-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-16T11:15:42-04:00",
-  "aqi": 19,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-16 10:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-16",
-    "aqi": 33,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-16",
-    "aqi": 55,
-    "category": "Moderate",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-17",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-17",
-    "aqi": 28,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-16T11:31:23-04:00",
+  "aqi": 57,
+  "category": "Moderate",
+  "pm25": 8.0,
+  "pm10": 12.0,
+  "observed": "2026-09-16T11:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-16T11:15:42-04:00",
+  "fetched_at": "2026-09-16T11:31:24-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -222,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-16T11:15:43-04:00",
+  "fetched_at": "2026-09-16T11:31:25-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -271,7 +247,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-16T11:15:43-04:00",
+  "fetched_at": "2026-09-16T11:31:25-04:00",
   "issued": "800 AM EDT Wed Sep 16 2026",
   "areas": [
    {
@@ -285,7 +261,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-16T11:15:43-04:00",
+  "fetched_at": "2026-09-16T11:31:25-04:00",
   "florida": "$4.1987",
   "national": "$4.3672",
   "diesel": "$6.3272",
@@ -294,7 +270,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-16T11:15:44-04:00",
+  "fetched_at": "2026-09-16T11:31:26-04:00",
   "streams": {
    "local": [
     {
@@ -527,11 +503,43 @@
     "url": "https://wsvn.com/news/local/miami-dade/surveillance-video-shows-chilling-attack-by-man-on-er-nurse-staff-at-jackson-memorial-hospital/",
     "published": "Wed, 16 Sep 2026 02:44:53 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/abf3c73d-cd23-4d9a-8bb6-e1993a497706/6e851e81-9f8a-4a1f-970a-13fbdc8b5e6c/main.mp4?fastly_token=NmFhYjA2YTZfOTM3ZjU1YmMzYjRiM2Q0MmI5NjRmMmQyZTdjNTBjY2RiMDgyZDAxMjY0MmNmYWQ1MDJjMjFjZTNhMjY1ZmNjMl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hYmYzYzczZC1jZDIzLTRkOWEtOGJiNi1lMTk5M2E0OTc3MDYvNmU4NTFlODEtOWY4YS00YTFmLTk3MGEtMTNmYmRjOGI1ZTZjL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/abf3c73d-cd23-4d9a-8bb6-e1993a497706/6e851e81-9f8a-4a1f-970a-13fbdc8b5e6c/main.mp4?fastly_token=NmFhYjBjNDBfMDY4ZjIwZTQ1Mjc0M2M0NjQ5ODI0YmQ3NTIxMjg1MmU3ZTE3Njk0ZGE1ODFmNDcxNDkyNzMxYjVhYmMzYjBiZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hYmYzYzczZC1jZDIzLTRkOWEtOGJiNi1lMTk5M2E0OTc3MDYvNmU4NTFlODEtOWY4YS00YTFmLTk3MGEtMTNmYmRjOGI1ZTZjL21haW4ubXA0",
     "media_type": "video"
    }
   ],
   "colombia": [
+   {
+    "title": "Aeronáutica Civil se pronunció sobre el ataque contra el sistema de radar en Candelaria, Valle del Cauca: 'Representa una grave amenaza'",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/aeronautica-civil-se-pronuncio-sobre-el-ataque-contra-el-sistema-de-radar-en-candelaria-valle-del-cauca-representa-una-grave-amenaza-3586469",
+    "published": "2026-09-16T10:16:48-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/16/6aaab273b69af.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Rescatistas llegaron a los restos de la avioneta desaparecida en ruta Condoto-Guaymaral: FAC reveló detalles y dijo que 'no encontraron ocupantes'",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/rescatistas-llegaron-a-los-restos-de-la-avioneta-desaparecida-en-ruta-condoto-guaymaral-fac-revelo-detalles-y-dijo-que-no-encontraron-ocupantes-3586468",
+    "published": "2026-09-16T10:09:17-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/14/6aa8311929336.r_d.1147-144-0.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Lucas Murillo, el 'niño milagro', entrará a la lista de trasplante de órganos: se trata del menor que le suplicó al presidente que le salvara la vida",
+    "url": "https://www.eltiempo.com/colombia/santander/lucas-murillo-el-nino-milagro-entrara-a-la-lista-de-trasplante-de-organos-se-trata-del-menor-que-le-suplico-al-presidente-que-le-salvara-la-vida-3586453",
+    "published": "2026-09-16T10:07:59-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/30/6a9434ee21602.r_d.617-227-0.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Unidades de rescate llegaron al sitio donde está la avioneta siniestrada en el Chocó, pero está vacía: aún buscan a las cuatro médicas y al piloto",
+    "url": "https://www.eltiempo.com/colombia/medellin/unidades-de-rescate-llegaron-al-sitio-donde-esta-la-avioneta-siniestrada-en-el-choco-pero-esta-vacia-aun-buscan-a-las-cuatro-medicas-y-al-piloto-3586463",
+    "published": "2026-09-16T10:02:04-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/14/6aa83babe1304.png",
+    "media_type": "image"
+   },
    {
     "title": "¿Quién era Diego Ramón Luna, exrector de la Universidad Metropolitana de Ecuador que murió en playa de Cartagena? Nuevos detalles de su fallecimiento",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/quien-era-diego-ramon-luna-alvarez-el-exrector-de-la-universidad-metropolitana-del-ecuador-que-murio-en-cartagena-nuevos-detalles-de-su-muerte-3586425",
@@ -543,7 +551,7 @@
    {
     "title": "Video | Atacan con drones el radar de la Aeronáutica Civil en zona rural de Candelaria, Valle del Cauca; Alcaldía activa protocolo de seguridad",
     "url": "https://www.eltiempo.com/colombia/cali/video-atacan-con-drones-el-radar-de-la-aeronautica-civil-en-zona-rural-de-candelaria-valle-del-cauca-alcaldia-activa-protocolo-de-seguridad-3586443",
-    "published": "2026-09-16T09:55:27-05:00",
+    "published": "2026-09-16T10:14:55-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/16/6aaa9af0d6e1d.r_d.725-671-0.jpeg",
     "media_type": "image"
@@ -562,38 +570,6 @@
     "published": "2026-09-16T08:16:04-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2024/04/02/660bf9c3b11dd.r_d.801-293-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Personeros del Caribe piden a la Creg frenar sanciones por mayor consumo de energía: 'No nos pueden castigar igual que a Bogotá'",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/personeros-del-caribe-piden-a-la-creg-frenar-sanciones-por-mayor-consumo-de-energia-no-nos-pueden-castigar-igual-que-a-bogota-3586426",
-    "published": "2026-09-16T07:46:38-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/16/6aaa8b05adbdf.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "La Liga de Usuarios de Servicios Públicos Domiciliarios se suma a denuncias jurídicas elevadas por Distrito de Cartagena contra medidas de la CREG",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/la-liga-de-usuarios-de-servicios-publicos-domiciliarios-se-suma-a-denuncias-juridicas-elevadas-por-distrito-de-cartagena-contra-medidas-de-la-creg-3585992",
-    "published": "2026-09-16T07:16:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/04/21/69e7e5f7a635d.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Temblor hoy en Colombia | Reportan seguidilla de sismos en Chocó durante la madrugada de este 16 de septiembre; el mayor fue de magnitud 4,5: detalles",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-seguidilla-de-sismos-en-choco-durante-la-madrugada-de-este-16-de-septiembre-el-mayor-fue-de-magnitud-4-5-detalles-3586399",
-    "published": "2026-09-16T04:49:03-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2021/12/10/61b3cc62d6e5b.r_d.1167-642-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Fuerza Aérea insertó equipo especial de rescate para ubicar a pasajeros de la avioneta desaparecida cuando cubría la ruta Condoto-Guaymaral",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/fuerza-aerea-inserto-equipo-especial-de-rescate-en-inmediaciones-del-parque-tatama-para-ubicar-a-pasajeros-del-avion-accidentado-en-la-selva-del-choco-3586398",
-    "published": "2026-09-16T04:34:09-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/16/6aaa48fa5a8ea.png",
     "media_type": "image"
    }
   ],
@@ -667,15 +643,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-16T11:15:46-04:00",
+  "fetched_at": "2026-09-16T11:31:26-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (254) + USGS (14)",
-  "fetched_at": "2026-09-16T11:15:48-04:00",
+  "source": "GDACS (254) + USGS (15)",
+  "fetched_at": "2026-09-16T11:31:29-04:00",
   "events": [
    {
     "lat": 47.2320486,
@@ -760,6 +736,19 @@
     "mag": 5.1,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thsx",
     "when": 1789547820012,
+    "source": "USGS"
+   },
+   {
+    "lat": 36.0556,
+    "lon": 140.0207,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M5 — 5 km NE of Mitsukaidō, Japan",
+    "place": "5 km NE of Mitsukaidō, Japan",
+    "severity": "M5",
+    "mag": 5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thv6",
+    "when": 1789571258245,
     "source": "USGS"
    },
    {
@@ -2118,25 +2107,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031902",
     "when": "Sat, 12 Sep 2026 15:01:59 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": 8.839155584772469,
-    "lon": 32.43533733232135,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Sudan",
-    "place": "Sudan",
-    "severity": "Green impact for forestfire in 5663 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031926",
-    "when": "Wed, 16 Sep 2026 15:09:58 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 268,
+  "event_count": 269,
   "counts": {
    "red": 0,
    "orange": 6,
-   "green": 262
+   "green": 263
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2144,28 +2121,8 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-16T11:15:48-04:00",
+  "fetched_at": "2026-09-16T11:31:29-04:00",
   "countries": [
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Personeros del Caribe piden a la Creg frenar sanciones por mayor consumo de energía: 'No nos pueden castigar igual que a Bogotá'",
-      "url": "https://www.eltiempo.com/colombia/barranquilla/personeros-del-caribe-piden-a-la-creg-frenar-sanciones-por-mayor-consumo-de-energia-no-nos-pueden-castigar-igual-que-a-bogota-3586426",
-      "published": "2026-09-16T07:46:38-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Temblor hoy en Colombia | Reportan seguidilla de sismos en Chocó durante la madrugada de este 16 de septiembre; el mayor fue de magnitud 4,5: detalles",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-seguidilla-de-sismos-en-choco-durante-la-madrugada-de-este-16-de-septiembre-el-mayor-fue-de-magnitud-4-5-detalles-3586399",
-      "published": "2026-09-16T04:49:03-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 2,
-    "issue": "Personeros del Caribe piden a la Creg frenar sanciones por mayor consumo de energía: 'No nos pueden castigar igual que a Bogotá'"
-   },
    {
     "iso": "JAM",
     "name": "Jamaica",
@@ -2300,7 +2257,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 10,
+  "countries_matched": 9,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
