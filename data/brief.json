@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-16T15:30:36-04:00",
- "generated_at_utc": "2026-09-16T19:30:36+00:00",
+ "generated_at": "2026-09-16T15:45:30-04:00",
+ "generated_at_utc": "2026-09-16T19:45:30+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 16",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-16T15:30:36-04:00",
+  "fetched_at": "2026-09-16T15:45:31-04:00",
   "curve": [
    {
     "time": "2026-09-16T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 89.0,
-   "feels": 94.0,
-   "humidity": 62,
-   "wind_mph": 12.7,
-   "wind_dir": 51,
-   "observed_at": "2026-09-16T15:30"
+   "temp": 88.6,
+   "feels": 93.7,
+   "humidity": 63,
+   "wind_mph": 12.5,
+   "wind_dir": 55,
+   "observed_at": "2026-09-16T15:45"
   },
   "today": {
    "high": 91.2,
@@ -166,96 +166,150 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-16T15:30:36-04:00",
+  "fetched_at": "2026-09-16T15:45:32-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-16T15:31:02-04:00",
-  "aqi": 54,
-  "category": "Moderate",
-  "pm25": 6.3,
-  "pm10": 9.0,
-  "observed": "2026-09-16T15:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-16T15:45:33-04:00",
+  "aqi": 41,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-16 14:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-16",
+    "aqi": 26,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-16",
+    "aqi": 59,
+    "category": "Moderate",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-17",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-17",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-18",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-18",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-19",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-19",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-16T15:31:05-04:00",
+  "fetched_at": "2026-09-16T15:45:36-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 21.0,
-  "minutes": 70,
-  "delay_minutes": 5,
+  "miles": 26.6,
+  "minutes": 73,
+  "delay_minutes": 0,
   "toll_free": true,
   "alternates": [
-   {
-    "miles": 25.5,
-    "minutes": 55,
-    "toll": true,
-    "saves": 15
-   },
    {
     "miles": 22.6,
     "minutes": 60,
     "toll": true,
-    "saves": 10
+    "saves": 13
    },
    {
-    "miles": 21.2,
-    "minutes": 67,
+    "miles": 25.5,
+    "minutes": 61,
+    "toll": true,
+    "saves": 12
+   },
+   {
+    "miles": 20.8,
+    "minutes": 70,
     "toll": true,
     "saves": 3
    },
    {
     "miles": 28.6,
-    "minutes": 69,
+    "minutes": 71,
     "toll": true,
-    "saves": 1
+    "saves": 2
    }
   ],
   "alternates_worth_taking": [
    {
-    "miles": 25.5,
-    "minutes": 55,
+    "miles": 22.6,
+    "minutes": 60,
     "toll": true,
-    "saves": 15
+    "saves": 13
+   },
+   {
+    "miles": 25.5,
+    "minutes": 61,
+    "toll": true,
+    "saves": 12
    }
   ],
   "free_alternates": [
    {
-    "miles": 21.0,
-    "minutes": 70,
-    "delay_minutes": 5,
+    "miles": 26.6,
+    "minutes": 73,
+    "delay_minutes": 0,
     "saves": 0
    },
    {
-    "miles": 23.4,
-    "minutes": 77,
-    "delay_minutes": 2
+    "miles": 20.6,
+    "minutes": 73,
+    "delay_minutes": 8
    },
    {
     "miles": 23.1,
-    "minutes": 83,
+    "minutes": 85,
     "delay_minutes": 0
    },
    {
-    "miles": 22.5,
-    "minutes": 77,
+    "miles": 23.7,
+    "minutes": 85,
     "delay_minutes": 0
    }
   ],
   "best_free": {
-   "miles": 21.0,
-   "minutes": 70,
-   "delay_minutes": 5,
+   "miles": 26.6,
+   "minutes": 73,
+   "delay_minutes": 0,
    "saves": 0
   },
   "incidents": [],
@@ -267,7 +321,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-16T15:31:06-04:00",
+  "fetched_at": "2026-09-16T15:45:36-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -316,7 +370,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-16T15:31:06-04:00",
+  "fetched_at": "2026-09-16T15:45:37-04:00",
   "issued": "200 PM EDT Wed Sep 16 2026",
   "areas": [
    {
@@ -330,7 +384,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-16T15:31:07-04:00",
+  "fetched_at": "2026-09-16T15:45:37-04:00",
   "florida": "$4.1987",
   "national": "$4.3672",
   "diesel": "$6.3272",
@@ -339,7 +393,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-16T15:31:08-04:00",
+  "fetched_at": "2026-09-16T15:45:38-04:00",
   "streams": {
    "local": [
     {
@@ -448,6 +502,14 @@
   ],
   "local": [
    {
+    "title": "1 arrested after bomb threats reported at 2 Broward schools, authorities say",
+    "url": "https://www.local10.com/news/local/2026/09/16/1-in-custody-after-bomb-threats-reported-at-2-broward-schools-authorities-say/",
+    "published": "Wed, 16 Sep 2026 13:45:14 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "El Palacio de los Jugos closes for clean up after crash injuring 3 in Miami-Dade’s Kendall West area",
     "url": "https://www.local10.com/news/local/2026/09/16/el-palacio-de-los-jugos-closes-for-clean-up-after-crash-injuring-3-in-miami-dades-kendall-west/",
     "published": "Wed, 16 Sep 2026 16:26:08 +0000",
@@ -461,14 +523,6 @@
     "published": "Wed, 16 Sep 2026 18:41:50 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/JGCV2GOA5BDD5A5BRLQODG7ANY.jpg?auth=1f5c68d2216789cae4a3d7c9462326e947bd63e9f8b05d95577c532f5529359e&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "1 arrested after bomb threats reported at 2 Broward schools, authorities say",
-    "url": "https://www.local10.com/news/local/2026/09/16/1-in-custody-after-bomb-threats-reported-at-2-broward-schools-authorities-say/",
-    "published": "Wed, 16 Sep 2026 13:45:14 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/432IRG5Q6ZCMDFVDNRJLWMVKQY.png?auth=7f0c1e570dc4b8957c2315b14a86430d87d54fb8be041dd98a6fe7b1bc95a6cf&smart=true&width=1200&height=900",
     "media_type": "image"
    },
    {
@@ -712,7 +766,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-16T15:31:09-04:00",
+  "fetched_at": "2026-09-16T15:45:39-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -720,7 +774,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (254) + USGS (13)",
-  "fetched_at": "2026-09-16T15:31:12-04:00",
+  "fetched_at": "2026-09-16T15:45:42-04:00",
   "events": [
    {
     "lat": 47.2320486,
@@ -2188,7 +2242,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-16T15:31:12-04:00",
+  "fetched_at": "2026-09-16T15:45:42-04:00",
   "countries": [
    {
     "iso": "CAN",
