@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-16T00:15:38-04:00",
- "generated_at_utc": "2026-09-16T04:15:38+00:00",
+ "generated_at": "2026-09-16T00:30:39-04:00",
+ "generated_at_utc": "2026-09-16T04:30:39+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 16",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-16T00:15:39-04:00",
+  "fetched_at": "2026-09-16T00:30:39-04:00",
   "curve": [
    {
     "time": "2026-09-16T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 81.2,
-   "feels": 89.8,
-   "humidity": 85,
-   "wind_mph": 7.0,
+   "temp": 80.7,
+   "feels": 89.1,
+   "humidity": 86,
+   "wind_mph": 7.5,
    "wind_dir": 37,
-   "observed_at": "2026-09-16T00:15"
+   "observed_at": "2026-09-16T00:30"
   },
   "today": {
    "high": 86.4,
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-16T00:15:39-04:00",
+  "fetched_at": "2026-09-16T00:30:40-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-16T00:15:40-04:00",
-  "aqi": 24,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-15 23:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-16",
-    "aqi": 33,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-16",
-    "aqi": 55,
-    "category": "Moderate",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-17",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-17",
-    "aqi": 28,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-16T00:31:05-04:00",
+  "aqi": 70,
+  "category": "Moderate",
+  "pm25": 14.2,
+  "pm10": 21.2,
+  "observed": "2026-09-16T00:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-16T00:15:41-04:00",
+  "fetched_at": "2026-09-16T00:31:05-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -222,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-16T00:15:41-04:00",
+  "fetched_at": "2026-09-16T00:31:07-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -270,7 +246,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-16T00:15:42-04:00",
+  "fetched_at": "2026-09-16T00:31:07-04:00",
   "issued": "800 PM EDT Tue Sep 15 2026",
   "areas": [
    {
@@ -284,7 +260,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-16T00:15:42-04:00",
+  "fetched_at": "2026-09-16T00:31:07-04:00",
   "florida": "$4.1220",
   "national": "$4.3289",
   "diesel": "$6.3163",
@@ -293,7 +269,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-16T00:15:44-04:00",
+  "fetched_at": "2026-09-16T00:31:08-04:00",
   "streams": {
    "local": [
     {
@@ -532,6 +508,14 @@
   ],
   "colombia": [
    {
+    "title": "130 kilos de explosivos del frente 36 de las disidencias fueron destruidos por el Ejército Nacional en Antioquia: había bombas para drones",
+    "url": "https://www.eltiempo.com/colombia/medellin/130-kilos-de-explosivos-del-frente-36-de-las-disidencias-fueron-destruidos-por-el-ejercito-nacional-en-antioquia-habia-bombas-para-drones-3586394",
+    "published": "2026-09-15T23:20:11-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/15/6aaa11ea6ab9f.r_d.647-938-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Más que una plazoleta, un salvavidas: la apuesta de Zona 65 por rescatar emprendedores tras el terremoto en Cali",
     "url": "https://www.eltiempo.com/colombia/cali/mas-que-una-plazoleta-un-salvavidas-la-apuesta-de-zona-65-por-rescatar-emprendedores-tras-el-terremoto-en-cali-3586388",
     "published": "2026-09-15T22:35:34-05:00",
@@ -585,14 +569,6 @@
     "published": "2026-09-15T18:10:42-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/15/6aa9d3e3b7867.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Un maestro, dos ayudantes y una familia: la fórmula de autoconstrucción con la que Buenaventura le apuesta a levantarse tras el terremoto",
-    "url": "https://www.eltiempo.com/colombia/cali/un-maestro-dos-ayudantes-y-una-familia-la-formula-de-autoconstruccion-con-la-que-buenaventura-le-apuesta-a-levantarse-tras-el-terremoto-3586330",
-    "published": "2026-09-15T17:56:41-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/15/6aa9cad9aaaca.jpeg",
     "media_type": "image"
    }
   ],
@@ -666,7 +642,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-16T00:15:44-04:00",
+  "fetched_at": "2026-09-16T00:31:08-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -674,7 +650,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (244) + USGS (11)",
-  "fetched_at": "2026-09-16T00:15:47-04:00",
+  "fetched_at": "2026-09-16T00:31:11-04:00",
   "events": [
    {
     "lat": 47.2320486,
@@ -2140,7 +2116,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-16T00:15:47-04:00",
+  "fetched_at": "2026-09-16T00:31:11-04:00",
   "countries": [
    {
     "iso": "COL",
