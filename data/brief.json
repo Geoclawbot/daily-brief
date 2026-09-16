@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-16T17:15:39-04:00",
- "generated_at_utc": "2026-09-16T21:15:39+00:00",
+ "generated_at": "2026-09-16T17:30:34-04:00",
+ "generated_at_utc": "2026-09-16T21:30:34+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 16",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-16T17:15:39-04:00",
+  "fetched_at": "2026-09-16T17:30:34-04:00",
   "curve": [
    {
     "time": "2026-09-16T05:00",
@@ -100,7 +100,7 @@
    {
     "time": "2026-09-16T16:00",
     "hour": 16,
-    "temp": 88.2,
+    "temp": 87.7,
     "feels": 94.4,
     "humidity": 68,
     "pop": 14
@@ -108,55 +108,55 @@
    {
     "time": "2026-09-16T17:00",
     "hour": 17,
-    "temp": 89.1,
-    "feels": 94.8,
+    "temp": 87.5,
+    "feels": 91.9,
     "humidity": 62,
     "pop": 9
    },
    {
     "time": "2026-09-16T18:00",
     "hour": 18,
-    "temp": 86.8,
-    "feels": 92.5,
+    "temp": 87.0,
+    "feels": 92.6,
     "humidity": 67,
     "pop": 15
    },
    {
     "time": "2026-09-16T19:00",
     "hour": 19,
-    "temp": 83.8,
-    "feels": 90.6,
+    "temp": 79.8,
+    "feels": 86.3,
     "humidity": 73,
     "pop": 13
    },
    {
     "time": "2026-09-16T20:00",
     "hour": 20,
-    "temp": 82.2,
-    "feels": 89.5,
+    "temp": 81.7,
+    "feels": 90.0,
     "humidity": 79,
     "pop": 13
    },
    {
     "time": "2026-09-16T21:00",
     "hour": 21,
-    "temp": 81.6,
-    "feels": 89.8,
+    "temp": 77.6,
+    "feels": 77.7,
     "humidity": 79,
     "pop": 8
    }
   ],
   "current": {
-   "temp": 88.6,
-   "feels": 93.6,
-   "humidity": 62,
-   "wind_mph": 12.0,
-   "wind_dir": 53,
-   "observed_at": "2026-09-16T17:15"
+   "temp": 87.8,
+   "feels": 92.9,
+   "humidity": 64,
+   "wind_mph": 12.4,
+   "wind_dir": 49,
+   "observed_at": "2026-09-16T17:30"
   },
   "today": {
    "high": 91.2,
-   "low": 81.1,
+   "low": 77.3,
    "feels_max": 101.4,
    "pop_max": 29
   },
@@ -166,137 +166,89 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-16T17:15:40-04:00",
+  "fetched_at": "2026-09-16T17:30:35-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-16T17:15:40-04:00",
-  "aqi": 20,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-16 16:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-16",
-    "aqi": 26,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-16",
-    "aqi": 59,
-    "category": "Moderate",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-17",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-17",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-18",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-18",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-16T17:30:44-04:00",
+  "aqi": 53,
+  "category": "Moderate",
+  "pm25": 5.9,
+  "pm10": 7.7,
+  "observed": "2026-09-16T17:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-16T17:15:43-04:00",
+  "fetched_at": "2026-09-16T17:30:46-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 22.4,
+  "miles": 26.6,
   "minutes": 70,
-  "delay_minutes": 2,
+  "delay_minutes": 3,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 26.6,
-    "minutes": 62,
+    "miles": 22.6,
+    "minutes": 61,
     "toll": true,
-    "saves": 8
+    "saves": 9
+   },
+   {
+    "miles": 26.4,
+    "minutes": 61,
+    "toll": true,
+    "saves": 9
    },
    {
     "miles": 23.1,
-    "minutes": 65,
+    "minutes": 68,
     "toll": true,
-    "saves": 5
+    "saves": 2
    },
    {
-    "miles": 23.9,
+    "miles": 27.6,
     "minutes": 72,
     "toll": true,
     "saves": -2
-   },
-   {
-    "miles": 23.1,
-    "minutes": 76,
-    "toll": false,
-    "saves": -6
    }
   ],
   "alternates_worth_taking": [],
   "free_alternates": [
    {
-    "miles": 22.4,
+    "miles": 26.6,
     "minutes": 70,
-    "delay_minutes": 2,
+    "delay_minutes": 3,
     "saves": 0
    },
    {
-    "miles": 23.4,
-    "minutes": 74,
+    "miles": 21.7,
+    "minutes": 71,
+    "delay_minutes": 4
+   },
+   {
+    "miles": 23.7,
+    "minutes": 75,
     "delay_minutes": 1
    },
    {
-    "miles": 22.5,
-    "minutes": 76,
-    "delay_minutes": 3
-   },
-   {
-    "miles": 22.9,
-    "minutes": 80,
-    "delay_minutes": 2
+    "miles": 23.1,
+    "minutes": 79,
+    "delay_minutes": 5
    }
   ],
   "best_free": {
-   "miles": 22.4,
+   "miles": 26.6,
    "minutes": 70,
-   "delay_minutes": 2,
+   "delay_minutes": 3,
    "saves": 0
   },
   "incidents": [],
@@ -308,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-16T17:15:44-04:00",
+  "fetched_at": "2026-09-16T17:30:48-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -350,15 +302,14 @@
    "Northeast | Alachua | Gainesville: There is lane blocking construction on FL 121 from SW 20th Ave to SW 35th Pl. Use caution in the area. | Sep 16 2026, 6:09 AM",
    "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Sep 16 2026, 7:29 AM",
    "Northeast | Duval | Jacksonville: There is lane blocking construction on SR-134/103rd St between Rockola Rd and Connie Jean Rd. Use caution in the area. | Sep 16 2026, 2:35 PM",
-   "Northeast | St. Johns | Vilano Beach: There is lane blocking construction on A1A between San Pelayo Ct and 14th St. use caution in the area. | Sep 16 2026, 10:46 AM",
-   "Panhandle | Jackson | US-231: A major incident has closed all Southbound lanes near Obert Rd in Jackson County. Motorists are advised to seek alternate route and use caution in the area. | Sep 16 2026, 5:08 PM"
+   "Northeast | St. Johns | Vilano Beach: There is lane blocking construction on A1A between San Pelayo Ct and 14th St. use caution in the area. | Sep 16 2026, 10:46 AM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-16T17:15:44-04:00",
+  "fetched_at": "2026-09-16T17:30:48-04:00",
   "issued": "200 PM EDT Wed Sep 16 2026",
   "areas": [
    {
@@ -372,7 +323,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-16T17:15:45-04:00",
+  "fetched_at": "2026-09-16T17:30:48-04:00",
   "florida": "$4.1987",
   "national": "$4.3672",
   "diesel": "$6.3272",
@@ -381,7 +332,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-16T17:15:46-04:00",
+  "fetched_at": "2026-09-16T17:30:49-04:00",
   "streams": {
    "local": [
     {
@@ -566,7 +517,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/man-arrested-after-4-year-old-says-he-touched-her-at-hialeah-lowes-police-say/",
     "published": "Wed, 16 Sep 2026 15:48:46 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/d25a6218-9e13-4f4e-b7c0-9c991d5f7009/ffe2b572-a977-41e4-9255-6404a1050a0a/main.mp4?fastly_token=NmFhYjM2NDBfNmZlOWU1NzkwNmM0N2IyZmQ2NWFkYjJlN2I3Y2Y4NzQ0NDQzMTAwYjJjN2ZhNTZiN2Q3ZGIwOWRiYjdlZjk0OF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kMjVhNjIxOC05ZTEzLTRmNGUtYjdjMC05Yzk5MWQ1ZjcwMDkvZmZlMmI1NzItYTk3Ny00MWU0LTkyNTUtNjQwNGExMDUwYTBhL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b65e42b2-ac1a-4059-bdfe-6a8349f81761/140a16e6-7347-4f21-8b65-bbdcffd57834/main.mp4?fastly_token=NmFhYjYwNWRfMjllZTM3NTI5YzVkYWE3NjRkMmMxOGY2MDI0ZTkyMGY5OTM3YmZiMThlNWIzMDc4OTRkM2UzNWI4NDNjMmZmOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iNjVlNDJiMi1hYzFhLTQwNTktYmRmZS02YTgzNDlmODE3NjEvMTQwYTE2ZTYtNzM0Ny00ZjIxLThiNjUtYmJkY2ZmZDU3ODM0L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -583,6 +534,14 @@
     "published": "Wed, 16 Sep 2026 03:22:31 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/7f13fa7d-9f5a-41ac-bab5-ebfd025f4014/6e7fe1a3-8834-485d-81f0-dbf910b484f5/main.mp4?fastly_token=NmFhYTYzOWFfMGE5NzU4ZDhhZDI3NGZiZmVlN2Y2MDNiZGVkYmYzMjI5ZjA4MTJmZWI3ODc4NzFmN2I5MjVkODA5YWM1OTViZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83ZjEzZmE3ZC05ZjVhLTQxYWMtYmFiNS1lYmZkMDI1ZjQwMTQvNmU3ZmUxYTMtODgzNC00ODVkLTgxZjAtZGJmOTEwYjQ4NGY1L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Man honored by Miami Police after rescuing woman from violent attack",
+    "url": "https://wsvn.com/news/local/miami-dade/man-honored-by-miami-police-after-rescuing-woman-from-violent-attack/",
+    "published": "Wed, 16 Sep 2026 21:14:15 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/3c349578-9f1e-4bff-a0cc-5f717c9b4e04/682e86f1-3ac2-4693-b1bf-2f4f45298514/main.mp4?fastly_token=NmFhYjVmNzdfYWI5NjYzZWU5OWVjNmJkZDhmOWE4N2YzYmVhOGQ3MTNlNTkxMTJkY2Y2N2VmYWU2M2UzZGYwMjBlNjA4NjBkN18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zYzM0OTU3OC05ZjFlLTRiZmYtYTBjYy01ZjcxN2M5YjRlMDQvNjgyZTg2ZjEtM2FjMi00NjkzLWIxYmYtMmY0ZjQ1Mjk4NTE0L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -608,17 +567,33 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/526a5a36-6c95-4759-9f33-e906f77dab7f/477f549e-0c39-407e-ab36-12ae78a234e9/main.mp4?fastly_token=NmFhYjU2MGJfYmJhMjUyYTdjNWRhYmM1MGRkY2Y4ODVmYjlmYWMzOWU2NTg3MTRjMjZjNWY5YjAzZmE2YjQ4ZjlhOWEyMDE1N18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81MjZhNWEzNi02Yzk1LTQ3NTktOWYzMy1lOTA2Zjc3ZGFiN2YvNDc3ZjU0OWUtMGMzOS00MDdlLWFiMzYtMTJhZTc4YTIzNGU5L21haW4ubXA0",
     "media_type": "video"
-   },
-   {
-    "title": "Mechanic arrested after $40K boat left for repairs goes missing, police say",
-    "url": "https://wsvn.com/news/local/miami-dade/mechanic-arrested-after-40k-boat-left-for-repairs-goes-missing-police-say/",
-    "published": "Wed, 16 Sep 2026 16:18:06 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Carlos-Armas.png",
-    "media_type": "image"
    }
   ],
   "colombia": [
+   {
+    "title": "Estudiantes de un colegio de Barrancabermeja se salvaron de milagro luego de que se les cayera un ventilador encima en un salón de clase",
+    "url": "https://www.eltiempo.com/colombia/santander/estudiantes-de-un-colegio-de-barrancabermeja-se-salvaron-de-milagro-luego-de-que-se-les-cayera-un-ventilador-encima-en-un-salon-de-clase-3586603",
+    "published": "2026-09-16T16:15:47-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/16/6aab05754d88e.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "La Alcaldía de Cartagena presentó la programación oficial de las Fiestas de Independencia del 11 de Noviembre: Juan Luis Guerra, el gran invitado",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/la-alcaldia-de-cartagena-presento-la-programacion-oficial-de-las-fiestas-de-independencia-del-11-de-noviembre-juan-luis-guerra-el-gran-invitado-3586591",
+    "published": "2026-09-16T16:13:29-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/16/6aab00962e1ad.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Inician la recuperación del alumbrado público en la vía a Galapa, uno de los corredores de carga más importantes del Caribe",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/inician-la-recuperacion-del-alumbrado-publico-en-la-via-galapa-uno-de-los-corredores-de-carga-mas-importantes-del-caribe-3586583",
+    "published": "2026-09-16T16:10:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/16/6aaafa48f2ee4.r_d.638-440-0.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Catarsis, cuadros y ronroneos: esta es la innovadora exposición en Barranquilla donde puedes obtener una obra de arte o un gato adoptado",
     "url": "https://www.eltiempo.com/colombia/barranquilla/catarsis-cuadros-y-ronroneos-esta-es-la-innovadora-exposicion-en-barranquilla-donde-puedes-obtener-una-obra-de-arte-o-un-gato-adoptado-3586601",
@@ -630,15 +605,15 @@
    {
     "title": "La iglesia principal de Montenegro a la que iban centenares de turistas y que se construyó hace 100 años tendrá que ser demolida tras el terremoto",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/la-iglesia-principal-de-montenegro-a-la-que-iban-centenares-de-turistas-y-que-se-construyo-hace-100-anos-tendra-que-ser-demolida-tras-el-terremoto-3586587",
-    "published": "2026-09-16T16:03:45-05:00",
+    "published": "2026-09-16T16:18:13-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/16/6aaafbf91d5d6.jpeg",
     "media_type": "image"
    },
    {
-    "title": "Temblor hoy en Colombia | Reportan seguidilla de sismos en Chocó durante la tarde de este miércoles 16 de septiembre: profundidad y detalles",
+    "title": "Temblor hoy en Colombia | Reportan cuarto sismo en Chocó durante la tarde de este miércoles 16 de septiembre: profundidad",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-sismo-en-choco-de-magnitud-mayor-a-4-durante-la-tarde-de-este-miercoles-16-de-septiembre-detalles-3586589",
-    "published": "2026-09-16T16:05:37-05:00",
+    "published": "2026-09-16T16:18:54-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/06/6a9cf711c5418.r_d.262-104-0.jpeg",
     "media_type": "image"
@@ -657,30 +632,6 @@
     "published": "2026-09-16T15:01:04-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2025/10/07/68e59b331446d.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Dos jóvenes murieron en un choque de motos en Barrancabermeja, Santander: el conductor del otro vehículo huyó sin dejar rastro",
-    "url": "https://www.eltiempo.com/colombia/santander/dos-jovenes-murieron-en-un-choque-de-motos-en-barrancabermeja-santander-el-conductor-del-otro-vehiculo-huyo-sin-dejar-rastro-3586548",
-    "published": "2026-09-16T15:50:27-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/16/6aaaeab54d2ba.png",
-    "media_type": "image"
-   },
-   {
-    "title": "'Hay veces que tenemos diez a la vez': la agotadora batalla de los socorristas que ya combatieron 287 incendios forestales en Nariño",
-    "url": "https://www.eltiempo.com/colombia/cali/hay-veces-que-tenemos-diez-a-la-vez-la-agotadora-batalla-de-los-socorristas-que-ya-combatieron-287-incendios-forestales-en-narino-3586555",
-    "published": "2026-09-16T14:09:52-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/16/6aaae66bc0430.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "El contrato detrás del bus escolar de Morroa en el que murieron dos personas: $656 millones y preguntas sobre el vehículo que prestaba el servicio",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/el-contrato-detras-del-bus-escolar-de-morroa-en-el-que-murieron-dos-personas-656-millones-y-preguntas-sobre-el-vehiculo-que-prestaba-el-servicio-3586554",
-    "published": "2026-09-16T13:55:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/16/6aaae5fa69bcb.png",
     "media_type": "image"
    }
   ],
@@ -754,15 +705,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-16T17:15:47-04:00",
+  "fetched_at": "2026-09-16T17:30:49-04:00",
   "items": [],
-  "scanned": 3,
+  "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (254) + USGS (16)",
-  "fetched_at": "2026-09-16T17:15:51-04:00",
+  "source": "GDACS (254) + USGS (17)",
+  "fetched_at": "2026-09-16T17:30:52-04:00",
   "events": [
    {
     "lat": 47.2320486,
@@ -990,6 +941,19 @@
     "mag": 4.7,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thr6",
     "when": 1789516019464,
+    "source": "USGS"
+   },
+   {
+    "lat": -5.5399,
+    "lon": 146.0172,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.6 — 43 km SE of Madang, Papua New Guinea",
+    "place": "43 km SE of Madang, Papua New Guinea",
+    "severity": "M4.6",
+    "mag": 4.6,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thx7",
+    "when": 1789587425143,
     "source": "USGS"
    },
    {
@@ -2207,25 +2171,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031892",
     "when": "Fri, 11 Sep 2026 03:01:07 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -16.572919118148228,
-    "lon": 20.61228919681726,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 7070 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031901",
-    "when": "Sat, 12 Sep 2026 03:02:11 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 270,
+  "event_count": 271,
   "counts": {
    "red": 0,
    "orange": 6,
-   "green": 264
+   "green": 265
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2233,7 +2185,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-16T17:15:51-04:00",
+  "fetched_at": "2026-09-16T17:30:52-04:00",
   "countries": [
    {
     "iso": "CAN",
@@ -2260,9 +2212,9 @@
     "name": "Colombia",
     "stories": [
      {
-      "title": "Temblor hoy en Colombia | Reportan seguidilla de sismos en Chocó durante la tarde de este miércoles 16 de septiembre: profundidad y detalles",
+      "title": "Temblor hoy en Colombia | Reportan cuarto sismo en Chocó durante la tarde de este miércoles 16 de septiembre: profundidad",
       "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-sismo-en-choco-de-magnitud-mayor-a-4-durante-la-tarde-de-este-miercoles-16-de-septiembre-detalles-3586589",
-      "published": "2026-09-16T16:05:37-05:00",
+      "published": "2026-09-16T16:18:54-05:00",
       "section": "colombia"
      },
      {
@@ -2273,7 +2225,7 @@
      }
     ],
     "count": 2,
-    "issue": "Temblor hoy en Colombia | Reportan seguidilla de sismos en Chocó durante la tarde de este miércoles 16 de septiembre: profundidad y detalles"
+    "issue": "Temblor hoy en Colombia | Reportan cuarto sismo en Chocó durante la tarde de este miércoles 16 de septiembre: profundidad"
    },
    {
     "iso": "RUS",
