@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-16T18:15:42-04:00",
- "generated_at_utc": "2026-09-16T22:15:42+00:00",
+ "generated_at": "2026-09-16T18:30:31-04:00",
+ "generated_at_utc": "2026-09-16T22:30:31+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 16",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-16T18:15:43-04:00",
+  "fetched_at": "2026-09-16T18:30:31-04:00",
   "curve": [
    {
     "time": "2026-09-16T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 86.8,
-   "feels": 92.5,
-   "humidity": 69,
-   "wind_mph": 12.5,
-   "wind_dir": 44,
-   "observed_at": "2026-09-16T18:15"
+   "temp": 82.5,
+   "feels": 85.9,
+   "humidity": 74,
+   "wind_mph": 15.4,
+   "wind_dir": 103,
+   "observed_at": "2026-09-16T18:30"
   },
   "today": {
    "high": 91.2,
@@ -166,87 +166,347 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-16T18:15:43-04:00",
+  "fetched_at": "2026-09-16T18:30:32-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-16T18:15:44-04:00",
-  "aqi": 22,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-16 17:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-16",
-    "aqi": 26,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-16",
-    "aqi": 59,
-    "category": "Moderate",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-17",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-17",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-18",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-18",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-16T18:30:34-04:00",
+  "aqi": 54,
+  "category": "Moderate",
+  "pm25": 8.8,
+  "pm10": 12.8,
+  "observed": "2026-09-16T18:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-16T18:15:45-04:00",
+  "fetched_at": "2026-09-16T18:30:34-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
-  "incidents": [],
-  "incident_count": 0,
-  "named_count": 0,
-  "major_count": 0,
+  "incidents": [
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 1513,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T19:04:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 1390,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T19:10:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 1352,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-16T19:16:41Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Don Shula Expy S",
+     "FL-874 S",
+     "S Dade Expy S"
+    ],
+    "delay_s": 1034,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T20:13:05Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 973,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T19:27:34Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-948"
+    ],
+    "delay_s": 955,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T19:32:34Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-01-12T19:06:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-15T14:06:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:06:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-820"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-14T12:20:51Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-838"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-07-16T20:45:02Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-16T12:55:50Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-16T13:40:46Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-02-23T10:56:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-08-02T04:33:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 874,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T18:31:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 844,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T22:00:31Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-860"
+    ],
+    "delay_s": 829,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T22:06:06Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-858"
+    ],
+    "delay_s": 821,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T21:22:24Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-860"
+    ],
+    "delay_s": 791,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T18:49:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 619,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-16T18:13:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 569,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T17:37:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 N"
+    ],
+    "delay_s": 541,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-16T16:28:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 491,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T20:05:14Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S"
+    ],
+    "delay_s": 487,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-16T19:02:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Snapper Creek Expy W",
+     "FL-878 W"
+    ],
+    "delay_s": 487,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T19:13:02Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 476,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T22:10:21Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-825"
+    ],
+    "delay_s": 468,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T20:22:55Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-969"
+    ],
+    "delay_s": 380,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-09-16T19:33:03Z"
+   }
+  ],
+  "incident_count": 566,
+  "named_count": 192,
+  "major_count": 22,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-16T18:15:46-04:00",
+  "fetched_at": "2026-09-16T18:30:35-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -285,14 +545,14 @@
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 16 2026, 6:14 PM",
    "Northeast | Alachua | Gainesville: there is lane blocking construction on SR-26 from SE 14th Street to SE 24th Street. There is also lane blocking construction on SR-24 from SE 2nd Street to SR-26 lasting until October 10th. Use caution in these areas and follow posted detours. | Sep 16 2026, 6:13 PM",
-   "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Sep 16 2026, 7:29 AM"
+   "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Sep 16 2026, 6:19 PM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-16T18:15:46-04:00",
+  "fetched_at": "2026-09-16T18:30:35-04:00",
   "issued": "200 PM EDT Wed Sep 16 2026",
   "areas": [
    {
@@ -306,7 +566,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-16T18:15:46-04:00",
+  "fetched_at": "2026-09-16T18:30:36-04:00",
   "florida": "$4.1987",
   "national": "$4.3672",
   "diesel": "$6.3272",
@@ -315,7 +575,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-16T18:15:48-04:00",
+  "fetched_at": "2026-09-16T18:30:37-04:00",
   "streams": {
    "local": [
     {
@@ -432,6 +692,14 @@
     "media_type": null
    },
    {
+    "title": "Retired NYPD officer collapses during 9/11 hockey tournament, saved by fellow first responders",
+    "url": "https://www.local10.com/news/local/2026/09/16/retired-nypd-officer-collapses-during-911-hockey-tournament-saved-by-fellow-first-responders/",
+    "published": "Wed, 16 Sep 2026 22:15:56 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Federal Reserve interest rate raise could impact South Florida housing market",
     "url": "https://www.local10.com/news/local/2026/09/16/federal-reserve-interest-rate-raise-could-impact-south-florida-housing-market/",
     "published": "Wed, 16 Sep 2026 21:46:13 +0000",
@@ -480,14 +748,6 @@
     "media_type": "image"
    },
    {
-    "title": "2 arrested weeks after Liberty City shooting tied to street fight leaves bullet in garage door: Cops",
-    "url": "https://www.local10.com/news/local/2026/09/16/2-arrested-weeks-after-liberty-city-shooting-tied-to-street-fight-leaves-bullet-in-garage-door-cops/",
-    "published": "Wed, 16 Sep 2026 16:45:38 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/NFCS2EQAYRHSXJHVLZFGOJHT4Q.png?auth=3bf13ce0c151dc6f9f2191766029086cb3a7c0e3fbe0e5ce1809b9b0677eb7c5&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
     "title": "SUV crashes into El Palacio de los Jugos in SW Miami-Dade, injuring driver and 2 employees",
     "url": "https://wsvn.com/news/local/miami-dade/suv-crashes-into-el-palacio-de-los-jugos-in-sw-miami-dade-injuring-driver-and-2-employees/",
     "published": "Tue, 15 Sep 2026 21:11:39 +0000",
@@ -520,6 +780,14 @@
     "media_type": "video"
    },
    {
+    "title": "Former school psychologist sentenced to 30 years for child pornography charges",
+    "url": "https://wsvn.com/news/local/miami-dade/former-school-psychologist-sentenced-to-30-years-for-child-pornography-charges/",
+    "published": "Wed, 16 Sep 2026 22:16:42 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/306cb8f1-cff5-4db0-9d97-bcfcbe32f33f/a060e435-e586-486e-a7f9-f62916eb6af3/main.mp4?fastly_token=NmFhYjZkYTZfNDQyNjRlOTQzMDgzYjUzNWI2YjlmNzg2NGU5MDk1NTY2MTU2NjViMTAxMmI0OGY3NDNmNjc1NzBjMGRmM2EzM18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zMDZjYjhmMS1jZmY1LTRkYjAtOWQ5Ny1iY2ZjYmUzMmYzM2YvYTA2MGU0MzUtZTU4Ni00ODZlLWE3ZjktZjYyOTE2ZWI2YWYzL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "Man honored by Miami Police after rescuing woman from violent attack",
     "url": "https://wsvn.com/news/local/miami-dade/man-honored-by-miami-police-after-rescuing-woman-from-violent-attack/",
     "published": "Wed, 16 Sep 2026 21:14:15 +0000",
@@ -541,14 +809,6 @@
     "published": "Wed, 16 Sep 2026 17:12:34 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/77c22495-6518-44ec-9c17-18bf4911fab3/c58bcf19-6fd5-4934-930d-3302411bfa3e/main.mp4?fastly_token=NmFhYjVlM2ZfYjFmOTY3ZWViNzQ5MDgxYzM2YjlmMTI3NDY5ZTYxYmMzOTc4MmY0Y2FhNmY3ZDAxNTI5MWNmN2VjMjc1MDliOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83N2MyMjQ5NS02NTE4LTQ0ZWMtOWMxNy0xOGJmNDkxMWZhYjMvYzU4YmNmMTktNmZkNS00OTM0LTkzMGQtMzMwMjQxMWJmYTNlL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Search underway for 25-year-old man reported missing from Miami’s Model City neighborhood",
-    "url": "https://wsvn.com/news/local/miami-dade/search-underway-for-25-year-old-man-reported-missing-from-miamis-model-city-neighborhood/",
-    "published": "Wed, 16 Sep 2026 16:27:32 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/526a5a36-6c95-4759-9f33-e906f77dab7f/477f549e-0c39-407e-ab36-12ae78a234e9/main.mp4?fastly_token=NmFhYjU2MGJfYmJhMjUyYTdjNWRhYmM1MGRkY2Y4ODVmYjlmYWMzOWU2NTg3MTRjMjZjNWY5YjAzZmE2YjQ4ZjlhOWEyMDE1N18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81MjZhNWEzNi02Yzk1LTQ3NTktOWYzMy1lOTA2Zjc3ZGFiN2YvNDc3ZjU0OWUtMGMzOS00MDdlLWFiMzYtMTJhZTc4YTIzNGU5L21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -688,7 +948,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-16T18:15:48-04:00",
+  "fetched_at": "2026-09-16T18:30:38-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -696,7 +956,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (233) + USGS (18)",
-  "fetched_at": "2026-09-16T18:15:52-04:00",
+  "fetched_at": "2026-09-16T18:30:41-04:00",
   "events": [
    {
     "lat": 47.2320486,
@@ -2169,7 +2429,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-16T18:15:52-04:00",
+  "fetched_at": "2026-09-16T18:30:41-04:00",
   "countries": [
    {
     "iso": "CAN",
