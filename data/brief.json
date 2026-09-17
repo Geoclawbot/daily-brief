@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-16T22:30:42-04:00",
- "generated_at_utc": "2026-09-17T02:30:42+00:00",
+ "generated_at": "2026-09-16T22:45:34-04:00",
+ "generated_at_utc": "2026-09-17T02:45:34+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 16",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-16T22:30:43-04:00",
+  "fetched_at": "2026-09-16T22:45:34-04:00",
   "curve": [
    {
     "time": "2026-09-16T05:00",
@@ -141,18 +141,18 @@
     "time": "2026-09-16T21:00",
     "hour": 21,
     "temp": 85.6,
-    "feels": 96.7,
-    "humidity": 80,
+    "feels": 94.1,
+    "humidity": 70,
     "pop": 13
    }
   ],
   "current": {
-   "temp": 80.7,
-   "feels": 89.2,
-   "humidity": 90,
-   "wind_mph": 9.4,
-   "wind_dir": 12,
-   "observed_at": "2026-09-16T22:30"
+   "temp": 80.4,
+   "feels": 86.3,
+   "humidity": 78,
+   "wind_mph": 8.6,
+   "wind_dir": 17,
+   "observed_at": "2026-09-16T22:45"
   },
   "today": {
    "high": 91.2,
@@ -166,26 +166,62 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-16T22:30:43-04:00",
+  "fetched_at": "2026-09-16T22:45:35-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-16T22:31:09-04:00",
-  "aqi": 52,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-16T22:45:35-04:00",
+  "aqi": 54,
   "category": "Moderate",
-  "pm25": 7.0,
-  "pm10": 8.8,
-  "observed": "2026-09-16T22:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-16 21:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-17",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-17",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-18",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-18",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-19",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-19",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-16T22:31:09-04:00",
+  "fetched_at": "2026-09-16T22:45:35-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +234,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-16T22:31:10-04:00",
+  "fetched_at": "2026-09-16T22:45:36-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -244,7 +280,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-16T22:31:11-04:00",
+  "fetched_at": "2026-09-16T22:45:37-04:00",
   "issued": "800 PM EDT Wed Sep 16 2026",
   "areas": [
    {
@@ -258,7 +294,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-16T22:31:11-04:00",
+  "fetched_at": "2026-09-16T22:45:37-04:00",
   "florida": "$4.1987",
   "national": "$4.3672",
   "diesel": "$6.3272",
@@ -267,7 +303,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-16T22:31:11-04:00",
+  "fetched_at": "2026-09-16T22:45:38-04:00",
   "streams": {
    "local": [
     {
@@ -376,6 +412,14 @@
   ],
   "local": [
    {
+    "title": "Miami voters to decide fate of redevelopment proposal for waterfront land in Virginia Key",
+    "url": "https://www.local10.com/news/local/2026/09/16/miami-voters-to-decide-fate-of-redevelopment-proposal-for-waterfront-land-in-virginia-key/",
+    "published": "Thu, 17 Sep 2026 02:38:05 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Senior arrested in hit-and-run that left motorcyclist hurt in Hialeah, cops say",
     "url": "https://www.local10.com/news/local/2026/09/16/miami-gardens-senior-arrested-in-hit-and-run-that-left-motorcyclist-hurt-cops-say/",
     "published": "Wed, 16 Sep 2026 18:41:50 +0000",
@@ -432,14 +476,6 @@
     "media_type": null
    },
    {
-    "title": "Retired NYPD officer collapses during 9/11 hockey tournament, saved by fellow first responders",
-    "url": "https://www.local10.com/news/local/2026/09/16/retired-nypd-officer-collapses-during-911-hockey-tournament-saved-by-fellow-first-responders/",
-    "published": "Wed, 16 Sep 2026 22:15:56 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "Man accused of breaking into cars, stealing AirPods and disabled parking permits in Plantation",
     "url": "https://wsvn.com/news/local/broward/man-accused-of-breaking-into-cars-stealing-airpods-and-disabled-parking-permits-in-plantation/",
     "published": "Wed, 16 Sep 2026 22:28:03 +0000",
@@ -472,6 +508,14 @@
     "media_type": "image"
    },
    {
+    "title": "Bodycam footage shows Miami Police subduing suspect involved in beating, stabbing of woman in downtown Miami",
+    "url": "https://wsvn.com/news/local/miami-dade/bodycam-footage-shows-miami-police-subduing-suspect-involved-in-beating-stabbing-of-woman-in-downtown-miami/",
+    "published": "Thu, 17 Sep 2026 02:29:36 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/127a1796-35cf-41ed-8fb0-395ad597ec5a/3985acbd-4498-434e-815a-eb5500b7f1a8/main.mp4?fastly_token=NmFhYmE5NDJfZmY4ZTRjMDQ5NDgxMWUzZjhjNDQ3MjAzODAxNzEyNTI1ZWJkMGI0MjkzMmMxNzA3MGMxNDU4Yzc3ZDdiZmNiZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xMjdhMTc5Ni0zNWNmLTQxZWQtOGZiMC0zOTVhZDU5N2VjNWEvMzk4NWFjYmQtNDQ5OC00MzRlLTgxNWEtZWI1NTAwYjdmMWE4L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "Lawyer of nurse injured at hospital by patient says she has been treated unfairly at work since speaking out; hospital responds",
     "url": "https://wsvn.com/news/local/miami-dade/lawyer-of-nurse-injured-at-hospital-by-patient-says-she-has-been-treated-unfairly-at-work-since-speaking-out-hospital-responds/",
     "published": "Wed, 16 Sep 2026 23:57:31 +0000",
@@ -493,14 +537,6 @@
     "published": "Wed, 16 Sep 2026 22:16:42 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/306cb8f1-cff5-4db0-9d97-bcfcbe32f33f/a060e435-e586-486e-a7f9-f62916eb6af3/main.mp4?fastly_token=NmFhYjdiZTBfYWIxYzhlMzk5NGM0NTQyOTdjMTYzNWRkNDRhZTA1MmYwODliYWFmYThmNTA4ODhjYjMzOTBmMDAyOTNmY2YyNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zMDZjYjhmMS1jZmY1LTRkYjAtOWQ5Ny1iY2ZjYmUzMmYzM2YvYTA2MGU0MzUtZTU4Ni00ODZlLWE3ZjktZjYyOTE2ZWI2YWYzL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Man honored by Miami Police after rescuing woman from violent attack",
-    "url": "https://wsvn.com/news/local/miami-dade/man-honored-by-miami-police-after-rescuing-woman-from-violent-attack/",
-    "published": "Wed, 16 Sep 2026 21:14:15 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b13cc0c0-596d-4952-85d9-05e8e7474c48/e06e4d81-a497-4025-ae7c-2f3da3554b80/main.mp4?fastly_token=NmFhYmExYjRfMmU5ZDcwODlmMDdhOTcxNmYzMWM4ZTNmYjY0YzM1OWQ0MmE5YTNlZmU0YjJhMjc2NTdiOGM0ODQwZWVkNjIzYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iMTNjYzBjMC01OTZkLTQ5NTItODVkOS0wNWU4ZTc0NzRjNDgvZTA2ZTRkODEtYTQ5Ny00MDI1LWFlN2MtMmYzZGEzNTU0YjgwL21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -640,7 +676,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-16T22:31:12-04:00",
+  "fetched_at": "2026-09-16T22:45:39-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -648,7 +684,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (304) + USGS (15)",
-  "fetched_at": "2026-09-16T22:31:15-04:00",
+  "fetched_at": "2026-09-16T22:45:42-04:00",
   "events": [
    {
     "lat": 47.2320486,
@@ -2118,7 +2154,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-16T22:31:15-04:00",
+  "fetched_at": "2026-09-16T22:45:42-04:00",
   "countries": [
    {
     "iso": "CAN",
