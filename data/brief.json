@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-17T09:30:54-04:00",
- "generated_at_utc": "2026-09-17T13:30:54+00:00",
+ "generated_at": "2026-09-17T09:46:10-04:00",
+ "generated_at_utc": "2026-09-17T13:46:10+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, September 17",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-17T09:30:55-04:00",
+  "fetched_at": "2026-09-17T09:46:10-04:00",
   "curve": [
    {
     "time": "2026-09-17T05:00",
@@ -47,7 +47,7 @@
     "temp": 77.7,
     "feels": 86.9,
     "humidity": 91,
-    "pop": 32
+    "pop": 45
    },
    {
     "time": "2026-09-17T10:00",
@@ -55,7 +55,7 @@
     "temp": 78.7,
     "feels": 88.8,
     "humidity": 93,
-    "pop": 32
+    "pop": 35
    },
    {
     "time": "2026-09-17T11:00",
@@ -63,7 +63,7 @@
     "temp": 75.7,
     "feels": 80.9,
     "humidity": 88,
-    "pop": 23
+    "pop": 25
    },
    {
     "time": "2026-09-17T12:00",
@@ -71,7 +71,7 @@
     "temp": 75.6,
     "feels": 82.1,
     "humidity": 90,
-    "pop": 24
+    "pop": 28
    },
    {
     "time": "2026-09-17T13:00",
@@ -95,7 +95,7 @@
     "temp": 79.1,
     "feels": 86.8,
     "humidity": 85,
-    "pop": 22
+    "pop": 17
    },
    {
     "time": "2026-09-17T16:00",
@@ -103,7 +103,7 @@
     "temp": 79.8,
     "feels": 87.3,
     "humidity": 80,
-    "pop": 23
+    "pop": 21
    },
    {
     "time": "2026-09-17T17:00",
@@ -111,7 +111,7 @@
     "temp": 81.2,
     "feels": 88.0,
     "humidity": 76,
-    "pop": 20
+    "pop": 19
    },
    {
     "time": "2026-09-17T18:00",
@@ -119,7 +119,7 @@
     "temp": 81.8,
     "feels": 90.9,
     "humidity": 79,
-    "pop": 12
+    "pop": 11
    },
    {
     "time": "2026-09-17T19:00",
@@ -135,7 +135,7 @@
     "temp": 79.2,
     "feels": 88.9,
     "humidity": 88,
-    "pop": 10
+    "pop": 9
    },
    {
     "time": "2026-09-17T21:00",
@@ -143,22 +143,22 @@
     "temp": 78.7,
     "feels": 88.9,
     "humidity": 91,
-    "pop": 8
+    "pop": 7
    }
   ],
   "current": {
-   "temp": 78.2,
-   "feels": 88.4,
-   "humidity": 92,
-   "wind_mph": 2.6,
-   "wind_dir": 195,
-   "observed_at": "2026-09-17T09:30"
+   "temp": 78.6,
+   "feels": 90.1,
+   "humidity": 93,
+   "wind_mph": 0.5,
+   "wind_dir": 207,
+   "observed_at": "2026-09-17T09:45"
   },
   "today": {
    "high": 81.8,
    "low": 75.2,
    "feels_max": 91.3,
-   "pop_max": 41
+   "pop_max": 45
   },
   "peak_feels": 91.3,
   "peak_hour": 19
@@ -166,26 +166,62 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-17T09:30:55-04:00",
+  "fetched_at": "2026-09-17T09:46:10-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-17T09:31:21-04:00",
-  "aqi": 45,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-17T09:46:12-04:00",
+  "aqi": 36,
   "category": "Good",
-  "pm25": 6.6,
-  "pm10": 7.4,
-  "observed": "2026-09-17T09:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-17 8:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-17",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-17",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-18",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-18",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-19",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-19",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-17T09:31:22-04:00",
+  "fetched_at": "2026-09-17T09:46:12-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +234,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-17T09:31:23-04:00",
+  "fetched_at": "2026-09-17T09:46:13-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -240,7 +276,8 @@
    "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Sep 17 2026, 7:34 AM",
    "Southeast | Broward | Wet roads and rainy conditions may cause intermittent slow traffic in Broward County. Please use caution. | Sep 17 2026, 8:14 AM",
    "Southeast | Palm Beach | Wet roads and rainy conditions may cause intermittent slow traffic in Palm Beach County. Please use caution. | Sep 17 2026, 8:17 AM",
-   "Central | Orange | There is police activity on SR-528 westbound in the Orange county area. Motorists should expect rolling closures and delays. | Sep 17 2026, 9:03 AM"
+   "Central | Orange | There is police activity on SR-528 westbound in the Orange county area. Motorists should expect rolling closures and delays. | Sep 17 2026, 9:03 AM",
+   "Northeast | Alachua | High Springs: Due to a crash on SR-45 at 154th Ave, all EB and WB lanes are blocked. Use caution in the area. | Sep 17 2026, 9:38 AM"
   ],
   "fl511_local": [
    "Southeast | Broward | Wet roads and rainy conditions may cause intermittent slow traffic in Broward County. Please use caution. | Sep 17 2026, 8:14 AM",
@@ -250,7 +287,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-17T09:31:23-04:00",
+  "fetched_at": "2026-09-17T09:46:13-04:00",
   "issued": "800 AM EDT Thu Sep 17 2026",
   "areas": [
    {
@@ -264,7 +301,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-17T09:31:23-04:00",
+  "fetched_at": "2026-09-17T09:46:13-04:00",
   "florida": "$4.2986",
   "national": "$4.4386",
   "diesel": "$6.3480",
@@ -273,7 +310,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-17T09:31:25-04:00",
+  "fetched_at": "2026-09-17T09:46:15-04:00",
   "streams": {
    "local": [
     {
@@ -490,7 +527,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/bodycam-footage-shows-miami-police-subduing-suspect-involved-in-beating-stabbing-of-woman-in-downtown-miami/",
     "published": "Thu, 17 Sep 2026 02:29:36 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6d548247-3a0c-46a1-a1b4-1c5f45d1516b/ce864e1d-34f1-44db-bcac-3b3dc14ba266/main.mp4?fastly_token=NmFhYzMyNTdfZWRlNjIyYjE0NjJhZThiZjAyOWQ0M2NlYjA0NTYxNTNkNDZkNzI5YTNiZWFkMzM3NTE0ZjNmNWQzMzM1MDk5Y18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82ZDU0ODI0Ny0zYTBjLTQ2YTEtYTFiNC0xYzVmNDVkMTUxNmIvY2U4NjRlMWQtMzRmMS00NGRiLWJjYWMtM2IzZGMxNGJhMjY2L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6d548247-3a0c-46a1-a1b4-1c5f45d1516b/ce864e1d-34f1-44db-bcac-3b3dc14ba266/main.mp4?fastly_token=NmFhYzM5MDlfZmYyZmYzM2MxNjRlNzgyYTY0YmZjODE2MzBkODYzYjFjZmE2NWE4M2FkYzVkOWJlNDBmMzY5MTJhNTNmN2NkNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82ZDU0ODI0Ny0zYTBjLTQ2YTEtYTFiNC0xYzVmNDVkMTUxNmIvY2U4NjRlMWQtMzRmMS00NGRiLWJjYWMtM2IzZGMxNGJhMjY2L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -511,6 +548,14 @@
    }
   ],
   "colombia": [
+   {
+    "title": "Sistema de Transporte Masivo, Metrolínea, sin blindaje | Procuraduría indaga fallas en seguridad y vigilancia: hay dos contratos cuestionados",
+    "url": "https://www.eltiempo.com/colombia/santander/sistema-de-transporte-masivo-metrolinea-sin-blindaje-procuraduria-indaga-fallas-en-seguridad-y-vigilancia-hay-dos-contratos-cuestionados-3586743",
+    "published": "2026-09-17T08:25:24-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2025/12/26/694edebc4c627.r_d.1038-262-0.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Juez confirmó medida de aseguramiento al alcalde de Villa de Leyva (Boyacá), Víctor Gamboa, quien está preso en La Picota",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/juez-confirmo-medida-de-aseguramiento-al-alcalde-de-villa-de-leyva-boyaca-victor-gamboa-quien-esta-preso-en-la-picota-3586735",
@@ -565,14 +610,6 @@
     "published": "2026-09-17T06:44:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/17/6aabc3a7a79ca.r_d.97-261-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Andi advierte sobre el riesgo de explosiones y quemaduras por globos con hidrógeno artesanal durante el Día del Amor y la Amistad en Colombia",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/andi-advierte-sobre-el-riesgo-de-explosiones-y-quemaduras-por-globos-con-hidrogeno-artesanal-durante-el-dia-del-amor-y-la-amistad-en-colombia-3586681",
-    "published": "2026-09-17T04:35:53-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/16/6aab534216808.r_d.107-257-0.png",
     "media_type": "image"
    }
   ],
@@ -646,7 +683,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-17T09:31:25-04:00",
+  "fetched_at": "2026-09-17T09:46:15-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -654,7 +691,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (324) + USGS (14)",
-  "fetched_at": "2026-09-17T09:31:29-04:00",
+  "fetched_at": "2026-09-17T09:46:19-04:00",
   "events": [
    {
     "lat": 23.0215374,
@@ -2123,7 +2160,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-17T09:31:29-04:00",
+  "fetched_at": "2026-09-17T09:46:19-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2152,15 +2189,9 @@
       "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-seguidilla-de-sismos-en-choco-en-menos-de-una-hora-en-la-madrugada-de-este-jueves-17-de-septiembre-magnitud-y-profundidad-3586705",
       "published": "2026-09-17T06:44:00-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Andi advierte sobre el riesgo de explosiones y quemaduras por globos con hidrógeno artesanal durante el Día del Amor y la Amistad en Colombia",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/andi-advierte-sobre-el-riesgo-de-explosiones-y-quemaduras-por-globos-con-hidrogeno-artesanal-durante-el-dia-del-amor-y-la-amistad-en-colombia-3586681",
-      "published": "2026-09-17T04:35:53-05:00",
-      "section": "colombia"
      }
     ],
-    "count": 5,
+    "count": 4,
     "issue": "Falso cura que 'bendecía' carros a cambio de dinero en Medellín terminó expulsado del país: ya había hecho lo mismo en Bogotá"
    },
    {
