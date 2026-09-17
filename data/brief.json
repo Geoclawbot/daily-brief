@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-17T16:15:30-04:00",
- "generated_at_utc": "2026-09-17T20:15:30+00:00",
+ "generated_at": "2026-09-17T16:31:01-04:00",
+ "generated_at_utc": "2026-09-17T20:31:01+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, September 17",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-17T16:15:30-04:00",
+  "fetched_at": "2026-09-17T16:31:01-04:00",
   "curve": [
    {
     "time": "2026-09-17T05:00",
@@ -92,167 +92,131 @@
    {
     "time": "2026-09-17T15:00",
     "hour": 15,
-    "temp": 79.9,
-    "feels": 87.6,
+    "temp": 79.2,
+    "feels": 87.2,
     "humidity": 87,
     "pop": 41
    },
    {
     "time": "2026-09-17T16:00",
     "hour": 16,
-    "temp": 80.8,
-    "feels": 87.0,
+    "temp": 81.5,
+    "feels": 88.9,
     "humidity": 79,
     "pop": 35
    },
    {
     "time": "2026-09-17T17:00",
     "hour": 17,
-    "temp": 81.9,
-    "feels": 90.3,
+    "temp": 82.5,
+    "feels": 90.5,
     "humidity": 77,
     "pop": 26
    },
    {
     "time": "2026-09-17T18:00",
     "hour": 18,
-    "temp": 80.0,
-    "feels": 88.5,
+    "temp": 81.4,
+    "feels": 90.8,
     "humidity": 85,
     "pop": 21
    },
    {
     "time": "2026-09-17T19:00",
     "hour": 19,
-    "temp": 80.0,
-    "feels": 89.0,
+    "temp": 80.4,
+    "feels": 89.3,
     "humidity": 85,
     "pop": 21
    },
    {
     "time": "2026-09-17T20:00",
     "hour": 20,
-    "temp": 78.9,
-    "feels": 88.9,
+    "temp": 77.6,
+    "feels": 86.5,
     "humidity": 91,
     "pop": 19
    },
    {
     "time": "2026-09-17T21:00",
     "hour": 21,
-    "temp": 77.9,
-    "feels": 85.6,
+    "temp": 76.8,
+    "feels": 83.4,
     "humidity": 90,
     "pop": 17
    }
   ],
   "current": {
-   "temp": 81.4,
-   "feels": 88.2,
-   "humidity": 78,
-   "wind_mph": 7.8,
-   "wind_dir": 27,
-   "observed_at": "2026-09-17T16:15"
+   "temp": 81.9,
+   "feels": 88.9,
+   "humidity": 77,
+   "wind_mph": 7.5,
+   "wind_dir": 37,
+   "observed_at": "2026-09-17T16:30"
   },
   "today": {
-   "high": 81.9,
+   "high": 82.5,
    "low": 75.5,
-   "feels_max": 90.3,
+   "feels_max": 90.8,
    "pop_max": 58
   },
-  "peak_feels": 90.3,
-  "peak_hour": 17
+  "peak_feels": 90.8,
+  "peak_hour": 18
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-17T16:15:31-04:00",
+  "fetched_at": "2026-09-17T16:31:02-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-17T16:15:32-04:00",
-  "aqi": 21,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-17T16:31:28-04:00",
+  "aqi": 37,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-17 15:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-17",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-17",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-18",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-18",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 4.2,
+  "pm10": 5.2,
+  "observed": "2026-09-17T16:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-17T16:15:34-04:00",
+  "fetched_at": "2026-09-17T16:31:30-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
   "miles": 21.9,
-  "minutes": 73,
-  "delay_minutes": 3,
+  "minutes": 75,
+  "delay_minutes": 5,
   "toll_free": true,
   "alternates": [
    {
     "miles": 25.5,
-    "minutes": 53,
+    "minutes": 58,
     "toll": true,
-    "saves": 20
+    "saves": 17
    },
    {
     "miles": 22.6,
-    "minutes": 61,
+    "minutes": 66,
     "toll": true,
-    "saves": 12
+    "saves": 9
    },
    {
-    "miles": 22.8,
-    "minutes": 72,
+    "miles": 25.3,
+    "minutes": 70,
     "toll": true,
-    "saves": 1
+    "saves": 5
    },
    {
-    "miles": 45.5,
-    "minutes": 65,
+    "miles": 46.8,
+    "minutes": 67,
     "toll": true,
     "saves": 8
    }
@@ -260,44 +224,38 @@
   "alternates_worth_taking": [
    {
     "miles": 25.5,
-    "minutes": 53,
+    "minutes": 58,
     "toll": true,
-    "saves": 20
-   },
-   {
-    "miles": 22.6,
-    "minutes": 61,
-    "toll": true,
-    "saves": 12
+    "saves": 17
    }
   ],
   "free_alternates": [
    {
     "miles": 21.9,
-    "minutes": 73,
-    "delay_minutes": 3,
+    "minutes": 75,
+    "delay_minutes": 5,
     "saves": 0
    },
    {
     "miles": 23.4,
-    "minutes": 77,
-    "delay_minutes": 0
+    "minutes": 79,
+    "delay_minutes": 3
    },
    {
     "miles": 24.4,
-    "minutes": 83,
-    "delay_minutes": 1
+    "minutes": 84,
+    "delay_minutes": 0
    },
    {
-    "miles": 31.5,
-    "minutes": 86,
-    "delay_minutes": 0
+    "miles": 30.9,
+    "minutes": 88,
+    "delay_minutes": 5
    }
   ],
   "best_free": {
    "miles": 21.9,
-   "minutes": 73,
-   "delay_minutes": 3,
+   "minutes": 75,
+   "delay_minutes": 5,
    "saves": 0
   },
   "incidents": [],
@@ -309,7 +267,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-17T16:15:35-04:00",
+  "fetched_at": "2026-09-17T16:31:30-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -361,7 +319,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-17T16:15:35-04:00",
+  "fetched_at": "2026-09-17T16:31:31-04:00",
   "issued": "200 PM EDT Thu Sep 17 2026",
   "areas": [
    {
@@ -375,7 +333,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-17T16:15:35-04:00",
+  "fetched_at": "2026-09-17T16:31:31-04:00",
   "florida": "$4.2986",
   "national": "$4.4386",
   "diesel": "$6.3480",
@@ -384,7 +342,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-17T16:15:37-04:00",
+  "fetched_at": "2026-09-17T16:31:33-04:00",
   "streams": {
    "local": [
     {
@@ -493,20 +451,28 @@
   ],
   "local": [
    {
+    "title": "FDLE agent involved in fatal shooting near southwest Miami-Dade middle school",
+    "url": "https://www.local10.com/news/local/2026/09/17/school-placed-on-brief-lockdown-amid-police-activity-in-southwest-miami-dade/",
+    "published": "Thu, 17 Sep 2026 16:18:28 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Plantation High School lockdown lifted after commotion over gun, cops say",
     "url": "https://www.local10.com/news/local/2026/09/17/plantation-high-school-placed-on-lockdown-after-large-fight-report-of-armed-person-cops-say/",
     "published": "Thu, 17 Sep 2026 17:07:33 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/BU5IKVPL4VHA7KUBYDBISP7GEI.jpeg?auth=a563f274ff535b7176383aebc733e796925c3159816822cc2c6b2fafbd4131fb&smart=true&width=1200&height=900",
-    "media_type": "image"
+    "media": null,
+    "media_type": null
    },
    {
     "title": "Broward County School Board accuses woman of theft, court records show",
     "url": "https://www.local10.com/news/local/2026/09/17/broward-county-school-board-accuses-bookkeeper-of-theft-court-records-show/",
     "published": "Thu, 17 Sep 2026 18:25:42 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/U26HDJYKQNCZHIG6FVUMN5MZ64.jpg?auth=19348af540bc7bfd5b0a5d8294d42bfd8d13210e46e954c4a9f93d5d83ccb73c&smart=true&width=1200&height=900",
-    "media_type": "image"
+    "media": null,
+    "media_type": null
    },
    {
     "title": "Miami not entertaining proposals — for now — to change use of historic City Hall",
@@ -515,14 +481,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/TZ7CN3YN7RATFPURECV7BIDEPU.jpg?auth=cedbcd3e2c2eb14a56f9b9ef3d8fc0c1ffa63ee69453783ff6b16ff4c8fad5b1&smart=true&width=1200&height=900",
     "media_type": "image"
-   },
-   {
-    "title": "FDLE agent involved in fatal shooting near southwest Miami-Dade middle school",
-    "url": "https://www.local10.com/news/local/2026/09/17/school-placed-on-brief-lockdown-amid-police-activity-in-southwest-miami-dade/",
-    "published": "Thu, 17 Sep 2026 16:18:28 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
    },
    {
     "title": "MDSO: Mother charged after child found ‘covered in scars’ from phone charging cord",
@@ -623,6 +581,14 @@
   ],
   "colombia": [
    {
+    "title": "Defensoría del Pueblo advierte por minas y ataques con drones tras muerte de dos adolescentes y dos civiles heridos en Tibú, Norte de Santander",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/defensoria-del-pueblo-advierte-por-minas-y-ataques-con-drones-tras-muerte-de-dos-adolescentes-y-dos-civiles-heridos-en-tibu-norte-de-santander-3586865",
+    "published": "2026-09-17T15:13:52-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/07/26/6a65cf6824555.r_d.1120-260-0.png",
+    "media_type": "image"
+   },
+   {
     "title": "Familia que sufrió un accidente de tránsito en la vía Bogotá-Tunja busca recuperar a su perrita Kaia que desapareció tras el siniestro: esto se sabe",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/familia-que-sufrio-un-accidente-de-transito-en-la-via-bogota-tunja-busca-recuperar-a-su-perrita-kaia-que-desaparecio-tras-el-siniestro-esto-se-sabe-3586811",
     "published": "2026-09-17T14:55:51-05:00",
@@ -677,17 +643,17 @@
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/17/6aac21b05f655.png",
     "media_type": "image"
-   },
-   {
-    "title": "Video | Motociclista chocó contra fachada de almacén en el municipio de Ocaña, Norte de Santander, en medio de 'piques': 'Daños materiales'",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/video-motociclista-choco-contra-fachada-de-almacen-en-el-municipio-de-ocana-norte-de-santander-en-medio-de-piques-danos-materiales-3586741",
-    "published": "2026-09-17T14:52:54-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/17/6aabf4d2bc24e.png",
-    "media_type": "image"
    }
   ],
   "world": [
+   {
+    "title": "Behind the overture from the European Union to Canada",
+    "url": "https://www.npr.org/2026/09/17/nx-s1-5973029/behind-the-overture-from-the-european-union-to-canada",
+    "published": "Thu, 17 Sep 2026 16:24:33 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
    {
     "title": "Can an AI chatbot save lives by answering texts about pregnancy?",
     "url": "https://www.npr.org/2026/09/17/nx-s1-5962840/artificial-intelligence-ai-chatbot-pregnancy-maternal-health",
@@ -743,29 +709,21 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "How the fighting between the Houthis and Saudi Arabia is affecting gas prices",
-    "url": "https://www.npr.org/2026/09/17/nx-s1-5971210/how-the-fighting-between-the-houthis-and-saudi-arabia-is-affecting-gas-prices",
-    "published": "Thu, 17 Sep 2026 04:44:42 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-17T16:15:39-04:00",
+  "fetched_at": "2026-09-17T16:31:35-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (345) + USGS (13)",
-  "fetched_at": "2026-09-17T16:15:43-04:00",
+  "source": "GDACS (345) + USGS (12)",
+  "fetched_at": "2026-09-17T16:31:38-04:00",
   "events": [
    {
     "lat": 52.7648,
@@ -930,19 +888,6 @@
     "source": "USGS"
    },
    {
-    "lat": -6.1072,
-    "lon": 151.7775,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.9 — 191 km ESE of Kimbe, Papua New Guinea",
-    "place": "191 km ESE of Kimbe, Papua New Guinea",
-    "severity": "M4.9",
-    "mag": 4.9,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thxg",
-    "when": 1789590084970,
-    "source": "USGS"
-   },
-   {
     "lat": -16.6626,
     "lon": 167.5571,
     "kind": "earthquake",
@@ -1093,13 +1038,13 @@
     "source": "GDACS"
    },
    {
-    "lat": 23.8,
-    "lon": 148.6,
+    "lat": 25.2,
+    "lon": 146.0,
     "kind": "cyclone",
     "level": "green",
-    "title": "Green notification for tropical cyclone DUJUAN-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
+    "title": "Green notification for tropical cyclone DUJUAN-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 71450 .",
     "place": "Japan",
-    "severity": "Tropical Storm (maximum wind speed of 130 km/h)",
+    "severity": "Hurricane/Typhoon > 74 mph (maximum wind speed of 130 km/h)",
     "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001322",
     "when": "Tue, 15 Sep 2026 14:22:03 GMT",
     "source": "GDACS"
@@ -2219,13 +2164,25 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032077",
     "when": "Thu, 17 Sep 2026 11:06:56 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -16.918247589927063,
+    "lon": 35.634348508562994,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Mozambique",
+    "place": "Mozambique",
+    "severity": "Green impact for forestfire in 5932 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032078",
+    "when": "Thu, 17 Sep 2026 11:07:02 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 358,
+  "event_count": 357,
   "counts": {
    "red": 1,
    "orange": 7,
-   "green": 350
+   "green": 349
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2233,8 +2190,28 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-17T16:15:43-04:00",
+  "fetched_at": "2026-09-17T16:31:38-04:00",
   "countries": [
+   {
+    "iso": "CAN",
+    "name": "Canada",
+    "stories": [
+     {
+      "title": "Behind the overture from the European Union to Canada",
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5973029/behind-the-overture-from-the-european-union-to-canada",
+      "published": "Thu, 17 Sep 2026 16:24:33 -0400",
+      "section": "world"
+     },
+     {
+      "title": "The Fed raises interest rates. And, EU proposes Canada become an 'associate member'",
+      "url": "https://www.npr.org/2026/09/17/g-s1-143783/up-first-newsletter-federal-reserve-interest-rates-gas-prices-war-canada-european-union",
+      "published": "Thu, 17 Sep 2026 06:54:18 -0400",
+      "section": "world"
+     }
+    ],
+    "count": 2,
+    "issue": "Behind the overture from the European Union to Canada"
+   },
    {
     "iso": "CHN",
     "name": "China",
@@ -2254,20 +2231,6 @@
     ],
     "count": 2,
     "issue": "Greetings from Beijing, where baozi are worth the wait in line"
-   },
-   {
-    "iso": "CAN",
-    "name": "Canada",
-    "stories": [
-     {
-      "title": "The Fed raises interest rates. And, EU proposes Canada become an 'associate member'",
-      "url": "https://www.npr.org/2026/09/17/g-s1-143783/up-first-newsletter-federal-reserve-interest-rates-gas-prices-war-canada-european-union",
-      "published": "Thu, 17 Sep 2026 06:54:18 -0400",
-      "section": "world"
-     }
-    ],
-    "count": 1,
-    "issue": "The Fed raises interest rates. And, EU proposes Canada become an 'associate member'"
    },
    {
     "iso": "COL",
@@ -2312,20 +2275,6 @@
     "issue": "La Mar opens Peruvian cuisine pop-up at The Abbey at Aventura"
    },
    {
-    "iso": "SAU",
-    "name": "Saudi Arabia",
-    "stories": [
-     {
-      "title": "How the fighting between the Houthis and Saudi Arabia is affecting gas prices",
-      "url": "https://www.npr.org/2026/09/17/nx-s1-5971210/how-the-fighting-between-the-houthis-and-saudi-arabia-is-affecting-gas-prices",
-      "published": "Thu, 17 Sep 2026 04:44:42 -0400",
-      "section": "world"
-     }
-    ],
-    "count": 1,
-    "issue": "How the fighting between the Houthis and Saudi Arabia is affecting gas prices"
-   },
-   {
     "iso": "USA",
     "name": "United States",
     "stories": [
@@ -2338,24 +2287,10 @@
     ],
     "count": 1,
     "issue": "South Florida’s 5000 Role Models of Excellence heading to Washington for conference"
-   },
-   {
-    "iso": "YEM",
-    "name": "Yemen",
-    "stories": [
-     {
-      "title": "How the fighting between the Houthis and Saudi Arabia is affecting gas prices",
-      "url": "https://www.npr.org/2026/09/17/nx-s1-5971210/how-the-fighting-between-the-houthis-and-saudi-arabia-is-affecting-gas-prices",
-      "published": "Thu, 17 Sep 2026 04:44:42 -0400",
-      "section": "world"
-     }
-    ],
-    "count": 1,
-    "issue": "How the fighting between the Houthis and Saudi Arabia is affecting gas prices"
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 8,
+  "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
