@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-17T10:15:42-04:00",
- "generated_at_utc": "2026-09-17T14:15:42+00:00",
+ "generated_at": "2026-09-17T10:30:38-04:00",
+ "generated_at_utc": "2026-09-17T14:30:38+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, September 17",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-17T10:15:43-04:00",
+  "fetched_at": "2026-09-17T10:30:38-04:00",
   "curve": [
    {
     "time": "2026-09-17T05:00",
@@ -148,11 +148,11 @@
   ],
   "current": {
    "temp": 77.3,
-   "feels": 86.7,
-   "humidity": 94,
-   "wind_mph": 4.1,
-   "wind_dir": 9,
-   "observed_at": "2026-09-17T10:15"
+   "feels": 86.1,
+   "humidity": 95,
+   "wind_mph": 6.0,
+   "wind_dir": 13,
+   "observed_at": "2026-09-17T10:30"
   },
   "today": {
    "high": 81.8,
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-17T10:15:43-04:00",
+  "fetched_at": "2026-09-17T10:30:38-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-17T10:15:44-04:00",
-  "aqi": 17,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-17T10:31:04-04:00",
+  "aqi": 44,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-17 9:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-17",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-17",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-18",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-18",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 5.3,
+  "pm10": 6.3,
+  "observed": "2026-09-17T10:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-17T10:15:44-04:00",
+  "fetched_at": "2026-09-17T10:31:04-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -234,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-17T10:15:45-04:00",
+  "fetched_at": "2026-09-17T10:31:05-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -278,7 +242,8 @@
    "Southeast | Palm Beach | Wet roads and rainy conditions may cause intermittent slow traffic in Palm Beach County. Please use caution. | Sep 17 2026, 8:17 AM",
    "Central | Orange | There is police activity on SR-528 westbound in the Orange county area. Motorists should expect rolling closures and delays. | Sep 17 2026, 9:03 AM",
    "Northeast | Alachua | High Springs: Due to a crash on SR-45 at 154th Ave, all EB and WB lanes are blocked. Use caution in the area. | Sep 17 2026, 9:38 AM",
-   "Northeast | Duval | Jacksonville: There is lane blocking construction on Normandy / SR-228 from Granville Rd to Herlong Rd. Use caution in the area. | Sep 17 2026, 9:48 AM"
+   "Northeast | Duval | Jacksonville: There is lane blocking construction on Normandy / SR-228 from Granville Rd to Herlong Rd. Use caution in the area. | Sep 17 2026, 9:48 AM",
+   "Northeast | St. Johns | Vilano Beach: There is lane blocking construction from Jimmy Buffett Memorial Hwy / A1A between Boat Club Rd and San Pelayo Ct. Use caution in the area. | Sep 17 2026, 10:25 AM"
   ],
   "fl511_local": [
    "Southeast | Broward | Wet roads and rainy conditions may cause intermittent slow traffic in Broward County. Please use caution. | Sep 17 2026, 8:14 AM",
@@ -288,7 +253,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-17T10:15:45-04:00",
+  "fetched_at": "2026-09-17T10:31:06-04:00",
   "issued": "800 AM EDT Thu Sep 17 2026",
   "areas": [
    {
@@ -302,7 +267,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-17T10:15:45-04:00",
+  "fetched_at": "2026-09-17T10:31:06-04:00",
   "florida": "$4.2986",
   "national": "$4.4386",
   "diesel": "$6.3480",
@@ -311,7 +276,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-17T10:15:46-04:00",
+  "fetched_at": "2026-09-17T10:31:07-04:00",
   "streams": {
    "local": [
     {
@@ -550,6 +515,14 @@
   ],
   "colombia": [
    {
+    "title": "Hackearon la cuenta del Metro de Medellín para difundir un falso anuncio de criptomonedas: esto dijo la empresa",
+    "url": "https://www.eltiempo.com/colombia/medellin/hackearon-la-cuenta-del-metro-de-medellin-para-difundir-un-falso-anuncio-de-criptomonedas-esto-dijo-la-empresa-3586755",
+    "published": "2026-09-17T09:15:51-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/17/6aabf4d87ca1d.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Momentos de angustia en El Remolino, Nariño: enfrentamiento entre el Ejército y hombres armados paralizó la vía Panamericana",
     "url": "https://www.eltiempo.com/colombia/cali/momentos-de-angustia-en-el-remolino-narino-enfrentamiento-entre-el-ejercito-y-hombres-armados-paralizo-la-via-panamericana-3586746",
     "published": "2026-09-17T08:43:13-05:00",
@@ -603,14 +576,6 @@
     "published": "2026-09-17T07:50:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/19/6a85a40d4486d.r_d.604-544-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Metro de la 80, Tren del Río y 13 nuevos corredores: ¿cómo y cuándo se construirán las megaobras que definirán el futuro de Medellín?",
-    "url": "https://www.eltiempo.com/colombia/medellin/metro-de-la-80-tren-del-rio-y-13-nuevos-corredores-como-y-cuando-se-construiran-las-megaobras-que-definiran-el-futuro-de-medellin-3586656",
-    "published": "2026-09-17T06:30:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2025/08/26/68ae2a6f4032b.r_d.43-307-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -684,16 +649,29 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-17T10:15:47-04:00",
+  "fetched_at": "2026-09-17T10:31:08-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (324) + USGS (15)",
-  "fetched_at": "2026-09-17T10:15:49-04:00",
+  "source": "GDACS (324) + USGS (16)",
+  "fetched_at": "2026-09-17T10:31:10-04:00",
   "events": [
+   {
+    "lat": 52.81,
+    "lon": -171.341,
+    "kind": "earthquake",
+    "level": "orange",
+    "title": "M6.3 — 167 km W of Nikolski, Alaska",
+    "place": "167 km W of Nikolski, Alaska",
+    "severity": "M6.3",
+    "mag": 6.3,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/attliih5",
+    "when": 1789654793000,
+    "source": "USGS"
+   },
    {
     "lat": 23.0215374,
     "lon": 72.5800568,
@@ -2136,24 +2114,12 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032081",
     "when": "Thu, 17 Sep 2026 11:09:36 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -17.07350252244306,
-    "lon": 37.261074191490245,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Mozambique",
-    "place": "Mozambique",
-    "severity": "Green impact for forestfire in 6343 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032082",
-    "when": "Thu, 17 Sep 2026 11:07:33 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 339,
+  "event_count": 340,
   "counts": {
    "red": 0,
-   "orange": 7,
+   "orange": 8,
    "green": 332
   },
   "failed_sources": [],
@@ -2162,12 +2128,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-17T10:15:49-04:00",
+  "fetched_at": "2026-09-17T10:31:10-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "Hackearon la cuenta del Metro de Medellín para difundir un falso anuncio de criptomonedas: esto dijo la empresa",
+      "url": "https://www.eltiempo.com/colombia/medellin/hackearon-la-cuenta-del-metro-de-medellin-para-difundir-un-falso-anuncio-de-criptomonedas-esto-dijo-la-empresa-3586755",
+      "published": "2026-09-17T09:15:51-05:00",
+      "section": "colombia"
+     },
      {
       "title": "Falso cura que 'bendecía' carros a cambio de dinero en Medellín terminó expulsado del país: ya había hecho lo mismo en Bogotá",
       "url": "https://www.eltiempo.com/colombia/medellin/falso-cura-que-bendecia-carros-a-cambio-de-dinero-en-medellin-termino-expulsado-del-pais-ya-habia-hecho-lo-mismo-en-bogota-3586739",
@@ -2179,16 +2151,10 @@
       "url": "https://www.eltiempo.com/colombia/cali/esta-su-barrio-en-la-lista-conozca-las-obras-reparaciones-y-el-corte-de-agua-de-emcali-para-este-jueves-17-de-septiembre-en-cali-y-yumbo-3586732",
       "published": "2026-09-17T07:47:13-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Metro de la 80, Tren del Río y 13 nuevos corredores: ¿cómo y cuándo se construirán las megaobras que definirán el futuro de Medellín?",
-      "url": "https://www.eltiempo.com/colombia/medellin/metro-de-la-80-tren-del-rio-y-13-nuevos-corredores-como-y-cuando-se-construiran-las-megaobras-que-definiran-el-futuro-de-medellin-3586656",
-      "published": "2026-09-17T06:30:00-05:00",
-      "section": "colombia"
      }
     ],
     "count": 3,
-    "issue": "Falso cura que 'bendecía' carros a cambio de dinero en Medellín terminó expulsado del país: ya había hecho lo mismo en Bogotá"
+    "issue": "Hackearon la cuenta del Metro de Medellín para difundir un falso anuncio de criptomonedas: esto dijo la empresa"
    },
    {
     "iso": "CAN",
