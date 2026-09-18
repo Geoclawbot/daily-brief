@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-18T14:15:38-04:00",
- "generated_at_utc": "2026-09-18T18:15:38+00:00",
+ "generated_at": "2026-09-18T14:30:33-04:00",
+ "generated_at_utc": "2026-09-18T18:30:33+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 18",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-18T14:15:38-04:00",
+  "fetched_at": "2026-09-18T14:30:34-04:00",
   "curve": [
    {
     "time": "2026-09-18T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 73.8,
-   "feels": 76.3,
-   "humidity": 94,
-   "wind_mph": 15.5,
-   "wind_dir": 12,
-   "observed_at": "2026-09-18T14:15"
+   "temp": 74.8,
+   "feels": 79.4,
+   "humidity": 93,
+   "wind_mph": 11.5,
+   "wind_dir": 13,
+   "observed_at": "2026-09-18T14:30"
   },
   "today": {
    "high": 90.4,
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-18T14:15:39-04:00",
+  "fetched_at": "2026-09-18T14:30:35-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-18T14:15:40-04:00",
-  "aqi": 22,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-18T14:31:03-04:00",
+  "aqi": 38,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-18 13:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-18",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-18",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 6.5,
+  "pm10": 8.1,
+  "observed": "2026-09-18T14:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-18T14:15:43-04:00",
+  "fetched_at": "2026-09-18T14:31:05-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
@@ -233,16 +209,16 @@
     "saves": 2
    },
    {
-    "miles": 28.6,
+    "miles": 24.0,
     "minutes": 64,
     "toll": true,
     "saves": 2
    },
    {
-    "miles": 20.8,
-    "minutes": 64,
+    "miles": 28.6,
+    "minutes": 65,
     "toll": true,
-    "saves": 2
+    "saves": 1
    }
   ],
   "alternates_worth_taking": [],
@@ -284,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-18T14:15:43-04:00",
+  "fetched_at": "2026-09-18T14:31:10-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -337,7 +313,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-18T14:15:44-04:00",
+  "fetched_at": "2026-09-18T14:31:10-04:00",
   "issued": "200 PM EDT Fri Sep 18 2026",
   "areas": [
    {
@@ -351,7 +327,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-18T14:15:44-04:00",
+  "fetched_at": "2026-09-18T14:31:10-04:00",
   "florida": "$4.3326",
   "national": "$4.4687",
   "diesel": "$6.3492",
@@ -360,7 +336,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-18T14:15:45-04:00",
+  "fetched_at": "2026-09-18T14:31:11-04:00",
   "streams": {
    "local": [
     {
@@ -469,6 +445,14 @@
   ],
   "local": [
    {
+    "title": "Man stabs woman, her adult son during altercation at Florida City apartment, police say",
+    "url": "https://www.local10.com/news/local/2026/09/18/multiple-people-found-injured-after-stabbing-reported-at-florida-city-apartment-complex/",
+    "published": "Fri, 18 Sep 2026 11:17:55 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Community reacts after man killed during altercation with FDLE agent in southwest Miami-Dade",
     "url": "https://www.local10.com/news/local/2026/09/18/community-reacts-after-man-killed-during-altercation-with-fdle-agent-in-southwest-miami-dade/",
     "published": "Fri, 18 Sep 2026 17:25:41 +0000",
@@ -483,14 +467,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/KHUOTGYQ2NE2HEBK6A6ES3TONE.jpg?auth=a9b7ca120c8ac168a9ab1d01d272ec4bf8e730fdfc8207b6956399025110b6ca&smart=true&width=1200&height=900",
     "media_type": "image"
-   },
-   {
-    "title": "Man, woman stabbed at Florida City apartment complex, police say",
-    "url": "https://www.local10.com/news/local/2026/09/18/multiple-people-found-injured-after-stabbing-reported-at-florida-city-apartment-complex/",
-    "published": "Fri, 18 Sep 2026 11:17:55 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
    },
    {
     "title": "Woman critically injured in dog attack in Biscayne Gardens, deputies say",
@@ -565,6 +541,22 @@
     "media_type": "video"
    },
    {
+    "title": "Crews working to repair water main break in North Miami",
+    "url": "https://wsvn.com/news/local/miami-dade/crews-working-to-repair-water-main-break-in-north-miami/",
+    "published": "Fri, 18 Sep 2026 18:12:37 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/260918_North_Miami_water_main_break.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Bizarre video captures crab swinging blade at man, dog in Palmetto Bay",
+    "url": "https://wsvn.com/news/local/miami-dade/bizarre-video-captures-crab-swinging-blade-at-man-dog-in-palmetto-bay/",
+    "published": "Fri, 18 Sep 2026 17:30:11 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/4c0a4fcb-4209-4ec7-87a6-303382094323/4702ae31-01f7-4684-a7db-957da559bb71/main.mp4?fastly_token=NmFhZGNkMmFfYTY3NTJmMGRhNDM2ZGFiMjBkZmYzYTQwZGE5YWNjODk1ODAwMWY5NWY3Y2Q1YTZmN2FjMTgyOGQ5ZjVkYzRhNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS80YzBhNGZjYi00MjA5LTRlYzctODdhNi0zMDMzODIwOTQzMjMvNDcwMmFlMzEtMDFmNy00Njg0LWE3ZGItOTU3ZGE1NTliYjcxL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "Former Hurricanes wide receiver Mark Pope faces judge after arrest on battery, robbery charges",
     "url": "https://wsvn.com/sports/college/miami-hurricanes/former-hurricanes-wide-receiver-mark-pope-faces-judge-after-arrest-on-battery-robbery-charges/",
     "published": "Fri, 18 Sep 2026 17:24:01 +0000",
@@ -578,22 +570,6 @@
     "published": "Fri, 18 Sep 2026 17:00:05 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/fb1200ae-9bd0-4b31-85d9-bfe9d3560026/00733e0e-3224-4aab-86e6-1ac45f38c2d1/main.mp4?fastly_token=NmFhZGM2ZWNfNzRjZmNiY2Y3YmI4MzVjYjE3MjZiMjU2MDgxODBmZmQxMmM2OTdlYzQxMDU3YjJmMTFjNGYyYjM1MWNhZjczNl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9mYjEyMDBhZS05YmQwLTRiMzEtODVkOS1iZmU5ZDM1NjAwMjYvMDA3MzNlMGUtMzIyNC00YWFiLTg2ZTYtMWFjNDVmMzhjMmQxL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "FDLE agent involved in fatal SW Miami-Dade shooting says he was forced to fire; deputies ID victim",
-    "url": "https://wsvn.com/news/local/miami-dade/fdle-agent-involved-in-fatal-sw-miami-dade-shooting-says-he-was-forced-to-fire-deputies-id-victim/",
-    "published": "Fri, 18 Sep 2026 16:48:41 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b637b805-39d4-4e89-9527-7fa1832391ec/2db51d7b-b0a5-4788-83dc-48e6ea6e61f2/main.mp4?fastly_token=NmFhZGM0YjBfNDE0NWQzZTlhZmJkN2I2MGYwZjczNjg2MWEwNDdhYzY3ZmQ1YzIzMDg1MWQxODJmZGNhNTc0YWIwM2E2ZGE5Yl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iNjM3YjgwNS0zOWQ0LTRlODktOTUyNy03ZmExODMyMzkxZWMvMmRiNTFkN2ItYjBhNS00Nzg4LTgzZGMtNDhlNmVhNmU2MWYyL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Man accused of escaping police custody at Mount Sinai Medical Center facing multiple charges",
-    "url": "https://wsvn.com/news/local/miami-dade/man-accused-of-escaping-police-custody-at-mount-sinai-medical-center-facing-multiple-charges/",
-    "published": "Fri, 18 Sep 2026 16:42:15 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b5c18fa8-7123-452d-aaf5-60fd381d5cf7/5b642ce1-4adf-43f5-b73c-df4b03755610/main.mp4?fastly_token=NmFhZGMyYjVfYzhjNjRhM2I5ZmI4ZGY3NWNhMmU3N2U0YzkzZWQyOTA0YWFjMGRhYmExNzg5N2ZjMGZjMWFjNDUxZTc3MmU2MF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iNWMxOGZhOC03MTIzLTQ1MmQtYWFmNS02MGZkMzgxZDVjZjcvNWI2NDJjZTEtNGFkZi00M2Y1LWI3M2MtZGY0YjAzNzU1NjEwL21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -733,7 +709,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-18T14:15:46-04:00",
+  "fetched_at": "2026-09-18T14:31:12-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -741,7 +717,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (348) + USGS (17)",
-  "fetched_at": "2026-09-18T14:15:49-04:00",
+  "fetched_at": "2026-09-18T14:31:14-04:00",
   "events": [
    {
     "lat": 23.0215374,
@@ -2213,7 +2189,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-18T14:15:49-04:00",
+  "fetched_at": "2026-09-18T14:31:14-04:00",
   "countries": [
    {
     "iso": "COL",
