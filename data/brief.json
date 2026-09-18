@@ -1,191 +1,62 @@
 {
- "generated_at": "2026-09-18T05:30:53-04:00",
- "generated_at_utc": "2026-09-18T09:30:53+00:00",
+ "generated_at": "2026-09-18T05:33:03-04:00",
+ "generated_at_utc": "2026-09-18T09:33:03+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 18",
  "is_weekend": false,
  "weather": {
-  "ok": true,
-  "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-18T05:30:54-04:00",
-  "curve": [
-   {
-    "time": "2026-09-18T05:00",
-    "hour": 5,
-    "temp": 75.5,
-    "feels": 83.9,
-    "humidity": 95,
-    "pop": 5
-   },
-   {
-    "time": "2026-09-18T06:00",
-    "hour": 6,
-    "temp": 75.2,
-    "feels": 84.3,
-    "humidity": 95,
-    "pop": 6
-   },
-   {
-    "time": "2026-09-18T07:00",
-    "hour": 7,
-    "temp": 75.1,
-    "feels": 83.5,
-    "humidity": 94,
-    "pop": 5
-   },
-   {
-    "time": "2026-09-18T08:00",
-    "hour": 8,
-    "temp": 76.5,
-    "feels": 85.3,
-    "humidity": 93,
-    "pop": 4
-   },
-   {
-    "time": "2026-09-18T09:00",
-    "hour": 9,
-    "temp": 79.9,
-    "feels": 91.0,
-    "humidity": 88,
-    "pop": 6
-   },
-   {
-    "time": "2026-09-18T10:00",
-    "hour": 10,
-    "temp": 83.0,
-    "feels": 93.9,
-    "humidity": 82,
-    "pop": 14
-   },
-   {
-    "time": "2026-09-18T11:00",
-    "hour": 11,
-    "temp": 85.0,
-    "feels": 96.5,
-    "humidity": 75,
-    "pop": 15
-   },
-   {
-    "time": "2026-09-18T12:00",
-    "hour": 12,
-    "temp": 87.2,
-    "feels": 99.9,
-    "humidity": 69,
-    "pop": 15
-   },
-   {
-    "time": "2026-09-18T13:00",
-    "hour": 13,
-    "temp": 88.9,
-    "feels": 100.2,
-    "humidity": 63,
-    "pop": 25
-   },
-   {
-    "time": "2026-09-18T14:00",
-    "hour": 14,
-    "temp": 88.2,
-    "feels": 99.6,
-    "humidity": 77,
-    "pop": 38
-   },
-   {
-    "time": "2026-09-18T15:00",
-    "hour": 15,
-    "temp": 76.6,
-    "feels": 75.9,
-    "humidity": 79,
-    "pop": 50
-   },
-   {
-    "time": "2026-09-18T16:00",
-    "hour": 16,
-    "temp": 80.0,
-    "feels": 84.8,
-    "humidity": 74,
-    "pop": 44
-   },
-   {
-    "time": "2026-09-18T17:00",
-    "hour": 17,
-    "temp": 74.6,
-    "feels": 71.5,
-    "humidity": 72,
-    "pop": 31
-   },
-   {
-    "time": "2026-09-18T18:00",
-    "hour": 18,
-    "temp": 75.9,
-    "feels": 82.0,
-    "humidity": 80,
-    "pop": 27
-   },
-   {
-    "time": "2026-09-18T19:00",
-    "hour": 19,
-    "temp": 74.7,
-    "feels": 79.7,
-    "humidity": 80,
-    "pop": 28
-   },
-   {
-    "time": "2026-09-18T20:00",
-    "hour": 20,
-    "temp": 75.2,
-    "feels": 82.4,
-    "humidity": 85,
-    "pop": 24
-   },
-   {
-    "time": "2026-09-18T21:00",
-    "hour": 21,
-    "temp": 75.4,
-    "feels": 83.5,
-    "humidity": 88,
-    "pop": 23
-   }
-  ],
-  "current": {
-   "temp": 75.3,
-   "feels": 84.1,
-   "humidity": 95,
-   "wind_mph": 3.1,
-   "wind_dir": 330,
-   "observed_at": "2026-09-18T05:30"
-  },
-  "today": {
-   "high": 88.9,
-   "low": 74.6,
-   "feels_max": 100.2,
-   "pop_max": 50
-  },
-  "peak_feels": 100.2,
-  "peak_hour": 13
+  "ok": false,
+  "source": "Open-Meteo",
+  "fetched_at": "2026-09-18T05:33:26-04:00",
+  "error": "Expecting value: line 1 column 1 (char 0)"
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-18T05:30:54-04:00",
+  "fetched_at": "2026-09-18T05:33:26-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-18T05:31:26-04:00",
-  "aqi": 40,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-18T05:33:26-04:00",
+  "aqi": 28,
   "category": "Good",
-  "pm25": 6.5,
-  "pm10": 7.1,
-  "observed": "2026-09-18T05:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "O3",
+  "reporting_area": "Miami",
+  "observed": "2026-09-18 4:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-18",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-18",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-19",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-19",
+    "aqi": 50,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-18T05:31:29-04:00",
+  "fetched_at": "2026-09-18T05:33:28-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
@@ -231,7 +102,7 @@
    },
    {
     "miles": 29.3,
-    "minutes": 43,
+    "minutes": 42,
     "delay_minutes": 0
    },
    {
@@ -260,7 +131,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-18T05:31:32-04:00",
+  "fetched_at": "2026-09-18T05:33:29-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -305,7 +176,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-18T05:31:33-04:00",
+  "fetched_at": "2026-09-18T05:33:29-04:00",
   "issued": "200 AM EDT Fri Sep 18 2026",
   "areas": [
    {
@@ -319,7 +190,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-18T05:31:33-04:00",
+  "fetched_at": "2026-09-18T05:33:29-04:00",
   "florida": "$4.3326",
   "national": "$4.4687",
   "diesel": "$6.3492",
@@ -328,7 +199,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-18T05:31:38-04:00",
+  "fetched_at": "2026-09-18T05:33:30-04:00",
   "streams": {
    "local": [
     {
@@ -701,7 +572,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-18T05:31:39-04:00",
+  "fetched_at": "2026-09-18T05:33:30-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -709,7 +580,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (341) + USGS (10)",
-  "fetched_at": "2026-09-18T05:31:45-04:00",
+  "fetched_at": "2026-09-18T05:33:33-04:00",
   "events": [
    {
     "lat": 52.7648,
@@ -2174,7 +2045,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-18T05:31:45-04:00",
+  "fetched_at": "2026-09-18T05:33:33-04:00",
   "countries": [
    {
     "iso": "CAN",
@@ -2347,6 +2218,8 @@
   "countries_matched": 11,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [],
- "health": "11/11 sources ok"
+ "failures": [
+  "weather"
+ ],
+ "health": "10/11 sources ok"
 }
