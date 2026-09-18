@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-17T20:15:32-04:00",
- "generated_at_utc": "2026-09-18T00:15:32+00:00",
+ "generated_at": "2026-09-17T20:30:34-04:00",
+ "generated_at_utc": "2026-09-18T00:30:34+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, September 17",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-17T20:15:33-04:00",
+  "fetched_at": "2026-09-17T20:30:34-04:00",
   "curve": [
    {
     "time": "2026-09-17T05:00",
@@ -124,92 +124,68 @@
    {
     "time": "2026-09-17T19:00",
     "hour": 19,
-    "temp": 81.7,
-    "feels": 92.3,
+    "temp": 82.4,
+    "feels": 93.3,
     "humidity": 84,
     "pop": 25
    },
    {
     "time": "2026-09-17T20:00",
     "hour": 20,
-    "temp": 80.3,
-    "feels": 89.8,
+    "temp": 79.6,
+    "feels": 86.7,
     "humidity": 85,
     "pop": 17
    },
    {
     "time": "2026-09-17T21:00",
     "hour": 21,
-    "temp": 77.7,
-    "feels": 84.6,
+    "temp": 78.0,
+    "feels": 84.3,
     "humidity": 89,
     "pop": 15
    }
   ],
   "current": {
-   "temp": 79.8,
-   "feels": 89.0,
-   "humidity": 86,
-   "wind_mph": 4.5,
-   "wind_dir": 360,
-   "observed_at": "2026-09-17T20:15"
+   "temp": 78.3,
+   "feels": 84.3,
+   "humidity": 87,
+   "wind_mph": 10.1,
+   "wind_dir": 28,
+   "observed_at": "2026-09-17T20:30"
   },
   "today": {
-   "high": 82.3,
-   "low": 74.3,
-   "feels_max": 92.8,
+   "high": 82.4,
+   "low": 75.5,
+   "feels_max": 93.3,
    "pop_max": 58
   },
-  "peak_feels": 92.8,
-  "peak_hour": 17
+  "peak_feels": 93.3,
+  "peak_hour": 19
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-17T20:15:33-04:00",
+  "fetched_at": "2026-09-17T20:30:35-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-17T20:15:34-04:00",
-  "aqi": 27,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-17T20:31:01-04:00",
+  "aqi": 39,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-17 19:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-18",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-18",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 8.2,
+  "pm10": 9.2,
+  "observed": "2026-09-17T20:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-17T20:15:34-04:00",
+  "fetched_at": "2026-09-17T20:31:01-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -222,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-17T20:15:36-04:00",
+  "fetched_at": "2026-09-17T20:31:02-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -272,7 +248,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-17T20:15:36-04:00",
+  "fetched_at": "2026-09-17T20:31:02-04:00",
   "issued": "800 PM EDT Thu Sep 17 2026",
   "areas": [
    {
@@ -286,7 +262,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-17T20:15:36-04:00",
+  "fetched_at": "2026-09-17T20:31:03-04:00",
   "florida": "$4.2986",
   "national": "$4.4386",
   "diesel": "$6.3480",
@@ -295,7 +271,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-17T20:15:37-04:00",
+  "fetched_at": "2026-09-17T20:31:04-04:00",
   "streams": {
    "local": [
     {
@@ -500,14 +476,6 @@
     "media_type": "video"
    },
    {
-    "title": "Residents line up for food distribution event in Miami Beach amid rising costs",
-    "url": "https://wsvn.com/news/local/miami-dade/residents-line-up-for-food-distribution-event-in-miami-beach-amid-rising-costs/",
-    "published": "Thu, 17 Sep 2026 23:35:38 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/23c77f9d-5d4c-4a63-a1cc-00357733cdcc/29997fc6-2f62-4981-8359-0e3c2a8cf134/main.mp4?fastly_token=NmFhY2QxZTVfYWVhYjQwNTZmZThkOGRlOWM0ZWNmMmI5M2E2ZmZjMTk3N2FlOTlkYmMwNzY0NzgwNWJiNjIwZmJmMTAwYjUyZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yM2M3N2Y5ZC01ZDRjLTRhNjMtYTFjYy0wMDM1NzczM2NkY2MvMjk5OTdmYzYtMmY2Mi00OTgxLTgzNTktMGUzYzJhOGNmMTM0L21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
     "title": "Family of cargo plane crash victim sues Amazon, 21Air for death of loved one; son says he feels survivor’s guilt",
     "url": "https://wsvn.com/news/local/miami-dade/family-of-cargo-plane-crash-victim-sues-amazon-21air-for-death-of-loved-one-son-says-he-feels-survivors-guilt/",
     "published": "Thu, 17 Sep 2026 23:06:05 +0000",
@@ -529,6 +497,14 @@
     "published": "Thu, 17 Sep 2026 22:00:56 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/d79f57a4-4287-4d36-8348-294e422dc626/455710d8-6926-46e6-ae8b-56ea22f11ada/main.mp4?fastly_token=NmFhY2JiMWZfZmU5NDZkZDc3OTgwZTA1Y2Q5ZjMwZmQ3YTIzOTQyMDBmZmQ3NWJkNzQxMzhjNzczNWI1Y2IyMDEyNTU0ODExMl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kNzlmNTdhNC00Mjg3LTRkMzYtODM0OC0yOTRlNDIyZGM2MjYvNDU1NzEwZDgtNjkyNi00NmU2LWFlOGItNTZlYTIyZjExYWRhL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Florida AG proposes legislation aimed at shutting down spam calls and texts",
+    "url": "https://wsvn.com/news/local/miami-dade/florida-ag-proposes-legislation-aimed-at-shutting-down-spam-calls-and-texts/",
+    "published": "Thu, 17 Sep 2026 21:07:24 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/3d087f53-6e09-4493-844d-4bd8e1c92a76/d0430e19-f010-4bdd-a092-b1201f8d3b44/main.mp4?fastly_token=NmFhY2FmNThfOGY2MmU5YTllMWRhNDRkMTUwODk0ZDFkNDAxZGI2M2U0ZTk0YjNjZGJmOTkyZGU2ZjdjOThlNWQwMmI4OWM0Zl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zZDA4N2Y1My02ZTA5LTQ0OTMtODQ0ZC00YmQ4ZTFjOTJhNzYvZDA0MzBlMTktZjAxMC00YmRkLWEwOTItYjEyMDFmOGQzYjQ0L21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -668,7 +644,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-17T20:15:37-04:00",
+  "fetched_at": "2026-09-17T20:31:05-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -676,7 +652,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (336) + USGS (12)",
-  "fetched_at": "2026-09-17T20:15:40-04:00",
+  "fetched_at": "2026-09-17T20:31:09-04:00",
   "events": [
    {
     "lat": 52.7648,
@@ -2143,7 +2119,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-17T20:15:40-04:00",
+  "fetched_at": "2026-09-17T20:31:09-04:00",
   "countries": [
    {
     "iso": "CAN",
