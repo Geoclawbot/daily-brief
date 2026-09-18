@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-18T16:19:13-04:00",
- "generated_at_utc": "2026-09-18T20:19:13+00:00",
+ "generated_at": "2026-09-18T16:30:45-04:00",
+ "generated_at_utc": "2026-09-18T20:30:45+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 18",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-18T16:19:14-04:00",
+  "fetched_at": "2026-09-18T16:30:45-04:00",
   "curve": [
    {
     "time": "2026-09-18T05:00",
@@ -85,74 +85,74 @@
     "time": "2026-09-18T14:00",
     "hour": 14,
     "temp": 77.3,
-    "feels": 83.1,
-    "humidity": 75,
+    "feels": 87.5,
+    "humidity": 97,
     "pop": 43
    },
    {
     "time": "2026-09-18T15:00",
     "hour": 15,
     "temp": 78.1,
-    "feels": 85.6,
-    "humidity": 88,
+    "feels": 87.0,
+    "humidity": 95,
     "pop": 61
    },
    {
     "time": "2026-09-18T16:00",
     "hour": 16,
     "temp": 76.0,
-    "feels": 80.5,
-    "humidity": 86,
+    "feels": 82.8,
+    "humidity": 98,
     "pop": 70
    },
    {
     "time": "2026-09-18T17:00",
     "hour": 17,
     "temp": 73.7,
-    "feels": 79.3,
-    "humidity": 87,
+    "feels": 80.9,
+    "humidity": 96,
     "pop": 61
    },
    {
     "time": "2026-09-18T18:00",
     "hour": 18,
     "temp": 74.5,
-    "feels": 80.7,
-    "humidity": 86,
+    "feels": 82.0,
+    "humidity": 93,
     "pop": 47
    },
    {
     "time": "2026-09-18T19:00",
     "hour": 19,
     "temp": 74.6,
-    "feels": 79.7,
-    "humidity": 88,
+    "feels": 80.6,
+    "humidity": 93,
     "pop": 41
    },
    {
     "time": "2026-09-18T20:00",
     "hour": 20,
     "temp": 74.4,
-    "feels": 81.9,
-    "humidity": 91,
+    "feels": 82.2,
+    "humidity": 93,
     "pop": 23
    },
    {
     "time": "2026-09-18T21:00",
     "hour": 21,
     "temp": 74.6,
-    "feels": 82.6,
-    "humidity": 92,
+    "feels": 83.0,
+    "humidity": 94,
     "pop": 19
    }
   ],
   "current": {
-   "temp": 73.8,
-   "feels": 74.6,
-   "humidity": 86,
-   "wind_mph": 16.1,
-   "wind_dir": 1,
-   "observed_at": "2026-09-18T16:15"
+   "temp": 73.3,
+   "feels": 77.3,
+   "humidity": 97,
+   "wind_mph": 12.7,
+   "wind_dir": 9,
+   "observed_at": "2026-09-18T16:30"
   },
   "today": {
    "high": 90.4,
@@ -166,137 +166,89 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-18T16:19:14-04:00",
+  "fetched_at": "2026-09-18T16:30:46-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-18T16:19:15-04:00",
-  "aqi": 48,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-18T16:30:50-04:00",
+  "aqi": 38,
   "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-18 15:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-18",
-    "aqi": 27,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-18",
-    "aqi": 37,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-20",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-20",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-21",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-21",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 6.7,
+  "pm10": 8.0,
+  "observed": "2026-09-18T16:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-18T16:19:18-04:00",
+  "fetched_at": "2026-09-18T16:30:53-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 21.6,
-  "minutes": 74,
-  "delay_minutes": 3,
+  "miles": 21.9,
+  "minutes": 75,
+  "delay_minutes": 4,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 22.6,
-    "minutes": 66,
+    "miles": 25.5,
+    "minutes": 65,
     "toll": true,
-    "saves": 8
+    "saves": 10
    },
    {
-    "miles": 26.4,
-    "minutes": 67,
+    "miles": 22.6,
+    "minutes": 68,
     "toll": true,
     "saves": 7
    },
    {
-    "miles": 21.8,
+    "miles": 22.1,
     "minutes": 71,
     "toll": true,
-    "saves": 3
+    "saves": 4
    },
    {
     "miles": 23.9,
-    "minutes": 77,
+    "minutes": 76,
     "toll": true,
-    "saves": -3
+    "saves": -1
    }
   ],
   "alternates_worth_taking": [],
   "free_alternates": [
    {
-    "miles": 21.6,
-    "minutes": 74,
-    "delay_minutes": 3,
+    "miles": 21.9,
+    "minutes": 75,
+    "delay_minutes": 4,
     "saves": 0
    },
    {
-    "miles": 23.7,
-    "minutes": 84,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 23.1,
-    "minutes": 87,
-    "delay_minutes": 5
+    "miles": 23.4,
+    "minutes": 83,
+    "delay_minutes": 6
    },
    {
     "miles": 22.5,
     "minutes": 81,
     "delay_minutes": 2
+   },
+   {
+    "miles": 23.1,
+    "minutes": 89,
+    "delay_minutes": 4
    }
   ],
   "best_free": {
-   "miles": 21.6,
-   "minutes": 74,
-   "delay_minutes": 3,
+   "miles": 21.9,
+   "minutes": 75,
+   "delay_minutes": 4,
    "saves": 0
   },
   "incidents": [],
@@ -308,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-18T16:19:19-04:00",
+  "fetched_at": "2026-09-18T16:30:54-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -347,7 +299,6 @@
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 18 2026, 5:44 AM",
    "Northeast | Alachua | Gainesville: there is lane blocking construction on SR-26 from SE 14th Street to SE 24th Street. There is also lane blocking construction on SR-24 from SE 2nd Street to SR-26 lasting until October 10th. Use caution in these areas and follow posted detours. | Sep 18 2026, 5:44 AM",
-   "Northeast | Union | Crescent City: Due to a crash all SB lanes are blocked on US-17 at Crawford Rd. Use caution in the area. | Sep 18 2026, 7:30 AM",
    "Northeast | Duval | Jacksonville: There is lane blocking construction on 103rd St between Monroe Smith and Connie Jean. Use caution in the area. | Sep 18 2026, 9:43 AM",
    "Northeast | St. Johns | St Augustine: Due to a crash all NB lanes are blocked on US-1 at Las Calinas Blvd. Use caution in the area. | Sep 18 2026, 11:58 AM",
    "Southeast | Broward | Wet roads and rainy conditions may cause intermittent slow traffic in Broward County. Please use caution. | Sep 18 2026, 1:15 PM",
@@ -361,7 +312,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-18T16:19:19-04:00",
+  "fetched_at": "2026-09-18T16:30:54-04:00",
   "issued": "200 PM EDT Fri Sep 18 2026",
   "areas": [
    {
@@ -375,7 +326,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-18T16:19:19-04:00",
+  "fetched_at": "2026-09-18T16:30:54-04:00",
   "florida": "$4.3326",
   "national": "$4.4687",
   "diesel": "$6.3492",
@@ -384,7 +335,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-18T16:19:21-04:00",
+  "fetched_at": "2026-09-18T16:30:55-04:00",
   "streams": {
    "local": [
     {
@@ -757,7 +708,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-18T16:19:21-04:00",
+  "fetched_at": "2026-09-18T16:30:55-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -765,7 +716,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (383) + USGS (15)",
-  "fetched_at": "2026-09-18T16:19:25-04:00",
+  "fetched_at": "2026-09-18T16:30:59-04:00",
   "events": [
    {
     "lat": 23.0215374,
@@ -996,16 +947,16 @@
     "source": "USGS"
    },
    {
-    "lat": -5.6852,
-    "lon": 130.7378,
+    "lat": 4.5042,
+    "lon": -76.7978,
     "kind": "earthquake",
     "level": "green",
-    "title": "M4.6 — 223 km W of Tual, Indonesia",
-    "place": "223 km W of Tual, Indonesia",
-    "severity": "M4.6",
-    "mag": 4.6,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ti5v",
-    "when": 1789676626165,
+    "title": "M4.5 — 23 km SW of Sipí, Colombia",
+    "place": "23 km SW of Sipí, Colombia",
+    "severity": "M4.5",
+    "mag": 4.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tie4",
+    "when": 1789756882677,
     "source": "USGS"
    },
    {
@@ -1203,13 +1154,13 @@
     "source": "GDACS"
    },
    {
-    "lat": 25.4,
-    "lon": 141.7,
+    "lat": 26.2,
+    "lon": 140.7,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone DUJUAN-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
     "place": "Japan",
-    "severity": "Tropical Storm (maximum wind speed of 120 km/h)",
+    "severity": "Hurricane/Typhoon > 74 mph (maximum wind speed of 120 km/h)",
     "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001322",
     "when": "Tue, 15 Sep 2026 14:22:03 GMT",
     "source": "GDACS"
@@ -2235,7 +2186,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-18T16:19:25-04:00",
+  "fetched_at": "2026-09-18T16:30:59-04:00",
   "countries": [
    {
     "iso": "COL",
