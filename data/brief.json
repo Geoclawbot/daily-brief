@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-18T13:15:37-04:00",
- "generated_at_utc": "2026-09-18T17:15:37+00:00",
+ "generated_at": "2026-09-18T13:30:51-04:00",
+ "generated_at_utc": "2026-09-18T17:30:51+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 18",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-18T13:15:37-04:00",
+  "fetched_at": "2026-09-18T13:30:51-04:00",
   "curve": [
    {
     "time": "2026-09-18T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 88.8,
-   "feels": 95.0,
-   "humidity": 64,
-   "wind_mph": 11.9,
-   "wind_dir": 64,
-   "observed_at": "2026-09-18T13:15"
+   "temp": 86.7,
+   "feels": 91.5,
+   "humidity": 69,
+   "wind_mph": 14.7,
+   "wind_dir": 68,
+   "observed_at": "2026-09-18T13:30"
   },
   "today": {
    "high": 89.7,
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-18T13:15:38-04:00",
+  "fetched_at": "2026-09-18T13:30:52-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-18T13:15:39-04:00",
-  "aqi": 22,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-18T13:31:18-04:00",
+  "aqi": 37,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-18 12:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-18",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-18",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-19",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 7.8,
+  "pm10": 9.9,
+  "observed": "2026-09-18T13:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-18T13:15:41-04:00",
+  "fetched_at": "2026-09-18T13:31:20-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
@@ -217,7 +193,7 @@
   "depart_at": "2026-09-18T15:30:00-04:00",
   "miles": 20.6,
   "minutes": 65,
-  "delay_minutes": 1,
+  "delay_minutes": 2,
   "toll_free": true,
   "alternates": [
    {
@@ -228,9 +204,9 @@
    },
    {
     "miles": 28.6,
-    "minutes": 62,
+    "minutes": 63,
     "toll": true,
-    "saves": 3
+    "saves": 2
    },
    {
     "miles": 25.5,
@@ -250,7 +226,7 @@
    {
     "miles": 20.6,
     "minutes": 65,
-    "delay_minutes": 1,
+    "delay_minutes": 2,
     "saves": 0
    },
    {
@@ -272,7 +248,7 @@
   "best_free": {
    "miles": 20.6,
    "minutes": 65,
-   "delay_minutes": 1,
+   "delay_minutes": 2,
    "saves": 0
   },
   "incidents": [],
@@ -284,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-18T13:15:42-04:00",
+  "fetched_at": "2026-09-18T13:31:21-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -325,28 +301,31 @@
    "Northeast | Alachua | Gainesville: there is lane blocking construction on SR-26 from SE 14th Street to SE 24th Street. There is also lane blocking construction on SR-24 from SE 2nd Street to SR-26 lasting until October 10th. Use caution in these areas and follow posted detours. | Sep 18 2026, 5:44 AM",
    "Northeast | Union | Crescent City: Due to a crash all SB lanes are blocked on US-17 at Crawford Rd. Use caution in the area. | Sep 18 2026, 7:30 AM",
    "Northeast | Duval | Jacksonville: There is lane blocking construction on 103rd St between Monroe Smith and Connie Jean. Use caution in the area. | Sep 18 2026, 9:43 AM",
-   "Northeast | St. Johns | St Augustine: Due to a crash all NB lanes are blocked on US-1 at Las Calinas Blvd. Use caution in the area. | Sep 18 2026, 11:58 AM"
+   "Northeast | St. Johns | St Augustine: Due to a crash all NB lanes are blocked on US-1 at Las Calinas Blvd. Use caution in the area. | Sep 18 2026, 11:58 AM",
+   "Southeast | Broward | Wet roads and rainy conditions may cause intermittent slow traffic in Broward County. Please use caution. | Sep 18 2026, 1:15 PM"
   ],
-  "fl511_local": []
+  "fl511_local": [
+   "Southeast | Broward | Wet roads and rainy conditions may cause intermittent slow traffic in Broward County. Please use caution. | Sep 18 2026, 1:15 PM"
+  ]
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-18T13:15:42-04:00",
-  "issued": "1030 AM EDT Fri Sep 18 2026",
+  "fetched_at": "2026-09-18T13:31:21-04:00",
+  "issued": "200 PM EDT Fri Sep 18 2026",
   "areas": [
    {
-    "text": "Eastern Subtropical Atlantic (AL99): Recent satellite imagery indicates that showers and thunderstorms are becoming better organized in association with an area of low pressure located several hundred miles southwest of the Azores. In addition, it appears that a well-defined center is developing. If these current trend",
-    "chance_48h": 60,
-    "chance_7d": 60
+    "text": "Eastern Subtropical Atlantic (AL99): Showers and thunderstorms have changed little in organization since this morning in association with an area of low pressure located several hundred miles southwest of the Azores. However, just a small increase in organization is likely to result in the formation of a tropical depre",
+    "chance_48h": 70,
+    "chance_7d": 70
    }
   ],
-  "raw": "en Español\n\n000\nABNT20 KNHC 181428\nTWOAT \n\nSpecial Tropical Weather Outlook\nNWS National Hurricane Center Miami FL\nIssued by the NWS Weather Prediction Center College Park MD\n1030 AM EDT Fri Sep 18 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nSpecial outlook to update information on the area of low pressure \nlocated southwest of the Azores (AL99) and to remove AL98 from the \noutlook. \n\nEastern Subtropical Atlantic (AL99):\nRecent satellite imagery indicates that showers and thunderstorms \nare becoming better organized in association with an area of low \npressure located several hundred miles southwest of the Azores. In \naddition, it appears that a well-defined center is developing. If \nthese current trends continue, a tropical depression could form as \nsoon as later this afternoon. The system is expected to move slowly \nover the next several days remaining to the southwest of the Azores.\n* Formation chance through 48 hours...medium...60 percent.\n* Formation chance through 7 days...medium...60 percent.\n\n$$\nForecaster Papin/Snell/Blake/Mahoney"
+  "raw": "en Español\n\n713 \nABNT20 KNHC 181726\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Fri Sep 18 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nEastern Subtropical Atlantic (AL99):\nShowers and thunderstorms have changed little in organization since \nthis morning in association with an area of low pressure located \nseveral hundred miles southwest of the Azores. However, just a small \nincrease in organization is likely to result in the formation of a \ntropical depression as soon as later today. The system is expected \nto move slowly over the next couple of days remaining southwest of \nthe Azores, followed by a turn to the southwest by early next week, \nwhen environmental conditions are forecast to become less favorable \nfor additional development. \n* Formation chance through 48 hours...high...70 percent.\n* Formation chance through 7 days...high...70 percent.\n\n$$\nForecaster Papin"
  },
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-18T13:15:42-04:00",
+  "fetched_at": "2026-09-18T13:31:21-04:00",
   "florida": "$4.3326",
   "national": "$4.4687",
   "diesel": "$6.3492",
@@ -355,7 +334,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-18T13:15:44-04:00",
+  "fetched_at": "2026-09-18T13:31:23-04:00",
   "streams": {
    "local": [
     {
@@ -464,6 +443,22 @@
   ],
   "local": [
    {
+    "title": "Community reacts after man killed during altercation with FDLE agent in southwest Miami-Dade",
+    "url": "https://www.local10.com/news/local/2026/09/18/community-reacts-after-man-killed-during-altercation-with-fdle-agent-in-southwest-miami-dade/",
+    "published": "Fri, 18 Sep 2026 17:25:41 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Man, woman stabbed at Florida City apartment complex, police say",
+    "url": "https://www.local10.com/news/local/2026/09/18/multiple-people-found-injured-after-stabbing-reported-at-florida-city-apartment-complex/",
+    "published": "Fri, 18 Sep 2026 11:17:55 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Woman critically injured in dog attack in Biscayne Gardens, deputies say",
     "url": "https://www.local10.com/news/local/2026/09/18/woman-critically-injured-in-dog-attack-in-biscayne-gardens-deputies-say/",
     "published": "Fri, 18 Sep 2026 14:27:14 +0000",
@@ -475,14 +470,6 @@
     "title": "Teen shot in southwest Miami-Dade neighborhood, deputies say",
     "url": "https://www.local10.com/news/local/2026/09/17/juvenile-shot-in-southwest-miami-dade-neighborhood-deputies-say/",
     "published": "Fri, 18 Sep 2026 02:58:16 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Man, woman stabbed at Florida City apartment complex, police say",
-    "url": "https://www.local10.com/news/local/2026/09/18/multiple-people-found-injured-after-stabbing-reported-at-florida-city-apartment-complex/",
-    "published": "Fri, 18 Sep 2026 11:17:55 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -520,51 +507,11 @@
     "media_type": "image"
    },
    {
-    "title": "Miami-Dade commissioners weigh sheriff funding, transit cuts in proposed budget",
-    "url": "https://www.local10.com/news/local/2026/09/17/miami-dade-commissioners-weigh-sheriff-funding-transit-cuts-in-proposed-budget/",
-    "published": "Fri, 18 Sep 2026 02:26:10 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Former M-DCPS elementary school teacher denied bond; prosecutors expected to file more charges",
-    "url": "https://wsvn.com/news/local/miami-dade/former-m-dcps-elementary-school-teacher-denied-bond-prosecutors-expected-to-file-more-charges/",
-    "published": "Thu, 17 Sep 2026 22:00:56 +0000",
+    "title": "Former Hurricanes wide receiver Mark Pope faces judge after arrest on battery, robbery charges",
+    "url": "https://wsvn.com/sports/college/miami-hurricanes/former-hurricanes-wide-receiver-mark-pope-faces-judge-after-arrest-on-battery-robbery-charges/",
+    "published": "Fri, 18 Sep 2026 17:24:01 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/d79f57a4-4287-4d36-8348-294e422dc626/455710d8-6926-46e6-ae8b-56ea22f11ada/main.mp4?fastly_token=NmFhY2JiMWZfZmU5NDZkZDc3OTgwZTA1Y2Q5ZjMwZmQ3YTIzOTQyMDBmZmQ3NWJkNzQxMzhjNzczNWI1Y2IyMDEyNTU0ODExMl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kNzlmNTdhNC00Mjg3LTRkMzYtODM0OC0yOTRlNDIyZGM2MjYvNDU1NzEwZDgtNjkyNi00NmU2LWFlOGItNTZlYTIyZjExYWRhL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Man, woman stable after stabbing in Florida City; suspect arrested",
-    "url": "https://wsvn.com/news/local/miami-dade/man-woman-stable-after-stabbing-in-florida-city-suspect-arrested/",
-    "published": "Fri, 18 Sep 2026 10:08:07 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/4b07de7f-c1d0-40ed-84ac-1360147faba9/c059b402-c518-4b00-aea8-2b14e786c342/main.mp4?fastly_token=NmFhZGE0MjVfYTEwZGUxN2NkNjk5OTc5OGU5MWVkYjBjOTQ4ZDk2OGE2YzdiNTFhNjJlMTJlNTYyN2QzZGFhMzRjMWRhZjQ0Yl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS80YjA3ZGU3Zi1jMWQwLTQwZWQtODRhYy0xMzYwMTQ3ZmFiYTkvYzA1OWI0MDItYzUxOC00YjAwLWFlYTgtMmIxNGU3ODZjMzQyL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Mother, son arrested after 8-year-old reports being beaten with belt",
-    "url": "https://wsvn.com/news/local/miami-dade/mother-son-arrested-after-8-year-old-reports-being-beaten-with-belt/",
-    "published": "Thu, 17 Sep 2026 19:52:06 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Jamaury-Elijah-Benoit-Rebecca-Bouie.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Residents line up for food distribution event in Miami Beach amid rising costs",
-    "url": "https://wsvn.com/news/local/miami-dade/residents-line-up-for-food-distribution-event-in-miami-beach-amid-rising-costs/",
-    "published": "Thu, 17 Sep 2026 23:35:38 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/23c77f9d-5d4c-4a63-a1cc-00357733cdcc/29997fc6-2f62-4981-8359-0e3c2a8cf134/main.mp4?fastly_token=NmFhY2QxZTVfYWVhYjQwNTZmZThkOGRlOWM0ZWNmMmI5M2E2ZmZjMTk3N2FlOTlkYmMwNzY0NzgwNWJiNjIwZmJmMTAwYjUyZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yM2M3N2Y5ZC01ZDRjLTRhNjMtYTFjYy0wMDM1NzczM2NkY2MvMjk5OTdmYzYtMmY2Mi00OTgxLTgzNTktMGUzYzJhOGNmMTM0L21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Man accused of escaping police custody at Mount Sinai Medical Center",
-    "url": "https://wsvn.com/news/local/miami-dade/man-facing-multiple-charges-after-escaping-police-custody-at-mount-sinai-in-miami-beach/",
-    "published": "Fri, 18 Sep 2026 16:42:15 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b5c18fa8-7123-452d-aaf5-60fd381d5cf7/5b642ce1-4adf-43f5-b73c-df4b03755610/main.mp4?fastly_token=NmFhZGMxZjlfMzhmMTZkOTM5MzJlMjY2M2QxMzBkOWVhOTk2YTk4N2VhNDBlMGNhZWJmM2MyOWNjNTJkNmRjODhhOTY1ODZkY18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iNWMxOGZhOC03MTIzLTQ1MmQtYWFmNS02MGZkMzgxZDVjZjcvNWI2NDJjZTEtNGFkZi00M2Y1LWI3M2MtZGY0YjAzNzU1NjEwL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/5445b2d4-fd37-4c63-a84d-8d40690d5ae5/953da7b4-9a1d-4da7-a153-d846625da3f6/main.mp4?fastly_token=NmFhZGNiYjBfNzI5ZTdhZDI2ZDk3OGQ2ZmY0YWMwNDIyOTRlODYxMGFlYTRjOTgyM2JmNmIxZDNjZWQzMjZlYzgzM2E5NGMxNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81NDQ1YjJkNC1mZDM3LTRjNjMtYTg0ZC04ZDQwNjkwZDVhZTUvOTUzZGE3YjQtOWExZC00ZGE3LWExNTMtZDg0NjYyNWRhM2Y2L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -584,11 +531,43 @@
     "media_type": "video"
    },
    {
-    "title": "In break with Trump, US Rep. Maria Elvira Salazar says his immigration polices have gone too far",
-    "url": "https://wsvn.com/news/politics/in-break-with-trump-us-rep-maria-elvira-salazar-says-his-immigration-polices-have-gone-too-far/",
-    "published": "Fri, 18 Sep 2026 02:52:33 +0000",
+    "title": "Residents line up for food distribution event in Miami Beach amid rising costs",
+    "url": "https://wsvn.com/news/local/miami-dade/residents-line-up-for-food-distribution-event-in-miami-beach-amid-rising-costs/",
+    "published": "Thu, 17 Sep 2026 23:35:38 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/2f6abf2d-f6cc-4acd-82e0-0d82e1316062/64343d97-586c-4b0e-8809-2e4ce2e19a96/main.mp4?fastly_token=NmFhZDAwMjdfM2ZjNTdjMDdhNzkxNDgzNWEzM2FmNTNmZWFmM2Q1MDcxYzM2ZTI3M2JkZjdmODU3ZDY5Yzg5NjFjNmRjNGIwNl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yZjZhYmYyZC1mNmNjLTRhY2QtODJlMC0wZDgyZTEzMTYwNjIvNjQzNDNkOTctNTg2Yy00YjBlLTg4MDktMmU0Y2UyZTE5YTk2L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/23c77f9d-5d4c-4a63-a1cc-00357733cdcc/29997fc6-2f62-4981-8359-0e3c2a8cf134/main.mp4?fastly_token=NmFhY2QxZTVfYWVhYjQwNTZmZThkOGRlOWM0ZWNmMmI5M2E2ZmZjMTk3N2FlOTlkYmMwNzY0NzgwNWJiNjIwZmJmMTAwYjUyZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yM2M3N2Y5ZC01ZDRjLTRhNjMtYTFjYy0wMDM1NzczM2NkY2MvMjk5OTdmYzYtMmY2Mi00OTgxLTgzNTktMGUzYzJhOGNmMTM0L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Former Hurricanes wide receiver Mark Pope faces judge after arrest on battery, robbery charges",
+    "url": "https://wsvn.com/sports/college/miami-hurricanes/former-hurricanes-wide-receiver-mark-pope-faces-judge-after-arrest-on-battery-robbery-charges/",
+    "published": "Fri, 18 Sep 2026 17:24:01 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/5445b2d4-fd37-4c63-a84d-8d40690d5ae5/953da7b4-9a1d-4da7-a153-d846625da3f6/main.mp4?fastly_token=NmFhZGNiYjBfNzI5ZTdhZDI2ZDk3OGQ2ZmY0YWMwNDIyOTRlODYxMGFlYTRjOTgyM2JmNmIxZDNjZWQzMjZlYzgzM2E5NGMxNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81NDQ1YjJkNC1mZDM3LTRjNjMtYTg0ZC04ZDQwNjkwZDVhZTUvOTUzZGE3YjQtOWExZC00ZGE3LWExNTMtZDg0NjYyNWRhM2Y2L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Video shows vicious attack involving terrier mixes that left woman critical; woman who takes care of dogs speaks out",
+    "url": "https://wsvn.com/news/local/miami-dade/video-shows-vicious-attack-involving-terrier-mixes-that-left-woman-critical-woman-who-takes-care-of-dogs-speaks-out/",
+    "published": "Fri, 18 Sep 2026 17:00:05 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/fb1200ae-9bd0-4b31-85d9-bfe9d3560026/00733e0e-3224-4aab-86e6-1ac45f38c2d1/main.mp4?fastly_token=NmFhZGM2ZWNfNzRjZmNiY2Y3YmI4MzVjYjE3MjZiMjU2MDgxODBmZmQxMmM2OTdlYzQxMDU3YjJmMTFjNGYyYjM1MWNhZjczNl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9mYjEyMDBhZS05YmQwLTRiMzEtODVkOS1iZmU5ZDM1NjAwMjYvMDA3MzNlMGUtMzIyNC00YWFiLTg2ZTYtMWFjNDVmMzhjMmQxL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "FDLE agent involved in fatal SW Miami-Dade shooting says he was forced to fire; deputies ID victim",
+    "url": "https://wsvn.com/news/local/miami-dade/fdle-agent-involved-in-fatal-sw-miami-dade-shooting-says-he-was-forced-to-fire-deputies-id-victim/",
+    "published": "Fri, 18 Sep 2026 16:48:41 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b637b805-39d4-4e89-9527-7fa1832391ec/2db51d7b-b0a5-4788-83dc-48e6ea6e61f2/main.mp4?fastly_token=NmFhZGM0YjBfNDE0NWQzZTlhZmJkN2I2MGYwZjczNjg2MWEwNDdhYzY3ZmQ1YzIzMDg1MWQxODJmZGNhNTc0YWIwM2E2ZGE5Yl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iNjM3YjgwNS0zOWQ0LTRlODktOTUyNy03ZmExODMyMzkxZWMvMmRiNTFkN2ItYjBhNS00Nzg4LTgzZGMtNDhlNmVhNmU2MWYyL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Man accused of escaping police custody at Mount Sinai Medical Center facing multiple charges",
+    "url": "https://wsvn.com/news/local/miami-dade/man-accused-of-escaping-police-custody-at-mount-sinai-medical-center-facing-multiple-charges/",
+    "published": "Fri, 18 Sep 2026 16:42:15 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b5c18fa8-7123-452d-aaf5-60fd381d5cf7/5b642ce1-4adf-43f5-b73c-df4b03755610/main.mp4?fastly_token=NmFhZGMyYjVfYzhjNjRhM2I5ZmI4ZGY3NWNhMmU3N2U0YzkzZWQyOTA0YWFjMGRhYmExNzg5N2ZjMGZjMWFjNDUxZTc3MmU2MF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iNWMxOGZhOC03MTIzLTQ1MmQtYWFmNS02MGZkMzgxZDVjZjcvNWI2NDJjZTEtNGFkZi00M2Y1LWI3M2MtZGY0YjAzNzU1NjEwL21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -728,7 +707,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-18T13:15:44-04:00",
+  "fetched_at": "2026-09-18T13:31:24-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -736,7 +715,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (348) + USGS (16)",
-  "fetched_at": "2026-09-18T13:15:47-04:00",
+  "fetched_at": "2026-09-18T13:31:28-04:00",
   "events": [
    {
     "lat": 23.0215374,
@@ -2207,7 +2186,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-18T13:15:47-04:00",
+  "fetched_at": "2026-09-18T13:31:28-04:00",
   "countries": [
    {
     "iso": "COL",
