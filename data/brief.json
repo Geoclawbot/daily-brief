@@ -1,63 +1,264 @@
 {
- "generated_at": "2026-09-18T17:30:51-04:00",
- "generated_at_utc": "2026-09-18T21:30:51+00:00",
+ "generated_at": "2026-09-18T17:34:00-04:00",
+ "generated_at_utc": "2026-09-18T21:34:00+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 18",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-09-18T17:30:52-04:00",
-  "error": "429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpreci"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-09-18T17:34:00-04:00",
+  "curve": [
+   {
+    "time": "2026-09-18T05:00",
+    "hour": 5,
+    "temp": 76.0,
+    "feels": 85.3,
+    "humidity": 94,
+    "pop": 5
+   },
+   {
+    "time": "2026-09-18T06:00",
+    "hour": 6,
+    "temp": 76.6,
+    "feels": 85.9,
+    "humidity": 90,
+    "pop": 5
+   },
+   {
+    "time": "2026-09-18T07:00",
+    "hour": 7,
+    "temp": 76.5,
+    "feels": 86.1,
+    "humidity": 90,
+    "pop": 9
+   },
+   {
+    "time": "2026-09-18T08:00",
+    "hour": 8,
+    "temp": 76.9,
+    "feels": 86.5,
+    "humidity": 89,
+    "pop": 12
+   },
+   {
+    "time": "2026-09-18T09:00",
+    "hour": 9,
+    "temp": 80.2,
+    "feels": 90.0,
+    "humidity": 87,
+    "pop": 8
+   },
+   {
+    "time": "2026-09-18T10:00",
+    "hour": 10,
+    "temp": 84.5,
+    "feels": 97.4,
+    "humidity": 83,
+    "pop": 11
+   },
+   {
+    "time": "2026-09-18T11:00",
+    "hour": 11,
+    "temp": 86.4,
+    "feels": 99.6,
+    "humidity": 79,
+    "pop": 17
+   },
+   {
+    "time": "2026-09-18T12:00",
+    "hour": 12,
+    "temp": 90.4,
+    "feels": 98.0,
+    "humidity": 59,
+    "pop": 8
+   },
+   {
+    "time": "2026-09-18T13:00",
+    "hour": 13,
+    "temp": 84.3,
+    "feels": 90.8,
+    "humidity": 73,
+    "pop": 16
+   },
+   {
+    "time": "2026-09-18T14:00",
+    "hour": 14,
+    "temp": 77.3,
+    "feels": 83.1,
+    "humidity": 75,
+    "pop": 43
+   },
+   {
+    "time": "2026-09-18T15:00",
+    "hour": 15,
+    "temp": 76.6,
+    "feels": 83.4,
+    "humidity": 88,
+    "pop": 61
+   },
+   {
+    "time": "2026-09-18T16:00",
+    "hour": 16,
+    "temp": 76.5,
+    "feels": 81.2,
+    "humidity": 86,
+    "pop": 78
+   },
+   {
+    "time": "2026-09-18T17:00",
+    "hour": 17,
+    "temp": 76.6,
+    "feels": 84.7,
+    "humidity": 87,
+    "pop": 68
+   },
+   {
+    "time": "2026-09-18T18:00",
+    "hour": 18,
+    "temp": 71.8,
+    "feels": 75.1,
+    "humidity": 86,
+    "pop": 52
+   },
+   {
+    "time": "2026-09-18T19:00",
+    "hour": 19,
+    "temp": 72.5,
+    "feels": 76.0,
+    "humidity": 88,
+    "pop": 43
+   },
+   {
+    "time": "2026-09-18T20:00",
+    "hour": 20,
+    "temp": 72.8,
+    "feels": 78.4,
+    "humidity": 91,
+    "pop": 21
+   },
+   {
+    "time": "2026-09-18T21:00",
+    "hour": 21,
+    "temp": 73.2,
+    "feels": 78.8,
+    "humidity": 92,
+    "pop": 18
+   }
+  ],
+  "current": {
+   "temp": 73.3,
+   "feels": 78.6,
+   "humidity": 86,
+   "wind_mph": 4.7,
+   "wind_dir": 295,
+   "observed_at": "2026-09-18T17:30"
+  },
+  "today": {
+   "high": 90.4,
+   "low": 71.8,
+   "feels_max": 99.6,
+   "pop_max": 78
+  },
+  "peak_feels": 99.6,
+  "peak_hour": 11
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-18T17:30:52-04:00",
+  "fetched_at": "2026-09-18T17:34:01-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-18T17:30:53-04:00",
-  "aqi": 39,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-18T17:34:02-04:00",
+  "aqi": 37,
   "category": "Good",
-  "pm25": 6.6,
-  "pm10": 7.7,
-  "observed": "2026-09-18T17:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-18 16:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-18",
+    "aqi": 27,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-18",
+    "aqi": 37,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-19",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-19",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-20",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-20",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-21",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-21",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-18T17:30:56-04:00",
+  "fetched_at": "2026-09-18T17:34:04-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 23.3,
-  "minutes": 76,
+  "miles": 23.9,
+  "minutes": 75,
   "delay_minutes": 0,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 25.3,
-    "minutes": 58,
+    "miles": 25.5,
+    "minutes": 57,
     "toll": true,
     "saves": 18
    },
    {
     "miles": 22.6,
-    "minutes": 67,
+    "minutes": 64,
     "toll": true,
-    "saves": 9
+    "saves": 11
    },
    {
-    "miles": 45.4,
-    "minutes": 63,
+    "miles": 45.5,
+    "minutes": 62,
     "toll": true,
     "saves": 13
    },
@@ -65,49 +266,55 @@
     "miles": 28.8,
     "minutes": 69,
     "toll": true,
-    "saves": 7
+    "saves": 6
    }
   ],
   "alternates_worth_taking": [
    {
-    "miles": 25.3,
-    "minutes": 58,
+    "miles": 25.5,
+    "minutes": 57,
     "toll": true,
     "saves": 18
    },
    {
-    "miles": 45.4,
-    "minutes": 63,
+    "miles": 22.6,
+    "minutes": 64,
+    "toll": true,
+    "saves": 11
+   },
+   {
+    "miles": 45.5,
+    "minutes": 62,
     "toll": true,
     "saves": 13
    }
   ],
   "free_alternates": [
    {
-    "miles": 23.3,
-    "minutes": 76,
+    "miles": 23.9,
+    "minutes": 75,
     "delay_minutes": 0,
     "saves": 0
    },
    {
-    "miles": 24.0,
-    "minutes": 77,
-    "delay_minutes": 1
-   },
-   {
-    "miles": 22.5,
-    "minutes": 76,
-    "delay_minutes": 15
-   },
-   {
     "miles": 23.3,
-    "minutes": 81,
-    "delay_minutes": 6
+    "minutes": 77,
+    "delay_minutes": 10
+   },
+   {
+    "miles": 23.1,
+    "minutes": 77,
+    "delay_minutes": 4
+   },
+   {
+    "miles": 30.8,
+    "minutes": 83,
+    "delay_minutes": 2
    }
   ],
   "best_free": {
-   "miles": 23.3,
-   "minutes": 76,
+   "miles": 23.9,
+   "minutes": 75,
    "delay_minutes": 0,
    "saves": 0
   },
@@ -120,7 +327,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-18T17:30:57-04:00",
+  "fetched_at": "2026-09-18T17:34:06-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -173,7 +380,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-18T17:30:57-04:00",
+  "fetched_at": "2026-09-18T17:34:06-04:00",
   "issued": "200 PM EDT Fri Sep 18 2026",
   "areas": [
    {
@@ -187,7 +394,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-18T17:30:58-04:00",
+  "fetched_at": "2026-09-18T17:34:06-04:00",
   "florida": "$4.3326",
   "national": "$4.4687",
   "diesel": "$6.3492",
@@ -196,7 +403,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-18T17:30:59-04:00",
+  "fetched_at": "2026-09-18T17:34:07-04:00",
   "streams": {
    "local": [
     {
@@ -435,11 +642,11 @@
   ],
   "colombia": [
    {
-    "title": "El presunto responsable del asesinato Medellín de 'La Reina', suegra del cantante Pipe Calderón, fue capturado en Colombia tras ser detenido en Panamá",
+    "title": "Presunto responsable del asesinato en Medellín de 'La Reina', suegra del cantante Pipe Calderón, fue capturado en Colombia tras ser detenido en Panamá",
     "url": "https://www.eltiempo.com/colombia/medellin/el-presunto-responsable-del-asesinato-medellin-de-la-reina-suegra-del-cantante-pipe-calderon-fue-capturado-en-colombia-tras-ser-detenido-en-panama-3587174",
-    "published": "2026-09-18T16:08:40-05:00",
+    "published": "2026-09-18T16:20:19-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/18/6aada7c98de55.png",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/18/6aada7c98de55.r_d.1709-446-0.png",
     "media_type": "image"
    },
    {
@@ -569,7 +776,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-18T17:31:00-04:00",
+  "fetched_at": "2026-09-18T17:34:07-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -577,7 +784,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (383) + USGS (14)",
-  "fetched_at": "2026-09-18T17:31:03-04:00",
+  "fetched_at": "2026-09-18T17:34:10-04:00",
   "events": [
    {
     "lat": 23.0215374,
@@ -2046,16 +2253,16 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-18T17:31:03-04:00",
+  "fetched_at": "2026-09-18T17:34:10-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
      {
-      "title": "El presunto responsable del asesinato Medellín de 'La Reina', suegra del cantante Pipe Calderón, fue capturado en Colombia tras ser detenido en Panamá",
+      "title": "Presunto responsable del asesinato en Medellín de 'La Reina', suegra del cantante Pipe Calderón, fue capturado en Colombia tras ser detenido en Panamá",
       "url": "https://www.eltiempo.com/colombia/medellin/el-presunto-responsable-del-asesinato-medellin-de-la-reina-suegra-del-cantante-pipe-calderon-fue-capturado-en-colombia-tras-ser-detenido-en-panama-3587174",
-      "published": "2026-09-18T16:08:40-05:00",
+      "published": "2026-09-18T16:20:19-05:00",
       "section": "colombia"
      },
      {
@@ -2072,7 +2279,7 @@
      }
     ],
     "count": 3,
-    "issue": "El presunto responsable del asesinato Medellín de 'La Reina', suegra del cantante Pipe Calderón, fue capturado en Colombia tras ser detenido en Panamá"
+    "issue": "Presunto responsable del asesinato en Medellín de 'La Reina', suegra del cantante Pipe Calderón, fue capturado en Colombia tras ser detenido en Panamá"
    },
    {
     "iso": "HTI",
@@ -2205,8 +2412,6 @@
   "countries_matched": 10,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
