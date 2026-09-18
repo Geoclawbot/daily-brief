@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-18T19:30:32-04:00",
- "generated_at_utc": "2026-09-18T23:30:32+00:00",
+ "generated_at": "2026-09-18T19:45:42-04:00",
+ "generated_at_utc": "2026-09-18T23:45:42+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 18",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-18T19:30:33-04:00",
+  "fetched_at": "2026-09-18T19:45:43-04:00",
   "curve": [
    {
     "time": "2026-09-18T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 75.4,
-   "feels": 81.2,
+   "temp": 75.1,
+   "feels": 81.1,
    "humidity": 89,
-   "wind_mph": 7.8,
-   "wind_dir": 13,
-   "observed_at": "2026-09-18T19:30"
+   "wind_mph": 6.7,
+   "wind_dir": 345,
+   "observed_at": "2026-09-18T19:45"
   },
   "today": {
    "high": 90.4,
@@ -166,26 +166,74 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-18T19:30:33-04:00",
+  "fetched_at": "2026-09-18T19:45:43-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-18T19:30:59-04:00",
-  "aqi": 40,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-18T19:45:44-04:00",
+  "aqi": 31,
   "category": "Good",
-  "pm25": 7.5,
-  "pm10": 8.2,
-  "observed": "2026-09-18T19:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-18 18:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-18",
+    "aqi": 27,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-18",
+    "aqi": 37,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-19",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-19",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-20",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-20",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-21",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-21",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-18T19:31:00-04:00",
+  "fetched_at": "2026-09-18T19:45:45-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +246,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-18T19:31:00-04:00",
+  "fetched_at": "2026-09-18T19:45:45-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -246,21 +294,21 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-18T19:31:01-04:00",
-  "issued": "200 PM EDT Fri Sep 18 2026",
+  "fetched_at": "2026-09-18T19:45:45-04:00",
+  "issued": "800 PM EDT Fri Sep 18 2026",
   "areas": [
    {
-    "text": "Eastern Subtropical Atlantic (AL99): Showers and thunderstorms have changed little in organization since this morning in association with an area of low pressure located several hundred miles southwest of the Azores. However, just a small increase in organization is likely to result in the formation of a tropical depre",
-    "chance_48h": 70,
-    "chance_7d": 70
+    "text": "Eastern Subtropical Atlantic (AL99): Showers and thunderstorms associated with the low pressure system located several hundred miles southwest of the Azores have become more concentrated during the past few hours, and a tropical depression could form later tonight or on Saturday. The system is expected to move slowly o",
+    "chance_48h": 80,
+    "chance_7d": 80
    }
   ],
-  "raw": "en Español\n\n713 \nABNT20 KNHC 181726\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Fri Sep 18 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nEastern Subtropical Atlantic (AL99):\nShowers and thunderstorms have changed little in organization since \nthis morning in association with an area of low pressure located \nseveral hundred miles southwest of the Azores. However, just a small \nincrease in organization is likely to result in the formation of a \ntropical depression as soon as later today. The system is expected \nto move slowly over the next couple of days remaining southwest of \nthe Azores, followed by a turn to the southwest by early next week, \nwhen environmental conditions are forecast to become less favorable \nfor additional development. \n* Formation chance through 48 hours...high...70 percent.\n* Formation chance through 7 days...high...70 percent.\n\n$$\nForecaster Papin"
+  "raw": "en Español\n\n406 \nABNT20 KNHC 182343\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Fri Sep 18 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nEastern Subtropical Atlantic (AL99):\nShowers and thunderstorms associated with the low pressure system \nlocated several hundred miles southwest of the Azores have become \nmore concentrated during the past few hours, and a tropical \ndepression could form later tonight or on Saturday. The system is \nexpected to move slowly over the next couple of days remaining \nsouthwest of the Azores, followed by a turn to the southwest by \nearly next week. Environmental conditions are forecast to become \nless favorable for development beginning Sunday night or on Monday. \n* Formation chance through 48 hours...high...80 percent.\n* Formation chance through 7 days...high...80 percent.\n\n$$\nForecaster Beven"
  },
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-18T19:31:01-04:00",
+  "fetched_at": "2026-09-18T19:45:45-04:00",
   "florida": "$4.3326",
   "national": "$4.4687",
   "diesel": "$6.3492",
@@ -269,7 +317,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-18T19:31:02-04:00",
+  "fetched_at": "2026-09-18T19:45:47-04:00",
   "streams": {
    "local": [
     {
@@ -474,36 +522,36 @@
     "media_type": "video"
    },
    {
-    "title": "Search underway for missing 69-year-old woman from Homestead",
-    "url": "https://wsvn.com/news/local/miami-dade/search-underway-for-missing-69-year-old-woman-from-homestead/",
+    "title": "Miami commissioners debate over local partnerships with Grand Theft Auto VI",
+    "url": "https://wsvn.com/news/local/miami-dade/miami-commissioners-debate-over-local-partnerships-with-grand-theft-auto-vi/",
+    "published": "Fri, 18 Sep 2026 23:29:20 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/f5cec05b-f11c-4e15-8449-8b37610bc901/76c74881-3826-4fcd-a9a5-6ec8e7337aef/main.mp4?fastly_token=NmFhZTIxZWVfMzc3ZWYwYjc3YzU3ZjliYTBmMTE5MDQ0MjU1ZjcwMjczNDU0NGI2MjZjOTIxMzFlM2Q4Zjc1ZDc3MGExYTIyMF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9mNWNlYzA1Yi1mMTFjLTRlMTUtODQ0OS04YjM3NjEwYmM5MDEvNzZjNzQ4ODEtMzgyNi00ZmNkLWE5YTUtNmVjOGU3MzM3YWVmL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Health officials lift swim advisory for Bark Beach in Miami Beach",
+    "url": "https://wsvn.com/news/local/miami-dade/health-officials-lift-swim-advisory-for-bark-beach-in-miami-beach/",
+    "published": "Fri, 18 Sep 2026 22:56:06 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c952f626-3caf-4950-b5a8-8f250b5d6e25/66397456-b9c1-424d-8818-2b4433595a66/main.mp4?fastly_token=NmFhZTE5OGJfMmQ5ZTQ2ZDAyM2VjN2QyMWMwMjFmODk3NGNjZjRkZjVhMDZhNTE2Zjk0ZThmOTczY2I5MDcxOTQ5MjRkYzIxZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jOTUyZjYyNi0zY2FmLTQ5NTAtYjVhOC04ZjI1MGI1ZDZlMjUvNjYzOTc0NTYtYjljMS00MjRkLTg4MTgtMmI0NDMzNTk1YTY2L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Police search for woman who has been missing since 2024 from Miami",
+    "url": "https://wsvn.com/news/local/miami-dade/police-search-for-woman-who-has-been-missing-since-2024-from-miami/",
+    "published": "Fri, 18 Sep 2026 22:54:37 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/91e68c4d-494c-4c26-aa1a-c52769244935/fb7d7997-f58d-4dec-b9fc-f5540590fc16/main.mp4?fastly_token=NmFhZTE5M2FfYzdjOWJjNTg5NjA0ZWJhMDJjNmFiNDA2NzVkYzhhNzRmOWE0NWVhYTQ1ZTcxZWQyNTZiNTVkNmQwYTljMWUyN18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85MWU2OGM0ZC00OTRjLTRjMjYtYWExYS1jNTI3NjkyNDQ5MzUvZmI3ZDc5OTctZjU4ZC00ZGVjLWI5ZmMtZjU1NDA1OTBmYzE2L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Woman missing from Homestead has been found, officials say",
+    "url": "https://wsvn.com/news/local/miami-dade/woman-missing-from-homestead-has-been-found-officials-say/",
     "published": "Fri, 18 Sep 2026 20:14:10 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/091826-Amarilis-Furet-MISSING.png",
     "media_type": "image"
-   },
-   {
-    "title": "Ground stop lifted at FLL, remains in effect at MIA due to thunderstorms in the area",
-    "url": "https://wsvn.com/news/local/miami-dade/ground-stop-lifted-at-fll-remains-in-effect-at-mia-due-to-thunderstorms-in-the-area/",
-    "published": "Fri, 18 Sep 2026 20:05:48 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/03/031926-airplane.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Crews working to repair water main break in North Miami",
-    "url": "https://wsvn.com/news/local/miami-dade/crews-working-to-repair-water-main-break-in-north-miami/",
-    "published": "Fri, 18 Sep 2026 18:12:37 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/260918_North_Miami_water_main_break.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Bizarre video captures crab swinging blade at man, dog in Palmetto Bay",
-    "url": "https://wsvn.com/news/local/miami-dade/bizarre-video-captures-crab-swinging-blade-at-man-dog-in-palmetto-bay/",
-    "published": "Fri, 18 Sep 2026 17:30:11 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/4c0a4fcb-4209-4ec7-87a6-303382094323/4702ae31-01f7-4684-a7db-957da559bb71/main.mp4?fastly_token=NmFhZGNkMmFfYTY3NTJmMGRhNDM2ZGFiMjBkZmYzYTQwZGE5YWNjODk1ODAwMWY5NWY3Y2Q1YTZmN2FjMTgyOGQ5ZjVkYzRhNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS80YzBhNGZjYi00MjA5LTRlYzctODdhNi0zMDMzODIwOTQzMjMvNDcwMmFlMzEtMDFmNy00Njg0LWE3ZGItOTU3ZGE1NTliYjcxL21haW4ubXA0",
-    "media_type": "video"
    }
   ],
   "colombia": [
@@ -642,16 +690,29 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-18T19:31:03-04:00",
+  "fetched_at": "2026-09-18T19:45:47-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (356) + USGS (15)",
-  "fetched_at": "2026-09-18T19:31:07-04:00",
+  "source": "GDACS (357) + USGS (16)",
+  "fetched_at": "2026-09-18T19:45:51-04:00",
   "events": [
+   {
+    "lat": -27.8581,
+    "lon": -177.2286,
+    "kind": "earthquake",
+    "level": "orange",
+    "title": "M5.5 — Kermadec Islands region",
+    "place": "Kermadec Islands region",
+    "severity": "M5.5",
+    "mag": 5.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tigd",
+    "when": 1789773508306,
+    "source": "USGS"
+   },
    {
     "lat": 23.0215374,
     "lon": 72.5800568,
@@ -929,6 +990,18 @@
     "severity": "Magnitude 0",
     "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104169",
     "when": "Fri, 18 Sep 2026 06:16:34 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -27.8581,
+    "lon": -177.2286,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "Green earthquake (Magnitude 5.5M, Depth:94.054km) in Kermadec Islands Region 18/09/2026 23:18 UTC, [unknown].",
+    "place": "Kermadec Islands Region",
+    "severity": "Magnitude 5.5M, Depth:94.1km",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1566905",
+    "when": "Fri, 18 Sep 2026 23:36:52 GMT",
     "source": "GDACS"
    },
    {
@@ -2082,37 +2155,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032148",
     "when": "Fri, 18 Sep 2026 07:08:58 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -17.199300104568927,
-    "lon": 37.68113219179095,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Mozambique",
-    "place": "Mozambique",
-    "severity": "Green impact for forestfire in 6241 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032151",
-    "when": "Fri, 18 Sep 2026 15:08:00 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -17.02936948877964,
-    "lon": 36.406282297386234,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Mozambique",
-    "place": "Mozambique",
-    "severity": "Green impact for forestfire in 8563 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032153",
-    "when": "Fri, 18 Sep 2026 15:06:44 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 371,
+  "event_count": 373,
   "counts": {
    "red": 0,
-   "orange": 6,
-   "green": 365
+   "orange": 7,
+   "green": 366
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2120,7 +2169,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-18T19:31:07-04:00",
+  "fetched_at": "2026-09-18T19:45:51-04:00",
   "countries": [
    {
     "iso": "COL",
