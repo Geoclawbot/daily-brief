@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-19T22:30:32-04:00",
- "generated_at_utc": "2026-09-20T02:30:32+00:00",
+ "generated_at": "2026-09-19T22:46:08-04:00",
+ "generated_at_utc": "2026-09-20T02:46:08+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, September 19",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-19T22:30:32-04:00",
+  "fetched_at": "2026-09-19T22:46:08-04:00",
   "curve": [
    {
     "time": "2026-09-19T05:00",
@@ -141,18 +141,18 @@
     "time": "2026-09-19T21:00",
     "hour": 21,
     "temp": 76.3,
-    "feels": 85.0,
-    "humidity": 88,
+    "feels": 85.2,
+    "humidity": 89,
     "pop": 58
    }
   ],
   "current": {
-   "temp": 75.8,
-   "feels": 84.2,
+   "temp": 75.9,
+   "feels": 84.6,
    "humidity": 90,
-   "wind_mph": 2.4,
-   "wind_dir": 304,
-   "observed_at": "2026-09-19T22:30"
+   "wind_mph": 1.9,
+   "wind_dir": 291,
+   "observed_at": "2026-09-19T22:45"
   },
   "today": {
    "high": 87.8,
@@ -166,26 +166,50 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-19T22:30:33-04:00",
+  "fetched_at": "2026-09-19T22:46:08-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-19T22:30:58-04:00",
-  "aqi": 47,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-19T22:46:10-04:00",
+  "aqi": 30,
   "category": "Good",
-  "pm25": 12.0,
-  "pm10": 12.7,
-  "observed": "2026-09-19T22:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "O3",
+  "reporting_area": "Miami",
+  "observed": "2026-09-19 21:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-20",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-20",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-21",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-21",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-19T22:30:58-04:00",
+  "fetched_at": "2026-09-19T22:46:10-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +222,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-19T22:30:59-04:00",
+  "fetched_at": "2026-09-19T22:46:11-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -245,7 +269,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-19T22:31:00-04:00",
+  "fetched_at": "2026-09-19T22:46:11-04:00",
   "issued": "800 PM EDT Sat Sep 19 2026",
   "areas": [],
   "raw": "en Español\n\n577 \nABNT20 KNHC 192338\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Sat Sep 19 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on newly formed \nTropical Depression Six, located several hundred miles southwest of \nthe Azores.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\n\nPublic Advisories on Tropical Depression Six are issued under WMO \nheader WTNT31 KNHC and under AWIPS header MIATCPAT1. \nForecast/Advisories on Tropical Depression Six are issued under WMO \nheader WTNT21 KNHC and under AWIPS header MIATCMAT1.\n\n$$\nForecaster Beven"
@@ -253,7 +277,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-19T22:31:00-04:00",
+  "fetched_at": "2026-09-19T22:46:11-04:00",
   "florida": "$4.3171",
   "national": "$4.4759",
   "diesel": "$6.3317",
@@ -262,7 +286,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-19T22:31:01-04:00",
+  "fetched_at": "2026-09-19T22:46:13-04:00",
   "streams": {
    "local": [
     {
@@ -635,7 +659,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-19T22:31:01-04:00",
+  "fetched_at": "2026-09-19T22:46:13-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -643,7 +667,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (380) + USGS (15)",
-  "fetched_at": "2026-09-19T22:31:04-04:00",
+  "fetched_at": "2026-09-19T22:46:16-04:00",
   "events": [
    {
     "lat": 23.0215374,
@@ -2113,7 +2137,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-19T22:31:04-04:00",
+  "fetched_at": "2026-09-19T22:46:16-04:00",
   "countries": [
    {
     "iso": "COL",
