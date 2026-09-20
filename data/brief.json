@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-20T14:15:38-04:00",
- "generated_at_utc": "2026-09-20T18:15:38+00:00",
+ "generated_at": "2026-09-20T14:30:38-04:00",
+ "generated_at_utc": "2026-09-20T18:30:38+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 20",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-20T14:15:38-04:00",
+  "fetched_at": "2026-09-20T14:30:38-04:00",
   "curve": [
    {
     "time": "2026-09-20T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 80.8,
-   "feels": 88.5,
-   "humidity": 70,
-   "wind_mph": 0.8,
-   "wind_dir": 124,
-   "observed_at": "2026-09-20T14:15"
+   "temp": 77.8,
+   "feels": 84.8,
+   "humidity": 79,
+   "wind_mph": 3.5,
+   "wind_dir": 195,
+   "observed_at": "2026-09-20T14:30"
   },
   "today": {
    "high": 87.5,
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-20T14:15:38-04:00",
+  "fetched_at": "2026-09-20T14:30:39-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-20T14:15:39-04:00",
-  "aqi": 29,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-20 13:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-20",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-20",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-21",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-21",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-20T14:30:46-04:00",
+  "aqi": 55,
+  "category": "Moderate",
+  "pm25": 7.1,
+  "pm10": 8.8,
+  "observed": "2026-09-20T14:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-20T14:15:39-04:00",
+  "fetched_at": "2026-09-20T14:30:47-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -222,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-20T14:15:40-04:00",
+  "fetched_at": "2026-09-20T14:30:48-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -267,7 +243,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-20T14:15:40-04:00",
+  "fetched_at": "2026-09-20T14:30:48-04:00",
   "issued": "200 PM EDT Sun Sep 20 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 201739\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Sun Sep 20 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Fay, located several hundred miles southwest of the Azores.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\n\nPublic Advisories on Tropical Storm Fay are issued under WMO \nheader WTNT31 KNHC and under AWIPS header MIATCPAT1. \nForecast/Advisories on Tropical Storm Fay are issued under WMO \nheader WTNT21 KNHC and under AWIPS header MIATCMAT1.\n\n$$\nForecaster Pasch"
@@ -275,7 +251,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-20T14:15:41-04:00",
+  "fetched_at": "2026-09-20T14:30:48-04:00",
   "florida": "$4.2954",
   "national": "$4.4761",
   "diesel": "$6.3116",
@@ -284,7 +260,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-20T14:15:41-04:00",
+  "fetched_at": "2026-09-20T14:30:49-04:00",
   "streams": {
    "local": [
     {
@@ -523,6 +499,22 @@
   ],
   "colombia": [
    {
+    "title": "Investigan fuerte explosión en bodega del Comando de Policía Antioquia: no se registran heridos",
+    "url": "https://www.eltiempo.com/colombia/medellin/investigan-fuerte-explosion-en-bodega-del-comando-de-policia-antioquia-no-se-registran-heridos-3587465",
+    "published": "2026-09-20T13:13:19-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/20/6ab01d72773b1.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Atlántico estrecha relación con Estados Unidos para atraer inversión, tecnología, comercio y cooperación: gobernador pide consulado en Barranquilla",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/atlantico-estrecha-relacion-con-estados-unidos-para-atraer-inversion-tecnologia-comercio-y-cooperacion-gobernador-pide-consulado-en-barranquilla-3587458",
+    "published": "2026-09-20T13:01:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/20/6ab018cfb64bb.png",
+    "media_type": "image"
+   },
+   {
     "title": "Eje Cafetero lanza un SOS por falta de turistas en la región",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/eje-cafetero-lanza-un-sos-por-falta-de-turistas-en-la-region-3587461",
     "published": "2026-09-20T12:42:33-05:00",
@@ -568,22 +560,6 @@
     "published": "2026-09-20T10:48:43-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/20/6ab0004291a9f.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Tragedia en la vía Panamericana: cuatro muertos y 20 heridos tras accidente de bus turístico en Nariño",
-    "url": "https://www.eltiempo.com/colombia/cali/tragedia-en-la-via-panamericana-cuatro-muertos-y-20-heridos-tras-accidente-de-bus-turistico-en-narino-3587426",
-    "published": "2026-09-20T10:24:38-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/20/6aaff0d01442a.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Así operaba el engranaje criminal que producía más de medio millón de dólares falsos en un taller litográfico de La Unión, Valle",
-    "url": "https://www.eltiempo.com/colombia/cali/asi-operaba-el-engranaje-criminal-que-producia-mas-de-medio-millon-de-dolares-falsos-en-un-taller-litografico-de-la-union-valle-3587421",
-    "published": "2026-09-20T09:26:33-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/20/6aafea530e74a.r_d.733-490-0.png",
     "media_type": "image"
    }
   ],
@@ -657,7 +633,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-20T14:15:43-04:00",
+  "fetched_at": "2026-09-20T14:30:50-04:00",
   "items": [],
   "scanned": 0,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -665,7 +641,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (403) + USGS (14)",
-  "fetched_at": "2026-09-20T14:15:45-04:00",
+  "fetched_at": "2026-09-20T14:30:53-04:00",
   "events": [
    {
     "lat": -5.9021,
@@ -2134,7 +2110,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-20T14:15:45-04:00",
+  "fetched_at": "2026-09-20T14:30:53-04:00",
   "countries": [
    {
     "iso": "RUS",
