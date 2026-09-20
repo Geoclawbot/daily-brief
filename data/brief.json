@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-20T08:30:40-04:00",
- "generated_at_utc": "2026-09-20T12:30:40+00:00",
+ "generated_at": "2026-09-20T08:45:30-04:00",
+ "generated_at_utc": "2026-09-20T12:45:30+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 20",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-20T08:30:40-04:00",
+  "fetched_at": "2026-09-20T08:45:31-04:00",
   "curve": [
    {
     "time": "2026-09-20T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 76.2,
-   "feels": 84.7,
-   "humidity": 93,
-   "wind_mph": 4.3,
-   "wind_dir": 325,
-   "observed_at": "2026-09-20T08:30"
+   "temp": 76.9,
+   "feels": 85.7,
+   "humidity": 92,
+   "wind_mph": 4.1,
+   "wind_dir": 331,
+   "observed_at": "2026-09-20T08:45"
   },
   "today": {
    "high": 85.7,
@@ -166,26 +166,50 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-20T08:30:41-04:00",
+  "fetched_at": "2026-09-20T08:45:32-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-20T08:31:07-04:00",
-  "aqi": 52,
-  "category": "Moderate",
-  "pm25": 15.0,
-  "pm10": 15.9,
-  "observed": "2026-09-20T08:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-20T08:45:33-04:00",
+  "aqi": 34,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-20 7:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-20",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-20",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-21",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-21",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-20T08:31:07-04:00",
+  "fetched_at": "2026-09-20T08:45:33-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +222,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-20T08:31:08-04:00",
+  "fetched_at": "2026-09-20T08:45:34-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -243,7 +267,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-20T08:31:08-04:00",
+  "fetched_at": "2026-09-20T08:45:34-04:00",
   "issued": "800 AM EDT Sun Sep 20 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 201145\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Sun Sep 20 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on recently \nupgraded Tropical Storm Fay, located several hundred miles \nsouthwest of the Azores.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\n\nPublic Advisories on Tropical Storm Fay are issued under WMO \nheader WTNT31 KNHC and under AWIPS header MIATCPAT1. \nForecast/Advisories on Tropical Storm Fay are issued under WMO \nheader WTNT21 KNHC and under AWIPS header MIATCMAT1.\n\n$$\nForecaster Pasch"
@@ -251,7 +275,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-20T08:31:08-04:00",
+  "fetched_at": "2026-09-20T08:45:34-04:00",
   "florida": "$4.2954",
   "national": "$4.4761",
   "diesel": "$6.3116",
@@ -260,7 +284,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-20T08:31:10-04:00",
+  "fetched_at": "2026-09-20T08:45:35-04:00",
   "streams": {
    "local": [
     {
@@ -465,6 +489,14 @@
     "media_type": "video"
    },
    {
+    "title": "17-year-old has died after shooting in Miami, Miami PD says",
+    "url": "https://wsvn.com/news/local/miami-dade/17-year-old-has-died-after-shooting-in-miami-miami-pd-says/",
+    "published": "Sun, 20 Sep 2026 11:41:57 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/f34ab6bc-61a2-40bd-9277-1b1c204e27f2/1789c7a3-8b03-4e36-9370-806f10bfb81a/main.mp4?fastly_token=NmFiMDFlZDVfZDZjYjUwODY4NTdiMzBiNDlhNGEyN2NiZjBmN2QwNGI5NDQ2MDc0MTFmOTc5OWVmN2JmMDRjMmUzYjdhODczNF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9mMzRhYjZiYy02MWEyLTQwYmQtOTI3Ny0xYjFjMjA0ZTI3ZjIvMTc4OWM3YTMtOGIwMy00ZTM2LTkzNzAtODA2ZjEwYmZiODFhL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "Jam for Venezuela and Colombia concert set to bring live Latin music to Underline in Brickell",
     "url": "https://wsvn.com/news/local/miami-dade/jam-for-venezuela-and-colombia-concert-set-to-bring-live-latin-music-to-underline-in-brickell/",
     "published": "Sat, 19 Sep 2026 14:36:16 +0000",
@@ -486,14 +518,6 @@
     "published": "Sat, 19 Sep 2026 01:23:33 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/8e605b06-8a2c-4067-b941-29e811ef9a3a/76d4c463-959b-4871-86e3-214c8e6f5b4e/main.mp4?fastly_token=NmFhZWNhMjhfNWZhODM3NTc2M2ZjNzkzMzQzNzFiZDZlY2E4YjRmYWRhNzUyNzMwZDY1Yzg3NDBhYjEwNzc0NWI4YTg3ZDVjNl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84ZTYwNWIwNi04YTJjLTQwNjctYjk0MS0yOWU4MTFlZjlhM2EvNzZkNGM0NjMtOTU5Yi00ODcxLTg2ZTMtMjE0YzhlNmY1YjRlL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Miami Beach commissioners debate over local partnerships with Grand Theft Auto VI",
-    "url": "https://wsvn.com/news/local/miami-dade/miami-beach-commissioners-debate-over-local-partnerships-with-grand-theft-auto-vi/",
-    "published": "Fri, 18 Sep 2026 23:29:20 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/f5cec05b-f11c-4e15-8449-8b37610bc901/76c74881-3826-4fcd-a9a5-6ec8e7337aef/main.mp4?fastly_token=NmFhZWNjZWJfOWZmNTZjZGNhYTMyOGVhNjAxZTE0ZmRlNGE2MjEyMTc3OWE2ZDkwODhlZjhjOTA5ODcxZTMxMjVjMTViOGVkN18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9mNWNlYzA1Yi1mMTFjLTRlMTUtODQ0OS04YjM3NjEwYmM5MDEvNzZjNzQ4ODEtMzgyNi00ZmNkLWE5YTUtNmVjOGU3MzM3YWVmL21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -633,7 +657,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-20T08:31:10-04:00",
+  "fetched_at": "2026-09-20T08:45:36-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -641,7 +665,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (401) + USGS (13)",
-  "fetched_at": "2026-09-20T08:31:15-04:00",
+  "fetched_at": "2026-09-20T08:45:39-04:00",
   "events": [
    {
     "lat": -5.9021,
@@ -2109,7 +2133,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-20T08:31:15-04:00",
+  "fetched_at": "2026-09-20T08:45:39-04:00",
   "countries": [
    {
     "iso": "COL",
