@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-20T21:15:33-04:00",
- "generated_at_utc": "2026-09-21T01:15:33+00:00",
+ "generated_at": "2026-09-20T21:30:30-04:00",
+ "generated_at_utc": "2026-09-21T01:30:30+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 20",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-20T21:15:33-04:00",
+  "fetched_at": "2026-09-20T21:30:31-04:00",
   "curve": [
    {
     "time": "2026-09-20T05:00",
@@ -132,27 +132,27 @@
    {
     "time": "2026-09-20T20:00",
     "hour": 20,
-    "temp": 75.1,
-    "feels": 83.3,
+    "temp": 76.3,
+    "feels": 86.1,
     "humidity": 91,
     "pop": 30
    },
    {
     "time": "2026-09-20T21:00",
     "hour": 21,
-    "temp": 74.5,
-    "feels": 81.8,
+    "temp": 75.8,
+    "feels": 83.6,
     "humidity": 93,
-    "pop": 18
+    "pop": 14
    }
   ],
   "current": {
-   "temp": 74.5,
-   "feels": 82.6,
-   "humidity": 93,
-   "wind_mph": 2.9,
-   "wind_dir": 293,
-   "observed_at": "2026-09-20T21:15"
+   "temp": 75.5,
+   "feels": 84.5,
+   "humidity": 94,
+   "wind_mph": 2.4,
+   "wind_dir": 338,
+   "observed_at": "2026-09-20T21:30"
   },
   "today": {
    "high": 88.3,
@@ -166,38 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-20T21:15:34-04:00",
+  "fetched_at": "2026-09-20T21:30:31-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-20T21:15:34-04:00",
-  "aqi": 36,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-20 20:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-21",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-21",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-20T21:30:56-04:00",
+  "aqi": 57,
+  "category": "Moderate",
+  "pm25": 9.9,
+  "pm10": 10.4,
+  "observed": "2026-09-20T21:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-20T21:15:34-04:00",
+  "fetched_at": "2026-09-20T21:30:57-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -210,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-20T21:15:35-04:00",
+  "fetched_at": "2026-09-20T21:30:58-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -258,7 +246,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-20T21:15:36-04:00",
+  "fetched_at": "2026-09-20T21:30:58-04:00",
   "issued": "800 PM EDT Sun Sep 20 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 202315\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Sun Sep 20 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Fay, located several hundred miles southwest of the Azores.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Roberts"
@@ -266,7 +254,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-20T21:15:36-04:00",
+  "fetched_at": "2026-09-20T21:30:58-04:00",
   "florida": "$4.2954",
   "national": "$4.4761",
   "diesel": "$6.3116",
@@ -275,7 +263,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-20T21:15:36-04:00",
+  "fetched_at": "2026-09-20T21:30:59-04:00",
   "streams": {
    "local": [
     {
@@ -384,6 +372,14 @@
   ],
   "local": [
    {
+    "title": "Teen, 17, killed in Miami shooting, police say",
+    "url": "https://www.local10.com/news/local/2026/09/19/teen-17-critically-injured-in-miami-shooting-first-responders-say/",
+    "published": "Sat, 19 Sep 2026 11:52:54 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Dania Beach condo president wants more done by city to keep floodwaters from damaging homes",
     "url": "https://www.local10.com/news/local/2026/09/20/dania-beach-condo-president-wants-more-done-by-city-to-keep-floodwaters-from-damaging-homes/",
     "published": "Sun, 20 Sep 2026 22:26:33 +0000",
@@ -395,14 +391,6 @@
     "title": "1 dead, 1 injured after Lauderdake Lakes shooting",
     "url": "https://www.local10.com/news/local/2026/09/20/1-dead-1-injured-after-lauderdake-lakes-shooting/",
     "published": "Sun, 20 Sep 2026 13:23:34 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Teen, 17, killed in Miami shooting, police say",
-    "url": "https://www.local10.com/news/local/2026/09/19/teen-17-critically-injured-in-miami-shooting-first-responders-say/",
-    "published": "Sat, 19 Sep 2026 11:52:54 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -514,6 +502,14 @@
   ],
   "colombia": [
    {
+    "title": "Grave incendio en el cerro de San Marcos en Villa de Leyva: declaran calamidad pública suspenden las clases",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/grave-incendio-en-el-cerro-de-san-marcos-en-villa-de-leyva-declaran-calamidad-publica-suspenden-las-clases-3587523",
+    "published": "2026-09-20T20:08:32-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/20/6ab07d98a8be7.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Incendio en cerro San Marcos en Villa de Leyva consume 290 hectáreas y amenaza la reserva natural Iguaque, aseguró el gobernador Carlos Amaya",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/incendio-en-cerro-san-marcos-en-villa-de-leyva-consume-290-hectareas-y-amenaza-la-reserva-natural-iguaque-aseguro-el-gobernador-carlos-amaya-3587519",
     "published": "2026-09-20T19:56:32-05:00",
@@ -530,9 +526,9 @@
     "media_type": "image"
    },
    {
-    "title": "Gobernador de Boyacá se pronunció por turistas que quedaron atrapados en hotel en Villa de Leyva tras voraz incendio: 'Decidieron no evacuar'",
+    "title": "Gobernador de Boyacá se pronunció por turistas que quedaron atrapados en hotel en Villa de Leyva tras voraz incendio: evacuaron a 29 personas",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/gobernador-de-boyaca-por-turistas-que-quedaron-atrapados-en-el-hotel-suites-arcoiris-en-villa-de-leyva-tras-voraz-incendio-decidieron-no-evacuar-3587498",
-    "published": "2026-09-20T17:52:36-05:00",
+    "published": "2026-09-20T20:20:51-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/20/6ab0618867371.jpeg",
     "media_type": "image"
@@ -567,14 +563,6 @@
     "published": "2026-09-20T16:30:35-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/20/6ab04ecfc0daa.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Air-e Intervenida nombra nuevo gerente territorial en Atlántico: Víctor De Luque llega al cargo tras seis años en la compañía y 22 de experiencia",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/air-e-intervenida-nombra-nuevo-gerente-territorial-en-atlantico-victor-de-luque-llega-al-cargo-tras-seis-anos-en-la-compania-y-22-de-experiencia-3587486",
-    "published": "2026-09-20T16:01:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/20/6ab03f10b2931.r_d.984-525-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -648,15 +636,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-20T21:15:37-04:00",
+  "fetched_at": "2026-09-20T21:31:00-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (413) + USGS (16)",
-  "fetched_at": "2026-09-20T21:15:40-04:00",
+  "source": "GDACS (413) + USGS (17)",
+  "fetched_at": "2026-09-20T21:31:03-04:00",
   "events": [
    {
     "lat": -5.9021,
@@ -861,6 +849,32 @@
     "source": "USGS"
    },
    {
+    "lat": 37.8136,
+    "lon": 36.2994,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.9 — 26 km SE of Saimbeyli, Turkey",
+    "place": "26 km SE of Saimbeyli, Turkey",
+    "severity": "M4.9",
+    "mag": 4.9,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tiui",
+    "when": 1789952524529,
+    "source": "USGS"
+   },
+   {
+    "lat": -23.0403,
+    "lon": 171.7471,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.9 — southeast of the Loyalty Islands",
+    "place": "southeast of the Loyalty Islands",
+    "severity": "M4.9",
+    "mag": 4.9,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000titt",
+    "when": 1789942199229,
+    "source": "USGS"
+   },
+   {
     "lat": 13.2653,
     "lon": 145.7081,
     "kind": "earthquake",
@@ -884,19 +898,6 @@
     "mag": 4.8,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tirf",
     "when": 1789907062144,
-    "source": "USGS"
-   },
-   {
-    "lat": -22.967,
-    "lon": 171.8514,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.7 — southeast of the Loyalty Islands",
-    "place": "southeast of the Loyalty Islands",
-    "severity": "M4.7",
-    "mag": 4.7,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000titt",
-    "when": 1789942198876,
     "source": "USGS"
    },
    {
@@ -2101,25 +2102,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032053",
     "when": "Thu, 17 Sep 2026 11:03:25 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -13.156264755860764,
-    "lon": 29.592841272266813,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in The Democratic Republic of Congo",
-    "place": "The Democratic Republic of Congo",
-    "severity": "Green impact for forestfire in 7204 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032054",
-    "when": "Thu, 17 Sep 2026 15:04:13 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 429,
+  "event_count": 430,
   "counts": {
    "red": 0,
    "orange": 8,
-   "green": 421
+   "green": 422
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2127,7 +2116,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-20T21:15:40-04:00",
+  "fetched_at": "2026-09-20T21:31:03-04:00",
   "countries": [
    {
     "iso": "RUS",
