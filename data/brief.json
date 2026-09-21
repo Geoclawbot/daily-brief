@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-20T21:30:30-04:00",
- "generated_at_utc": "2026-09-21T01:30:30+00:00",
+ "generated_at": "2026-09-20T21:45:25-04:00",
+ "generated_at_utc": "2026-09-21T01:45:25+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 20",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-20T21:30:31-04:00",
+  "fetched_at": "2026-09-20T21:45:26-04:00",
   "curve": [
    {
     "time": "2026-09-20T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 75.5,
-   "feels": 84.5,
+   "temp": 75.3,
+   "feels": 83.8,
    "humidity": 94,
-   "wind_mph": 2.4,
-   "wind_dir": 338,
-   "observed_at": "2026-09-20T21:30"
+   "wind_mph": 3.5,
+   "wind_dir": 15,
+   "observed_at": "2026-09-20T21:45"
   },
   "today": {
    "high": 88.3,
@@ -166,26 +166,38 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-20T21:30:31-04:00",
+  "fetched_at": "2026-09-20T21:45:26-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-20T21:30:56-04:00",
-  "aqi": 57,
-  "category": "Moderate",
-  "pm25": 9.9,
-  "pm10": 10.4,
-  "observed": "2026-09-20T21:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-20T21:45:27-04:00",
+  "aqi": 36,
+  "category": "Good",
+  "pollutant": "O3",
+  "reporting_area": "Miami",
+  "observed": "2026-09-20 20:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-21",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-21",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-20T21:30:57-04:00",
+  "fetched_at": "2026-09-20T21:45:27-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +210,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-20T21:30:58-04:00",
+  "fetched_at": "2026-09-20T21:45:29-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -236,17 +248,16 @@
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 20 2026, 5:35 PM",
-   "Northeast | Duval | Jacksonville: There is lane blocking construction on 103rd at Rockola Rd. Use caution in the area. | Sep 20 2026, 9:00 PM",
-   "Northeast | Clay | Green Cove Springs: There is lane-blocking construction on US-17 between Ball rd. and Verdad st. Use caution in the area. | Sep 20 2026, 9:07 PM",
-   "Northeast | Clay | Green Cove Springs: There is lane-blocking construction on US-17 between Hickory and Governor st. Use caution in the area. | Sep 20 2026, 9:08 PM",
-   "Panhandle | Walton | I-10: A major incident has closed all Westbound lanes in Walton County. Motorists are advised to seek alternate route and use caution in the area. | Sep 20 2026, 9:11 PM"
+   "Northeast | Duval | Jacksonville: There is lane blocking construction on 103rd St near Rockola Rd. Use caution in the area. | Sep 20 2026, 9:45 PM",
+   "Northeast | Clay | Green Cove Springs: There is lane-blocking construction on US-17 between Ball Rd and Verdad St. Use caution in the area. | Sep 20 2026, 9:44 PM",
+   "Northeast | Clay | Green Cove Springs: There is lane-blocking construction on US-17 between Hickory Knolls Dr and Governor St. Use caution in the area. | Sep 20 2026, 9:43 PM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-20T21:30:58-04:00",
+  "fetched_at": "2026-09-20T21:45:29-04:00",
   "issued": "800 PM EDT Sun Sep 20 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 202315\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Sun Sep 20 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Fay, located several hundred miles southwest of the Azores.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Roberts"
@@ -254,7 +265,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-20T21:30:58-04:00",
+  "fetched_at": "2026-09-20T21:45:29-04:00",
   "florida": "$4.2954",
   "national": "$4.4761",
   "diesel": "$6.3116",
@@ -263,7 +274,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-20T21:30:59-04:00",
+  "fetched_at": "2026-09-20T21:45:30-04:00",
   "streams": {
    "local": [
     {
@@ -372,6 +383,14 @@
   ],
   "local": [
    {
+    "title": "Fire crews battle blaze aboard catamaran in Fort Lauderdale",
+    "url": "https://www.local10.com/news/local/2026/09/20/fire-crews-battle-blaze-aboard-catamaran-in-fort-lauderdale/",
+    "published": "Sun, 20 Sep 2026 12:10:53 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Teen, 17, killed in Miami shooting, police say",
     "url": "https://www.local10.com/news/local/2026/09/19/teen-17-critically-injured-in-miami-shooting-first-responders-say/",
     "published": "Sat, 19 Sep 2026 11:52:54 +0000",
@@ -391,14 +410,6 @@
     "title": "1 dead, 1 injured after Lauderdake Lakes shooting",
     "url": "https://www.local10.com/news/local/2026/09/20/1-dead-1-injured-after-lauderdake-lakes-shooting/",
     "published": "Sun, 20 Sep 2026 13:23:34 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Fire crews battle blaze aboard catamaran in Fort Lauderdale",
-    "url": "https://www.local10.com/news/local/2026/09/20/fire-crews-battle-blaze-aboard-catamaran-in-fort-lauderdale/",
-    "published": "Sun, 20 Sep 2026 12:10:53 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -502,9 +513,9 @@
   ],
   "colombia": [
    {
-    "title": "Grave incendio en el cerro de San Marcos en Villa de Leyva: declaran calamidad pública suspenden las clases",
+    "title": "Grave incendio en el cerro de San Marcos en Villa de Leyva: declaran calamidad pública y suspenden las clases",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/grave-incendio-en-el-cerro-de-san-marcos-en-villa-de-leyva-declaran-calamidad-publica-suspenden-las-clases-3587523",
-    "published": "2026-09-20T20:08:32-05:00",
+    "published": "2026-09-20T20:29:14-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/20/6ab07d98a8be7.jpeg",
     "media_type": "image"
@@ -528,7 +539,7 @@
    {
     "title": "Gobernador de Boyacá se pronunció por turistas que quedaron atrapados en hotel en Villa de Leyva tras voraz incendio: evacuaron a 29 personas",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/gobernador-de-boyaca-por-turistas-que-quedaron-atrapados-en-el-hotel-suites-arcoiris-en-villa-de-leyva-tras-voraz-incendio-decidieron-no-evacuar-3587498",
-    "published": "2026-09-20T20:20:51-05:00",
+    "published": "2026-09-20T20:26:53-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/20/6ab0618867371.jpeg",
     "media_type": "image"
@@ -636,7 +647,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-20T21:31:00-04:00",
+  "fetched_at": "2026-09-20T21:45:31-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -644,7 +655,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (413) + USGS (17)",
-  "fetched_at": "2026-09-20T21:31:03-04:00",
+  "fetched_at": "2026-09-20T21:45:34-04:00",
   "events": [
    {
     "lat": -5.9021,
@@ -2116,7 +2127,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-20T21:31:03-04:00",
+  "fetched_at": "2026-09-20T21:45:34-04:00",
   "countries": [
    {
     "iso": "RUS",
