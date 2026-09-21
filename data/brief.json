@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-21T15:30:32-04:00",
- "generated_at_utc": "2026-09-21T19:30:32+00:00",
+ "generated_at": "2026-09-21T15:45:35-04:00",
+ "generated_at_utc": "2026-09-21T19:45:35+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 21",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-21T15:30:32-04:00",
+  "fetched_at": "2026-09-21T15:45:36-04:00",
   "curve": [
    {
     "time": "2026-09-21T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 84.6,
-   "feels": 96.4,
-   "humidity": 77,
-   "wind_mph": 4.1,
-   "wind_dir": 167,
-   "observed_at": "2026-09-21T15:30"
+   "temp": 84.8,
+   "feels": 95.2,
+   "humidity": 75,
+   "wind_mph": 5.0,
+   "wind_dir": 170,
+   "observed_at": "2026-09-21T15:45"
   },
   "today": {
    "high": 86.1,
@@ -166,59 +166,95 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-21T15:30:32-04:00",
+  "fetched_at": "2026-09-21T15:45:36-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-21T15:30:58-04:00",
-  "aqi": 52,
-  "category": "Moderate",
-  "pm25": 4.4,
-  "pm10": 5.1,
-  "observed": "2026-09-21T15:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-21T15:45:37-04:00",
+  "aqi": 36,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-21 14:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-21",
+    "aqi": 29,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-21",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-22",
+    "aqi": 31,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-22",
+    "aqi": 28,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-23",
+    "aqi": 33,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-23",
+    "aqi": 39,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-21T15:31:01-04:00",
+  "fetched_at": "2026-09-21T15:45:39-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 21.0,
-  "minutes": 62,
-  "delay_minutes": 3,
+  "miles": 20.6,
+  "minutes": 61,
+  "delay_minutes": 2,
   "toll_free": true,
   "alternates": [
    {
     "miles": 27.7,
     "minutes": 47,
     "toll": true,
-    "saves": 15
+    "saves": 14
    },
    {
-    "miles": 25.2,
-    "minutes": 52,
+    "miles": 22.6,
+    "minutes": 54,
     "toll": true,
-    "saves": 10
+    "saves": 7
    },
    {
     "miles": 28.6,
-    "minutes": 56,
+    "minutes": 58,
     "toll": true,
-    "saves": 6
+    "saves": 3
    },
    {
-    "miles": 24.2,
-    "minutes": 57,
+    "miles": 24.0,
+    "minutes": 58,
     "toll": true,
-    "saves": 5
+    "saves": 3
    }
   ],
   "alternates_worth_taking": [
@@ -226,36 +262,36 @@
     "miles": 27.7,
     "minutes": 47,
     "toll": true,
-    "saves": 15
+    "saves": 14
    }
   ],
   "free_alternates": [
    {
-    "miles": 21.0,
-    "minutes": 62,
-    "delay_minutes": 3,
+    "miles": 20.6,
+    "minutes": 61,
+    "delay_minutes": 2,
     "saves": 0
    },
    {
-    "miles": 26.6,
-    "minutes": 65,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 23.1,
-    "minutes": 74,
+    "miles": 23.4,
+    "minutes": 71,
     "delay_minutes": 0
    },
    {
     "miles": 22.5,
-    "minutes": 70,
+    "minutes": 71,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.1,
+    "minutes": 76,
     "delay_minutes": 0
    }
   ],
   "best_free": {
-   "miles": 21.0,
-   "minutes": 62,
-   "delay_minutes": 3,
+   "miles": 20.6,
+   "minutes": 61,
+   "delay_minutes": 2,
    "saves": 0
   },
   "incidents": [],
@@ -267,7 +303,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-21T15:31:01-04:00",
+  "fetched_at": "2026-09-21T15:45:39-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -311,7 +347,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-21T15:31:02-04:00",
+  "fetched_at": "2026-09-21T15:45:40-04:00",
   "issued": "200 PM EDT Mon Sep 21 2026",
   "areas": [
    {
@@ -325,7 +361,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-21T15:31:02-04:00",
+  "fetched_at": "2026-09-21T15:45:40-04:00",
   "florida": "$4.2807",
   "national": "$4.4786",
   "diesel": "$6.2846",
@@ -334,7 +370,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-21T15:31:03-04:00",
+  "fetched_at": "2026-09-21T15:45:42-04:00",
   "streams": {
    "local": [
     {
@@ -573,6 +609,46 @@
   ],
   "colombia": [
    {
+    "title": "¿Video de agente de tránsito sorprendiendo a infractora en un puente peatonal es real o falso?",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/video-de-agente-de-transito-sorprendiendo-a-infractora-en-un-puente-peatonal-es-real-o-falso-3587721",
+    "published": "2026-09-21T14:40:13-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/21/6ab181a48bb3f.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Tercer día del incendio forestal en Villa de Leyva: ya van unas 350 hectáreas reducidas a cenizas y el fuego no da tregua",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/tercer-dia-del-incendio-forestal-en-villa-de-leyva-ya-van-unas-350-hectareas-reducidas-a-cenizas-y-el-fuego-no-da-tregua-3587722",
+    "published": "2026-09-21T14:39:20-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/21/6ab109b0bf651.r_d.457-490-0.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "El desgarrador testimonio de la hermana de Esteban Ramírez, el hombre al que mataron de un tiro por robarle una cadena y dos celulares en Medellín",
+    "url": "https://www.eltiempo.com/colombia/medellin/el-desgarrador-testimonio-de-la-hermana-de-esteban-ramirez-el-hombre-al-que-mataron-de-un-tiro-por-robarle-una-cadena-y-dos-celulares-en-medellin-3587716",
+    "published": "2026-09-21T14:38:14-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/21/6ab185ce038cd.r_d.865-422-0.png",
+    "media_type": "image"
+   },
+   {
+    "title": "La historia de Sarita, la menor que busca ayuda para continuar su tratamiento en Bogotá y dejar de sufrir bullying: 'Ha sido un proceso muy largo'",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/la-historia-de-sarita-la-menor-que-busca-ayuda-para-continuar-su-tratamiento-en-bogota-y-dejar-de-sufrir-bullying-ha-sido-un-proceso-muy-largo-3587694",
+    "published": "2026-09-21T14:39:23-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/21/6ab182c1d1ff3.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Así quedó el Parque Nacional Natural Los Nevados tras incendio forestal: fuego afectó vegetación de páramo y autoridades evalúan daños",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/asi-quedo-el-parque-nacional-natural-los-nevados-tras-incendio-forestal-fuego-afecto-vegetacion-de-paramo-y-autoridades-evaluan-danos-3587667",
+    "published": "2026-09-21T14:16:57-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/21/6ab1699563d4c.png",
+    "media_type": "image"
+   },
+   {
     "title": "Atlántico: Tubará estrena Casa de Cultura Mokaná, una obra de $4.400 millones para preservar sus saberes ancestrales",
     "url": "https://www.eltiempo.com/colombia/barranquilla/atlantico-tubara-estrena-casa-de-cultura-mokana-una-obra-de-4-400-millones-para-preservar-sus-saberes-ancestrales-3587718",
     "published": "2026-09-21T14:05:28-05:00",
@@ -581,9 +657,9 @@
     "media_type": "image"
    },
    {
-    "title": "Liberan a conductor de ambulancia secuestrado por el Eln en el Catatumbo tras once días de cautiverio en Tibú",
+    "title": "Liberan a conductor de ambulancia secuestrado por el Eln en el Catatumbo tras once días de cautiverio",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/liberan-a-conductor-de-ambulancia-secuestrado-por-el-eln-en-el-catatumbo-tras-once-dias-de-cautiverio-en-tibu-3587706",
-    "published": "2026-09-21T13:50:53-05:00",
+    "published": "2026-09-21T14:27:40-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/14/6aa8547564495.r_d.448-259-0.png",
     "media_type": "image"
@@ -594,46 +670,6 @@
     "published": "2026-09-21T13:36:40-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/21/6ab177c7bd43d.r_d.521-195-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Hoy continúa la audiencia contra Miguel Quintero y Sebastián Ortega por direccionamiento de contratos del AMVA: Alcaldía anticipa nuevas pruebas",
-    "url": "https://www.eltiempo.com/colombia/medellin/hoy-continua-la-audiencia-contra-miguel-quintero-y-sebastian-ortega-por-direccionamiento-de-contratos-del-amva-alcaldia-anticipa-nuevas-pruebas-3587683",
-    "published": "2026-09-21T13:06:02-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/21/6ab16677d7a3e.r_d.1032-646-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Una colombiana fue incluida entre las mujeres más influyentes en Estados Unidos: se trata de una científica que aparece junto a Messi y Bad Bunny",
-    "url": "https://www.eltiempo.com/colombia/santander/una-colombiana-fue-incluida-entre-las-mujeres-mas-influyentes-en-estados-unidos-se-trata-de-una-cientifica-que-aparece-junto-a-messi-y-bad-bunny-3587699",
-    "published": "2026-09-21T13:03:22-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/21/6ab16ddd68fbc.r_d.735-301-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Nuevo testimonio en el caso de Miguel Quintero: revela comisiones por contratos y 1.000 millones de pesos por la gerencia del Hospital General",
-    "url": "https://www.eltiempo.com/colombia/medellin/nuevo-testimonio-en-el-caso-de-miguel-quintero-revela-comisiones-por-contratos-y-1-000-millones-de-pesos-por-la-gerencia-del-hospital-general-3587624",
-    "published": "2026-09-21T12:55:15-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/17/6aac67b3140f4.r_d.1023-409-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Así es la baraja de obras y proyectos a los que se comprometió el presidente De La Espriella con Cartagena y Bolívar: suman $1,15 billones",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/asi-es-la-baraja-de-obras-y-proyectos-a-los-que-se-comprometio-el-presidente-de-la-espriella-con-cartagena-y-bolivar-suman-1-15-billones-3587679",
-    "published": "2026-09-21T12:48:17-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2022/06/01/62975aa0db149.r_d.814-765-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Indepaz pide medidas urgentes ante riesgo para más de 12 mil habitantes en el sur del Cauca por disputa entre el ELN y La Mafia",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/indepaz-pide-medidas-urgentes-ante-riesgo-para-mas-de-12-mil-habitantes-en-el-sur-del-cauca-por-disputa-entre-el-eln-y-la-mafia-3587613",
-    "published": "2026-09-21T10:53:11-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/21/6ab13aa663975.png",
     "media_type": "image"
    }
   ],
@@ -707,7 +743,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-21T15:31:04-04:00",
+  "fetched_at": "2026-09-21T15:45:42-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -715,7 +751,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (415) + USGS (17)",
-  "fetched_at": "2026-09-21T15:31:08-04:00",
+  "fetched_at": "2026-09-21T15:45:47-04:00",
   "events": [
    {
     "lat": -48.4279,
@@ -2187,8 +2223,28 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-21T15:31:08-04:00",
+  "fetched_at": "2026-09-21T15:45:47-04:00",
   "countries": [
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "El desgarrador testimonio de la hermana de Esteban Ramírez, el hombre al que mataron de un tiro por robarle una cadena y dos celulares en Medellín",
+      "url": "https://www.eltiempo.com/colombia/medellin/el-desgarrador-testimonio-de-la-hermana-de-esteban-ramirez-el-hombre-al-que-mataron-de-un-tiro-por-robarle-una-cadena-y-dos-celulares-en-medellin-3587716",
+      "published": "2026-09-21T14:38:14-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "La historia de Sarita, la menor que busca ayuda para continuar su tratamiento en Bogotá y dejar de sufrir bullying: 'Ha sido un proceso muy largo'",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/la-historia-de-sarita-la-menor-que-busca-ayuda-para-continuar-su-tratamiento-en-bogota-y-dejar-de-sufrir-bullying-ha-sido-un-proceso-muy-largo-3587694",
+      "published": "2026-09-21T14:39:23-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 2,
+    "issue": "El desgarrador testimonio de la hermana de Esteban Ramírez, el hombre al que mataron de un tiro por robarle una cadena y dos celulares en Medellín"
+   },
    {
     "iso": "HTI",
     "name": "Haiti",
@@ -2281,7 +2337,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 6,
+  "countries_matched": 7,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
