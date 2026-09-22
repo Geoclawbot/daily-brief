@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-21T23:30:31-04:00",
- "generated_at_utc": "2026-09-22T03:30:31+00:00",
+ "generated_at": "2026-09-21T23:45:33-04:00",
+ "generated_at_utc": "2026-09-22T03:45:33+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 21",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-21T23:30:32-04:00",
+  "fetched_at": "2026-09-21T23:45:34-04:00",
   "curve": [
    {
     "time": "2026-09-21T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 78.0,
-   "feels": 89.0,
-   "humidity": 94,
-   "wind_mph": 1.3,
-   "wind_dir": 180,
-   "observed_at": "2026-09-21T23:30"
+   "temp": 78.2,
+   "feels": 88.6,
+   "humidity": 92,
+   "wind_mph": 2.1,
+   "wind_dir": 148,
+   "observed_at": "2026-09-21T23:45"
   },
   "today": {
    "high": 86.1,
@@ -166,26 +166,50 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-21T23:30:32-04:00",
+  "fetched_at": "2026-09-21T23:45:34-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-21T23:30:43-04:00",
-  "aqi": 51,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-21T23:45:49-04:00",
+  "aqi": 52,
   "category": "Moderate",
-  "pm25": 10.4,
-  "pm10": 11.2,
-  "observed": "2026-09-21T23:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-21 22:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-22",
+    "aqi": 31,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-22",
+    "aqi": 28,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-23",
+    "aqi": 33,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-23",
+    "aqi": 39,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-21T23:30:44-04:00",
+  "fetched_at": "2026-09-21T23:45:49-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +222,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-21T23:30:45-04:00",
+  "fetched_at": "2026-09-21T23:45:50-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -239,7 +263,6 @@
    "Panhandle | Escambia | US-29: A major incident has closed all lanes near N Barth Rd in Escambia County. Motorists are advised to seek alternate route and use caution in the area. | Sep 21 2026, 5:04 PM",
    "Southeast | Palm Beach | There is scheduled road work on the Florida's Turnpike northbound and southbound at exit 97, Southern Boulevard, to exit 99, Okeechobee Boulevard. All lanes are scheduled to be closed from 10:00pm to 6:00am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 21 2026, 10:01 PM",
    "Northeast | Putnam | Palatka: There is lane-blocking construction on US-17 NB at 4th st. Use caution in the area. | Sep 21 2026, 8:38 PM",
-   "Central | Volusia | Crash on I-4 West in Volusia County at MM 124 with Left Shoulder Blocked. Motorists should seek an alternate route and expect significant delays approaching the area. | Sep 21 2026, 11:30 PM",
    "Central | Orange | There is scheduled road work on the Florida's Turnpike, southbound at exit 259, at I-4 (Orlando). All lanes are scheduled to be closed from 12am to 5am. Motorists should follow posted detour signs to re-enter the Turnpike at exit 254, at Orange Blossom Trail. | Sep 21 2026, 9:59 PM",
    "Northeast | Duval | Duval: There is lane-blocking construction on 103rd st/SR-134 at Old MIddleburg Rd. Use caution in the area. | Sep 21 2026, 10:11 PM"
   ],
@@ -250,7 +273,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-21T23:30:45-04:00",
+  "fetched_at": "2026-09-21T23:45:51-04:00",
   "issued": "800 PM EDT Mon Sep 21 2026",
   "areas": [
    {
@@ -264,7 +287,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-21T23:30:45-04:00",
+  "fetched_at": "2026-09-21T23:45:51-04:00",
   "florida": "$4.2807",
   "national": "$4.4786",
   "diesel": "$6.2846",
@@ -273,7 +296,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-21T23:30:46-04:00",
+  "fetched_at": "2026-09-21T23:45:52-04:00",
   "streams": {
    "local": [
     {
@@ -458,7 +481,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/woman-hospitalized-after-watercraft-collision-near-north-bay-village/",
     "published": "Mon, 21 Sep 2026 22:45:49 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6ea82e29-6a73-4ef5-aa03-23ea85d94669/9ff375c8-2e9d-4add-9d61-db3f2c42b2c1/main.mp4?fastly_token=NmFiMjQxYzdfOWRhZDc0OWUzZWI2ZjNmNTVkMzczNDlkYjcxNjM0MWNlMmI2ZTFhMWRjYTI3YzZiZGYzNmExMjA5MjUzNmUzNl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82ZWE4MmUyOS02YTczLTRlZjUtYWEwMy0yM2VhODVkOTQ2NjkvOWZmMzc1YzgtMmU5ZC00YWRkLTlkNjEtZGIzZjJjNDJiMmMxL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6ea82e29-6a73-4ef5-aa03-23ea85d94669/9ff375c8-2e9d-4add-9d61-db3f2c42b2c1/main.mp4?fastly_token=NmFiMjBiOTVfY2I2YzY3ZTkxZGMyZjhlZDYzMWU5OGVkZTFiNGFiZDRmYjYyMTM0OTAwMmFhMDc5YzMzMzUyNmIyMjFkZmVhY18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82ZWE4MmUyOS02YTczLTRlZjUtYWEwMy0yM2VhODVkOTQ2NjkvOWZmMzc1YzgtMmU5ZC00YWRkLTlkNjEtZGIzZjJjNDJiMmMxL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -490,7 +513,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/woman-hospitalized-after-watercraft-collision-near-north-bay-village/",
     "published": "Mon, 21 Sep 2026 22:45:49 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6ea82e29-6a73-4ef5-aa03-23ea85d94669/9ff375c8-2e9d-4add-9d61-db3f2c42b2c1/main.mp4?fastly_token=NmFiMjQxYzdfOWRhZDc0OWUzZWI2ZjNmNTVkMzczNDlkYjcxNjM0MWNlMmI2ZTFhMWRjYTI3YzZiZGYzNmExMjA5MjUzNmUzNl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82ZWE4MmUyOS02YTczLTRlZjUtYWEwMy0yM2VhODVkOTQ2NjkvOWZmMzc1YzgtMmU5ZC00YWRkLTlkNjEtZGIzZjJjNDJiMmMxL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6ea82e29-6a73-4ef5-aa03-23ea85d94669/9ff375c8-2e9d-4add-9d61-db3f2c42b2c1/main.mp4?fastly_token=NmFiMjBiOTVfY2I2YzY3ZTkxZGMyZjhlZDYzMWU5OGVkZTFiNGFiZDRmYjYyMTM0OTAwMmFhMDc5YzMzMzUyNmIyMjFkZmVhY18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82ZWE4MmUyOS02YTczLTRlZjUtYWEwMy0yM2VhODVkOTQ2NjkvOWZmMzc1YzgtMmU5ZC00YWRkLTlkNjEtZGIzZjJjNDJiMmMxL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -522,7 +545,7 @@
    {
     "title": "Lucas Murillo, el niño que pidió un trasplante al presidente De La Espriella, salió de la cirugía de corazón abierto: esto se sabe",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/lucas-murillo-el-nino-que-pidio-un-trasplante-al-presidente-de-la-espriella-salio-de-la-cirugia-de-corazon-abierto-esto-se-sabe-3587833",
-    "published": "2026-09-21T22:27:00-05:00",
+    "published": "2026-09-21T22:32:31-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/03/6a99e358d42d1.r_d.626-306-0.png",
     "media_type": "image"
@@ -564,7 +587,7 @@
     "url": "https://www.eltiempo.com/colombia/santander/golpe-a-los-del-sur-en-bucaramanga-cayeron-cinco-personas-en-giron-y-les-incautaron-mas-de-21-kilogramos-de-marihuana-3587795",
     "published": "2026-09-21T17:57:27-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/21/6ab1b4455951d.jpeg",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/21/6ab1b4455951d.r_d.800-456-0.jpeg",
     "media_type": "image"
    },
    {
@@ -646,15 +669,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-21T23:30:47-04:00",
+  "fetched_at": "2026-09-21T23:45:53-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (372) + USGS (11)",
-  "fetched_at": "2026-09-21T23:30:50-04:00",
+  "source": "GDACS (373) + USGS (12)",
+  "fetched_at": "2026-09-21T23:45:57-04:00",
   "events": [
    {
     "lat": 23.8350602,
@@ -845,6 +868,19 @@
     "source": "USGS"
    },
    {
+    "lat": 37.5214,
+    "lon": 142.0382,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.5 — 91 km E of Namie, Japan",
+    "place": "91 km E of Namie, Japan",
+    "severity": "M4.5",
+    "mag": 4.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tj1b",
+    "when": 1790029799360,
+    "source": "USGS"
+   },
+   {
     "lat": 3.8759,
     "lon": -75.5116,
     "kind": "earthquake",
@@ -956,8 +992,8 @@
     "source": "GDACS"
    },
    {
-    "lat": 14.0,
-    "lon": -130.0,
+    "lat": 14.3,
+    "lon": -130.3,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone ODALYS-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
@@ -1988,25 +2024,25 @@
     "source": "GDACS"
    },
    {
-    "lat": -10.895547627706845,
-    "lon": -53.983559026543894,
+    "lat": -10.895363093861127,
+    "lon": -53.98286298178216,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Brazil",
     "place": "Brazil",
-    "severity": "Green impact for forestfire in 5887 ha",
+    "severity": "Green impact for forestfire in 6029 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032291",
     "when": "Mon, 21 Sep 2026 06:28:25 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -9.580756422861679,
-    "lon": -46.587727767849984,
+    "lat": -9.580722422445096,
+    "lon": -46.587115703864335,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Brazil",
     "place": "Brazil",
-    "severity": "Green impact for forestfire in 5357 ha",
+    "severity": "Green impact for forestfire in 5438 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032292",
     "when": "Mon, 21 Sep 2026 06:28:51 GMT",
     "source": "GDACS"
@@ -2020,7 +2056,19 @@
     "place": "Brazil",
     "severity": "Green impact for forestfire in 5076 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032312",
-    "when": "Mon, 21 Sep 2026 23:18:13 GMT",
+    "when": "Tue, 22 Sep 2026 03:18:27 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -6.284844029971835,
+    "lon": -47.6231796566894,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 5064 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032313",
+    "when": "Tue, 22 Sep 2026 03:03:17 GMT",
     "source": "GDACS"
    },
    {
@@ -2032,7 +2080,7 @@
     "place": "Zambia",
     "severity": "Green impact for forestfire in 5021 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032273",
-    "when": "Mon, 21 Sep 2026 23:16:24 GMT",
+    "when": "Tue, 22 Sep 2026 03:18:08 GMT",
     "source": "GDACS"
    },
    {
@@ -2082,37 +2130,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031989",
     "when": "Tue, 15 Sep 2026 15:00:26 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -15.919652004830905,
-    "lon": 38.52438381560868,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Mozambique",
-    "place": "Mozambique",
-    "severity": "Green impact for forestfire in 6892 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032269",
-    "when": "Sun, 20 Sep 2026 15:09:11 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -12.573979563859353,
-    "lon": 134.48235815629894,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 22271 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032044",
-    "when": "Thu, 17 Sep 2026 07:01:59 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 383,
+  "event_count": 385,
   "counts": {
    "red": 0,
    "orange": 7,
-   "green": 376
+   "green": 378
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2120,7 +2144,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-21T23:30:50-04:00",
+  "fetched_at": "2026-09-21T23:45:57-04:00",
   "countries": [
    {
     "iso": "COL",
