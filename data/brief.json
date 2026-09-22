@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-22T15:15:43-04:00",
- "generated_at_utc": "2026-09-22T19:15:43+00:00",
+ "generated_at": "2026-09-22T15:30:37-04:00",
+ "generated_at_utc": "2026-09-22T19:30:37+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 22",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-22T15:15:44-04:00",
+  "fetched_at": "2026-09-22T15:30:40-04:00",
   "curve": [
    {
     "time": "2026-09-22T05:00",
@@ -79,7 +79,7 @@
     "temp": 83.4,
     "feels": 93.5,
     "humidity": 86,
-    "pop": 19
+    "pop": 24
    },
    {
     "time": "2026-09-22T14:00",
@@ -87,7 +87,7 @@
     "temp": 84.1,
     "feels": 93.3,
     "humidity": 79,
-    "pop": 33
+    "pop": 26
    },
    {
     "time": "2026-09-22T15:00",
@@ -95,7 +95,7 @@
     "temp": 84.9,
     "feels": 96.5,
     "humidity": 78,
-    "pop": 43
+    "pop": 35
    },
    {
     "time": "2026-09-22T16:00",
@@ -103,7 +103,7 @@
     "temp": 85.5,
     "feels": 95.8,
     "humidity": 77,
-    "pop": 49
+    "pop": 46
    },
    {
     "time": "2026-09-22T17:00",
@@ -111,7 +111,7 @@
     "temp": 83.4,
     "feels": 94.1,
     "humidity": 79,
-    "pop": 51
+    "pop": 62
    },
    {
     "time": "2026-09-22T18:00",
@@ -119,7 +119,7 @@
     "temp": 79.3,
     "feels": 89.2,
     "humidity": 91,
-    "pop": 48
+    "pop": 62
    },
    {
     "time": "2026-09-22T19:00",
@@ -127,7 +127,7 @@
     "temp": 78.8,
     "feels": 88.7,
     "humidity": 93,
-    "pop": 51
+    "pop": 50
    },
    {
     "time": "2026-09-22T20:00",
@@ -135,7 +135,7 @@
     "temp": 79.1,
     "feels": 90.1,
     "humidity": 94,
-    "pop": 41
+    "pop": 32
    },
    {
     "time": "2026-09-22T21:00",
@@ -143,22 +143,22 @@
     "temp": 77.5,
     "feels": 85.3,
     "humidity": 94,
-    "pop": 44
+    "pop": 31
    }
   ],
   "current": {
-   "temp": 85.0,
-   "feels": 95.0,
-   "humidity": 78,
-   "wind_mph": 9.0,
-   "wind_dir": 117,
-   "observed_at": "2026-09-22T15:15"
+   "temp": 85.4,
+   "feels": 96.5,
+   "humidity": 77,
+   "wind_mph": 7.5,
+   "wind_dir": 107,
+   "observed_at": "2026-09-22T15:30"
   },
   "today": {
    "high": 86.8,
    "low": 76.1,
    "feels_max": 98.0,
-   "pop_max": 51
+   "pop_max": 62
   },
   "peak_feels": 98.0,
   "peak_hour": 12
@@ -166,150 +166,96 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-22T15:15:44-04:00",
+  "fetched_at": "2026-09-22T15:30:41-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-22T15:15:45-04:00",
-  "aqi": 25,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-22T15:30:44-04:00",
+  "aqi": 47,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-22 14:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-22",
-    "aqi": 22,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-22",
-    "aqi": 41,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-23",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-23",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-24",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-24",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 4.7,
+  "pm10": 5.5,
+  "observed": "2026-09-22T15:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-22T15:15:47-04:00",
+  "fetched_at": "2026-09-22T15:30:47-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
-  "depart_at": "2026-09-22T15:30:00-04:00",
-  "miles": 26.6,
-  "minutes": 69,
-  "delay_minutes": 0,
+  "depart_at": "now",
+  "miles": 20.6,
+  "minutes": 68,
+  "delay_minutes": 5,
   "toll_free": true,
   "alternates": [
    {
     "miles": 25.5,
-    "minutes": 55,
+    "minutes": 52,
     "toll": true,
-    "saves": 14
+    "saves": 16
    },
    {
-    "miles": 25.0,
-    "minutes": 57,
+    "miles": 22.6,
+    "minutes": 58,
     "toll": true,
-    "saves": 12
+    "saves": 10
    },
    {
-    "miles": 28.6,
-    "minutes": 65,
+    "miles": 20.8,
+    "minutes": 64,
     "toll": true,
     "saves": 4
    },
    {
-    "miles": 21.1,
-    "minutes": 65,
+    "miles": 46.8,
+    "minutes": 61,
     "toll": true,
-    "saves": 4
+    "saves": 7
    }
   ],
   "alternates_worth_taking": [
    {
     "miles": 25.5,
-    "minutes": 55,
+    "minutes": 52,
     "toll": true,
-    "saves": 14
-   },
-   {
-    "miles": 25.0,
-    "minutes": 57,
-    "toll": true,
-    "saves": 12
+    "saves": 16
    }
   ],
   "free_alternates": [
    {
-    "miles": 26.6,
-    "minutes": 69,
-    "delay_minutes": 0,
+    "miles": 20.6,
+    "minutes": 68,
+    "delay_minutes": 5,
     "saves": 0
    },
    {
-    "miles": 20.9,
+    "miles": 26.6,
     "minutes": 70,
-    "delay_minutes": 5
-   },
-   {
-    "miles": 23.1,
-    "minutes": 80,
-    "delay_minutes": 0
+    "delay_minutes": 1
    },
    {
     "miles": 22.5,
-    "minutes": 78,
-    "delay_minutes": 2
+    "minutes": 76,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 24.6,
+    "minutes": 80,
+    "delay_minutes": 1
    }
   ],
   "best_free": {
-   "miles": 26.6,
-   "minutes": 69,
-   "delay_minutes": 0,
+   "miles": 20.6,
+   "minutes": 68,
+   "delay_minutes": 5,
    "saves": 0
   },
   "incidents": [],
@@ -321,7 +267,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-22T15:15:48-04:00",
+  "fetched_at": "2026-09-22T15:30:47-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -362,14 +308,14 @@
    "Northeast | Alachua | Gainesville: There is lane blocking construction on SR-121 SB between Archer Rd and SW 35th Pl. Use caution in the area. | Sep 22 2026, 1:16 PM",
    "Northeast | Nassau | Yulee: Due to construction on US -17 at the FL/GA state line, all lanes are blocked. Seek alternate routes. | Sep 22 2026, 9:18 AM",
    "Panhandle | Okaloosa | SR-85: A major incident has closed all northbound lanes near Stillwell Blvd in Okaloosa County. Motorists are advised to seek alternate route and use caution in the area. | Sep 22 2026, 2:27 PM",
-   "Northeast | Clay | Keystone Heights: Due to emergency vehicles on SR-21 all southbound lanes are blocked at CR-352. Seek alternate routes. Use caution in the area. | Sep 22 2026, 2:58 PM"
+   "Northeast | Clay | Keystone Heights: Due to emergency vehicles on SR-21 all northbound and southbound lanes are blocked at CR-352. Seek alternate routes. Use caution in the area. | Sep 22 2026, 3:19 PM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-22T15:15:48-04:00",
+  "fetched_at": "2026-09-22T15:30:48-04:00",
   "issued": "200 PM EDT Tue Sep 22 2026",
   "areas": [
    {
@@ -383,7 +329,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-22T15:15:48-04:00",
+  "fetched_at": "2026-09-22T15:30:48-04:00",
   "florida": "$4.2423",
   "national": "$4.4750",
   "diesel": "$6.2577",
@@ -392,7 +338,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-22T15:15:50-04:00",
+  "fetched_at": "2026-09-22T15:30:49-04:00",
   "streams": {
    "local": [
     {
@@ -631,6 +577,14 @@
   ],
   "colombia": [
    {
+    "title": "Invasión, fuego y zozobra en zona rural de Jamundí: ¿qué hay detrás de la incursión violenta de encapuchados en un condominio en Potrerito?",
+    "url": "https://www.eltiempo.com/colombia/cali/invasion-fuego-y-zozobra-en-zona-rural-de-jamundi-que-hay-detras-de-la-incursion-violenta-de-encapuchados-en-un-condominio-en-potrerito-3588030",
+    "published": "2026-09-22T14:18:35-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/22/6ab2d201aab37.r_d.189-116-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Se hacían pasar por miembros de un grupo criminal en Bucaramanga y Piedecuesta: así cayeron peligrosos extorsionistas que amenazaban a comerciantes",
     "url": "https://www.eltiempo.com/colombia/santander/se-hacian-pasar-por-miembros-de-un-grupo-criminal-en-bucaramanga-y-piedecuesta-asi-cayeron-peligrosos-extorsionistas-que-amenazaban-a-comerciantes-3588027",
     "published": "2026-09-22T13:55:57-05:00",
@@ -685,14 +639,6 @@
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/22/6ab2b62203786.jpeg",
     "media_type": "image"
-   },
-   {
-    "title": "La conmovedora publicación de la madre del ingeniero Andrés Camilo Peláez días después de conocer la verdad detrás del crimen de su hijo",
-    "url": "https://www.eltiempo.com/colombia/medellin/la-conmovedora-publicacion-de-la-madre-del-ingeniero-andres-camilo-pelaez-dias-despues-de-conocer-la-verdad-de-lo-que-paso-con-su-hijo-exige-justicia-3587993",
-    "published": "2026-09-22T12:53:49-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/22/6ab2b6b1bb9db.r_d.1270-314-0.png",
-    "media_type": "image"
    }
   ],
   "world": [
@@ -716,6 +662,14 @@
     "title": "Houthis try to push deeper into western Yemen, upending life, witnesses tell NPR",
     "url": "https://www.npr.org/2026/09/22/g-s1-144261/yemen-houthis-saudi-iran-humanitarian-crisis",
     "published": "Tue, 22 Sep 2026 06:59:37 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "A journalist once barred from the White House says this media ban is different",
+    "url": "https://www.npr.org/2026/09/22/nx-s1-5976755/jim-acosta-white-house-media-ban",
+    "published": "Tue, 22 Sep 2026 06:47:59 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
@@ -751,21 +705,13 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "New book by Princess Diana's brother prompts war of words with King Charles III",
-    "url": "https://www.npr.org/2026/09/22/g-s1-144505/princess-diana-brother-book",
-    "published": "Tue, 22 Sep 2026 04:03:27 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-22T15:15:51-04:00",
+  "fetched_at": "2026-09-22T15:30:49-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -773,7 +719,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (401) + USGS (13)",
-  "fetched_at": "2026-09-22T15:15:55-04:00",
+  "fetched_at": "2026-09-22T15:30:52-04:00",
   "events": [
    {
     "lat": 9.6287383,
@@ -1377,6 +1323,18 @@
     "source": "GDACS"
    },
    {
+    "lat": -11.463248528233642,
+    "lon": -45.36399820590342,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 7850 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032282",
+    "when": "Mon, 21 Sep 2026 06:19:17 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -16.93187075297643,
     "lon": 135.6756399588657,
     "kind": "wildfire",
@@ -1398,18 +1356,6 @@
     "severity": "Green impact for forestfire in 6154 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032260",
     "when": "Sun, 20 Sep 2026 19:47:32 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -11.463248528233642,
-    "lon": -45.36399820590342,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 7850 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032282",
-    "when": "Mon, 21 Sep 2026 06:19:17 GMT",
     "source": "GDACS"
    },
    {
@@ -1509,6 +1455,18 @@
     "source": "GDACS"
    },
    {
+    "lat": -16.048155379564385,
+    "lon": 18.530146829682554,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 8717 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032179",
+    "when": "Mon, 21 Sep 2026 19:09:57 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -12.712795555038701,
     "lon": -46.002427803017305,
     "kind": "wildfire",
@@ -1530,18 +1488,6 @@
     "severity": "Green impact for forestfire in 8224 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032259",
     "when": "Sun, 20 Sep 2026 07:01:26 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -16.048155379564385,
-    "lon": 18.530146829682554,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 8717 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032179",
-    "when": "Mon, 21 Sep 2026 19:09:57 GMT",
     "source": "GDACS"
    },
    {
@@ -1581,6 +1527,18 @@
     "source": "GDACS"
    },
    {
+    "lat": -12.512129503285708,
+    "lon": -50.04208974271877,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 8122 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032256",
+    "when": "Sun, 20 Sep 2026 07:01:38 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -12.152755033853376,
     "lon": -47.01110899356872,
     "kind": "wildfire",
@@ -1614,18 +1572,6 @@
     "severity": "Green impact for forestfire in 33819 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032298",
     "when": "Mon, 21 Sep 2026 15:09:53 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -12.512129503285708,
-    "lon": -50.04208974271877,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 8122 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032256",
-    "when": "Sun, 20 Sep 2026 07:01:38 GMT",
     "source": "GDACS"
    },
    {
@@ -1797,6 +1743,18 @@
     "source": "GDACS"
    },
    {
+    "lat": -11.305246834240583,
+    "lon": -43.38633009544121,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 7380 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032217",
+    "when": "Sat, 19 Sep 2026 03:01:15 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -4.145979660289508,
     "lon": 144.8015645223757,
     "kind": "wildfire",
@@ -1833,13 +1791,13 @@
     "source": "GDACS"
    },
    {
-    "lat": -11.832304147763573,
-    "lon": -46.84005547861523,
+    "lat": -11.83470581762861,
+    "lon": -46.840451944178454,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Brazil",
     "place": "Brazil",
-    "severity": "Green impact for forestfire in 7528 ha",
+    "severity": "Green impact for forestfire in 7866 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032309",
     "when": "Mon, 21 Sep 2026 23:08:05 GMT",
     "source": "GDACS"
@@ -1854,18 +1812,6 @@
     "severity": "Green impact for forestfire in 11816 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032299",
     "when": "Tue, 22 Sep 2026 03:09:31 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -11.305246834240583,
-    "lon": -43.38633009544121,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 7380 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032217",
-    "when": "Sat, 19 Sep 2026 03:01:15 GMT",
     "source": "GDACS"
    },
    {
@@ -1977,30 +1923,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -11.120699987551799,
-    "lon": 14.67148886002084,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 5812 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032310",
-    "when": "Tue, 22 Sep 2026 15:06:40 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -18.68154330311777,
-    "lon": 145.72873360815362,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 16875 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032032",
-    "when": "Wed, 16 Sep 2026 15:00:41 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -16.855147805534617,
     "lon": 135.90397437090607,
     "kind": "wildfire",
@@ -2010,6 +1932,18 @@
     "severity": "Green impact for forestfire in 64887 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032112",
     "when": "Thu, 17 Sep 2026 19:01:16 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -18.683031646787363,
+    "lon": 145.7261065755325,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 17466 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032032",
+    "when": "Wed, 16 Sep 2026 15:00:41 GMT",
     "source": "GDACS"
    },
    {
@@ -2025,13 +1959,13 @@
     "source": "GDACS"
    },
    {
-    "lat": -11.40101744805485,
-    "lon": -51.42188286892582,
+    "lat": -11.40052968025527,
+    "lon": -51.421521068751005,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Brazil",
     "place": "Brazil",
-    "severity": "Green impact for forestfire in 13732 ha",
+    "severity": "Green impact for forestfire in 13833 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032287",
     "when": "Mon, 21 Sep 2026 06:23:56 GMT",
     "source": "GDACS"
@@ -2073,25 +2007,37 @@
     "source": "GDACS"
    },
    {
-    "lat": -12.415024580537974,
-    "lon": -47.03860574849961,
+    "lat": -11.12266648387481,
+    "lon": 14.670129755861009,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 6331 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032310",
+    "when": "Tue, 22 Sep 2026 15:06:40 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -12.41646405592963,
+    "lon": -47.038191768958434,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Brazil",
     "place": "Brazil",
-    "severity": "Green impact for forestfire in 5564 ha",
+    "severity": "Green impact for forestfire in 5935 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032329",
     "when": "Tue, 22 Sep 2026 15:07:23 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -11.410569211709335,
-    "lon": -47.31685265058945,
+    "lat": -11.410902889705406,
+    "lon": -47.317508391762026,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Brazil",
     "place": "Brazil",
-    "severity": "Green impact for forestfire in 5720 ha",
+    "severity": "Green impact for forestfire in 5811 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032330",
     "when": "Tue, 22 Sep 2026 15:07:27 GMT",
     "source": "GDACS"
@@ -2169,6 +2115,18 @@
     "source": "GDACS"
    },
    {
+    "lat": -17.333180902977684,
+    "lon": 25.06480406475388,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Zambia",
+    "place": "Zambia",
+    "severity": "Green impact for forestfire in 6726 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032172",
+    "when": "Fri, 18 Sep 2026 15:03:34 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -14.674370879210633,
     "lon": 132.25514477659573,
     "kind": "wildfire",
@@ -2193,39 +2151,27 @@
     "source": "GDACS"
    },
    {
-    "lat": -13.505686880022218,
-    "lon": 143.0129078622027,
+    "lat": -13.50449007238189,
+    "lon": 143.01118869120776,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Australia",
     "place": "Australia",
-    "severity": "Green impact for forestfire in 30955 ha",
+    "severity": "Green impact for forestfire in 32331 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032142",
     "when": "Fri, 18 Sep 2026 07:02:24 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -15.619578958771891,
-    "lon": 133.84099479667555,
+    "lat": -7.737173168778356,
+    "lon": 34.56392715597054,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 69210 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032113",
-    "when": "Thu, 17 Sep 2026 15:02:01 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -16.252377725385443,
-    "lon": 130.87172978523304,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 14743 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032114",
-    "when": "Thu, 17 Sep 2026 19:01:24 GMT",
+    "title": "Green forest fire notification in Tanzania",
+    "place": "Tanzania",
+    "severity": "Green impact for forestfire in 8858 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032144",
+    "when": "Fri, 18 Sep 2026 15:03:28 GMT",
     "source": "GDACS"
    }
   ],
@@ -2241,7 +2187,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-22T15:15:55-04:00",
+  "fetched_at": "2026-09-22T15:30:52-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2300,6 +2246,20 @@
     "issue": "War between U.S. and Iran becomes a test of who will blink first"
    },
    {
+    "iso": "USA",
+    "name": "United States",
+    "stories": [
+     {
+      "title": "A journalist once barred from the White House says this media ban is different",
+      "url": "https://www.npr.org/2026/09/22/nx-s1-5976755/jim-acosta-white-house-media-ban",
+      "published": "Tue, 22 Sep 2026 06:47:59 -0400",
+      "section": "world"
+     }
+    ],
+    "count": 1,
+    "issue": "A journalist once barred from the White House says this media ban is different"
+   },
+   {
     "iso": "YEM",
     "name": "Yemen",
     "stories": [
@@ -2315,7 +2275,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 5,
+  "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
