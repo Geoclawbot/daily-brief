@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-21T21:30:36-04:00",
- "generated_at_utc": "2026-09-22T01:30:36+00:00",
+ "generated_at": "2026-09-21T21:45:27-04:00",
+ "generated_at_utc": "2026-09-22T01:45:27+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 21",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-21T21:30:36-04:00",
+  "fetched_at": "2026-09-21T21:45:28-04:00",
   "curve": [
    {
     "time": "2026-09-21T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 78.0,
-   "feels": 89.4,
-   "humidity": 94,
-   "wind_mph": 0.5,
-   "wind_dir": 117,
-   "observed_at": "2026-09-21T21:30"
+   "temp": 78.1,
+   "feels": 89.5,
+   "humidity": 95,
+   "wind_mph": 1.0,
+   "wind_dir": 27,
+   "observed_at": "2026-09-21T21:45"
   },
   "today": {
    "high": 86.1,
@@ -166,26 +166,50 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-21T21:30:37-04:00",
+  "fetched_at": "2026-09-21T21:45:28-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-21T21:31:03-04:00",
-  "aqi": 51,
-  "category": "Moderate",
-  "pm25": 8.1,
-  "pm10": 8.6,
-  "observed": "2026-09-21T21:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-21T21:45:29-04:00",
+  "aqi": 45,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-21 20:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-22",
+    "aqi": 31,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-22",
+    "aqi": 28,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-23",
+    "aqi": 33,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-23",
+    "aqi": 39,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-21T21:31:03-04:00",
+  "fetched_at": "2026-09-21T21:45:29-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +222,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-21T21:31:03-04:00",
+  "fetched_at": "2026-09-21T21:45:30-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -247,7 +271,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-21T21:31:04-04:00",
+  "fetched_at": "2026-09-21T21:45:30-04:00",
   "issued": "800 PM EDT Mon Sep 21 2026",
   "areas": [
    {
@@ -261,7 +285,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-21T21:31:04-04:00",
+  "fetched_at": "2026-09-21T21:45:30-04:00",
   "florida": "$4.2807",
   "national": "$4.4786",
   "diesel": "$6.2846",
@@ -270,7 +294,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-21T21:31:04-04:00",
+  "fetched_at": "2026-09-21T21:45:31-04:00",
   "streams": {
    "local": [
     {
@@ -379,6 +403,14 @@
   ],
   "local": [
    {
+    "title": "Detectives investigate fatal shooting near Miami’s Design District",
+    "url": "https://www.local10.com/news/local/2026/09/21/police-officers-respond-to-fatal-shooting-near-miamis-design-district/",
+    "published": "Mon, 21 Sep 2026 16:04:23 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Davie police officer injured in crash",
     "url": "https://www.local10.com/news/local/2026/09/21/davie-police-officer-injured-in-crash/",
     "published": "Tue, 22 Sep 2026 01:17:03 +0000",
@@ -390,14 +422,6 @@
     "title": "Whistleblower report details poor living conditions at multiple Florida ICE facilities, including in Miramar",
     "url": "https://www.local10.com/news/local/2026/09/21/whistleblower-report-details-poor-living-conditions-at-multiple-florida-ice-facilities-including-in-miramar/",
     "published": "Mon, 21 Sep 2026 22:11:13 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Detectives investigate fatal shooting near Miami’s Design District",
-    "url": "https://www.local10.com/news/local/2026/09/21/police-officers-respond-to-fatal-shooting-near-miamis-design-district/",
-    "published": "Mon, 21 Sep 2026 16:04:23 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -451,27 +475,27 @@
     "media_type": "video"
    },
    {
-    "title": "People with disabilities enjoy sand and surf during Sabrina Cohen Adaptive Beach Day",
-    "url": "https://wsvn.com/news/local/miami-dade/people-with-disabilities-enjoy-sand-and-surf-during-sabrina-cohen-adaptive-beach-day/",
-    "published": "Mon, 21 Sep 2026 12:43:09 +0000",
+    "title": "Woman hospitalized after watercraft collision near North Bay Village",
+    "url": "https://wsvn.com/news/local/miami-dade/woman-hospitalized-after-watercraft-collision-near-north-bay-village/",
+    "published": "Mon, 21 Sep 2026 22:45:49 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b85f1d92-c605-4f59-981c-2cbecdb4eaa0/09513434-1b86-4b5a-a2b5-88c8371db079/main.mp4?fastly_token=NmFiMTdmOGZfYzU0NGFjMGNhZjdhZDg2NzIyODM5MzVlN2QzZmVkMjgzNDc5Y2E1N2IzYTczMWRiZGQ1OTIzYmY4MTBlZDVkMl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iODVmMWQ5Mi1jNjA1LTRmNTktOTgxYy0yY2JlY2RiNGVhYTAvMDk1MTM0MzQtMWI4Ni00YjVhLWEyYjUtODhjODM3MWRiMDc5L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6ea82e29-6a73-4ef5-aa03-23ea85d94669/9ff375c8-2e9d-4add-9d61-db3f2c42b2c1/main.mp4?fastly_token=NmFiMjBiOTVfY2I2YzY3ZTkxZGMyZjhlZDYzMWU5OGVkZTFiNGFiZDRmYjYyMTM0OTAwMmFhMDc5YzMzMzUyNmIyMjFkZmVhY18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82ZWE4MmUyOS02YTczLTRlZjUtYWEwMy0yM2VhODVkOTQ2NjkvOWZmMzc1YzgtMmU5ZC00YWRkLTlkNjEtZGIzZjJjNDJiMmMxL21haW4ubXA0",
     "media_type": "video"
    },
    {
-    "title": "Man hospitalized after shooting near Waffle House in Miami Gardens",
-    "url": "https://wsvn.com/news/local/miami-dade/man-hospitalized-after-shooting-near-waffle-house-in-miami-gardens/",
-    "published": "Sun, 20 Sep 2026 12:53:00 +0000",
+    "title": "2 people found dead in Pembroke Pines home, triggering investigation",
+    "url": "https://wsvn.com/news/local/broward/2-people-found-dead-in-pembroke-pines-home-triggering-investigation/",
+    "published": "Mon, 21 Sep 2026 16:48:15 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/dc59480e-499f-4e3e-aacb-b4f5f2b77670/834cfe31-6b74-4697-b4bd-f9d78cd39f15/main.mp4?fastly_token=NmFiMDU0OTFfNDU4OWRlNzEyNWQ4YjcyNTZiYjgyYjliYTIyZTZlMjAxNWZmZmE1OTc3N2Q3OWJmOGVhZjRkYzhlMjJlZjk3M18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kYzU5NDgwZS00OTlmLTRlM2UtYWFjYi1iNGY1ZjJiNzc2NzAvODM0Y2ZlMzEtNmI3NC00Njk3LWI0YmQtZjlkNzhjZDM5ZjE1L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/25eea798-e75b-4bef-86a5-324731495edf/7bb1213e-3194-4227-8150-820718f9a81e/main.mp4?fastly_token=NmFiMWZhMmJfNzgzYjgwYzlhNmMyODY2YTdmYjVhMjU5YzY0MjYzNGQzY2JjMzBhMjM4ZjdiNDExNDY5ZGNkZDVkMjdkOTMyN18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yNWVlYTc5OC1lNzViLTRiZWYtODZhNS0zMjQ3MzE0OTVlZGYvN2JiMTIxM2UtMzE5NC00MjI3LTgxNTAtODIwNzE4ZjlhODFlL21haW4ubXA0",
     "media_type": "video"
    },
    {
-    "title": "MDC’s 10th Annual Pink Walk 5K Run and Walk supports breast cancer awareness",
-    "url": "https://wsvn.com/news/local/miami-dade/mdcs-10th-annual-pink-walk-5k-run-and-walk-supports-breast-cancer-awareness/",
-    "published": "Mon, 21 Sep 2026 12:19:09 +0000",
+    "title": "Miami-Dade officials highlight voting access for neurodiverse voters ahead of midterms",
+    "url": "https://wsvn.com/news/local/miami-dade/miami-dade-officials-highlight-voting-access-for-neurodiverse-voters-ahead-of-midterms/",
+    "published": "Mon, 21 Sep 2026 22:44:14 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/53c9ade5-62d4-49ff-90e5-06d990d32d42/cb91e887-dfce-498b-9aee-1105a35e774b/main.mp4?fastly_token=NmFiMTljYTJfMjA2YzYyZGE5OWIxYTQxNWU2YTNkYjEwZjY5NjE1YzM5ZGUzZTE2MGUwN2RhY2FhYzA1Y2M3MTY3M2Y0YzU0N18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81M2M5YWRlNS02MmQ0LTQ5ZmYtOTBlNS0wNmQ5OTBkMzJkNDIvY2I5MWU4ODctZGZjZS00OThiLTlhZWUtMTEwNWEzNWU3NzRiL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/cd0716c9-052a-4d2c-bc58-addcf022eb4d/f7867aa5-0147-46bb-9404-39e66219f414/main.mp4?fastly_token=NmFiMjBiNWZfMDc2MmUwMjlkZWE5NTg1MDQ0NTA3NjQ5Mzg2N2Y4ZDUwNWRjNTY0MjFmYWIwMjkzNmZlZDBmYzAxMTg5ZmQ1M18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jZDA3MTZjOS0wNTJhLTRkMmMtYmM1OC1hZGRjZjAyMmViNGQvZjc4NjdhYTUtMDE0Ny00NmJiLTk0MDQtMzllNjYyMTlmNDE0L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -479,7 +503,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/inter-miami-cf-american-airlines-announce-new-multi-year-partnership-at-miami-international-airport/",
     "published": "Mon, 21 Sep 2026 22:51:08 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/a9e64c66-ad73-4fea-a264-618478682138/6dd46e9f-01bd-4c0d-85b7-fa77a107f1c9/main.mp4?fastly_token=NmFiMjBkNTVfZTRmMzM5NmVhMDE3ZTk3ZDU5NDFjMGI0ODFiODNmNTRlNmU3MTk5MjYyNTM2MDc3ZDBhMDFiNTFiNGUxZGNhOF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hOWU2NGM2Ni1hZDczLTRmZWEtYTI2NC02MTg0Nzg2ODIxMzgvNmRkNDZlOWYtMDFiZC00YzBkLTg1YjctZmE3N2ExMDdmMWM5L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/a9e64c66-ad73-4fea-a264-618478682138/6dd46e9f-01bd-4c0d-85b7-fa77a107f1c9/main.mp4?fastly_token=NmFiMjM0YWJfMTBlMzdjMjQxYjJkN2U3ODkyNzQ2YTFmZjdlYzFlZGUzODhhMTA4YzQzYTAzYTJiMGRlMjMxZDljZWUzMmFkMV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hOWU2NGM2Ni1hZDczLTRmZWEtYTI2NC02MTg0Nzg2ODIxMzgvNmRkNDZlOWYtMDFiZC00YzBkLTg1YjctZmE3N2ExMDdmMWM5L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -643,29 +667,16 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-21T21:31:05-04:00",
+  "fetched_at": "2026-09-21T21:45:32-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (372) + USGS (12)",
-  "fetched_at": "2026-09-21T21:31:08-04:00",
+  "source": "GDACS (372) + USGS (11)",
+  "fetched_at": "2026-09-21T21:45:35-04:00",
   "events": [
-   {
-    "lat": -8.307,
-    "lon": 120.5793,
-    "kind": "earthquake",
-    "level": "orange",
-    "title": "M5.5 — 35 km NNE of Ruteng, Indonesia",
-    "place": "35 km NNE of Ruteng, Indonesia",
-    "severity": "M5.5",
-    "mag": 5.5,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tiur",
-    "when": 1789954896315,
-    "source": "USGS"
-   },
    {
     "lat": 23.8350602,
     "lon": 76.2339871,
@@ -2104,12 +2115,24 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031989",
     "when": "Tue, 15 Sep 2026 15:00:26 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -15.542339063563714,
+    "lon": 124.52262568496057,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 14548 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032116",
+    "when": "Thu, 17 Sep 2026 15:02:20 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 384,
+  "event_count": 383,
   "counts": {
    "red": 0,
-   "orange": 8,
+   "orange": 7,
    "green": 376
   },
   "failed_sources": [],
@@ -2118,7 +2141,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-21T21:31:08-04:00",
+  "fetched_at": "2026-09-21T21:45:35-04:00",
   "countries": [
    {
     "iso": "CUB",
