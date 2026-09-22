@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-22T09:30:35-04:00",
- "generated_at_utc": "2026-09-22T13:30:35+00:00",
+ "generated_at": "2026-09-22T09:45:30-04:00",
+ "generated_at_utc": "2026-09-22T13:45:30+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 22",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-22T09:30:35-04:00",
+  "fetched_at": "2026-09-22T09:45:31-04:00",
   "curve": [
    {
     "time": "2026-09-22T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 82.4,
-   "feels": 93.9,
-   "humidity": 89,
-   "wind_mph": 4.6,
-   "wind_dir": 169,
-   "observed_at": "2026-09-22T09:30"
+   "temp": 82.8,
+   "feels": 94.5,
+   "humidity": 88,
+   "wind_mph": 3.9,
+   "wind_dir": 170,
+   "observed_at": "2026-09-22T09:45"
   },
   "today": {
    "high": 85.4,
@@ -166,26 +166,50 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-22T09:30:36-04:00",
+  "fetched_at": "2026-09-22T09:45:31-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-22T09:30:38-04:00",
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-22T09:45:32-04:00",
   "aqi": 51,
   "category": "Moderate",
-  "pm25": 8.3,
-  "pm10": 9.1,
-  "observed": "2026-09-22T09:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-22 8:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-22",
+    "aqi": 31,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-22",
+    "aqi": 28,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-23",
+    "aqi": 33,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-23",
+    "aqi": 39,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-22T09:30:38-04:00",
+  "fetched_at": "2026-09-22T09:45:33-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +222,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-22T09:30:39-04:00",
+  "fetched_at": "2026-09-22T09:45:34-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -245,7 +269,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-22T09:30:39-04:00",
+  "fetched_at": "2026-09-22T09:45:34-04:00",
   "issued": "800 AM EDT Tue Sep 22 2026",
   "areas": [
    {
@@ -259,7 +283,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-22T09:30:40-04:00",
+  "fetched_at": "2026-09-22T09:45:35-04:00",
   "florida": "$4.2423",
   "national": "$4.4750",
   "diesel": "$6.2577",
@@ -268,7 +292,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-22T09:30:41-04:00",
+  "fetched_at": "2026-09-22T09:45:37-04:00",
   "streams": {
    "local": [
     {
@@ -573,6 +597,14 @@
   ],
   "world": [
    {
+    "title": "Sri Lanka court convicts 15 over deadly 2019 Easter bombings",
+    "url": "https://www.npr.org/2026/09/22/g-s1-144514/sri-lanka-court-convicts-15-over-deadly-2019-easter-bombings",
+    "published": "Tue, 22 Sep 2026 09:30:01 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "CNN, MS NOW and Politico sue Trump. And, Paramount settles in massive merger lawsuit",
     "url": "https://www.npr.org/2026/09/22/g-s1-144512/up-first-newsletter-press-lawsuit-cnn-msnow-politico-unga-trump-speech-paramount-deal",
     "published": "Tue, 22 Sep 2026 07:01:01 -0400",
@@ -627,29 +659,21 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "AI and autonomous weapons are high on the agenda at the UN General Assembly",
-    "url": "https://www.npr.org/2026/09/21/nx-s1-5974200/ai-and-autonomous-weapons-are-high-on-the-agenda-at-the-un-general-assembly",
-    "published": "Mon, 21 Sep 2026 17:18:10 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-22T09:30:42-04:00",
+  "fetched_at": "2026-09-22T09:45:37-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (397) + USGS (14)",
-  "fetched_at": "2026-09-22T09:30:45-04:00",
+  "source": "GDACS (397) + USGS (13)",
+  "fetched_at": "2026-09-22T09:45:41-04:00",
   "events": [
    {
     "lat": 9.6287383,
@@ -785,19 +809,6 @@
     "mag": 5,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tj0z",
     "when": 1790026624871,
-    "source": "USGS"
-   },
-   {
-    "lat": 32.5978,
-    "lon": 132.0805,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M5 — 38 km E of Nobeoka, Japan",
-    "place": "38 km E of Nobeoka, Japan",
-    "severity": "M5",
-    "mag": 5,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tixp",
-    "when": 1789997912404,
     "source": "USGS"
    },
    {
@@ -2104,13 +2115,25 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032272",
     "when": "Mon, 21 Sep 2026 06:25:55 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -10.097626170347308,
+    "lon": -45.634281230395615,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 5050 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032288",
+    "when": "Tue, 22 Sep 2026 11:09:35 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 411,
+  "event_count": 410,
   "counts": {
    "red": 0,
    "orange": 7,
-   "green": 404
+   "green": 403
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2118,7 +2141,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-22T09:30:45-04:00",
+  "fetched_at": "2026-09-22T09:45:41-04:00",
   "countries": [
    {
     "iso": "COL",
