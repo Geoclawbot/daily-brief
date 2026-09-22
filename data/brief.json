@@ -1,191 +1,62 @@
 {
- "generated_at": "2026-09-21T20:30:40-04:00",
- "generated_at_utc": "2026-09-22T00:30:40+00:00",
+ "generated_at": "2026-09-21T20:46:04-04:00",
+ "generated_at_utc": "2026-09-22T00:46:04+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 21",
  "is_weekend": false,
  "weather": {
-  "ok": true,
-  "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-21T20:30:40-04:00",
-  "curve": [
-   {
-    "time": "2026-09-21T05:00",
-    "hour": 5,
-    "temp": 75.1,
-    "feels": 84.6,
-    "humidity": 95,
-    "pop": 9
-   },
-   {
-    "time": "2026-09-21T06:00",
-    "hour": 6,
-    "temp": 74.9,
-    "feels": 84.6,
-    "humidity": 95,
-    "pop": 12
-   },
-   {
-    "time": "2026-09-21T07:00",
-    "hour": 7,
-    "temp": 75.3,
-    "feels": 84.9,
-    "humidity": 96,
-    "pop": 10
-   },
-   {
-    "time": "2026-09-21T08:00",
-    "hour": 8,
-    "temp": 76.0,
-    "feels": 86.1,
-    "humidity": 95,
-    "pop": 7
-   },
-   {
-    "time": "2026-09-21T09:00",
-    "hour": 9,
-    "temp": 78.5,
-    "feels": 89.0,
-    "humidity": 92,
-    "pop": 5
-   },
-   {
-    "time": "2026-09-21T10:00",
-    "hour": 10,
-    "temp": 81.6,
-    "feels": 94.0,
-    "humidity": 91,
-    "pop": 8
-   },
-   {
-    "time": "2026-09-21T11:00",
-    "hour": 11,
-    "temp": 83.8,
-    "feels": 95.9,
-    "humidity": 80,
-    "pop": 7
-   },
-   {
-    "time": "2026-09-21T12:00",
-    "hour": 12,
-    "temp": 86.0,
-    "feels": 96.8,
-    "humidity": 73,
-    "pop": 11
-   },
-   {
-    "time": "2026-09-21T13:00",
-    "hour": 13,
-    "temp": 86.1,
-    "feels": 97.0,
-    "humidity": 73,
-    "pop": 13
-   },
-   {
-    "time": "2026-09-21T14:00",
-    "hour": 14,
-    "temp": 84.9,
-    "feels": 93.1,
-    "humidity": 76,
-    "pop": 39
-   },
-   {
-    "time": "2026-09-21T15:00",
-    "hour": 15,
-    "temp": 84.7,
-    "feels": 93.2,
-    "humidity": 77,
-    "pop": 49
-   },
-   {
-    "time": "2026-09-21T16:00",
-    "hour": 16,
-    "temp": 85.4,
-    "feels": 93.2,
-    "humidity": 69,
-    "pop": 34
-   },
-   {
-    "time": "2026-09-21T17:00",
-    "hour": 17,
-    "temp": 82.3,
-    "feels": 93.4,
-    "humidity": 84,
-    "pop": 31
-   },
-   {
-    "time": "2026-09-21T18:00",
-    "hour": 18,
-    "temp": 80.5,
-    "feels": 91.8,
-    "humidity": 90,
-    "pop": 38
-   },
-   {
-    "time": "2026-09-21T19:00",
-    "hour": 19,
-    "temp": 78.7,
-    "feels": 87.9,
-    "humidity": 88,
-    "pop": 35
-   },
-   {
-    "time": "2026-09-21T20:00",
-    "hour": 20,
-    "temp": 78.2,
-    "feels": 87.2,
-    "humidity": 91,
-    "pop": 33
-   },
-   {
-    "time": "2026-09-21T21:00",
-    "hour": 21,
-    "temp": 78.1,
-    "feels": 87.9,
-    "humidity": 91,
-    "pop": 23
-   }
-  ],
-  "current": {
-   "temp": 78.1,
-   "feels": 87.7,
-   "humidity": 91,
-   "wind_mph": 3.3,
-   "wind_dir": 132,
-   "observed_at": "2026-09-21T20:30"
-  },
-  "today": {
-   "high": 86.1,
-   "low": 74.9,
-   "feels_max": 97.0,
-   "pop_max": 49
-  },
-  "peak_feels": 97.0,
-  "peak_hour": 13
+  "ok": false,
+  "source": "Open-Meteo",
+  "fetched_at": "2026-09-21T20:46:29-04:00",
+  "error": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=25)"
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-21T20:30:41-04:00",
+  "fetched_at": "2026-09-21T20:46:30-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-21T20:31:07-04:00",
-  "aqi": 52,
-  "category": "Moderate",
-  "pm25": 6.9,
-  "pm10": 7.5,
-  "observed": "2026-09-21T20:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-21T20:46:30-04:00",
+  "aqi": 42,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-21 19:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-22",
+    "aqi": 31,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-22",
+    "aqi": 28,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-23",
+    "aqi": 33,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-23",
+    "aqi": 39,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-21T20:31:07-04:00",
+  "fetched_at": "2026-09-21T20:46:31-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +69,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-21T20:31:08-04:00",
+  "fetched_at": "2026-09-21T20:46:31-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -238,7 +109,7 @@
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 21 2026, 6:05 PM",
    "Panhandle | Escambia | US-29: A major incident has closed all lanes near N Barth Rd in Escambia County. Motorists are advised to seek alternate route and use caution in the area. | Sep 21 2026, 5:04 PM",
    "Southeast | Palm Beach | There is scheduled road work on the Florida's Turnpike northbound and southbound at exit 97, Southern Boulevard, to exit 99, Okeechobee Boulevard. All lanes are scheduled to be closed from 10:00pm to 6:00am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 21 2026, 8:28 PM",
-   "Northeast | Suwannee | Live Oak: Due to a vehicle fire, all EB lanes of I-10 are blocked at MM 288. Use caution in the area and seek an alternate route. | Sep 21 2026, 8:07 PM"
+   "Northeast | Putnam | Palatka: There is lane-blocking construction on US-17 NB at 4th st. Use caution in the area. | Sep 21 2026, 8:38 PM"
   ],
   "fl511_local": [
    "Southeast | Palm Beach | There is scheduled road work on the Florida's Turnpike northbound and southbound at exit 97, Southern Boulevard, to exit 99, Okeechobee Boulevard. All lanes are scheduled to be closed from 10:00pm to 6:00am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 21 2026, 8:28 PM"
@@ -247,7 +118,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-21T20:31:08-04:00",
+  "fetched_at": "2026-09-21T20:46:32-04:00",
   "issued": "800 PM EDT Mon Sep 21 2026",
   "areas": [
    {
@@ -261,7 +132,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-21T20:31:08-04:00",
+  "fetched_at": "2026-09-21T20:46:32-04:00",
   "florida": "$4.2807",
   "national": "$4.4786",
   "diesel": "$6.2846",
@@ -270,7 +141,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-21T20:31:09-04:00",
+  "fetched_at": "2026-09-21T20:46:33-04:00",
   "streams": {
    "local": [
     {
@@ -379,6 +250,14 @@
   ],
   "local": [
    {
+    "title": "Detectives investigate fatal shooting near Miami’s Design District",
+    "url": "https://www.local10.com/news/local/2026/09/21/police-officers-respond-to-fatal-shooting-near-miamis-design-district/",
+    "published": "Mon, 21 Sep 2026 16:04:23 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Whistleblower report details poor living conditions at multiple Florida ICE facilities, including in Miramar",
     "url": "https://www.local10.com/news/local/2026/09/21/whistleblower-report-details-poor-living-conditions-at-multiple-florida-ice-facilities-including-in-miramar/",
     "published": "Mon, 21 Sep 2026 22:11:13 +0000",
@@ -417,14 +296,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/4SN4UX7L4BCUXPWCMENUQGKAJQ.jpg?auth=584ad5ad91ce7839b316d1da57127e57f24491fa4945dd1a92d3adae83e99d48&smart=true&width=1200&height=900",
     "media_type": "image"
-   },
-   {
-    "title": "Police officers respond to fatal shooting near Miami’s Design District",
-    "url": "https://www.local10.com/news/local/2026/09/21/police-officers-respond-to-fatal-shooting-near-miamis-design-district/",
-    "published": "Mon, 21 Sep 2026 16:04:23 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
    },
    {
     "title": "Deputies investigate shooting after 1 dead, 1 injured in Lauderdale Lakes",
@@ -643,7 +514,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-21T20:31:10-04:00",
+  "fetched_at": "2026-09-21T20:46:34-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -651,7 +522,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (372) + USGS (13)",
-  "fetched_at": "2026-09-21T20:31:14-04:00",
+  "fetched_at": "2026-09-21T20:46:37-04:00",
   "events": [
    {
     "lat": -8.307,
@@ -2119,7 +1990,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-21T20:31:14-04:00",
+  "fetched_at": "2026-09-21T20:46:37-04:00",
   "countries": [
    {
     "iso": "CUB",
@@ -2196,6 +2067,8 @@
   "countries_matched": 5,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [],
- "health": "11/11 sources ok"
+ "failures": [
+  "weather"
+ ],
+ "health": "10/11 sources ok"
 }
