@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-22T15:30:37-04:00",
- "generated_at_utc": "2026-09-22T19:30:37+00:00",
+ "generated_at": "2026-09-22T15:45:38-04:00",
+ "generated_at_utc": "2026-09-22T19:45:38+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 22",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-22T15:30:40-04:00",
+  "fetched_at": "2026-09-22T15:45:38-04:00",
   "curve": [
    {
     "time": "2026-09-22T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 85.4,
-   "feels": 96.5,
+   "temp": 85.6,
+   "feels": 96.3,
    "humidity": 77,
-   "wind_mph": 7.5,
-   "wind_dir": 107,
-   "observed_at": "2026-09-22T15:30"
+   "wind_mph": 7.3,
+   "wind_dir": 101,
+   "observed_at": "2026-09-22T15:45"
   },
   "today": {
    "high": 86.8,
@@ -166,97 +166,151 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-22T15:30:41-04:00",
+  "fetched_at": "2026-09-22T15:45:39-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-22T15:30:44-04:00",
-  "aqi": 47,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-22T15:45:49-04:00",
+  "aqi": 38,
   "category": "Good",
-  "pm25": 4.7,
-  "pm10": 5.5,
-  "observed": "2026-09-22T15:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-22 14:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-22",
+    "aqi": 22,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-22",
+    "aqi": 41,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-23",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-23",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-24",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-24",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-25",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-25",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-22T15:30:47-04:00",
+  "fetched_at": "2026-09-22T15:45:51-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 20.6,
-  "minutes": 68,
-  "delay_minutes": 5,
+  "miles": 26.6,
+  "minutes": 71,
+  "delay_minutes": 0,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 25.5,
-    "minutes": 52,
+    "miles": 26.4,
+    "minutes": 54,
     "toll": true,
-    "saves": 16
+    "saves": 17
    },
    {
     "miles": 22.6,
-    "minutes": 58,
+    "minutes": 60,
     "toll": true,
-    "saves": 10
+    "saves": 11
    },
    {
     "miles": 20.8,
-    "minutes": 64,
+    "minutes": 66,
     "toll": true,
-    "saves": 4
+    "saves": 5
    },
    {
-    "miles": 46.8,
-    "minutes": 61,
+    "miles": 45.6,
+    "minutes": 64,
     "toll": true,
     "saves": 7
    }
   ],
   "alternates_worth_taking": [
    {
-    "miles": 25.5,
-    "minutes": 52,
+    "miles": 26.4,
+    "minutes": 54,
     "toll": true,
-    "saves": 16
+    "saves": 17
+   },
+   {
+    "miles": 22.6,
+    "minutes": 60,
+    "toll": true,
+    "saves": 11
    }
   ],
   "free_alternates": [
    {
-    "miles": 20.6,
-    "minutes": 68,
-    "delay_minutes": 5,
-    "saves": 0
-   },
-   {
     "miles": 26.6,
-    "minutes": 70,
-    "delay_minutes": 1
-   },
-   {
-    "miles": 22.5,
-    "minutes": 76,
+    "minutes": 71,
     "delay_minutes": 0
    },
    {
-    "miles": 24.6,
-    "minutes": 80,
-    "delay_minutes": 1
+    "miles": 20.6,
+    "minutes": 70,
+    "delay_minutes": 6,
+    "saves": 1
+   },
+   {
+    "miles": 23.1,
+    "minutes": 84,
+    "delay_minutes": 2
+   },
+   {
+    "miles": 22.5,
+    "minutes": 77,
+    "delay_minutes": 0
    }
   ],
   "best_free": {
    "miles": 20.6,
-   "minutes": 68,
-   "delay_minutes": 5,
-   "saves": 0
+   "minutes": 70,
+   "delay_minutes": 6,
+   "saves": 1
   },
   "incidents": [],
   "incident_count": 0,
@@ -267,7 +321,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-22T15:30:47-04:00",
+  "fetched_at": "2026-09-22T15:45:52-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -315,7 +369,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-22T15:30:48-04:00",
+  "fetched_at": "2026-09-22T15:45:53-04:00",
   "issued": "200 PM EDT Tue Sep 22 2026",
   "areas": [
    {
@@ -329,7 +383,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-22T15:30:48-04:00",
+  "fetched_at": "2026-09-22T15:45:53-04:00",
   "florida": "$4.2423",
   "national": "$4.4750",
   "diesel": "$6.2577",
@@ -338,7 +392,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-22T15:30:49-04:00",
+  "fetched_at": "2026-09-22T15:45:54-04:00",
   "streams": {
    "local": [
     {
@@ -577,6 +631,14 @@
   ],
   "colombia": [
    {
+    "title": "Hace casi 200 años un terremoto destruyó Chaparral, Tolima: así se unieron para reconstruirlo",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/hace-casi-200-anos-un-terremoto-destruyo-chaparral-tolima-asi-se-unieron-para-reconstruirlo-3587996",
+    "published": "2026-09-22T14:32:36-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/22/6ab2be0443cc0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Invasión, fuego y zozobra en zona rural de Jamundí: ¿qué hay detrás de la incursión violenta de encapuchados en un condominio en Potrerito?",
     "url": "https://www.eltiempo.com/colombia/cali/invasion-fuego-y-zozobra-en-zona-rural-de-jamundi-que-hay-detras-de-la-incursion-violenta-de-encapuchados-en-un-condominio-en-potrerito-3588030",
     "published": "2026-09-22T14:18:35-05:00",
@@ -630,14 +692,6 @@
     "published": "2026-09-22T12:32:18-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/22/6ab2b5bec425b.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Microtráfico a plena luz del día: así ‘Floralita’ construyó un imperio criminal de $ 70 millones mensuales en colegios y parques de Cali",
-    "url": "https://www.eltiempo.com/colombia/cali/microtrafico-a-plena-luz-del-dia-asi-floralita-construyo-un-imperio-criminal-de-70-millones-mensuales-en-colegios-y-parques-de-cali-3587998",
-    "published": "2026-09-22T12:23:07-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/22/6ab2b62203786.jpeg",
     "media_type": "image"
    }
   ],
@@ -711,7 +765,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-22T15:30:49-04:00",
+  "fetched_at": "2026-09-22T15:45:54-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -719,7 +773,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (401) + USGS (13)",
-  "fetched_at": "2026-09-22T15:30:52-04:00",
+  "fetched_at": "2026-09-22T15:45:58-04:00",
   "events": [
    {
     "lat": 9.6287383,
@@ -1335,18 +1389,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -16.93187075297643,
-    "lon": 135.6756399588657,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 7458 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032295",
-    "when": "Mon, 21 Sep 2026 15:05:16 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -17.51759839384615,
     "lon": 124.55017605233384,
     "kind": "wildfire",
@@ -1356,6 +1398,18 @@
     "severity": "Green impact for forestfire in 6154 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032260",
     "when": "Sun, 20 Sep 2026 19:47:32 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -16.93187075297643,
+    "lon": 135.6756399588657,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 7458 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032295",
+    "when": "Mon, 21 Sep 2026 15:05:16 GMT",
     "source": "GDACS"
    },
    {
@@ -1503,6 +1557,18 @@
     "source": "GDACS"
    },
    {
+    "lat": -12.512129503285708,
+    "lon": -50.04208974271877,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 8122 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032256",
+    "when": "Sun, 20 Sep 2026 07:01:38 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -13.981767107327078,
     "lon": 130.21679554603688,
     "kind": "wildfire",
@@ -1524,18 +1590,6 @@
     "severity": "Green impact for forestfire in 11641 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032262",
     "when": "Sun, 20 Sep 2026 19:48:49 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -12.512129503285708,
-    "lon": -50.04208974271877,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 8122 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032256",
-    "when": "Sun, 20 Sep 2026 07:01:38 GMT",
     "source": "GDACS"
    },
    {
@@ -1971,18 +2025,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -13.694442671733576,
-    "lon": 135.24263209736623,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 7314 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032228",
-    "when": "Sat, 19 Sep 2026 19:03:06 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -11.872075451426054,
     "lon": -47.624678534837265,
     "kind": "wildfire",
@@ -2004,6 +2046,18 @@
     "severity": "Green impact for forestfire in 5956 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032264",
     "when": "Sun, 20 Sep 2026 19:49:50 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -13.694442671733576,
+    "lon": 135.24263209736623,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 7314 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032228",
+    "when": "Sat, 19 Sep 2026 19:03:06 GMT",
     "source": "GDACS"
    },
    {
@@ -2187,22 +2241,8 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-22T15:30:52-04:00",
+  "fetched_at": "2026-09-22T15:45:58-04:00",
   "countries": [
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Microtráfico a plena luz del día: así ‘Floralita’ construyó un imperio criminal de $ 70 millones mensuales en colegios y parques de Cali",
-      "url": "https://www.eltiempo.com/colombia/cali/microtrafico-a-plena-luz-del-dia-asi-floralita-construyo-un-imperio-criminal-de-70-millones-mensuales-en-colegios-y-parques-de-cali-3587998",
-      "published": "2026-09-22T12:23:07-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 1,
-    "issue": "Microtráfico a plena luz del día: así ‘Floralita’ construyó un imperio criminal de $ 70 millones mensuales en colegios y parques de Cali"
-   },
    {
     "iso": "CRI",
     "name": "Costa Rica",
@@ -2275,7 +2315,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 6,
+  "countries_matched": 5,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
