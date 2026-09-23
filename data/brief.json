@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-23T04:15:35-04:00",
- "generated_at_utc": "2026-09-23T08:15:35+00:00",
+ "generated_at": "2026-09-23T04:30:33-04:00",
+ "generated_at_utc": "2026-09-23T08:30:33+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 23",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-23T04:15:35-04:00",
+  "fetched_at": "2026-09-23T04:30:33-04:00",
   "curve": [
    {
     "time": "2026-09-23T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 76.2,
-   "feels": 84.3,
+   "temp": 75.9,
+   "feels": 84.1,
    "humidity": 94,
-   "wind_mph": 5.6,
-   "wind_dir": 61,
-   "observed_at": "2026-09-23T04:15"
+   "wind_mph": 4.8,
+   "wind_dir": 62,
+   "observed_at": "2026-09-23T04:30"
   },
   "today": {
    "high": 80.8,
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-23T04:15:36-04:00",
+  "fetched_at": "2026-09-23T04:30:34-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-23T04:15:36-04:00",
-  "aqi": 19,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-23T04:30:59-04:00",
+  "aqi": 43,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-23 3:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-23",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-23",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-24",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-24",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 7.9,
+  "pm10": 8.6,
+  "observed": "2026-09-23T04:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-23T04:15:38-04:00",
+  "fetched_at": "2026-09-23T04:31:01-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
@@ -266,13 +230,13 @@
     "saves": 0
    },
    {
-    "miles": 21.9,
-    "minutes": 41,
+    "miles": 29.3,
+    "minutes": 45,
     "delay_minutes": 0
    },
    {
-    "miles": 24.9,
-    "minutes": 53,
+    "miles": 21.7,
+    "minutes": 48,
     "delay_minutes": 0
    },
    {
@@ -296,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-23T04:15:39-04:00",
+  "fetched_at": "2026-09-23T04:31:02-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -345,7 +309,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-23T04:15:39-04:00",
+  "fetched_at": "2026-09-23T04:31:02-04:00",
   "issued": "200 AM EDT Wed Sep 23 2026",
   "areas": [
    {
@@ -359,16 +323,16 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-23T04:15:39-04:00",
-  "florida": "$4.2423",
-  "national": "$4.4750",
-  "diesel": "$6.2577",
-  "as_of": "9/22/26"
+  "fetched_at": "2026-09-23T04:31:03-04:00",
+  "florida": "$4.2941",
+  "national": "$4.4744",
+  "diesel": "$6.2264",
+  "as_of": "9/23/26"
  },
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-23T04:15:41-04:00",
+  "fetched_at": "2026-09-23T04:31:04-04:00",
   "streams": {
    "local": [
     {
@@ -607,6 +571,14 @@
   ],
   "colombia": [
    {
+    "title": "Temblor hoy en Colombia | Seguidilla de sismos durante la madrugada de este 23 de septiembre en Chaparral, Tolima: el mayor fue de magnitud 4,0",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-seguidilla-de-sismos-durante-la-madrugada-de-este-23-de-septiembre-en-chaparral-tolima-el-mayor-fue-de-magnitud-4-3588168",
+    "published": "2026-09-23T03:19:16-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2024/05/26/66531d1042a82.r_d.293-88-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "¡Evite comparendos! Pico y placa en Cali este miércoles 23 de septiembre de 2026: así aplica la restricción",
     "url": "https://www.eltiempo.com/colombia/cali/evite-comparendos-pico-y-placa-en-cali-este-miercoles-23-de-septiembre-de-2026-asi-aplica-la-restriccion-3588015",
     "published": "2026-09-23T02:30:00-05:00",
@@ -660,14 +632,6 @@
     "published": "2026-09-22T21:51:12-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/22/6ab33cc07e189.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Caso de presunto abuso sexual a niñas indígenas de entre 12 y 15 años en los resguardos Caño de Sal y Luna Roja, ubicados en Puerto Colombia, Meta",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/caso-de-presunto-abuso-sexual-a-ninas-indigenas-entre-los-12-y-15-anos-en-los-resguardos-cano-de-sal-y-luna-roja-ubicados-en-puerto-colombia-meta-3588101",
-    "published": "2026-09-22T21:51:43-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/22/6ab2f9263eb44.png",
     "media_type": "image"
    }
   ],
@@ -741,7 +705,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-23T04:15:41-04:00",
+  "fetched_at": "2026-09-23T04:31:04-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -749,7 +713,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (373) + USGS (10)",
-  "fetched_at": "2026-09-23T04:15:45-04:00",
+  "fetched_at": "2026-09-23T04:31:08-04:00",
   "events": [
    {
     "lat": 9.6287383,
@@ -2214,12 +2178,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-23T04:15:45-04:00",
+  "fetched_at": "2026-09-23T04:31:08-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "Temblor hoy en Colombia | Seguidilla de sismos durante la madrugada de este 23 de septiembre en Chaparral, Tolima: el mayor fue de magnitud 4,0",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-seguidilla-de-sismos-durante-la-madrugada-de-este-23-de-septiembre-en-chaparral-tolima-el-mayor-fue-de-magnitud-4-3588168",
+      "published": "2026-09-23T03:19:16-05:00",
+      "section": "colombia"
+     },
      {
       "title": "¡Evite comparendos! Pico y placa en Cali este miércoles 23 de septiembre de 2026: así aplica la restricción",
       "url": "https://www.eltiempo.com/colombia/cali/evite-comparendos-pico-y-placa-en-cali-este-miercoles-23-de-septiembre-de-2026-asi-aplica-la-restriccion-3588015",
@@ -2243,16 +2213,10 @@
       "url": "https://www.eltiempo.com/colombia/cali/400-millones-y-100-000-corazones-asi-juntos-por-el-pacifico-convirtio-la-solidaridad-en-reactivacion-economica-tras-el-terremoto-en-cali-3588158",
       "published": "2026-09-22T21:51:12-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Caso de presunto abuso sexual a niñas indígenas de entre 12 y 15 años en los resguardos Caño de Sal y Luna Roja, ubicados en Puerto Colombia, Meta",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/caso-de-presunto-abuso-sexual-a-ninas-indigenas-entre-los-12-y-15-anos-en-los-resguardos-cano-de-sal-y-luna-roja-ubicados-en-puerto-colombia-meta-3588101",
-      "published": "2026-09-22T21:51:43-05:00",
-      "section": "colombia"
      }
     ],
     "count": 5,
-    "issue": "¡Evite comparendos! Pico y placa en Cali este miércoles 23 de septiembre de 2026: así aplica la restricción"
+    "issue": "Temblor hoy en Colombia | Seguidilla de sismos durante la madrugada de este 23 de septiembre en Chaparral, Tolima: el mayor fue de magnitud 4,0"
    },
    {
     "iso": "IRN",
