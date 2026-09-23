@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-23T14:15:34-04:00",
- "generated_at_utc": "2026-09-23T18:15:34+00:00",
+ "generated_at": "2026-09-23T14:30:30-04:00",
+ "generated_at_utc": "2026-09-23T18:30:30+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 23",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-23T14:15:34-04:00",
+  "fetched_at": "2026-09-23T14:30:31-04:00",
   "curve": [
    {
     "time": "2026-09-23T05:00",
@@ -76,152 +76,116 @@
    {
     "time": "2026-09-23T13:00",
     "hour": 13,
-    "temp": 81.2,
-    "feels": 91.3,
+    "temp": 81.4,
+    "feels": 91.7,
     "humidity": 84,
     "pop": 30
    },
    {
     "time": "2026-09-23T14:00",
     "hour": 14,
-    "temp": 82.3,
-    "feels": 94.2,
+    "temp": 82.4,
+    "feels": 93.9,
     "humidity": 80,
     "pop": 29
    },
    {
     "time": "2026-09-23T15:00",
     "hour": 15,
-    "temp": 83.0,
-    "feels": 93.5,
+    "temp": 83.2,
+    "feels": 94.1,
     "humidity": 79,
     "pop": 34
    },
    {
     "time": "2026-09-23T16:00",
     "hour": 16,
-    "temp": 82.5,
-    "feels": 91.3,
+    "temp": 83.2,
+    "feels": 92.3,
     "humidity": 80,
     "pop": 37
    },
    {
     "time": "2026-09-23T17:00",
     "hour": 17,
-    "temp": 80.2,
-    "feels": 90.1,
+    "temp": 82.6,
+    "feels": 94.1,
     "humidity": 86,
     "pop": 38
    },
    {
     "time": "2026-09-23T18:00",
     "hour": 18,
-    "temp": 79.3,
-    "feels": 87.9,
+    "temp": 80.2,
+    "feels": 89.4,
     "humidity": 85,
     "pop": 38
    },
    {
     "time": "2026-09-23T19:00",
     "hour": 19,
-    "temp": 78.1,
-    "feels": 86.8,
+    "temp": 78.6,
+    "feels": 87.5,
     "humidity": 88,
     "pop": 24
    },
    {
     "time": "2026-09-23T20:00",
     "hour": 20,
-    "temp": 78.2,
-    "feels": 88.5,
+    "temp": 77.7,
+    "feels": 87.6,
     "humidity": 92,
     "pop": 20
    },
    {
     "time": "2026-09-23T21:00",
     "hour": 21,
-    "temp": 78.0,
-    "feels": 88.6,
+    "temp": 77.0,
+    "feels": 86.3,
     "humidity": 93,
     "pop": 12
    }
   ],
   "current": {
-   "temp": 82.3,
-   "feels": 91.7,
+   "temp": 83.1,
+   "feels": 94.9,
    "humidity": 79,
-   "wind_mph": 3.8,
-   "wind_dir": 126,
-   "observed_at": "2026-09-23T14:15"
+   "wind_mph": 3.6,
+   "wind_dir": 90,
+   "observed_at": "2026-09-23T14:30"
   },
   "today": {
-   "high": 83.0,
+   "high": 83.2,
    "low": 74.5,
-   "feels_max": 94.2,
+   "feels_max": 94.1,
    "pop_max": 57
   },
-  "peak_feels": 94.2,
-  "peak_hour": 14
+  "peak_feels": 94.1,
+  "peak_hour": 15
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-23T14:15:34-04:00",
+  "fetched_at": "2026-09-23T14:30:35-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-23T14:15:35-04:00",
-  "aqi": 31,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-23T14:30:42-04:00",
+  "aqi": 35,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-23 13:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-23",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-23",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-24",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-24",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 3.7,
+  "pm10": 4.3,
+  "observed": "2026-09-23T14:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-23T14:15:38-04:00",
+  "fetched_at": "2026-09-23T14:30:43-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
@@ -296,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-23T14:15:39-04:00",
+  "fetched_at": "2026-09-23T14:30:44-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -348,7 +312,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-23T14:15:39-04:00",
+  "fetched_at": "2026-09-23T14:30:44-04:00",
   "issued": "200 PM EDT Wed Sep 23 2026",
   "areas": [
    {
@@ -367,7 +331,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-23T14:15:39-04:00",
+  "fetched_at": "2026-09-23T14:30:45-04:00",
   "florida": "$4.2941",
   "national": "$4.4744",
   "diesel": "$6.2264",
@@ -376,7 +340,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-23T14:15:41-04:00",
+  "fetched_at": "2026-09-23T14:30:47-04:00",
   "streams": {
    "local": [
     {
@@ -485,9 +449,17 @@
   ],
   "local": [
    {
-    "title": "Western High School evacuated after receiving bomb threat",
-    "url": "https://www.local10.com/news/local/2026/09/23/western-high-school-evacuated-after-receiving-bomb-threat/",
-    "published": "Wed, 23 Sep 2026 16:39:44 +0000",
+    "title": "American Friends Service Committee members call on lawmakers to visit ICE facilities",
+    "url": "https://www.local10.com/news/local/2026/09/23/american-friends-service-committee-members-call-on-lawmakers-to-visit-ice-facilities/",
+    "published": "Wed, 23 Sep 2026 18:16:50 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Deputies search for man who pepper-sprayed elderly woman after possible road rage incident",
+    "url": "https://www.local10.com/news/local/2026/09/23/deputies-search-for-man-who-pepper-sprayed-elderly-woman-after-possible-road-rage-incident/",
+    "published": "Wed, 23 Sep 2026 18:15:11 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -499,6 +471,14 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/35D5UYI57OTE53LTPXK6ADERLA.jpg?auth=5f28d24b4a2225fee77d95c9e3c3b23935e7e0c7296c23815a8767819206dec1&smart=true&width=1200&height=900",
     "media_type": "image"
+   },
+   {
+    "title": "Western High School evacuated after receiving bomb threat",
+    "url": "https://www.local10.com/news/local/2026/09/23/western-high-school-evacuated-after-receiving-bomb-threat/",
+    "published": "Wed, 23 Sep 2026 16:39:44 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
    },
    {
     "title": "Miami man now facing aggravated manslaughter charge in fentanyl-related death of 18-month-old boy",
@@ -533,22 +513,6 @@
     "media_type": null
    },
    {
-    "title": "Woman arrested after marked BSO vehicle stolen from Public Safety Building parking lot, deputies say",
-    "url": "https://www.local10.com/news/local/2026/09/23/woman-arrested-after-marked-bso-vehicle-stolen-from-public-safety-building-parking-lot-deputies-say/",
-    "published": "Wed, 23 Sep 2026 11:50:37 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "40-foot boat destroyed in ‘suspicious’ fire in Lauderdale-by-the-Sea, firefighters say",
-    "url": "https://www.local10.com/news/local/2026/09/23/40-foot-boat-destroyed-in-suspicious-fire-in-lauderdale-by-the-sea-firefighters-say/",
-    "published": "Wed, 23 Sep 2026 14:26:16 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "‘We want to see South Florida show up’: Local election officials encourage voter turnout ahead of midterms",
     "url": "https://wsvn.com/news/local/miami-dade/we-want-to-see-south-florida-show-up-local-election-officials-encourage-voter-turnout-ahead-of-midterms/",
     "published": "Wed, 23 Sep 2026 17:15:11 +0000",
@@ -557,11 +521,11 @@
     "media_type": "video"
    },
    {
-    "title": "Western High School in Davie evacuated due to bomb threat, police say",
-    "url": "https://wsvn.com/news/local/broward/western-high-school-in-davie-evacuated-due-to-bomb-threat-police-say/",
+    "title": "Bomb threat that prompted evacuation at Western High School in Davie ‘appeared to be a false alarm,’ police say",
+    "url": "https://wsvn.com/news/local/broward/bomb-threat-that-prompted-evacuation-at-western-high-school-in-davie-appeared-to-be-a-false-alarm-police-say/",
     "published": "Wed, 23 Sep 2026 16:57:37 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6b5b7f0e-08fb-4ea9-9504-31b795970fd1/38ac99b1-1351-452c-b9fb-63a686a59e6b/main.mp4?fastly_token=NmFiNDZjYTZfYmIyNTY5YzM5ZTBmYzI3ZTIyYmJkYzBkY2U2MjI0YzAwZDAwZDBjNjY4NzYzMzNhOWMzM2I2MDVkODE2MTQ0N18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82YjViN2YwZS0wOGZiLTRlYTktOTUwNC0zMWI3OTU5NzBmZDEvMzhhYzk5YjEtMTM1MS00NTJjLWI5ZmItNjNhNjg2YTU5ZTZiL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6b5b7f0e-08fb-4ea9-9504-31b795970fd1/38ac99b1-1351-452c-b9fb-63a686a59e6b/main.mp4?fastly_token=NmFiNDcyOGZfMjgwMTY0MmQ4YzRiOGFkOGI3ZjVmMTc0Y2YzMmFhYTk1MjE0OWVmMGM2YTQzMWI4MmNhNWEwNTUxZDI3YTdkYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82YjViN2YwZS0wOGZiLTRlYTktOTUwNC0zMWI3OTU5NzBmZDEvMzhhYzk5YjEtMTM1MS00NTJjLWI5ZmItNjNhNjg2YTU5ZTZiL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -615,6 +579,14 @@
   ],
   "colombia": [
    {
+    "title": "Carlos Pinedo, alcalde de Santa Marta, habló de la situación actual y mandó un mensaje a los grupos criminales: 'Ninguna banda va a tener éxito'",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/carlos-pinedo-alcalde-de-santa-marta-hablo-de-la-situacion-actual-y-mando-un-mensaje-a-los-grupos-criminales-ninguna-banda-va-a-tener-exito-3588237",
+    "published": "2026-09-23T13:02:30-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/23/6ab41087a361c.r_d.461-359-1.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "A estrados judiciales la venta de baldíos y el avance de obras privadas en playas de La Boquilla, pueblo afro de Cartagena con título colectivo",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/a-estrados-judiciales-la-venta-de-baldios-y-el-avance-de-obras-privadas-en-playas-de-la-boquilla-pueblo-afro-de-cartagena-con-titulo-colectivo-3588306",
     "published": "2026-09-23T12:49:46-05:00",
@@ -641,9 +613,9 @@
    {
     "title": "El carro en el que secuestraron al ingeniero Andrés Camilo Peláez previo a su asesinato apareció en un lote propiedad del Hospital Mental de Antioquia",
     "url": "https://www.eltiempo.com/colombia/medellin/el-carro-en-el-que-secuestraron-al-ingeniero-andres-camilo-pelaez-previo-a-su-asesinato-aparecio-en-un-lote-propiedad-del-hospital-mental-de-antioquia-3588295",
-    "published": "2026-09-23T12:34:28-05:00",
+    "published": "2026-09-23T13:00:17-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/23/6ab4075a5d60b.png",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/23/6ab4075a5d60b.r_d.458-479-0.png",
     "media_type": "image"
    },
    {
@@ -669,17 +641,25 @@
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/23/6ab3ecd29c7bd.png",
     "media_type": "image"
-   },
-   {
-    "title": "Abelardo De La Espriella ordena trasladar a cárceles de máxima seguridad a 76 vinculados con 'Los Pachenca': 'No permitiré que sigan ordenando'",
-    "url": "https://www.eltiempo.com/politica/abelardo-de-la-espriella/presidente-abelardo-de-la-espriella-ordena-trasladar-a-carceles-de-maxima-seguridad-a-76-vinculados-con-las-autodefensas-conquistadoras-de-la-sierra-3588266",
-    "published": "2026-09-23T12:02:34-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/22/6ab2e79e07743.r_d.584-302-0.jpeg",
-    "media_type": "image"
    }
   ],
   "world": [
+   {
+    "title": "Trump set to greet Xi for high-stakes state visit",
+    "url": "https://www.npr.org/2026/09/23/nx-s1-5978733/trump-xi-meeting-china",
+    "published": "Wed, 23 Sep 2026 14:23:19 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Iran's president gives a rare wartime speech at the U.N.",
+    "url": "https://www.npr.org/2026/09/23/nx-s1-5978863/iran-president-united-nations-general-assembly",
+    "published": "Wed, 23 Sep 2026 14:14:40 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
    {
     "title": "From cybersecurity to AI to Taiwan, what's at stake in Trump's summit with Xi",
     "url": "https://www.npr.org/2026/09/23/nx-s1-5978691/from-cybersecurity-to-ai-what-at-stake-in-trumps-meeting-with-and-president-xiwhy-the-us-and-china-are-at-a-precarious-moment-in-their-relationship",
@@ -727,29 +707,13 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "Ukraine's Zelenskyy proposes energy truce with Russia during meeting with Trump",
-    "url": "https://www.npr.org/2026/09/23/nx-s1-5978127/ukraines-zelenskyy-proposes-energy-truce-with-russia-during-meeting-with-trump",
-    "published": "Wed, 23 Sep 2026 04:45:17 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Trump lays out his agenda as middle powers call for more cooperation at UNGA",
-    "url": "https://www.npr.org/2026/09/23/nx-s1-5976960/trump-lays-out-his-agenda-as-middle-powers-call-for-more-cooperation-at-unga",
-    "published": "Wed, 23 Sep 2026 04:41:10 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-23T14:15:42-04:00",
+  "fetched_at": "2026-09-23T14:30:47-04:00",
   "items": [],
   "scanned": 0,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -757,7 +721,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (390) + USGS (12)",
-  "fetched_at": "2026-09-23T14:15:45-04:00",
+  "fetched_at": "2026-09-23T14:30:51-04:00",
   "events": [
    {
     "lat": -14.9369,
@@ -2224,12 +2188,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-23T14:15:45-04:00",
+  "fetched_at": "2026-09-23T14:30:51-04:00",
   "countries": [
    {
     "iso": "IRN",
     "name": "Iran",
     "stories": [
+     {
+      "title": "Iran's president gives a rare wartime speech at the U.N.",
+      "url": "https://www.npr.org/2026/09/23/nx-s1-5978863/iran-president-united-nations-general-assembly",
+      "published": "Wed, 23 Sep 2026 14:14:40 -0400",
+      "section": "world"
+     },
      {
       "title": "U.N. Ambassador Mike Waltz on Iran, Venezuela and Trump's foreign policy",
       "url": "https://www.npr.org/2026/09/23/nx-s1-5977753/mike-waltz-iran-venezuela-trump-united-nations",
@@ -2237,22 +2207,8 @@
       "section": "world"
      }
     ],
-    "count": 1,
-    "issue": "U.N. Ambassador Mike Waltz on Iran, Venezuela and Trump's foreign policy"
-   },
-   {
-    "iso": "RUS",
-    "name": "Russia",
-    "stories": [
-     {
-      "title": "Ukraine's Zelenskyy proposes energy truce with Russia during meeting with Trump",
-      "url": "https://www.npr.org/2026/09/23/nx-s1-5978127/ukraines-zelenskyy-proposes-energy-truce-with-russia-during-meeting-with-trump",
-      "published": "Wed, 23 Sep 2026 04:45:17 -0400",
-      "section": "world"
-     }
-    ],
-    "count": 1,
-    "issue": "Ukraine's Zelenskyy proposes energy truce with Russia during meeting with Trump"
+    "count": 2,
+    "issue": "Iran's president gives a rare wartime speech at the U.N."
    },
    {
     "iso": "TWN",
@@ -2269,18 +2225,18 @@
     "issue": "From cybersecurity to AI to Taiwan, what's at stake in Trump's summit with Xi"
    },
    {
-    "iso": "UKR",
-    "name": "Ukraine",
+    "iso": "USA",
+    "name": "United States",
     "stories": [
      {
-      "title": "Ukraine's Zelenskyy proposes energy truce with Russia during meeting with Trump",
-      "url": "https://www.npr.org/2026/09/23/nx-s1-5978127/ukraines-zelenskyy-proposes-energy-truce-with-russia-during-meeting-with-trump",
-      "published": "Wed, 23 Sep 2026 04:45:17 -0400",
-      "section": "world"
+      "title": "American Friends Service Committee members call on lawmakers to visit ICE facilities",
+      "url": "https://www.local10.com/news/local/2026/09/23/american-friends-service-committee-members-call-on-lawmakers-to-visit-ice-facilities/",
+      "published": "Wed, 23 Sep 2026 18:16:50 +0000",
+      "section": "local"
      }
     ],
     "count": 1,
-    "issue": "Ukraine's Zelenskyy proposes energy truce with Russia during meeting with Trump"
+    "issue": "American Friends Service Committee members call on lawmakers to visit ICE facilities"
    },
    {
     "iso": "VEN",
@@ -2298,7 +2254,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 5,
+  "countries_matched": 4,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
