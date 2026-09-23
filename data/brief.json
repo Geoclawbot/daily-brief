@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-22T22:45:28-04:00",
- "generated_at_utc": "2026-09-23T02:45:28+00:00",
+ "generated_at": "2026-09-22T23:00:29-04:00",
+ "generated_at_utc": "2026-09-23T03:00:29+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 22",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-22T22:45:29-04:00",
+  "fetched_at": "2026-09-22T23:00:30-04:00",
   "curve": [
    {
     "time": "2026-09-22T05:00",
@@ -147,18 +147,18 @@
    }
   ],
   "current": {
-   "temp": 77.7,
-   "feels": 86.8,
+   "temp": 77.5,
+   "feels": 87.8,
    "humidity": 96,
-   "wind_mph": 6.1,
-   "wind_dir": 260,
-   "observed_at": "2026-09-22T22:45"
+   "wind_mph": 3.1,
+   "wind_dir": 274,
+   "observed_at": "2026-09-22T23:00"
   },
   "today": {
    "high": 87.5,
    "low": 76.9,
    "feels_max": 98.0,
-   "pop_max": 54
+   "pop_max": 59
   },
   "peak_feels": 98.0,
   "peak_hour": 12
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-22T22:45:29-04:00",
+  "fetched_at": "2026-09-22T23:00:30-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-22T22:45:45-04:00",
-  "aqi": 42,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-22T23:00:56-04:00",
+  "aqi": 47,
   "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-22 21:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-23",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-23",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-24",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-24",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 10.3,
+  "pm10": 11.0,
+  "observed": "2026-09-22T23:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-22T22:45:45-04:00",
+  "fetched_at": "2026-09-22T23:00:56-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -234,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-22T22:45:46-04:00",
+  "fetched_at": "2026-09-22T23:00:57-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -286,7 +250,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-22T22:45:46-04:00",
+  "fetched_at": "2026-09-22T23:00:57-04:00",
   "issued": "800 PM EDT Tue Sep 22 2026",
   "areas": [
    {
@@ -300,7 +264,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-22T22:45:46-04:00",
+  "fetched_at": "2026-09-22T23:00:57-04:00",
   "florida": "$4.2423",
   "national": "$4.4750",
   "diesel": "$6.2577",
@@ -309,7 +273,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-22T22:45:48-04:00",
+  "fetched_at": "2026-09-22T23:00:58-04:00",
   "streams": {
    "local": [
     {
@@ -534,7 +498,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/surveillance-video-shows-driver-striking-elderly-womans-car-in-apparent-road-rage-incident-pepper-spraying-her/",
     "published": "Tue, 22 Sep 2026 22:55:31 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/ad0e788d-28f2-41fc-a1a1-feee082ab4ea/12cf666a-dc90-4bbe-b4e4-f1cbdd5f8a3f/main.mp4?fastly_token=NmFiMzYwZDFfYmQ0NjFhZWNjOTQ3YWE1NmRlZGQ3MzBkZDZmZWI2MGUxMTdmNDdlMDVjN2RkY2RhZDAwMzc4MjIxODA1ZmNkMF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hZDBlNzg4ZC0yOGYyLTQxZmMtYTFhMS1mZWVlMDgyYWI0ZWEvMTJjZjY2NmEtZGM5MC00YmJlLWI0ZTQtZjFjYmRkNWY4YTNmL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/bddf4fe7-cebf-4820-b2a8-2cb509d53275/31f12794-4bb9-4e2e-9562-b03537bf5955/main.mp4?fastly_token=NmFiMzkwMjJfZTVhOGE4YTYyMGI2OTgyNDRiNmVmZTAxNTM2NjM3NmI5Y2YwYzkyYWVjODFhZmU1NTEwMzk2YWJlNTEwY2VlM18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iZGRmNGZlNy1jZWJmLTQ4MjAtYjJhOC0yY2I1MDlkNTMyNzUvMzFmMTI3OTQtNGJiOS00ZTJlLTk1NjItYjAzNTM3YmY1OTU1L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -558,7 +522,7 @@
    {
     "title": "Incendio en Villa de Leyva deja graves afectaciones a los animales del Santuario de Iguaque: Corpoboyacá está 'en búsqueda de especies silvestres'",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/incendio-en-villa-de-leyva-deja-graves-afectaciones-a-los-animales-del-santuario-de-iguaque-corpoboyaca-esta-en-busqueda-de-especies-silvestres-3588056",
-    "published": "2026-09-22T19:04:23-05:00",
+    "published": "2026-09-22T21:41:59-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/21/6ab18685a642e.jpeg",
     "media_type": "image"
@@ -682,15 +646,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-22T22:45:48-04:00",
+  "fetched_at": "2026-09-22T23:00:59-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (373) + USGS (12)",
-  "fetched_at": "2026-09-22T22:45:52-04:00",
+  "source": "GDACS (373) + USGS (13)",
+  "fetched_at": "2026-09-22T23:01:02-04:00",
   "events": [
    {
     "lat": 9.6287383,
@@ -920,6 +884,19 @@
     "source": "USGS"
    },
    {
+    "lat": -6.9217,
+    "lon": 105.5232,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.5 — 68 km SSW of Labuan, Indonesia",
+    "place": "68 km SSW of Labuan, Indonesia",
+    "severity": "M4.5",
+    "mag": 4.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000twzp",
+    "when": 1790116058897,
+    "source": "USGS"
+   },
+   {
     "lat": 41.7997,
     "lon": 82.3165,
     "kind": "earthquake",
@@ -1029,13 +1006,13 @@
     "source": "GDACS"
    },
    {
-    "lat": 15.1,
-    "lon": -130.1,
+    "lat": 15.5,
+    "lon": -129.0,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone ODALYS-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
     "place": null,
-    "severity": "Tropical Storm (maximum wind speed of 139 km/h)",
+    "severity": "Tropical Storm (maximum wind speed of 130 km/h)",
     "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001324",
     "when": "Sun, 20 Sep 2026 09:08:06 GMT",
     "source": "GDACS"
@@ -2131,25 +2108,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032172",
     "when": "Fri, 18 Sep 2026 15:03:34 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -10.097626170347308,
-    "lon": -45.634281230395615,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 5050 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032288",
-    "when": "Tue, 22 Sep 2026 23:08:48 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 385,
+  "event_count": 386,
   "counts": {
    "red": 0,
    "orange": 7,
-   "green": 378
+   "green": 379
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2157,7 +2122,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-22T22:45:52-04:00",
+  "fetched_at": "2026-09-22T23:01:02-04:00",
   "countries": [
    {
     "iso": "COL",
