@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-23T12:15:38-04:00",
- "generated_at_utc": "2026-09-23T16:15:38+00:00",
+ "generated_at": "2026-09-23T12:30:25-04:00",
+ "generated_at_utc": "2026-09-23T16:30:25+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 23",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-23T12:15:39-04:00",
+  "fetched_at": "2026-09-23T12:30:25-04:00",
   "curve": [
    {
     "time": "2026-09-23T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 79.0,
+   "temp": 78.9,
    "feels": 88.0,
-   "humidity": 89,
-   "wind_mph": 5.0,
-   "wind_dir": 103,
-   "observed_at": "2026-09-23T12:15"
+   "humidity": 90,
+   "wind_mph": 5.3,
+   "wind_dir": 102,
+   "observed_at": "2026-09-23T12:30"
   },
   "today": {
    "high": 80.5,
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-23T12:15:39-04:00",
+  "fetched_at": "2026-09-23T12:30:25-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-23T12:15:40-04:00",
-  "aqi": 28,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-23T12:30:51-04:00",
+  "aqi": 36,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-23 11:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-23",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-23",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-24",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-24",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 25,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 3.0,
+  "pm10": 3.7,
+  "observed": "2026-09-23T12:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-23T12:15:43-04:00",
+  "fetched_at": "2026-09-23T12:30:53-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
@@ -296,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-23T12:15:43-04:00",
+  "fetched_at": "2026-09-23T12:30:54-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -345,7 +309,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-23T12:15:44-04:00",
+  "fetched_at": "2026-09-23T12:30:55-04:00",
   "issued": "800 AM EDT Wed Sep 23 2026",
   "areas": [
    {
@@ -364,7 +328,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-23T12:15:44-04:00",
+  "fetched_at": "2026-09-23T12:30:55-04:00",
   "florida": "$4.2941",
   "national": "$4.4744",
   "diesel": "$6.2264",
@@ -373,7 +337,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-23T12:15:45-04:00",
+  "fetched_at": "2026-09-23T12:30:56-04:00",
   "streams": {
    "local": [
     {
@@ -482,12 +446,20 @@
   ],
   "local": [
    {
-    "title": "Self-proclaimed witch arrested in apprentice’s murder expected to testify during trial",
+    "title": "South Florida’s Supervisors of Elections hold joint press conference",
+    "url": "https://www.local10.com/news/local/2026/09/23/south-floridas-supervisors-of-elections-hold-joint-press-conference/",
+    "published": "Wed, 23 Sep 2026 14:34:50 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "WATCH LIVE: Self-proclaimed witch arrested in apprentice’s murder testifies during trial",
     "url": "https://www.local10.com/news/local/2026/09/23/self-proclaimed-witch-arrested-in-apprentices-murder-expected-to-testify-during-trial/",
     "published": "Wed, 23 Sep 2026 15:31:06 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/35D5UYI57OTE53LTPXK6ADERLA.jpg?auth=5f28d24b4a2225fee77d95c9e3c3b23935e7e0c7296c23815a8767819206dec1&smart=true&width=1200&height=900",
-    "media_type": "image"
+    "media": null,
+    "media_type": null
    },
    {
     "title": "Former Doctor Aromas COO accused of stealing more than $930K from company",
@@ -519,14 +491,6 @@
     "published": "Wed, 23 Sep 2026 14:20:53 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/EGM4332PSJHWVKNAJKOMFGL27U.jpg?auth=c1afe3dca922f0f3f650b2518a5c8c91a9f43a53a23e75ef791e56af83bf1107&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "South Florida’s Supervisors of Elections hold joint press conference",
-    "url": "https://www.local10.com/news/local/2026/09/23/south-floridas-supervisors-of-elections-hold-joint-press-conference/",
-    "published": "Wed, 23 Sep 2026 14:34:50 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/LFROWJCVS5BUXM7OU42EG35R3I.png?auth=83e29105d9ec76fbdac9bdc51af38753459f65a788324bce63ecf578f16f5abd&smart=true&width=1200&height=900",
     "media_type": "image"
    },
    {
@@ -622,7 +586,7 @@
    {
     "title": "Presidente Abelardo De La Espriella ordena trasladar a cárceles de máxima seguridad a 76 vinculados con las Autodefensas Conquistadoras de la Sierra",
     "url": "https://www.eltiempo.com/politica/abelardo-de-la-espriella/presidente-abelardo-de-la-espriella-ordena-trasladar-a-carceles-de-maxima-seguridad-a-76-vinculados-con-las-autodefensas-conquistadoras-de-la-sierra-3588266",
-    "published": "2026-09-23T10:51:11-05:00",
+    "published": "2026-09-23T10:58:38-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/22/6ab2e79e07743.r_d.584-302-0.jpeg",
     "media_type": "image"
@@ -678,6 +642,14 @@
   ],
   "world": [
    {
+    "title": "From cybersecurity to AI to Taiwan, what's at stake in Trump's summit with Xi",
+    "url": "https://www.npr.org/2026/09/23/nx-s1-5978691/from-cybersecurity-to-ai-what-at-stake-in-trumps-meeting-with-and-president-xiwhy-the-us-and-china-are-at-a-precarious-moment-in-their-relationship",
+    "published": "Wed, 23 Sep 2026 12:13:52 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "U.S. ambassador to the U.N. discusses progress on key issues",
     "url": "https://www.npr.org/2026/09/23/nx-s1-5978682/u-s-ambassador-to-the-u-n-discusses-progress-on-key-issues",
     "published": "Wed, 23 Sep 2026 10:00:19 -0400",
@@ -732,21 +704,13 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "The United Nations General Assembly is meeting. Is it accomplishing anything?",
-    "url": "https://www.npr.org/2026/09/22/nx-s1-5955445/the-united-nations-general-assembly-is-meeting-is-it-accomplishing-anything",
-    "published": "Tue, 22 Sep 2026 17:23:48 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-23T12:15:47-04:00",
+  "fetched_at": "2026-09-23T12:30:58-04:00",
   "items": [],
   "scanned": 0,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -754,7 +718,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (390) + USGS (11)",
-  "fetched_at": "2026-09-23T12:15:51-04:00",
+  "fetched_at": "2026-09-23T12:31:01-04:00",
   "events": [
    {
     "lat": -14.9369,
@@ -2220,7 +2184,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-23T12:15:51-04:00",
+  "fetched_at": "2026-09-23T12:31:01-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2271,6 +2235,20 @@
     "issue": "Ukraine's Zelenskyy proposes energy truce with Russia during meeting with Trump"
    },
    {
+    "iso": "TWN",
+    "name": "Taiwan",
+    "stories": [
+     {
+      "title": "From cybersecurity to AI to Taiwan, what's at stake in Trump's summit with Xi",
+      "url": "https://www.npr.org/2026/09/23/nx-s1-5978691/from-cybersecurity-to-ai-what-at-stake-in-trumps-meeting-with-and-president-xiwhy-the-us-and-china-are-at-a-precarious-moment-in-their-relationship",
+      "published": "Wed, 23 Sep 2026 12:13:52 -0400",
+      "section": "world"
+     }
+    ],
+    "count": 1,
+    "issue": "From cybersecurity to AI to Taiwan, what's at stake in Trump's summit with Xi"
+   },
+   {
     "iso": "UKR",
     "name": "Ukraine",
     "stories": [
@@ -2300,7 +2278,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 5,
+  "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
