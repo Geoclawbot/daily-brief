@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-23T15:30:28-04:00",
- "generated_at_utc": "2026-09-23T19:30:28+00:00",
+ "generated_at": "2026-09-23T15:45:24-04:00",
+ "generated_at_utc": "2026-09-23T19:45:24+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 23",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-23T15:30:29-04:00",
+  "fetched_at": "2026-09-23T15:45:24-04:00",
   "curve": [
    {
     "time": "2026-09-23T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 82.8,
-   "feels": 93.7,
+   "temp": 82.7,
+   "feels": 92.5,
    "humidity": 77,
-   "wind_mph": 2.0,
-   "wind_dir": 27,
-   "observed_at": "2026-09-23T15:30"
+   "wind_mph": 2.2,
+   "wind_dir": 37,
+   "observed_at": "2026-09-23T15:45"
   },
   "today": {
    "high": 82.8,
@@ -166,97 +166,145 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-23T15:30:29-04:00",
+  "fetched_at": "2026-09-23T15:45:25-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-23T15:30:56-04:00",
-  "aqi": 34,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-23T15:45:27-04:00",
+  "aqi": 30,
   "category": "Good",
-  "pm25": 4.1,
-  "pm10": 4.7,
-  "observed": "2026-09-23T15:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "O3",
+  "reporting_area": "Miami",
+  "observed": "2026-09-23 14:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-23",
+    "aqi": 25,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-23",
+    "aqi": 28,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-24",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-24",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-25",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-25",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-26",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-26",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-23T15:30:58-04:00",
+  "fetched_at": "2026-09-23T15:45:30-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
   "miles": 21.0,
-  "minutes": 68,
+  "minutes": 70,
   "delay_minutes": 3,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 26.8,
-    "minutes": 50,
+    "miles": 26.4,
+    "minutes": 53,
     "toll": true,
-    "saves": 18
+    "saves": 17
    },
    {
     "miles": 22.6,
-    "minutes": 59,
+    "minutes": 60,
     "toll": true,
-    "saves": 9
+    "saves": 10
    },
    {
-    "miles": 28.6,
-    "minutes": 59,
+    "miles": 46.8,
+    "minutes": 62,
     "toll": true,
-    "saves": 9
+    "saves": 8
    },
    {
-    "miles": 45.6,
-    "minutes": 61,
+    "miles": 22.1,
+    "minutes": 70,
     "toll": true,
-    "saves": 7
+    "saves": 0
    }
   ],
   "alternates_worth_taking": [
    {
-    "miles": 26.8,
-    "minutes": 50,
+    "miles": 26.4,
+    "minutes": 53,
     "toll": true,
-    "saves": 18
+    "saves": 17
    }
   ],
   "free_alternates": [
    {
-    "miles": 21.0,
-    "minutes": 68,
-    "delay_minutes": 3,
-    "saves": 0
+    "miles": 26.6,
+    "minutes": 72,
+    "delay_minutes": 0,
+    "saves": -2
    },
    {
-    "miles": 23.4,
-    "minutes": 75,
-    "delay_minutes": 0
+    "miles": 21.9,
+    "minutes": 72,
+    "delay_minutes": 3
    },
    {
     "miles": 23.1,
-    "minutes": 83,
+    "minutes": 84,
     "delay_minutes": 0
    },
    {
     "miles": 22.5,
-    "minutes": 77,
-    "delay_minutes": 0
+    "minutes": 79,
+    "delay_minutes": 1
    }
   ],
   "best_free": {
-   "miles": 21.0,
-   "minutes": 68,
-   "delay_minutes": 3,
-   "saves": 0
+   "miles": 26.6,
+   "minutes": 72,
+   "delay_minutes": 0,
+   "saves": -2
   },
   "incidents": [],
   "incident_count": 0,
@@ -267,7 +315,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-23T15:30:59-04:00",
+  "fetched_at": "2026-09-23T15:45:31-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -319,7 +367,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-23T15:30:59-04:00",
+  "fetched_at": "2026-09-23T15:45:31-04:00",
   "issued": "200 PM EDT Wed Sep 23 2026",
   "areas": [
    {
@@ -338,7 +386,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-23T15:30:59-04:00",
+  "fetched_at": "2026-09-23T15:45:31-04:00",
   "florida": "$4.2941",
   "national": "$4.4744",
   "diesel": "$6.2264",
@@ -347,7 +395,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-23T15:31:01-04:00",
+  "fetched_at": "2026-09-23T15:45:32-04:00",
   "streams": {
    "local": [
     {
@@ -456,6 +504,14 @@
   ],
   "local": [
    {
+    "title": "American Friends Service Committee members call on lawmakers to visit ICE facilities",
+    "url": "https://www.local10.com/news/local/2026/09/23/american-friends-service-committee-members-call-on-lawmakers-to-visit-ice-facilities/",
+    "published": "Wed, 23 Sep 2026 18:16:50 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Self-proclaimed witch arrested in apprentice’s murder testifies during trial",
     "url": "https://www.local10.com/news/local/2026/09/23/self-proclaimed-witch-arrested-in-apprentices-murder-expected-to-testify-during-trial/",
     "published": "Wed, 23 Sep 2026 15:31:06 +0000",
@@ -467,14 +523,6 @@
     "title": "Florida gubernatorial candidate Byron Donalds explains why he removed Donald Trump references from campaign website",
     "url": "https://www.local10.com/news/local/2026/09/23/florida-gubernatorial-candidate-byron-donalds-explains-why-he-removed-donald-trump-references-from-campaign-website/",
     "published": "Wed, 23 Sep 2026 18:42:15 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "American Friends Service Committee members call on lawmakers to visit ICE facilities",
-    "url": "https://www.local10.com/news/local/2026/09/23/american-friends-service-committee-members-call-on-lawmakers-to-visit-ice-facilities/",
-    "published": "Wed, 23 Sep 2026 18:16:50 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -552,14 +600,6 @@
     "media_type": "video"
    },
    {
-    "title": "Ex-NFL star Antonio Brown to accept plea deal on attempted murder charge, his lawyer says",
-    "url": "https://wsvn.com/sports/ex-nfl-star-antonio-brown-to-accept-plea-deal-on-attempted-murder-charge-his-lawyer-says/",
-    "published": "Wed, 23 Sep 2026 19:20:07 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "‘It was complete and utter terror’: Woman who survived brutal dog attack in NW Miami-Dade shares ordeal, demands accountability",
     "url": "https://wsvn.com/news/local/miami-dade/it-was-complete-and-utter-terror-woman-who-survived-brutal-dog-attack-in-nw-miami-dade-shares-ordeal-demands-accountability/",
     "published": "Wed, 23 Sep 2026 17:41:05 +0000",
@@ -582,9 +622,25 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1a29180e-e645-4837-b09d-f5b03e5fa139/736ae351-be84-408f-9606-5662ecb6b381/main.mp4?fastly_token=NmFiNDM2N2VfODQ1MGNlMGEwNTdiYmQyMDhiZDEyZWQ1N2JjNWRiOTkzNWM2Yzc5ZTY4OWMwZmNhNDIzYzZlZmRiZTAyMGU0N18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xYTI5MTgwZS1lNjQ1LTQ4MzctYjA5ZC1mNWIwM2U1ZmExMzkvNzM2YWUzNTEtYmU4NC00MDhmLTk2MDYtNTY2MmVjYjZiMzgxL21haW4ubXA0",
     "media_type": "video"
+   },
+   {
+    "title": "Bodycam video shows Miami Beach officers arresting armed Subway employee who made threats over parking spot",
+    "url": "https://wsvn.com/news/local/miami-dade/subway-employee-gun-threats/",
+    "published": "Wed, 23 Sep 2026 02:57:24 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/db774b8c-8286-4413-889d-46a8d177ed30/325976b0-055f-4029-b80e-005c34f86357/main.mp4?fastly_token=NmFiNDIwZjNfNTc0NTg3ODAyMDg0ODkyMjU1ZmE3YmMxZTM3MTFlZWUxOTRkZjAyMmU5ZTlkMWM0MzgxNjZmYzIwZjU2MWE4ZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kYjc3NGI4Yy04Mjg2LTQ0MTMtODg5ZC00NmE4ZDE3N2VkMzAvMzI1OTc2YjAtMDU1Zi00MDI5LWI4MGUtMDA1YzM0Zjg2MzU3L21haW4ubXA0",
+    "media_type": "video"
    }
   ],
   "colombia": [
+   {
+    "title": "100 % eléctricos y con puertos USB: llegan a Cali cinco buses articulados del MIO y la ciudad se alista para recibir su flota pública",
+    "url": "https://www.eltiempo.com/colombia/cali/100-electricos-y-con-puertos-usb-llegan-a-cali-cinco-buses-articulados-del-mio-y-la-ciudad-se-alista-para-recibir-su-flota-publica-3588347",
+    "published": "2026-09-23T14:15:23-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/23/6ab4237fbaa20.r_d.560-897-0.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Atlántico | Denuncian amenazas de muerte contra aspirante al reinado del Carnaval de Juan de Acosta: alcaldía y candidatas piden investigación",
     "url": "https://www.eltiempo.com/colombia/barranquilla/atlantico-denuncian-amenazas-de-muerte-contra-aspirante-al-reinado-del-carnaval-de-juan-de-acosta-alcaldia-y-candidatas-piden-investigacion-3588326",
@@ -639,14 +695,6 @@
     "published": "2026-09-23T13:00:17-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/23/6ab4075a5d60b.r_d.458-479-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Crisis ganadera golpea al Caribe colombiano: El Niño deja más de 17.000 animales muertos y 1,7 millones de hectáreas afectadas",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/crisis-ganadera-golpea-al-caribe-colombiano-el-nino-deja-mas-de-17-000-animales-muertos-y-1-7-millones-de-hectareas-afectadas-3588293",
-    "published": "2026-09-23T12:01:20-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/23/6ab40460134ed.jpeg",
     "media_type": "image"
    }
   ],
@@ -720,7 +768,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-23T15:31:02-04:00",
+  "fetched_at": "2026-09-23T15:45:33-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -728,7 +776,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (398) + USGS (14)",
-  "fetched_at": "2026-09-23T15:31:06-04:00",
+  "fetched_at": "2026-09-23T15:45:36-04:00",
   "events": [
    {
     "lat": -14.9369,
@@ -1693,6 +1741,18 @@
     "source": "GDACS"
    },
    {
+    "lat": -16.048155379564385,
+    "lon": 18.530146829682554,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 8717 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032179",
+    "when": "Mon, 21 Sep 2026 19:09:57 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -12.712795555038701,
     "lon": -46.002427803017305,
     "kind": "wildfire",
@@ -1717,15 +1777,15 @@
     "source": "GDACS"
    },
    {
-    "lat": -16.048155379564385,
-    "lon": 18.530146829682554,
+    "lat": -16.686867136018243,
+    "lon": 17.2441337014578,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Angola",
     "place": "Angola",
-    "severity": "Green impact for forestfire in 8717 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032179",
-    "when": "Mon, 21 Sep 2026 19:09:57 GMT",
+    "severity": "Green impact for forestfire in 5599 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032307",
+    "when": "Tue, 22 Sep 2026 03:07:03 GMT",
     "source": "GDACS"
    },
    {
@@ -1738,18 +1798,6 @@
     "severity": "Green impact for forestfire in 8636 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032285",
     "when": "Mon, 21 Sep 2026 06:20:42 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -16.686867136018243,
-    "lon": 17.2441337014578,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 5599 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032307",
-    "when": "Tue, 22 Sep 2026 03:07:03 GMT",
     "source": "GDACS"
    },
    {
@@ -2197,8 +2245,28 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-23T15:31:06-04:00",
+  "fetched_at": "2026-09-23T15:45:36-04:00",
   "countries": [
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "100 % eléctricos y con puertos USB: llegan a Cali cinco buses articulados del MIO y la ciudad se alista para recibir su flota pública",
+      "url": "https://www.eltiempo.com/colombia/cali/100-electricos-y-con-puertos-usb-llegan-a-cali-cinco-buses-articulados-del-mio-y-la-ciudad-se-alista-para-recibir-su-flota-publica-3588347",
+      "published": "2026-09-23T14:15:23-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "Del algoritmo al fusil: ¿las redes sociales, las nuevas oficinas para el reclutamiento forzado de jóvenes en Cali?",
+      "url": "https://www.eltiempo.com/colombia/cali/del-algoritmo-al-fusil-las-redes-sociales-las-nuevas-oficinas-para-el-reclutamiento-forzado-de-jovenes-en-cali-3588334",
+      "published": "2026-09-23T13:36:04-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 2,
+    "issue": "100 % eléctricos y con puertos USB: llegan a Cali cinco buses articulados del MIO y la ciudad se alista para recibir su flota pública"
+   },
    {
     "iso": "IRN",
     "name": "Iran",
@@ -2218,20 +2286,6 @@
     ],
     "count": 2,
     "issue": "Iran's president gives a rare wartime speech at the U.N."
-   },
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Del algoritmo al fusil: ¿las redes sociales, las nuevas oficinas para el reclutamiento forzado de jóvenes en Cali?",
-      "url": "https://www.eltiempo.com/colombia/cali/del-algoritmo-al-fusil-las-redes-sociales-las-nuevas-oficinas-para-el-reclutamiento-forzado-de-jovenes-en-cali-3588334",
-      "published": "2026-09-23T13:36:04-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 1,
-    "issue": "Del algoritmo al fusil: ¿las redes sociales, las nuevas oficinas para el reclutamiento forzado de jóvenes en Cali?"
    },
    {
     "iso": "TWN",
