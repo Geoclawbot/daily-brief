@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-23T23:00:31-04:00",
- "generated_at_utc": "2026-09-24T03:00:31+00:00",
+ "generated_at": "2026-09-23T23:15:30-04:00",
+ "generated_at_utc": "2026-09-24T03:15:30+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 23",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-23T23:00:32-04:00",
+  "fetched_at": "2026-09-23T23:15:30-04:00",
   "curve": [
    {
     "time": "2026-09-23T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 78.2,
-   "feels": 88.2,
+   "temp": 78.1,
+   "feels": 88.3,
    "humidity": 92,
-   "wind_mph": 3.1,
-   "wind_dir": 60,
-   "observed_at": "2026-09-23T23:00"
+   "wind_mph": 2.5,
+   "wind_dir": 63,
+   "observed_at": "2026-09-23T23:15"
   },
   "today": {
    "high": 83.5,
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-23T23:00:33-04:00",
+  "fetched_at": "2026-09-23T23:15:30-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-23T23:00:36-04:00",
-  "aqi": 25,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-23T23:15:41-04:00",
+  "aqi": 35,
   "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-23 21:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-24",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-24",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-26",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-26",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 9.5,
+  "pm10": 10.1,
+  "observed": "2026-09-23T23:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-23T23:00:36-04:00",
+  "fetched_at": "2026-09-23T23:15:41-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -234,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-23T23:00:37-04:00",
+  "fetched_at": "2026-09-23T23:15:42-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -271,14 +235,15 @@
   ],
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
-   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 23 2026, 6:18 PM"
+   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 23 2026, 6:18 PM",
+   "Central | Orange | There is scheduled road work on the Florida's Turnpike, southbound at exit 259, at I-4 (Orlando). All lanes are scheduled to be closed from 12am to 5am. Motorists should follow posted detour signs to re-enter the Turnpike at exit 254, at Orange Blossom Trail. | Sep 23 2026, 11:11 PM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-23T23:00:37-04:00",
+  "fetched_at": "2026-09-23T23:15:42-04:00",
   "issued": "800 PM EDT Wed Sep 23 2026",
   "areas": [
    {
@@ -292,7 +257,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-23T23:00:37-04:00",
+  "fetched_at": "2026-09-23T23:15:42-04:00",
   "florida": "$4.2941",
   "national": "$4.4744",
   "diesel": "$6.2264",
@@ -301,7 +266,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-23T23:00:38-04:00",
+  "fetched_at": "2026-09-23T23:15:43-04:00",
   "streams": {
    "local": [
     {
@@ -506,6 +471,14 @@
     "media_type": "video"
    },
    {
+    "title": "Tennessee family says their Miami vacation started with a shooting at MIA",
+    "url": "https://wsvn.com/news/local/miami-dade/tennessee-family-says-their-miami-vacation-started-with-a-shooting-at-mia/",
+    "published": "Thu, 24 Sep 2026 02:52:51 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/fb92bec4-c3f7-43cd-b6bb-0dc585c8cadb/397a314e-f689-492b-a1c7-744d3c720ac5/main.mp4?fastly_token=NmFiNGU5MmFfN2U5NGFhODYwOWY3MDI5MDVlODg0MTk0OWNjZGRiM2RkZjZmZWI3ZWYwMDZjNWVlODQ2ZGFhOTRiNzVjYjQ1M18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9mYjkyYmVjNC1jM2Y3LTQzY2QtYjZiYi0wZGM1ODVjOGNhZGIvMzk3YTMxNGUtZjY4OS00OTJiLWExYzctNzQ0ZDNjNzIwYWM1L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "Dolphins’ Hafley not interested in excuses after 0-2 start, pushes for veterans to lead young roster",
     "url": "https://wsvn.com/sports/miami-dolphins/dolphins-hafley-not-interested-in-excuses-after-0-2-start-pushes-for-veterans-to-lead-young-roster/",
     "published": "Thu, 24 Sep 2026 01:45:11 +0000",
@@ -518,7 +491,7 @@
     "url": "https://wsvn.com/news/politics/jolly-donalds-economic-forum/",
     "published": "Wed, 23 Sep 2026 23:40:53 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/e474abff-21ac-45ed-997f-773ff59d1967/abb851d1-8988-49e7-9810-2dfaa09e816c/main.mp4?fastly_token=NmFiNGJlMGVfYjQzZGFmMjliMjZiODFmOWE0YWUzMTA0NDA1YjU4ZmY1NTNhNDkxYzY4ZjZlM2JiYjUxMzFlODM4NTc1MWU5Ml8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9lNDc0YWJmZi0yMWFjLTQ1ZWQtOTk3Zi03NzNmZjU5ZDE5NjcvYWJiODUxZDEtODk4OC00OWU3LTk4MTAtMmRmYWEwOWU4MTZjL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/0cb04657-9372-4c5b-b5da-24392d3e1e5f/a6009262-4008-4bb3-9a85-220e9a2f67a4/main.mp4?fastly_token=NmFiNGVjODhfYzU0NWY4Y2IxM2UxYzk4MjI4NDI5ZmYzMjJiMjRhMTYzYTU4YmMxOTIzY2M5M2Y0YzJlNmMzOGUzYTIwZDQwMV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8wY2IwNDY1Ny05MzcyLTRjNWItYjVkYS0yNDM5MmQzZTFlNWYvYTYwMDkyNjItNDAwOC00YmIzLTlhODUtMjIwZTlhMmY2N2E0L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -528,17 +501,17 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "Trump extends invite to Russia’s Putin for G20 summit in Doral, Rubio says",
-    "url": "https://wsvn.com/news/local/miami-dade/trump-extends-invite-to-russias-putin-for-g20-summit-in-doral-rubio-says/",
-    "published": "Wed, 23 Sep 2026 21:54:43 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/e21fc277-9e8d-4a7e-ad22-ca62ea1647eb/8af97e6e-aeff-499f-997d-98d4486cb063/main.mp4?fastly_token=NmFiNGIzMTRfOWQ0NzNkMDIzNTlhZDgzNzZlZGI5YjQxZDRlMzcyNTVlNGNkZDdmYTI1Y2E5YjM3ZDljY2I0NWMxY2JiODMwZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9lMjFmYzI3Ny05ZThkLTRhN2UtYWQyMi1jYTYyZWExNjQ3ZWIvOGFmOTdlNmUtYWVmZi00OTlmLTk5N2QtOThkNDQ4NmNiMDYzL21haW4ubXA0",
-    "media_type": "video"
    }
   ],
   "colombia": [
+   {
+    "title": "Temblor hoy en Colombia | SGC reporta nuevo sismo de magnitud mayor a 4 en Tolima este 23 de septiembre: se sintió en Pereira y otras ciudades",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-sgc-reporta-nuevo-sismo-de-magnitud-mayor-a-4-en-tolima-este-23-de-septiembre-se-sintio-en-pereira-y-otras-ciudades-3588484",
+    "published": "2026-09-23T22:01:55-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/10/6a79ebd1c1b57.r_d.301-165-0.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Los casos de presunta corrupción durante la Alcaldía de Daniel Quintero en Medellín bajo la lupa del grupo especializado designado por la Fiscalía",
     "url": "https://www.eltiempo.com/colombia/medellin/los-casos-de-presunta-corrupcion-durante-la-alcaldia-de-daniel-quintero-en-medellin-bajo-la-lupa-del-grupo-especializado-designado-por-la-fiscalia-3588045",
@@ -593,14 +566,6 @@
     "published": "2026-09-23T16:50:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/23/6ab44cf704ed5.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Concurso docente 2026 anuncia un cambio en las fechas de inscripciones del cronograma inicial para más de 28.000 vacantes: detalles",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/concurso-docente-2026-anuncia-un-cambio-en-las-fechas-de-inscripciones-del-cronograma-inicial-para-mas-de-28-000-vacantes-detalles-3588214",
-    "published": "2026-09-23T17:17:18-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/05/26/6a15a3792f446.jpeg",
     "media_type": "image"
    }
   ],
@@ -674,7 +639,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-23T23:00:39-04:00",
+  "fetched_at": "2026-09-23T23:15:44-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -682,7 +647,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (340) + USGS (10)",
-  "fetched_at": "2026-09-23T23:00:43-04:00",
+  "fetched_at": "2026-09-23T23:15:47-04:00",
   "events": [
    {
     "lat": -14.9369,
@@ -955,7 +920,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 5113 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032363",
-    "when": "Wed, 23 Sep 2026 23:00:36 GMT",
+    "when": "Thu, 24 Sep 2026 03:00:34 GMT",
     "source": "GDACS"
    },
    {
@@ -1027,7 +992,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 5652 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032364",
-    "when": "Wed, 23 Sep 2026 23:01:07 GMT",
+    "when": "Thu, 24 Sep 2026 03:01:02 GMT",
     "source": "GDACS"
    },
    {
@@ -1063,7 +1028,7 @@
     "place": "Angola",
     "severity": "Green impact for forestfire in 5341 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032335",
-    "when": "Wed, 23 Sep 2026 23:01:18 GMT",
+    "when": "Thu, 24 Sep 2026 03:00:52 GMT",
     "source": "GDACS"
    },
    {
@@ -1255,7 +1220,7 @@
     "place": "United States",
     "severity": "Green impact for forestfire in 5038 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032281",
-    "when": "Wed, 23 Sep 2026 23:02:06 GMT",
+    "when": "Thu, 24 Sep 2026 03:01:35 GMT",
     "source": "GDACS"
    },
    {
@@ -1267,7 +1232,7 @@
     "place": "Angola",
     "severity": "Green impact for forestfire in 9967 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032356",
-    "when": "Wed, 23 Sep 2026 23:02:19 GMT",
+    "when": "Thu, 24 Sep 2026 03:01:43 GMT",
     "source": "GDACS"
    },
    {
@@ -1291,7 +1256,7 @@
     "place": "Angola",
     "severity": "Green impact for forestfire in 7117 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032358",
-    "when": "Wed, 23 Sep 2026 23:01:47 GMT",
+    "when": "Thu, 24 Sep 2026 03:02:16 GMT",
     "source": "GDACS"
    },
    {
@@ -1303,7 +1268,7 @@
     "place": "Brazil",
     "severity": "Green impact for forestfire in 5086 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032365",
-    "when": "Wed, 23 Sep 2026 23:02:12 GMT",
+    "when": "Thu, 24 Sep 2026 03:01:23 GMT",
     "source": "GDACS"
    },
    {
@@ -1331,13 +1296,13 @@
     "source": "GDACS"
    },
    {
-    "lat": 1.5434308087978987,
-    "lon": -55.86298176488222,
+    "lat": 1.5512316755038968,
+    "lon": -55.87214158868617,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Brazil",
     "place": "Brazil",
-    "severity": "Green impact for forestfire in 8846 ha",
+    "severity": "Green impact for forestfire in 10818 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032340",
     "when": "Tue, 22 Sep 2026 23:02:13 GMT",
     "source": "GDACS"
@@ -1363,7 +1328,7 @@
     "place": "Brazil",
     "severity": "Green impact for forestfire in 6820 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032366",
-    "when": "Wed, 23 Sep 2026 23:04:19 GMT",
+    "when": "Thu, 24 Sep 2026 03:03:37 GMT",
     "source": "GDACS"
    },
    {
@@ -1375,7 +1340,7 @@
     "place": "Angola",
     "severity": "Green impact for forestfire in 6938 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032359",
-    "when": "Wed, 23 Sep 2026 23:04:26 GMT",
+    "when": "Thu, 24 Sep 2026 03:03:45 GMT",
     "source": "GDACS"
    },
    {
@@ -1387,7 +1352,7 @@
     "place": "Angola",
     "severity": "Green impact for forestfire in 5205 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032360",
-    "when": "Wed, 23 Sep 2026 23:04:02 GMT",
+    "when": "Thu, 24 Sep 2026 03:04:18 GMT",
     "source": "GDACS"
    },
    {
@@ -1399,7 +1364,7 @@
     "place": "Angola",
     "severity": "Green impact for forestfire in 5460 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032361",
-    "when": "Wed, 23 Sep 2026 23:04:51 GMT",
+    "when": "Thu, 24 Sep 2026 03:04:00 GMT",
     "source": "GDACS"
    },
    {
@@ -1855,7 +1820,7 @@
     "place": "Russian Federation",
     "severity": "Green impact for forestfire in 5007 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032362",
-    "when": "Wed, 23 Sep 2026 23:06:39 GMT",
+    "when": "Thu, 24 Sep 2026 03:04:54 GMT",
     "source": "GDACS"
    },
    {
@@ -2147,12 +2112,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-23T23:00:43-04:00",
+  "fetched_at": "2026-09-23T23:15:47-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "Temblor hoy en Colombia | SGC reporta nuevo sismo de magnitud mayor a 4 en Tolima este 23 de septiembre: se sintió en Pereira y otras ciudades",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-sgc-reporta-nuevo-sismo-de-magnitud-mayor-a-4-en-tolima-este-23-de-septiembre-se-sintio-en-pereira-y-otras-ciudades-3588484",
+      "published": "2026-09-23T22:01:55-05:00",
+      "section": "colombia"
+     },
      {
       "title": "Los casos de presunta corrupción durante la Alcaldía de Daniel Quintero en Medellín bajo la lupa del grupo especializado designado por la Fiscalía",
       "url": "https://www.eltiempo.com/colombia/medellin/los-casos-de-presunta-corrupcion-durante-la-alcaldia-de-daniel-quintero-en-medellin-bajo-la-lupa-del-grupo-especializado-designado-por-la-fiscalia-3588045",
@@ -2160,8 +2131,8 @@
       "section": "colombia"
      }
     ],
-    "count": 1,
-    "issue": "Los casos de presunta corrupción durante la Alcaldía de Daniel Quintero en Medellín bajo la lupa del grupo especializado designado por la Fiscalía"
+    "count": 2,
+    "issue": "Temblor hoy en Colombia | SGC reporta nuevo sismo de magnitud mayor a 4 en Tolima este 23 de septiembre: se sintió en Pereira y otras ciudades"
    },
    {
     "iso": "IRN",
@@ -2176,20 +2147,6 @@
     ],
     "count": 1,
     "issue": "Iran's president gives a rare wartime speech at the U.N."
-   },
-   {
-    "iso": "RUS",
-    "name": "Russia",
-    "stories": [
-     {
-      "title": "Trump extends invite to Russia’s Putin for G20 summit in Doral, Rubio says",
-      "url": "https://wsvn.com/news/local/miami-dade/trump-extends-invite-to-russias-putin-for-g20-summit-in-doral-rubio-says/",
-      "published": "Wed, 23 Sep 2026 21:54:43 +0000",
-      "section": "local"
-     }
-    ],
-    "count": 1,
-    "issue": "Trump extends invite to Russia’s Putin for G20 summit in Doral, Rubio says"
    },
    {
     "iso": "TWN",
@@ -2221,7 +2178,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 5,
+  "countries_matched": 4,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
