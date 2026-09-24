@@ -1,26 +1,179 @@
 {
- "generated_at": "2026-09-24T19:45:35-04:00",
- "generated_at_utc": "2026-09-24T23:45:35+00:00",
+ "generated_at": "2026-09-24T19:52:42-04:00",
+ "generated_at_utc": "2026-09-24T23:52:42+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, September 24",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-09-24T19:45:35-04:00",
-  "error": "503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpre"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-09-24T19:52:42-04:00",
+  "curve": [
+   {
+    "time": "2026-09-24T05:00",
+    "hour": 5,
+    "temp": 77.1,
+    "feels": 85.9,
+    "humidity": 95,
+    "pop": 1
+   },
+   {
+    "time": "2026-09-24T06:00",
+    "hour": 6,
+    "temp": 77.4,
+    "feels": 86.9,
+    "humidity": 95,
+    "pop": 1
+   },
+   {
+    "time": "2026-09-24T07:00",
+    "hour": 7,
+    "temp": 76.9,
+    "feels": 86.3,
+    "humidity": 95,
+    "pop": 2
+   },
+   {
+    "time": "2026-09-24T08:00",
+    "hour": 8,
+    "temp": 77.6,
+    "feels": 87.3,
+    "humidity": 94,
+    "pop": 3
+   },
+   {
+    "time": "2026-09-24T09:00",
+    "hour": 9,
+    "temp": 78.4,
+    "feels": 87.9,
+    "humidity": 94,
+    "pop": 1
+   },
+   {
+    "time": "2026-09-24T10:00",
+    "hour": 10,
+    "temp": 81.3,
+    "feels": 90.8,
+    "humidity": 91,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-24T11:00",
+    "hour": 11,
+    "temp": 83.4,
+    "feels": 93.3,
+    "humidity": 82,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-24T12:00",
+    "hour": 12,
+    "temp": 85.7,
+    "feels": 95.6,
+    "humidity": 75,
+    "pop": 1
+   },
+   {
+    "time": "2026-09-24T13:00",
+    "hour": 13,
+    "temp": 86.8,
+    "feels": 97.0,
+    "humidity": 71,
+    "pop": 4
+   },
+   {
+    "time": "2026-09-24T14:00",
+    "hour": 14,
+    "temp": 87.2,
+    "feels": 95.3,
+    "humidity": 68,
+    "pop": 7
+   },
+   {
+    "time": "2026-09-24T15:00",
+    "hour": 15,
+    "temp": 87.0,
+    "feels": 96.7,
+    "humidity": 75,
+    "pop": 3
+   },
+   {
+    "time": "2026-09-24T16:00",
+    "hour": 16,
+    "temp": 89.3,
+    "feels": 96.3,
+    "humidity": 61,
+    "pop": 3
+   },
+   {
+    "time": "2026-09-24T17:00",
+    "hour": 17,
+    "temp": 84.7,
+    "feels": 92.6,
+    "humidity": 80,
+    "pop": 8
+   },
+   {
+    "time": "2026-09-24T18:00",
+    "hour": 18,
+    "temp": 83.7,
+    "feels": 91.4,
+    "humidity": 72,
+    "pop": 10
+   },
+   {
+    "time": "2026-09-24T19:00",
+    "hour": 19,
+    "temp": 83.4,
+    "feels": 94.2,
+    "humidity": 81,
+    "pop": 10
+   },
+   {
+    "time": "2026-09-24T20:00",
+    "hour": 20,
+    "temp": 83.1,
+    "feels": 95.5,
+    "humidity": 85,
+    "pop": 9
+   },
+   {
+    "time": "2026-09-24T21:00",
+    "hour": 21,
+    "temp": 83.3,
+    "feels": 96.2,
+    "humidity": 86,
+    "pop": 8
+   }
+  ],
+  "current": {
+   "temp": 83.0,
+   "feels": 94.7,
+   "humidity": 84,
+   "wind_mph": 2.0,
+   "wind_dir": 354,
+   "observed_at": "2026-09-24T19:45"
+  },
+  "today": {
+   "high": 89.3,
+   "low": 76.9,
+   "feels_max": 97.0,
+   "pop_max": 10
+  },
+  "peak_feels": 97.0,
+  "peak_hour": 13
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-24T19:45:35-04:00",
+  "fetched_at": "2026-09-24T19:52:42-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-24T19:45:52-04:00",
+  "fetched_at": "2026-09-24T19:52:43-04:00",
   "aqi": 47,
   "category": "Good",
   "pollutant": "O3",
@@ -68,7 +221,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-24T19:45:52-04:00",
+  "fetched_at": "2026-09-24T19:52:43-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -81,7 +234,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-24T19:45:53-04:00",
+  "fetched_at": "2026-09-24T19:52:44-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -125,7 +278,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-24T19:45:53-04:00",
+  "fetched_at": "2026-09-24T19:52:44-04:00",
   "issued": "800 PM EDT Thu Sep 24 2026",
   "areas": [
    {
@@ -139,7 +292,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-24T19:45:53-04:00",
+  "fetched_at": "2026-09-24T19:52:45-04:00",
   "florida": "$4.3820",
   "national": "$4.4825",
   "diesel": "$6.1943",
@@ -148,7 +301,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-24T19:45:54-04:00",
+  "fetched_at": "2026-09-24T19:52:46-04:00",
   "streams": {
    "local": [
     {
@@ -521,15 +674,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-24T19:45:55-04:00",
+  "fetched_at": "2026-09-24T19:52:47-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (309) + USGS (10)",
-  "fetched_at": "2026-09-24T19:45:57-04:00",
+  "source": "GDACS (309) + USGS (11)",
+  "fetched_at": "2026-09-24T19:52:49-04:00",
   "events": [
    {
     "lat": 18.1,
@@ -638,6 +791,19 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018431",
     "when": "Thu, 30 Apr 2026 13:07:35 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -6.0863,
+    "lon": 147.3935,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M5.3 — 72 km NW of Finschhafen, Papua New Guinea",
+    "place": "72 km NW of Finschhafen, Papua New Guinea",
+    "severity": "M5.3",
+    "mag": 5.3,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txhp",
+    "when": 1790292628053,
+    "source": "USGS"
    },
    {
     "lat": 37.4736,
@@ -1968,25 +2134,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032228",
     "when": "Sat, 19 Sep 2026 19:03:06 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -3.110432665154045,
-    "lon": 112.66603548552054,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Indonesia",
-    "place": "Indonesia",
-    "severity": "Green impact for forestfire in 6358 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032264",
-    "when": "Sun, 20 Sep 2026 19:49:50 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 319,
+  "event_count": 320,
   "counts": {
    "red": 0,
    "orange": 9,
-   "green": 310
+   "green": 311
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -1994,7 +2148,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-24T19:45:57-04:00",
+  "fetched_at": "2026-09-24T19:52:49-04:00",
   "countries": [
    {
     "iso": "USA",
@@ -2091,8 +2245,6 @@
   "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
