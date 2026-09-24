@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-24T14:15:30-04:00",
- "generated_at_utc": "2026-09-24T18:15:30+00:00",
+ "generated_at": "2026-09-24T14:30:30-04:00",
+ "generated_at_utc": "2026-09-24T18:30:30+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, September 24",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-24T14:15:30-04:00",
+  "fetched_at": "2026-09-24T14:30:31-04:00",
   "curve": [
    {
     "time": "2026-09-24T05:00",
@@ -77,7 +77,7 @@
     "time": "2026-09-24T13:00",
     "hour": 13,
     "temp": 85.5,
-    "feels": 96.1,
+    "feels": 95.4,
     "humidity": 73,
     "pop": 4
    },
@@ -85,7 +85,7 @@
     "time": "2026-09-24T14:00",
     "hour": 14,
     "temp": 84.2,
-    "feels": 95.1,
+    "feels": 94.6,
     "humidity": 82,
     "pop": 7
    },
@@ -93,7 +93,7 @@
     "time": "2026-09-24T15:00",
     "hour": 15,
     "temp": 84.9,
-    "feels": 93.8,
+    "feels": 96.7,
     "humidity": 76,
     "pop": 12
    },
@@ -101,7 +101,7 @@
     "time": "2026-09-24T16:00",
     "hour": 16,
     "temp": 85.4,
-    "feels": 96.1,
+    "feels": 94.1,
     "humidity": 75,
     "pop": 9
    },
@@ -109,7 +109,7 @@
     "time": "2026-09-24T17:00",
     "hour": 17,
     "temp": 78.2,
-    "feels": 87.3,
+    "feels": 83.8,
     "humidity": 94,
     "pop": 18
    },
@@ -117,7 +117,7 @@
     "time": "2026-09-24T18:00",
     "hour": 18,
     "temp": 79.8,
-    "feels": 88.0,
+    "feels": 87.7,
     "humidity": 87,
     "pop": 15
    },
@@ -125,7 +125,7 @@
     "time": "2026-09-24T19:00",
     "hour": 19,
     "temp": 76.8,
-    "feels": 82.1,
+    "feels": 84.4,
     "humidity": 87,
     "pop": 10
    },
@@ -133,7 +133,7 @@
     "time": "2026-09-24T20:00",
     "hour": 20,
     "temp": 76.2,
-    "feels": 84.4,
+    "feels": 85.6,
     "humidity": 91,
     "pop": 7
    },
@@ -147,122 +147,86 @@
    }
   ],
   "current": {
-   "temp": 83.9,
-   "feels": 93.4,
-   "humidity": 81,
-   "wind_mph": 6.8,
-   "wind_dir": 308,
-   "observed_at": "2026-09-24T14:15"
+   "temp": 85.0,
+   "feels": 98.4,
+   "humidity": 80,
+   "wind_mph": 5.5,
+   "wind_dir": 305,
+   "observed_at": "2026-09-24T14:30"
   },
   "today": {
    "high": 85.7,
    "low": 75.8,
-   "feels_max": 96.1,
+   "feels_max": 96.7,
    "pop_max": 18
   },
-  "peak_feels": 96.1,
-  "peak_hour": 13
+  "peak_feels": 96.7,
+  "peak_hour": 15
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-24T14:15:31-04:00",
+  "fetched_at": "2026-09-24T14:30:32-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-24T14:15:32-04:00",
-  "aqi": 25,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-24T14:30:58-04:00",
+  "aqi": 50,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-24 13:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-24",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-24",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-26",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-26",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 3.9,
+  "pm10": 4.9,
+  "observed": "2026-09-24T14:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-24T14:15:34-04:00",
+  "fetched_at": "2026-09-24T14:31:01-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "2026-09-24T15:30:00-04:00",
   "miles": 20.6,
-  "minutes": 65,
-  "delay_minutes": 3,
+  "minutes": 64,
+  "delay_minutes": 2,
   "toll_free": true,
   "alternates": [
    {
     "miles": 22.6,
     "minutes": 57,
     "toll": true,
-    "saves": 8
+    "saves": 7
    },
    {
     "miles": 28.6,
-    "minutes": 61,
+    "minutes": 62,
     "toll": true,
-    "saves": 4
+    "saves": 2
    },
    {
     "miles": 26.8,
     "minutes": 63,
     "toll": true,
-    "saves": 2
+    "saves": 1
    },
    {
     "miles": 20.8,
     "minutes": 63,
     "toll": true,
-    "saves": 2
+    "saves": 1
    }
   ],
   "alternates_worth_taking": [],
   "free_alternates": [
    {
     "miles": 20.6,
-    "minutes": 65,
-    "delay_minutes": 3,
+    "minutes": 64,
+    "delay_minutes": 2,
     "saves": 0
    },
    {
@@ -283,8 +247,8 @@
   ],
   "best_free": {
    "miles": 20.6,
-   "minutes": 65,
-   "delay_minutes": 3,
+   "minutes": 64,
+   "delay_minutes": 2,
    "saves": 0
   },
   "incidents": [],
@@ -296,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-24T14:15:35-04:00",
+  "fetched_at": "2026-09-24T14:31:02-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -344,7 +308,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-24T14:15:35-04:00",
+  "fetched_at": "2026-09-24T14:31:02-04:00",
   "issued": "800 AM EDT Thu Sep 24 2026",
   "areas": [
    {
@@ -358,7 +322,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-24T14:15:35-04:00",
+  "fetched_at": "2026-09-24T14:31:02-04:00",
   "florida": "$4.3820",
   "national": "$4.4825",
   "diesel": "$6.1943",
@@ -367,7 +331,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-24T14:15:37-04:00",
+  "fetched_at": "2026-09-24T14:31:03-04:00",
   "streams": {
    "local": [
     {
@@ -544,7 +508,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/baker-acted-patient-in-custody-after-carjacking-at-palmetto-general-hospital-intense-pursuit-across-hialeah-nw-miami-dade/",
     "published": "Thu, 24 Sep 2026 14:38:28 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/2a622df3-513c-4cf3-ad87-3751c32fbe43/6c394d69-9123-4716-8642-750bbada0516/main.mp4?fastly_token=NmFiNWI2ODJfNjM1NGQ0YWJlMDRiMjkwMDQ1NmM2NDhhNWFlNmVmYTg0MTYzMGQyNzZlOTQwMjJmZWVhZTE5NTk1YzA0ODc1Zl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yYTYyMmRmMy01MTNjLTRjZjMtYWQ4Ny0zNzUxYzMyZmJlNDMvNmMzOTRkNjktOTEyMy00NzE2LTg2NDItNzUwYmJhZGEwNTE2L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/11686402-ae18-48a4-b686-fcf7af52dabb/45dfa670-6cea-4eba-8d1b-565fff3fcf9e/main.mp4?fastly_token=NmFiNWM0NzdfOWRkYzU4NzQzZmVlNzkzNTkwM2ExOTkxOTI1Y2EyZTA0NGY3MWNjMjg3ODllOGFiMTA3NDVjZThjZGRkMmQzZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xMTY4NjQwMi1hZTE4LTQ4YTQtYjY4Ni1mY2Y3YWY1MmRhYmIvNDVkZmE2NzAtNmNlYS00ZWJhLThkMWItNTY1ZmZmM2ZjZjllL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -584,7 +548,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/baker-acted-patient-in-custody-after-carjacking-at-palmetto-general-hospital-intense-pursuit-across-hialeah-nw-miami-dade/",
     "published": "Thu, 24 Sep 2026 14:38:28 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/2a622df3-513c-4cf3-ad87-3751c32fbe43/6c394d69-9123-4716-8642-750bbada0516/main.mp4?fastly_token=NmFiNWI2ODJfNjM1NGQ0YWJlMDRiMjkwMDQ1NmM2NDhhNWFlNmVmYTg0MTYzMGQyNzZlOTQwMjJmZWVhZTE5NTk1YzA0ODc1Zl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yYTYyMmRmMy01MTNjLTRjZjMtYWQ4Ny0zNzUxYzMyZmJlNDMvNmMzOTRkNjktOTEyMy00NzE2LTg2NDItNzUwYmJhZGEwNTE2L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/11686402-ae18-48a4-b686-fcf7af52dabb/45dfa670-6cea-4eba-8d1b-565fff3fcf9e/main.mp4?fastly_token=NmFiNWM0NzdfOWRkYzU4NzQzZmVlNzkzNTkwM2ExOTkxOTI1Y2EyZTA0NGY3MWNjMjg3ODllOGFiMTA3NDVjZThjZGRkMmQzZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xMTY4NjQwMi1hZTE4LTQ4YTQtYjY4Ni1mY2Y3YWY1MmRhYmIvNDVkZmE2NzAtNmNlYS00ZWJhLThkMWItNTY1ZmZmM2ZjZjllL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -605,6 +569,14 @@
    }
   ],
   "colombia": [
+   {
+    "title": "Entre extorsiones y 'ollas' de microtráfico: así opera el imperio criminal que busca desmantelar la Operación Iron en el centro de Cali",
+    "url": "https://www.eltiempo.com/colombia/cali/entre-extorsiones-y-ollas-de-microtrafico-asi-opera-el-imperio-criminal-que-busca-desmantelar-la-operacion-iron-en-el-centro-de-cali-3588650",
+    "published": "2026-09-24T13:12:43-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/24/6ab5166b03573.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Desde Cartagena exigen que el 50 % del recaudo por contraprestaciones portuarias sea destinado a inversión social y ambiental",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/desde-cartagena-exigen-que-el-50-del-recaudo-por-contraprestaciones-portuarias-sea-destinado-a-inversion-social-y-ambiental-3588639",
@@ -656,17 +628,9 @@
    {
     "title": "Aparece nuevo video con amenaza de 'Los Pachenca' de seguir paro armado en Magdalena y La Guajira tras muerte de alias Cholo: autoridades verifican",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/aparece-nuevo-video-con-amenaza-de-los-pachenca-de-seguir-paro-armado-en-magdalena-y-la-guajira-tras-muerte-de-alias-cholo-autoridades-verifican-3588608",
-    "published": "2026-09-24T11:04:35-05:00",
+    "published": "2026-09-24T13:01:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/24/6ab54bc4aae86.r_d.1046-169-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Trabajador de Panaca apareció sin vida dentro del parque en Quindío y ya hay pronunciamiento oficial: 'Expresamos nuestras condolencias'",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/trabajador-de-panaca-aparecio-sin-vida-dentro-del-parque-en-quindio-y-ya-hay-pronunciamiento-oficial-expresamos-nuestras-condolencias-3588591",
-    "published": "2026-09-24T11:03:55-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/24/6ab548c58d7b2.png",
     "media_type": "image"
    }
   ],
@@ -740,15 +704,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-24T14:15:38-04:00",
+  "fetched_at": "2026-09-24T14:31:03-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (349) + USGS (7)",
-  "fetched_at": "2026-09-24T14:15:42-04:00",
+  "source": "GDACS (349) + USGS (8)",
+  "fetched_at": "2026-09-24T14:31:06-04:00",
   "events": [
    {
     "lat": 18.1,
@@ -882,6 +846,19 @@
     "mag": 5.2,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txbm",
     "when": 1790252998824,
+    "source": "USGS"
+   },
+   {
+    "lat": -4.6356,
+    "lon": 152.2767,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M5.1 — 32 km S of Kokopo, Papua New Guinea",
+    "place": "32 km S of Kokopo, Papua New Guinea",
+    "severity": "M5.1",
+    "mag": 5.1,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txf9",
+    "when": 1790272847703,
     "source": "USGS"
    },
    {
@@ -2184,25 +2161,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032140",
     "when": "Fri, 18 Sep 2026 03:01:33 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -13.69510122902184,
-    "lon": 135.2429810105703,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 7431 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032228",
-    "when": "Sat, 19 Sep 2026 19:03:06 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 356,
+  "event_count": 357,
   "counts": {
    "red": 0,
    "orange": 9,
-   "green": 347
+   "green": 348
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2210,12 +2175,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-24T14:15:42-04:00",
+  "fetched_at": "2026-09-24T14:31:06-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "Entre extorsiones y 'ollas' de microtráfico: así opera el imperio criminal que busca desmantelar la Operación Iron en el centro de Cali",
+      "url": "https://www.eltiempo.com/colombia/cali/entre-extorsiones-y-ollas-de-microtrafico-asi-opera-el-imperio-criminal-que-busca-desmantelar-la-operacion-iron-en-el-centro-de-cali-3588650",
+      "published": "2026-09-24T13:12:43-05:00",
+      "section": "colombia"
+     },
      {
       "title": "Temblor hoy en Colombia | Reportan dos fuertes sismos de magnitud 4,1 en medio de seguidilla en Chaparral: se sintieron en Bogotá, Ibagué, Cali y más",
       "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-fuerte-sismo-de-magnitud-4-1-en-medio-de-seguidilla-en-chaparral-tolima-se-sintio-en-cali-ibague-y-mas-ciudades-3588633",
@@ -2229,8 +2200,8 @@
       "section": "colombia"
      }
     ],
-    "count": 2,
-    "issue": "Temblor hoy en Colombia | Reportan dos fuertes sismos de magnitud 4,1 en medio de seguidilla en Chaparral: se sintieron en Bogotá, Ibagué, Cali y más"
+    "count": 3,
+    "issue": "Entre extorsiones y 'ollas' de microtráfico: así opera el imperio criminal que busca desmantelar la Operación Iron en el centro de Cali"
    },
    {
     "iso": "USA",
