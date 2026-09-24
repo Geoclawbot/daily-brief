@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-24T16:45:27-04:00",
- "generated_at_utc": "2026-09-24T20:45:27+00:00",
+ "generated_at": "2026-09-24T17:00:27-04:00",
+ "generated_at_utc": "2026-09-24T21:00:27+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, September 24",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-24T16:45:28-04:00",
+  "fetched_at": "2026-09-24T17:00:27-04:00",
   "curve": [
    {
     "time": "2026-09-24T05:00",
@@ -103,7 +103,7 @@
     "temp": 86.1,
     "feels": 94.4,
     "humidity": 71,
-    "pop": 5
+    "pop": 3
    },
    {
     "time": "2026-09-24T17:00",
@@ -111,7 +111,7 @@
     "temp": 85.0,
     "feels": 93.8,
     "humidity": 78,
-    "pop": 17
+    "pop": 8
    },
    {
     "time": "2026-09-24T18:00",
@@ -127,7 +127,7 @@
     "temp": 80.9,
     "feels": 90.4,
     "humidity": 86,
-    "pop": 11
+    "pop": 16
    },
    {
     "time": "2026-09-24T20:00",
@@ -135,7 +135,7 @@
     "temp": 80.3,
     "feels": 91.4,
     "humidity": 89,
-    "pop": 9
+    "pop": 13
    },
    {
     "time": "2026-09-24T21:00",
@@ -147,18 +147,18 @@
    }
   ],
   "current": {
-   "temp": 85.3,
-   "feels": 93.7,
-   "humidity": 76,
+   "temp": 85.0,
+   "feels": 93.8,
+   "humidity": 78,
    "wind_mph": 8.6,
    "wind_dir": 345,
-   "observed_at": "2026-09-24T16:45"
+   "observed_at": "2026-09-24T17:00"
   },
   "today": {
    "high": 87.2,
    "low": 76.9,
    "feels_max": 97.0,
-   "pop_max": 17
+   "pop_max": 16
   },
   "peak_feels": 97.0,
   "peak_hour": 13
@@ -166,124 +166,88 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-24T16:45:28-04:00",
+  "fetched_at": "2026-09-24T17:00:29-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-24T16:45:29-04:00",
-  "aqi": 31,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-24T17:00:55-04:00",
+  "aqi": 50,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-24 15:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-24",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-24",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-26",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-26",
-    "aqi": 30,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 3.5,
+  "pm10": 4.5,
+  "observed": "2026-09-24T17:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-24T16:45:32-04:00",
+  "fetched_at": "2026-09-24T17:00:57-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 21.3,
-  "minutes": 75,
+  "miles": 21.9,
+  "minutes": 74,
   "delay_minutes": 5,
   "toll_free": true,
   "alternates": [
    {
     "miles": 22.6,
-    "minutes": 67,
+    "minutes": 66,
     "toll": true,
     "saves": 8
    },
    {
-    "miles": 21.5,
-    "minutes": 71,
+    "miles": 22.1,
+    "minutes": 70,
     "toll": true,
     "saves": 4
    },
    {
-    "miles": 25.9,
+    "miles": 26.8,
     "minutes": 75,
     "toll": true,
-    "saves": 0
+    "saves": -1
    },
    {
-    "miles": 24.4,
-    "minutes": 77,
+    "miles": 24.3,
+    "minutes": 75,
     "toll": true,
-    "saves": -2
+    "saves": -1
    }
   ],
   "alternates_worth_taking": [],
   "free_alternates": [
    {
-    "miles": 21.3,
-    "minutes": 75,
+    "miles": 21.9,
+    "minutes": 74,
     "delay_minutes": 5,
     "saves": 0
    },
    {
     "miles": 23.4,
-    "minutes": 80,
-    "delay_minutes": 3
+    "minutes": 79,
+    "delay_minutes": 1
    },
    {
     "miles": 23.1,
-    "minutes": 85,
+    "minutes": 84,
     "delay_minutes": 3
    },
    {
-    "miles": 31.4,
-    "minutes": 88,
+    "miles": 22.9,
+    "minutes": 79,
     "delay_minutes": 1
    }
   ],
   "best_free": {
-   "miles": 21.3,
-   "minutes": 75,
+   "miles": 21.9,
+   "minutes": 74,
    "delay_minutes": 5,
    "saves": 0
   },
@@ -296,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-24T16:45:33-04:00",
+  "fetched_at": "2026-09-24T17:00:58-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -347,7 +311,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-24T16:45:33-04:00",
+  "fetched_at": "2026-09-24T17:00:59-04:00",
   "issued": "200 PM EDT Thu Sep 24 2026",
   "areas": [
    {
@@ -361,7 +325,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-24T16:45:34-04:00",
+  "fetched_at": "2026-09-24T17:00:59-04:00",
   "florida": "$4.3820",
   "national": "$4.4825",
   "diesel": "$6.1943",
@@ -370,7 +334,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-24T16:45:35-04:00",
+  "fetched_at": "2026-09-24T17:01:00-04:00",
   "streams": {
    "local": [
     {
@@ -479,6 +443,14 @@
   ],
   "local": [
    {
+    "title": "2 dead after fiery Corvette crash in Davie",
+    "url": "https://www.local10.com/news/local/2026/09/24/2-dead-after-driver-crashes-into-pole-in-davie-sparking-fire/",
+    "published": "Thu, 24 Sep 2026 11:15:45 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Bad match? Man brings Tinder date back to Brickell high-rise, she swipes his $37K Rolex, police say",
     "url": "https://www.local10.com/news/local/2026/09/24/bad-match-man-brings-tinder-date-back-to-brickell-high-rise-she-swipes-his-37k-rolex-police-say/",
     "published": "Thu, 24 Sep 2026 16:13:50 +0000",
@@ -493,14 +465,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/ISFAQ3LUIZDWDKW6UD4DS642CY.jpg?auth=865d0e178e32bd01ed37fcc79a2b6744f9282008124bba3b5db26b64d1e9d4c7&smart=true&width=1200&height=900",
     "media_type": "image"
-   },
-   {
-    "title": "2 dead after fiery Corvette crash in Davie",
-    "url": "https://www.local10.com/news/local/2026/09/24/2-dead-after-driver-crashes-into-pole-in-davie-sparking-fire/",
-    "published": "Thu, 24 Sep 2026 11:15:45 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
    },
    {
     "title": "Crane falls onto Fort Lauderdale house after boom truck tips over",
@@ -609,6 +573,22 @@
   ],
   "colombia": [
    {
+    "title": "Capturan a dos raperos que presuntamente agredieron a un turista en el Centro Histórico de Cartagena: los señalan del delito de lesiones personales",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/capturan-a-dos-raperos-que-presuntamente-agredieron-a-un-turista-en-el-centro-historico-de-cartagena-los-senalan-del-delito-de-lesiones-personales-3588705",
+    "published": "2026-09-24T15:53:25-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/24/6ab58b1e63b2e.r_d.645-568-0.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Rescatan gato 45 días después del terremoto en Pereira: 'No tenía cómo descender'",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/rescatan-gato-45-dias-despues-del-terremoto-en-pereira-no-tenia-como-descender-3588683",
+    "published": "2026-09-24T15:37:59-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/24/6ab5844025301.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Barranquilla: Junior probó la nueva grama híbrida del Metropolitano; esto fue lo que dijeron Viera y Teófilo sobre el estadio que ya va en 89 %",
     "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-junior-probo-la-nueva-grama-hibrida-del-metropolitano-esto-fue-lo-que-dijeron-viera-y-teofilo-sobre-el-estadio-que-ya-va-en-3588694",
     "published": "2026-09-24T15:31:03-05:00",
@@ -654,22 +634,6 @@
     "published": "2026-09-24T14:07:40-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/24/6ab5715d8e009.png",
-    "media_type": "image"
-   },
-   {
-    "title": "¿Ahorro o castigo? La batalla del Caribe para evitar que el plan energético de la CREG encarezca las facturas en la región más caliente del país",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/ahorro-o-castigo-la-batalla-del-caribe-para-evitar-que-el-plan-energetico-de-la-creg-encarezca-las-facturas-en-la-region-mas-caliente-del-pais-3588649",
-    "published": "2026-09-24T14:01:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2019/08/03/5d45c863705b0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Entre extorsiones y 'ollas' de microtráfico: así opera el imperio criminal que busca desmantelar la Operación Iron en el centro de Cali",
-    "url": "https://www.eltiempo.com/colombia/cali/entre-extorsiones-y-ollas-de-microtrafico-asi-opera-el-imperio-criminal-que-busca-desmantelar-la-operacion-iron-en-el-centro-de-cali-3588650",
-    "published": "2026-09-24T13:16:34-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/24/6ab5166b03573.jpeg",
     "media_type": "image"
    }
   ],
@@ -743,15 +707,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-24T16:45:35-04:00",
+  "fetched_at": "2026-09-24T17:01:00-04:00",
   "items": [],
-  "scanned": 4,
+  "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
   "source": "GDACS (356) + USGS (9)",
-  "fetched_at": "2026-09-24T16:45:38-04:00",
+  "fetched_at": "2026-09-24T17:01:02-04:00",
   "events": [
    {
     "lat": 18.1,
@@ -2215,7 +2179,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-24T16:45:38-04:00",
+  "fetched_at": "2026-09-24T17:01:02-04:00",
   "countries": [
    {
     "iso": "USA",
@@ -2252,20 +2216,6 @@
     "issue": "OpenAI's breach of Australian health department website prompts rebuke"
    },
    {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Entre extorsiones y 'ollas' de microtráfico: así opera el imperio criminal que busca desmantelar la Operación Iron en el centro de Cali",
-      "url": "https://www.eltiempo.com/colombia/cali/entre-extorsiones-y-ollas-de-microtrafico-asi-opera-el-imperio-criminal-que-busca-desmantelar-la-operacion-iron-en-el-centro-de-cali-3588650",
-      "published": "2026-09-24T13:16:34-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 1,
-    "issue": "Entre extorsiones y 'ollas' de microtráfico: así opera el imperio criminal que busca desmantelar la Operación Iron en el centro de Cali"
-   },
-   {
     "iso": "ISR",
     "name": "Israel",
     "stories": [
@@ -2295,7 +2245,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 5,
+  "countries_matched": 4,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
