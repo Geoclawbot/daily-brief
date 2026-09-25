@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-25T17:15:47-04:00",
- "generated_at_utc": "2026-09-25T21:15:47+00:00",
+ "generated_at": "2026-09-25T17:30:32-04:00",
+ "generated_at_utc": "2026-09-25T21:30:32+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 25",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-25T17:15:48-04:00",
+  "fetched_at": "2026-09-25T17:30:32-04:00",
   "curve": [
    {
     "time": "2026-09-25T05:00",
@@ -101,7 +101,7 @@
     "time": "2026-09-25T16:00",
     "hour": 16,
     "temp": 86.8,
-    "feels": 94.7,
+    "feels": 94.2,
     "humidity": 67,
     "pop": 13
    },
@@ -109,7 +109,7 @@
     "time": "2026-09-25T17:00",
     "hour": 17,
     "temp": 82.9,
-    "feels": 91.5,
+    "feels": 92.2,
     "humidity": 81,
     "pop": 14
    },
@@ -117,7 +117,7 @@
     "time": "2026-09-25T18:00",
     "hour": 18,
     "temp": 81.3,
-    "feels": 88.4,
+    "feels": 88.6,
     "humidity": 84,
     "pop": 15
    },
@@ -125,7 +125,7 @@
     "time": "2026-09-25T19:00",
     "hour": 19,
     "temp": 79.6,
-    "feels": 88.2,
+    "feels": 88.7,
     "humidity": 85,
     "pop": 15
    },
@@ -133,7 +133,7 @@
     "time": "2026-09-25T20:00",
     "hour": 20,
     "temp": 78.4,
-    "feels": 86.1,
+    "feels": 86.2,
     "humidity": 87,
     "pop": 10
    },
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 83.2,
-   "feels": 92.6,
+   "temp": 82.3,
+   "feels": 91.3,
    "humidity": 83,
    "wind_mph": 7.0,
-   "wind_dir": 27,
-   "observed_at": "2026-09-25T17:15"
+   "wind_dir": 22,
+   "observed_at": "2026-09-25T17:30"
   },
   "today": {
    "high": 87.5,
@@ -166,151 +166,115 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-25T17:15:48-04:00",
+  "fetched_at": "2026-09-25T17:30:33-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-25T17:15:50-04:00",
-  "aqi": 48,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-25T17:30:59-04:00",
+  "aqi": 38,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-25 16:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-25",
-    "aqi": 54,
-    "category": "Moderate",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-25",
-    "aqi": 31,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-26",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-26",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-27",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-27",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-28",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-28",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 4.9,
+  "pm10": 6.4,
+  "observed": "2026-09-25T17:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-25T17:15:52-04:00",
+  "fetched_at": "2026-09-25T17:31:01-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 23.3,
-  "minutes": 77,
-  "delay_minutes": 9,
+  "miles": 24.0,
+  "minutes": 86,
+  "delay_minutes": 5,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 26.4,
-    "minutes": 54,
+    "miles": 26.2,
+    "minutes": 56,
     "toll": true,
-    "saves": 23
+    "saves": 30
    },
    {
-    "miles": 22.6,
-    "minutes": 67,
-    "toll": true,
-    "saves": 10
-   },
-   {
-    "miles": 45.6,
+    "miles": 45.4,
     "minutes": 64,
     "toll": true,
-    "saves": 13
+    "saves": 22
    },
    {
     "miles": 28.9,
-    "minutes": 70,
+    "minutes": 71,
     "toll": true,
-    "saves": 7
+    "saves": 15
+   },
+   {
+    "miles": 22.4,
+    "minutes": 74,
+    "toll": true,
+    "saves": 12
    }
   ],
   "alternates_worth_taking": [
    {
-    "miles": 26.4,
-    "minutes": 54,
+    "miles": 26.2,
+    "minutes": 56,
     "toll": true,
-    "saves": 23
+    "saves": 30
    },
    {
-    "miles": 45.6,
+    "miles": 45.4,
     "minutes": 64,
     "toll": true,
-    "saves": 13
+    "saves": 22
+   },
+   {
+    "miles": 28.9,
+    "minutes": 71,
+    "toll": true,
+    "saves": 15
+   },
+   {
+    "miles": 22.4,
+    "minutes": 74,
+    "toll": true,
+    "saves": 12
    }
   ],
   "free_alternates": [
    {
-    "miles": 23.3,
-    "minutes": 77,
-    "delay_minutes": 9,
-    "saves": 0
-   },
-   {
-    "miles": 23.9,
-    "minutes": 78,
-    "delay_minutes": 6
-   },
-   {
-    "miles": 31.0,
-    "minutes": 83,
+    "miles": 24.0,
+    "minutes": 86,
     "delay_minutes": 5
    },
    {
-    "miles": 24.3,
-    "minutes": 82,
-    "delay_minutes": 12
+    "miles": 22.1,
+    "minutes": 85,
+    "delay_minutes": 16,
+    "saves": 1
+   },
+   {
+    "miles": 20.9,
+    "minutes": 90,
+    "delay_minutes": 26
+   },
+   {
+    "miles": 25.6,
+    "minutes": 91,
+    "delay_minutes": 27
    }
   ],
   "best_free": {
-   "miles": 23.3,
-   "minutes": 77,
-   "delay_minutes": 9,
-   "saves": 0
+   "miles": 22.1,
+   "minutes": 85,
+   "delay_minutes": 16,
+   "saves": 1
   },
   "incidents": [],
   "incident_count": 0,
@@ -321,7 +285,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-25T17:15:52-04:00",
+  "fetched_at": "2026-09-25T17:31:02-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -359,15 +323,14 @@
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 25 2026, 8:44 AM",
-   "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Sep 25 2026, 8:45 AM",
-   "Northeast | Clay | Green Cove Springs: There is lane blocking construction on SR-16 at CR-218. Use caution in the area. | Sep 25 2026, 9:09 AM"
+   "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Sep 25 2026, 8:45 AM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-25T17:15:53-04:00",
+  "fetched_at": "2026-09-25T17:31:02-04:00",
   "issued": "200 PM EDT Fri Sep 25 2026",
   "areas": [],
   "raw": "en Español\n\n372 \nABNT20 KNHC 251718\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Fri Sep 25 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Gonzalo, located about 160 miles east of the southernmost Cabo \nVerde Islands, and on Tropical Storm Fay, located well to the \nwest-southwest of the Azores.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\n\nPublic Advisories on Tropical Storm Gonzalo are issued under WMO \nheader WTNT32 KNHC and under AWIPS header MIATCPAT2.  \nForecast/Advisories on Tropical Storm Gonzalo are issued under WMO \nheader WTNT22 KNHC and under AWIPS header MIATCMAT2.\n\n$$\nForecaster Katz/Reinhart"
@@ -375,7 +338,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-25T17:15:53-04:00",
+  "fetched_at": "2026-09-25T17:31:02-04:00",
   "florida": "$4.4229",
   "national": "$4.4918",
   "diesel": "$6.1693",
@@ -384,7 +347,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-25T17:15:53-04:00",
+  "fetched_at": "2026-09-25T17:31:04-04:00",
   "streams": {
    "local": [
     {
@@ -559,11 +522,27 @@
   ],
   "colombia": [
    {
-    "title": "Envían a la cárcel a teniente (r) de la Policía por disparar contra la vivienda del cantante Luis Alfonso: llamaba al artista para amenazarlo",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/envian-a-la-carcel-a-teniente-r-de-la-policia-por-disparar-contra-la-vivienda-del-cantante-luis-alfonso-los-llamaba-para-amenazarlos-3589009",
-    "published": "2026-09-25T15:49:52-05:00",
+    "title": "Medellín se prepara para tener un mes cargado de cultura, arte y música con la segunda Temporada Cultural ‘El Amor de mis Amores’",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/medellin-se-prepara-para-tener-un-mes-cargado-de-cultura-arte-y-musica-con-la-segunda-temporada-cultural-el-amor-de-mis-amores-3588994",
+    "published": "2026-09-25T16:09:14-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/25/6ab6dd4ac3276.png",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/25/6ab6d1d2336e8.png",
+    "media_type": "image"
+   },
+   {
+    "title": "¿Reglas a la medida? Crece la controversia por el cronograma y los perfiles técnicos del contrato de alumbrado público de Emcali",
+    "url": "https://www.eltiempo.com/colombia/cali/reglas-a-la-medida-crece-la-controversia-por-el-cronograma-y-los-perfiles-tecnicos-del-contrato-de-alumbrado-publico-de-emcali-3589012",
+    "published": "2026-09-25T16:02:38-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/06/23/6a3a7757404c6.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Envían a la cárcel a teniente (r) de la Policía, señalado de disparar contra vivienda del cantante Luis Alfonso: habría amenazado al artista",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/envian-a-la-carcel-a-teniente-r-de-la-policia-por-disparar-contra-la-vivienda-del-cantante-luis-alfonso-los-llamaba-para-amenazarlos-3589009",
+    "published": "2026-09-25T16:15:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/25/6ab6dd4ac3276.r_d.976-284-0.png",
     "media_type": "image"
    },
    {
@@ -604,22 +583,6 @@
     "published": "2026-09-25T15:49:55-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/25/6ab6bd756b2ce.r_d.631-416-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Arena Bonita, el escenario que traería turismo y eventos internacionales para Santander: ¿quedaría en vilo su construcción?",
-    "url": "https://www.eltiempo.com/colombia/santander/arena-bonita-el-escenario-que-traeria-turismo-y-eventos-internacionales-para-santander-quedaria-en-vilo-su-construccion-3588975",
-    "published": "2026-09-25T13:13:01-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/06/10/6a299cd245d55.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Video: Autoridades en el Catatumbo ofrecen una recompensa de 50 millones de pesos por los responsables del crimen de dos policías en Ábrego",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/video-autoridades-en-el-catatumbo-ofrecen-una-recompensa-de-50-millones-de-pesos-por-los-responsables-del-crimen-de-dos-policias-en-abrego-3588960",
-    "published": "2026-09-25T12:28:05-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/25/6ab6ad4b2b23d.jpeg",
     "media_type": "image"
    }
   ],
@@ -693,15 +656,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-25T17:15:53-04:00",
+  "fetched_at": "2026-09-25T17:31:04-04:00",
   "items": [],
   "scanned": 0,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (322) + USGS (11)",
-  "fetched_at": "2026-09-25T17:15:57-04:00",
+  "source": "GDACS (322) + USGS (12)",
+  "fetched_at": "2026-09-25T17:31:08-04:00",
   "events": [
    {
     "lat": 18.1,
@@ -716,18 +679,6 @@
     "source": "GDACS"
    },
    {
-    "lat": 17.1,
-    "lon": -108.5,
-    "kind": "cyclone",
-    "level": "orange",
-    "title": "Orange notification for tropical cyclone POLO-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0.703 million .",
-    "place": "Mexico",
-    "severity": "Hurricane/Typhoon > 74 mph (maximum wind speed of 176 km/h)",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001325",
-    "when": "Mon, 21 Sep 2026 06:39:52 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": 9.6287383,
     "lon": 76.6455326,
     "kind": "flood",
@@ -735,7 +686,7 @@
     "title": "Orange flood alert in India",
     "place": "India",
     "severity": "Magnitude 0",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=FLeventid=1104121",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104121",
     "when": "Thu, 27 Aug 2026 08:14:48 GMT",
     "source": "GDACS"
    },
@@ -747,7 +698,7 @@
     "title": "Orange flood alert in China",
     "place": "China",
     "severity": "Magnitude 0",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=FLeventid=1104081",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104081",
     "when": "Fri, 07 Aug 2026 18:46:26 GMT",
     "source": "GDACS"
    },
@@ -759,7 +710,7 @@
     "title": "Drought is on going in Democratic Republic of Congo, Kenya, Tanzania, Uganda",
     "place": "Democratic Republic of Congo, Kenya, Tanzania, Uganda",
     "severity": "Medium impact for agricultural drought in 196893 km2",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=DReventid=1027465",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027465",
     "when": "Wed, 29 Jul 2026 12:47:44 GMT",
     "source": "GDACS"
    },
@@ -771,7 +722,7 @@
     "title": "Drought is on going in The Bahamas, Belize, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador",
     "place": "The Bahamas, Belize, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador",
     "severity": "Medium impact for agricultural drought in 677277 km2",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=DReventid=1027449",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027449",
     "when": "Fri, 03 Jul 2026 12:57:40 GMT",
     "source": "GDACS"
    },
@@ -783,7 +734,7 @@
     "title": "Drought is on going in Djibouti, Eritrea, Ethiopia, Kenya, Sudan, Somalia, South Sudan, Uganda",
     "place": "Djibouti, Eritrea, Ethiopia, Kenya, Sudan, Somalia, South Sudan, Uganda",
     "severity": "Medium impact for agricultural drought in 752713 km2",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=DReventid=1027450",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027450",
     "when": "Fri, 03 Jul 2026 12:57:44 GMT",
     "source": "GDACS"
    },
@@ -792,10 +743,10 @@
     "lon": 11.164,
     "kind": "drought",
     "level": "orange",
-    "title": "Drought is on going in Austria, Bosnia Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Netherlands, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, San Marino, Ukraine,",
-    "place": "Austria, Bosnia  Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Netherlands, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, San Marino, Ukraine,",
+    "title": "Drought is on going in Austria, Bosnia & Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Netherlands, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, San Marino, Ukraine,",
+    "place": "Austria, Bosnia & Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Netherlands, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, San Marino, Ukraine,",
     "severity": "Medium impact for agricultural drought in 1264372 km2",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=DReventid=1018332",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018332",
     "when": "Wed, 11 Feb 2026 09:57:31 GMT",
     "source": "GDACS"
    },
@@ -807,7 +758,7 @@
     "title": "Drought is on going in Madagascar",
     "place": "Madagascar",
     "severity": "Medium impact for agricultural drought in 97655 km2",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=DReventid=1018431",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018431",
     "when": "Thu, 30 Apr 2026 13:07:35 GMT",
     "source": "GDACS"
    },
@@ -848,6 +799,19 @@
     "mag": 5.2,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txme",
     "when": 1790350149560,
+    "source": "USGS"
+   },
+   {
+    "lat": 28.5744,
+    "lon": 104.7032,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M5 — 13 km N of Xunchang, China",
+    "place": "13 km N of Xunchang, China",
+    "severity": "M5",
+    "mag": 5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txpf",
+    "when": 1790370087262,
     "source": "USGS"
    },
    {
@@ -1120,6 +1084,18 @@
     "severity": "Green impact for forestfire in 10688 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032385",
     "when": "Fri, 25 Sep 2026 07:01:06 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": 17.2,
+    "lon": -109.2,
+    "kind": "cyclone",
+    "level": "green",
+    "title": "Green notification for tropical cyclone POLO-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 49724 .",
+    "place": "Mexico",
+    "severity": "Hurricane/Typhoon > 74 mph (maximum wind speed of 287 km/h)",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001325",
+    "when": "Mon, 21 Sep 2026 06:39:52 GMT",
     "source": "GDACS"
    },
    {
@@ -2141,25 +2117,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032217",
     "when": "Sat, 19 Sep 2026 03:01:15 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -16.359744844079025,
-    "lon": 130.2746806112473,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 16885 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032299",
-    "when": "Tue, 22 Sep 2026 03:09:31 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 333,
+  "event_count": 334,
   "counts": {
    "red": 0,
-   "orange": 9,
-   "green": 324
+   "orange": 8,
+   "green": 326
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2167,7 +2131,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-25T17:15:57-04:00",
+  "fetched_at": "2026-09-25T17:31:08-04:00",
   "countries": [
    {
     "iso": "ISR",
@@ -2202,6 +2166,20 @@
     ],
     "count": 1,
     "issue": "Former U.S. ambassador to China on Xi Jinping's visit to Washington"
+   },
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "Medellín se prepara para tener un mes cargado de cultura, arte y música con la segunda Temporada Cultural ‘El Amor de mis Amores’",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/medellin-se-prepara-para-tener-un-mes-cargado-de-cultura-arte-y-musica-con-la-segunda-temporada-cultural-el-amor-de-mis-amores-3588994",
+      "published": "2026-09-25T16:09:14-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 1,
+    "issue": "Medellín se prepara para tener un mes cargado de cultura, arte y música con la segunda Temporada Cultural ‘El Amor de mis Amores’"
    },
    {
     "iso": "FRA",
@@ -2261,7 +2239,7 @@
    }
   ],
   "headlines_scanned": 24,
-  "countries_matched": 6,
+  "countries_matched": 7,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
