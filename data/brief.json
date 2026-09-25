@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-25T09:32:32-04:00",
- "generated_at_utc": "2026-09-25T13:32:32+00:00",
+ "generated_at": "2026-09-25T09:45:44-04:00",
+ "generated_at_utc": "2026-09-25T13:45:44+00:00",
  "weekday": "Friday",
  "date_label": "Friday, September 25",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-25T09:32:33-04:00",
+  "fetched_at": "2026-09-25T09:45:44-04:00",
   "curve": [
    {
     "time": "2026-09-25T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 79.0,
+   "temp": 79.1,
    "feels": 86.3,
-   "humidity": 89,
-   "wind_mph": 9.2,
-   "wind_dir": 347,
-   "observed_at": "2026-09-25T09:30"
+   "humidity": 88,
+   "wind_mph": 9.1,
+   "wind_dir": 349,
+   "observed_at": "2026-09-25T09:45"
   },
   "today": {
    "high": 84.2,
@@ -166,26 +166,50 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-25T09:32:33-04:00",
+  "fetched_at": "2026-09-25T09:45:44-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-25T09:33:00-04:00",
-  "aqi": 32,
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-25T09:45:45-04:00",
+  "aqi": 26,
   "category": "Good",
-  "pm25": 3.7,
-  "pm10": 4.7,
-  "observed": "2026-09-25T09:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-25 8:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-25",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-25",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-26",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-26",
+    "aqi": 30,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-25T09:33:00-04:00",
+  "fetched_at": "2026-09-25T09:45:46-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +222,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-25T09:33:00-04:00",
+  "fetched_at": "2026-09-25T09:45:47-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -245,7 +269,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-25T09:33:01-04:00",
+  "fetched_at": "2026-09-25T09:45:47-04:00",
   "issued": "800 AM EDT Fri Sep 25 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 251131\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Fri Sep 25 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Gonzalo, located about 160 miles east-southeast of the \nsouthernmost Cabo Verde Islands, and on Tropical Storm Fay, located \nwell to the west-southwest of the Azores.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\n\nPublic Advisories on Tropical Storm Gonzalo are issued under WMO \nheader WTNT32 KNHC and under AWIPS header MIATCPAT2.  \nForecast/Advisories on Tropical Storm Gonzalo are issued under WMO \nheader WTNT22 KNHC and under AWIPS header MIATCMAT2.\n\n$$\nForecaster Katz/Brown"
@@ -253,7 +277,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-25T09:33:01-04:00",
+  "fetched_at": "2026-09-25T09:45:47-04:00",
   "florida": "$4.4229",
   "national": "$4.4918",
   "diesel": "$6.1693",
@@ -262,7 +286,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-25T09:33:03-04:00",
+  "fetched_at": "2026-09-25T09:45:48-04:00",
   "streams": {
    "local": [
     {
@@ -371,6 +395,14 @@
   ],
   "local": [
    {
+    "title": "Man hospitalized after Little Havana shooting",
+    "url": "https://www.local10.com/news/local/2026/09/25/man-hospitalized-after-little-havana-shooting/",
+    "published": "Fri, 25 Sep 2026 12:18:24 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Crane falls onto Fort Lauderdale house after boom truck tips over",
     "url": "https://www.local10.com/news/local/2026/09/24/crane-falls-onto-fort-lauderdale-house-after-boom-truck-tips-over/",
     "published": "Thu, 24 Sep 2026 13:54:31 +0000",
@@ -382,14 +414,6 @@
     "title": "Airbnb renter shoots would-be robber in Fort Lauderdale",
     "url": "https://www.local10.com/news/local/2026/09/24/man-hospitalized-after-shooting-in-fort-lauderdale/",
     "published": "Fri, 25 Sep 2026 02:09:09 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Man hospitalized after Little Havana shooting",
-    "url": "https://www.local10.com/news/local/2026/09/25/man-hospitalized-after-little-havana-shooting/",
-    "published": "Fri, 25 Sep 2026 12:18:24 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -501,6 +525,14 @@
   ],
   "colombia": [
    {
+    "title": "Barranquilla se alista para asumir la operación del aeropuerto Ernesto Cortissoz: estos son los pasos, retos y reacciones",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-se-alista-para-asumir-la-operacion-del-aeropuerto-ernesto-cortissoz-estos-son-los-pasos-retos-y-reacciones-3588845",
+    "published": "2026-09-25T08:32:36-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/05/6a9c7892f3632.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Confirman muerte de cuatro mineros tras explosión en un socavón de Landázuri: se conoció la identificación de las víctimas",
     "url": "https://www.eltiempo.com/colombia/santander/confirman-muerte-de-cuatro-mineros-tras-explosion-en-un-socavon-de-landazuri-se-conocio-la-identificacion-de-las-victimas-3588850",
     "published": "2026-09-25T08:11:04-05:00",
@@ -554,14 +586,6 @@
     "published": "2026-09-25T02:30:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2024/10/11/6709348f8008a.r_d.475-237-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Así queda el pico y placa en Medellín para este viernes 25 de septiembre de 2026: horarios y restricciones",
-    "url": "https://www.eltiempo.com/colombia/medellin/asi-queda-el-pico-y-placa-en-medellin-para-este-viernes-25-de-septiembre-de-2026-horarios-y-restricciones-3588623",
-    "published": "2026-09-25T02:30:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2024/10/22/6717ade29a84e.png",
     "media_type": "image"
    }
   ],
@@ -635,7 +659,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-25T09:33:03-04:00",
+  "fetched_at": "2026-09-25T09:45:49-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -643,7 +667,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (314) + USGS (12)",
-  "fetched_at": "2026-09-25T09:33:07-04:00",
+  "fetched_at": "2026-09-25T09:45:51-04:00",
   "events": [
    {
     "lat": 18.1,
@@ -2110,7 +2134,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-25T09:33:07-04:00",
+  "fetched_at": "2026-09-25T09:45:51-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2133,15 +2157,9 @@
       "url": "https://www.eltiempo.com/colombia/cali/ojo-conductor-pico-y-placa-en-cali-este-viernes-25-de-septiembre-de-2026-revise-la-restriccion-antes-de-salir-3588626",
       "published": "2026-09-25T02:30:00-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "Así queda el pico y placa en Medellín para este viernes 25 de septiembre de 2026: horarios y restricciones",
-      "url": "https://www.eltiempo.com/colombia/medellin/asi-queda-el-pico-y-placa-en-medellin-para-este-viernes-25-de-septiembre-de-2026-horarios-y-restricciones-3588623",
-      "published": "2026-09-25T02:30:00-05:00",
-      "section": "colombia"
      }
     ],
-    "count": 4,
+    "count": 3,
     "issue": "Grave accidente en Cali dejó sin vida a motociclista de 24 años tras estrellarse en la Autopista Suroriental: iba a exceso de velocidad, según reporte"
    },
    {
