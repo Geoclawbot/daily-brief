@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-27T12:16:18-04:00",
- "generated_at_utc": "2026-09-27T16:16:18+00:00",
+ "generated_at": "2026-09-27T12:31:23-04:00",
+ "generated_at_utc": "2026-09-27T16:31:23+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 27",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-27T12:16:18-04:00",
+  "fetched_at": "2026-09-27T12:31:24-04:00",
   "curve": [
    {
     "time": "2026-09-27T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 85.0,
-   "feels": 93.7,
+   "temp": 85.1,
+   "feels": 93.3,
    "humidity": 59,
    "wind_mph": 5.0,
    "wind_dir": 18,
-   "observed_at": "2026-09-27T12:15"
+   "observed_at": "2026-09-27T12:30"
   },
   "today": {
    "high": 87.4,
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-27T12:16:18-04:00",
+  "fetched_at": "2026-09-27T12:31:24-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-27T12:16:19-04:00",
-  "aqi": 31,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-27T12:31:24-04:00",
+  "aqi": 45,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-27 11:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-27",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-27",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-28",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-28",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 7.2,
+  "pm10": 9.4,
+  "observed": "2026-09-27T12:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-27T12:16:20-04:00",
+  "fetched_at": "2026-09-27T12:31:25-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -222,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-27T12:16:20-04:00",
+  "fetched_at": "2026-09-27T12:31:26-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -267,7 +243,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-27T12:16:21-04:00",
+  "fetched_at": "2026-09-27T12:31:26-04:00",
   "issued": "800 AM EDT Sun Sep 27 2026",
   "areas": [
    {
@@ -281,7 +257,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-27T12:16:21-04:00",
+  "fetched_at": "2026-09-27T12:31:26-04:00",
   "florida": "$4.3679",
   "national": "$4.4798",
   "diesel": "$6.1040",
@@ -290,7 +266,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-27T12:16:22-04:00",
+  "fetched_at": "2026-09-27T12:31:27-04:00",
   "streams": {
    "local": [
     {
@@ -495,6 +471,14 @@
     "media_type": "video"
    },
    {
+    "title": "Miami Beach Cancer Walk brings local community together, raises awareness and supports cancer research",
+    "url": "https://wsvn.com/news/local/miami-dade/miami-beach-cancer-walk-brings-local-community-together-raises-awareness-and-supports-cancer-research/",
+    "published": "Sun, 27 Sep 2026 15:49:08 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/68c42ae6-be88-4793-847f-37da7646dbe3/a1943364-00b6-4ee1-b840-6e72c239a60e/main.mp4?fastly_token=NmFiOTkyZjVfYWEyMzhjYWQzMTA4MjQzMWU0NGJjNDU0ODIwNjU3ZGMzZGVmOTAxMGRiZDIwNWIwMTUwN2FhMzc5YWI0ZWU4MV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82OGM0MmFlNi1iZTg4LTQ3OTMtODQ3Zi0zN2RhNzY0NmRiZTMvYTE5NDMzNjQtMDBiNi00ZWUxLWI4NDAtNmU3MmMyMzlhNjBlL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "Miami-Dade Water and Sewer set to briefly change water disinfection method to free chlorine",
     "url": "https://wsvn.com/news/local/miami-dade/miami-dade-water-and-sewer-set-to-briefly-change-water-disinfection-method-to-free-chlorine/",
     "published": "Sun, 27 Sep 2026 13:23:51 +0000",
@@ -517,21 +501,13 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/96f08139-8147-409c-8972-285629175db6/6e1ec38d-b8e1-4fb0-83d9-397e8aa6ed47/main.mp4?fastly_token=NmFiOTU0NzVfZjkyZjE1MDNiYjY5MzkyMmJkNDc4MDFjNzJkMzhlODhiOTIxNzYzZmE4MmFhYTI2ZDNlMjYwMzIxNzQzNmEzOF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85NmYwODEzOS04MTQ3LTQwOWMtODk3Mi0yODU2MjkxNzVkYjYvNmUxZWMzOGQtYjhlMS00ZmIwLTgzZDktMzk3ZThhYTZlZDQ3L21haW4ubXA0",
     "media_type": "video"
-   },
-   {
-    "title": "9 wounded in vehicle collision at West Miami-Dade intersection",
-    "url": "https://wsvn.com/news/local/miami-dade/9-wounded-in-vehicle-collision-at-west-miami-dade-intersection/",
-    "published": "Sun, 27 Sep 2026 03:43:00 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/092626-Nine-wounded-in-vehicle-collision-at-West-Miami-Dade-intersection.png",
-    "media_type": "image"
    }
   ],
   "colombia": [
    {
     "title": "Denuncian al creador de contenido MrStivenTc por presunto abuso contra menor de 14 años: qué se sabe del caso",
     "url": "https://www.eltiempo.com/colombia/medellin/denuncian-al-creador-de-contenido-mrstiventc-por-presunto-abuso-contra-menor-de-14-anos-que-se-sabe-del-caso-3589299",
-    "published": "2026-09-27T10:52:43-05:00",
+    "published": "2026-09-27T10:55:15-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/27/6ab93a1e660e4.png",
     "media_type": "image"
@@ -663,7 +639,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-27T12:16:23-04:00",
+  "fetched_at": "2026-09-27T12:31:28-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -671,7 +647,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (269) + USGS (11)",
-  "fetched_at": "2026-09-27T12:16:26-04:00",
+  "fetched_at": "2026-09-27T12:31:30-04:00",
   "events": [
    {
     "lat": 18.1,
@@ -2137,7 +2113,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-27T12:16:26-04:00",
+  "fetched_at": "2026-09-27T12:31:30-04:00",
   "countries": [
    {
     "iso": "CHN",
