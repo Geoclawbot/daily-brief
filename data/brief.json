@@ -1,26 +1,179 @@
 {
- "generated_at": "2026-09-27T08:46:21-04:00",
- "generated_at_utc": "2026-09-27T12:46:21+00:00",
+ "generated_at": "2026-09-27T09:01:38-04:00",
+ "generated_at_utc": "2026-09-27T13:01:38+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 27",
  "is_weekend": true,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-09-27T08:46:22-04:00",
-  "error": "503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpre"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-09-27T09:01:39-04:00",
+  "curve": [
+   {
+    "time": "2026-09-27T05:00",
+    "hour": 5,
+    "temp": 74.6,
+    "feels": 81.1,
+    "humidity": 87,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-27T06:00",
+    "hour": 6,
+    "temp": 74.2,
+    "feels": 81.6,
+    "humidity": 89,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-27T07:00",
+    "hour": 7,
+    "temp": 74.0,
+    "feels": 80.8,
+    "humidity": 87,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-27T08:00",
+    "hour": 8,
+    "temp": 74.1,
+    "feels": 79.8,
+    "humidity": 86,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-27T09:00",
+    "hour": 9,
+    "temp": 76.4,
+    "feels": 82.0,
+    "humidity": 82,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-27T10:00",
+    "hour": 10,
+    "temp": 79.1,
+    "feels": 85.1,
+    "humidity": 76,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-27T11:00",
+    "hour": 11,
+    "temp": 80.5,
+    "feels": 87.7,
+    "humidity": 75,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-27T12:00",
+    "hour": 12,
+    "temp": 81.3,
+    "feels": 88.5,
+    "humidity": 73,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-27T13:00",
+    "hour": 13,
+    "temp": 84.0,
+    "feels": 92.0,
+    "humidity": 66,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-27T14:00",
+    "hour": 14,
+    "temp": 85.7,
+    "feels": 93.3,
+    "humidity": 59,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-27T15:00",
+    "hour": 15,
+    "temp": 85.8,
+    "feels": 91.1,
+    "humidity": 58,
+    "pop": 2
+   },
+   {
+    "time": "2026-09-27T16:00",
+    "hour": 16,
+    "temp": 86.3,
+    "feels": 90.8,
+    "humidity": 56,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-27T17:00",
+    "hour": 17,
+    "temp": 85.5,
+    "feels": 89.2,
+    "humidity": 57,
+    "pop": 1
+   },
+   {
+    "time": "2026-09-27T18:00",
+    "hour": 18,
+    "temp": 83.1,
+    "feels": 88.4,
+    "humidity": 66,
+    "pop": 1
+   },
+   {
+    "time": "2026-09-27T19:00",
+    "hour": 19,
+    "temp": 81.0,
+    "feels": 87.3,
+    "humidity": 73,
+    "pop": 3
+   },
+   {
+    "time": "2026-09-27T20:00",
+    "hour": 20,
+    "temp": 78.5,
+    "feels": 85.8,
+    "humidity": 80,
+    "pop": 8
+   },
+   {
+    "time": "2026-09-27T21:00",
+    "hour": 21,
+    "temp": 78.7,
+    "feels": 87.5,
+    "humidity": 82,
+    "pop": 5
+   }
+  ],
+  "current": {
+   "temp": 76.4,
+   "feels": 82.0,
+   "humidity": 82,
+   "wind_mph": 6.3,
+   "wind_dir": 354,
+   "observed_at": "2026-09-27T09:00"
+  },
+  "today": {
+   "high": 86.3,
+   "low": 74.0,
+   "feels_max": 93.3,
+   "pop_max": 8
+  },
+  "peak_feels": 93.3,
+  "peak_hour": 14
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-27T08:46:22-04:00",
+  "fetched_at": "2026-09-27T09:01:39-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-27T08:46:23-04:00",
+  "fetched_at": "2026-09-27T09:01:40-04:00",
   "aqi": 42,
   "category": "Good",
   "pollutant": "PM2.5",
@@ -56,7 +209,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-27T08:46:23-04:00",
+  "fetched_at": "2026-09-27T09:01:40-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -69,7 +222,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-27T08:46:24-04:00",
+  "fetched_at": "2026-09-27T09:01:41-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -114,7 +267,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-27T08:46:24-04:00",
+  "fetched_at": "2026-09-27T09:01:41-04:00",
   "issued": "800 AM EDT Sun Sep 27 2026",
   "areas": [
    {
@@ -128,7 +281,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-27T08:46:24-04:00",
+  "fetched_at": "2026-09-27T09:01:41-04:00",
   "florida": "$4.3679",
   "national": "$4.4798",
   "diesel": "$6.1040",
@@ -137,7 +290,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-27T08:46:26-04:00",
+  "fetched_at": "2026-09-27T09:01:42-04:00",
   "streams": {
    "local": [
     {
@@ -346,7 +499,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/miami-pd-investigating-after-apparent-wreck-that-damaged-vehicle-and-scooter-in-miami/",
     "published": "Sun, 27 Sep 2026 12:09:20 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/8b65eaf4-149e-488c-8242-d0e71a6f7eaa/8807f2f0-9116-4893-91e1-8e69496b92ee/main.mp4?fastly_token=NmFiOTYwNTdfNWNlNWNiN2JiNDIxODI1ZTg5ZTIzZDZjNzMwOWZhMGZhMWExNjEzYTQyMTk1NGMzZDFmYTVmYmM4NjA0YzRjOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84YjY1ZWFmNC0xNDllLTQ4OGMtODI0Mi1kMGU3MWE2ZjdlYWEvODgwN2YyZjAtOTExNi00ODkzLTkxZTEtOGU2OTQ5NmI5MmVlL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/8b65eaf4-149e-488c-8242-d0e71a6f7eaa/8807f2f0-9116-4893-91e1-8e69496b92ee/main.mp4?fastly_token=NmFiOTYxNWFfYzA5NGU1Yzk2MjNiOTVmNzc1M2RjZmM1NzgwOGU4NGI3N2M5MmZmMGNiY2JhOTQ0N2E2MTliYTY2YTcxNjY5MF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84YjY1ZWFmNC0xNDllLTQ4OGMtODI0Mi1kMGU3MWE2ZjdlYWEvODgwN2YyZjAtOTExNi00ODkzLTkxZTEtOGU2OTQ5NmI5MmVlL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -510,7 +663,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-27T08:46:26-04:00",
+  "fetched_at": "2026-09-27T09:01:43-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -518,7 +671,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (269) + USGS (17)",
-  "fetched_at": "2026-09-27T08:46:29-04:00",
+  "fetched_at": "2026-09-27T09:01:47-04:00",
   "events": [
    {
     "lat": -4.6952,
@@ -1990,7 +2143,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-27T08:46:29-04:00",
+  "fetched_at": "2026-09-27T09:01:47-04:00",
   "countries": [
    {
     "iso": "CHN",
@@ -2053,8 +2206,6 @@
   "countries_matched": 4,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
