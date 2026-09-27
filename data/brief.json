@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-26T23:31:16-04:00",
- "generated_at_utc": "2026-09-27T03:31:16+00:00",
+ "generated_at": "2026-09-26T23:46:25-04:00",
+ "generated_at_utc": "2026-09-27T03:46:25+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, September 26",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-26T23:31:17-04:00",
+  "fetched_at": "2026-09-26T23:46:26-04:00",
   "curve": [
    {
     "time": "2026-09-26T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 76.6,
-   "feels": 83.3,
-   "humidity": 84,
-   "wind_mph": 4.9,
+   "temp": 76.4,
+   "feels": 83.8,
+   "humidity": 86,
+   "wind_mph": 3.9,
    "wind_dir": 24,
-   "observed_at": "2026-09-26T23:30"
+   "observed_at": "2026-09-26T23:45"
   },
   "today": {
    "high": 88.4,
@@ -166,26 +166,50 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-26T23:31:17-04:00",
+  "fetched_at": "2026-09-26T23:46:26-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-26T23:31:28-04:00",
-  "aqi": 45,
-  "category": "Good",
-  "pm25": 12.7,
-  "pm10": 14.3,
-  "observed": "2026-09-26T23:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-26T23:46:28-04:00",
+  "aqi": 56,
+  "category": "Moderate",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-26 22:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-27",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-27",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-28",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-28",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-26T23:31:28-04:00",
+  "fetched_at": "2026-09-26T23:46:28-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +222,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-26T23:31:29-04:00",
+  "fetched_at": "2026-09-26T23:46:29-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -244,7 +268,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-26T23:31:29-04:00",
+  "fetched_at": "2026-09-26T23:46:29-04:00",
   "issued": "800 PM EDT Sat Sep 26 2026",
   "areas": [
    {
@@ -258,7 +282,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-26T23:31:30-04:00",
+  "fetched_at": "2026-09-26T23:46:29-04:00",
   "florida": "$4.3963",
   "national": "$4.4874",
   "diesel": "$6.1342",
@@ -267,7 +291,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-26T23:31:31-04:00",
+  "fetched_at": "2026-09-26T23:46:31-04:00",
   "streams": {
    "local": [
     {
@@ -472,24 +496,8 @@
     "media_type": "video"
    },
    {
-    "title": "Neglected French bulldog rescued after neighbor’s viral video sparks outrage",
-    "url": "https://wsvn.com/news/local/miami-dade/neglected-french-bulldog-rescued-after-neighbors-viral-video-sparks-outrage/",
-    "published": "Sun, 27 Sep 2026 03:28:48 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/70657eb3-a613-4c9a-b102-8d3625c5b06e/a3f5b640-09c2-48ea-9702-a68929927d8d/main.mp4?fastly_token=NmFiOGU1OGFfMTE3MDBmMTdjMWVkYmMwZDA3NDY4OGNjZmQ1MjI1ZjIzZjUwMmRlODY3ZDY2YzkwMDE1YWFlYTIwZWUxNTc2ZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83MDY1N2ViMy1hNjEzLTRjOWEtYjEwMi04ZDM2MjVjNWIwNmUvYTNmNWI2NDAtMDljMi00OGVhLTk3MDItYTY4OTI5OTI3ZDhkL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Scooter in flames near gas pump extinguished in Northeast Miami",
-    "url": "https://wsvn.com/news/local/miami-dade/scooter-in-flames-near-gas-pump-extinguished-in-northeast-miami/",
-    "published": "Sun, 27 Sep 2026 03:26:48 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/71e6c6b1-747b-4657-b9a2-f19079dcf5c0/63626f55-fe94-451d-90b6-4e3f3454cbdf/main.mp4?fastly_token=NmFiOGU0ZmVfZDNjNDRjNWRmYTc1YjFiMjU1MzM4ZjE4MjRlYzNlYzAyODRlN2VhYjRhZTEyMzc3YWU4ODg5Nzc5MjM2NWMyMF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83MWU2YzZiMS03NDdiLTQ2NTctYjlhMi1mMTkwNzlkY2Y1YzAvNjM2MjZmNTUtZmU5NC00NTFkLTkwYjYtNGUzZjM0NTRjYmRmL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
     "title": "JJ Kohl’s TD helps Florida International beat Long Island University 20-3",
-    "url": "https://wsvn.com/sports/jj-kohls-td-helps-florida-international-beat-long-island-university-20-3/",
+    "url": "https://wsvn.com/news/local/miami-dade/jj-kohls-td-helps-florida-international-beat-long-island-university-20-3/",
     "published": "Sun, 27 Sep 2026 03:13:01 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": null,
@@ -502,6 +510,22 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c4df6065-692a-45f5-b2a8-f7a9486edea6/1bd56565-4c8b-413a-b63a-4659341ce4b8/main.mp4?fastly_token=NmFiODAyZDJfMmI4ZTVkNzk3NWQxNmYzYzRhMmI4ZTk3YzkxYTI0OTNjZjcwMmVkOWI0ODhlM2MwMWNmYWQ1MGRmNjdkZmJmMF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jNGRmNjA2NS02OTJhLTQ1ZjUtYjJhOC1mN2E5NDg2ZWRlYTYvMWJkNTY1NjUtNGM4Yi00MTNhLWI2M2EtNDY1OTM0MWNlNGI4L21haW4ubXA0",
     "media_type": "video"
+   },
+   {
+    "title": "Driver seen striking elderly woman’s car, pepper spraying her in apparent road rage arrested on battery charges",
+    "url": "https://wsvn.com/news/local/miami-dade/driver-seen-striking-elderly-womans-car-pepper-spraying-her-in-apparent-road-rage-arrested-on-battery-charges/",
+    "published": "Sat, 26 Sep 2026 02:26:04 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/84216804-502e-44ad-be11-c23d06840759/1e97fc7d-4362-46ed-962a-18bc98f784c7/main.mp4?fastly_token=NmFiODE2M2FfY2Q2OWNiODI3ZDdlYTA3OWY1MTI1OTZkNDU0NTBiODlmNTRhM2E4MzQyZWJiM2I5ZTBmZDM2YWY4MTM4MDM2Nl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84NDIxNjgwNC01MDJlLTQ0YWQtYmUxMS1jMjNkMDY4NDA3NTkvMWU5N2ZjN2QtNDM2Mi00NmVkLTk2MmEtMThiYzk4Zjc4NGM3L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "91-year-old man reported missing out of Hialeah found safe, police say",
+    "url": "https://wsvn.com/news/local/miami-dade/91-year-old-man-reported-missing-out-of-hialeah-found-safe-police-say/",
+    "published": "Sat, 26 Sep 2026 01:05:47 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/Screenshot-2026-09-26-065922.png",
+    "media_type": "image"
    }
   ],
   "colombia": [
@@ -640,7 +664,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-26T23:31:31-04:00",
+  "fetched_at": "2026-09-26T23:46:31-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -648,7 +672,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (259) + USGS (27)",
-  "fetched_at": "2026-09-26T23:31:34-04:00",
+  "fetched_at": "2026-09-26T23:46:34-04:00",
   "events": [
    {
     "lat": -4.6952,
@@ -2130,34 +2154,8 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-26T23:31:34-04:00",
+  "fetched_at": "2026-09-26T23:46:34-04:00",
   "countries": [
-   {
-    "iso": "FRA",
-    "name": "France",
-    "stories": [
-     {
-      "title": "Neglected French bulldog rescued after neighbor’s viral video sparks outrage",
-      "url": "https://wsvn.com/news/local/miami-dade/neglected-french-bulldog-rescued-after-neighbors-viral-video-sparks-outrage/",
-      "published": "Sun, 27 Sep 2026 03:28:48 +0000",
-      "section": "local"
-     },
-     {
-      "title": "Pope warns a 'paradise of machines' could undermine humanity as he opens France trip",
-      "url": "https://www.npr.org/2026/09/26/g-s1-145150/pope-warns-a-paradise-of-machines-could-undermine-humanity",
-      "published": "Sat, 26 Sep 2026 02:59:45 -0400",
-      "section": "world"
-     },
-     {
-      "title": "Pope Leo warns a 'paradise of machines' could undermine humanity on his France visit",
-      "url": "https://www.npr.org/2026/09/25/nx-s1-5981140/pope-leo-france",
-      "published": "Fri, 25 Sep 2026 10:55:12 -0400",
-      "section": "world"
-     }
-    ],
-    "count": 3,
-    "issue": "Neglected French bulldog rescued after neighbor’s viral video sparks outrage"
-   },
    {
     "iso": "COL",
     "name": "Colombia",
@@ -2177,6 +2175,26 @@
     ],
     "count": 2,
     "issue": "¿Habrá racionamiento de energía en Colombia? Los compromisos tras reunión de Abelardo De la Espriella y Federico Gutiérrez por crisis de Afinia"
+   },
+   {
+    "iso": "FRA",
+    "name": "France",
+    "stories": [
+     {
+      "title": "Pope warns a 'paradise of machines' could undermine humanity as he opens France trip",
+      "url": "https://www.npr.org/2026/09/26/g-s1-145150/pope-warns-a-paradise-of-machines-could-undermine-humanity",
+      "published": "Sat, 26 Sep 2026 02:59:45 -0400",
+      "section": "world"
+     },
+     {
+      "title": "Pope Leo warns a 'paradise of machines' could undermine humanity on his France visit",
+      "url": "https://www.npr.org/2026/09/25/nx-s1-5981140/pope-leo-france",
+      "published": "Fri, 25 Sep 2026 10:55:12 -0400",
+      "section": "world"
+     }
+    ],
+    "count": 2,
+    "issue": "Pope warns a 'paradise of machines' could undermine humanity as he opens France trip"
    },
    {
     "iso": "CHN",
