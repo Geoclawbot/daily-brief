@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-27T03:16:18-04:00",
- "generated_at_utc": "2026-09-27T07:16:18+00:00",
+ "generated_at": "2026-09-27T03:31:29-04:00",
+ "generated_at_utc": "2026-09-27T07:31:29+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, September 27",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-27T03:16:18-04:00",
+  "fetched_at": "2026-09-27T03:31:29-04:00",
   "curve": [
    {
     "time": "2026-09-27T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 76.2,
-   "feels": 85.3,
+   "temp": 76.1,
+   "feels": 85.0,
    "humidity": 90,
-   "wind_mph": 1.4,
-   "wind_dir": 342,
-   "observed_at": "2026-09-27T03:15"
+   "wind_mph": 1.9,
+   "wind_dir": 339,
+   "observed_at": "2026-09-27T03:30"
   },
   "today": {
    "high": 86.0,
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-27T03:16:18-04:00",
+  "fetched_at": "2026-09-27T03:31:30-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-27T03:16:19-04:00",
-  "aqi": 34,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-27T03:31:57-04:00",
+  "aqi": 48,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-27 2:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-27",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-27",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-28",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-28",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 9.7,
+  "pm10": 11.3,
+  "observed": "2026-09-27T03:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-27T03:16:19-04:00",
+  "fetched_at": "2026-09-27T03:31:57-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -222,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-27T03:16:20-04:00",
+  "fetched_at": "2026-09-27T03:31:58-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -268,7 +244,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-27T03:16:20-04:00",
+  "fetched_at": "2026-09-27T03:31:59-04:00",
   "issued": "200 AM EDT Sun Sep 27 2026",
   "areas": [
    {
@@ -282,16 +258,16 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-27T03:16:20-04:00",
-  "florida": "$4.3963",
-  "national": "$4.4874",
-  "diesel": "$6.1342",
-  "as_of": "9/26/26"
+  "fetched_at": "2026-09-27T03:31:59-04:00",
+  "florida": "$4.3679",
+  "national": "$4.4798",
+  "diesel": "$6.1040",
+  "as_of": "9/27/26"
  },
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-27T03:16:21-04:00",
+  "fetched_at": "2026-09-27T03:32:00-04:00",
   "streams": {
    "local": [
     {
@@ -664,7 +640,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-27T03:16:22-04:00",
+  "fetched_at": "2026-09-27T03:32:00-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -672,7 +648,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (259) + USGS (26)",
-  "fetched_at": "2026-09-27T03:16:24-04:00",
+  "fetched_at": "2026-09-27T03:32:03-04:00",
   "events": [
    {
     "lat": -4.6952,
@@ -876,19 +852,6 @@
     "source": "USGS"
    },
    {
-    "lat": -21.2249,
-    "lon": 168.614,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M5 — 84 km ENE of Tadine, New Caledonia",
-    "place": "84 km ENE of Tadine, New Caledonia",
-    "severity": "M5",
-    "mag": 5,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txrq",
-    "when": 1790407332908,
-    "source": "USGS"
-   },
-   {
     "lat": -8.8929,
     "lon": 158.0533,
     "kind": "earthquake",
@@ -925,6 +888,19 @@
     "mag": 4.9,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txse",
     "when": 1790418065896,
+    "source": "USGS"
+   },
+   {
+    "lat": 38.9319,
+    "lon": -115.3083,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.8 — 21 km W of Preston, Nevada",
+    "place": "21 km W of Preston, Nevada",
+    "severity": "M4.8",
+    "mag": 4.8,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nn00924930",
+    "when": 1790492501497,
     "source": "USGS"
    },
    {
@@ -2153,7 +2129,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-27T03:16:24-04:00",
+  "fetched_at": "2026-09-27T03:32:03-04:00",
   "countries": [
    {
     "iso": "FRA",
