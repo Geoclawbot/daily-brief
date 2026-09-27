@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-26T21:31:18-04:00",
- "generated_at_utc": "2026-09-27T01:31:18+00:00",
+ "generated_at": "2026-09-26T21:46:19-04:00",
+ "generated_at_utc": "2026-09-27T01:46:19+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, September 26",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-26T21:31:18-04:00",
+  "fetched_at": "2026-09-26T21:46:20-04:00",
   "curve": [
    {
     "time": "2026-09-26T05:00",
@@ -143,16 +143,16 @@
     "temp": 79.6,
     "feels": 85.6,
     "humidity": 71,
-    "pop": 2
+    "pop": 1
    }
   ],
   "current": {
-   "temp": 78.2,
-   "feels": 84.5,
-   "humidity": 78,
-   "wind_mph": 4.9,
+   "temp": 77.9,
+   "feels": 84.3,
+   "humidity": 80,
+   "wind_mph": 5.4,
    "wind_dir": 355,
-   "observed_at": "2026-09-26T21:30"
+   "observed_at": "2026-09-26T21:45"
   },
   "today": {
    "high": 88.4,
@@ -166,26 +166,50 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-26T21:31:19-04:00",
+  "fetched_at": "2026-09-26T21:46:20-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-26T21:31:44-04:00",
-  "aqi": 45,
-  "category": "Good",
-  "pm25": 11.8,
-  "pm10": 13.4,
-  "observed": "2026-09-26T21:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-26T21:46:21-04:00",
+  "aqi": 58,
+  "category": "Moderate",
+  "pollutant": "O3",
+  "reporting_area": "Miami",
+  "observed": "2026-09-26 20:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-27",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-27",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-09-28",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-28",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-26T21:31:45-04:00",
+  "fetched_at": "2026-09-26T21:46:21-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +222,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-26T21:31:46-04:00",
+  "fetched_at": "2026-09-26T21:46:22-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -244,7 +268,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-26T21:31:46-04:00",
+  "fetched_at": "2026-09-26T21:46:22-04:00",
   "issued": "800 PM EDT Sat Sep 26 2026",
   "areas": [
    {
@@ -258,7 +282,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-26T21:31:46-04:00",
+  "fetched_at": "2026-09-26T21:46:23-04:00",
   "florida": "$4.3963",
   "national": "$4.4874",
   "diesel": "$6.1342",
@@ -267,7 +291,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-26T21:31:47-04:00",
+  "fetched_at": "2026-09-26T21:46:24-04:00",
   "streams": {
    "local": [
     {
@@ -640,15 +664,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-26T21:31:47-04:00",
+  "fetched_at": "2026-09-26T21:46:29-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (259) + USGS (26)",
-  "fetched_at": "2026-09-26T21:31:50-04:00",
+  "source": "GDACS (259) + USGS (27)",
+  "fetched_at": "2026-09-26T21:46:33-04:00",
   "events": [
    {
     "lat": -4.6952,
@@ -798,6 +822,19 @@
     "mag": 5.1,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txrf",
     "when": 1790401848716,
+    "source": "USGS"
+   },
+   {
+    "lat": -21.4298,
+    "lon": 168.4566,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M5 — 61 km ENE of Tadine, New Caledonia",
+    "place": "61 km ENE of Tadine, New Caledonia",
+    "severity": "M5",
+    "mag": 5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txvu",
+    "when": 1790471905822,
     "source": "USGS"
    },
    {
@@ -2103,25 +2140,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032296",
     "when": "Mon, 21 Sep 2026 11:04:09 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": 10.6221083,
-    "lon": -8.6949519,
-    "kind": "flood",
-    "level": "green",
-    "title": "Green flood alert in Guinea",
-    "place": "Guinea",
-    "severity": "Magnitude 0",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104178",
-    "when": "Sun, 20 Sep 2026 11:22:17 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 285,
+  "event_count": 286,
   "counts": {
    "red": 0,
    "orange": 7,
-   "green": 278
+   "green": 279
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2129,7 +2154,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-26T21:31:50-04:00",
+  "fetched_at": "2026-09-26T21:46:33-04:00",
   "countries": [
    {
     "iso": "COL",
