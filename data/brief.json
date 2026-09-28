@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-28T09:31:25-04:00",
- "generated_at_utc": "2026-09-28T13:31:25+00:00",
+ "generated_at": "2026-09-28T09:46:22-04:00",
+ "generated_at_utc": "2026-09-28T13:46:22+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 28",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-28T09:31:26-04:00",
+  "fetched_at": "2026-09-28T09:46:23-04:00",
   "curve": [
    {
     "time": "2026-09-28T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 76.4,
-   "feels": 80.2,
-   "humidity": 70,
+   "temp": 77.4,
+   "feels": 81.1,
+   "humidity": 67,
    "wind_mph": 5.0,
-   "wind_dir": 328,
-   "observed_at": "2026-09-28T09:30"
+   "wind_dir": 333,
+   "observed_at": "2026-09-28T09:45"
   },
   "today": {
    "high": 88.0,
@@ -166,26 +166,38 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-28T09:31:26-04:00",
+  "fetched_at": "2026-09-28T09:46:23-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-28T09:31:52-04:00",
-  "aqi": 53,
-  "category": "Moderate",
-  "pm25": 14.0,
-  "pm10": 14.7,
-  "observed": "2026-09-28T09:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-28T09:46:24-04:00",
+  "aqi": 46,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-28 8:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-28",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-28",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-28T09:31:52-04:00",
+  "fetched_at": "2026-09-28T09:46:24-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +210,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-28T09:31:53-04:00",
+  "fetched_at": "2026-09-28T09:46:25-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -250,7 +262,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-28T09:31:53-04:00",
+  "fetched_at": "2026-09-28T09:46:26-04:00",
   "issued": "800 AM EDT Mon Sep 28 2026",
   "areas": [
    {
@@ -264,7 +276,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-28T09:31:54-04:00",
+  "fetched_at": "2026-09-28T09:46:26-04:00",
   "florida": "$4.3440",
   "national": "$4.4768",
   "diesel": "$6.0694",
@@ -273,7 +285,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-28T09:31:55-04:00",
+  "fetched_at": "2026-09-28T09:46:27-04:00",
   "streams": {
    "local": [
     {
@@ -586,7 +598,7 @@
     "media_type": null
    },
    {
-    "title": "U.K. holds 5 British suspects after arrests near U.S. air base as Iran denies role",
+    "title": "5 British suspects arrested, explosives found near U.S.-run air base. Iran denies role",
     "url": "https://www.npr.org/2026/09/28/g-s1-145245/britain-us-base-suspected-foiled-attack",
     "published": "Mon, 28 Sep 2026 06:51:25 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
@@ -646,15 +658,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-28T09:31:55-04:00",
+  "fetched_at": "2026-09-28T09:46:28-04:00",
   "items": [],
   "scanned": 0,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (264) + USGS (24)",
-  "fetched_at": "2026-09-28T09:31:58-04:00",
+  "source": "GDACS (264) + USGS (25)",
+  "fetched_at": "2026-09-28T09:46:31-04:00",
   "events": [
    {
     "lat": 18.1,
@@ -763,6 +775,19 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018431",
     "when": "Thu, 30 Apr 2026 13:07:35 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": 82.6385,
+    "lon": -7.1923,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M5.4 — north of Svalbard",
+    "place": "north of Svalbard",
+    "severity": "M5.4",
+    "mag": 5.4,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty57",
+    "when": 1790601759769,
+    "source": "USGS"
    },
    {
     "lat": 50.0527,
@@ -2107,25 +2132,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032379",
     "when": "Fri, 25 Sep 2026 15:03:19 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -11.408023274791203,
-    "lon": 14.215835818793574,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 10511 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032380",
-    "when": "Fri, 25 Sep 2026 15:03:08 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 288,
+  "event_count": 289,
   "counts": {
    "red": 0,
    "orange": 9,
-   "green": 279
+   "green": 280
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2133,7 +2146,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-28T09:31:58-04:00",
+  "fetched_at": "2026-09-28T09:46:31-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2178,7 +2191,7 @@
     "name": "Iran",
     "stories": [
      {
-      "title": "U.K. holds 5 British suspects after arrests near U.S. air base as Iran denies role",
+      "title": "5 British suspects arrested, explosives found near U.S.-run air base. Iran denies role",
       "url": "https://www.npr.org/2026/09/28/g-s1-145245/britain-us-base-suspected-foiled-attack",
       "published": "Mon, 28 Sep 2026 06:51:25 -0400",
       "section": "world"
@@ -2191,7 +2204,7 @@
      }
     ],
     "count": 2,
-    "issue": "U.K. holds 5 British suspects after arrests near U.S. air base as Iran denies role"
+    "issue": "5 British suspects arrested, explosives found near U.S.-run air base. Iran denies role"
    },
    {
     "iso": "HTI",
@@ -2268,14 +2281,14 @@
     "name": "United Kingdom",
     "stories": [
      {
-      "title": "U.K. holds 5 British suspects after arrests near U.S. air base as Iran denies role",
+      "title": "5 British suspects arrested, explosives found near U.S.-run air base. Iran denies role",
       "url": "https://www.npr.org/2026/09/28/g-s1-145245/britain-us-base-suspected-foiled-attack",
       "published": "Mon, 28 Sep 2026 06:51:25 -0400",
       "section": "world"
      }
     ],
     "count": 1,
-    "issue": "U.K. holds 5 British suspects after arrests near U.S. air base as Iran denies role"
+    "issue": "5 British suspects arrested, explosives found near U.S.-run air base. Iran denies role"
    }
   ],
   "headlines_scanned": 32,
