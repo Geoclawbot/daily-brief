@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-28T02:46:20-04:00",
- "generated_at_utc": "2026-09-28T06:46:20+00:00",
+ "generated_at": "2026-09-28T03:01:53-04:00",
+ "generated_at_utc": "2026-09-28T07:01:53+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 28",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-28T02:46:21-04:00",
+  "fetched_at": "2026-09-28T03:01:54-04:00",
   "curve": [
    {
     "time": "2026-09-28T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 76.5,
+   "temp": 76.4,
    "feels": 85.6,
-   "humidity": 91,
-   "wind_mph": 2.3,
-   "wind_dir": 349,
-   "observed_at": "2026-09-28T02:45"
+   "humidity": 90,
+   "wind_mph": 1.4,
+   "wind_dir": 321,
+   "observed_at": "2026-09-28T03:00"
   },
   "today": {
    "high": 89.1,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-28T02:46:21-04:00",
+  "fetched_at": "2026-09-28T03:01:54-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-28T02:46:22-04:00",
+  "fetched_at": "2026-09-28T03:01:55-04:00",
   "aqi": 42,
   "category": "Good",
   "pollutant": "O3",
@@ -196,11 +196,73 @@
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-09-28T02:46:22-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-09-28T03:01:56-04:00",
+  "route_shown": true,
+  "leg": "Home → Jackson Memorial",
+  "direction": "outbound",
+  "depart_clock": "5:45 AM",
+  "depart_at": "2026-09-28T05:45:00-04:00",
+  "miles": 20.6,
+  "minutes": 41,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 27.1,
+    "minutes": 36,
+    "toll": true,
+    "saves": 5
+   },
+   {
+    "miles": 20.7,
+    "minutes": 37,
+    "toll": true,
+    "saves": 4
+   },
+   {
+    "miles": 24.7,
+    "minutes": 36,
+    "toll": true,
+    "saves": 5
+   },
+   {
+    "miles": 23.9,
+    "minutes": 38,
+    "toll": true,
+    "saves": 3
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 41,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 26.1,
+    "minutes": 47,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.1,
+    "minutes": 47,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.8,
+    "minutes": 54,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 41,
+   "delay_minutes": 0,
+   "saves": 0
+  },
   "incidents": [],
   "incident_count": 0,
   "named_count": 0,
@@ -210,7 +272,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-28T02:46:23-04:00",
+  "fetched_at": "2026-09-28T03:01:58-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -257,7 +319,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-28T02:46:23-04:00",
+  "fetched_at": "2026-09-28T03:01:58-04:00",
   "issued": "200 AM EDT Mon Sep 28 2026",
   "areas": [
    {
@@ -271,7 +333,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-28T02:46:23-04:00",
+  "fetched_at": "2026-09-28T03:01:58-04:00",
   "florida": "$4.3679",
   "national": "$4.4798",
   "diesel": "$6.1040",
@@ -280,7 +342,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-28T02:46:24-04:00",
+  "fetched_at": "2026-09-28T03:01:59-04:00",
   "streams": {
    "local": [
     {
@@ -388,6 +450,70 @@
    }
   ],
   "local": [
+   {
+    "title": "Man critically wounded in Liberty City shooting",
+    "url": "https://www.local10.com/news/local/2026/09/27/man-critically-wounded-in-liberty-city-shooting/",
+    "published": "Mon, 28 Sep 2026 00:19:56 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Teen and mother talk about attack involving 7 at Broward school football game",
+    "url": "https://www.local10.com/news/local/2026/09/27/teen-and-his-mother-talk-about-video-showing-7-attacking-him-at-broward-school/",
+    "published": "Sun, 27 Sep 2026 21:12:11 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Firefighters extinguish junkyard fire in Opa-locka",
+    "url": "https://www.local10.com/news/local/2026/09/27/firefighters-extinguish-junkyard-fire-in-opa-locka/",
+    "published": "Sun, 27 Sep 2026 14:40:55 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Junkyard fire shuts down roadway in Opa-locka",
+    "url": "https://www.local10.com/news/local/2026/09/26/junkyard-fire-shuts-down-roadway-in-opa-locka/",
+    "published": "Sun, 27 Sep 2026 03:25:10 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Family, friends honor Miya Marcano 5 years after 19-year-old’s killing",
+    "url": "https://www.local10.com/news/local/2026/09/26/family-friends-honor-miya-marcano-5-years-after-19-year-olds-killing/",
+    "published": "Sun, 27 Sep 2026 02:50:25 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/NSZZWEHYXRAK5BZWCKMU62GZ7I.jpeg?auth=4e30076ea32e26bfec6ade873730d668f66da72d8bd801330c1f18a3731ca115&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Fort Lauderdale water leak has persisted for about 8 years as city plans $180K repair",
+    "url": "https://www.local10.com/news/local/2026/09/26/fort-lauderdale-water-leak-has-persisted-for-about-8-years-as-city-plans-180k-repair/",
+    "published": "Sat, 26 Sep 2026 22:13:53 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "King tides cause flooding along Hollywood Broadwalk; creep toward nearby homes",
+    "url": "https://www.local10.com/news/local/2026/09/26/king-tides-cause-flooding-along-hollywood-broadwalk/",
+    "published": "Sat, 26 Sep 2026 13:29:04 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "‘I just want to hold him’: Mother mourns son after deadly Davie crash",
+    "url": "https://www.local10.com/news/local/2026/09/25/i-just-want-to-hold-him-mother-mourns-after-deadly-davie-crash/",
+    "published": "Fri, 25 Sep 2026 20:43:50 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
    {
     "title": "Miami-Dade Water and Sewer set to briefly change water disinfection method to free chlorine",
     "url": "https://wsvn.com/news/local/miami-dade/miami-dade-water-and-sewer-set-to-briefly-change-water-disinfection-method-to-free-chlorine/",
@@ -589,15 +715,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-28T02:46:24-04:00",
+  "fetched_at": "2026-09-28T03:02:00-04:00",
   "items": [],
   "scanned": 0,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (250) + USGS (20)",
-  "fetched_at": "2026-09-28T02:46:28-04:00",
+  "source": "GDACS (250) + USGS (21)",
+  "fetched_at": "2026-09-28T03:02:02-04:00",
   "events": [
    {
     "lat": 22.8,
@@ -772,6 +898,19 @@
     "mag": 5,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txzj",
     "when": 1790527390268,
+    "source": "USGS"
+   },
+   {
+    "lat": -21.3968,
+    "lon": 168.2294,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.9 — 39 km ENE of Tadine, New Caledonia",
+    "place": "39 km ENE of Tadine, New Caledonia",
+    "severity": "M4.9",
+    "mag": 4.9,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty36",
+    "when": 1790574152024,
     "source": "USGS"
    },
    {
@@ -2046,25 +2185,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032386",
     "when": "Fri, 25 Sep 2026 07:05:32 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -7.5430674933542425,
-    "lon": 34.328792174685915,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Tanzania",
-    "place": "Tanzania",
-    "severity": "Green impact for forestfire in 5129 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032401",
-    "when": "Sat, 26 Sep 2026 07:04:44 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 270,
+  "event_count": 271,
   "counts": {
    "red": 1,
    "orange": 6,
-   "green": 263
+   "green": 264
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2072,7 +2199,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-28T02:46:28-04:00",
+  "fetched_at": "2026-09-28T03:02:02-04:00",
   "countries": [
    {
     "iso": "CHN",
@@ -2159,7 +2286,7 @@
     "issue": "South Africa reels from spate of mass shootings that killed 38 people in a week"
    }
   ],
-  "headlines_scanned": 24,
+  "headlines_scanned": 32,
   "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
