@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-29T07:15:52-04:00",
- "generated_at_utc": "2026-09-29T11:15:52+00:00",
+ "generated_at": "2026-09-29T07:31:00-04:00",
+ "generated_at_utc": "2026-09-29T11:31:00+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 29",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-29T07:15:52-04:00",
+  "fetched_at": "2026-09-29T07:31:00-04:00",
   "curve": [
    {
     "time": "2026-09-29T05:00",
@@ -148,11 +148,11 @@
   ],
   "current": {
    "temp": 76.9,
-   "feels": 85.1,
-   "humidity": 82,
-   "wind_mph": 0.9,
-   "wind_dir": 315,
-   "observed_at": "2026-09-29T07:15"
+   "feels": 84.7,
+   "humidity": 83,
+   "wind_mph": 2.0,
+   "wind_dir": 6,
+   "observed_at": "2026-09-29T07:30"
   },
   "today": {
    "high": 88.5,
@@ -166,132 +166,89 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-29T07:15:52-04:00",
+  "fetched_at": "2026-09-29T07:31:01-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-29T07:15:53-04:00",
-  "aqi": 27,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-29 6:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-29",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-29",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-30",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-30",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-10-01",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-10-01",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-29T07:31:01-04:00",
+  "aqi": 52,
+  "category": "Moderate",
+  "pm25": 7.5,
+  "pm10": 8.2,
+  "observed": "2026-09-29T07:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-29T07:15:55-04:00",
+  "fetched_at": "2026-09-29T07:31:04-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
   "depart_clock": "5:45 AM",
   "depart_at": "now",
-  "miles": 22.9,
-  "minutes": 78,
-  "delay_minutes": 0,
+  "miles": 20.8,
+  "minutes": 76,
+  "delay_minutes": 14,
   "toll_free": true,
   "alternates": [
    {
     "miles": 23.9,
-    "minutes": 62,
-    "toll": true,
-    "saves": 16
-   },
-   {
-    "miles": 30.0,
-    "minutes": 70,
+    "minutes": 68,
     "toll": true,
     "saves": 8
    },
    {
-    "miles": 22.1,
-    "minutes": 72,
+    "miles": 21.9,
+    "minutes": 70,
     "toll": true,
     "saves": 6
    },
    {
-    "miles": 29.5,
-    "minutes": 73,
+    "miles": 26.2,
+    "minutes": 71,
     "toll": true,
     "saves": 5
-   }
-  ],
-  "alternates_worth_taking": [
+   },
    {
-    "miles": 23.9,
-    "minutes": 62,
+    "miles": 26.5,
+    "minutes": 75,
     "toll": true,
-    "saves": 16
+    "saves": 1
    }
   ],
+  "alternates_worth_taking": [],
   "free_alternates": [
    {
-    "miles": 22.9,
-    "minutes": 78,
-    "delay_minutes": 0,
+    "miles": 20.8,
+    "minutes": 76,
+    "delay_minutes": 14,
     "saves": 0
    },
    {
-    "miles": 22.8,
+    "miles": 23.1,
+    "minutes": 77,
+    "delay_minutes": 2
+   },
+   {
+    "miles": 23.0,
     "minutes": 80,
     "delay_minutes": 0
    },
    {
-    "miles": 20.8,
-    "minutes": 86,
-    "delay_minutes": 22
-   },
-   {
-    "miles": 24.8,
+    "miles": 22.8,
     "minutes": 84,
-    "delay_minutes": 12
+    "delay_minutes": 5
    }
   ],
   "best_free": {
-   "miles": 22.9,
-   "minutes": 78,
-   "delay_minutes": 0,
+   "miles": 20.8,
+   "minutes": 76,
+   "delay_minutes": 14,
    "saves": 0
   },
   "incidents": [],
@@ -303,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-29T07:15:56-04:00",
+  "fetched_at": "2026-09-29T07:31:05-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -347,15 +304,15 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-29T07:15:56-04:00",
-  "issued": "200 AM EDT Tue Sep 29 2026",
+  "fetched_at": "2026-09-29T07:31:05-04:00",
+  "issued": "800 AM EDT Tue Sep 29 2026",
   "areas": [],
-  "raw": "en Español\n\n000\nABNT20 KNHC 290519\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Tue Sep 29 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Fay, located well to the west-southwest of the Azores, \nand on Tropical Storm Hanna, located well to the east-northeast of \nBermuda. \n\nTropical cyclone formation is not expected over the next 7 days.\n\n&&\nPublic Advisories on Tropical Storm Hanna are issued under WMO \nheader WTNT33 KNHC and under AWIPS header MIATCPAT3. \nForecast/Advisories on Tropical Storm Hanna are issued under WMO \nheader WTNT23 KNHC and under AWIPS header MIATCMAT3.\n\n$$\nForecaster Pierce/Pasch"
+  "raw": "en Español\n\n000\nABNT20 KNHC 291123\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Tue Sep 29 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Fay, located well to the west-southwest of the Azores, and on \nTropical Storm Hanna, located well to the east-northeast of \nBermuda. \n\nTropical cyclone formation is not expected over the next 7 days.\n\n&&\nPublic Advisories on Tropical Storm Hanna are issued under WMO \nheader WTNT33 KNHC and under AWIPS header MIATCPAT3. \nForecast/Advisories on Tropical Storm Hanna are issued under WMO \nheader WTNT23 KNHC and under AWIPS header MIATCMAT3.\n\n$$\nForecaster Kelly"
  },
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-29T07:15:57-04:00",
+  "fetched_at": "2026-09-29T07:31:05-04:00",
   "florida": "$4.2989",
   "national": "$4.4558",
   "diesel": "$6.0411",
@@ -364,7 +321,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-29T07:15:57-04:00",
+  "fetched_at": "2026-09-29T07:31:07-04:00",
   "streams": {
    "local": [
     {
@@ -605,9 +562,17 @@
    {
     "title": "Pico y placa en Pereira este martes 29 de septiembre de 2026: así funciona el esquema",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/pico-y-placa-en-pereira-este-martes-29-de-septiembre-de-2026-asi-funciona-el-esquema-3589586",
-    "published": "2026-09-29T02:34:00-05:00",
+    "published": "2026-09-29T06:03:52-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2025/02/13/67ae9f4e6cbec.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Barranquilla vive sus semanas menos violentas de 2026: qué hay detrás de la caída de los homicidios y por qué la calma todavía es frágil",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-vive-sus-semanas-menos-violentas-de-2026-que-hay-detras-de-la-caida-de-los-homicidios-y-por-que-la-calma-todavia-es-fragil-3589692",
+    "published": "2026-09-29T06:01:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/28/6abb23b81ab72.jpeg",
     "media_type": "image"
    },
    {
@@ -656,14 +621,6 @@
     "published": "2026-09-28T22:31:32-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/28/6abb30841da54.r_d.145-231-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Concejo aprueba cupo de endeudamiento por $1 billón para Barranquilla: obligaciones se extenderían hasta 2038",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/concejo-aprueba-cupo-de-endeudamiento-por-1-billon-para-barranquilla-obligaciones-se-extenderian-hasta-3589656",
-    "published": "2026-09-28T19:18:33-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2021/03/09/6047e7443d23e.r_d.619-40-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -737,7 +694,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-29T07:15:58-04:00",
+  "fetched_at": "2026-09-29T07:31:08-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -745,7 +702,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (245) + USGS (14)",
-  "fetched_at": "2026-09-29T07:16:00-04:00",
+  "fetched_at": "2026-09-29T07:31:10-04:00",
   "events": [
    {
     "lat": 26.2,
@@ -2214,7 +2171,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-29T07:16:00-04:00",
+  "fetched_at": "2026-09-29T07:31:10-04:00",
   "countries": [
    {
     "iso": "COL",
