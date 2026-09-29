@@ -1,74 +1,191 @@
 {
- "generated_at": "2026-09-28T22:45:44-04:00",
- "generated_at_utc": "2026-09-29T02:45:44+00:00",
+ "generated_at": "2026-09-28T23:01:07-04:00",
+ "generated_at_utc": "2026-09-29T03:01:07+00:00",
  "weekday": "Monday",
  "date_label": "Monday, September 28",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-09-28T22:46:09-04:00",
-  "error": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=25)"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-09-28T23:01:08-04:00",
+  "curve": [
+   {
+    "time": "2026-09-28T05:00",
+    "hour": 5,
+    "temp": 73.8,
+    "feels": 77.6,
+    "humidity": 73,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-28T06:00",
+    "hour": 6,
+    "temp": 72.9,
+    "feels": 76.9,
+    "humidity": 77,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-28T07:00",
+    "hour": 7,
+    "temp": 72.4,
+    "feels": 76.8,
+    "humidity": 76,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-28T08:00",
+    "hour": 8,
+    "temp": 74.3,
+    "feels": 79.7,
+    "humidity": 78,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-28T09:00",
+    "hour": 9,
+    "temp": 75.6,
+    "feels": 82.0,
+    "humidity": 80,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-28T10:00",
+    "hour": 10,
+    "temp": 81.0,
+    "feels": 86.6,
+    "humidity": 67,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-28T11:00",
+    "hour": 11,
+    "temp": 84.0,
+    "feels": 92.9,
+    "humidity": 67,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-28T12:00",
+    "hour": 12,
+    "temp": 87.1,
+    "feels": 97.0,
+    "humidity": 57,
+    "pop": 2
+   },
+   {
+    "time": "2026-09-28T13:00",
+    "hour": 13,
+    "temp": 89.4,
+    "feels": 100.4,
+    "humidity": 51,
+    "pop": 1
+   },
+   {
+    "time": "2026-09-28T14:00",
+    "hour": 14,
+    "temp": 89.9,
+    "feels": 98.0,
+    "humidity": 45,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-28T15:00",
+    "hour": 15,
+    "temp": 90.2,
+    "feels": 100.0,
+    "humidity": 49,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-28T16:00",
+    "hour": 16,
+    "temp": 89.7,
+    "feels": 98.2,
+    "humidity": 52,
+    "pop": 1
+   },
+   {
+    "time": "2026-09-28T17:00",
+    "hour": 17,
+    "temp": 88.8,
+    "feels": 94.1,
+    "humidity": 52,
+    "pop": 2
+   },
+   {
+    "time": "2026-09-28T18:00",
+    "hour": 18,
+    "temp": 86.7,
+    "feels": 92.5,
+    "humidity": 58,
+    "pop": 2
+   },
+   {
+    "time": "2026-09-28T19:00",
+    "hour": 19,
+    "temp": 84.4,
+    "feels": 87.8,
+    "humidity": 58,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-28T20:00",
+    "hour": 20,
+    "temp": 85.4,
+    "feels": 87.5,
+    "humidity": 53,
+    "pop": 0
+   },
+   {
+    "time": "2026-09-28T21:00",
+    "hour": 21,
+    "temp": 81.8,
+    "feels": 85.3,
+    "humidity": 61,
+    "pop": 0
+   }
+  ],
+  "current": {
+   "temp": 80.5,
+   "feels": 86.4,
+   "humidity": 69,
+   "wind_mph": 4.3,
+   "wind_dir": 192,
+   "observed_at": "2026-09-28T23:00"
+  },
+  "today": {
+   "high": 90.2,
+   "low": 72.4,
+   "feels_max": 100.4,
+   "pop_max": 3
+  },
+  "peak_feels": 100.4,
+  "peak_hour": 13
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-28T22:46:10-04:00",
+  "fetched_at": "2026-09-28T23:01:09-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-28T22:46:11-04:00",
-  "aqi": 55,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-28T23:01:34-04:00",
+  "aqi": 58,
   "category": "Moderate",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-28 21:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-29",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-29",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-09-30",
-    "aqi": 50,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-30",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-10-01",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-10-01",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 13.0,
+  "pm10": 14.3,
+  "observed": "2026-09-28T23:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-28T22:46:11-04:00",
+  "fetched_at": "2026-09-28T23:01:35-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -81,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-28T22:46:12-04:00",
+  "fetched_at": "2026-09-28T23:01:36-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -127,7 +244,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-28T22:46:12-04:00",
+  "fetched_at": "2026-09-28T23:01:36-04:00",
   "issued": "800 PM EDT Mon Sep 28 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 290206\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Mon Sep 28 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nDepression Fay, located well to the west-southwest of the Azores, \nand on Tropical Storm Hanna, located well to the east-northeast of \nBermuda. \n\nTropical cyclone formation is not expected over the next 7 days.\n\n&&\nPublic Advisories on Tropical Storm Hanna are issued under WMO \nheader WTNT33 KNHC and under AWIPS header MIATCPAT3. \nForecast/Advisories on Tropical Storm Hanna are issued under WMO \nheader WTNT23 KNHC and under AWIPS header MIATCMAT3.\n\n$$\nForecaster Reinhart"
@@ -135,7 +252,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-28T22:46:12-04:00",
+  "fetched_at": "2026-09-28T23:01:36-04:00",
   "florida": "$4.3440",
   "national": "$4.4768",
   "diesel": "$6.0694",
@@ -144,7 +261,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-28T22:46:13-04:00",
+  "fetched_at": "2026-09-28T23:01:38-04:00",
   "streams": {
    "local": [
     {
@@ -517,15 +634,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-28T22:46:13-04:00",
+  "fetched_at": "2026-09-28T23:01:39-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (238) + USGS (22)",
-  "fetched_at": "2026-09-28T22:46:16-04:00",
+  "source": "GDACS (238) + USGS (21)",
+  "fetched_at": "2026-09-28T23:01:42-04:00",
   "events": [
    {
     "lat": 25.0,
@@ -777,19 +894,6 @@
     "mag": 4.9,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty2y",
     "when": 1790570493467,
-    "source": "USGS"
-   },
-   {
-    "lat": 50.2372,
-    "lon": -129.7765,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.9 — 195 km WSW of Port McNeill, Canada",
-    "place": "195 km WSW of Port McNeill, Canada",
-    "severity": "M4.9",
-    "mag": 4.9,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ty27",
-    "when": 1790564023974,
     "source": "USGS"
    },
    {
@@ -1988,13 +2092,25 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032397",
     "when": "Fri, 25 Sep 2026 19:02:25 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -8.517291132140592,
+    "lon": 14.5734130943447,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 16350 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032378",
+    "when": "Thu, 24 Sep 2026 19:02:16 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 260,
+  "event_count": 259,
   "counts": {
    "red": 0,
    "orange": 8,
-   "green": 252
+   "green": 251
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2002,7 +2118,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-28T22:46:16-04:00",
+  "fetched_at": "2026-09-28T23:01:42-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2147,8 +2263,6 @@
   "countries_matched": 9,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
