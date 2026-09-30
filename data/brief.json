@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-29T20:15:37-04:00",
- "generated_at_utc": "2026-09-30T00:15:37+00:00",
+ "generated_at": "2026-09-29T20:30:29-04:00",
+ "generated_at_utc": "2026-09-30T00:30:29+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 29",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-29T20:15:38-04:00",
+  "fetched_at": "2026-09-29T20:30:31-04:00",
   "curve": [
    {
     "time": "2026-09-29T05:00",
@@ -124,35 +124,35 @@
    {
     "time": "2026-09-29T19:00",
     "hour": 19,
-    "temp": 79.4,
-    "feels": 88.0,
+    "temp": 79.7,
+    "feels": 87.3,
     "humidity": 81,
     "pop": 10
    },
    {
     "time": "2026-09-29T20:00",
     "hour": 20,
-    "temp": 77.8,
-    "feels": 85.6,
+    "temp": 78.9,
+    "feels": 89.0,
     "humidity": 86,
     "pop": 9
    },
    {
     "time": "2026-09-29T21:00",
     "hour": 21,
-    "temp": 77.4,
-    "feels": 86.8,
+    "temp": 77.0,
+    "feels": 84.5,
     "humidity": 90,
     "pop": 17
    }
   ],
   "current": {
-   "temp": 77.5,
-   "feels": 84.5,
-   "humidity": 87,
-   "wind_mph": 6.6,
-   "wind_dir": 108,
-   "observed_at": "2026-09-29T20:15"
+   "temp": 78.1,
+   "feels": 87.2,
+   "humidity": 88,
+   "wind_mph": 3.1,
+   "wind_dir": 69,
+   "observed_at": "2026-09-29T20:30"
   },
   "today": {
    "high": 81.7,
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-29T20:15:38-04:00",
+  "fetched_at": "2026-09-29T20:30:32-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-29T20:15:39-04:00",
-  "aqi": 30,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-29T20:30:58-04:00",
+  "aqi": 47,
   "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-29 19:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-30",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-30",
-    "aqi": 20,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-10-01",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-10-01",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-10-02",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-10-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "pm25": 15.2,
+  "pm10": 17.0,
+  "observed": "2026-09-29T20:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-29T20:15:40-04:00",
+  "fetched_at": "2026-09-29T20:30:58-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -234,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-29T20:15:40-04:00",
+  "fetched_at": "2026-09-29T20:30:59-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -278,7 +242,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-29T20:15:40-04:00",
+  "fetched_at": "2026-09-29T20:30:59-04:00",
   "issued": "800 PM EDT Tue Sep 29 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 292305\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Tue Sep 29 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Hanna, located well to the east of Bermuda, and has issued the \nfinal advisory on Post-Tropical Cyclone Fay, located over the \ncentral subtropical Atlantic.  \n\nTropical cyclone formation is not expected over the next 7 days.\n\n$$\nForecaster Reinhart"
@@ -286,7 +250,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-29T20:15:40-04:00",
+  "fetched_at": "2026-09-29T20:30:59-04:00",
   "florida": "$4.2989",
   "national": "$4.4558",
   "diesel": "$6.0411",
@@ -295,7 +259,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-29T20:15:41-04:00",
+  "fetched_at": "2026-09-29T20:31:00-04:00",
   "streams": {
    "local": [
     {
@@ -470,6 +434,14 @@
   ],
   "colombia": [
    {
+    "title": "Fuerte accidente se originó en Girón: tractocamión se estrelló fuertemente contra una casa y arrasó con varios carros, reportan un muerto y 7 heridos",
+    "url": "https://www.eltiempo.com/colombia/santander/fuerte-accidente-se-origino-en-giron-tractocamion-se-estrello-fuertemente-contra-una-casa-y-arraso-con-varios-carros-reportan-un-muerto-y-heridos-3590001",
+    "published": "2026-09-29T19:10:01-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/29/6abc50139b7f9.r_d.775-894-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Capturan en Cali a mujer señalada de abusar sexualmente de su hija de 9 años, grabarla y comercializar sus videos",
     "url": "https://www.eltiempo.com/colombia/cali/capturan-en-cali-a-mujer-senalada-de-abusar-sexualmente-de-su-hija-grabarla-y-comercializar-sus-videos-3589998",
     "published": "2026-09-29T18:56:51-05:00",
@@ -523,14 +495,6 @@
     "published": "2026-09-29T16:55:16-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/29/6abc32e49207a.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "El mito que se cae en Medellín: la prueba que demuestra quién tiene la culpa del disparo en los arriendos, y no son los turistas",
-    "url": "https://www.eltiempo.com/colombia/medellin/el-mito-que-se-cae-en-medellin-la-prueba-que-demuestra-quien-tiene-la-culpa-del-disparo-en-los-arriendos-y-no-son-los-turistas-3589943",
-    "published": "2026-09-29T18:07:41-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/29/6abc2bb236681.r_d.236-457-0.png",
     "media_type": "image"
    }
   ],
@@ -604,7 +568,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-29T20:15:41-04:00",
+  "fetched_at": "2026-09-29T20:31:00-04:00",
   "items": [],
   "scanned": 0,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -612,7 +576,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (218) + USGS (16)",
-  "fetched_at": "2026-09-29T20:15:44-04:00",
+  "fetched_at": "2026-09-29T20:31:03-04:00",
   "events": [
    {
     "lat": 29.0,
@@ -2083,7 +2047,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-29T20:15:44-04:00",
+  "fetched_at": "2026-09-29T20:31:03-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2106,15 +2070,9 @@
       "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-fuerte-sismo-de-4-2-de-magnitud-en-chaparral-tolima-usuarios-alertan-sentirlo-en-bogota-ibague-y-mas-ciudades-3589972",
       "published": "2026-09-29T17:04:12-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "El mito que se cae en Medellín: la prueba que demuestra quién tiene la culpa del disparo en los arriendos, y no son los turistas",
-      "url": "https://www.eltiempo.com/colombia/medellin/el-mito-que-se-cae-en-medellin-la-prueba-que-demuestra-quien-tiene-la-culpa-del-disparo-en-los-arriendos-y-no-son-los-turistas-3589943",
-      "published": "2026-09-29T18:07:41-05:00",
-      "section": "colombia"
      }
     ],
-    "count": 4,
+    "count": 3,
     "issue": "Capturan en Cali a mujer señalada de abusar sexualmente de su hija de 9 años, grabarla y comercializar sus videos"
    },
    {
