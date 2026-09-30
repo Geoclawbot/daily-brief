@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-30T15:30:53-04:00",
- "generated_at_utc": "2026-09-30T19:30:53+00:00",
+ "generated_at": "2026-09-30T15:46:04-04:00",
+ "generated_at_utc": "2026-09-30T19:46:04+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 30",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-30T15:30:53-04:00",
+  "fetched_at": "2026-09-30T15:46:04-04:00",
   "curve": [
    {
     "time": "2026-09-30T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 79.2,
-   "feels": 83.3,
-   "humidity": 86,
-   "wind_mph": 15.5,
-   "wind_dir": 102,
-   "observed_at": "2026-09-30T15:30"
+   "temp": 80.3,
+   "feels": 86.4,
+   "humidity": 87,
+   "wind_mph": 12.9,
+   "wind_dir": 98,
+   "observed_at": "2026-09-30T15:45"
   },
   "today": {
    "high": 84.7,
@@ -166,71 +166,107 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-30T15:30:54-04:00",
+  "fetched_at": "2026-09-30T15:46:04-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-30T15:31:20-04:00",
-  "aqi": 58,
-  "category": "Moderate",
-  "pm25": 7.2,
-  "pm10": 9.7,
-  "observed": "2026-09-30T15:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-30T15:46:05-04:00",
+  "aqi": 33,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-30 14:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-30",
+    "aqi": 40,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-30",
+    "aqi": 20,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-10-01",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-10-01",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-10-02",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-10-02",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-30T15:31:22-04:00",
+  "fetched_at": "2026-09-30T15:46:08-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
   "miles": 26.6,
-  "minutes": 72,
-  "delay_minutes": 0,
+  "minutes": 76,
+  "delay_minutes": 2,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 22.6,
-    "minutes": 60,
+    "miles": 26.4,
+    "minutes": 64,
     "toll": true,
     "saves": 12
    },
    {
-    "miles": 26.4,
-    "minutes": 60,
+    "miles": 22.6,
+    "minutes": 64,
     "toll": true,
     "saves": 12
    },
    {
     "miles": 21.2,
-    "minutes": 68,
+    "minutes": 72,
     "toll": true,
     "saves": 4
    },
    {
-    "miles": 28.7,
-    "minutes": 71,
+    "miles": 28.6,
+    "minutes": 73,
     "toll": true,
-    "saves": 1
+    "saves": 3
    }
   ],
   "alternates_worth_taking": [
    {
-    "miles": 22.6,
-    "minutes": 60,
+    "miles": 26.4,
+    "minutes": 64,
     "toll": true,
     "saves": 12
    },
    {
-    "miles": 26.4,
-    "minutes": 60,
+    "miles": 22.6,
+    "minutes": 64,
     "toll": true,
     "saves": 12
    }
@@ -238,31 +274,31 @@
   "free_alternates": [
    {
     "miles": 26.6,
-    "minutes": 72,
-    "delay_minutes": 0,
-    "saves": 0
+    "minutes": 76,
+    "delay_minutes": 2
    },
    {
     "miles": 21.0,
-    "minutes": 74,
-    "delay_minutes": 9
-   },
-   {
-    "miles": 24.4,
-    "minutes": 84,
-    "delay_minutes": 0
+    "minutes": 75,
+    "delay_minutes": 8,
+    "saves": 1
    },
    {
     "miles": 23.7,
-    "minutes": 85,
-    "delay_minutes": 0
+    "minutes": 89,
+    "delay_minutes": 2
+   },
+   {
+    "miles": 23.1,
+    "minutes": 87,
+    "delay_minutes": 2
    }
   ],
   "best_free": {
-   "miles": 26.6,
-   "minutes": 72,
-   "delay_minutes": 0,
-   "saves": 0
+   "miles": 21.0,
+   "minutes": 75,
+   "delay_minutes": 8,
+   "saves": 1
   },
   "incidents": [],
   "incident_count": 0,
@@ -273,7 +309,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-30T15:31:23-04:00",
+  "fetched_at": "2026-09-30T15:46:09-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -319,7 +355,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-30T15:31:24-04:00",
+  "fetched_at": "2026-09-30T15:46:10-04:00",
   "issued": "200 PM EDT Wed Sep 30 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 301731\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Wed Sep 30 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center has issued its last advisory on \nPost-Tropical Cyclone Hanna, located over the central subtropical \nAtlantic. \n\nTropical cyclone formation is not expected over the next 7 days.\n\n$$\nForecaster Beven"
@@ -327,7 +363,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-30T15:31:24-04:00",
+  "fetched_at": "2026-09-30T15:46:10-04:00",
   "florida": "$4.2530",
   "national": "$4.4343",
   "diesel": "$6.0074",
@@ -336,7 +372,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-30T15:31:25-04:00",
+  "fetched_at": "2026-09-30T15:46:11-04:00",
   "streams": {
    "local": [
     {
@@ -445,6 +481,14 @@
   ],
   "local": [
    {
+    "title": "Students evaluated after pepper spray incident at Glades Middle School in Miramar",
+    "url": "https://www.local10.com/news/local/2026/09/30/students-evaluated-after-pepper-spray-incident-at-glades-middle-school-in-miramar/",
+    "published": "Wed, 30 Sep 2026 16:53:30 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "After tour, Wasserman Schultz says ‘unconstitutional torture’ occurring at Miramar ICE facility",
     "url": "https://www.local10.com/news/local/2026/09/30/after-tour-wasserman-schultz-says-unconstitutional-torture-occurring-at-miramar-ice-facility/",
     "published": "Wed, 30 Sep 2026 16:47:41 +0000",
@@ -475,14 +519,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/XEZQILSVKBGHVK4FDOQS6JT6MU.jpg?auth=dc394ab933e24cf39a29838a37b7049759efc63920a5a2e163caf1c634ad4bff&smart=true&width=1200&height=900",
     "media_type": "image"
-   },
-   {
-    "title": "Students evaluated after pepper spray incident at Glades Middle School in Miramar",
-    "url": "https://www.local10.com/news/local/2026/09/30/students-evaluated-after-pepper-spray-incident-at-glades-middle-school-in-miramar/",
-    "published": "Wed, 30 Sep 2026 16:53:30 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
    },
    {
     "title": "Brother of victim’s ex-wife arrested after fire damages 4 vehicles, side-by-side and home, Homestead police say",
@@ -575,6 +611,14 @@
   ],
   "colombia": [
    {
+    "title": "En Cartagena buscan a taxista que escapó con el equipaje de un turista italiano tras una parada frente al Castillo de San Felipe",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/en-cartagena-buscan-a-taxista-que-escapo-con-el-equipaje-de-un-turista-italiano-tras-una-parada-frente-al-castillo-de-san-felipe-3590214",
+    "published": "2026-09-30T14:33:37-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/04/01/69cd26e46486e.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Fiscalía allanó sede de Activos por Colombia en Barranquilla por posible manipulación de información institucional tras alerta de la SAE",
     "url": "https://www.eltiempo.com/colombia/barranquilla/fiscalia-allano-sede-de-activos-por-colombia-en-barranquilla-por-posible-manipulacion-de-informacion-institucional-tras-alerta-de-la-sae-3590211",
     "published": "2026-09-30T14:27:40-05:00",
@@ -628,14 +672,6 @@
     "published": "2026-09-30T12:30:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/06/07/6a2588d0b3af3.r_d.481-500-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Cartagena tiene nuevo comandante para la Policía Metropolitana: ¿Quién es el coronel Juan Pablo Ruiz Rodríguez?",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/cartagena-tiene-nuevo-comandante-para-la-policia-metropolitana-quien-es-el-coronel-juan-pablo-ruiz-rodriguez-3590175",
-    "published": "2026-09-30T12:23:47-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/30/6abd4365ce9e2.jpeg",
     "media_type": "image"
    }
   ],
@@ -709,7 +745,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-30T15:31:26-04:00",
+  "fetched_at": "2026-09-30T15:46:12-04:00",
   "items": [],
   "scanned": 6,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -717,7 +753,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (233) + USGS (15)",
-  "fetched_at": "2026-09-30T15:31:28-04:00",
+  "fetched_at": "2026-09-30T15:46:15-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -2187,7 +2223,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-30T15:31:28-04:00",
+  "fetched_at": "2026-09-30T15:46:15-04:00",
   "countries": [
    {
     "iso": "COL",
