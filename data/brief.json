@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-30T13:15:46-04:00",
- "generated_at_utc": "2026-09-30T17:15:46+00:00",
+ "generated_at": "2026-09-30T13:30:49-04:00",
+ "generated_at_utc": "2026-09-30T17:30:49+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 30",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-30T13:15:46-04:00",
+  "fetched_at": "2026-09-30T13:30:49-04:00",
   "curve": [
    {
     "time": "2026-09-30T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 79.6,
-   "feels": 83.4,
-   "humidity": 86,
-   "wind_mph": 16.9,
-   "wind_dir": 98,
-   "observed_at": "2026-09-30T13:15"
+   "temp": 76.5,
+   "feels": 77.8,
+   "humidity": 87,
+   "wind_mph": 19.0,
+   "wind_dir": 120,
+   "observed_at": "2026-09-30T13:30"
   },
   "today": {
    "high": 84.7,
@@ -166,62 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-30T13:15:46-04:00",
+  "fetched_at": "2026-09-30T13:30:49-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-30T13:15:47-04:00",
-  "aqi": 30,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-30 12:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-30",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-30",
-    "aqi": 20,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-10-01",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-10-01",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-10-02",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-10-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-30T13:31:37-04:00",
+  "aqi": 59,
+  "category": "Moderate",
+  "pm25": 9.5,
+  "pm10": 12.5,
+  "observed": "2026-09-30T13:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-30T13:15:49-04:00",
+  "fetched_at": "2026-09-30T13:31:40-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
@@ -229,7 +193,7 @@
   "depart_at": "2026-09-30T15:30:00-04:00",
   "miles": 20.6,
   "minutes": 65,
-  "delay_minutes": 1,
+  "delay_minutes": 2,
   "toll_free": true,
   "alternates": [
    {
@@ -240,9 +204,9 @@
    },
    {
     "miles": 28.6,
-    "minutes": 62,
+    "minutes": 63,
     "toll": true,
-    "saves": 3
+    "saves": 2
    },
    {
     "miles": 25.5,
@@ -262,7 +226,7 @@
    {
     "miles": 20.6,
     "minutes": 65,
-    "delay_minutes": 1,
+    "delay_minutes": 2,
     "saves": 0
    },
    {
@@ -284,7 +248,7 @@
   "best_free": {
    "miles": 20.6,
    "minutes": 65,
-   "delay_minutes": 1,
+   "delay_minutes": 2,
    "saves": 0
   },
   "incidents": [],
@@ -296,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-30T13:15:50-04:00",
+  "fetched_at": "2026-09-30T13:31:41-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -342,7 +306,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-30T13:15:51-04:00",
+  "fetched_at": "2026-09-30T13:31:41-04:00",
   "issued": "800 AM EDT Wed Sep 30 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 301140\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Wed Sep 30 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Hanna, located over the central subtropical Atlantic. \n\nTropical cyclone formation is not expected over the next 7 days.\n\n$$\nForecaster Adams"
@@ -350,7 +314,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-30T13:15:51-04:00",
+  "fetched_at": "2026-09-30T13:31:41-04:00",
   "florida": "$4.2530",
   "national": "$4.4343",
   "diesel": "$6.0074",
@@ -359,7 +323,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-30T13:15:52-04:00",
+  "fetched_at": "2026-09-30T13:31:43-04:00",
   "streams": {
    "local": [
     {
@@ -732,7 +696,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-30T13:15:53-04:00",
+  "fetched_at": "2026-09-30T13:31:43-04:00",
   "items": [],
   "scanned": 8,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -740,7 +704,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (231) + USGS (13)",
-  "fetched_at": "2026-09-30T13:15:56-04:00",
+  "fetched_at": "2026-09-30T13:31:46-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -2208,7 +2172,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-30T13:15:56-04:00",
+  "fetched_at": "2026-09-30T13:31:46-04:00",
   "countries": [
    {
     "iso": "IRQ",
