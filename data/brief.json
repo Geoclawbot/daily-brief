@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-30T16:31:08-04:00",
- "generated_at_utc": "2026-09-30T20:31:08+00:00",
+ "generated_at": "2026-09-30T16:41:48-04:00",
+ "generated_at_utc": "2026-09-30T20:41:48+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 30",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-30T16:31:08-04:00",
+  "fetched_at": "2026-09-30T16:41:48-04:00",
   "curve": [
    {
     "time": "2026-09-30T05:00",
@@ -166,96 +166,132 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-30T16:31:09-04:00",
+  "fetched_at": "2026-09-30T16:41:49-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-30T16:31:12-04:00",
-  "aqi": 58,
-  "category": "Moderate",
-  "pm25": 6.0,
-  "pm10": 8.0,
-  "observed": "2026-09-30T16:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-30T16:41:50-04:00",
+  "aqi": 34,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-30 15:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-30",
+    "aqi": 40,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-30",
+    "aqi": 20,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-10-01",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-10-01",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-10-02",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-10-02",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-30T16:31:15-04:00",
+  "fetched_at": "2026-09-30T16:41:54-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 21.9,
-  "minutes": 74,
-  "delay_minutes": 4,
+  "miles": 20.6,
+  "minutes": 73,
+  "delay_minutes": 8,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 26.4,
+    "miles": 27.7,
     "minutes": 60,
     "toll": true,
-    "saves": 14
+    "saves": 13
    },
    {
     "miles": 22.6,
-    "minutes": 65,
+    "minutes": 67,
     "toll": true,
-    "saves": 9
+    "saves": 6
    },
    {
-    "miles": 23.2,
-    "minutes": 73,
+    "miles": 22.0,
+    "minutes": 72,
     "toll": true,
     "saves": 1
    },
    {
-    "miles": 27.3,
-    "minutes": 78,
+    "miles": 28.0,
+    "minutes": 79,
     "toll": true,
-    "saves": -4
+    "saves": -6
    }
   ],
   "alternates_worth_taking": [
    {
-    "miles": 26.4,
+    "miles": 27.7,
     "minutes": 60,
     "toll": true,
-    "saves": 14
+    "saves": 13
    }
   ],
   "free_alternates": [
    {
-    "miles": 21.9,
-    "minutes": 74,
-    "delay_minutes": 4,
+    "miles": 20.6,
+    "minutes": 73,
+    "delay_minutes": 8,
     "saves": 0
    },
    {
     "miles": 23.4,
-    "minutes": 78,
-    "delay_minutes": 1
-   },
-   {
-    "miles": 22.5,
-    "minutes": 81,
-    "delay_minutes": 4
+    "minutes": 80,
+    "delay_minutes": 5
    },
    {
     "miles": 23.1,
-    "minutes": 84,
+    "minutes": 85,
+    "delay_minutes": 2
+   },
+   {
+    "miles": 31.4,
+    "minutes": 88,
     "delay_minutes": 1
    }
   ],
   "best_free": {
-   "miles": 21.9,
-   "minutes": 74,
-   "delay_minutes": 4,
+   "miles": 20.6,
+   "minutes": 73,
+   "delay_minutes": 8,
    "saves": 0
   },
   "incidents": [],
@@ -267,7 +303,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-30T16:31:16-04:00",
+  "fetched_at": "2026-09-30T16:41:55-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -313,7 +349,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-30T16:31:16-04:00",
+  "fetched_at": "2026-09-30T16:41:55-04:00",
   "issued": "200 PM EDT Wed Sep 30 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 301731\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Wed Sep 30 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center has issued its last advisory on \nPost-Tropical Cyclone Hanna, located over the central subtropical \nAtlantic. \n\nTropical cyclone formation is not expected over the next 7 days.\n\n$$\nForecaster Beven"
@@ -321,7 +357,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-30T16:31:16-04:00",
+  "fetched_at": "2026-09-30T16:41:55-04:00",
   "florida": "$4.2530",
   "national": "$4.4343",
   "diesel": "$6.0074",
@@ -330,7 +366,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-30T16:31:17-04:00",
+  "fetched_at": "2026-09-30T16:41:56-04:00",
   "streams": {
    "local": [
     {
@@ -439,6 +475,14 @@
   ],
   "local": [
    {
+    "title": "Reward offered for information about fatal shooting in Pompano Beach",
+    "url": "https://www.local10.com/news/local/2026/09/30/reward-offered-for-information-about-fatal-shooting-in-pompano-beach/",
+    "published": "Wed, 30 Sep 2026 20:34:29 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/WL46PFV35RCONDR6UEDB46FKVE.jpg?auth=45c43ee9ded5f614c3649e9473e93dc5709105f55a3580b20b5a05a6b3a83af0&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
     "title": "‘Horrific’ evidence revisited as jury weighs death penalty in 2012 triple homicide case",
     "url": "https://www.local10.com/news/local/2026/09/30/horrific-evidence-revisited-as-jury-weighs-death-penalty-in-2012-triple-homicide-case/",
     "published": "Wed, 30 Sep 2026 19:49:05 +0000",
@@ -495,14 +539,6 @@
     "media_type": "image"
    },
    {
-    "title": "Man facing felony charge for choking teen daughter of live-in girlfriend, cops say",
-    "url": "https://www.local10.com/news/local/2026/09/30/man-facing-felony-charge-for-choking-teen-daughter-of-live-in-girlfriend-cops-say/",
-    "published": "Wed, 30 Sep 2026 15:52:47 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/CV6YFJL6VJDPVF6JLN7SEYGURQ.jpg?auth=6e6d12d4514e66599079472efd2edba23daa12209138cee42d921cf7dd1db7cc&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
     "title": "1 hospitalized after shooting in Miami’s Liberty City neighborhood; subject remains on the loose",
     "url": "https://wsvn.com/news/local/miami-dade/1-hospitalized-after-shooting-in-miamis-liberty-city-neighborhood-subject-remains-on-the-loose/",
     "published": "Wed, 30 Sep 2026 03:00:28 +0000",
@@ -551,20 +587,20 @@
     "media_type": "video"
    },
    {
-    "title": "Florida’s minimum wage rose to $15.00 per hour",
-    "url": "https://wsvn.com/news/local/miami-dade/florida-minimum-wage-reaches-15/",
-    "published": "Wed, 30 Sep 2026 15:28:19 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b9add4cc-4f1f-4765-8a45-956de1db82e5/51ea9c96-1c00-46c1-92b6-23148ee2b2db/main.mp4?fastly_token=NmFiZGM3NjRfNWE3OGYxMmVlMzVmMDY3MDc4MGU1YjNlYjczNDA2OGE5MGY0MTRmMDA0OGU3MTNhYmZiODZhZWQwYzJiNGZmNl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iOWFkZDRjYy00ZjFmLTQ3NjUtOGE0NS05NTZkZTFkYjgyZTUvNTFlYTljOTYtMWMwMC00NmMxLTkyYjYtMjMxNDhlZTJiMmRiL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
     "title": "Hedge fund CEO Ken Griffin donates $3 billion to Carnegie Mellon as part of his bet on Miami",
     "url": "https://wsvn.com/news/us-world/miami-carnegie-mellon-campus/",
     "published": "Wed, 30 Sep 2026 12:15:00 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/0f440f48-c293-4093-8e51-c8cafd9afc60/2128a368-267b-4598-90cc-a6ef08e23f7b/main.mp4?fastly_token=NmFiZGM2NjlfMDBlNWRiZjlkMDIwOWEwZDlmM2E2NTFjZjM0MjczOTQwYjgzZGYwOWZhOWY3NDNkZTEyZWFmMGQ4YTU1MTFmNl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8wZjQ0MGY0OC1jMjkzLTQwOTMtOGU1MS1jOGNhZmQ5YWZjNjAvMjEyOGEzNjgtMjY3Yi00NTk4LTkwY2MtYTZlZjA4ZTIzZjdiL21haW4ubXA0",
     "media_type": "video"
+   },
+   {
+    "title": "Search underway for 60-year-old man reported missing from SW Miami-Dade",
+    "url": "https://wsvn.com/news/local/miami-dade/search-underway-for-60-year-old-man-reported-missing-from-sw-miami-dade/",
+    "published": "Wed, 30 Sep 2026 11:50:59 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/09/260930_Angel_Luis_Marquez_missing_man.png",
+    "media_type": "image"
    }
   ],
   "colombia": [
@@ -703,7 +739,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-30T16:31:18-04:00",
+  "fetched_at": "2026-09-30T16:41:57-04:00",
   "items": [],
   "scanned": 7,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -711,7 +747,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (233) + USGS (15)",
-  "fetched_at": "2026-09-30T16:31:22-04:00",
+  "fetched_at": "2026-09-30T16:42:00-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -1029,12 +1065,12 @@
     "source": "GDACS"
    },
    {
-    "lat": 16.0,
-    "lon": 151.0,
+    "lat": 16.2,
+    "lon": 150.0,
     "kind": "cyclone",
     "level": "green",
-    "title": "Green notification for tropical cyclone TWENTYSIX-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
-    "place": null,
+    "title": "Green notification for tropical cyclone CHOI-WAN-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
+    "place": "Northern Mariana Islands",
     "severity": "Tropical Storm (maximum wind speed of 204 km/h)",
     "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001332",
     "when": "Wed, 30 Sep 2026 02:12:11 GMT",
@@ -2181,7 +2217,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-30T16:31:22-04:00",
+  "fetched_at": "2026-09-30T16:42:00-04:00",
   "countries": [
    {
     "iso": "COL",
