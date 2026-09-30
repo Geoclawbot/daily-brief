@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-30T14:15:46-04:00",
- "generated_at_utc": "2026-09-30T18:15:46+00:00",
+ "generated_at": "2026-09-30T14:30:56-04:00",
+ "generated_at_utc": "2026-09-30T18:30:56+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 30",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-30T14:15:46-04:00",
+  "fetched_at": "2026-09-30T14:30:57-04:00",
   "curve": [
    {
     "time": "2026-09-30T05:00",
@@ -76,87 +76,87 @@
    {
     "time": "2026-09-30T13:00",
     "hour": 13,
-    "temp": 82.6,
-    "feels": 88.6,
+    "temp": 82.5,
+    "feels": 87.4,
     "humidity": 73,
     "pop": 44
    },
    {
     "time": "2026-09-30T14:00",
     "hour": 14,
-    "temp": 80.8,
-    "feels": 84.5,
+    "temp": 81.4,
+    "feels": 86.9,
     "humidity": 75,
     "pop": 61
    },
    {
     "time": "2026-09-30T15:00",
     "hour": 15,
-    "temp": 77.0,
-    "feels": 81.1,
+    "temp": 79.1,
+    "feels": 83.5,
     "humidity": 87,
     "pop": 63
    },
    {
     "time": "2026-09-30T16:00",
     "hour": 16,
-    "temp": 77.8,
-    "feels": 82.8,
+    "temp": 76.8,
+    "feels": 79.4,
     "humidity": 81,
     "pop": 56
    },
    {
     "time": "2026-09-30T17:00",
     "hour": 17,
-    "temp": 78.3,
-    "feels": 84.1,
+    "temp": 76.4,
+    "feels": 81.1,
     "humidity": 79,
     "pop": 40
    },
    {
     "time": "2026-09-30T18:00",
     "hour": 18,
-    "temp": 77.4,
-    "feels": 84.4,
+    "temp": 76.8,
+    "feels": 82.8,
     "humidity": 81,
     "pop": 26
    },
    {
     "time": "2026-09-30T19:00",
     "hour": 19,
-    "temp": 77.1,
-    "feels": 85.4,
+    "temp": 76.3,
+    "feels": 83.5,
     "humidity": 84,
     "pop": 15
    },
    {
     "time": "2026-09-30T20:00",
     "hour": 20,
-    "temp": 76.9,
-    "feels": 85.7,
+    "temp": 75.7,
+    "feels": 83.2,
     "humidity": 88,
     "pop": 14
    },
    {
     "time": "2026-09-30T21:00",
     "hour": 21,
-    "temp": 77.0,
-    "feels": 85.7,
+    "temp": 75.8,
+    "feels": 83.3,
     "humidity": 88,
     "pop": 10
    }
   ],
   "current": {
-   "temp": 77.3,
-   "feels": 79.6,
-   "humidity": 78,
-   "wind_mph": 13.3,
+   "temp": 81.4,
+   "feels": 88.0,
+   "humidity": 82,
+   "wind_mph": 10.5,
    "wind_dir": 110,
-   "observed_at": "2026-09-30T14:15"
+   "observed_at": "2026-09-30T14:30"
   },
   "today": {
    "high": 84.7,
-   "low": 75.8,
+   "low": 75.3,
    "feels_max": 93.5,
    "pop_max": 63
   },
@@ -166,125 +166,96 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-30T14:15:47-04:00",
+  "fetched_at": "2026-09-30T14:30:58-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-30T14:15:47-04:00",
-  "aqi": 27,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-30 13:00 EST",
-  "forecast": [
-   {
-    "date": "2026-09-30",
-    "aqi": 40,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-09-30",
-    "aqi": 20,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-10-01",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-10-01",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-10-02",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-10-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-30T14:31:24-04:00",
+  "aqi": 59,
+  "category": "Moderate",
+  "pm25": 8.2,
+  "pm10": 11.0,
+  "observed": "2026-09-30T14:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-30T14:15:50-04:00",
+  "fetched_at": "2026-09-30T14:31:26-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "2026-09-30T15:30:00-04:00",
-  "miles": 20.6,
-  "minutes": 69,
-  "delay_minutes": 4,
+  "miles": 26.6,
+  "minutes": 70,
+  "delay_minutes": 0,
   "toll_free": true,
   "alternates": [
    {
     "miles": 22.6,
     "minutes": 59,
     "toll": true,
-    "saves": 10
+    "saves": 11
    },
    {
     "miles": 25.5,
     "minutes": 63,
     "toll": true,
-    "saves": 6
+    "saves": 7
    },
    {
     "miles": 28.6,
-    "minutes": 64,
+    "minutes": 65,
     "toll": true,
     "saves": 5
    },
    {
     "miles": 20.8,
-    "minutes": 65,
+    "minutes": 66,
     "toll": true,
     "saves": 4
    }
   ],
-  "alternates_worth_taking": [],
+  "alternates_worth_taking": [
+   {
+    "miles": 22.6,
+    "minutes": 59,
+    "toll": true,
+    "saves": 11
+   }
+  ],
   "free_alternates": [
    {
-    "miles": 20.6,
-    "minutes": 69,
-    "delay_minutes": 4,
+    "miles": 26.6,
+    "minutes": 70,
+    "delay_minutes": 0,
     "saves": 0
    },
    {
-    "miles": 23.4,
-    "minutes": 75,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 22.5,
-    "minutes": 76,
+    "miles": 20.5,
+    "minutes": 73,
     "delay_minutes": 0
    },
    {
     "miles": 23.1,
     "minutes": 81,
     "delay_minutes": 0
+   },
+   {
+    "miles": 23.7,
+    "minutes": 83,
+    "delay_minutes": 0
    }
   ],
   "best_free": {
-   "miles": 20.6,
-   "minutes": 69,
-   "delay_minutes": 4,
+   "miles": 26.6,
+   "minutes": 70,
+   "delay_minutes": 0,
    "saves": 0
   },
   "incidents": [],
@@ -296,7 +267,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-30T14:15:51-04:00",
+  "fetched_at": "2026-09-30T14:31:26-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -342,7 +313,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-30T14:15:51-04:00",
+  "fetched_at": "2026-09-30T14:31:27-04:00",
   "issued": "200 PM EDT Wed Sep 30 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 301731\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Wed Sep 30 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center has issued its last advisory on \nPost-Tropical Cyclone Hanna, located over the central subtropical \nAtlantic. \n\nTropical cyclone formation is not expected over the next 7 days.\n\n$$\nForecaster Beven"
@@ -350,7 +321,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-30T14:15:51-04:00",
+  "fetched_at": "2026-09-30T14:31:27-04:00",
   "florida": "$4.2530",
   "national": "$4.4343",
   "diesel": "$6.0074",
@@ -359,7 +330,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-30T14:15:52-04:00",
+  "fetched_at": "2026-09-30T14:31:28-04:00",
   "streams": {
    "local": [
     {
@@ -608,9 +579,9 @@
    {
     "title": "La transfusión de agua para salvar un humedal en Cali de El Niño: dos carros tanque bombearon 44.000 litros con el fin de revivir este 'pulmón' verde",
     "url": "https://www.eltiempo.com/colombia/cali/la-transfusion-de-agua-para-salvar-un-humedal-en-cali-de-el-nino-dos-carros-tanque-bombearon-44-000-litros-con-el-fin-de-revivir-este-pulmon-verde-3590179",
-    "published": "2026-09-30T13:00:52-05:00",
+    "published": "2026-09-30T13:21:10-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/30/6abd4ae0dd718.jpeg",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/30/6abd4ae0dd718.r_d.664-595-0.jpeg",
     "media_type": "image"
    },
    {
@@ -732,15 +703,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-30T14:15:52-04:00",
+  "fetched_at": "2026-09-30T14:31:29-04:00",
   "items": [],
-  "scanned": 8,
+  "scanned": 7,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
   "source": "GDACS (231) + USGS (13)",
-  "fetched_at": "2026-09-30T14:15:54-04:00",
+  "fetched_at": "2026-09-30T14:31:32-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -2208,7 +2179,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-30T14:15:54-04:00",
+  "fetched_at": "2026-09-30T14:31:32-04:00",
   "countries": [
    {
     "iso": "IRQ",
@@ -2243,7 +2214,7 @@
      {
       "title": "La transfusión de agua para salvar un humedal en Cali de El Niño: dos carros tanque bombearon 44.000 litros con el fin de revivir este 'pulmón' verde",
       "url": "https://www.eltiempo.com/colombia/cali/la-transfusion-de-agua-para-salvar-un-humedal-en-cali-de-el-nino-dos-carros-tanque-bombearon-44-000-litros-con-el-fin-de-revivir-este-pulmon-verde-3590179",
-      "published": "2026-09-30T13:00:52-05:00",
+      "published": "2026-09-30T13:21:10-05:00",
       "section": "colombia"
      },
      {
