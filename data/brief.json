@@ -1,26 +1,179 @@
 {
- "generated_at": "2026-09-29T20:45:33-04:00",
- "generated_at_utc": "2026-09-30T00:45:33+00:00",
+ "generated_at": "2026-09-29T20:59:33-04:00",
+ "generated_at_utc": "2026-09-30T00:59:33+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, September 29",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-09-29T20:45:34-04:00",
-  "error": "503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpre"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-09-29T20:59:33-04:00",
+  "curve": [
+   {
+    "time": "2026-09-29T05:00",
+    "hour": 5,
+    "temp": 77.6,
+    "feels": 87.6,
+    "humidity": 90,
+    "pop": 5
+   },
+   {
+    "time": "2026-09-29T06:00",
+    "hour": 6,
+    "temp": 78.7,
+    "feels": 86.3,
+    "humidity": 75,
+    "pop": 10
+   },
+   {
+    "time": "2026-09-29T07:00",
+    "hour": 7,
+    "temp": 78.4,
+    "feels": 86.4,
+    "humidity": 81,
+    "pop": 12
+   },
+   {
+    "time": "2026-09-29T08:00",
+    "hour": 8,
+    "temp": 78.6,
+    "feels": 87.6,
+    "humidity": 87,
+    "pop": 13
+   },
+   {
+    "time": "2026-09-29T09:00",
+    "hour": 9,
+    "temp": 78.6,
+    "feels": 86.4,
+    "humidity": 84,
+    "pop": 5
+   },
+   {
+    "time": "2026-09-29T10:00",
+    "hour": 10,
+    "temp": 77.6,
+    "feels": 85.9,
+    "humidity": 90,
+    "pop": 22
+   },
+   {
+    "time": "2026-09-29T11:00",
+    "hour": 11,
+    "temp": 75.0,
+    "feels": 82.4,
+    "humidity": 87,
+    "pop": 38
+   },
+   {
+    "time": "2026-09-29T12:00",
+    "hour": 12,
+    "temp": 77.0,
+    "feels": 83.2,
+    "humidity": 85,
+    "pop": 59
+   },
+   {
+    "time": "2026-09-29T13:00",
+    "hour": 13,
+    "temp": 77.3,
+    "feels": 85.9,
+    "humidity": 91,
+    "pop": 54
+   },
+   {
+    "time": "2026-09-29T14:00",
+    "hour": 14,
+    "temp": 78.3,
+    "feels": 86.5,
+    "humidity": 88,
+    "pop": 51
+   },
+   {
+    "time": "2026-09-29T15:00",
+    "hour": 15,
+    "temp": 81.7,
+    "feels": 90.2,
+    "humidity": 71,
+    "pop": 41
+   },
+   {
+    "time": "2026-09-29T16:00",
+    "hour": 16,
+    "temp": 80.9,
+    "feels": 89.0,
+    "humidity": 79,
+    "pop": 41
+   },
+   {
+    "time": "2026-09-29T17:00",
+    "hour": 17,
+    "temp": 80.5,
+    "feels": 89.3,
+    "humidity": 84,
+    "pop": 28
+   },
+   {
+    "time": "2026-09-29T18:00",
+    "hour": 18,
+    "temp": 80.4,
+    "feels": 88.4,
+    "humidity": 78,
+    "pop": 15
+   },
+   {
+    "time": "2026-09-29T19:00",
+    "hour": 19,
+    "temp": 79.7,
+    "feels": 87.1,
+    "humidity": 80,
+    "pop": 10
+   },
+   {
+    "time": "2026-09-29T20:00",
+    "hour": 20,
+    "temp": 78.9,
+    "feels": 88.3,
+    "humidity": 83,
+    "pop": 9
+   },
+   {
+    "time": "2026-09-29T21:00",
+    "hour": 21,
+    "temp": 77.0,
+    "feels": 83.8,
+    "humidity": 86,
+    "pop": 17
+   }
+  ],
+  "current": {
+   "temp": 77.4,
+   "feels": 84.7,
+   "humidity": 85,
+   "wind_mph": 4.9,
+   "wind_dir": 93,
+   "observed_at": "2026-09-29T20:45"
+  },
+  "today": {
+   "high": 81.7,
+   "low": 75.0,
+   "feels_max": 90.2,
+   "pop_max": 59
+  },
+  "peak_feels": 90.2,
+  "peak_hour": 15
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-29T20:45:34-04:00",
+  "fetched_at": "2026-09-29T20:59:34-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-29T20:45:35-04:00",
+  "fetched_at": "2026-09-29T20:59:35-04:00",
   "aqi": 30,
   "category": "Good",
   "pollutant": "O3",
@@ -68,7 +221,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-29T20:45:35-04:00",
+  "fetched_at": "2026-09-29T20:59:35-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -81,7 +234,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-29T20:45:36-04:00",
+  "fetched_at": "2026-09-29T20:59:36-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -119,14 +272,15 @@
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 29 2026, 6:36 PM",
-   "Panhandle | Okaloosa | US-90: A major incident has closed all eastbound and westbound lanes near Rosebud Ave in Okaloosa County. Motorists are advised to seek alternate route and use caution in the area. | Sep 29 2026, 8:31 PM"
+   "Panhandle | Okaloosa | US-90: A major incident has closed all eastbound and westbound lanes near Rosebud Ave in Okaloosa County. Motorists are advised to seek alternate route and use caution in the area. | Sep 29 2026, 8:31 PM",
+   "Central | Orange | There is scheduled road work on the Florida's Turnpike, northbound at exit 254, S.R.528. All lanes are scheduled to be closed from 11pm to 5am. Motorists should follow posted detour signs to re-enter the Turnpike at exit 259, I-4. | Sep 29 2026, 8:55 PM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-29T20:45:37-04:00",
+  "fetched_at": "2026-09-29T20:59:36-04:00",
   "issued": "800 PM EDT Tue Sep 29 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 292305\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Tue Sep 29 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Hanna, located well to the east of Bermuda, and has issued the \nfinal advisory on Post-Tropical Cyclone Fay, located over the \ncentral subtropical Atlantic.  \n\nTropical cyclone formation is not expected over the next 7 days.\n\n$$\nForecaster Reinhart"
@@ -134,7 +288,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-29T20:45:37-04:00",
+  "fetched_at": "2026-09-29T20:59:36-04:00",
   "florida": "$4.2989",
   "national": "$4.4558",
   "diesel": "$6.0411",
@@ -143,7 +297,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-29T20:45:38-04:00",
+  "fetched_at": "2026-09-29T20:59:38-04:00",
   "streams": {
    "local": [
     {
@@ -382,6 +536,14 @@
   ],
   "colombia": [
    {
+    "title": "Videos del fuerte accidente del tractocamión que se estrelló contra una vivienda en la vía Lebrija - Girón, dejando 7 heridos y una persona muerta",
+    "url": "https://www.eltiempo.com/colombia/santander/videos-del-fuerte-accidente-del-tractocamion-que-se-estrello-contra-una-vivienda-en-la-via-lebrija-giron-dejando-7-heridos-y-una-persona-muerta-3590008",
+    "published": "2026-09-29T19:47:18-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/29/6abc55f9a7232.png",
+    "media_type": "image"
+   },
+   {
     "title": "Fuerte accidente se originó en Girón: tractocamión se estrelló fuertemente contra una casa y arrasó con varios carros, reportan un muerto y 7 heridos",
     "url": "https://www.eltiempo.com/colombia/santander/fuerte-accidente-se-origino-en-giron-tractocamion-se-estrello-fuertemente-contra-una-casa-y-arraso-con-varios-carros-reportan-un-muerto-y-heridos-3590001",
     "published": "2026-09-29T19:10:01-05:00",
@@ -435,14 +597,6 @@
     "published": "2026-09-29T16:59:46-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/25/6ab6983b0fdc6.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Hombre habría muerto tras atragantarse con un chorizo durante concierto de Jhonny Rivera en el Huila",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/hombre-habria-muerto-tras-atragantarse-con-un-chorizo-durante-concierto-de-jhonny-rivera-en-el-huila-3589945",
-    "published": "2026-09-29T16:55:16-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/29/6abc32e49207a.jpeg",
     "media_type": "image"
    }
   ],
@@ -516,7 +670,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-29T20:45:39-04:00",
+  "fetched_at": "2026-09-29T20:59:38-04:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -524,7 +678,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (218) + USGS (16)",
-  "fetched_at": "2026-09-29T20:45:42-04:00",
+  "fetched_at": "2026-09-29T20:59:41-04:00",
   "events": [
    {
     "lat": 29.0,
@@ -1995,7 +2149,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-29T20:45:42-04:00",
+  "fetched_at": "2026-09-29T20:59:41-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2144,8 +2298,6 @@
   "countries_matched": 8,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
