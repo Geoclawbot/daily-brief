@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-30T06:31:03-04:00",
- "generated_at_utc": "2026-09-30T10:31:03+00:00",
+ "generated_at": "2026-09-30T06:45:46-04:00",
+ "generated_at_utc": "2026-09-30T10:45:46+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 30",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-30T06:31:03-04:00",
+  "fetched_at": "2026-09-30T06:45:53-04:00",
   "curve": [
    {
     "time": "2026-09-30T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 75.8,
-   "feels": 84.4,
+   "temp": 75.9,
+   "feels": 84.3,
    "humidity": 91,
-   "wind_mph": 2.4,
-   "wind_dir": 319,
-   "observed_at": "2026-09-30T06:30"
+   "wind_mph": 2.9,
+   "wind_dir": 321,
+   "observed_at": "2026-09-30T06:45"
   },
   "today": {
    "high": 84.1,
@@ -166,89 +166,125 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-30T06:31:04-04:00",
+  "fetched_at": "2026-09-30T06:45:53-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-30T06:31:30-04:00",
-  "aqi": 56,
-  "category": "Moderate",
-  "pm25": 16.9,
-  "pm10": 18.3,
-  "observed": "2026-09-30T06:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-30T06:45:54-04:00",
+  "aqi": 31,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-30 5:00 EST",
+  "forecast": [
+   {
+    "date": "2026-09-30",
+    "aqi": 40,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-09-30",
+    "aqi": 20,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-10-01",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-10-01",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-10-02",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-10-02",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-09-30T06:31:33-04:00",
+  "fetched_at": "2026-09-30T06:45:56-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
   "depart_clock": "5:45 AM",
   "depart_at": "now",
   "miles": 19.9,
-  "minutes": 50,
-  "delay_minutes": 2,
+  "minutes": 56,
+  "delay_minutes": 3,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 20.7,
-    "minutes": 46,
+    "miles": 21.9,
+    "minutes": 50,
     "toll": true,
-    "saves": 4
+    "saves": 6
    },
    {
     "miles": 23.0,
-    "minutes": 47,
+    "minutes": 53,
     "toll": true,
     "saves": 3
    },
    {
-    "miles": 27.1,
-    "minutes": 51,
+    "miles": 27.0,
+    "minutes": 56,
     "toll": true,
-    "saves": -1
+    "saves": 0
    },
    {
-    "miles": 21.9,
-    "minutes": 47,
+    "miles": 21.3,
+    "minutes": 58,
     "toll": true,
-    "saves": 3
+    "saves": -2
    }
   ],
   "alternates_worth_taking": [],
   "free_alternates": [
    {
     "miles": 19.9,
-    "minutes": 50,
-    "delay_minutes": 2,
+    "minutes": 56,
+    "delay_minutes": 3,
     "saves": 0
    },
    {
+    "miles": 26.3,
+    "minutes": 61,
+    "delay_minutes": 0
+   },
+   {
     "miles": 22.1,
-    "minutes": 57,
+    "minutes": 61,
     "delay_minutes": 0
    },
    {
-    "miles": 23.1,
-    "minutes": 63,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 23.1,
-    "minutes": 66,
+    "miles": 22.8,
+    "minutes": 70,
     "delay_minutes": 0
    }
   ],
   "best_free": {
    "miles": 19.9,
-   "minutes": 50,
-   "delay_minutes": 2,
+   "minutes": 56,
+   "delay_minutes": 3,
    "saves": 0
   },
   "incidents": [],
@@ -260,7 +296,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-30T06:31:34-04:00",
+  "fetched_at": "2026-09-30T06:45:57-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -304,7 +340,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-30T06:31:34-04:00",
+  "fetched_at": "2026-09-30T06:45:57-04:00",
   "issued": "200 AM EDT Wed Sep 30 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 300547\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Wed Sep 30 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Hanna, located over the central subtropical Atlantic.  \n\nTropical cyclone formation is not expected over the next 7 days.\n\n$$\nForecaster Roberts"
@@ -312,7 +348,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-30T06:31:34-04:00",
+  "fetched_at": "2026-09-30T06:45:58-04:00",
   "florida": "$4.2530",
   "national": "$4.4343",
   "diesel": "$6.0074",
@@ -321,7 +357,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-30T06:31:36-04:00",
+  "fetched_at": "2026-09-30T06:45:58-04:00",
   "streams": {
    "local": [
     {
@@ -560,6 +596,14 @@
   ],
   "colombia": [
    {
+    "title": "Video | Indignación en Cali por niño amarrado a una silla en un centro de estimulación infantil: 'Rompí el platico y regué la comida'",
+    "url": "https://www.eltiempo.com/colombia/cali/video-indignacion-en-cali-por-nino-amarrado-a-una-silla-en-un-centro-de-estimulacion-infantil-rompi-el-platico-y-regue-la-comida-3590047",
+    "published": "2026-09-30T05:30:53-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/05/13/6a04f11a4ef83.webp",
+    "media_type": "image"
+   },
+   {
     "title": "¡Siga la medida! Pico y placa en Bucaramanga para el miércoles 30 de septiembre de 2026: consulte placas y horarios",
     "url": "https://www.eltiempo.com/colombia/santander/siga-la-medida-pico-y-placa-en-bucaramanga-para-el-miercoles-30-de-septiembre-de-2026-consulte-placas-y-horarios-3589886",
     "published": "2026-09-30T02:36:00-05:00",
@@ -613,14 +657,6 @@
     "published": "2026-09-29T22:48:35-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/28/6abac892abca4.r_d.356-410-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Esta es la hipótesis del fuerte accidente de camión que arrastró vehículos y chocó contra una casa en Girón, Santander: hay 6 heridos y un muerto",
-    "url": "https://www.eltiempo.com/colombia/santander/esta-es-la-hipotesis-del-fuerte-accidente-que-dejo-un-camion-estrellado-contra-una-vivienda-en-giron-hay-6-heridos-y-una-persona-muerta-3590035",
-    "published": "2026-09-29T23:45:17-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/29/6abc8530e7b36.r_d.182-255-0.png",
     "media_type": "image"
    }
   ],
@@ -694,15 +730,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-30T06:31:37-04:00",
+  "fetched_at": "2026-09-30T06:45:59-04:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (223) + USGS (21)",
-  "fetched_at": "2026-09-30T06:31:40-04:00",
+  "source": "GDACS (223) + USGS (20)",
+  "fetched_at": "2026-09-30T06:46:01-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -905,19 +941,6 @@
     "source": "USGS"
    },
    {
-    "lat": -21.3447,
-    "lon": 168.5924,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M5 — 77 km ENE of Tadine, New Caledonia",
-    "place": "77 km ENE of Tadine, New Caledonia",
-    "severity": "M5",
-    "mag": 5,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tybr",
-    "when": 1790678577409,
-    "source": "USGS"
-   },
-   {
     "lat": -58.7388,
     "lon": -26.0066,
     "kind": "earthquake",
@@ -1082,7 +1105,7 @@
     "place": "Thailand",
     "severity": "Magnitude 0",
     "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104169",
-    "when": "Wed, 30 Sep 2026 09:21:15 GMT",
+    "when": "Wed, 30 Sep 2026 10:31:31 GMT",
     "source": "GDACS"
    },
    {
@@ -2164,13 +2187,25 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032406",
     "when": "Sat, 26 Sep 2026 07:01:29 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -18.791273179371377,
+    "lon": 138.45832174643473,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 16498 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032385",
+    "when": "Fri, 25 Sep 2026 07:01:06 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 244,
+  "event_count": 243,
   "counts": {
    "red": 1,
    "orange": 9,
-   "green": 234
+   "green": 233
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2178,12 +2213,18 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-30T06:31:40-04:00",
+  "fetched_at": "2026-09-30T06:46:01-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
+     {
+      "title": "Video | Indignación en Cali por niño amarrado a una silla en un centro de estimulación infantil: 'Rompí el platico y regué la comida'",
+      "url": "https://www.eltiempo.com/colombia/cali/video-indignacion-en-cali-por-nino-amarrado-a-una-silla-en-un-centro-de-estimulacion-infantil-rompi-el-platico-y-regue-la-comida-3590047",
+      "published": "2026-09-30T05:30:53-05:00",
+      "section": "colombia"
+     },
      {
       "title": "¡Evite multas! Pico y placa en Cali para este miércoles 30 de septiembre: placas restringidas y horario",
       "url": "https://www.eltiempo.com/colombia/cali/evite-multas-pico-y-placa-en-cali-para-este-miercoles-30-de-septiembre-placas-restringidas-y-horario-3589883",
@@ -2197,8 +2238,8 @@
       "section": "colombia"
      }
     ],
-    "count": 2,
-    "issue": "¡Evite multas! Pico y placa en Cali para este miércoles 30 de septiembre: placas restringidas y horario"
+    "count": 3,
+    "issue": "Video | Indignación en Cali por niño amarrado a una silla en un centro de estimulación infantil: 'Rompí el platico y regué la comida'"
    },
    {
     "iso": "BEL",
