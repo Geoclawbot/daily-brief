@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-01T18:00:40-04:00",
- "generated_at_utc": "2026-10-01T22:00:40+00:00",
+ "generated_at": "2026-10-01T18:15:36-04:00",
+ "generated_at_utc": "2026-10-01T22:15:36+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, October 1",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-01T18:00:40-04:00",
+  "fetched_at": "2026-10-01T18:15:36-04:00",
   "curve": [
    {
     "time": "2026-10-01T05:00",
@@ -119,7 +119,7 @@
     "temp": 78.7,
     "feels": 87.1,
     "humidity": 91,
-    "pop": 31
+    "pop": 35
    },
    {
     "time": "2026-10-01T19:00",
@@ -127,7 +127,7 @@
     "temp": 78.7,
     "feels": 88.1,
     "humidity": 92,
-    "pop": 22
+    "pop": 25
    },
    {
     "time": "2026-10-01T20:00",
@@ -135,7 +135,7 @@
     "temp": 78.0,
     "feels": 87.4,
     "humidity": 92,
-    "pop": 28
+    "pop": 26
    },
    {
     "time": "2026-10-01T21:00",
@@ -143,16 +143,16 @@
     "temp": 78.0,
     "feels": 87.6,
     "humidity": 92,
-    "pop": 20
+    "pop": 19
    }
   ],
   "current": {
-   "temp": 78.7,
-   "feels": 87.1,
-   "humidity": 91,
-   "wind_mph": 7.2,
-   "wind_dir": 85,
-   "observed_at": "2026-10-01T18:00"
+   "temp": 79.0,
+   "feels": 88.3,
+   "humidity": 92,
+   "wind_mph": 6.0,
+   "wind_dir": 90,
+   "observed_at": "2026-10-01T18:15"
   },
   "today": {
    "high": 83.2,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-01T18:00:41-04:00",
+  "fetched_at": "2026-10-01T18:15:37-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-01T18:00:42-04:00",
+  "fetched_at": "2026-10-01T18:15:38-04:00",
   "aqi": 30,
   "category": "Good",
   "pm25": 4.3,
@@ -185,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-10-01T18:00:42-04:00",
+  "fetched_at": "2026-10-01T18:15:38-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -196,7 +196,7 @@
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 4866,
+    "delay_s": 5479,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-01T21:29:58Z"
@@ -204,10 +204,20 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-821 S"
+    ],
+    "delay_s": 2723,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-01T21:36:19Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "US-1 N",
      "I-95 N"
     ],
-    "delay_s": 1824,
+    "delay_s": 1940,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-10-01T21:05:57Z"
@@ -217,40 +227,51 @@
     "roads": [
      "FL-858"
     ],
-    "delay_s": 1593,
+    "delay_s": 1658,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-01T19:47:06Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 1519,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T14:16:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 S"
-    ],
-    "delay_s": 1461,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T19:17:28Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-854"
     ],
-    "delay_s": 1397,
+    "delay_s": 1403,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-01T19:54:44Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 S"
+    ],
+    "delay_s": 1270,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-01T19:17:28Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S",
+     "US-1 S"
+    ],
+    "delay_s": 1260,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-01T20:57:03Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-997"
+    ],
+    "delay_s": 1039,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-01T21:50:48Z"
    },
    {
     "county": "Miami-Dade",
@@ -259,125 +280,10 @@
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 1380,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T20:35:17Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S"
-    ],
-    "delay_s": 1373,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T21:36:19Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836",
-     "FL-836 W"
-    ],
-    "delay_s": 1307,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T20:49:38Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 1180,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T20:59:03Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 N"
-    ],
-    "delay_s": 1137,
+    "delay_s": 979,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-10-01T09:44:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-7",
-     "FL-9",
-     "US-441 N"
-    ],
-    "delay_s": 1109,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-10-01T20:57:03Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 N"
-    ],
-    "delay_s": 1044,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T19:42:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-823"
-    ],
-    "delay_s": 1026,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T19:42:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-969"
-    ],
-    "delay_s": 1021,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T20:01:02Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 937,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T21:00:25Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-932"
-    ],
-    "delay_s": 909,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T21:17:02Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-26T15:48:06Z"
+    "start": "2026-10-01T20:35:17Z"
    },
    {
     "county": "Broward",
@@ -396,8 +302,8 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "description": "Closed",
+    "start": "2026-09-26T15:48:06Z"
    },
    {
     "county": "Broward",
@@ -408,6 +314,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:05:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -428,16 +344,6 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-10-01T18:35:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-997"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-10-01T21:22:04Z"
    },
    {
     "county": "Miami-Dade",
@@ -472,12 +378,85 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 S"
+     "County Hwy-913",
+     "FL-973"
     ],
-    "delay_s": 822,
+    "delay_s": 889,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-01T19:04:14Z"
+    "start": "2026-10-01T21:48:43Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-969"
+    ],
+    "delay_s": 878,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-01T20:01:02Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 N"
+    ],
+    "delay_s": 868,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-01T09:44:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-932"
+    ],
+    "delay_s": 818,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-01T21:17:02Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 814,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-01T18:05:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836",
+     "FL-836 W"
+    ],
+    "delay_s": 808,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-01T20:49:38Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 805,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-01T14:16:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 662,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-01T21:24:14Z"
    },
    {
     "county": "Miami-Dade",
@@ -487,7 +466,7 @@
      "Florida's Tpke N",
      "FL-826 W"
     ],
-    "delay_s": 763,
+    "delay_s": 660,
     "magnitude": 3,
     "description": "Stationary traffic; Roadworks",
     "start": "2026-10-01T19:10:51Z"
@@ -495,26 +474,45 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "US-1 S",
-     "US-41 S",
-     "FL-5"
+     "FL-948"
     ],
-    "delay_s": 757,
+    "delay_s": 604,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-01T21:06:39Z"
+    "start": "2026-10-01T21:12:10Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-112 W",
+     "I-195 W"
+    ],
+    "delay_s": 587,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-01T22:03:40Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 582,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-01T19:27:46Z"
    }
   ],
-  "incident_count": 718,
-  "named_count": 261,
-  "major_count": 36,
+  "incident_count": 611,
+  "named_count": 205,
+  "major_count": 28,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-01T18:00:43-04:00",
+  "fetched_at": "2026-10-01T18:15:39-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -551,7 +549,7 @@
   ],
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
-   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Oct 1 2026, 7:22 AM",
+   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Oct 1 2026, 6:02 PM",
    "Southeast | Broward | Wet roads and rainy conditions may cause intermittent slow traffic in Broward County. Please use caution. | Oct 1 2026, 9:46 AM",
    "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Purple Alert has been issued for Raymond Rose out of Brooksville. Look for a 2001 Red Dodge Ram 2500 Fl Tag Y542FF. CALL *347. | Oct 1 2026, 1:10 PM"
   ],
@@ -563,7 +561,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-01T18:00:44-04:00",
+  "fetched_at": "2026-10-01T18:15:39-04:00",
   "issued": "200 PM EDT Thu Oct 1 2026",
   "areas": [
    {
@@ -577,7 +575,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-01T18:00:44-04:00",
+  "fetched_at": "2026-10-01T18:15:40-04:00",
   "florida": "$4.1957",
   "national": "$4.4137",
   "diesel": "$5.9538",
@@ -586,7 +584,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-01T18:00:45-04:00",
+  "fetched_at": "2026-10-01T18:15:41-04:00",
   "streams": {
    "local": [
     {
@@ -825,6 +823,14 @@
   ],
   "colombia": [
    {
+    "title": "Barranquilla | Motociclista murió tras accidente con dos buses en la Circunvalar; su padre viajaba en uno de ellos y reconoció el cuerpo",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-motociclista-murio-tras-accidente-con-dos-buses-en-la-circunvalar-su-padre-viajaba-en-uno-de-ellos-y-reconocio-el-cuerpo-3590571",
+    "published": "2026-10-01T16:30:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/01/6abed4dd71bee.png",
+    "media_type": "image"
+   },
+   {
     "title": "Video | Colapsó vivienda que había quedado afectada por terremoto de 7,4 en Pereira: organismos de emergencia verifican si hay heridos o fallecidos",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/video-colapso-vivienda-que-habia-quedado-afectada-por-terremoto-de-7-4-en-pereira-organismos-de-emergencia-verifican-si-hay-heridos-o-fallecidos-3590562",
     "published": "2026-10-01T16:10:46-05:00",
@@ -833,9 +839,9 @@
     "media_type": "image"
    },
    {
-    "title": "Uno de los más buscados en Costa Rica fue capturado en un hotel de El Poblado, en Medellín: dirigía el tráfico de estupefacientes desde Antioquia",
+    "title": "Uno de los más buscados en Costa Rica fue capturado en un hotel de Laureles, en Medellín: dirigía el tráfico de estupefacientes desde Antioquia",
     "url": "https://www.eltiempo.com/colombia/medellin/uno-de-los-mas-buscados-en-costa-rica-fue-capturado-en-un-hotel-de-el-poblado-en-medellin-dirigia-el-trafico-de-estupefacientes-desde-antioquia-3590559",
-    "published": "2026-10-01T16:03:16-05:00",
+    "published": "2026-10-01T16:59:47-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/01/6abec88da3df4.png",
     "media_type": "image"
@@ -875,17 +881,9 @@
    {
     "title": "Revuelo en redes sociales: pasajeros de un vuelo de Avianca denunciaron que pasaron la noche en el piso tras demora en la ruta de Bucaramanga- Bogotá",
     "url": "https://www.eltiempo.com/colombia/santander/revuelo-en-redes-sociales-pasajeros-de-un-vuelo-de-avianca-denunciaron-que-pasaron-la-noche-en-el-piso-tras-demora-en-la-ruta-de-bucaramanga-bogota-3590532",
-    "published": "2026-10-01T14:39:18-05:00",
+    "published": "2026-10-01T16:55:01-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/01/6abeb62b3525b.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Barranquilla: capturan a presunto ‘marcador’ de una banda de fleteo; tiene 10 anotaciones y estaría vinculado con 19 hurtos",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-capturan-a-presunto-marcador-de-una-banda-de-fleteo-tiene-10-anotaciones-y-estaria-vinculado-con-19-hurtos-3590500",
-    "published": "2026-10-01T14:30:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/01/6abe9b0e1c0d1.r_d.723-439-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -959,15 +957,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-01T18:00:46-04:00",
+  "fetched_at": "2026-10-01T18:15:42-04:00",
   "items": [],
-  "scanned": 9,
+  "scanned": 8,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (223) + USGS (16)",
-  "fetched_at": "2026-10-01T18:00:48-04:00",
+  "source": "GDACS (197) + USGS (16)",
+  "fetched_at": "2026-10-01T18:15:44-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -991,18 +989,6 @@
     "severity": "Magnitude 0",
     "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104121",
     "when": "Thu, 27 Aug 2026 08:14:48 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": 31.2958197,
-    "lon": 108.4812417,
-    "kind": "flood",
-    "level": "orange",
-    "title": "Orange flood alert in China",
-    "place": "China",
-    "severity": "Magnitude 0",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104081",
-    "when": "Fri, 07 Aug 2026 18:46:26 GMT",
     "source": "GDACS"
    },
    {
@@ -1310,18 +1296,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -4.279056209856753,
-    "lon": -50.77758373578206,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 9234 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032517",
-    "when": "Thu, 01 Oct 2026 11:00:28 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": 16.9,
     "lon": 145.1,
     "kind": "cyclone",
@@ -1331,6 +1305,18 @@
     "severity": "Tropical Storm (maximum wind speed of 194 km/h)",
     "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001332",
     "when": "Wed, 30 Sep 2026 02:12:11 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -4.279056209856753,
+    "lon": -50.77758373578206,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 9234 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032517",
+    "when": "Thu, 01 Oct 2026 11:00:28 GMT",
     "source": "GDACS"
    },
    {
@@ -1382,18 +1368,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -17.18983992529233,
-    "lon": 134.84218356606877,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 7759 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032496",
-    "when": "Wed, 30 Sep 2026 15:00:27 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -12.016839472685291,
     "lon": -50.956197006588035,
     "kind": "wildfire",
@@ -1403,6 +1377,18 @@
     "severity": "Green impact for forestfire in 5203 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032493",
     "when": "Thu, 01 Oct 2026 19:00:57 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -17.18983992529233,
+    "lon": 134.84218356606877,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 7759 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032496",
+    "when": "Wed, 30 Sep 2026 15:00:27 GMT",
     "source": "GDACS"
    },
    {
@@ -1466,18 +1452,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -16.710170128527217,
-    "lon": 130.0431376977219,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 24239 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032478",
-    "when": "Tue, 29 Sep 2026 15:01:31 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -18.258898737654047,
     "lon": 130.52055674179414,
     "kind": "wildfire",
@@ -1514,15 +1488,15 @@
     "source": "GDACS"
    },
    {
-    "lat": -12.625797475469986,
-    "lon": -65.37020879888279,
+    "lat": -16.710170128527217,
+    "lon": 130.0431376977219,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Bolivia",
-    "place": "Bolivia",
-    "severity": "Green impact for forestfire in 6031 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032484",
-    "when": "Tue, 29 Sep 2026 15:01:53 GMT",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 24239 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032478",
+    "when": "Tue, 29 Sep 2026 15:01:31 GMT",
     "source": "GDACS"
    },
    {
@@ -1562,15 +1536,15 @@
     "source": "GDACS"
    },
    {
-    "lat": 37.748,
-    "lon": 14.999,
-    "kind": "volcano",
+    "lat": -12.625797475469986,
+    "lon": -65.37020879888279,
+    "kind": "wildfire",
     "level": "green",
-    "title": "Volcanic eruption is on going for Etna in Italy",
-    "place": "Italy",
-    "severity": null,
-    "url": "https://www.gdacs.org/report.aspx?eventtype=VO&eventid=1000150",
-    "when": "Mon, 28 Sep 2026 06:12:10 GMT",
+    "title": "Green forest fire notification in Bolivia",
+    "place": "Bolivia",
+    "severity": "Green impact for forestfire in 6031 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032484",
+    "when": "Tue, 29 Sep 2026 15:01:53 GMT",
     "source": "GDACS"
    },
    {
@@ -1610,15 +1584,27 @@
     "source": "GDACS"
    },
    {
-    "lat": -17.228291738712738,
-    "lon": 135.16171107241544,
+    "lat": -15.215047656060158,
+    "lon": 14.603619749404544,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 5192 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032504",
+    "when": "Thu, 01 Oct 2026 19:02:08 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -17.41685768997074,
+    "lon": 135.1059522018725,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Australia",
     "place": "Australia",
-    "severity": "Green impact for forestfire in 5706 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032443",
-    "when": "Mon, 28 Sep 2026 07:00:31 GMT",
+    "severity": "Green impact for forestfire in 29759 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032451",
+    "when": "Mon, 28 Sep 2026 11:00:35 GMT",
     "source": "GDACS"
    },
    {
@@ -1655,30 +1641,6 @@
     "severity": "Green impact for forestfire in 5497 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032518",
     "when": "Thu, 01 Oct 2026 15:02:06 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -17.41685768997074,
-    "lon": 135.1059522018725,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 29759 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032451",
-    "when": "Mon, 28 Sep 2026 11:00:35 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -15.215047656060158,
-    "lon": 14.603619749404544,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 5192 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032504",
-    "when": "Thu, 01 Oct 2026 19:02:08 GMT",
     "source": "GDACS"
    },
    {
@@ -1727,90 +1689,6 @@
     "severity": "Green impact for forestfire in 11395 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032433",
     "when": "Mon, 28 Sep 2026 03:01:43 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -20.54104317119428,
-    "lon": 129.63118083375983,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 5727 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032424",
-    "when": "Sun, 27 Sep 2026 15:01:04 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -20.517694465889985,
-    "lon": 25.82177329320598,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Botswana",
-    "place": "Botswana",
-    "severity": "Green impact for forestfire in 9822 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032426",
-    "when": "Sun, 27 Sep 2026 15:01:10 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -12.1676452900461,
-    "lon": -65.40610650774146,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Bolivia",
-    "place": "Bolivia",
-    "severity": "Green impact for forestfire in 9991 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032473",
-    "when": "Mon, 28 Sep 2026 23:02:39 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -11.963858379704565,
-    "lon": 36.4238882104885,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Mozambique",
-    "place": "Mozambique",
-    "severity": "Green impact for forestfire in 8651 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032432",
-    "when": "Mon, 28 Sep 2026 11:01:29 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -22.39092544653083,
-    "lon": 131.5578990370819,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 5423 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032452",
-    "when": "Mon, 28 Sep 2026 19:01:38 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -15.264439295147488,
-    "lon": 15.1139974992534,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 23106 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032458",
-    "when": "Mon, 28 Sep 2026 15:02:45 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -17.451868261621872,
-    "lon": 21.51835893975368,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 6429 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032461",
-    "when": "Wed, 30 Sep 2026 15:02:03 GMT",
     "source": "GDACS"
    },
    {
@@ -1898,6 +1776,90 @@
     "source": "GDACS"
    },
    {
+    "lat": -12.1676452900461,
+    "lon": -65.40610650774146,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Bolivia",
+    "place": "Bolivia",
+    "severity": "Green impact for forestfire in 9991 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032473",
+    "when": "Mon, 28 Sep 2026 23:02:39 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -11.963858379704565,
+    "lon": 36.4238882104885,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Mozambique",
+    "place": "Mozambique",
+    "severity": "Green impact for forestfire in 8651 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032432",
+    "when": "Mon, 28 Sep 2026 11:01:29 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -22.39092544653083,
+    "lon": 131.5578990370819,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 5423 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032452",
+    "when": "Mon, 28 Sep 2026 19:01:38 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -15.264439295147488,
+    "lon": 15.1139974992534,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 23106 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032458",
+    "when": "Mon, 28 Sep 2026 15:02:45 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -17.451868261621872,
+    "lon": 21.51835893975368,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 6429 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032461",
+    "when": "Wed, 30 Sep 2026 15:02:03 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -8.370066248037531,
+    "lon": -45.432016269632385,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 6044 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032511",
+    "when": "Thu, 01 Oct 2026 07:03:23 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -12.276929337949687,
+    "lon": -50.283474975624785,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 6574 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032512",
+    "when": "Thu, 01 Oct 2026 03:03:14 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -12.06238405608371,
     "lon": 133.4421970484346,
     "kind": "wildfire",
@@ -1934,183 +1896,39 @@
     "source": "GDACS"
    },
    {
-    "lat": -8.370066248037531,
-    "lon": -45.432016269632385,
+    "lat": -12.683036250286655,
+    "lon": -47.29868870359271,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Brazil",
     "place": "Brazil",
-    "severity": "Green impact for forestfire in 6044 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032511",
-    "when": "Thu, 01 Oct 2026 07:03:23 GMT",
+    "severity": "Green impact for forestfire in 20546 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032445",
+    "when": "Mon, 28 Sep 2026 07:01:35 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -12.276929337949687,
-    "lon": -50.283474975624785,
+    "lat": -2.9893726165294847,
+    "lon": 37.2785356106204,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 6574 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032512",
-    "when": "Thu, 01 Oct 2026 03:03:14 GMT",
+    "title": "Green forest fire notification in Tanzania",
+    "place": "Tanzania",
+    "severity": "Green impact for forestfire in 21527 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032435",
+    "when": "Mon, 28 Sep 2026 11:01:59 GMT",
     "source": "GDACS"
    },
    {
-    "lat": 10.0679785,
-    "lon": -83.8669026,
-    "kind": "flood",
-    "level": "green",
-    "title": "Green flood alert in Costa Rica",
-    "place": "Costa Rica",
-    "severity": "Magnitude 0",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104197",
-    "when": "Mon, 28 Sep 2026 06:04:42 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -23.913210240839792,
-    "lon": 24.214211410973615,
+    "lat": -8.216822027621731,
+    "lon": 141.43882647476897,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Botswana",
-    "place": "Botswana",
-    "severity": "Green impact for forestfire in 5373 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032434",
-    "when": "Mon, 28 Sep 2026 15:03:50 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -17.64167116646472,
-    "lon": 19.26976619047706,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 5155 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032464",
-    "when": "Thu, 01 Oct 2026 19:05:15 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -23.87684403891357,
-    "lon": -58.75819190574687,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Paraguay",
-    "place": "Paraguay",
-    "severity": "Green impact for forestfire in 13579 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032421",
-    "when": "Sat, 26 Sep 2026 23:00:42 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -20.413306359591438,
-    "lon": 126.55475796916588,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 8905 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032428",
-    "when": "Sun, 27 Sep 2026 15:01:34 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -23.99936082699381,
-    "lon": -58.9087117919114,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Paraguay",
-    "place": "Paraguay",
-    "severity": "Green impact for forestfire in 9040 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032455",
-    "when": "Mon, 28 Sep 2026 15:02:50 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -17.013795414387616,
-    "lon": 17.730926511803922,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 5188 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032489",
-    "when": "Thu, 01 Oct 2026 19:04:03 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -16.3302829392588,
-    "lon": 14.133600802722217,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 6526 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032463",
-    "when": "Tue, 29 Sep 2026 03:04:29 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -15.489914135336834,
-    "lon": 17.41631012958871,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 5429 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032465",
-    "when": "Wed, 30 Sep 2026 15:03:10 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -15.104928716274127,
-    "lon": 14.683584622058746,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 16928 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032436",
-    "when": "Mon, 28 Sep 2026 03:03:04 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -22.480885895375838,
-    "lon": 131.4032315321478,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 29507 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032403",
-    "when": "Sat, 26 Sep 2026 07:00:37 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -20.73249214605333,
-    "lon": 127.77050130481483,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 19246 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032408",
-    "when": "Sat, 26 Sep 2026 11:00:21 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -20.40898983077431,
-    "lon": 129.6456263880784,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 13410 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032427",
-    "when": "Sun, 27 Sep 2026 15:01:25 GMT",
+    "title": "Green forest fire notification in Papua New Guinea",
+    "place": "Papua New Guinea",
+    "severity": "Green impact for forestfire in 13416 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032454",
+    "when": "Mon, 28 Sep 2026 19:02:46 GMT",
     "source": "GDACS"
    },
    {
@@ -2186,99 +2004,183 @@
     "source": "GDACS"
    },
    {
-    "lat": -12.683036250286655,
-    "lon": -47.29868870359271,
+    "lat": -16.3302829392588,
+    "lon": 14.133600802722217,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 20546 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032445",
-    "when": "Mon, 28 Sep 2026 07:01:35 GMT",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 6526 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032463",
+    "when": "Tue, 29 Sep 2026 03:04:29 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -2.9893726165294847,
-    "lon": 37.2785356106204,
+    "lat": -15.489914135336834,
+    "lon": 17.41631012958871,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Tanzania",
-    "place": "Tanzania",
-    "severity": "Green impact for forestfire in 21527 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032435",
-    "when": "Mon, 28 Sep 2026 11:01:59 GMT",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 5429 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032465",
+    "when": "Wed, 30 Sep 2026 15:03:10 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -8.216822027621731,
-    "lon": 141.43882647476897,
+    "lat": -15.104928716274127,
+    "lon": 14.683584622058746,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Papua New Guinea",
-    "place": "Papua New Guinea",
-    "severity": "Green impact for forestfire in 13416 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032454",
-    "when": "Mon, 28 Sep 2026 19:02:46 GMT",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 16928 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032436",
+    "when": "Mon, 28 Sep 2026 03:03:04 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -20.28957262177422,
-    "lon": 126.64752415552125,
+    "lat": -22.480885895375838,
+    "lon": 131.4032315321478,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Australia",
     "place": "Australia",
-    "severity": "Green impact for forestfire in 11304 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032456",
-    "when": "Mon, 28 Sep 2026 11:02:50 GMT",
+    "severity": "Green impact for forestfire in 29507 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032403",
+    "when": "Sat, 26 Sep 2026 07:00:37 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -7.5744155607049235,
-    "lon": 141.21734261331375,
+    "lat": -20.73249214605333,
+    "lon": 127.77050130481483,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Papua New Guinea",
-    "place": "Papua New Guinea",
-    "severity": "Green impact for forestfire in 5095 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032522",
-    "when": "Thu, 01 Oct 2026 19:06:53 GMT",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 19246 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032408",
+    "when": "Sat, 26 Sep 2026 11:00:21 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -6.351116563517377,
-    "lon": 140.9133353784564,
+    "lat": -20.40898983077431,
+    "lon": 129.6456263880784,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Indonesia",
-    "place": "Indonesia",
-    "severity": "Green impact for forestfire in 5043 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032519",
-    "when": "Thu, 01 Oct 2026 19:06:22 GMT",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 13410 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032427",
+    "when": "Sun, 27 Sep 2026 15:01:25 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -7.776945587743328,
-    "lon": 139.39467444733162,
+    "lat": -23.87684403891357,
+    "lon": -58.75819190574687,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Indonesia",
-    "place": "Indonesia",
-    "severity": "Green impact for forestfire in 5142 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032520",
-    "when": "Thu, 01 Oct 2026 19:06:57 GMT",
+    "title": "Green forest fire notification in Paraguay",
+    "place": "Paraguay",
+    "severity": "Green impact for forestfire in 13579 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032421",
+    "when": "Sat, 26 Sep 2026 23:00:42 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -8.229221270915088,
-    "lon": -45.452256271269384,
+    "lat": -20.413306359591438,
+    "lon": 126.55475796916588,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 5890 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032513",
-    "when": "Thu, 01 Oct 2026 03:06:31 GMT",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 8905 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032428",
+    "when": "Sun, 27 Sep 2026 15:01:34 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -23.99936082699381,
+    "lon": -58.9087117919114,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Paraguay",
+    "place": "Paraguay",
+    "severity": "Green impact for forestfire in 9040 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032455",
+    "when": "Mon, 28 Sep 2026 15:02:50 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -17.013795414387616,
+    "lon": 17.730926511803922,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 5188 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032489",
+    "when": "Thu, 01 Oct 2026 19:04:03 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -23.913210240839792,
+    "lon": 24.214211410973615,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Botswana",
+    "place": "Botswana",
+    "severity": "Green impact for forestfire in 5373 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032434",
+    "when": "Mon, 28 Sep 2026 15:03:50 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -17.64167116646472,
+    "lon": 19.26976619047706,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 5155 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032464",
+    "when": "Thu, 01 Oct 2026 19:05:15 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": 1.8814848525114387,
+    "lon": -55.98034837055373,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Suriname, Brazil",
+    "place": "Suriname, Brazil",
+    "severity": "Green impact for forestfire in 5898 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032450",
+    "when": "Mon, 28 Sep 2026 07:02:13 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -16.370754882311818,
+    "lon": 18.271016164130828,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 10210 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032415",
+    "when": "Sun, 27 Sep 2026 03:02:02 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -16.610348336118104,
+    "lon": 18.41310726307802,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 6827 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032416",
+    "when": "Sun, 27 Sep 2026 15:01:48 GMT",
     "source": "GDACS"
    },
    {
@@ -2342,51 +2244,63 @@
     "source": "GDACS"
    },
    {
-    "lat": -16.610348336118104,
-    "lon": 18.41310726307802,
+    "lat": -7.5744155607049235,
+    "lon": 141.21734261331375,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 6827 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032416",
-    "when": "Sun, 27 Sep 2026 15:01:48 GMT",
+    "title": "Green forest fire notification in Papua New Guinea",
+    "place": "Papua New Guinea",
+    "severity": "Green impact for forestfire in 5095 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032522",
+    "when": "Thu, 01 Oct 2026 19:06:53 GMT",
     "source": "GDACS"
    },
    {
-    "lat": 1.8814848525114387,
-    "lon": -55.98034837055373,
+    "lat": -6.351116563517377,
+    "lon": 140.9133353784564,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Suriname, Brazil",
-    "place": "Suriname, Brazil",
-    "severity": "Green impact for forestfire in 5898 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032450",
-    "when": "Mon, 28 Sep 2026 07:02:13 GMT",
+    "title": "Green forest fire notification in Indonesia",
+    "place": "Indonesia",
+    "severity": "Green impact for forestfire in 5043 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032519",
+    "when": "Thu, 01 Oct 2026 19:06:22 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -16.370754882311818,
-    "lon": 18.271016164130828,
+    "lat": -7.776945587743328,
+    "lon": 139.39467444733162,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 10210 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032415",
-    "when": "Sun, 27 Sep 2026 03:02:02 GMT",
+    "title": "Green forest fire notification in Indonesia",
+    "place": "Indonesia",
+    "severity": "Green impact for forestfire in 5142 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032520",
+    "when": "Thu, 01 Oct 2026 19:06:57 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -22.350316605907757,
-    "lon": 131.6502644536626,
+    "lat": -8.229221270915088,
+    "lon": -45.452256271269384,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 5890 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032513",
+    "when": "Thu, 01 Oct 2026 03:06:31 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -20.28957262177422,
+    "lon": 126.64752415552125,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Australia",
     "place": "Australia",
-    "severity": "Green impact for forestfire in 5597 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032409",
-    "when": "Sat, 26 Sep 2026 11:00:30 GMT",
+    "severity": "Green impact for forestfire in 11304 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032456",
+    "when": "Mon, 28 Sep 2026 11:02:50 GMT",
     "source": "GDACS"
    },
    {
@@ -2424,13 +2338,97 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032492",
     "when": "Wed, 30 Sep 2026 15:06:58 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -12.993763411158822,
+    "lon": 21.06423338347704,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 6699 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032395",
+    "when": "Fri, 25 Sep 2026 19:00:36 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -20.34961405258399,
+    "lon": 126.41601916507607,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 10730 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032410",
+    "when": "Sat, 26 Sep 2026 11:01:37 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -24.65429743602528,
+    "lon": -60.821394254607284,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Argentina",
+    "place": "Argentina",
+    "severity": "Green impact for forestfire in 7707 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032447",
+    "when": "Mon, 28 Sep 2026 07:02:59 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -16.266026792465365,
+    "lon": 29.579216650330526,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Zimbabwe",
+    "place": "Zimbabwe",
+    "severity": "Green impact for forestfire in 5661 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032466",
+    "when": "Tue, 29 Sep 2026 03:05:42 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -17.537129059390107,
+    "lon": 22.11171492943336,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 20848 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032418",
+    "when": "Sun, 27 Sep 2026 03:02:55 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -20.24845154814271,
+    "lon": 126.34026992241668,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 12775 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032384",
+    "when": "Fri, 25 Sep 2026 03:01:30 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -16.168160907907332,
+    "lon": 129.79581340190057,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 11874 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032404",
+    "when": "Sat, 26 Sep 2026 07:00:41 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 239,
+  "event_count": 213,
   "counts": {
    "red": 1,
-   "orange": 6,
-   "green": 232
+   "orange": 5,
+   "green": 207
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2438,16 +2436,16 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-01T18:00:48-04:00",
+  "fetched_at": "2026-10-01T18:15:44-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
      {
-      "title": "Uno de los más buscados en Costa Rica fue capturado en un hotel de El Poblado, en Medellín: dirigía el tráfico de estupefacientes desde Antioquia",
+      "title": "Uno de los más buscados en Costa Rica fue capturado en un hotel de Laureles, en Medellín: dirigía el tráfico de estupefacientes desde Antioquia",
       "url": "https://www.eltiempo.com/colombia/medellin/uno-de-los-mas-buscados-en-costa-rica-fue-capturado-en-un-hotel-de-el-poblado-en-medellin-dirigia-el-trafico-de-estupefacientes-desde-antioquia-3590559",
-      "published": "2026-10-01T16:03:16-05:00",
+      "published": "2026-10-01T16:59:47-05:00",
       "section": "colombia"
      },
      {
@@ -2465,12 +2463,12 @@
      {
       "title": "Revuelo en redes sociales: pasajeros de un vuelo de Avianca denunciaron que pasaron la noche en el piso tras demora en la ruta de Bucaramanga- Bogotá",
       "url": "https://www.eltiempo.com/colombia/santander/revuelo-en-redes-sociales-pasajeros-de-un-vuelo-de-avianca-denunciaron-que-pasaron-la-noche-en-el-piso-tras-demora-en-la-ruta-de-bucaramanga-bogota-3590532",
-      "published": "2026-10-01T14:39:18-05:00",
+      "published": "2026-10-01T16:55:01-05:00",
       "section": "colombia"
      }
     ],
     "count": 4,
-    "issue": "Uno de los más buscados en Costa Rica fue capturado en un hotel de El Poblado, en Medellín: dirigía el tráfico de estupefacientes desde Antioquia"
+    "issue": "Uno de los más buscados en Costa Rica fue capturado en un hotel de Laureles, en Medellín: dirigía el tráfico de estupefacientes desde Antioquia"
    },
    {
     "iso": "ISR",
@@ -2511,14 +2509,14 @@
     "name": "Costa Rica",
     "stories": [
      {
-      "title": "Uno de los más buscados en Costa Rica fue capturado en un hotel de El Poblado, en Medellín: dirigía el tráfico de estupefacientes desde Antioquia",
+      "title": "Uno de los más buscados en Costa Rica fue capturado en un hotel de Laureles, en Medellín: dirigía el tráfico de estupefacientes desde Antioquia",
       "url": "https://www.eltiempo.com/colombia/medellin/uno-de-los-mas-buscados-en-costa-rica-fue-capturado-en-un-hotel-de-el-poblado-en-medellin-dirigia-el-trafico-de-estupefacientes-desde-antioquia-3590559",
-      "published": "2026-10-01T16:03:16-05:00",
+      "published": "2026-10-01T16:59:47-05:00",
       "section": "colombia"
      }
     ],
     "count": 1,
-    "issue": "Uno de los más buscados en Costa Rica fue capturado en un hotel de El Poblado, en Medellín: dirigía el tráfico de estupefacientes desde Antioquia"
+    "issue": "Uno de los más buscados en Costa Rica fue capturado en un hotel de Laureles, en Medellín: dirigía el tráfico de estupefacientes desde Antioquia"
    },
    {
     "iso": "RUS",
