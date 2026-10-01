@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-01T03:30:38-04:00",
- "generated_at_utc": "2026-10-01T07:30:38+00:00",
+ "generated_at": "2026-10-01T03:45:34-04:00",
+ "generated_at_utc": "2026-10-01T07:45:34+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, October 1",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-01T03:30:39-04:00",
+  "fetched_at": "2026-10-01T03:45:35-04:00",
   "curve": [
    {
     "time": "2026-10-01T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 78.5,
-   "feels": 85.3,
+   "temp": 78.4,
+   "feels": 85.1,
    "humidity": 85,
    "wind_mph": 7.6,
-   "wind_dir": 87,
-   "observed_at": "2026-10-01T03:30"
+   "wind_dir": 69,
+   "observed_at": "2026-10-01T03:45"
   },
   "today": {
    "high": 84.2,
@@ -166,26 +166,50 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-01T03:30:39-04:00",
+  "fetched_at": "2026-10-01T03:45:35-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-01T03:31:10-04:00",
-  "aqi": 53,
-  "category": "Moderate",
-  "pm25": 6.4,
-  "pm10": 7.7,
-  "observed": "2026-10-01T03:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-10-01T03:45:36-04:00",
+  "aqi": 26,
+  "category": "Good",
+  "pollutant": "O3",
+  "reporting_area": "Miami",
+  "observed": "2026-10-01 2:00 EST",
+  "forecast": [
+   {
+    "date": "2026-10-01",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-10-01",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-10-02",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-10-02",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-10-01T03:31:12-04:00",
+  "fetched_at": "2026-10-01T03:45:38-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
@@ -260,16 +284,6 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-09-24T21:31:59Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
     "start": "2026-09-26T15:48:06Z"
    },
    {
@@ -279,8 +293,8 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "description": "Closed",
+    "start": "2026-09-24T21:31:59Z"
    },
    {
     "county": "Broward",
@@ -291,6 +305,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:05:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -366,16 +390,6 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-860"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-10-01T03:53:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-836 E"
     ],
     "delay_s": null,
@@ -426,6 +440,18 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-1 S",
+     "US-41 S",
+     "FL-5"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-10-01T07:30:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "US-1 N",
      "US-41 N",
      "FL-5"
@@ -465,17 +491,6 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-10-01T02:08:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-25",
-     "US-27 N"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks; New roadworks layout",
-    "start": "2026-10-01T03:04:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -527,7 +542,7 @@
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Roadworks",
+    "description": "Lane closed; Roadworks",
     "start": "2026-09-08T09:57:18Z"
    },
    {
@@ -537,7 +552,7 @@
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Lane closed; Roadworks",
+    "description": "Roadworks",
     "start": "2026-09-08T09:57:18Z"
    },
    {
@@ -560,17 +575,29 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-09-22T06:11:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-91 N",
+     "Florida's Tpke N",
+     "FL-826 W"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-30T19:12:30Z"
    }
   ],
-  "incident_count": 301,
-  "named_count": 35,
+  "incident_count": 299,
+  "named_count": 34,
   "major_count": 18,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-01T03:31:13-04:00",
+  "fetched_at": "2026-10-01T03:45:39-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -619,7 +646,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-01T03:31:13-04:00",
+  "fetched_at": "2026-10-01T03:45:39-04:00",
   "issued": "200 AM EDT Thu Oct 1 2026",
   "areas": [],
   "raw": "en Español\n\n422 \nABNT20 KNHC 010503\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Thu Oct 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected over the next 7 days.\n\n$$\nForecaster Gibbs"
@@ -627,7 +654,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-01T03:31:13-04:00",
+  "fetched_at": "2026-10-01T03:45:39-04:00",
   "florida": "$4.2530",
   "national": "$4.4343",
   "diesel": "$6.0074",
@@ -636,7 +663,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-01T03:31:15-04:00",
+  "fetched_at": "2026-10-01T03:45:40-04:00",
   "streams": {
    "local": [
     {
@@ -875,6 +902,14 @@
   ],
   "colombia": [
    {
+    "title": "Pico y placa en Medellín para el jueves 1 de octubre de 2026: consulte las restricciones",
+    "url": "https://www.eltiempo.com/colombia/medellin/pico-y-placa-en-medellin-para-el-jueves-1-de-octubre-de-2026-consulte-las-restricciones-3590188",
+    "published": "2026-10-01T02:30:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2023/09/19/650997ec903fb.png",
+    "media_type": "image"
+   },
+   {
     "title": "Reportan masacre en Sevilla, Valle del Cauca: un patrullero de la Policía y dos civiles fueron asesinados en un establecimiento comercial",
     "url": "https://www.eltiempo.com/colombia/cali/masacre-en-sevilla-valle-del-cauca-un-patrullero-de-la-policia-y-dos-civiles-fueron-asesinados-en-un-establecimiento-comercial-3590351",
     "published": "2026-09-30T23:02:09-05:00",
@@ -928,14 +963,6 @@
     "published": "2026-09-30T17:20:28-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/30/6abd8a17969e5.r_d.600-800-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Menor de tres años murió al caer de un piso 14 de su vivienda en Neiva, Huila, cuando estaba en compañía de su madre: 'Está destrozada'",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/menor-de-tres-anos-murio-al-caer-de-un-piso-14-de-su-vivienda-en-neiva-huila-cuando-estaba-en-compania-de-su-madre-autoridades-investigan-3590278",
-    "published": "2026-09-30T17:22:43-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/24/6ab585f44a9d7.r_d.462-304-0.png",
     "media_type": "image"
    }
   ],
@@ -1009,7 +1036,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-01T03:31:16-04:00",
+  "fetched_at": "2026-10-01T03:45:41-04:00",
   "items": [],
   "scanned": 6,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1017,7 +1044,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (214) + USGS (11)",
-  "fetched_at": "2026-10-01T03:31:19-04:00",
+  "fetched_at": "2026-10-01T03:45:44-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -1295,13 +1322,13 @@
     "source": "GDACS"
    },
    {
-    "lat": 16.7,
-    "lon": 147.9,
+    "lat": 16.9,
+    "lon": 146.8,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone CHOI-WAN-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
     "place": "Northern Mariana Islands",
-    "severity": "Tropical Storm (maximum wind speed of 204 km/h)",
+    "severity": "Tropical Storm (maximum wind speed of 194 km/h)",
     "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001332",
     "when": "Wed, 30 Sep 2026 02:12:11 GMT",
     "source": "GDACS"
@@ -2483,8 +2510,34 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-01T03:31:19-04:00",
+  "fetched_at": "2026-10-01T03:45:44-04:00",
   "countries": [
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "Pico y placa en Medellín para el jueves 1 de octubre de 2026: consulte las restricciones",
+      "url": "https://www.eltiempo.com/colombia/medellin/pico-y-placa-en-medellin-para-el-jueves-1-de-octubre-de-2026-consulte-las-restricciones-3590188",
+      "published": "2026-10-01T02:30:00-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "Música para sanar la ciudad: Enrique Bunbury regresa a Cali en un momento clave de reencuentro y reactivación",
+      "url": "https://www.eltiempo.com/colombia/cali/musica-para-sanar-la-ciudad-enrique-bunbury-regresa-a-cali-en-un-momento-clave-de-reencuentro-y-reactivacion-3590352",
+      "published": "2026-09-30T22:21:20-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "ICBF abrió proceso para restablecer los derechos de un niño atado a una silla en un centro infantil de Cali tras la denuncia en redes sociales",
+      "url": "https://www.eltiempo.com/colombia/cali/icbf-abrio-proceso-para-restablecer-los-derechos-de-un-nino-atado-a-una-silla-en-un-centro-infantil-de-cali-tras-la-denuncia-en-redes-sociales-3590247",
+      "published": "2026-09-30T19:12:26-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 3,
+    "issue": "Pico y placa en Medellín para el jueves 1 de octubre de 2026: consulte las restricciones"
+   },
    {
     "iso": "IRQ",
     "name": "Iraq",
@@ -2510,26 +2563,6 @@
     ],
     "count": 3,
     "issue": "U.S. forces exit Iraq amid Iran war. And, SCOTUS revives Trump deportation policy"
-   },
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Música para sanar la ciudad: Enrique Bunbury regresa a Cali en un momento clave de reencuentro y reactivación",
-      "url": "https://www.eltiempo.com/colombia/cali/musica-para-sanar-la-ciudad-enrique-bunbury-regresa-a-cali-en-un-momento-clave-de-reencuentro-y-reactivacion-3590352",
-      "published": "2026-09-30T22:21:20-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "ICBF abrió proceso para restablecer los derechos de un niño atado a una silla en un centro infantil de Cali tras la denuncia en redes sociales",
-      "url": "https://www.eltiempo.com/colombia/cali/icbf-abrio-proceso-para-restablecer-los-derechos-de-un-nino-atado-a-una-silla-en-un-centro-infantil-de-cali-tras-la-denuncia-en-redes-sociales-3590247",
-      "published": "2026-09-30T19:12:26-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 2,
-    "issue": "Música para sanar la ciudad: Enrique Bunbury regresa a Cali en un momento clave de reencuentro y reactivación"
    },
    {
     "iso": "IRN",
