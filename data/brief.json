@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-30T22:45:44-04:00",
- "generated_at_utc": "2026-10-01T02:45:44+00:00",
+ "generated_at": "2026-09-30T23:01:00-04:00",
+ "generated_at_utc": "2026-10-01T03:01:00+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 30",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-30T22:45:45-04:00",
+  "fetched_at": "2026-09-30T23:01:00-04:00",
   "curve": [
    {
     "time": "2026-09-30T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 79.6,
-   "feels": 87.4,
+   "temp": 79.8,
+   "feels": 86.5,
    "humidity": 88,
-   "wind_mph": 8.6,
-   "wind_dir": 129,
-   "observed_at": "2026-09-30T22:45"
+   "wind_mph": 11.2,
+   "wind_dir": 121,
+   "observed_at": "2026-09-30T23:00"
   },
   "today": {
    "high": 84.7,
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-30T22:45:45-04:00",
+  "fetched_at": "2026-09-30T23:01:01-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-30T22:45:46-04:00",
-  "aqi": 34,
-  "category": "Good",
-  "pollutant": "PM2.5",
-  "reporting_area": "Miami",
-  "observed": "2026-09-30 21:00 EST",
-  "forecast": [
-   {
-    "date": "2026-10-01",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-10-01",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-10-02",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-10-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-30T23:01:14-04:00",
+  "aqi": 56,
+  "category": "Moderate",
+  "pm25": 9.1,
+  "pm10": 10.3,
+  "observed": "2026-09-30T23:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-30T22:45:46-04:00",
+  "fetched_at": "2026-09-30T23:01:14-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -219,7 +195,7 @@
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 1828,
+    "delay_s": 1286,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-01T01:44:00Z"
@@ -252,7 +228,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -262,7 +238,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -317,12 +293,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-997"
+     "FL-9336"
     ],
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-09-30T23:43:00Z"
+    "start": "2026-10-01T02:52:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -333,6 +309,16 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-09-30T23:33:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-997"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-30T23:43:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -359,30 +345,10 @@
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 238,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 216,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-10-01T02:27:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 E"
-    ],
-    "delay_s": 137,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T01:13:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-838"
-    ],
-    "delay_s": 131,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T02:36:30Z"
    },
    {
     "county": "Broward",
@@ -390,62 +356,10 @@
      "FL-91 N",
      "Florida's Tpke N"
     ],
-    "delay_s": 129,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 26,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-10-01T01:04:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
-    ],
-    "delay_s": 128,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T02:06:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 114,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-01T02:22:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 84,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-01T02:38:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 73,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T02:34:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-811"
-    ],
-    "delay_s": 60,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-01T02:22:30Z"
    },
    {
     "county": "Broward",
@@ -521,17 +435,80 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-09-14T15:30:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-15T15:37:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-916"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-09-08T09:57:18Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-916"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-09-08T09:57:18Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-30T06:10:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-7",
+     "US-441 N"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-22T06:11:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-91 N",
+     "Florida's Tpke N",
+     "FL-826 W"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-30T19:12:30Z"
    }
   ],
-  "incident_count": 298,
-  "named_count": 40,
-  "major_count": 14,
+  "incident_count": 292,
+  "named_count": 34,
+  "major_count": 15,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-30T22:45:47-04:00",
+  "fetched_at": "2026-09-30T23:01:15-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -580,7 +557,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-30T22:45:47-04:00",
+  "fetched_at": "2026-09-30T23:01:15-04:00",
   "issued": "800 PM EDT Wed Sep 30 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 302309\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Wed Sep 30 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected over the next 7 days.\n\n$$\nForecaster Cangialosi"
@@ -588,7 +565,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-30T22:45:48-04:00",
+  "fetched_at": "2026-09-30T23:01:15-04:00",
   "florida": "$4.2530",
   "national": "$4.4343",
   "diesel": "$6.0074",
@@ -597,7 +574,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-30T22:45:48-04:00",
+  "fetched_at": "2026-09-30T23:01:16-04:00",
   "streams": {
    "local": [
     {
@@ -802,11 +779,11 @@
     "media_type": "video"
    },
    {
-    "title": "Body camera footage captures the arrest of an alleged carjacker who led police on wild pursuit across NW Miami-Dade, Hialeah",
+    "title": "Dash camera footage captures the arrest of an alleged carjacker who led police on wild pursuit across NW Miami-Dade, Hialeah",
     "url": "https://wsvn.com/news/local/miami-dade/fhp-captures-hialeah-carjacker/",
     "published": "Thu, 01 Oct 2026 02:17:47 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/29df3997-cfdf-4f37-b1aa-a2f9cefc744c/eeb64e9f-f40b-4969-9ffb-6a2529d87959/main.mp4?fastly_token=NmFiZTFiOTRfZjMwY2M5MmZiZDdmYmZjMDJhOWMxZDJiYzE3ZjFhYmM1M2MwOTY1NjBjNGY1YjFkZjU1ZTIwZTBlOWNkZjVkMF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yOWRmMzk5Ny1jZmRmLTRmMzctYjFhYS1hMmY5Y2VmYzc0NGMvZWViNjRlOWYtZjQwYi00OTY5LTlmZmItNmEyNTI5ZDg3OTU5L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/29df3997-cfdf-4f37-b1aa-a2f9cefc744c/eeb64e9f-f40b-4969-9ffb-6a2529d87959/main.mp4?fastly_token=NmFiZTIyZDdfMmI1NDhhMTk4YjY0ZWFmNzI0OTRkMjFlYTI1MmYyNzYwN2RlMjU3NTFkOTVmZjM2ODQ2MmEyNjExZWYwMjEyYV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yOWRmMzk5Ny1jZmRmLTRmMzctYjFhYS1hMmY5Y2VmYzc0NGMvZWViNjRlOWYtZjQwYi00OTY5LTlmZmItNmEyNTI5ZDg3OTU5L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -814,7 +791,7 @@
     "url": "https://wsvn.com/entertainment/tony-award-winning-musical-buena-vista-social-club-lands-in-miami/",
     "published": "Wed, 30 Sep 2026 23:18:08 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b0f7fded-4cbc-442d-9e2e-857768e74209/771d0cef-41ef-47ed-b6d3-6ed68a5c3315/main.mp4?fastly_token=NmFiZGYxNTRfNzFiYjgzZjc4MzhlNGFlOTEwMGI0ZjExZmI1OWNiOTJkNjIwYjYyMzZkMzk5ODhmMmMxMTFkNTM5M2YwZjllN18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iMGY3ZmRlZC00Y2JjLTQ0MmQtOWUyZS04NTc3NjhlNzQyMDkvNzcxZDBjZWYtNDFlZi00N2VkLWI2ZDMtNmVkNjhhNWMzMzE1L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/82d47bfb-17c6-4953-9d12-18559241fd52/f29e1273-9cc7-420d-bac6-558a648b0396/main.mp4?fastly_token=NmFiZTIxYzVfMzgwNzI5YWMwODY2MDEwZDdlY2FiYmJhODM5YmM5YzA5M2JiOTQ2NTg0MDQ3NGI5MmM3ZTc2NjQ0OWFkZGY1OV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84MmQ0N2JmYi0xN2M2LTQ5NTMtOWQxMi0xODU1OTI0MWZkNTIvZjI5ZTEyNzMtOWNjNy00MjBkLWJhYzYtNTU4YTY0OGIwMzk2L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -822,7 +799,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/miami-beach-taxi-kidnapping-arrest/",
     "published": "Wed, 30 Sep 2026 23:08:03 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/9d14d7b2-2a6d-4b16-b901-4ad688204551/24e927db-5755-4b23-868e-ef6dbd334c5b/main.mp4?fastly_token=NmFiZGVlZjJfYzdkNWFlNTU0YWY0MWY2YjRmZGNlMTk3ZjY4NGJhYjEyMTU4ZjFmOWNjNDgyOGNmZjBjMmViZGU1ODhjYmRjYV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85ZDE0ZDdiMi0yYTZkLTRiMTYtYjkwMS00YWQ2ODgyMDQ1NTEvMjRlOTI3ZGItNTc1NS00YjIzLTg2OGUtZWY2ZGJkMzM0YzViL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/95ff9633-46c8-423f-95e7-f76330727c85/0585639e-3c21-4db3-b099-de8f75da78ec/main.mp4?fastly_token=NmFiZTIxMDhfMTNjYTYxMTA0YTEwMmIxZjk2ZjVmNTRlODE5ZDIxM2IyY2IxYjE4ODRjNTUxMmJlY2I4YzdjMzNjOWQxODdhMV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85NWZmOTYzMy00NmM4LTQyM2YtOTVlNy1mNzYzMzA3MjdjODUvMDU4NTYzOWUtM2MyMS00ZGIzLWIwOTktZGU4Zjc1ZGE3OGVjL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -970,7 +947,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-30T22:45:49-04:00",
+  "fetched_at": "2026-09-30T23:01:17-04:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -978,7 +955,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (211) + USGS (14)",
-  "fetched_at": "2026-09-30T22:45:51-04:00",
+  "fetched_at": "2026-09-30T23:01:19-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -1307,8 +1284,8 @@
     "source": "GDACS"
    },
    {
-    "lat": 14.9,
-    "lon": -127.0,
+    "lat": 15.2,
+    "lon": -125.9,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone NINETEEN-E-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
@@ -1535,8 +1512,8 @@
     "source": "GDACS"
    },
    {
-    "lat": 18.8,
-    "lon": -108.0,
+    "lat": 19.2,
+    "lon": -108.5,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone RACHEL-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
@@ -2447,7 +2424,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-30T22:45:51-04:00",
+  "fetched_at": "2026-09-30T23:01:19-04:00",
   "countries": [
    {
     "iso": "IRQ",
