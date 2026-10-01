@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-30T21:30:42-04:00",
- "generated_at_utc": "2026-10-01T01:30:42+00:00",
+ "generated_at": "2026-09-30T21:45:45-04:00",
+ "generated_at_utc": "2026-10-01T01:45:45+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 30",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-30T21:30:43-04:00",
+  "fetched_at": "2026-09-30T21:45:45-04:00",
   "curve": [
    {
     "time": "2026-09-30T05:00",
@@ -148,11 +148,11 @@
   ],
   "current": {
    "temp": 78.7,
-   "feels": 87.6,
-   "humidity": 88,
-   "wind_mph": 4.2,
-   "wind_dir": 126,
-   "observed_at": "2026-09-30T21:30"
+   "feels": 88.3,
+   "humidity": 90,
+   "wind_mph": 3.9,
+   "wind_dir": 149,
+   "observed_at": "2026-09-30T21:45"
   },
   "today": {
    "high": 84.7,
@@ -166,40 +166,54 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-30T21:30:43-04:00",
+  "fetched_at": "2026-09-30T21:45:45-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-09-30T21:30:44-04:00",
-  "aqi": 57,
-  "category": "Moderate",
-  "pm25": 8.6,
-  "pm10": 9.7,
-  "observed": "2026-09-30T21:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "source": "AirNow (EPA)",
+  "fetched_at": "2026-09-30T21:45:46-04:00",
+  "aqi": 34,
+  "category": "Good",
+  "pollutant": "PM2.5",
+  "reporting_area": "Miami",
+  "observed": "2026-09-30 20:00 EST",
+  "forecast": [
+   {
+    "date": "2026-10-01",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-10-01",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   },
+   {
+    "date": "2026-10-02",
+    "aqi": 45,
+    "category": "Good",
+    "pollutant": "O3"
+   },
+   {
+    "date": "2026-10-02",
+    "aqi": 35,
+    "category": "Good",
+    "pollutant": "PM2.5"
+   }
+  ]
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-30T21:30:45-04:00",
+  "fetched_at": "2026-09-30T21:45:47-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-26T15:48:06Z"
-   },
    {
     "county": "Broward",
     "roads": [
@@ -217,8 +231,8 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "description": "Closed",
+    "start": "2026-09-26T15:48:06Z"
    },
    {
     "county": "Broward",
@@ -229,6 +243,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -321,22 +345,12 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 363,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T00:43:00Z"
-   },
-   {
     "county": "Broward",
     "roads": [
      "FL-91 N",
      "Florida's Tpke N"
     ],
-    "delay_s": 284,
+    "delay_s": 296,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-01T01:04:00Z"
@@ -344,11 +358,42 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-976"
+    ],
+    "delay_s": 200,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-01T00:43:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 196,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-01T01:39:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Florida's Tpke N",
+     "FL-821 N"
+    ],
+    "delay_s": 176,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-01T01:35:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-836 E"
     ],
-    "delay_s": 252,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 158,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-10-01T01:13:30Z"
    },
    {
@@ -357,7 +402,7 @@
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 231,
+    "delay_s": 145,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-10-01T00:04:00Z"
@@ -365,22 +410,11 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 N",
-     "FL-5"
-    ],
-    "delay_s": 183,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-01T01:26:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-836 W"
     ],
-    "delay_s": 119,
-    "magnitude": 1,
-    "description": "Slow traffic",
+    "delay_s": 124,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-10-01T00:58:30Z"
    },
    {
@@ -388,17 +422,37 @@
     "roads": [
      "FL-972"
     ],
-    "delay_s": 98,
+    "delay_s": 84,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-10-01T01:11:00Z"
+    "start": "2026-10-01T01:41:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-814"
+    ],
+    "delay_s": 82,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-01T01:37:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-948"
+    ],
+    "delay_s": 55,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-01T01:33:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826 N"
     ],
-    "delay_s": 63,
+    "delay_s": 37,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-10-01T01:11:30Z"
@@ -466,47 +520,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-09-14T15:30:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-972"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-15T15:37:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-10-01T01:14:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-916"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-09-08T09:57:18Z"
    }
   ],
-  "incident_count": 285,
-  "named_count": 38,
+  "incident_count": 287,
+  "named_count": 41,
   "major_count": 13,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-30T21:30:46-04:00",
+  "fetched_at": "2026-09-30T21:45:48-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -544,15 +568,14 @@
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 30 2026, 6:10 PM",
-   "Northeast | Clay | Green Cove Springs: there is lane blocking construction on US-17 between Verdad St and Russell Rd. Use caution in the area. | Sep 30 2026, 8:30 PM",
-   "Northeast | Putnam | Satsuma: Due to a crash, US-17 at Hoot Owl Rd all NB lanes are blocked. Use caution and seek an alternate route. | Sep 30 2026, 9:09 PM"
+   "Northeast | Clay | Green Cove Springs: there is lane blocking construction on US-17 between Verdad St and Russell Rd. Use caution in the area. | Sep 30 2026, 8:30 PM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-30T21:30:46-04:00",
+  "fetched_at": "2026-09-30T21:45:48-04:00",
   "issued": "800 PM EDT Wed Sep 30 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 302309\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Wed Sep 30 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected over the next 7 days.\n\n$$\nForecaster Cangialosi"
@@ -560,7 +583,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-30T21:30:47-04:00",
+  "fetched_at": "2026-09-30T21:45:48-04:00",
   "florida": "$4.2530",
   "national": "$4.4343",
   "diesel": "$6.0074",
@@ -569,7 +592,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-30T21:30:48-04:00",
+  "fetched_at": "2026-09-30T21:45:49-04:00",
   "streams": {
    "local": [
     {
@@ -942,7 +965,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-30T21:30:49-04:00",
+  "fetched_at": "2026-09-30T21:45:50-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -950,7 +973,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (211) + USGS (15)",
-  "fetched_at": "2026-09-30T21:30:52-04:00",
+  "fetched_at": "2026-09-30T21:45:53-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -1076,6 +1099,19 @@
     "source": "USGS"
    },
    {
+    "lat": 36.0991,
+    "lon": 68.7818,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M5.2 — 7 km ESE of Baghlān, Afghanistan",
+    "place": "7 km ESE of Baghlān, Afghanistan",
+    "severity": "M5.2",
+    "mag": 5.2,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tyny",
+    "when": 1790818160694,
+    "source": "USGS"
+   },
+   {
     "lat": -63.5619,
     "lon": 171.414,
     "kind": "earthquake",
@@ -1164,19 +1200,6 @@
     "mag": 4.9,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tykw",
     "when": 1790793382667,
-    "source": "USGS"
-   },
-   {
-    "lat": 13.0922,
-    "lon": 120.4734,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.8 — 18 km SW of Tayaman, Philippines",
-    "place": "18 km SW of Tayaman, Philippines",
-    "severity": "M4.8",
-    "mag": 4.8,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tygs",
-    "when": 1790732045751,
     "source": "USGS"
    },
    {
@@ -2420,7 +2443,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-30T21:30:52-04:00",
+  "fetched_at": "2026-09-30T21:45:53-04:00",
   "countries": [
    {
     "iso": "IRQ",
