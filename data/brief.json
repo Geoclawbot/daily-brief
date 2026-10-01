@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-01T06:00:46-04:00",
- "generated_at_utc": "2026-10-01T10:00:46+00:00",
+ "generated_at": "2026-10-01T06:15:46-04:00",
+ "generated_at_utc": "2026-10-01T10:15:46+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, October 1",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-01T06:00:46-04:00",
+  "fetched_at": "2026-10-01T06:15:47-04:00",
   "curve": [
    {
     "time": "2026-10-01T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 78.8,
+   "temp": 78.9,
    "feels": 86.1,
    "humidity": 86,
-   "wind_mph": 7.4,
-   "wind_dir": 87,
-   "observed_at": "2026-10-01T06:00"
+   "wind_mph": 7.8,
+   "wind_dir": 90,
+   "observed_at": "2026-10-01T06:15"
   },
   "today": {
    "high": 86.0,
@@ -166,19 +166,19 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-01T06:00:47-04:00",
+  "fetched_at": "2026-10-01T06:15:47-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "AirNow (EPA)",
-  "fetched_at": "2026-10-01T06:00:48-04:00",
-  "aqi": 28,
+  "fetched_at": "2026-10-01T06:15:48-04:00",
+  "aqi": 25,
   "category": "Good",
   "pollutant": "O3",
   "reporting_area": "Miami",
-  "observed": "2026-10-01 4:00 EST",
+  "observed": "2026-10-01 5:00 EST",
   "forecast": [
    {
     "date": "2026-10-01",
@@ -209,38 +209,38 @@
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-10-01T06:00:50-04:00",
+  "fetched_at": "2026-10-01T06:15:50-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
   "depart_clock": "5:45 AM",
   "depart_at": "now",
   "miles": 19.9,
-  "minutes": 44,
+  "minutes": 46,
   "delay_minutes": 0,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 27.1,
-    "minutes": 40,
-    "toll": true,
-    "saves": 4
-   },
-   {
-    "miles": 24.7,
-    "minutes": 40,
-    "toll": true,
-    "saves": 4
-   },
-   {
     "miles": 20.7,
-    "minutes": 42,
+    "minutes": 44,
     "toll": true,
     "saves": 2
    },
    {
-    "miles": 23.9,
-    "minutes": 42,
+    "miles": 27.1,
+    "minutes": 44,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 24.7,
+    "minutes": 44,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 21.9,
+    "minutes": 44,
     "toll": true,
     "saves": 2
    }
@@ -249,33 +249,43 @@
   "free_alternates": [
    {
     "miles": 19.9,
-    "minutes": 44,
+    "minutes": 46,
     "delay_minutes": 0,
     "saves": 0
    },
    {
-    "miles": 26.1,
+    "miles": 22.1,
     "minutes": 54,
     "delay_minutes": 0
    },
    {
-    "miles": 21.7,
-    "minutes": 50,
+    "miles": 23.1,
+    "minutes": 60,
     "delay_minutes": 0
    },
    {
     "miles": 22.8,
-    "minutes": 58,
+    "minutes": 64,
     "delay_minutes": 0
    }
   ],
   "best_free": {
    "miles": 19.9,
-   "minutes": 44,
+   "minutes": 46,
    "delay_minutes": 0,
    "saves": 0
   },
   "incidents": [
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 N"
+    ],
+    "delay_s": 1121,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-01T09:28:30Z"
+   },
    {
     "county": "Broward",
     "roads": [
@@ -369,34 +379,10 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 S",
-     "US-41 S",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-10-01T07:30:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-41 N",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-10-01T05:08:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "Florida's Tpke N",
      "FL-821 N"
     ],
-    "delay_s": 879,
+    "delay_s": 861,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-10-01T09:24:00Z"
@@ -404,12 +390,106 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 N"
+     "FL-997"
     ],
-    "delay_s": 726,
+    "delay_s": 553,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-01T09:28:30Z"
+    "start": "2026-10-01T10:08:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 371,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-01T10:07:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-994"
+    ],
+    "delay_s": 361,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-01T09:59:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 N"
+    ],
+    "delay_s": 310,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-01T09:44:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 285,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-01T10:08:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 248,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-01T09:54:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Florida's Tpke N",
+     "FL-821 N"
+    ],
+    "delay_s": 239,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-01T10:02:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 N"
+    ],
+    "delay_s": 236,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-01T09:52:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-997"
+    ],
+    "delay_s": 207,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-01T10:05:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 174,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-01T10:12:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -418,7 +498,7 @@
      "S Dade Expy N",
      "FL-874 N"
     ],
-    "delay_s": 148,
+    "delay_s": 160,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-10-01T09:30:00Z"
@@ -426,33 +506,35 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-27 S",
+     "FL-25"
+    ],
+    "delay_s": 129,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-01T10:13:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "US-1 N",
      "FL-5"
     ],
-    "delay_s": 131,
+    "delay_s": 127,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-10-01T09:53:30Z"
+    "start": "2026-10-01T10:07:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 S"
+     "FL-826 S",
+     "FL-826 W"
     ],
-    "delay_s": 124,
+    "delay_s": 96,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-10-01T09:50:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-974"
-    ],
-    "delay_s": 123,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T09:35:30Z"
+    "start": "2026-10-01T10:10:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -461,38 +543,28 @@
     ],
     "delay_s": 81,
     "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-10-01T09:54:00Z"
+    "description": "Slow traffic",
+    "start": "2026-10-01T10:09:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 N"
+     "FL-974"
     ],
-    "delay_s": 70,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-01T09:52:00Z"
+    "delay_s": 65,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-01T10:05:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826 N"
     ],
-    "delay_s": 50,
+    "delay_s": 40,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-10-01T09:44:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 29,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-01T09:58:00Z"
+    "start": "2026-10-01T10:13:00Z"
    },
    {
     "county": "Broward",
@@ -513,90 +585,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-09-10T03:16:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-04T08:47:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-25",
-     "US-27 N"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-10T23:07:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-14T15:30:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-972"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-15T15:37:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-916"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-09-08T09:57:18Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-916"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-08T09:57:18Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-30T06:10:30Z"
    }
   ],
-  "incident_count": 296,
-  "named_count": 35,
-  "major_count": 13,
+  "incident_count": 309,
+  "named_count": 42,
+  "major_count": 11,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-01T06:00:51-04:00",
+  "fetched_at": "2026-10-01T06:15:50-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -633,14 +632,14 @@
   ],
   "fl511_all": [
    "Southwest | Lee | Downtown Fort Myers: Delays are expected along the northbound lanes of the Edison Bridge over the Caloosahatchee River due to construction. Motorists are advised to reduce speed and use caution while approaching the area. | Aug 12 2026, 4:28 PM",
-   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Oct 1 2026, 5:15 AM"
+   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Oct 1 2026, 6:05 AM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-01T06:00:51-04:00",
+  "fetched_at": "2026-10-01T06:15:50-04:00",
   "issued": "200 AM EDT Thu Oct 1 2026",
   "areas": [],
   "raw": "en Español\n\n422 \nABNT20 KNHC 010503\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Thu Oct 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected over the next 7 days.\n\n$$\nForecaster Gibbs"
@@ -648,7 +647,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-01T06:00:51-04:00",
+  "fetched_at": "2026-10-01T06:15:51-04:00",
   "florida": "$4.1957",
   "national": "$4.4137",
   "diesel": "$5.9538",
@@ -657,7 +656,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-01T06:00:52-04:00",
+  "fetched_at": "2026-10-01T06:15:51-04:00",
   "streams": {
    "local": [
     {
@@ -765,70 +764,6 @@
    }
   ],
   "local": [
-   {
-    "title": "Father says he called police after finding 4 children alone while mother was on cruise",
-    "url": "https://www.local10.com/news/local/2026/09/30/father-says-he-called-police-after-finding-4-children-alone-while-mother-was-on-cruise/",
-    "published": "Wed, 30 Sep 2026 22:32:23 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Scientists explore turning beach sargassum into fish food",
-    "url": "https://www.local10.com/news/local/2026/09/30/scientists-explore-turning-beach-sargassum-into-fish-food/",
-    "published": "Thu, 01 Oct 2026 02:40:57 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Taxi driver accused of scheme targeting vulnerable victims in South Beach",
-    "url": "https://www.local10.com/news/local/2026/09/30/taxi-driver-accused-of-scheme-targeting-vulnerable-victims-in-south-beach/",
-    "published": "Thu, 01 Oct 2026 02:27:04 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "More than 27,000 tickets issued for drivers passing Miami-Dade school buses",
-    "url": "https://www.local10.com/news/local/2026/09/30/more-than-27000-tickets-issued-for-drivers-passing-miami-dade-school-buses/",
-    "published": "Thu, 01 Oct 2026 00:51:21 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Carnegie Mellon announces new Miami campus after historic $3 billion gift from Ken Griffin",
-    "url": "https://www.local10.com/news/local/2026/09/30/carnegie-mellon-announces-new-miami-campus-after-historic-3-billion-gift-from-ken-griffin/",
-    "published": "Wed, 30 Sep 2026 11:59:05 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Testimony continues in case of Haitian president’s assassination",
-    "url": "https://www.local10.com/news/local/2026/09/30/testimony-continues-in-case-of-haitian-presidents-assassination/",
-    "published": "Wed, 30 Sep 2026 22:27:52 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "‘Horrific’ evidence revisited as jury weighs death penalty in 2012 triple homicide case",
-    "url": "https://www.local10.com/news/local/2026/09/30/horrific-evidence-revisited-as-jury-weighs-death-penalty-in-2012-triple-homicide-case/",
-    "published": "Wed, 30 Sep 2026 19:49:05 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Family questions use of force in BSO K-9 arrest",
-    "url": "https://www.local10.com/news/local/2026/09/30/family-questions-use-of-force-in-bso-k-9-arrest/",
-    "published": "Wed, 30 Sep 2026 21:39:04 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
    {
     "title": "La Casa de los Trucos enters 54th year supplying Miami’s Halloween costume needs",
     "url": "https://wsvn.com/entertainment/little-havana-halloween-costumes/",
@@ -962,6 +897,14 @@
   ],
   "world": [
    {
+    "title": "Picanha, prices and politics: What Brazil's favorite steak says about the election",
+    "url": "https://www.npr.org/2026/10/01/nx-s1-5986079/picanha-election-brazil-economy",
+    "published": "Thu, 01 Oct 2026 06:00:00 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Swiss glaciers suffer another year of record ice loss",
     "url": "https://www.npr.org/2026/09/30/nx-s1-5981403/swiss-glaciers-climate-change",
     "published": "Wed, 30 Sep 2026 19:00:00 -0400",
@@ -1016,29 +959,21 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "An 87-year-old woman whose eviction sparked protests in Spain is returning home",
-    "url": "https://www.npr.org/2026/09/30/nx-s1-5985703/woman-eviction-protests-spain",
-    "published": "Wed, 30 Sep 2026 03:07:42 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-01T06:00:53-04:00",
+  "fetched_at": "2026-10-01T06:15:51-04:00",
   "items": [],
-  "scanned": 5,
+  "scanned": 0,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
   "source": "GDACS (215) + USGS (13)",
-  "fetched_at": "2026-10-01T06:00:56-04:00",
+  "fetched_at": "2026-10-01T06:15:54-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -2506,7 +2441,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-01T06:00:56-04:00",
+  "fetched_at": "2026-10-01T06:15:54-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2587,18 +2522,18 @@
     "issue": "U.S. forces exit Iraq amid Iran war. And, SCOTUS revives Trump deportation policy"
    },
    {
-    "iso": "HTI",
-    "name": "Haiti",
+    "iso": "BRA",
+    "name": "Brazil",
     "stories": [
      {
-      "title": "Testimony continues in case of Haitian president’s assassination",
-      "url": "https://www.local10.com/news/local/2026/09/30/testimony-continues-in-case-of-haitian-presidents-assassination/",
-      "published": "Wed, 30 Sep 2026 22:27:52 +0000",
-      "section": "local"
+      "title": "Picanha, prices and politics: What Brazil's favorite steak says about the election",
+      "url": "https://www.npr.org/2026/10/01/nx-s1-5986079/picanha-election-brazil-economy",
+      "published": "Thu, 01 Oct 2026 06:00:00 -0400",
+      "section": "world"
      }
     ],
     "count": 1,
-    "issue": "Testimony continues in case of Haitian president’s assassination"
+    "issue": "Picanha, prices and politics: What Brazil's favorite steak says about the election"
    },
    {
     "iso": "ISR",
@@ -2627,20 +2562,6 @@
     ],
     "count": 1,
     "issue": "How Ukrainians are coping with new, more deadly Russian attacks"
-   },
-   {
-    "iso": "ESP",
-    "name": "Spain",
-    "stories": [
-     {
-      "title": "An 87-year-old woman whose eviction sparked protests in Spain is returning home",
-      "url": "https://www.npr.org/2026/09/30/nx-s1-5985703/woman-eviction-protests-spain",
-      "published": "Wed, 30 Sep 2026 03:07:42 -0400",
-      "section": "world"
-     }
-    ],
-    "count": 1,
-    "issue": "An 87-year-old woman whose eviction sparked protests in Spain is returning home"
    },
    {
     "iso": "CHE",
@@ -2685,8 +2606,8 @@
     "issue": "How Ukrainians are coping with new, more deadly Russian attacks"
    }
   ],
-  "headlines_scanned": 32,
-  "countries_matched": 10,
+  "headlines_scanned": 24,
+  "countries_matched": 9,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
