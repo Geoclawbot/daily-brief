@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-30T22:15:33-04:00",
- "generated_at_utc": "2026-10-01T02:15:33+00:00",
+ "generated_at": "2026-09-30T22:30:54-04:00",
+ "generated_at_utc": "2026-10-01T02:30:54+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 30",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-30T22:15:34-04:00",
+  "fetched_at": "2026-09-30T22:30:55-04:00",
   "curve": [
    {
     "time": "2026-09-30T05:00",
@@ -140,23 +140,23 @@
    {
     "time": "2026-09-30T21:00",
     "hour": 21,
-    "temp": 78.7,
-    "feels": 85.2,
+    "temp": 79.3,
+    "feels": 86.6,
     "humidity": 82,
     "pop": 14
    }
   ],
   "current": {
-   "temp": 78.4,
-   "feels": 85.8,
-   "humidity": 89,
-   "wind_mph": 7.9,
-   "wind_dir": 119,
-   "observed_at": "2026-09-30T22:15"
+   "temp": 79.6,
+   "feels": 88.2,
+   "humidity": 92,
+   "wind_mph": 8.2,
+   "wind_dir": 131,
+   "observed_at": "2026-09-30T22:30"
   },
   "today": {
    "high": 84.7,
-   "low": 75.1,
+   "low": 75.8,
    "feels_max": 93.5,
    "pop_max": 67
   },
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-30T22:15:34-04:00",
+  "fetched_at": "2026-09-30T22:30:55-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-30T22:15:34-04:00",
-  "aqi": 27,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-30 21:00 EST",
-  "forecast": [
-   {
-    "date": "2026-10-01",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-10-01",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-10-02",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-10-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-30T22:31:28-04:00",
+  "aqi": 56,
+  "category": "Moderate",
+  "pm25": 8.8,
+  "pm10": 9.9,
+  "observed": "2026-09-30T22:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-30T22:15:34-04:00",
+  "fetched_at": "2026-09-30T22:31:28-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -219,7 +195,7 @@
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 2122,
+    "delay_s": 2901,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-01T01:44:00Z"
@@ -267,12 +243,12 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-870"
+     "I-95 N"
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-09-26T23:14:30Z"
+    "description": "Closed",
+    "start": "2026-10-01T02:16:00Z"
    },
    {
     "county": "Broward",
@@ -360,29 +336,7 @@
      "Florida's Tpke N",
      "FL-821 N"
     ],
-    "delay_s": 241,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-01T01:46:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 224,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-01T01:04:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
-    ],
-    "delay_s": 165,
+    "delay_s": 189,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-01T02:06:00Z"
@@ -390,32 +344,96 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 184,
+    "magnitude": 2,
+    "description": "Queuing traffic; Roadworks",
+    "start": "2026-10-01T02:27:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 N",
+     "Florida's Tpke N"
+    ],
+    "delay_s": 167,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-01T01:04:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-836 E"
     ],
-    "delay_s": 112,
+    "delay_s": 150,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-01T01:13:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 119,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-10-01T01:13:30Z"
+    "start": "2026-10-01T02:25:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-814"
     ],
-    "delay_s": 77,
+    "delay_s": 76,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-10-01T01:37:00Z"
    },
    {
+    "county": "Broward",
+    "roads": [
+     "FL-84"
+    ],
+    "delay_s": 74,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-01T02:27:30Z"
+   },
+   {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 N"
+     "FL-836 W"
     ],
-    "delay_s": 32,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-01T02:04:30Z"
+    "delay_s": 73,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-01T02:22:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-811"
+    ],
+    "delay_s": 65,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-01T02:22:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 44,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-01T02:29:00Z"
    },
    {
     "county": "Broward",
@@ -480,58 +498,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-09-10T23:07:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-14T15:30:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-972"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-15T15:37:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-10-01T01:14:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-916"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Lane closed; Roadworks",
-    "start": "2026-09-08T09:57:18Z"
    }
   ],
-  "incident_count": 286,
-  "named_count": 38,
+  "incident_count": 298,
+  "named_count": 41,
   "major_count": 14,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-30T22:15:35-04:00",
+  "fetched_at": "2026-09-30T22:31:29-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -571,16 +548,16 @@
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Sep 30 2026, 6:10 PM",
    "Northeast | Clay | Green Cove Springs: there is lane blocking construction on US-17 between Verdad St and Russell Rd. Use caution in the area. | Sep 30 2026, 8:30 PM",
    "Central | Orange | There is scheduled road work on Florida's Turnpike, northbound and southbound between exit 242, U.S 192 and exit 249, Osceola Parkway. All lanes are scheduled to be closed from 10 PM-5 AM. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 30 2026, 10:06 PM",
-   "Southeast | Miami-Dade | There is scheduled road work on the Florida's Turnpike Northbound at exit 12, Caribbean Boulevard. All lanes are scheduled to be closed from 10pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 30 2026, 10:14 PM"
+   "Southeast | Miami-Dade | There is scheduled road work on the Florida's Turnpike Northbound at exit 12, Caribbean Boulevard. All lanes are scheduled to be closed from 10pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 30 2026, 10:16 PM"
   ],
   "fl511_local": [
-   "Southeast | Miami-Dade | There is scheduled road work on the Florida's Turnpike Northbound at exit 12, Caribbean Boulevard. All lanes are scheduled to be closed from 10pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 30 2026, 10:14 PM"
+   "Southeast | Miami-Dade | There is scheduled road work on the Florida's Turnpike Northbound at exit 12, Caribbean Boulevard. All lanes are scheduled to be closed from 10pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike. | Sep 30 2026, 10:16 PM"
   ]
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-30T22:15:35-04:00",
+  "fetched_at": "2026-09-30T22:31:29-04:00",
   "issued": "800 PM EDT Wed Sep 30 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 302309\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Wed Sep 30 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected over the next 7 days.\n\n$$\nForecaster Cangialosi"
@@ -588,7 +565,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-30T22:15:35-04:00",
+  "fetched_at": "2026-09-30T22:31:29-04:00",
   "florida": "$4.2530",
   "national": "$4.4343",
   "diesel": "$6.0074",
@@ -597,7 +574,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-30T22:15:37-04:00",
+  "fetched_at": "2026-09-30T22:31:31-04:00",
   "streams": {
    "local": [
     {
@@ -706,6 +683,14 @@
   ],
   "local": [
    {
+    "title": "Taxi driver accused of scheme targeting vulnerable victims in South Beach",
+    "url": "https://www.local10.com/news/local/2026/09/30/taxi-driver-accused-of-scheme-targeting-vulnerable-victims-in-south-beach/",
+    "published": "Thu, 01 Oct 2026 02:27:04 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "More than 27,000 tickets issued for drivers passing Miami-Dade school buses",
     "url": "https://www.local10.com/news/local/2026/09/30/more-than-27000-tickets-issued-for-drivers-passing-miami-dade-school-buses/",
     "published": "Thu, 01 Oct 2026 00:51:21 +0000",
@@ -762,14 +747,6 @@
     "media_type": "image"
    },
    {
-    "title": "Students evaluated after pepper spray incident at Glades Middle School in Miramar",
-    "url": "https://www.local10.com/news/local/2026/09/30/students-evaluated-after-pepper-spray-incident-at-glades-middle-school-in-miramar/",
-    "published": "Wed, 30 Sep 2026 16:53:30 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "La Casa de los Trucos enters 54th year supplying Miami’s Halloween costume needs",
     "url": "https://wsvn.com/entertainment/little-havana-halloween-costumes/",
     "published": "Wed, 30 Sep 2026 20:45:41 +0000",
@@ -786,19 +763,27 @@
     "media_type": "video"
    },
    {
-    "title": "Taxi driver arrested after police say he stole intoxicated passenger’s phone in Miami Beach fraud scheme",
-    "url": "https://wsvn.com/news/local/taxidriver-kidnapping-fraud-arrest/",
-    "published": "Wed, 30 Sep 2026 19:45:34 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c1222609-65d6-42d8-8a5d-a318b225e3de/6302ca39-600c-4366-9a80-edeb8df004df/main.mp4?fastly_token=NmFiZGMwZWNfOTNjMmIzOThiYWFhNGFiNmNmZWIyZDZlMjVhZDJiODE1MGUyZjkyMjBjNjE5MjE4NDk5YjI5MWE5MzdkMjFhY18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jMTIyMjYwOS02NWQ2LTQyZDgtOGE1ZC1hMzE4YjIyNWUzZGUvNjMwMmNhMzktNjAwYy00MzY2LTlhODAtZWRlYjhkZjAwNGRmL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
     "title": "New Broward voting machines get tested for logic, accuracy ahead of general election",
     "url": "https://wsvn.com/news/local/broward/new-broward-voting-machines-get-tested-for-logic-accuracy-ahead-of-general-election/",
     "published": "Wed, 30 Sep 2026 20:37:22 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/32c3ffea-e445-48cf-9ad0-8b84f3988d3b/25da3eef-e4b4-4eea-95d9-3588a1f774aa/main.mp4?fastly_token=NmFiZGNiMjNfNDE1MjBjOTRmMDgyZTk0NGNlOGZjZTgyYmIzM2JhZGU2ZjE5MWU5OWE2OGU3ZGIxNDI4ZDUxYWJjODI5MmYyZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zMmMzZmZlYS1lNDQ1LTQ4Y2YtOWFkMC04Yjg0ZjM5ODhkM2IvMjVkYTNlZWYtZTRiNC00ZWVhLTk1ZDktMzU4OGExZjc3NGFhL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Man arrested for setting fire to 3 cars, ATV in Homestead driveway arson investigation",
+    "url": "https://wsvn.com/news/local/miami-dade/man-arrested-for-setting-fire-to-3-cars-atv-in-homestead-driveway-arson-investigation/",
+    "published": "Wed, 30 Sep 2026 22:31:11 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/9a441903-15d0-4267-9cf3-e7f057a5837f/4beea1d1-bb88-4c42-8a48-05d47aac66e2/main.mp4?fastly_token=NmFiZGU2MmNfYjNlYTMzOGQxMThlMzNjOGEyZGQxNTZjOTZiY2FmZDI0NTI0Zjg5MWZjYjM0N2Y4MzAxMTQzMmJhYTA1MWNlYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85YTQ0MTkwMy0xNWQwLTQyNjctOWNmMy1lN2YwNTdhNTgzN2YvNGJlZWExZDEtYmI4OC00YzQyLThhNDgtMDVkNDdhYWM2NmUyL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Body camera footage captures the arrest of an alleged carjacker who led police on wild pursuit across NW Miami-Dade, Hialeah",
+    "url": "https://wsvn.com/news/local/miami-dade/fhp-captures-hialeah-carjacker/",
+    "published": "Thu, 01 Oct 2026 02:17:47 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/29df3997-cfdf-4f37-b1aa-a2f9cefc744c/eeb64e9f-f40b-4969-9ffb-6a2529d87959/main.mp4?fastly_token=NmFiZTFiOTRfZjMwY2M5MmZiZDdmYmZjMDJhOWMxZDJiYzE3ZjFhYmM1M2MwOTY1NjBjNGY1YjFkZjU1ZTIwZTBlOWNkZjVkMF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yOWRmMzk5Ny1jZmRmLTRmMzctYjFhYS1hMmY5Y2VmYzc0NGMvZWViNjRlOWYtZjQwYi00OTY5LTlmZmItNmEyNTI5ZDg3OTU5L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -823,14 +808,6 @@
     "published": "Wed, 30 Sep 2026 22:31:11 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/9a441903-15d0-4267-9cf3-e7f057a5837f/4beea1d1-bb88-4c42-8a48-05d47aac66e2/main.mp4?fastly_token=NmFiZGU2MmNfYjNlYTMzOGQxMThlMzNjOGEyZGQxNTZjOTZiY2FmZDI0NTI0Zjg5MWZjYjM0N2Y4MzAxMTQzMmJhYTA1MWNlYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85YTQ0MTkwMy0xNWQwLTQyNjctOWNmMy1lN2YwNTdhNTgzN2YvNGJlZWExZDEtYmI4OC00YzQyLThhNDgtMDVkNDdhYWM2NmUyL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Heat announce Gale Nelson to succeed legendary Michael Baiamonte as new PA announcer",
-    "url": "https://wsvn.com/sports/miami-heat/heat-announce-gale-nelson-to-succeed-legendary-michael-baiamonte-as-new-pa-announcer/",
-    "published": "Wed, 30 Sep 2026 21:07:15 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/71ecab82-67a8-4d69-baff-6b446416ac66/6c7c5929-61be-4101-9163-e6ae0c702c71/main.mp4?fastly_token=NmFiZGRkODVfYmMyNDU4YjljMGZmYmEyN2Q2MGQwZDBiMDk2MjAxOWRjYjE2ODdjZGY1M2EzZmMzMzU5YjA2MzE2ZWY3ODc0ZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83MWVjYWI4Mi02N2E4LTRkNjktYmFmZi02YjQ0NjQxNmFjNjYvNmM3YzU5MjktNjFiZS00MTAxLTkxNjMtZTZhZTBjNzAyYzcxL21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -970,15 +947,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-30T22:15:37-04:00",
+  "fetched_at": "2026-09-30T22:31:32-04:00",
   "items": [],
-  "scanned": 4,
+  "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (211) + USGS (16)",
-  "fetched_at": "2026-09-30T22:15:40-04:00",
+  "source": "GDACS (211) + USGS (15)",
+  "fetched_at": "2026-09-30T22:31:35-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -1260,19 +1237,6 @@
     "source": "USGS"
    },
    {
-    "lat": 4.5021,
-    "lon": 125.7472,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.5 — 104 km SSE of Sarangani, Philippines",
-    "place": "104 km SSE of Sarangani, Philippines",
-    "severity": "M4.5",
-    "mag": 4.5,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tygz",
-    "when": 1790735444716,
-    "source": "USGS"
-   },
-   {
     "lat": 17.1053568,
     "lon": 98.9953943,
     "kind": "flood",
@@ -1321,12 +1285,12 @@
     "source": "GDACS"
    },
    {
-    "lat": 16.2,
-    "lon": 150.0,
+    "lat": 16.7,
+    "lon": 147.9,
     "kind": "cyclone",
     "level": "green",
     "title": "Green notification for tropical cyclone CHOI-WAN-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0 (0 in Tropical Storm).",
-    "place": null,
+    "place": "Northern Mariana Islands",
     "severity": "Tropical Storm (maximum wind speed of 204 km/h)",
     "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001332",
     "when": "Wed, 30 Sep 2026 02:12:11 GMT",
@@ -2435,13 +2399,25 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032492",
     "when": "Wed, 30 Sep 2026 15:06:58 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -8.34003440714769,
+    "lon": -44.15839954833246,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 5330 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032494",
+    "when": "Wed, 30 Sep 2026 07:06:44 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 227,
+  "event_count": 226,
   "counts": {
    "red": 1,
    "orange": 8,
-   "green": 218
+   "green": 217
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2449,7 +2425,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-30T22:15:40-04:00",
+  "fetched_at": "2026-09-30T22:31:35-04:00",
   "countries": [
    {
     "iso": "IRQ",
