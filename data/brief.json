@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-30T20:00:47-04:00",
- "generated_at_utc": "2026-10-01T00:00:47+00:00",
+ "generated_at": "2026-09-30T20:15:41-04:00",
+ "generated_at_utc": "2026-10-01T00:15:41+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, September 30",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-09-30T20:00:48-04:00",
+  "fetched_at": "2026-09-30T20:15:41-04:00",
   "curve": [
    {
     "time": "2026-09-30T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 79.3,
+   "temp": 79.4,
    "feels": 88.4,
    "humidity": 88,
-   "wind_mph": 4.7,
-   "wind_dir": 85,
-   "observed_at": "2026-09-30T20:00"
+   "wind_mph": 5.1,
+   "wind_dir": 90,
+   "observed_at": "2026-09-30T20:15"
   },
   "today": {
    "high": 84.7,
@@ -166,50 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-09-30T20:00:49-04:00",
+  "fetched_at": "2026-09-30T20:15:42-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
-  "source": "AirNow (EPA)",
-  "fetched_at": "2026-09-30T20:00:50-04:00",
-  "aqi": 28,
-  "category": "Good",
-  "pollutant": "O3",
-  "reporting_area": "Miami",
-  "observed": "2026-09-30 18:00 EST",
-  "forecast": [
-   {
-    "date": "2026-10-01",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-10-01",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   },
-   {
-    "date": "2026-10-02",
-    "aqi": 45,
-    "category": "Good",
-    "pollutant": "O3"
-   },
-   {
-    "date": "2026-10-02",
-    "aqi": 35,
-    "category": "Good",
-    "pollutant": "PM2.5"
-   }
-  ]
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-09-30T20:15:43-04:00",
+  "aqi": 57,
+  "category": "Moderate",
+  "pm25": 7.0,
+  "pm10": 7.9,
+  "observed": "2026-09-30T20:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-09-30T20:00:50-04:00",
+  "fetched_at": "2026-09-30T20:15:43-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -305,16 +281,6 @@
     "start": "2026-09-30T00:11:30Z"
    },
    {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-30T00:11:30Z"
-   },
-   {
     "county": "Miami-Dade",
     "roads": [
      "FL-997"
@@ -359,27 +325,28 @@
     "roads": [
      "FL-854"
     ],
-    "delay_s": 378,
-    "magnitude": 3,
-    "description": "Stationary traffic",
+    "delay_s": 292,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-09-30T18:57:32Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-953"
+     "FL-91 S",
+     "Florida's Tpke S"
     ],
-    "delay_s": 349,
+    "delay_s": 289,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-30T23:55:30Z"
+    "start": "2026-10-01T00:04:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-824"
     ],
-    "delay_s": 286,
+    "delay_s": 269,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-09-30T23:23:30Z"
@@ -387,43 +354,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-934"
+     "US-41 N"
     ],
-    "delay_s": 185,
+    "delay_s": 232,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-30T23:58:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 155,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-30T18:13:05Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-858"
-    ],
-    "delay_s": 137,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-30T23:52:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S"
-    ],
-    "delay_s": 130,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-09-30T20:36:45Z"
+    "start": "2026-10-01T00:04:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -431,60 +367,82 @@
      "US-1 N",
      "FL-5"
     ],
-    "delay_s": 94,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-30T23:53:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 88,
-    "magnitude": 1,
-    "description": "Slow traffic; Roadworks",
-    "start": "2026-09-30T11:21:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-974"
-    ],
-    "delay_s": 75,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-09-30T23:35:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-84"
-    ],
-    "delay_s": 74,
+    "delay_s": 102,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-09-30T23:48:00Z"
+    "start": "2026-10-01T00:05:30Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-811"
     ],
-    "delay_s": 67,
-    "magnitude": 1,
-    "description": "Slow traffic",
+    "delay_s": 101,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-09-30T23:46:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-84"
+    ],
+    "delay_s": 91,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-30T23:48:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-825"
+     "US-1 N",
+     "FL-5"
     ],
-    "delay_s": 55,
+    "delay_s": 84,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-09-30T23:33:30Z"
+    "start": "2026-10-01T00:10:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-814"
+    ],
+    "delay_s": 73,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-01T00:11:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 72,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-09-30T23:53:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826"
+    ],
+    "delay_s": 57,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-01T00:06:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 49,
+    "magnitude": 1,
+    "description": "Slow traffic; Roadworks",
+    "start": "2026-09-30T11:21:30Z"
    },
    {
     "county": "Broward",
@@ -516,17 +474,39 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-09-28T16:15:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 S",
+     "FL-25"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-04T08:47:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-25",
+     "US-27 N"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-10T23:07:00Z"
    }
   ],
-  "incident_count": 313,
-  "named_count": 50,
-  "major_count": 14,
+  "incident_count": 309,
+  "named_count": 44,
+  "major_count": 13,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-09-30T20:00:51-04:00",
+  "fetched_at": "2026-09-30T20:15:44-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -570,7 +550,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-09-30T20:00:51-04:00",
+  "fetched_at": "2026-09-30T20:15:44-04:00",
   "issued": "800 PM EDT Wed Sep 30 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 302309\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Wed Sep 30 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected over the next 7 days.\n\n$$\nForecaster Cangialosi"
@@ -578,7 +558,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-09-30T20:00:51-04:00",
+  "fetched_at": "2026-09-30T20:15:44-04:00",
   "florida": "$4.2530",
   "national": "$4.4343",
   "diesel": "$6.0074",
@@ -587,7 +567,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-09-30T20:00:53-04:00",
+  "fetched_at": "2026-09-30T20:15:45-04:00",
   "streams": {
    "local": [
     {
@@ -826,6 +806,22 @@
   ],
   "colombia": [
    {
+    "title": "De rescatar cuerpos en el edificio Vanessa a sobrevivir a cuatro balazos en Palmira: la milagrosa historia de un cabo del Ejército en el Valle",
+    "url": "https://www.eltiempo.com/colombia/cali/de-rescatar-cuerpos-en-el-edificio-vanessa-a-sobrevivir-a-cuatro-balazos-en-palmira-la-milagrosa-historia-de-un-cabo-del-ejercito-en-el-valle-3590320",
+    "published": "2026-09-30T19:05:26-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/09/30/6abda06d1549f.r_d.682-479-0.png",
+    "media_type": "image"
+   },
+   {
+    "title": "Así tratan de contener un incendio subterráneo en el Bosque de Galilea, la reserva natural más grande del Tolima, donde habitan osos de anteojos",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/asi-tratan-de-contener-un-incendio-subterraneo-en-el-bosque-de-galilea-la-reserva-natural-mas-grande-del-tolima-donde-habitan-osos-de-anteojos-3590323",
+    "published": "2026-09-30T18:57:12-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/30/6abda0dad2dc2.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Desmantelan a 'Los Donatelos': cayó red de microtráfico que azotaba al municipio de Socorro",
     "url": "https://www.eltiempo.com/colombia/santander/desmantelan-a-los-donatelos-cayo-red-de-microtrafico-que-azotaba-al-municipio-de-socorro-3590298",
     "published": "2026-09-30T17:31:04-05:00",
@@ -871,22 +867,6 @@
     "published": "2026-09-30T16:15:01-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/14/6a7f345bbd1c7.r_d.536-560-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Barranquilla supera el último paso para asumir el lado tierra del Ernesto Cortissoz: Concejo avaló $40.000 millones y se espera anuncio presidencial",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/barranquilla-supera-el-ultimo-paso-para-asumir-el-lado-tierra-del-ernesto-cortissoz-concejo-avalo-40-000-millones-y-se-espera-anuncio-presidencial-3590257",
-    "published": "2026-09-30T16:01:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2024/05/04/66368d53ad16b.r_d.1669-1112-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Contraloría de Medellín detectó una nueva irregularidad en el caso del megalote Aguas Vivas por el que imputaron al exalcalde Daniel Quintero",
-    "url": "https://www.eltiempo.com/colombia/medellin/contraloria-de-medellin-detecto-una-nueva-irregularidad-en-el-caso-del-megalote-aguas-vivas-por-el-que-imputaron-al-exalcalde-daniel-quintero-3590201",
-    "published": "2026-09-30T15:54:58-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/30/6abd6e139b61f.png",
     "media_type": "image"
    }
   ],
@@ -960,7 +940,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-09-30T20:00:53-04:00",
+  "fetched_at": "2026-09-30T20:15:46-04:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -968,7 +948,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (211) + USGS (15)",
-  "fetched_at": "2026-09-30T20:00:56-04:00",
+  "fetched_at": "2026-09-30T20:15:49-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -2438,34 +2418,8 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-09-30T20:00:56-04:00",
+  "fetched_at": "2026-09-30T20:15:49-04:00",
   "countries": [
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Sin competencia y con más sabor: las novedades del Festival Mundial de Salsa en su apuesta por transformar a Cali",
-      "url": "https://www.eltiempo.com/colombia/cali/sin-competencia-y-con-mas-sabor-las-novedades-del-festival-mundial-de-salsa-en-su-apuesta-por-transformar-a-cali-3590273",
-      "published": "2026-09-30T16:39:11-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Esta es la alianza público-privada que moviliza 10.300 millones de pesos para recuperar negocios afectados por el terremoto en Cali",
-      "url": "https://www.eltiempo.com/colombia/cali/esta-es-la-alianza-publico-privada-que-moviliza-10-300-millones-de-pesos-para-recuperar-negocios-afectados-por-el-terremoto-en-cali-3590241",
-      "published": "2026-09-30T16:15:01-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Contraloría de Medellín detectó una nueva irregularidad en el caso del megalote Aguas Vivas por el que imputaron al exalcalde Daniel Quintero",
-      "url": "https://www.eltiempo.com/colombia/medellin/contraloria-de-medellin-detecto-una-nueva-irregularidad-en-el-caso-del-megalote-aguas-vivas-por-el-que-imputaron-al-exalcalde-daniel-quintero-3590201",
-      "published": "2026-09-30T15:54:58-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 3,
-    "issue": "Sin competencia y con más sabor: las novedades del Festival Mundial de Salsa en su apuesta por transformar a Cali"
-   },
    {
     "iso": "IRQ",
     "name": "Iraq",
@@ -2491,6 +2445,26 @@
     ],
     "count": 3,
     "issue": "U.S. forces exit Iraq amid Iran war. And, SCOTUS revives Trump deportation policy"
+   },
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "Sin competencia y con más sabor: las novedades del Festival Mundial de Salsa en su apuesta por transformar a Cali",
+      "url": "https://www.eltiempo.com/colombia/cali/sin-competencia-y-con-mas-sabor-las-novedades-del-festival-mundial-de-salsa-en-su-apuesta-por-transformar-a-cali-3590273",
+      "published": "2026-09-30T16:39:11-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "Esta es la alianza público-privada que moviliza 10.300 millones de pesos para recuperar negocios afectados por el terremoto en Cali",
+      "url": "https://www.eltiempo.com/colombia/cali/esta-es-la-alianza-publico-privada-que-moviliza-10-300-millones-de-pesos-para-recuperar-negocios-afectados-por-el-terremoto-en-cali-3590241",
+      "published": "2026-09-30T16:15:01-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 2,
+    "issue": "Sin competencia y con más sabor: las novedades del Festival Mundial de Salsa en su apuesta por transformar a Cali"
    },
    {
     "iso": "IRN",
