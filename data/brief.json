@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-02T17:45:46-04:00",
- "generated_at_utc": "2026-10-02T21:45:46+00:00",
+ "generated_at": "2026-10-02T18:00:48-04:00",
+ "generated_at_utc": "2026-10-02T22:00:48+00:00",
  "weekday": "Friday",
  "date_label": "Friday, October 2",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-02T17:45:47-04:00",
+  "fetched_at": "2026-10-02T18:00:48-04:00",
   "curve": [
    {
     "time": "2026-10-02T05:00",
@@ -119,7 +119,7 @@
     "temp": 84.0,
     "feels": 93.8,
     "humidity": 80,
-    "pop": 8
+    "pop": 6
    },
    {
     "time": "2026-10-02T19:00",
@@ -127,7 +127,7 @@
     "temp": 82.3,
     "feels": 93.7,
     "humidity": 87,
-    "pop": 10
+    "pop": 9
    },
    {
     "time": "2026-10-02T20:00",
@@ -135,7 +135,7 @@
     "temp": 81.4,
     "feels": 93.6,
     "humidity": 92,
-    "pop": 11
+    "pop": 10
    },
    {
     "time": "2026-10-02T21:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 84.3,
-   "feels": 93.9,
-   "humidity": 78,
-   "wind_mph": 5.7,
-   "wind_dir": 112,
-   "observed_at": "2026-10-02T17:45"
+   "temp": 84.0,
+   "feels": 93.8,
+   "humidity": 80,
+   "wind_mph": 5.6,
+   "wind_dir": 105,
+   "observed_at": "2026-10-02T18:00"
   },
   "today": {
    "high": 87.1,
@@ -166,121 +166,69 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-02T17:45:47-04:00",
+  "fetched_at": "2026-10-02T18:00:49-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-02T17:45:48-04:00",
+  "fetched_at": "2026-10-02T18:00:50-04:00",
   "aqi": 26,
   "category": "Good",
-  "pm25": 4.2,
-  "pm10": 5.7,
-  "observed": "2026-10-02T17:00",
+  "pm25": 5.3,
+  "pm10": 7.1,
+  "observed": "2026-10-02T18:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-10-02T17:45:50-04:00",
-  "route_shown": true,
-  "leg": "Jackson Memorial → Home",
-  "direction": "return",
-  "depart_clock": "3:30 PM",
-  "depart_at": "now",
-  "miles": 20.5,
-  "minutes": 65,
-  "delay_minutes": 5,
-  "toll_free": true,
-  "alternates": [
-   {
-    "miles": 26.4,
-    "minutes": 57,
-    "toll": true,
-    "saves": 8
-   },
-   {
-    "miles": 22.6,
-    "minutes": 58,
-    "toll": true,
-    "saves": 7
-   },
-   {
-    "miles": 22.0,
-    "minutes": 61,
-    "toll": true,
-    "saves": 4
-   },
-   {
-    "miles": 28.6,
-    "minutes": 61,
-    "toll": true,
-    "saves": 4
-   }
-  ],
-  "alternates_worth_taking": [],
-  "free_alternates": [
-   {
-    "miles": 20.5,
-    "minutes": 65,
-    "delay_minutes": 5,
-    "saves": 0
-   },
-   {
-    "miles": 23.4,
-    "minutes": 69,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 23.7,
-    "minutes": 72,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 22.5,
-    "minutes": 76,
-    "delay_minutes": 0
-   }
-  ],
-  "best_free": {
-   "miles": 20.5,
-   "minutes": 65,
-   "delay_minutes": 5,
-   "saves": 0
-  },
+  "source": "TomTom Traffic",
+  "fetched_at": "2026-10-02T18:00:50-04:00",
+  "route_shown": false,
+  "leg": null,
+  "direction": null,
   "incidents": [
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-997"
     ],
-    "delay_s": 2930,
+    "delay_s": 3265,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-02T20:29:13Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 1838,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-02T19:57:55Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 1373,
+    "delay_s": 1680,
     "magnitude": 3,
     "description": "Stationary traffic; Roadworks",
     "start": "2026-10-02T13:29:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 1617,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-02T19:57:55Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 1545,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-02T21:57:05Z"
    },
    {
     "county": "Miami-Dade",
@@ -288,50 +236,10 @@
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 1354,
+    "delay_s": 1285,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-10-02T19:31:51Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-860"
-    ],
-    "delay_s": 964,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-02T19:24:13Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S"
-    ],
-    "delay_s": 944,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-02T18:52:10Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 N"
-    ],
-    "delay_s": 915,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-02T18:49:37Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-09-24T21:31:59Z"
    },
    {
     "county": "Broward",
@@ -350,8 +258,8 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "description": "Closed",
+    "start": "2026-09-24T21:31:59Z"
    },
    {
     "county": "Broward",
@@ -362,6 +270,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:05:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -396,63 +314,62 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-41 N",
+     "FL-5"
+    ],
+    "delay_s": 881,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-02T21:15:19Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S"
+    ],
+    "delay_s": 873,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-02T18:52:10Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-825"
+    ],
+    "delay_s": 855,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-02T21:55:09Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "Don Shula Expy S",
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 857,
+    "delay_s": 853,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-02T20:38:12Z"
    },
    {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 739,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-02T18:22:38Z"
-   },
-   {
     "county": "Miami-Dade",
     "roads": [
-     "FL-976"
+     "FL-860"
     ],
-    "delay_s": 725,
+    "delay_s": 845,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-02T20:27:49Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 705,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-02T20:00:33Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 691,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-02T18:59:00Z"
+    "start": "2026-10-02T21:47:17Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-823"
     ],
-    "delay_s": 667,
+    "delay_s": 798,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-02T18:01:20Z"
@@ -460,34 +377,67 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-1 N",
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 662,
+    "delay_s": 715,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-02T20:29:52Z"
+    "start": "2026-10-02T18:59:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-A1A"
+    ],
+    "delay_s": 699,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-02T21:53:52Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "I-95 N"
+     "FL-817",
+     "FL-9"
     ],
-    "delay_s": 652,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-02T13:29:30Z"
+    "delay_s": 644,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-02T18:21:26Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-972"
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 626,
+    "delay_s": 625,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-02T18:14:10Z"
+    "start": "2026-10-02T21:17:21Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 620,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-02T20:27:49Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-7",
+     "US-441 S"
+    ],
+    "delay_s": 586,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-02T21:49:55Z"
    },
    {
     "county": "Miami-Dade",
@@ -497,86 +447,72 @@
      "Florida's Tpke N",
      "FL-826 W"
     ],
-    "delay_s": 606,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
+    "delay_s": 581,
+    "magnitude": 2,
+    "description": "Queuing traffic; Roadworks",
     "start": "2026-10-02T19:08:07Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S",
-     "US-41 N"
+     "FL-934"
     ],
-    "delay_s": 587,
+    "delay_s": 577,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-02T14:37:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 587,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-02T17:47:58Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-948"
-    ],
-    "delay_s": 574,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-02T19:21:32Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 573,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-02T19:09:58Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 N",
-     "FL-5"
-    ],
-    "delay_s": 558,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-02T21:15:19Z"
+    "start": "2026-10-02T20:00:33Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "US-1 N",
-     "US-1 S",
-     "FL-A1A",
-     "FL-5"
+     "I-95 S"
     ],
-    "delay_s": 541,
+    "delay_s": 550,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-02T18:22:38Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 N"
+    ],
+    "delay_s": 549,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-02T18:49:37Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-968"
+    ],
+    "delay_s": 515,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-02T21:35:19Z"
+    "start": "2026-10-02T21:40:01Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 508,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-02T20:29:52Z"
    }
   ],
-  "incident_count": 666,
-  "named_count": 255,
-  "major_count": 24,
+  "incident_count": 623,
+  "named_count": 228,
+  "major_count": 23,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-02T17:45:51-04:00",
+  "fetched_at": "2026-10-02T18:00:51-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -621,7 +557,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-02T17:45:51-04:00",
+  "fetched_at": "2026-10-02T18:00:51-04:00",
   "issued": "200 PM EDT Fri Oct 2 2026",
   "areas": [
    {
@@ -635,7 +571,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-02T17:45:52-04:00",
+  "fetched_at": "2026-10-02T18:00:51-04:00",
   "florida": "$4.1488",
   "national": "$4.3961",
   "diesel": "$5.9152",
@@ -644,7 +580,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-02T17:45:53-04:00",
+  "fetched_at": "2026-10-02T18:00:53-04:00",
   "streams": {
    "local": [
     {
@@ -753,6 +689,70 @@
   ],
   "local": [
    {
+    "title": "Search continues for suspect after man wrongfully arrested in $271K designer bag theft case",
+    "url": "https://www.local10.com/news/local/2026/10/02/search-continues-for-suspect-after-man-wrongfully-arrested-in-271k-designer-bag-theft-case/",
+    "published": "Fri, 02 Oct 2026 21:53:25 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Preliminary NTSB report leaves families with questions after deadly cargo plane crash",
+    "url": "https://www.local10.com/news/local/2026/10/02/preliminary-ntsb-report-leaves-families-with-questions-after-deadly-cargo-plane-crash/",
+    "published": "Fri, 02 Oct 2026 21:53:24 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Miami-Dade man accused of sexually abusing teen over 2-year period",
+    "url": "https://www.local10.com/news/local/2026/10/02/miami-dade-man-accused-of-sexually-abusing-teen-over-2-year-period/",
+    "published": "Fri, 02 Oct 2026 17:39:13 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Hialeah woman accused of repeatedly striking dog in apartment building",
+    "url": "https://www.local10.com/news/local/2026/10/02/hialeah-woman-accused-of-repeatedly-striking-dog-in-apartment-building/",
+    "published": "Fri, 02 Oct 2026 21:41:05 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "‘Dangerous’ Key Largo man who once stole cop car, then carjacked woman, is now on the run: Sheriff",
+    "url": "https://www.local10.com/news/local/2026/10/02/dangerous-key-largo-man-who-once-stole-cop-car-then-carjacked-woman-is-now-on-the-run-sheriff/",
+    "published": "Fri, 02 Oct 2026 20:43:14 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Former Rep. David Rivera gets 10 years in Venezuela lobbying case",
+    "url": "https://www.local10.com/news/local/2026/10/02/federal-judge-set-to-decide-former-rep-david-riveras-fate-as-attorneys-spar-over-sentence/",
+    "published": "Fri, 02 Oct 2026 16:18:03 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Man accused of burglarizing 7 rental vehicles at Fort Lauderdale-Hollywood International Airport",
+    "url": "https://www.local10.com/news/local/2026/10/02/man-accused-of-burglarizing-7-rental-vehicles-at-fort-lauderdale-hollywood-international-airport/",
+    "published": "Fri, 02 Oct 2026 17:13:52 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/2USVRCDAIVFBDEVOHLCE2KPTVE.jpg?auth=276e0e270f0778f12baf4afb9f9f17a5143974799a19574f15e083cd55d28263&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Monroe County corrections officer fired after aggravated stalking arrest, sheriff says",
+    "url": "https://www.local10.com/news/local/2026/10/02/monroe-county-corrections-officer-fired-after-aggravated-stalking-arrest-sheriff-says/",
+    "published": "Fri, 02 Oct 2026 16:52:52 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/NEYF3A7DUZG4ZHO3LLZRGNDV5E.jpeg?auth=feb1ac58bb4d96c7012473d9b53aeb00123c89f9cd732955c2cebdea77efbc5e&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
     "title": "Search underway for missing 15-year-old from Dania Beach",
     "url": "https://wsvn.com/news/local/broward/search-underway-for-missing-15-year-old-from-dania-beach/",
     "published": "Fri, 02 Oct 2026 20:26:51 +0000",
@@ -761,19 +761,19 @@
     "media_type": "image"
    },
    {
-    "title": "Hedge fund manager Ken Griffin discusses $2B investment toward new Carnegie Mellon campus in Wynwood",
-    "url": "https://wsvn.com/news/us-world/ken-griffin-citadel-donates-cmu/",
-    "published": "Thu, 01 Oct 2026 12:42:04 +0000",
+    "title": "FDOH issues water quality advisory for Crandon Park South in Key Biscayne",
+    "url": "https://wsvn.com/news/local/miami-dade/crandon-park-south-water-advisory/",
+    "published": "Fri, 02 Oct 2026 21:59:19 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/06b358b8-be5a-4f98-9151-0030647fd12f/318e0749-e2bd-4120-afaa-8a5f01989d91/main.mp4?fastly_token=NmFjMDVmNjRfNTkzMzI2Y2U5YjIyZjEyZTFhNWFlNWI2YWI2ODQwNTEwZDI0MzY1MDUxYzgzOWY5MzViYWJlZmNhODgyYjQ0MF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8wNmIzNThiOC1iZTVhLTRmOTgtOTE1MS0wMDMwNjQ3ZmQxMmYvMzE4ZTA3NDktZTJiZC00MTIwLWFmYWEtOGE1ZjAxOTg5ZDkxL21haW4ubXA0",
-    "media_type": "video"
+    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/08/83026-Crandon-Park-Key-Biscayne.png",
+    "media_type": "image"
    },
    {
-    "title": "Man accused of trafficking woman, taking up to $90K in earnings, threatening her, police say",
-    "url": "https://wsvn.com/news/local/man-human-trafficking-charges/",
-    "published": "Thu, 01 Oct 2026 20:21:35 +0000",
+    "title": "Employee accused of stealing more than $16K in valuable trading cards in Deerfield Beach",
+    "url": "https://wsvn.com/news/local/broward/employee-stole-trading-cards/",
+    "published": "Fri, 02 Oct 2026 16:19:53 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/10/Russell-Dominique-Brown.png",
+    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/10/Maximo-Viani-Otoni.png",
     "media_type": "image"
    },
    {
@@ -783,6 +783,14 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": null,
     "media_type": null
+   },
+   {
+    "title": "FDOH issues water quality advisory for Crandon Park South in Key Biscayne",
+    "url": "https://wsvn.com/news/local/miami-dade/crandon-park-south-water-advisory/",
+    "published": "Fri, 02 Oct 2026 21:59:19 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/08/83026-Crandon-Park-Key-Biscayne.png",
+    "media_type": "image"
    },
    {
     "title": "Miami Heat, Rockstar Games partner for ‘A Night in Vice City’ in celebration of Grand Theft Auto VI launch",
@@ -807,17 +815,41 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/7d275360-b330-4537-833c-1ba2b791efa5/4488e3f2-71f1-4325-bd96-13ebc2d548f5/main.mp4?fastly_token=NmFjMDdkNzZfNzc2YjRkZWIwMTQ0YWI1NjIyNjZiMWVjYTZmOTRhM2E5MDgxZTZjZDlkNmM5YTYzZWZjY2Q4YmZhYjM2NDRhNF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83ZDI3NTM2MC1iMzMwLTQ1MzctODMzYy0xYmEyYjc5MWVmYTUvNDQ4OGUzZjItNzFmMS00MzI1LWJkOTYtMTNlYmMyZDU0OGY1L21haW4ubXA0",
     "media_type": "video"
-   },
-   {
-    "title": "Former Miami Congressman David Rivera sentenced to 10 years for secret Venezuela lobbying",
-    "url": "https://wsvn.com/news/us-world/former-miami-congressman-david-rivera-sentenced-to-10-years-for-secret-venezuela-lobbying/",
-    "published": "Fri, 02 Oct 2026 14:57:10 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/14fd32bb-74fd-487a-99c9-9269e2c05504/3d8c76bc-9c15-4917-aaa6-1ceb50cfdb69/main.mp4?fastly_token=NmFjMDdhN2JfMDM2ZTU1NTk1ZTMzNjAzNGY1MmRjODExMjhlZmYzZTY1ZTJlYjAzYmNjYzExNTY5MWE1YzE2YmE2NTZhYmFhNF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xNGZkMzJiYi03NGZkLTQ4N2EtOTljOS05MjY5ZTJjMDU1MDQvM2Q4Yzc2YmMtOWMxNS00OTE3LWFhYTYtMWNlYjUwY2ZkYjY5L21haW4ubXA0",
-    "media_type": "video"
    }
   ],
   "colombia": [
+   {
+    "title": "Video: Concejal de Cúcuta genera polémica por video con IA en el que aparece enfrentando con granadas a habitantes de calle",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/video-concejal-de-cucuta-genera-polemica-por-video-con-ia-en-el-que-aparece-enfrentando-con-granadas-a-habitantes-de-calle-3590871",
+    "published": "2026-10-02T16:54:44-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/02/6ac0277127070.r_d.547-285-0.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Delegados de la OEA ponen la mirada en los proyectos con los que Barranquilla busca atraer inversión y generar empleo",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/delegados-de-la-oea-ponen-la-mirada-en-los-proyectos-con-los-que-barranquilla-busca-atraer-inversion-y-generar-empleo-3590866",
+    "published": "2026-10-02T16:41:01-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/02/6ac021d1b3313.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Pereira tiene que demoler más de 250 edificaciones en riesgo de colapso: este es el proceso",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/pereira-tiene-que-demoler-mas-de-250-edificaciones-en-riesgo-de-colapso-este-es-el-proceso-3590865",
+    "published": "2026-10-02T16:33:39-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/02/6ac022a7d4422.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Video | Indignación en Barranquilla por sujeto que arrojó residuos de neveras directamente al alcantarillado; autoridades anuncian su búsqueda",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/video-indignacion-en-barranquilla-por-sujeto-que-arrojo-residuos-de-neveras-directamente-al-alcantarillado-autoridades-anuncian-su-busqueda-3590870",
+    "published": "2026-10-02T16:30:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/02/6ac023e26999c.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Las historias que hay detrás de niños y jóvenes con enfermedades críticas que les impiden ir a estudiar a un colegio: un programa les permite formarse",
     "url": "https://www.eltiempo.com/colombia/santander/las-historias-que-hay-detras-de-ninos-y-jovenes-con-enfermedades-criticas-que-les-impiden-ir-a-estudiar-un-colegio-un-programa-les-permite-formarse-3590790",
@@ -848,38 +880,6 @@
     "published": "2026-10-02T15:10:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/02/6ac0101ee7308.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Partido del fallecido Rodolfo Hernández, Liga de Gobernantes, cambiará de nombre y dará un giro hacia la derecha inspirado en Trump, Milei y Bukele",
-    "url": "https://www.eltiempo.com/colombia/santander/partido-del-fallecido-rodolfo-hernandez-liga-de-gobernantes-cambiara-de-nombre-y-dara-un-giro-hacia-la-derecha-inspirado-en-trump-milei-y-bukele-3590821",
-    "published": "2026-10-02T14:56:49-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2022/02/27/621bd8320e3b5.r_d.752-715-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Temor y zozobra en Palermo, Huila, por quema de siete motos y ataque a cinco personas: riñas y piques ilegales serían las posibles causas de este caso",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/temor-y-zozobra-en-palermo-huila-por-quema-de-siete-motos-y-ataque-a-cinco-personas-rinas-y-piques-ilegales-serian-las-posibles-causas-de-este-caso-3590822",
-    "published": "2026-10-02T14:48:04-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/02/6ac00941ad75b.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "La contaminación del río Lebrija vuelve a encender las alarmas: advierten que se estaría dando por aguas residuales y minería ilegal",
-    "url": "https://www.eltiempo.com/colombia/santander/la-contaminacion-del-rio-lebrija-vuelve-a-encender-las-alarmas-advierten-que-se-estaria-dando-por-aguas-residuales-y-mineria-ilegal-3590800",
-    "published": "2026-10-02T14:07:54-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/02/6abfff58090dd.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Hombres armados detonaron un explosivo contra un carro de valores en una carretera de Nariño: ¿cómo se frustró el millonario robo?",
-    "url": "https://www.eltiempo.com/colombia/cali/hombres-armados-detonaron-un-explosivo-contra-un-carro-de-valores-en-una-carretera-de-narino-como-se-frustro-el-millonario-robo-3590798",
-    "published": "2026-10-02T14:22:21-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/02/6abffe0bda17a.jpeg",
     "media_type": "image"
    }
   ],
@@ -953,15 +953,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-02T17:45:53-04:00",
+  "fetched_at": "2026-10-02T18:00:54-04:00",
   "items": [],
-  "scanned": 0,
+  "scanned": 8,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
   "source": "GDACS (218) + USGS (16)",
-  "fetched_at": "2026-10-02T17:45:56-04:00",
+  "fetched_at": "2026-10-02T18:00:56-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -2432,22 +2432,8 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-02T17:45:56-04:00",
+  "fetched_at": "2026-10-02T18:00:56-04:00",
   "countries": [
-   {
-    "iso": "ARG",
-    "name": "Argentina",
-    "stories": [
-     {
-      "title": "Partido del fallecido Rodolfo Hernández, Liga de Gobernantes, cambiará de nombre y dará un giro hacia la derecha inspirado en Trump, Milei y Bukele",
-      "url": "https://www.eltiempo.com/colombia/santander/partido-del-fallecido-rodolfo-hernandez-liga-de-gobernantes-cambiara-de-nombre-y-dara-un-giro-hacia-la-derecha-inspirado-en-trump-milei-y-bukele-3590821",
-      "published": "2026-10-02T14:56:49-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 1,
-    "issue": "Partido del fallecido Rodolfo Hernández, Liga de Gobernantes, cambiará de nombre y dará un giro hacia la derecha inspirado en Trump, Milei y Bukele"
-   },
    {
     "iso": "BRA",
     "name": "Brazil",
@@ -2461,20 +2447,6 @@
     ],
     "count": 1,
     "issue": "How Brazil's two leading presidential candidates are talking about crime"
-   },
-   {
-    "iso": "SLV",
-    "name": "El Salvador",
-    "stories": [
-     {
-      "title": "Partido del fallecido Rodolfo Hernández, Liga de Gobernantes, cambiará de nombre y dará un giro hacia la derecha inspirado en Trump, Milei y Bukele",
-      "url": "https://www.eltiempo.com/colombia/santander/partido-del-fallecido-rodolfo-hernandez-liga-de-gobernantes-cambiara-de-nombre-y-dara-un-giro-hacia-la-derecha-inspirado-en-trump-milei-y-bukele-3590821",
-      "published": "2026-10-02T14:56:49-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 1,
-    "issue": "Partido del fallecido Rodolfo Hernández, Liga de Gobernantes, cambiará de nombre y dará un giro hacia la derecha inspirado en Trump, Milei y Bukele"
    },
    {
     "iso": "DEU",
@@ -2523,18 +2495,18 @@
     "name": "Venezuela",
     "stories": [
      {
-      "title": "Former Miami Congressman David Rivera sentenced to 10 years for secret Venezuela lobbying",
-      "url": "https://wsvn.com/news/us-world/former-miami-congressman-david-rivera-sentenced-to-10-years-for-secret-venezuela-lobbying/",
-      "published": "Fri, 02 Oct 2026 14:57:10 +0000",
+      "title": "Former Rep. David Rivera gets 10 years in Venezuela lobbying case",
+      "url": "https://www.local10.com/news/local/2026/10/02/federal-judge-set-to-decide-former-rep-david-riveras-fate-as-attorneys-spar-over-sentence/",
+      "published": "Fri, 02 Oct 2026 16:18:03 +0000",
       "section": "local"
      }
     ],
     "count": 1,
-    "issue": "Former Miami Congressman David Rivera sentenced to 10 years for secret Venezuela lobbying"
+    "issue": "Former Rep. David Rivera gets 10 years in Venezuela lobbying case"
    }
   ],
-  "headlines_scanned": 24,
-  "countries_matched": 7,
+  "headlines_scanned": 32,
+  "countries_matched": 5,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
