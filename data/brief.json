@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-03T22:28:54-04:00",
- "generated_at_utc": "2026-10-04T02:28:54+00:00",
+ "generated_at": "2026-10-03T22:30:50-04:00",
+ "generated_at_utc": "2026-10-04T02:30:50+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, October 3",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-03T22:28:54-04:00",
+  "fetched_at": "2026-10-03T22:30:50-04:00",
   "curve": [
    {
     "time": "2026-10-03T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 80.7,
-   "feels": 90.4,
-   "humidity": 90,
+   "temp": 80.5,
+   "feels": 90.1,
+   "humidity": 91,
    "wind_mph": 6.7,
-   "wind_dir": 97,
-   "observed_at": "2026-10-03T22:15"
+   "wind_dir": 103,
+   "observed_at": "2026-10-03T22:30"
   },
   "today": {
    "high": 87.3,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-03T22:28:55-04:00",
+  "fetched_at": "2026-10-03T22:30:51-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-03T22:28:56-04:00",
+  "fetched_at": "2026-10-03T22:30:52-04:00",
   "aqi": 36,
   "category": "Good",
   "pm25": 6.9,
@@ -185,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-10-03T22:28:56-04:00",
+  "fetched_at": "2026-10-03T22:30:52-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +198,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -208,7 +208,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -255,7 +255,7 @@
     "roads": [
      "FL-842"
     ],
-    "delay_s": 299,
+    "delay_s": 254,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-10-04T01:10:00Z"
@@ -266,7 +266,7 @@
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 232,
+    "delay_s": 238,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-10-04T02:19:00Z"
@@ -274,12 +274,23 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "Florida's Tpke N",
+     "FL-821 N"
+    ],
+    "delay_s": 210,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-04T02:20:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "US-41 N",
      "FL-5"
     ],
-    "delay_s": 223,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 184,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-10-04T02:19:30Z"
    },
    {
@@ -287,21 +298,10 @@
     "roads": [
      "FL-817"
     ],
-    "delay_s": 196,
+    "delay_s": 173,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-04T02:24:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
-    ],
-    "delay_s": 134,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-04T02:20:00Z"
    },
    {
     "county": "Broward",
@@ -322,16 +322,6 @@
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-10-04T02:25:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 34,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-04T02:26:00Z"
    },
    {
     "county": "Broward",
@@ -493,17 +483,25 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-09-27T04:01:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-02-18T17:07:36Z"
    }
   ],
   "incident_count": 262,
-  "named_count": 28,
+  "named_count": 27,
   "major_count": 6,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-03T22:28:56-04:00",
+  "fetched_at": "2026-10-03T22:30:52-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -548,7 +546,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-03T22:28:57-04:00",
+  "fetched_at": "2026-10-03T22:30:53-04:00",
   "issued": "800 PM EDT Sat Oct 3 2026",
   "areas": [
    {
@@ -562,7 +560,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-03T22:28:57-04:00",
+  "fetched_at": "2026-10-03T22:30:53-04:00",
   "florida": "$4.1050",
   "national": "$4.3807",
   "diesel": "$5.8763",
@@ -571,7 +569,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-03T22:28:57-04:00",
+  "fetched_at": "2026-10-03T22:30:54-04:00",
   "streams": {
    "local": [
     {
@@ -680,7 +678,71 @@
   ],
   "local": [
    {
-    "title": "Pedestrian dead after being struck by motor scooter, unknown vehicle in West Park",
+    "title": "1 dead after airboat collision in west Broward, FWC say",
+    "url": "https://www.local10.com/news/local/2026/10/03/1-dead-1-critically-injured-after-airboat-collision-in-west-broward-first-responders-say/",
+    "published": "Sat, 03 Oct 2026 10:23:10 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "BSO: Pompano Beach double shooting leaves man dead, another hurt; suspect in custody",
+    "url": "https://www.local10.com/news/local/2026/10/03/bso-pompano-beach-double-shooting-leaves-man-dead-another-hurt-suspect-in-custody/",
+    "published": "Sat, 03 Oct 2026 12:32:03 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/FJXF27YAAGHJM3Q5R5ADRGHZ2M.jpg?auth=31d822805678351e668c0e9fbae80b9e60c37c72a19d43e9ebab389a1ee056e5&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Man dies after being struck by driver in West Park, deputies say",
+    "url": "https://www.local10.com/news/local/2026/10/03/man-dies-after-being-struck-by-driver-in-west-park-deputies-say/",
+    "published": "Sat, 03 Oct 2026 13:37:02 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/A6WZNTSDYZEYTGZD3GKZ2JYJM4.jpg?auth=c469b4b5f9d7b9c5085ee0607ee02714b1aa6e58dae0ae3850268afc1e72a8dc&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "BSO deputies seek missing 15-year-old boy last seen in Dania Beach",
+    "url": "https://www.local10.com/news/local/2026/10/03/bso-deputies-seek-missing-15-year-old-boy-last-seen-in-dania-beach/",
+    "published": "Sat, 03 Oct 2026 15:00:16 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/UDT6L2GXNZB5JDOYPDMHRQXZ6U.jpg?auth=fd698c8f0ebe655ad65d535ea8daff54cb78097f9008e0e487177a449d6a9763&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Man arrested in connection with $271K designer handbags theft from social media influencer",
+    "url": "https://www.local10.com/news/local/2026/10/03/man-arrested-in-connection-with-271k-designer-handbag-theft-from-social-media-influencer/",
+    "published": "Sat, 03 Oct 2026 10:57:46 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Domino Park set for major renovation as maintenance issues emerge",
+    "url": "https://www.local10.com/news/local/2026/10/02/domino-park-set-for-major-renovation-as-maintenance-issues-emerge/",
+    "published": "Fri, 02 Oct 2026 23:35:13 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Former Rep. David Rivera gets 10 years in Venezuela lobbying case",
+    "url": "https://www.local10.com/news/local/2026/10/02/federal-judge-set-to-decide-former-rep-david-riveras-fate-as-attorneys-spar-over-sentence/",
+    "published": "Fri, 02 Oct 2026 16:18:03 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Search continues for suspect after man wrongfully arrested in $271K designer bag theft case",
+    "url": "https://www.local10.com/news/local/2026/10/02/search-continues-for-suspect-after-man-wrongfully-arrested-in-271k-designer-bag-theft-case/",
+    "published": "Fri, 02 Oct 2026 21:53:25 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Pedestrian dead after being struck by motor scooter, car in West Park",
     "url": "https://wsvn.com/news/local/broward/pedestrian-dead-after-being-struck-by-motor-scooter-unknown-vehicle-in-west-park/",
     "published": "Sat, 03 Oct 2026 12:18:05 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
@@ -880,15 +942,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-03T22:28:58-04:00",
+  "fetched_at": "2026-10-03T22:30:55-04:00",
   "items": [],
-  "scanned": 0,
+  "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
   "source": "GDACS (172) + USGS (11)",
-  "fetched_at": "2026-10-03T22:29:01-04:00",
+  "fetched_at": "2026-10-03T22:30:57-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -2354,7 +2416,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-03T22:29:01-04:00",
+  "fetched_at": "2026-10-03T22:30:57-04:00",
   "countries": [
    {
     "iso": "BRA",
@@ -2437,10 +2499,24 @@
     ],
     "count": 1,
     "issue": "U.S. withdrawal from Iraq is complete"
+   },
+   {
+    "iso": "VEN",
+    "name": "Venezuela",
+    "stories": [
+     {
+      "title": "Former Rep. David Rivera gets 10 years in Venezuela lobbying case",
+      "url": "https://www.local10.com/news/local/2026/10/02/federal-judge-set-to-decide-former-rep-david-riveras-fate-as-attorneys-spar-over-sentence/",
+      "published": "Fri, 02 Oct 2026 16:18:03 +0000",
+      "section": "local"
+     }
+    ],
+    "count": 1,
+    "issue": "Former Rep. David Rivera gets 10 years in Venezuela lobbying case"
    }
   ],
-  "headlines_scanned": 24,
-  "countries_matched": 5,
+  "headlines_scanned": 32,
+  "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
