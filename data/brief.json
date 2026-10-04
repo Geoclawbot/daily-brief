@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-03T19:45:48-04:00",
- "generated_at_utc": "2026-10-03T23:45:48+00:00",
+ "generated_at": "2026-10-03T20:00:48-04:00",
+ "generated_at_utc": "2026-10-04T00:00:48+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, October 3",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-03T19:45:48-04:00",
+  "fetched_at": "2026-10-03T20:00:48-04:00",
   "curve": [
    {
     "time": "2026-10-03T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 82.4,
-   "feels": 93.6,
-   "humidity": 88,
+   "temp": 82.2,
+   "feels": 93.4,
+   "humidity": 89,
    "wind_mph": 4.7,
-   "wind_dir": 103,
-   "observed_at": "2026-10-03T19:45"
+   "wind_dir": 98,
+   "observed_at": "2026-10-03T20:00"
   },
   "today": {
    "high": 87.3,
@@ -166,30 +166,42 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-03T19:45:49-04:00",
+  "fetched_at": "2026-10-03T20:00:50-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-03T19:45:49-04:00",
-  "aqi": 36,
+  "fetched_at": "2026-10-03T20:00:51-04:00",
+  "aqi": 37,
   "category": "Good",
-  "pm25": 6.6,
-  "pm10": 8.6,
-  "observed": "2026-10-03T19:00",
+  "pm25": 7.1,
+  "pm10": 8.7,
+  "observed": "2026-10-03T20:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-10-03T19:45:50-04:00",
+  "fetched_at": "2026-10-03T20:00:51-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "US-41 N",
+     "FL-5"
+    ],
+    "delay_s": 1263,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-03T22:51:00Z"
+   },
    {
     "county": "Broward",
     "roads": [
@@ -223,26 +235,6 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-985"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-10-03T09:58:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-985"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-10-03T09:36:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-934"
     ],
     "delay_s": null,
@@ -263,21 +255,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "US-41 N",
-     "FL-5"
-    ],
-    "delay_s": 734,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-03T22:51:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "I-95 S"
     ],
-    "delay_s": 593,
+    "delay_s": 640,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-03T22:23:30Z"
@@ -286,13 +266,13 @@
     "county": "Miami-Dade",
     "roads": [
      "US-1 N",
-     "US-41 N",
+     "US-1 S",
      "FL-5"
     ],
-    "delay_s": 521,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-03T23:12:30Z"
+    "delay_s": 410,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-03T23:44:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -300,224 +280,233 @@
      "FL-836 E",
      "I-395 E"
     ],
-    "delay_s": 511,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 404,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-10-03T22:37:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": 328,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-03T23:51:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 502,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 297,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-10-03T22:29:30Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
      "FL-854"
     ],
-    "delay_s": 409,
+    "delay_s": 254,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-03T23:30:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 403,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-03T21:06:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-970"
-    ],
-    "delay_s": 400,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-03T23:37:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-886"
-    ],
-    "delay_s": 346,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-03T23:28:01Z"
+    "start": "2026-10-03T23:44:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-953"
     ],
-    "delay_s": 301,
+    "delay_s": 231,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-03T20:31:03Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "US-1 N",
-     "US-1 S",
-     "FL-A1A",
-     "FL-5"
-    ],
-    "delay_s": 229,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-03T23:26:00Z"
+    "start": "2026-10-03T16:28:05Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
      "US-1 S",
+     "US-41 S",
      "FL-5"
     ],
-    "delay_s": 225,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-03T22:56:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-7",
-     "US-441 N"
-    ],
-    "delay_s": 221,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-03T23:38:00Z"
+    "delay_s": 184,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-03T23:44:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 214,
+    "delay_s": 182,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-10-03T23:29:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "US-41 S",
-     "FL-5"
-    ],
-    "delay_s": 205,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-03T23:36:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 201,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-03T23:41:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "US-41 S",
-     "FL-5"
-    ],
-    "delay_s": 195,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-03T23:44:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 178,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-03T23:17:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 171,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-03T17:24:36Z"
+    "start": "2026-10-03T23:57:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-953"
     ],
+    "delay_s": 177,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-03T20:31:03Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-886"
+    ],
     "delay_s": 170,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-03T23:28:01Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": 164,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-10-03T16:28:05Z"
+    "start": "2026-10-03T23:57:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 129,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-03T17:24:36Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-816"
+    ],
+    "delay_s": 123,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-03T23:55:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-820"
+    ],
+    "delay_s": 121,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-03T23:57:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-907"
+    ],
+    "delay_s": 119,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-03T23:47:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-395 E"
+    ],
+    "delay_s": 103,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-03T21:46:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "US-41 N"
     ],
-    "delay_s": 159,
+    "delay_s": 102,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-10-03T23:44:00Z"
+    "start": "2026-10-03T23:42:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-854"
+     "FL-948"
     ],
-    "delay_s": 152,
+    "delay_s": 86,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-03T23:44:00Z"
+    "start": "2026-10-03T23:45:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "FL-970"
+     "FL-974"
     ],
-    "delay_s": 134,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-03T23:43:00Z"
+    "delay_s": 80,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-03T23:58:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-814"
+    ],
+    "delay_s": 79,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-03T23:38:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 73,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-03T23:39:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-195 E"
+    ],
+    "delay_s": 68,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-03T23:40:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 64,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-03T23:38:30Z"
    }
   ],
-  "incident_count": 314,
-  "named_count": 55,
-  "major_count": 8,
+  "incident_count": 310,
+  "named_count": 47,
+  "major_count": 7,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-03T19:45:50-04:00",
+  "fetched_at": "2026-10-03T20:00:52-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -562,15 +551,21 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-03T19:45:51-04:00",
-  "issued": "200 PM EDT Sat Oct 3 2026",
-  "areas": [],
-  "raw": "en Español\n\n000\nABNT20 KNHC 031729\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Sat Oct 3 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Hagen"
+  "fetched_at": "2026-10-03T20:00:53-04:00",
+  "issued": "800 PM EDT Sat Oct 3 2026",
+  "areas": [
+   {
+    "text": "Southwestern Gulf of America: A broad area of low pressure could form in a few days over the southwestern Gulf of America. Any development of this system is expected to be slow to occur as it drifts over the southwestern Gulf waters. * Formation chance through 48 hours...low...near 0 percent. * Formation chance through",
+    "chance_48h": 0,
+    "chance_7d": 20
+   }
+  ],
+  "raw": "en Español\n\n924 \nABNT20 KNHC 032346\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Sat Oct 3 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nSouthwestern Gulf of America:\nA broad area of low pressure could form in a few days over the \nsouthwestern Gulf of America.  Any development of this system \nis expected to be slow to occur as it drifts over the southwestern \nGulf waters.  \n* Formation chance through 48 hours...low...near 0 percent.\n* Formation chance through 7 days...low...20 percent.\n\n$$\nForecaster Blake"
  },
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-03T19:45:51-04:00",
+  "fetched_at": "2026-10-03T20:00:53-04:00",
   "florida": "$4.1050",
   "national": "$4.3807",
   "diesel": "$5.8763",
@@ -579,7 +574,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-03T19:45:51-04:00",
+  "fetched_at": "2026-10-03T20:00:54-04:00",
   "streams": {
    "local": [
     {
@@ -688,7 +683,7 @@
   ],
   "local": [
    {
-    "title": "1 dead, 1 critically injured after airboat collision in west Broward, first responders say",
+    "title": "1 dead after airboat collision in west Broward, FWC say",
     "url": "https://www.local10.com/news/local/2026/10/03/1-dead-1-critically-injured-after-airboat-collision-in-west-broward-first-responders-say/",
     "published": "Sat, 03 Oct 2026 10:23:10 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
@@ -780,7 +775,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/1-hospitalized-after-crash-in-brownsville-neighborhood-of-nw-miami-dade/",
     "published": "Sat, 03 Oct 2026 11:07:27 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/4ef16e98-ca06-45ed-b3b6-c01438297cb0/076733f4-ae0b-4062-b496-f3a8803e32b4/main.mp4?fastly_token=NmFjMTlmYzZfZTg0ODEyNDZlMDEwMDE0ODBhY2I1OThjNmRkNzM3NjBjZjg5ODZhNDBmMGI5NmIyMzVkNjhlMGEyNWNjNmI4ZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS80ZWYxNmU5OC1jYTA2LTQ1ZWQtYjNiNi1jMDE0MzgyOTdjYjAvMDc2NzMzZjQtYWUwYi00MDYyLWI0OTYtZjNhODgwM2UzMmI0L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/4ef16e98-ca06-45ed-b3b6-c01438297cb0/076733f4-ae0b-4062-b496-f3a8803e32b4/main.mp4?fastly_token=NmFjMWU5ZDRfNjdlOTI4YTY0NGY0MGE0YWYzOTFjOGU2ZjQ5ZWU5ZTFjMWFjYmU5N2ZhOWJmZjk5MzNjYjg5MTAyZTAyYWMyOF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS80ZWYxNmU5OC1jYTA2LTQ1ZWQtYjNiNi1jMDE0MzgyOTdjYjAvMDc2NzMzZjQtYWUwYi00MDYyLWI0OTYtZjNhODgwM2UzMmI0L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -804,7 +799,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/1-hospitalized-after-crash-in-brownsville-neighborhood-of-nw-miami-dade/",
     "published": "Sat, 03 Oct 2026 11:07:27 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/4ef16e98-ca06-45ed-b3b6-c01438297cb0/076733f4-ae0b-4062-b496-f3a8803e32b4/main.mp4?fastly_token=NmFjMTlmYzZfZTg0ODEyNDZlMDEwMDE0ODBhY2I1OThjNmRkNzM3NjBjZjg5ODZhNDBmMGI5NmIyMzVkNjhlMGEyNWNjNmI4ZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS80ZWYxNmU5OC1jYTA2LTQ1ZWQtYjNiNi1jMDE0MzgyOTdjYjAvMDc2NzMzZjQtYWUwYi00MDYyLWI0OTYtZjNhODgwM2UzMmI0L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/4ef16e98-ca06-45ed-b3b6-c01438297cb0/076733f4-ae0b-4062-b496-f3a8803e32b4/main.mp4?fastly_token=NmFjMWU5ZDRfNjdlOTI4YTY0NGY0MGE0YWYzOTFjOGU2ZjQ5ZWU5ZTFjMWFjYmU5N2ZhOWJmZjk5MzNjYjg5MTAyZTAyYWMyOF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS80ZWYxNmU5OC1jYTA2LTQ1ZWQtYjNiNi1jMDE0MzgyOTdjYjAvMDc2NzMzZjQtYWUwYi00MDYyLWI0OTYtZjNhODgwM2UzMmI0L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -952,15 +947,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-03T19:45:52-04:00",
+  "fetched_at": "2026-10-03T20:00:55-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (171) + USGS (13)",
-  "fetched_at": "2026-10-03T19:45:54-04:00",
+  "source": "GDACS (171) + USGS (12)",
+  "fetched_at": "2026-10-03T20:00:57-04:00",
   "events": [
    {
     "lat": 30.5,
@@ -985,6 +980,19 @@
     "mag": 5.9,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzer",
     "when": 1791068155358,
+    "source": "USGS"
+   },
+   {
+    "lat": 4.8223,
+    "lon": 95.2428,
+    "kind": "earthquake",
+    "level": "orange",
+    "title": "M5.6 — 80 km S of Banda Aceh, Indonesia",
+    "place": "80 km S of Banda Aceh, Indonesia",
+    "severity": "M5.6",
+    "mag": 5.6,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzfg",
+    "when": 1791070655621,
     "source": "USGS"
    },
    {
@@ -1101,19 +1109,6 @@
     "source": "USGS"
    },
    {
-    "lat": 51.7161,
-    "lon": 159.4679,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.7 — 153 km SSE of Vilyuchinsk, Russia",
-    "place": "153 km SSE of Vilyuchinsk, Russia",
-    "severity": "M4.7",
-    "mag": 4.7,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz9s",
-    "when": 1790985253503,
-    "source": "USGS"
-   },
-   {
     "lat": -6.0496,
     "lon": 147.1678,
     "kind": "earthquake",
@@ -1124,19 +1119,6 @@
     "mag": 4.6,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzdj",
     "when": 1791048252545,
-    "source": "USGS"
-   },
-   {
-    "lat": 51.5846,
-    "lon": 159.7182,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.6 — 174 km SSE of Vilyuchinsk, Russia",
-    "place": "174 km SSE of Vilyuchinsk, Russia",
-    "severity": "M4.6",
-    "mag": 4.6,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tz9t",
-    "when": 1790985566824,
     "source": "USGS"
    },
    {
@@ -2414,13 +2396,25 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032533",
     "when": "Sat, 03 Oct 2026 23:11:04 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -6.440113285278607,
+    "lon": 139.54666365343724,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Indonesia",
+    "place": "Indonesia",
+    "severity": "Green impact for forestfire in 7368 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032457",
+    "when": "Mon, 28 Sep 2026 19:05:27 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 184,
+  "event_count": 183,
   "counts": {
    "red": 1,
-   "orange": 5,
-   "green": 178
+   "orange": 6,
+   "green": 176
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2428,7 +2422,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-03T19:45:54-04:00",
+  "fetched_at": "2026-10-03T20:00:57-04:00",
   "countries": [
    {
     "iso": "BRA",
