@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-05T08:45:46-04:00",
- "generated_at_utc": "2026-10-05T12:45:46+00:00",
+ "generated_at": "2026-10-05T09:00:58-04:00",
+ "generated_at_utc": "2026-10-05T13:00:58+00:00",
  "weekday": "Monday",
  "date_label": "Monday, October 5",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-05T08:45:47-04:00",
+  "fetched_at": "2026-10-05T09:00:58-04:00",
   "curve": [
    {
     "time": "2026-10-05T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 82.3,
-   "feels": 93.7,
-   "humidity": 86,
-   "wind_mph": 3.0,
-   "wind_dir": 155,
-   "observed_at": "2026-10-05T08:45"
+   "temp": 82.2,
+   "feels": 93.1,
+   "humidity": 85,
+   "wind_mph": 3.1,
+   "wind_dir": 160,
+   "observed_at": "2026-10-05T09:00"
   },
   "today": {
    "high": 88.6,
@@ -166,98 +166,46 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-05T08:45:47-04:00",
+  "fetched_at": "2026-10-05T09:00:59-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-05T08:45:47-04:00",
-  "aqi": 38,
+  "fetched_at": "2026-10-05T09:00:59-04:00",
+  "aqi": 41,
   "category": "Good",
-  "pm25": 12.8,
-  "pm10": 14.5,
-  "observed": "2026-10-05T08:00",
+  "pm25": 11.6,
+  "pm10": 13.4,
+  "observed": "2026-10-05T09:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-10-05T08:45:50-04:00",
-  "route_shown": true,
-  "leg": "Home → Jackson Memorial",
-  "direction": "outbound",
-  "depart_clock": "5:45 AM",
-  "depart_at": "now",
-  "miles": 20.8,
-  "minutes": 59,
-  "delay_minutes": 8,
-  "toll_free": true,
-  "alternates": [
-   {
-    "miles": 21.9,
-    "minutes": 52,
-    "toll": true,
-    "saves": 7
-   },
-   {
-    "miles": 27.4,
-    "minutes": 54,
-    "toll": true,
-    "saves": 5
-   },
-   {
-    "miles": 26.2,
-    "minutes": 55,
-    "toll": true,
-    "saves": 4
-   },
-   {
-    "miles": 22.6,
-    "minutes": 57,
-    "toll": true,
-    "saves": 2
-   }
-  ],
-  "alternates_worth_taking": [],
-  "free_alternates": [
-   {
-    "miles": 20.8,
-    "minutes": 59,
-    "delay_minutes": 8,
-    "saves": 0
-   },
-   {
-    "miles": 23.1,
-    "minutes": 65,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 23.0,
-    "minutes": 68,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 19.8,
-    "minutes": 63,
-    "delay_minutes": 8
-   }
-  ],
-  "best_free": {
-   "miles": 20.8,
-   "minutes": 59,
-   "delay_minutes": 8,
-   "saves": 0
-  },
+  "source": "TomTom Traffic",
+  "fetched_at": "2026-10-05T09:00:59-04:00",
+  "route_shown": false,
+  "leg": null,
+  "direction": null,
   "incidents": [
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 1777,
+    "delay_s": 1563,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T10:40:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 1513,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-05T10:40:30Z"
@@ -268,37 +216,27 @@
      "FL-836 E",
      "I-395 E"
     ],
-    "delay_s": 1483,
-    "magnitude": 3,
-    "description": "Stationary traffic",
+    "delay_s": 1309,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-10-05T10:08:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-953"
+     "FL-94"
     ],
-    "delay_s": 1391,
+    "delay_s": 1026,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-05T10:40:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 N"
-    ],
-    "delay_s": 1336,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T12:38:33Z"
+    "start": "2026-10-05T10:38:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "US-41 S"
     ],
-    "delay_s": 1065,
+    "delay_s": 1020,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-05T11:40:30Z"
@@ -306,29 +244,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-986"
-    ],
-    "delay_s": 1043,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T10:31:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 1026,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T11:29:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-887 S"
     ],
-    "delay_s": 917,
+    "delay_s": 984,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-05T12:30:26Z"
@@ -336,12 +254,12 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-827"
+     "FL-854"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "delay_s": 939,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T11:29:30Z"
    },
    {
     "county": "Broward",
@@ -352,6 +270,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -406,22 +334,155 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-94"
+     "FL-986"
     ],
-    "delay_s": 879,
+    "delay_s": 849,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-05T10:38:30Z"
+    "start": "2026-10-05T10:31:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 758,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T12:23:50Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-976"
     ],
-    "delay_s": 772,
+    "delay_s": 708,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-05T11:11:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 N"
+    ],
+    "delay_s": 691,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T12:38:33Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 607,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-05T10:34:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 S"
+    ],
+    "delay_s": 567,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-05T11:39:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 N"
+    ],
+    "delay_s": 514,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-05T10:08:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 498,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T12:30:26Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-75 S"
+    ],
+    "delay_s": 480,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T10:49:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-948"
+    ],
+    "delay_s": 471,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T12:43:14Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 N",
+     "Florida's Tpke N"
+    ],
+    "delay_s": 463,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-05T11:27:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-817"
+    ],
+    "delay_s": 453,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T12:22:53Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 447,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T10:08:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 S",
+     "FL-25"
+    ],
+    "delay_s": 437,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T10:47:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 417,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T12:05:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -430,146 +491,21 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 772,
-    "magnitude": 3,
-    "description": "Stationary traffic",
+    "delay_s": 408,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-10-05T11:48:32Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 749,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-05T10:34:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": 693,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T10:47:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 632,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T11:08:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-75 S"
-    ],
-    "delay_s": 614,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T10:49:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-817"
-    ],
-    "delay_s": 596,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T12:22:53Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 587,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-05T10:40:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
-    ],
-    "delay_s": 583,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-05T10:27:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 569,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T10:08:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-922"
-    ],
-    "delay_s": 553,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-05T11:51:02Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": 547,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T11:36:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 539,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-05T11:27:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 E"
-    ],
-    "delay_s": 538,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T10:47:30Z"
    }
   ],
-  "incident_count": 616,
-  "named_count": 208,
-  "major_count": 22,
+  "incident_count": 559,
+  "named_count": 171,
+  "major_count": 19,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-05T08:45:51-04:00",
+  "fetched_at": "2026-10-05T09:01:00-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -609,14 +545,14 @@
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Oct 5 2026, 6:09 AM",
    "Panhandle | Okaloosa | US-98: A major incident has closed all eastbound lanes near Santa Rosa Blvd in Okaloosa County. Motorists are advised to seek alternate route and use caution in the area. | Oct 5 2026, 7:32 AM",
    "Northeast | Duval | Jacksonville: Due to a crash, all SB lanes on I-95 at Golfair are blocked. Use caution and seek alternate routes. | Oct 5 2026, 8:28 AM",
-   "Central | Osceola | Crash on SR-60 East in Osceola County at Peavine Rd with All Lanes Closed. Motorists should seek an alternate route and expect significant delays approaching the area. | Oct 5 2026, 8:45 AM"
+   "Central | Osceola | Crash on SR-60 East in Osceola County at Peavine Rd with All Lanes Closed. Motorists should seek an alternate route and expect significant delays approaching the area. | Oct 5 2026, 9:00 AM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-05T08:45:51-04:00",
+  "fetched_at": "2026-10-05T09:01:00-04:00",
   "issued": "800 AM EDT Mon Oct 5 2026",
   "areas": [
    {
@@ -630,7 +566,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-05T08:45:51-04:00",
+  "fetched_at": "2026-10-05T09:01:01-04:00",
   "florida": "$4.0603",
   "national": "$4.3653",
   "diesel": "$5.8142",
@@ -639,7 +575,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-05T08:45:52-04:00",
+  "fetched_at": "2026-10-05T09:01:02-04:00",
   "streams": {
    "local": [
     {
@@ -816,7 +752,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/it-happened-like-a-movie-2-seen-jumping-from-windows-during-shooting-in-north-miami-gated-community-1-hospitalized/",
     "published": "Sun, 04 Oct 2026 12:17:11 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/5fa875fd-a7dd-49f0-a1ef-46a714fb8254/88e9a7e4-109b-4798-a50c-13d2005800bf/main.mp4?fastly_token=NmFjM2RhYTdfN2YwZjg0YzVlNmZiZTVjNGY2MmQ4MmRhMjQxMjBkNGJkN2E3ZjIxZmE4NjRhZWQwYjNhZDRiYmI3ZTFhNDA3N18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81ZmE4NzVmZC1hN2RkLTQ5ZjAtYTFlZi00NmE3MTRmYjgyNTQvODhlOWE3ZTQtMTA5Yi00Nzk4LWE1MGMtMTNkMjAwNTgwMGJmL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/d0544adb-f545-4c3a-bb65-0a2b71eb8001/e6d9d56e-2fff-4ddd-8518-3f6b32445dd4/main.mp4?fastly_token=NmFjM2VmNmFfMWFlZmVlYWE1YTA3YTQ4MTBlNjYwZGI1NmNlYmU3ZmMyYjQ0MmNiMmRmODdjYzMxM2EyZTQzNWEwYWQ4MzgwMV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kMDU0NGFkYi1mNTQ1LTRjM2EtYmI2NS0wYTJiNzFlYjgwMDEvZTZkOWQ1NmUtMmZmZi00ZGRkLTg1MTgtM2Y2YjMyNDQ1ZGQ0L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -832,7 +768,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/man-caught-on-camera-stealing-mail-in-west-miami-dade-faces-charges/",
     "published": "Sun, 04 Oct 2026 03:10:28 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/4c258ffd-f25e-4c89-bfe9-bf4e345c74a9/3df25354-d25e-44ff-9704-fa55dd5d379e/main.mp4?fastly_token=NmFjM2FlMjJfMjM1YWUyNGU4NTlhYjBmNjZhZTg1NzkwYzM2MDFhNTZmZTFmNDdhMTBmZWI0NTA5OWJiZTg5NzI2NGEzMThlYV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS80YzI1OGZmZC1mMjVlLTRjODktYmZlOS1iZjRlMzQ1Yzc0YTkvM2RmMjUzNTQtZDI1ZS00NGZmLTk3MDQtZmE1NWRkNWQzNzllL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/504db279-6350-4769-9404-e9b50cfdcf48/857a3430-2a65-402d-becb-90d2f24b9c18/main.mp4?fastly_token=NmFjM2VmMGFfNGQzYTIwOTJlYzk3ZTU2NjI5OGVmMGU2ZTNmOWY4ZDJlZDZhYTQwY2ZmOTQzMWI3NzY2MTZmYmJkNGM5OGVkZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81MDRkYjI3OS02MzUwLTQ3NjktOTQwNC1lOWI1MGNmZGNmNDgvODU3YTM0MzAtMmE2NS00MDJkLWJlY2ItOTBkMmYyNGI5YzE4L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -844,11 +780,27 @@
     "media_type": "video"
    },
    {
-    "title": "Police officer injured after Opa-locka Boulevard crash",
+    "title": "1 airlifted after car fire near Miccosukee Village in West Miami-Dade",
+    "url": "https://wsvn.com/news/local/miami-dade/miami-dade-car-fire/",
+    "published": "Mon, 05 Oct 2026 12:41:55 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c29aad4d-7000-492f-bd54-3d4e5fccb53a/253f844a-1d1e-4da8-a2f6-26f88a9a8573/main.mp4?fastly_token=NmFjM2YzMGRfZmRiNjg3MDdiZGEyYTIwYzBkOWE2YjdmZjdkZWQ0MzRkMDEwZmFiMDRmYzY5ODFlMGRhNzY2MTgzNDIzYTViZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jMjlhYWQ0ZC03MDAwLTQ5MmYtYmQ1NC0zZDRlNWZjY2I1M2EvMjUzZjg0NGEtMWQxZS00ZGE4LWEyZjYtMjZmODhhOWE4NTczL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Voter registration for midterm elections ends Monday",
+    "url": "https://wsvn.com/news/local/miami-dade/voter-registration-midterm-deadline/",
+    "published": "Mon, 05 Oct 2026 12:14:31 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/35a70ddf-8f51-405a-9530-d5b7eebe5e06/13a4e936-2b15-4162-8a08-ffe5d2aa2d4a/main.mp4?fastly_token=NmFjM2VjYWFfZDAxODdiZWYwMTQ5NzY2MjdkZDBmNGQ4NmEzYjNjODBlMGY2OGEzY2FmZThhNWNhODU0ZmQyYzRlMjE0YjMyOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zNWE3MGRkZi04ZjUxLTQwNWEtOTUzMC1kNWI3ZWViZTVlMDYvMTNhNGU5MzYtMmIxNS00MTYyLThhMDgtZmZlNWQyYWEyZDRhL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Miami Police officer, civilian driver hospitalized after crash on Opa-locka Boulevard",
     "url": "https://wsvn.com/news/local/miami-dade/police-officer-injured-after-opa-locka-boulevard-crash/",
     "published": "Mon, 05 Oct 2026 02:51:49 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1cf4eb2a-7cf4-4010-90d7-c5a8f6e5c923/a6f84c2e-639b-4319-a5a6-286aa3113f2a/main.mp4?fastly_token=NmFjM2IyYjhfMWRiMjljNDk0Y2I0M2UxYjQyYzQ4MmUzNjQ3ZjUwZjA3OGFiNGM0NDgxNWE4YTRiOGFhYTdlNDAzMjRlYzUwMV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xY2Y0ZWIyYS03Y2Y0LTQwMTAtOTBkNy1jNWE4ZjZlNWM5MjMvYTZmODRjMmUtNjM5Yi00MzE5LWE1YTYtMjg2YWEzMTEzZjJhL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1cf4eb2a-7cf4-4010-90d7-c5a8f6e5c923/a6f84c2e-639b-4319-a5a6-286aa3113f2a/main.mp4?fastly_token=NmFjM2U5ZGVfYzI2YWE5YTcyMDlmMDUzNTNhYjA3NGRhYmY3Y2M2NWQ5ZTFhNjM5MjlmZGMxYWQ3NjczZDg0NWVmZmM2YzZiMF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xY2Y0ZWIyYS03Y2Y0LTQwMTAtOTBkNy1jNWE4ZjZlNWM5MjMvYTZmODRjMmUtNjM5Yi00MzE5LWE1YTYtMjg2YWEzMTEzZjJhL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -858,25 +810,17 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/2f34b8ae-7037-4e03-bf02-af4fb3a062b4/0268372a-5c03-4b1a-bc84-63ed983f746e/main.mp4?fastly_token=NmFjM2QxYjNfMTZhNzQ2NTg4MzMzOWY5ZGIwNmJhZjliMTc3ODBiZDg2ZDc1OTg0M2E4N2M2ZDViYjgxNDc0MTRmYmZhYzg1OF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yZjM0YjhhZS03MDM3LTRlMDMtYmYwMi1hZjRmYjNhMDYyYjQvMDI2ODM3MmEtNWMwMy00YjFhLWJjODQtNjNlZDk4M2Y3NDZlL21haW4ubXA0",
     "media_type": "video"
-   },
-   {
-    "title": "‘It happened like a movie’: 2 seen jumping from windows during shooting in North Miami gated community; 1 hospitalized",
-    "url": "https://wsvn.com/news/local/miami-dade/it-happened-like-a-movie-2-seen-jumping-from-windows-during-shooting-in-north-miami-gated-community-1-hospitalized/",
-    "published": "Sun, 04 Oct 2026 12:17:11 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/5fa875fd-a7dd-49f0-a1ef-46a714fb8254/88e9a7e4-109b-4798-a50c-13d2005800bf/main.mp4?fastly_token=NmFjM2RhYTdfN2YwZjg0YzVlNmZiZTVjNGY2MmQ4MmRhMjQxMjBkNGJkN2E3ZjIxZmE4NjRhZWQwYjNhZDRiYmI3ZTFhNDA3N18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81ZmE4NzVmZC1hN2RkLTQ5ZjAtYTFlZi00NmE3MTRmYjgyNTQvODhlOWE3ZTQtMTA5Yi00Nzk4LWE1MGMtMTNkMjAwNTgwMGJmL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Man caught on camera stealing mail in West Miami-Dade faces charges",
-    "url": "https://wsvn.com/news/local/miami-dade/man-caught-on-camera-stealing-mail-in-west-miami-dade-faces-charges/",
-    "published": "Sun, 04 Oct 2026 03:10:28 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/4c258ffd-f25e-4c89-bfe9-bf4e345c74a9/3df25354-d25e-44ff-9704-fa55dd5d379e/main.mp4?fastly_token=NmFjM2FlMjJfMjM1YWUyNGU4NTlhYjBmNjZhZTg1NzkwYzM2MDFhNTZmZTFmNDdhMTBmZWI0NTA5OWJiZTg5NzI2NGEzMThlYV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS80YzI1OGZmZC1mMjVlLTRjODktYmZlOS1iZjRlMzQ1Yzc0YTkvM2RmMjUzNTQtZDI1ZS00NGZmLTk3MDQtZmE1NWRkNWQzNzllL21haW4ubXA0",
-    "media_type": "video"
    }
   ],
   "colombia": [
+   {
+    "title": "Un interno resultó herido tras un ataque con drones explosivos a la estación de Policía en Aguachica, sur del Cesar",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/un-interno-resulto-herido-tras-un-ataque-con-drones-explosivos-a-la-estacion-de-policia-en-aguachica-sur-del-cesar-3591232",
+    "published": "2026-10-05T07:35:50-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/05/6ac396f392e99.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Larvas en los ojos de peces en Hidrosogamoso: alarma en Santander por imágenes impactantes, expertos hablan de qué pasaría con el consumo humano",
     "url": "https://www.eltiempo.com/colombia/santander/larvas-en-los-ojos-de-peces-en-hidrosogamoso-alarma-en-santander-por-imagenes-impactantes-expertos-hablan-de-que-pasaria-con-el-consumo-humano-3591176",
@@ -932,14 +876,6 @@
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/04/6ac2ea8f456c2.r_d.1111-257-0.jpeg",
     "media_type": "image"
-   },
-   {
-    "title": "El desgarrador relato de padre que fue testigo del accidente en el que murió su hijo en Barranquilla: ‘Vi la moto y la placa, pero no sabía si era él’",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/el-desgarrador-relato-de-padre-que-fue-testigo-del-accidente-en-el-que-murio-su-hijo-en-barranquilla-vi-la-moto-y-la-placa-pero-no-sabia-si-era-el-3591146",
-    "published": "2026-10-04T19:24:51-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/04/6ac2c8a61b4cf.r_d.360-480-0.jpeg",
-    "media_type": "image"
    }
   ],
   "world": [
@@ -976,6 +912,14 @@
     "media_type": null
    },
    {
+    "title": "FlyDubai attacker intended to crash plane into Tel Aviv airport, ongoing investigation finds",
+    "url": "https://www.npr.org/2026/10/05/nx-s1-5990802/midair-attack-flydubai",
+    "published": "Mon, 05 Oct 2026 06:53:46 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "U.S. Marine suspected in woman's death arrested in Japan",
     "url": "https://www.npr.org/2026/10/05/nx-s1-5990879/u-s-marine-suspected-in-womans-death-arrested-in-japan",
     "published": "Mon, 05 Oct 2026 06:53:37 -0400",
@@ -998,21 +942,13 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "Spain's prime minister calls early elections as pressure mounts over housing crisis",
-    "url": "https://www.npr.org/2026/10/05/nx-s1-5991404/spain-snap-elections",
-    "published": "Mon, 05 Oct 2026 05:15:55 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-05T08:45:53-04:00",
+  "fetched_at": "2026-10-05T09:01:02-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1020,7 +956,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (153) + USGS (9)",
-  "fetched_at": "2026-10-05T08:45:55-04:00",
+  "fetched_at": "2026-10-05T09:01:05-04:00",
   "events": [
    {
     "lat": 9.246,
@@ -2484,7 +2420,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-05T08:45:55-04:00",
+  "fetched_at": "2026-10-05T09:01:05-04:00",
   "countries": [
    {
     "iso": "BRA",
@@ -2529,6 +2465,20 @@
     "issue": "¡Evite multas! Pico y placa en Cali para el lunes 5 de octubre de 2026: consulte las restricciones y horarios"
    },
    {
+    "iso": "ISR",
+    "name": "Israel",
+    "stories": [
+     {
+      "title": "FlyDubai attacker intended to crash plane into Tel Aviv airport, ongoing investigation finds",
+      "url": "https://www.npr.org/2026/10/05/nx-s1-5990802/midair-attack-flydubai",
+      "published": "Mon, 05 Oct 2026 06:53:46 -0400",
+      "section": "world"
+     }
+    ],
+    "count": 1,
+    "issue": "FlyDubai attacker intended to crash plane into Tel Aviv airport, ongoing investigation finds"
+   },
+   {
     "iso": "JPN",
     "name": "Japan",
     "stories": [
@@ -2555,20 +2505,6 @@
     ],
     "count": 1,
     "issue": "Imran Khan supporters march in Pakistan to demand his release after talks failed"
-   },
-   {
-    "iso": "ESP",
-    "name": "Spain",
-    "stories": [
-     {
-      "title": "Spain's prime minister calls early elections as pressure mounts over housing crisis",
-      "url": "https://www.npr.org/2026/10/05/nx-s1-5991404/spain-snap-elections",
-      "published": "Mon, 05 Oct 2026 05:15:55 -0400",
-      "section": "world"
-     }
-    ],
-    "count": 1,
-    "issue": "Spain's prime minister calls early elections as pressure mounts over housing crisis"
    },
    {
     "iso": "TWN",
