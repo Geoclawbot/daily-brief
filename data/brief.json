@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-05T11:45:51-04:00",
- "generated_at_utc": "2026-10-05T15:45:51+00:00",
+ "generated_at": "2026-10-05T12:00:56-04:00",
+ "generated_at_utc": "2026-10-05T16:00:56+00:00",
  "weekday": "Monday",
  "date_label": "Monday, October 5",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-05T11:45:51-04:00",
+  "fetched_at": "2026-10-05T12:00:57-04:00",
   "curve": [
    {
     "time": "2026-10-05T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 86.5,
-   "feels": 96.0,
-   "humidity": 71,
-   "wind_mph": 5.2,
-   "wind_dir": 130,
-   "observed_at": "2026-10-05T11:45"
+   "temp": 87.1,
+   "feels": 98.6,
+   "humidity": 70,
+   "wind_mph": 6.1,
+   "wind_dir": 134,
+   "observed_at": "2026-10-05T12:00"
   },
   "today": {
    "high": 89.3,
@@ -166,29 +166,91 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-05T11:45:52-04:00",
+  "fetched_at": "2026-10-05T12:00:58-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-05T11:45:52-04:00",
-  "aqi": 43,
+  "fetched_at": "2026-10-05T12:00:58-04:00",
+  "aqi": 44,
   "category": "Good",
-  "pm25": 7.7,
-  "pm10": 10.3,
-  "observed": "2026-10-05T11:00",
+  "pm25": 8.1,
+  "pm10": 10.7,
+  "observed": "2026-10-05T12:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-10-05T11:45:53-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-10-05T12:01:00-04:00",
+  "route_shown": true,
+  "leg": "Jackson Memorial → Home",
+  "direction": "return",
+  "depart_clock": "3:30 PM",
+  "depart_at": "2026-10-05T15:30:00-04:00",
+  "miles": 20.6,
+  "minutes": 61,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 22.6,
+    "minutes": 54,
+    "toll": true,
+    "saves": 7
+   },
+   {
+    "miles": 25.5,
+    "minutes": 57,
+    "toll": true,
+    "saves": 4
+   },
+   {
+    "miles": 28.6,
+    "minutes": 57,
+    "toll": true,
+    "saves": 4
+   },
+   {
+    "miles": 20.8,
+    "minutes": 59,
+    "toll": true,
+    "saves": 2
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 61,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 26.6,
+    "minutes": 65,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.1,
+    "minutes": 74,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.5,
+    "minutes": 70,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 61,
+   "delay_minutes": 0,
+   "saves": 0
+  },
   "incidents": [
    {
     "county": "Broward",
@@ -273,40 +335,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 496,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T10:08:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 S"
-    ],
-    "delay_s": 312,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T14:14:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-9"
-    ],
-    "delay_s": 229,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T15:30:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-953"
     ],
-    "delay_s": 219,
+    "delay_s": 385,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-05T12:23:50Z"
@@ -314,31 +345,30 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S",
-     "US-41 N"
+     "US-41 S"
     ],
-    "delay_s": 201,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-05T15:19:02Z"
+    "delay_s": 334,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T14:14:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S",
-     "US-41 N"
+     "FL-91 S",
+     "Florida's Tpke S"
     ],
-    "delay_s": 198,
+    "delay_s": 212,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-10-05T15:35:30Z"
+    "start": "2026-10-05T10:08:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 177,
+    "delay_s": 205,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-10-05T13:34:30Z"
@@ -346,72 +376,13 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-A1A"
+     "US-1 N",
+     "FL-5"
     ],
-    "delay_s": 171,
+    "delay_s": 194,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-05T15:17:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 161,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-05T15:42:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-932"
-    ],
-    "delay_s": 160,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-05T15:19:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 149,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T15:42:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-824"
-    ],
-    "delay_s": 146,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-05T15:28:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-948"
-    ],
-    "delay_s": 132,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-05T14:47:33Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-968"
-    ],
-    "delay_s": 113,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-05T15:28:30Z"
+    "start": "2026-10-05T15:50:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -419,40 +390,91 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 109,
+    "delay_s": 189,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-05T15:42:30Z"
+    "start": "2026-10-05T15:26:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 E"
+     "FL-9"
     ],
-    "delay_s": 89,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-05T10:08:30Z"
+    "delay_s": 163,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-05T15:53:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 139,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-05T15:19:02Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-A1A"
+    ],
+    "delay_s": 137,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-05T15:17:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-986"
+    ],
+    "delay_s": 132,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T15:51:30Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "I-95 S"
+     "FL-854"
     ],
-    "delay_s": 87,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-05T10:40:30Z"
+    "delay_s": 126,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-05T15:42:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 N"
+     "FL-976"
     ],
-    "delay_s": 87,
+    "delay_s": 124,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T15:58:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 N"
+    ],
+    "delay_s": 124,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-10-05T15:03:30Z"
+    "start": "2026-10-05T15:58:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-997"
+    ],
+    "delay_s": 118,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T15:56:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -460,17 +482,48 @@
      "US-1 N",
      "FL-5"
     ],
-    "delay_s": 86,
+    "delay_s": 110,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-05T15:44:31Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-932"
+    ],
+    "delay_s": 109,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-10-05T15:42:30Z"
+    "start": "2026-10-05T15:19:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 107,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-05T15:35:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 105,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-05T15:42:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 85,
+    "delay_s": 104,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-10-05T13:18:00Z"
@@ -478,35 +531,43 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 S",
-     "FL-5"
+     "FL-969"
     ],
-    "delay_s": 82,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-05T15:26:00Z"
+    "delay_s": 92,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-05T15:55:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "FL-5"
+     "FL-826 N"
+    ],
+    "delay_s": 84,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-05T15:03:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-814"
     ],
     "delay_s": 81,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-05T15:44:31Z"
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-05T15:53:30Z"
    }
   ],
-  "incident_count": 324,
-  "named_count": 59,
+  "incident_count": 328,
+  "named_count": 62,
   "major_count": 8,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-05T11:45:54-04:00",
+  "fetched_at": "2026-10-05T12:01:01-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -544,7 +605,7 @@
   "fl511_all": [
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Oct 5 2026, 6:09 AM",
    "Panhandle | Okaloosa | US-98: A major incident has closed all eastbound lanes near Santa Rosa Blvd in Okaloosa County. Motorists are advised to seek alternate route and use caution in the area. | Oct 5 2026, 7:32 AM",
-   "Central | Osceola | Crash on SR-60 East in Osceola County at Peavine Rd with All Lanes Closed. Motorists should seek an alternate route and expect significant delays approaching the area. | Oct 5 2026, 11:45 AM",
+   "Central | Osceola | Crash on SR-60 East in Osceola County at Peavine Rd with All Lanes Closed. Motorists should seek an alternate route and expect significant delays approaching the area. | Oct 5 2026, 12:00 PM",
    "Tampa Bay | Polk | Winter Haven: All lanes closed along both directions of SR 544 / Lucerne Park Road at Wildflower Drive due to a major crash. Motorists should expect delays in the area and seek an alternate route. | Oct 5 2026, 9:07 AM",
    "Northeast | Duval | Jacksonville: There is lane blocking construction on US-17/ Main St between W 12th St and W 1st St. Use caution in the area. | Oct 5 2026, 9:15 AM",
    "Northeast | Alachua | Gainesville: There is lane blocking construction on SR-26/W New Berry Rd at SR-222/NW 39th Ave. Use caution in the area. | Oct 5 2026, 9:19 AM",
@@ -556,7 +617,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-05T11:45:54-04:00",
+  "fetched_at": "2026-10-05T12:01:01-04:00",
   "issued": "800 AM EDT Mon Oct 5 2026",
   "areas": [
    {
@@ -570,7 +631,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-05T11:45:54-04:00",
+  "fetched_at": "2026-10-05T12:01:02-04:00",
   "florida": "$4.0603",
   "national": "$4.3653",
   "diesel": "$5.8142",
@@ -579,7 +640,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-05T11:45:55-04:00",
+  "fetched_at": "2026-10-05T12:01:02-04:00",
   "streams": {
    "local": [
     {
@@ -818,9 +879,17 @@
   ],
   "colombia": [
    {
+    "title": "Dos puentes reconocidos y turísticos de Santander se desplomaron y causaron la muerte de dos visitantes: autoridades alertan sobre esta emergencia",
+    "url": "https://www.eltiempo.com/colombia/santander/dos-puentes-reconocidos-y-turisticos-de-santander-se-desplomaron-y-causaron-la-muerte-de-dos-visitantes-autoridades-alertan-sobre-esta-emergencia-3591272",
+    "published": "2026-10-05T10:35:52-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/05/6ac3b07026ad5.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Fuerte explosión en la vía que comunica a Suárez con La Betulia, al norte del Cauca, causó grave afectación en la carretera y dejó un enorme cráter",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/fuerte-explosion-en-la-via-que-comunica-a-suarez-con-la-betulia-al-norte-del-cauca-causo-grave-afectacion-en-la-carretera-y-dejo-un-enorme-crater-3591303",
-    "published": "2026-10-05T10:33:56-05:00",
+    "published": "2026-10-05T10:40:01-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/05/6ac3c23583278.png",
     "media_type": "image"
@@ -828,7 +897,7 @@
    {
     "title": "Macabro hallazgo del cuerpo sin vida de una joven bajo un puente en Cali: autoridades investigan para identificar a responsables de este crimen",
     "url": "https://www.eltiempo.com/colombia/cali/macabro-hallazgo-del-cuerpo-sin-vida-de-una-joven-bajo-un-puente-en-cali-autoridades-investigan-para-identificar-a-responsables-de-este-crimen-3591298",
-    "published": "2026-10-05T10:23:53-05:00",
+    "published": "2026-10-05T10:47:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/02/25/699fc74b67386.r_d.600-267-0.jpeg",
     "media_type": "image"
@@ -871,14 +940,6 @@
     "published": "2026-10-05T09:03:31-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/05/6ac3acdfcc696.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "En Santander cayó alias 'Orlanda', una mujer que pertenecería al Tren de Aragua y tenía circular azul de la Interpol: así fue como que se delató",
-    "url": "https://www.eltiempo.com/colombia/santander/en-santander-cayo-alias-orlanda-una-mujer-que-perteneceria-al-tren-de-aragua-y-tenia-circular-azul-de-la-interpol-asi-fue-como-que-se-delato-3591262",
-    "published": "2026-10-05T08:54:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/05/6ac3a9eee059f.r_d.688-566-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -952,7 +1013,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-05T11:45:56-04:00",
+  "fetched_at": "2026-10-05T12:01:03-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -960,7 +1021,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (154) + USGS (9)",
-  "fetched_at": "2026-10-05T11:45:58-04:00",
+  "fetched_at": "2026-10-05T12:01:05-04:00",
   "events": [
    {
     "lat": 9.246,
@@ -2424,7 +2485,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-05T11:45:58-04:00",
+  "fetched_at": "2026-10-05T12:01:05-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2433,7 +2494,7 @@
      {
       "title": "Macabro hallazgo del cuerpo sin vida de una joven bajo un puente en Cali: autoridades investigan para identificar a responsables de este crimen",
       "url": "https://www.eltiempo.com/colombia/cali/macabro-hallazgo-del-cuerpo-sin-vida-de-una-joven-bajo-un-puente-en-cali-autoridades-investigan-para-identificar-a-responsables-de-este-crimen-3591298",
-      "published": "2026-10-05T10:23:53-05:00",
+      "published": "2026-10-05T10:47:00-05:00",
       "section": "colombia"
      },
      {
