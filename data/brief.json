@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-05T21:15:46-04:00",
- "generated_at_utc": "2026-10-06T01:15:46+00:00",
+ "generated_at": "2026-10-05T21:30:50-04:00",
+ "generated_at_utc": "2026-10-06T01:30:50+00:00",
  "weekday": "Monday",
  "date_label": "Monday, October 5",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-05T21:15:46-04:00",
+  "fetched_at": "2026-10-05T21:30:51-04:00",
   "curve": [
    {
     "time": "2026-10-05T05:00",
@@ -133,7 +133,7 @@
     "time": "2026-10-05T20:00",
     "hour": 20,
     "temp": 84.6,
-    "feels": 93.1,
+    "feels": 93.2,
     "humidity": 75,
     "pop": 11
    },
@@ -141,18 +141,18 @@
     "time": "2026-10-05T21:00",
     "hour": 21,
     "temp": 82.8,
-    "feels": 93.1,
+    "feels": 92.2,
     "humidity": 82,
-    "pop": 8
+    "pop": 9
    }
   ],
   "current": {
-   "temp": 82.5,
-   "feels": 92.6,
+   "temp": 82.3,
+   "feels": 92.0,
    "humidity": 83,
-   "wind_mph": 4.7,
-   "wind_dir": 125,
-   "observed_at": "2026-10-05T21:15"
+   "wind_mph": 5.3,
+   "wind_dir": 158,
+   "observed_at": "2026-10-05T21:30"
   },
   "today": {
    "high": 90.8,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-05T21:15:47-04:00",
+  "fetched_at": "2026-10-05T21:30:51-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-05T21:15:48-04:00",
+  "fetched_at": "2026-10-05T21:30:52-04:00",
   "aqi": 48,
   "category": "Good",
   "pm25": 16.9,
@@ -185,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-10-05T21:15:48-04:00",
+  "fetched_at": "2026-10-05T21:30:52-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -293,10 +293,20 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 886,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-06T01:14:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 396,
+    "delay_s": 804,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-06T01:02:00Z"
@@ -304,19 +314,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S"
-    ],
-    "delay_s": 197,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-06T01:10:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-821 S"
     ],
-    "delay_s": 191,
+    "delay_s": 737,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-06T01:04:00Z"
@@ -324,53 +324,93 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-972"
+     "US-41 S"
     ],
-    "delay_s": 111,
+    "delay_s": 265,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-10-06T01:13:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-818"
-    ],
-    "delay_s": 104,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-06T01:06:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 102,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-05T23:50:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 91,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-06T01:12:00Z"
+    "start": "2026-10-06T01:10:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-836 E"
     ],
-    "delay_s": 66,
+    "delay_s": 254,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-06T01:11:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-811"
+    ],
+    "delay_s": 93,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-06T01:26:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 84,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-10-06T01:11:00Z"
+    "start": "2026-10-06T01:12:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": 57,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-06T01:13:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Florida's Tpke N",
+     "FL-821 N"
+    ],
+    "delay_s": 57,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-06T01:29:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-112 E"
+    ],
+    "delay_s": 56,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-06T01:29:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-818"
+    ],
+    "delay_s": 49,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-06T01:06:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 30,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-06T01:29:00Z"
    },
    {
     "county": "Broward",
@@ -452,60 +492,19 @@
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-07T13:07:38Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-916"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
     "description": "Lane closed; Roadworks",
     "start": "2026-09-07T13:07:38Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-10-05T08:24:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-7",
-     "US-441 N"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-22T06:11:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-11T22:21:17Z"
    }
   ],
-  "incident_count": 262,
-  "named_count": 32,
-  "major_count": 10,
+  "incident_count": 268,
+  "named_count": 36,
+  "major_count": 13,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-05T21:15:49-04:00",
+  "fetched_at": "2026-10-05T21:30:53-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -552,7 +551,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-05T21:15:49-04:00",
+  "fetched_at": "2026-10-05T21:30:53-04:00",
   "issued": "800 PM EDT Mon Oct 5 2026",
   "areas": [
    {
@@ -566,7 +565,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-05T21:15:50-04:00",
+  "fetched_at": "2026-10-05T21:30:53-04:00",
   "florida": "$4.0603",
   "national": "$4.3653",
   "diesel": "$5.8142",
@@ -575,7 +574,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-05T21:15:50-04:00",
+  "fetched_at": "2026-10-05T21:30:53-04:00",
   "streams": {
    "local": [
     {
@@ -683,70 +682,6 @@
    }
   ],
   "local": [
-   {
-    "title": "Deputies: 22-year-old man found dead in Redlands had been abducted from North Miami",
-    "url": "https://www.local10.com/news/local/2026/10/05/miami-dade-captain-finds-man-dead-near-suv-arson-after-abduction-in-north-miami/",
-    "published": "Mon, 05 Oct 2026 21:53:18 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Animal Advocate: Local 10’s parking lot bunny rescued, renamed Duke, and ready for adoption",
-    "url": "https://www.local10.com/news/local/2026/10/05/animal-advocate-local-10s-parking-lot-bunny-rescued-renamed-duke-and-ready-for-adoption/",
-    "published": "Mon, 05 Oct 2026 22:49:40 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "‘Cornell 7′ member ‘later transferred’ to Nova Southeastern; school won’t say if he’s still there",
-    "url": "https://www.local10.com/news/local/2026/10/05/cornell-7-member-later-transferred-to-nova-southeastern-school-wont-say-if-hes-still-there/",
-    "published": "Mon, 05 Oct 2026 22:22:14 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Senior slams SUV through valet ramp at Miami Beach condo after brake mixup",
-    "url": "https://www.local10.com/news/local/2026/10/05/senior-slams-suv-through-valet-ramp-at-miami-beach-condo-after-brake-mixup/",
-    "published": "Mon, 05 Oct 2026 22:08:37 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Mourning mother claims son died after shirt caught on screw inside Miami playground slide",
-    "url": "https://www.local10.com/news/local/2026/10/05/mourning-mother-claims-son-died-after-shirt-caught-on-screw-inside-miami-playground-slide/",
-    "published": "Mon, 05 Oct 2026 22:07:35 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "‘I went crazy’: Miami-Dade jurors hear confession in 2012 triple murder",
-    "url": "https://www.local10.com/news/local/2026/10/05/i-went-crazy-miami-dade-jurors-hear-confession-in-2012-triple-murder/",
-    "published": "Mon, 05 Oct 2026 20:16:14 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Health officials confirm case of dengue fever locally-acquired in Broward County",
-    "url": "https://www.local10.com/news/local/2026/10/05/health-officials-confirm-case-of-dengue-fever-locally-acquired-in-broward-county/",
-    "published": "Mon, 05 Oct 2026 21:33:12 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Video shows man accused in pricey handbag theft turning himself in to Miramar police",
-    "url": "https://www.local10.com/news/local/2026/10/05/video-shows-man-accused-in-pricey-handbag-theft-turning-himself-in-to-miramar-police/",
-    "published": "Mon, 05 Oct 2026 21:19:00 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
    {
     "title": "1 dead, 1 hospitalized after crash on I-95 in Pompano Beach; most NB lanes closed",
     "url": "https://wsvn.com/news/local/broward/1-dead-1-hospitalized-after-crash-on-i-95-in-pompano-beach-most-nb-lanes-closed/",
@@ -948,15 +883,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-05T21:15:51-04:00",
+  "fetched_at": "2026-10-05T21:30:54-04:00",
   "items": [],
-  "scanned": 3,
+  "scanned": 0,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (134) + USGS (11)",
-  "fetched_at": "2026-10-05T21:15:53-04:00",
+  "source": "GDACS (134) + USGS (10)",
+  "fetched_at": "2026-10-05T21:30:56-04:00",
   "events": [
    {
     "lat": 9.246,
@@ -1005,19 +940,6 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018332",
     "when": "Wed, 11 Feb 2026 09:57:31 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -0.4325,
-    "lon": -19.965,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M5.3 — central Mid-Atlantic Ridge",
-    "place": "central Mid-Atlantic Ridge",
-    "severity": "M5.3",
-    "mag": 5.3,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tzlp",
-    "when": 1791163130392,
-    "source": "USGS"
    },
    {
     "lat": -24.4235,
@@ -2408,13 +2330,25 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032505",
     "when": "Thu, 01 Oct 2026 15:13:47 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -10.839152295574648,
+    "lon": -57.186527507429034,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Brazil",
+    "place": "Brazil",
+    "severity": "Green impact for forestfire in 6144 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032515",
+    "when": "Thu, 01 Oct 2026 03:11:13 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 145,
+  "event_count": 144,
   "counts": {
    "red": 0,
    "orange": 4,
-   "green": 141
+   "green": 140
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2422,7 +2356,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-05T21:15:53-04:00",
+  "fetched_at": "2026-10-05T21:30:56-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2577,7 +2511,7 @@
     "issue": "Drones buzz overhead, troops hunker underground in Ukraine's hellish kill zone"
    }
   ],
-  "headlines_scanned": 32,
+  "headlines_scanned": 24,
   "countries_matched": 10,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
