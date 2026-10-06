@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-06T17:46:15-04:00",
- "generated_at_utc": "2026-10-06T21:46:15+00:00",
+ "generated_at": "2026-10-06T18:01:23-04:00",
+ "generated_at_utc": "2026-10-06T22:01:23+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, October 6",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-06T17:46:16-04:00",
+  "fetched_at": "2026-10-06T18:01:23-04:00",
   "curve": [
    {
     "time": "2026-10-06T05:00",
@@ -119,7 +119,7 @@
     "temp": 87.1,
     "feels": 93.6,
     "humidity": 60,
-    "pop": 27
+    "pop": 25
    },
    {
     "time": "2026-10-06T19:00",
@@ -127,7 +127,7 @@
     "temp": 83.8,
     "feels": 91.9,
     "humidity": 77,
-    "pop": 34
+    "pop": 30
    },
    {
     "time": "2026-10-06T20:00",
@@ -135,7 +135,7 @@
     "temp": 79.2,
     "feels": 85.1,
     "humidity": 87,
-    "pop": 34
+    "pop": 38
    },
    {
     "time": "2026-10-06T21:00",
@@ -143,22 +143,22 @@
     "temp": 77.4,
     "feels": 83.3,
     "humidity": 92,
-    "pop": 39
+    "pop": 41
    }
   ],
   "current": {
-   "temp": 86.6,
-   "feels": 92.2,
-   "humidity": 58,
-   "wind_mph": 5.5,
-   "wind_dir": 177,
-   "observed_at": "2026-10-06T17:45"
+   "temp": 87.1,
+   "feels": 93.6,
+   "humidity": 60,
+   "wind_mph": 5.4,
+   "wind_dir": 139,
+   "observed_at": "2026-10-06T18:00"
   },
   "today": {
    "high": 91.3,
    "low": 77.4,
    "feels_max": 101.1,
-   "pop_max": 39
+   "pop_max": 41
   },
   "peak_feels": 101.1,
   "peak_hour": 14
@@ -166,91 +166,29 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-06T17:46:16-04:00",
+  "fetched_at": "2026-10-06T18:01:24-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-06T17:46:17-04:00",
-  "aqi": 62,
+  "fetched_at": "2026-10-06T18:01:25-04:00",
+  "aqi": 63,
   "category": "Moderate",
   "pm25": 8.4,
-  "pm10": 10.9,
-  "observed": "2026-10-06T17:00",
+  "pm10": 10.7,
+  "observed": "2026-10-06T18:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-10-06T17:46:19-04:00",
-  "route_shown": true,
-  "leg": "Jackson Memorial → Home",
-  "direction": "return",
-  "depart_clock": "3:30 PM",
-  "depart_at": "now",
-  "miles": 26.6,
-  "minutes": 68,
-  "delay_minutes": 4,
-  "toll_free": true,
-  "alternates": [
-   {
-    "miles": 22.6,
-    "minutes": 58,
-    "toll": true,
-    "saves": 10
-   },
-   {
-    "miles": 25.5,
-    "minutes": 59,
-    "toll": true,
-    "saves": 9
-   },
-   {
-    "miles": 28.6,
-    "minutes": 60,
-    "toll": true,
-    "saves": 8
-   },
-   {
-    "miles": 26.2,
-    "minutes": 67,
-    "toll": true,
-    "saves": 1
-   }
-  ],
-  "alternates_worth_taking": [],
-  "free_alternates": [
-   {
-    "miles": 26.6,
-    "minutes": 68,
-    "delay_minutes": 4,
-    "saves": 0
-   },
-   {
-    "miles": 21.5,
-    "minutes": 68,
-    "delay_minutes": 4
-   },
-   {
-    "miles": 23.7,
-    "minutes": 73,
-    "delay_minutes": 1
-   },
-   {
-    "miles": 24.4,
-    "minutes": 74,
-    "delay_minutes": 1
-   }
-  ],
-  "best_free": {
-   "miles": 26.6,
-   "minutes": 68,
-   "delay_minutes": 4,
-   "saves": 0
-  },
+  "source": "TomTom Traffic",
+  "fetched_at": "2026-10-06T18:01:25-04:00",
+  "route_shown": false,
+  "leg": null,
+  "direction": null,
   "incidents": [
    {
     "county": "Miami-Dade",
@@ -258,7 +196,7 @@
      "US-1 N",
      "I-95 N"
     ],
-    "delay_s": 2297,
+    "delay_s": 2168,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-06T13:51:00Z"
@@ -266,39 +204,19 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-858"
+     "FL-854"
     ],
-    "delay_s": 1944,
+    "delay_s": 2078,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-06T19:19:36Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-969"
-    ],
-    "delay_s": 1890,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-06T20:20:44Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 S"
-    ],
-    "delay_s": 1493,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-06T21:30:19Z"
+    "start": "2026-10-06T19:14:30Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 1479,
+    "delay_s": 1558,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-06T18:34:00Z"
@@ -306,51 +224,19 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-854"
+     "FL-858"
     ],
-    "delay_s": 1475,
+    "delay_s": 1382,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-06T19:14:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "US-27 N",
-     "FL-25"
-    ],
-    "delay_s": 1147,
-    "magnitude": 3,
-    "description": "Stationary traffic; Lane closed",
-    "start": "2026-10-06T20:19:31Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-972"
-    ],
-    "delay_s": 1120,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-06T18:17:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 1103,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-06T19:06:05Z"
+    "start": "2026-10-06T19:19:36Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-823"
     ],
-    "delay_s": 1064,
+    "delay_s": 1143,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-06T21:03:18Z"
@@ -360,31 +246,50 @@
     "roads": [
      "FL-860"
     ],
-    "delay_s": 1055,
+    "delay_s": 1124,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-06T19:46:51Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "FL-969"
     ],
-    "delay_s": 1008,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-06T21:32:46Z"
+    "delay_s": 1096,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-06T20:20:44Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 S",
-     "FL-5"
+     "FL-972"
     ],
-    "delay_s": 906,
+    "delay_s": 1061,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-06T18:50:00Z"
+    "start": "2026-10-06T18:17:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 S"
+    ],
+    "delay_s": 1023,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-06T21:30:19Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 953,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-06T19:06:05Z"
    },
    {
     "county": "Broward",
@@ -414,7 +319,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -424,7 +329,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -459,32 +364,44 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 W"
+     "US-441 N"
     ],
-    "delay_s": 755,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-06T19:38:39Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-915"
-    ],
-    "delay_s": 748,
+    "delay_s": 899,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-06T19:58:23Z"
+    "start": "2026-10-06T20:57:03Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-869"
+     "I-95 S"
     ],
-    "delay_s": 726,
+    "delay_s": 797,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-06T21:32:46Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-7",
+     "US-441 S"
+    ],
+    "delay_s": 780,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-06T20:09:30Z"
+    "start": "2026-10-06T21:39:13Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 770,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-06T21:40:35Z"
    },
    {
     "county": "Miami-Dade",
@@ -494,10 +411,61 @@
      "Florida's Tpke N",
      "FL-826 W"
     ],
-    "delay_s": 720,
+    "delay_s": 768,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-06T19:01:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 738,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-06T19:38:39Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 S",
+     "US-27 N"
+    ],
+    "delay_s": 678,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-06T20:19:31Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 630,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-06T21:45:53Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-869"
+    ],
+    "delay_s": 619,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-06T20:09:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S"
+    ],
+    "delay_s": 614,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-06T20:16:36Z"
    },
    {
     "county": "Miami-Dade",
@@ -506,7 +474,7 @@
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 711,
+    "delay_s": 576,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-10-06T18:11:00Z"
@@ -514,65 +482,33 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-985"
+     "FL-825"
     ],
-    "delay_s": 707,
+    "delay_s": 564,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-06T20:57:03Z"
+    "start": "2026-10-06T21:08:03Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826 N"
     ],
-    "delay_s": 658,
+    "delay_s": 556,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-10-06T20:35:46Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "County Hwy-913",
-     "FL-973"
-    ],
-    "delay_s": 627,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-06T20:54:13Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-985"
-    ],
-    "delay_s": 614,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-06T21:15:46Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 605,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-06T19:05:30Z"
+    "start": "2026-10-06T18:22:30Z"
    }
   ],
-  "incident_count": 730,
-  "named_count": 296,
-  "major_count": 30,
+  "incident_count": 676,
+  "named_count": 254,
+  "major_count": 27,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-06T17:46:20-04:00",
+  "fetched_at": "2026-10-06T18:01:26-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -615,7 +551,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-06T17:46:20-04:00",
+  "fetched_at": "2026-10-06T18:01:26-04:00",
   "issued": "200 PM EDT Tue Oct 6 2026",
   "areas": [
    {
@@ -629,7 +565,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-06T17:46:21-04:00",
+  "fetched_at": "2026-10-06T18:01:26-04:00",
   "florida": "$4.1469",
   "national": "$4.3685",
   "diesel": "$5.9085",
@@ -638,7 +574,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-06T17:46:22-04:00",
+  "fetched_at": "2026-10-06T18:01:27-04:00",
   "streams": {
    "local": [
     {
@@ -747,6 +683,22 @@
   ],
   "local": [
    {
+    "title": "Tony ‘suspends all negotiation’ with commissioners over budget; Broward mayor calls it ‘bullying’",
+    "url": "https://www.local10.com/news/local/2026/10/06/tony-suspends-all-negotiation-with-commissioners-over-budget-broward-mayor-calls-it-bullying/",
+    "published": "Tue, 06 Oct 2026 21:49:39 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Video shows heroic rescue of senior driver from Pembroke Pines lake",
+    "url": "https://www.local10.com/news/local/2026/10/06/video-shows-heroic-rescue-of-senior-driver-from-pembroke-pines-lake/",
+    "published": "Tue, 06 Oct 2026 21:46:58 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "‘You took them’: In Miami courtroom, surviving son confronts stepfather who killed mother, 2 sisters",
     "url": "https://www.local10.com/news/local/2026/10/06/you-took-them-in-miami-courtroom-surviving-son-confronts-stepfather-who-killed-mother-2-sisters/",
     "published": "Tue, 06 Oct 2026 21:18:25 +0000",
@@ -795,22 +747,6 @@
     "media_type": "image"
    },
    {
-    "title": "‘They left it running’: Miami man accused of stealing car with person sleeping in backseat",
-    "url": "https://www.local10.com/news/local/2026/10/06/they-left-it-running-miami-man-accused-of-stealing-car-with-person-sleeping-in-backseat/",
-    "published": "Tue, 06 Oct 2026 17:51:33 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/OUFBBC7MDFBRBLMYM2CQ5MEZ2U.jpg?auth=d47dcb2d9b88e3e5b7105baec9d4a3bbb7f838c56f7a0d19b59310568ba69931&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "Detectives search for suspects after video shows murder victim’s abduction in Miami-Dade",
-    "url": "https://www.local10.com/news/local/2026/10/06/detectives-search-for-suspects-after-video-shows-murder-victims-abduction-in-miami-dade/",
-    "published": "Tue, 06 Oct 2026 16:22:45 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "Boat comes off trailer, triggering chain-reaction wreck on I-95 in Pembroke Park; SB lanes closed north of Hallandale Beach Blvd",
     "url": "https://wsvn.com/news/local/broward/i-95-boat-crash-delays/",
     "published": "Tue, 06 Oct 2026 15:59:11 +0000",
@@ -823,7 +759,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/miami-dade-election-official-reassures-voters/",
     "published": "Mon, 05 Oct 2026 22:08:27 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/d0199d6b-3560-49fd-803d-3be4d7b3d1b3/c24556ad-991e-4acd-b2aa-cb86d1f84852/main.mp4?fastly_token=NmFjNTdiMzZfMmI3M2ViNjE2OTA2NjM4YWQ4N2MxZTQ0MTEzZTlhOGQwOTUyOWFkYWNjNTdjMDc3NGFkODQ1OGQwMGRhMTBlZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kMDE5OWQ2Yi0zNTYwLTQ5ZmQtODAzZC0zYmU0ZDdiM2QxYjMvYzI0NTU2YWQtOTkxZS00YWNkLWIyYWEtY2I4NmQxZjg0ODUyL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/d0199d6b-3560-49fd-803d-3be4d7b3d1b3/c24556ad-991e-4acd-b2aa-cb86d1f84852/main.mp4?fastly_token=NmFjNWM2MGFfZjMxODU4ZjljN2NlNjUxMzQwNDU4ZGM5OWYyZmJkZTNjMGViZjQzMmNiOWQ5Y2NlMWIyYmI3M2I4NzllZTQ1M18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kMDE5OWQ2Yi0zNTYwLTQ5ZmQtODAzZC0zYmU0ZDdiM2QxYjMvYzI0NTU2YWQtOTkxZS00YWNkLWIyYWEtY2I4NmQxZjg0ODUyL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -840,6 +776,14 @@
     "published": "Mon, 05 Oct 2026 20:25:27 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/61557868-6bb5-40b4-9809-2cd15430a799/28699e5e-4b3d-4971-b5ed-51d5da74a3e6/main.mp4?fastly_token=NmFjNWExMzFfNGMwMTNiOTNjMTcwZjUyZGNiODU3NmVlNTdiYjY1NzdkMzk0M2E5ZWYwYjgxMTM0ZjMzNDZhYWIzOGQwNjZhMF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82MTU1Nzg2OC02YmI1LTQwYjQtOTgwOS0yY2QxNTQzMGE3OTkvMjg2OTllNWUtNGIzZC00OTcxLWI1ZWQtNTFkNWRhNzRhM2U2L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "Miami-Dade commissioners raise fares for Metrorail, bus riders; proposal expected to end free Metromover rides",
+    "url": "https://wsvn.com/news/local/miami-dade/miami-dade-commissioners-raise-fares-for-metrorail-bus-riders-proposal-expected-to-end-free-metromover-rides/",
+    "published": "Tue, 06 Oct 2026 21:15:13 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/36013d4e-c8f4-4570-811c-7c47228d6561/9e98ee27-2707-49cc-b99f-3e78643340e7/main.mp4?fastly_token=NmFjNWJkOGJfMWE2YWY5N2U5NWFhNzQ4MmZmNmNlZjc2MTE2MjA0NzRkYjRhYmQyYTZkNGRjOTBmMTBhMTI5ZWJjZmM4YjUyM18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zNjAxM2Q0ZS1jOGY0LTQ1NzAtODExYy03YzQ3MjI4ZDY1NjEvOWU5OGVlMjctMjcwNy00OWNjLWI5OWYtM2U3ODY0MzM0MGU3L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -864,14 +808,6 @@
     "published": "Tue, 06 Oct 2026 16:56:18 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/3f0566f5-cbd3-4c81-aa58-64d921afd6cb/7767f605-aa69-41a7-8058-0d5b7b1816f3/main.mp4?fastly_token=NmFjNWIxM2VfNjI3YTJiODEwYWVmNzhjYjA0NDJjYzI4MTJhOTcyYTk5M2Q3YjRjZWYwNTFkNTdiZWRmYmU3NzVjYmE4Yjc5Ml8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zZjA1NjZmNS1jYmQzLTRjODEtYWE1OC02NGQ5MjFhZmQ2Y2IvNzc2N2Y2MDUtYWE2OS00MWE3LTgwNTgtMGQ1YjdiMTgxNmYzL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Man arrested after allegedly traveling to meet 15-year-old boy for sexual activity",
-    "url": "https://wsvn.com/news/local/florida-man-soliciting-minor/",
-    "published": "Tue, 06 Oct 2026 16:29:14 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/fdcfb8b8-1cfa-4cdc-90da-6cc158da0225/3094d080-b998-4347-a612-3b4071dc59f8/main.mp4?fastly_token=NmFjNTdjYWFfNjEyNmNjZjk3MWUwNzc4Mjg0ZjU5ZmRmYmVkM2M2MTc5NDA1Mjc0OTc0NzFmZDhiNzAwYzk1NGNjM2RlZGZlOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9mZGNmYjhiOC0xY2ZhLTRjZGMtOTBkYS02Y2MxNThkYTAyMjUvMzA5NGQwODAtYjk5OC00MzQ3LWE2MTItM2I0MDcxZGM1OWY4L21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -1011,7 +947,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-06T17:46:23-04:00",
+  "fetched_at": "2026-10-06T18:01:28-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1019,7 +955,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (156) + USGS (18)",
-  "fetched_at": "2026-10-06T17:46:25-04:00",
+  "fetched_at": "2026-10-06T18:01:31-04:00",
   "events": [
    {
     "lat": 48.4554,
@@ -2492,7 +2428,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-06T17:46:25-04:00",
+  "fetched_at": "2026-10-06T18:01:31-04:00",
   "countries": [
    {
     "iso": "COL",
