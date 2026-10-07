@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-07T17:46:22-04:00",
- "generated_at_utc": "2026-10-07T21:46:22+00:00",
+ "generated_at": "2026-10-07T18:01:23-04:00",
+ "generated_at_utc": "2026-10-07T22:01:23+00:00",
  "weekday": "Wednesday",
  "date_label": "Wednesday, October 7",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-07T17:46:22-04:00",
+  "fetched_at": "2026-10-07T18:01:24-04:00",
   "curve": [
    {
     "time": "2026-10-07T05:00",
@@ -119,7 +119,7 @@
     "temp": 84.3,
     "feels": 94.1,
     "humidity": 75,
-    "pop": 43
+    "pop": 40
    },
    {
     "time": "2026-10-07T19:00",
@@ -127,7 +127,7 @@
     "temp": 81.6,
     "feels": 88.2,
     "humidity": 80,
-    "pop": 51
+    "pop": 58
    },
    {
     "time": "2026-10-07T20:00",
@@ -135,7 +135,7 @@
     "temp": 77.1,
     "feels": 84.6,
     "humidity": 94,
-    "pop": 45
+    "pop": 48
    },
    {
     "time": "2026-10-07T21:00",
@@ -143,22 +143,22 @@
     "temp": 78.4,
     "feels": 88.6,
     "humidity": 92,
-    "pop": 35
+    "pop": 32
    }
   ],
   "current": {
-   "temp": 84.5,
-   "feels": 94.6,
-   "humidity": 74,
-   "wind_mph": 2.3,
-   "wind_dir": 40,
-   "observed_at": "2026-10-07T17:45"
+   "temp": 84.3,
+   "feels": 94.1,
+   "humidity": 75,
+   "wind_mph": 3.4,
+   "wind_dir": 22,
+   "observed_at": "2026-10-07T18:00"
   },
   "today": {
    "high": 90.9,
    "low": 77.1,
    "feels_max": 99.8,
-   "pop_max": 57
+   "pop_max": 58
   },
   "peak_feels": 99.8,
   "peak_hour": 14
@@ -166,99 +166,48 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-07T17:46:23-04:00",
+  "fetched_at": "2026-10-07T18:01:25-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-07T17:46:24-04:00",
+  "fetched_at": "2026-10-07T18:01:25-04:00",
   "aqi": 55,
   "category": "Moderate",
-  "pm25": 6.5,
-  "pm10": 7.8,
-  "observed": "2026-10-07T17:00",
+  "pm25": 6.9,
+  "pm10": 7.7,
+  "observed": "2026-10-07T18:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-10-07T17:46:26-04:00",
-  "route_shown": true,
-  "leg": "Jackson Memorial → Home",
-  "direction": "return",
-  "depart_clock": "3:30 PM",
-  "depart_at": "now",
-  "miles": 26.7,
-  "minutes": 68,
-  "delay_minutes": 2,
-  "toll_free": true,
-  "alternates": [
-   {
-    "miles": 26.4,
-    "minutes": 59,
-    "toll": true,
-    "saves": 9
-   },
-   {
-    "miles": 22.6,
-    "minutes": 59,
-    "toll": true,
-    "saves": 9
-   },
-   {
-    "miles": 22.8,
-    "minutes": 64,
-    "toll": true,
-    "saves": 4
-   },
-   {
-    "miles": 23.1,
-    "minutes": 72,
-    "toll": false,
-    "saves": -4
-   }
-  ],
-  "alternates_worth_taking": [],
-  "free_alternates": [
-   {
-    "miles": 26.7,
-    "minutes": 68,
-    "delay_minutes": 2
-   },
-   {
-    "miles": 21.4,
-    "minutes": 67,
-    "delay_minutes": 2,
-    "saves": 1
-   },
-   {
-    "miles": 23.5,
-    "minutes": 72,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 23.1,
-    "minutes": 74,
-    "delay_minutes": 0
-   }
-  ],
-  "best_free": {
-   "miles": 21.4,
-   "minutes": 67,
-   "delay_minutes": 2,
-   "saves": 1
-  },
+  "source": "TomTom Traffic",
+  "fetched_at": "2026-10-07T18:01:26-04:00",
+  "route_shown": false,
+  "leg": null,
+  "direction": null,
   "incidents": [
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 2692,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-07T19:14:00Z"
+   },
    {
     "county": "Miami-Dade",
     "roads": [
      "US-1 N",
      "I-95 N"
     ],
-    "delay_s": 2311,
+    "delay_s": 2648,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-07T17:58:00Z"
@@ -268,7 +217,7 @@
     "roads": [
      "FL-826 N"
     ],
-    "delay_s": 2244,
+    "delay_s": 1964,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-07T14:11:30Z"
@@ -278,31 +227,10 @@
     "roads": [
      "FL-826 S"
     ],
-    "delay_s": 2036,
+    "delay_s": 1904,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-07T18:17:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-858"
-    ],
-    "delay_s": 1763,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-07T18:12:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 S",
-     "US-41 N"
-    ],
-    "delay_s": 1432,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-07T19:14:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -310,7 +238,7 @@
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 1136,
+    "delay_s": 1326,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-10-07T19:31:37Z"
@@ -318,39 +246,60 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 W"
+     "FL-826"
     ],
-    "delay_s": 1128,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-07T18:20:00Z"
+    "delay_s": 1300,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-07T21:53:22Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826 S"
     ],
-    "delay_s": 1051,
+    "delay_s": 1153,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-07T20:19:57Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-860"
+     "FL-858"
     ],
-    "delay_s": 976,
+    "delay_s": 1134,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-07T21:03:23Z"
+    "start": "2026-10-07T18:12:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-838"
+    ],
+    "delay_s": 1031,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-07T20:54:23Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 972,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-07T21:25:02Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-854"
     ],
-    "delay_s": 958,
+    "delay_s": 966,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-07T20:10:05Z"
@@ -358,32 +307,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 N"
+     "FL-836 W"
     ],
-    "delay_s": 948,
+    "delay_s": 924,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-10-07T21:20:44Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-915"
-    ],
-    "delay_s": 946,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-07T20:13:12Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-838"
-    ],
-    "delay_s": 910,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-07T20:54:23Z"
+    "start": "2026-10-07T18:20:00Z"
    },
    {
     "county": "Broward",
@@ -456,21 +385,83 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-860"
+    ],
+    "delay_s": 858,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-07T21:03:23Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S"
+    ],
+    "delay_s": 814,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-07T21:19:28Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-915"
+    ],
+    "delay_s": 771,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-07T20:13:12Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Don Shula Expy S",
+     "FL-874 S",
+     "S Dade Expy S"
+    ],
+    "delay_s": 762,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-07T21:04:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": 719,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-07T19:00:30Z"
+   },
+   {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 890,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-07T19:38:34Z"
+    "delay_s": 691,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-07T21:45:39Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-825"
+    ],
+    "delay_s": 675,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-07T21:38:50Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-869"
     ],
-    "delay_s": 879,
+    "delay_s": 674,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-07T19:12:30Z"
@@ -478,97 +469,43 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-976"
+     "FL-826 N"
     ],
-    "delay_s": 855,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-07T21:41:20Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-A1A"
-    ],
-    "delay_s": 747,
+    "delay_s": 665,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-10-07T21:21:19Z"
+    "start": "2026-10-07T21:20:44Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-826"
+     "I-95 S"
     ],
-    "delay_s": 739,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-07T19:21:32Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": 736,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-07T21:20:07Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": 730,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-10-07T21:08:33Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-972"
-    ],
-    "delay_s": 722,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-07T19:00:30Z"
+    "delay_s": 646,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-07T19:38:34Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-969"
     ],
-    "delay_s": 700,
+    "delay_s": 643,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-07T18:40:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-1 S",
-     "US-41 S",
-     "FL-5"
-    ],
-    "delay_s": 659,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-07T20:46:05Z"
    }
   ],
-  "incident_count": 749,
-  "named_count": 307,
-  "major_count": 38,
+  "incident_count": 688,
+  "named_count": 256,
+  "major_count": 33,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-07T17:46:27-04:00",
+  "fetched_at": "2026-10-07T18:01:26-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -611,7 +548,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-07T17:46:27-04:00",
+  "fetched_at": "2026-10-07T18:01:27-04:00",
   "issued": "200 PM EDT Wed Oct 7 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 071721\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Wed Oct 7 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Tropical \nStorm Isaias, located over the southwestern Gulf of America.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n&&\nPublic Advisories on Tropical Storm Isais are issued under WMO \nheader WTNT34 KNHC and under AWIPS header MIATCPAT4. \nForecast/Advisories on Tropical Storm Isaias are issued under \nWMO header WTNT24 KNHC and under AWIPS header MIATCMAT4.\n\n$$\nForecaster Pasch"
@@ -619,7 +556,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-07T17:46:27-04:00",
+  "fetched_at": "2026-10-07T18:01:27-04:00",
   "florida": "$4.1875",
   "national": "$4.3667",
   "diesel": "$5.9330",
@@ -628,7 +565,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-07T17:46:28-04:00",
+  "fetched_at": "2026-10-07T18:01:28-04:00",
   "streams": {
    "local": [
     {
@@ -737,6 +674,70 @@
   ],
   "local": [
    {
+    "title": "Tate Brothers held in Miami detention center as new court document details allegations",
+    "url": "https://www.local10.com/news/local/2026/10/07/tate-brothers-held-in-miami-detention-center-as-new-court-document-details-allegations/",
+    "published": "Wed, 07 Oct 2026 21:50:41 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Estranged wife of Tyreek Hill continues testimony in divorce trial, alleging incidents of domestic violence",
+    "url": "https://www.local10.com/news/local/2026/10/07/estranged-wife-of-tyreek-hill-continues-testimony-in-divorce-trial-alleging-incidents-of-domestic-violence/",
+    "published": "Wed, 07 Oct 2026 16:26:32 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Man rushed to hospital with ‘life-threatening’ injuries after Fort Lauderdale shooting",
+    "url": "https://www.local10.com/news/local/2026/10/07/man-rushed-to-hospital-with-life-threatening-injuries-after-fort-lauderdale-shooting/",
+    "published": "Wed, 07 Oct 2026 15:37:15 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "South Florida ceremonies honor Oct. 7 victims",
+    "url": "https://www.local10.com/news/local/2026/10/07/miami-beach-holds-ceremony-honoring-oct-7-victims/",
+    "published": "Wed, 07 Oct 2026 16:31:23 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "DNA helps deputies solve 1999 Keys cold case, IDing remains of woman known only as ‘Cinnamon’",
+    "url": "https://www.local10.com/news/local/2026/10/07/dna-helps-deputies-solve-1999-keys-cold-case-iding-remains-of-woman-known-only-as-cinnamon/",
+    "published": "Wed, 07 Oct 2026 21:15:11 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/VO552JIY3NIEJWK3G7TGHTTP4I.jpg?auth=986e9378ebf52e7eac6009ce2a776fdd20b77b120b2576a0f9879dff8c8fa86a&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Fort Lauderdale ALF employee facing manslaughter charge after patient’s 2023 death",
+    "url": "https://www.local10.com/news/local/2026/10/07/fort-lauderdale-alf-employee-facing-manslaughter-charge-after-patients-2023-death/",
+    "published": "Wed, 07 Oct 2026 15:05:36 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Pair taken to trauma center after US 27 rollover",
+    "url": "https://www.local10.com/news/local/2026/10/07/pair-taken-to-trauma-center-after-us-27-rollover/",
+    "published": "Wed, 07 Oct 2026 17:42:25 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/VPRD4GCU5BATLAS7YORSQRXO4A.jpg?auth=4c34aef5f1226d8bd9148f86cca21f7500f83170032a2754f40fa470c87f08c4&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Feds seize illegal fuel shipments bound for Cuba",
+    "url": "https://www.local10.com/news/local/2026/10/07/feds-seize-illegal-fuel-shipments-bound-for-cuba/",
+    "published": "Wed, 07 Oct 2026 16:47:11 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "USPS driver arrested on DUI charges while working in Fort Lauderdale, police say",
     "url": "https://wsvn.com/news/local/broward/usps-driver-dui-arrest/",
     "published": "Wed, 07 Oct 2026 16:02:56 +0000",
@@ -781,7 +782,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/activists-protest-doral-ice-agreement/",
     "published": "Wed, 07 Oct 2026 16:51:55 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/7fd4696d-786b-48a8-8ed2-6425ab07e569/1c5e0f66-db92-4543-90ba-418d47a7813a/main.mp4?fastly_token=NmFjNzEwYWVfNmJmNDM1YmZkODUwM2VhYjkwN2E0OTYxMzAzMjBiYWJhODI4Y2FhNDgwZDY4MDlhMGUxMzkyMzY0OGJhMGExYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83ZmQ0Njk2ZC03ODZiLTQ4YTgtOGVkMi02NDI1YWIwN2U1NjkvMWM1ZTBmNjYtZGI5Mi00NTQzLTkwYmEtNDE4ZDQ3YTc4MTNhL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/017eceb1-4c41-46d6-81ee-ba65452bbd1d/603d82d1-c82e-4010-9e0b-a344d99de6a4/main.mp4?fastly_token=NmFjNzE1OTVfMDc3MGNhNzFkMGRlMDUzZDgzMWM5Mzg4ZTZiMWE2NWNiMDk4ZjMyMDE5YjRhODRlOWU3NGVmYzIwMTVlNTkzNl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8wMTdlY2ViMS00YzQxLTQ2ZDYtODFlZS1iYTY1NDUyYmJkMWQvNjAzZDgyZDEtYzgyZS00MDEwLTllMGItYTM0NGQ5OWRlNmE0L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -937,15 +938,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-07T17:46:28-04:00",
+  "fetched_at": "2026-10-07T18:01:29-04:00",
   "items": [],
-  "scanned": 0,
+  "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (160) + USGS (17)",
-  "fetched_at": "2026-10-07T17:46:31-04:00",
+  "source": "GDACS (160) + USGS (16)",
+  "fetched_at": "2026-10-07T18:01:31-04:00",
   "events": [
    {
     "lat": 15.5,
@@ -1069,19 +1070,6 @@
     "mag": 4.9,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0pb",
     "when": 1791347966324,
-    "source": "USGS"
-   },
-   {
-    "lat": -3.9438,
-    "lon": 139.5723,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.9 — 189 km SW of Abepura, Indonesia",
-    "place": "189 km SW of Abepura, Indonesia",
-    "severity": "M4.9",
-    "mag": 4.9,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0le",
-    "when": 1791323803985,
     "source": "USGS"
    },
    {
@@ -2403,13 +2391,25 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032480",
     "when": "Tue, 29 Sep 2026 19:04:31 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -20.281865960577115,
+    "lon": -58.37921050357727,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Paraguay",
+    "place": "Paraguay",
+    "severity": "Green impact for forestfire in 15811 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032446",
+    "when": "Sun, 27 Sep 2026 23:02:17 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 177,
+  "event_count": 176,
   "counts": {
    "red": 1,
    "orange": 5,
-   "green": 171
+   "green": 170
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2417,7 +2417,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-07T17:46:31-04:00",
+  "fetched_at": "2026-10-07T18:01:31-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2438,6 +2438,26 @@
     ],
     "count": 2,
     "issue": "Desaparición forzada, cambio de identidad y una década de secuestro: la historia del hombre que raptó y abusó de una niña por 12 años en Medellín"
+   },
+   {
+    "iso": "CUB",
+    "name": "Cuba",
+    "stories": [
+     {
+      "title": "Feds seize illegal fuel shipments bound for Cuba",
+      "url": "https://www.local10.com/news/local/2026/10/07/feds-seize-illegal-fuel-shipments-bound-for-cuba/",
+      "published": "Wed, 07 Oct 2026 16:47:11 +0000",
+      "section": "local"
+     },
+     {
+      "title": "$2.8 million in biodiesel fuel being shipped to Cuba seized at Port Everglades, Port of Houston, federal officials say",
+      "url": "https://wsvn.com/news/us-world/us-seized-cuban-biodiesel-shipments/",
+      "published": "Wed, 07 Oct 2026 16:59:46 +0000",
+      "section": "local"
+     }
+    ],
+    "count": 2,
+    "issue": "Feds seize illegal fuel shipments bound for Cuba"
    },
    {
     "iso": "IRN",
@@ -2480,20 +2500,6 @@
     "issue": "U.S. moves long-range bombers from U.K. And, Israel allegedly warned before Oct. 7"
    },
    {
-    "iso": "CUB",
-    "name": "Cuba",
-    "stories": [
-     {
-      "title": "$2.8 million in biodiesel fuel being shipped to Cuba seized at Port Everglades, Port of Houston, federal officials say",
-      "url": "https://wsvn.com/news/us-world/us-seized-cuban-biodiesel-shipments/",
-      "published": "Wed, 07 Oct 2026 16:59:46 +0000",
-      "section": "local"
-     }
-    ],
-    "count": 1,
-    "issue": "$2.8 million in biodiesel fuel being shipped to Cuba seized at Port Everglades, Port of Houston, federal officials say"
-   },
-   {
     "iso": "PAK",
     "name": "Pakistan",
     "stories": [
@@ -2508,7 +2514,7 @@
     "issue": "Greetings from Lahore, Pakistan, whose high court offers an oasis for chatter and chai"
    }
   ],
-  "headlines_scanned": 24,
+  "headlines_scanned": 32,
   "countries_matched": 5,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
