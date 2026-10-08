@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-08T17:56:30-04:00",
- "generated_at_utc": "2026-10-08T21:56:30+00:00",
+ "generated_at": "2026-10-08T18:01:17-04:00",
+ "generated_at_utc": "2026-10-08T22:01:17+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, October 8",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-08T17:56:31-04:00",
+  "fetched_at": "2026-10-08T18:01:21-04:00",
   "curve": [
    {
     "time": "2026-10-08T05:00",
@@ -119,7 +119,7 @@
     "temp": 80.1,
     "feels": 88.1,
     "humidity": 85,
-    "pop": 42
+    "pop": 36
    },
    {
     "time": "2026-10-08T19:00",
@@ -127,7 +127,7 @@
     "temp": 79.7,
     "feels": 89.2,
     "humidity": 87,
-    "pop": 35
+    "pop": 41
    },
    {
     "time": "2026-10-08T20:00",
@@ -135,7 +135,7 @@
     "temp": 76.5,
     "feels": 82.1,
     "humidity": 90,
-    "pop": 29
+    "pop": 36
    },
    {
     "time": "2026-10-08T21:00",
@@ -143,22 +143,22 @@
     "temp": 78.4,
     "feels": 88.9,
     "humidity": 93,
-    "pop": 15
+    "pop": 29
    }
   ],
   "current": {
-   "temp": 85.0,
-   "feels": 92.4,
-   "humidity": 80,
-   "wind_mph": 13.1,
-   "wind_dir": 184,
-   "observed_at": "2026-10-08T17:45"
+   "temp": 80.1,
+   "feels": 88.1,
+   "humidity": 85,
+   "wind_mph": 7.0,
+   "wind_dir": 182,
+   "observed_at": "2026-10-08T18:00"
   },
   "today": {
    "high": 90.9,
    "low": 76.5,
    "feels_max": 100.2,
-   "pop_max": 42
+   "pop_max": 41
   },
   "peak_feels": 100.2,
   "peak_hour": 13
@@ -166,91 +166,29 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-08T17:56:32-04:00",
+  "fetched_at": "2026-10-08T18:01:21-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-08T17:56:32-04:00",
+  "fetched_at": "2026-10-08T18:01:22-04:00",
   "aqi": 55,
   "category": "Moderate",
-  "pm25": 9.9,
-  "pm10": 12.5,
-  "observed": "2026-10-08T17:00",
+  "pm25": 9.5,
+  "pm10": 12.0,
+  "observed": "2026-10-08T18:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-10-08T17:56:35-04:00",
-  "route_shown": true,
-  "leg": "Jackson Memorial → Home",
-  "direction": "return",
-  "depart_clock": "3:30 PM",
-  "depart_at": "now",
-  "miles": 21.1,
-  "minutes": 63,
-  "delay_minutes": 9,
-  "toll_free": true,
-  "alternates": [
-   {
-    "miles": 26.4,
-    "minutes": 54,
-    "toll": true,
-    "saves": 9
-   },
-   {
-    "miles": 22.6,
-    "minutes": 56,
-    "toll": true,
-    "saves": 7
-   },
-   {
-    "miles": 28.6,
-    "minutes": 56,
-    "toll": true,
-    "saves": 7
-   },
-   {
-    "miles": 25.8,
-    "minutes": 64,
-    "toll": true,
-    "saves": -1
-   }
-  ],
-  "alternates_worth_taking": [],
-  "free_alternates": [
-   {
-    "miles": 21.1,
-    "minutes": 63,
-    "delay_minutes": 9,
-    "saves": 0
-   },
-   {
-    "miles": 23.4,
-    "minutes": 69,
-    "delay_minutes": 2
-   },
-   {
-    "miles": 23.7,
-    "minutes": 71,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 24.4,
-    "minutes": 72,
-    "delay_minutes": 0
-   }
-  ],
-  "best_free": {
-   "miles": 21.1,
-   "minutes": 63,
-   "delay_minutes": 9,
-   "saves": 0
-  },
+  "source": "TomTom Traffic",
+  "fetched_at": "2026-10-08T18:01:22-04:00",
+  "route_shown": false,
+  "leg": null,
+  "direction": null,
   "incidents": [
    {
     "county": "Miami-Dade",
@@ -258,7 +196,7 @@
      "US-1 N",
      "I-95 N"
     ],
-    "delay_s": 2250,
+    "delay_s": 2057,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-08T11:26:00Z"
@@ -268,7 +206,7 @@
     "roads": [
      "FL-854"
     ],
-    "delay_s": 1606,
+    "delay_s": 1471,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-08T19:16:12Z"
@@ -279,49 +217,37 @@
      "FL-836",
      "FL-836 W"
     ],
-    "delay_s": 1498,
+    "delay_s": 1395,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-08T20:25:46Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 S",
-     "US-41 N"
-    ],
-    "delay_s": 1491,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-08T19:34:45Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 1404,
+    "delay_s": 1385,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-08T20:51:16Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
+     "FL-858"
     ],
-    "delay_s": 1218,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-08T19:27:16Z"
+    "delay_s": 1345,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-08T19:58:33Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-860"
     ],
-    "delay_s": 1073,
+    "delay_s": 1288,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-08T19:32:03Z"
@@ -329,46 +255,34 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-972"
+     "US-41 S",
+     "US-41 N"
     ],
-    "delay_s": 967,
+    "delay_s": 1147,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-08T19:03:00Z"
+    "start": "2026-10-08T19:34:45Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826",
-     "FL-91 N",
-     "Florida's Tpke N",
-     "FL-826 W"
+     "FL-821 S",
+     "Florida's Tpke S"
     ],
-    "delay_s": 917,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-10-08T18:30:30Z"
+    "delay_s": 1145,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-08T19:27:16Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 S",
-     "FL-5"
+     "FL-976"
     ],
-    "delay_s": 903,
+    "delay_s": 1088,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-08T21:54:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-10-08T21:57:30Z"
    },
    {
     "county": "Broward",
@@ -379,6 +293,16 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-10-08T13:48:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -431,34 +355,37 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-838"
+     "FL-826",
+     "FL-91 N",
+     "Florida's Tpke N",
+     "FL-826 W"
     ],
-    "delay_s": 897,
+    "delay_s": 892,
     "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-08T21:07:48Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": 862,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-08T21:14:52Z"
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-10-08T18:30:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-976"
     ],
-    "delay_s": 859,
+    "delay_s": 800,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-08T21:07:06Z"
+    "start": "2026-10-08T19:11:08Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 794,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-08T20:07:28Z"
    },
    {
     "county": "Miami-Dade",
@@ -468,7 +395,7 @@
      "FL-A1A S",
      "FL-A1A"
     ],
-    "delay_s": 807,
+    "delay_s": 753,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-08T18:33:30Z"
@@ -476,23 +403,86 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "County Hwy-913",
-     "FL-973"
+     "FL-836 W"
     ],
-    "delay_s": 786,
+    "delay_s": 740,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-08T21:03:36Z"
+    "start": "2026-10-08T18:07:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-976"
+     "FL-972"
     ],
-    "delay_s": 719,
+    "delay_s": 737,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-08T19:11:08Z"
+    "start": "2026-10-08T19:03:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Don Shula Expy S",
+     "FL-874 S",
+     "S Dade Expy S"
+    ],
+    "delay_s": 684,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-08T20:48:44Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 681,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-08T19:20:28Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-817",
+     "FL-9"
+    ],
+    "delay_s": 656,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-08T19:49:29Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-823"
+    ],
+    "delay_s": 635,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-08T18:33:04Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-915"
+    ],
+    "delay_s": 624,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-08T20:15:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 S"
+    ],
+    "delay_s": 608,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-08T19:12:07Z"
    },
    {
     "county": "Miami-Dade",
@@ -501,7 +491,7 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 714,
+    "delay_s": 585,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-08T18:11:00Z"
@@ -509,75 +499,23 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 S"
+     "FL-821 S"
     ],
-    "delay_s": 711,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-08T19:12:07Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 688,
+    "delay_s": 562,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-08T19:20:28Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 687,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-08T20:07:28Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-395 W",
-     "FL-836 W"
-    ],
-    "delay_s": 657,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-08T18:31:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-823"
-    ],
-    "delay_s": 630,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-08T18:33:04Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 N"
-    ],
-    "delay_s": 593,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-08T16:48:30Z"
+    "start": "2026-10-08T19:47:13Z"
    }
   ],
-  "incident_count": 741,
-  "named_count": 278,
-  "major_count": 29,
+  "incident_count": 734,
+  "named_count": 268,
+  "major_count": 28,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-08T17:56:36-04:00",
+  "fetched_at": "2026-10-08T18:01:23-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -620,7 +558,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-08T17:56:37-04:00",
+  "fetched_at": "2026-10-08T18:01:23-04:00",
   "issued": "200 PM EDT Thu Oct 8 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 081713\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\nIssued by the NWS Weather Prediction Center College Park MD\n200 PM EDT Thu Oct 8 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane \nIsaias, located over the southwestern Gulf of America.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Bann"
@@ -628,7 +566,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-08T17:56:37-04:00",
+  "fetched_at": "2026-10-08T18:01:23-04:00",
   "florida": "$4.1798",
   "national": "$4.3612",
   "diesel": "$5.9225",
@@ -637,7 +575,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-08T17:56:38-04:00",
+  "fetched_at": "2026-10-08T18:01:25-04:00",
   "streams": {
    "local": [
     {
@@ -746,20 +684,20 @@
   ],
   "local": [
    {
+    "title": "Miramar man accused of strangling Goldendoodle, throwing dog against wall, killing it",
+    "url": "https://www.local10.com/news/local/2026/10/08/miramar-man-accused-of-strangling-goldendoodle-throwing-dog-against-wall-killing-it/",
+    "published": "Thu, 08 Oct 2026 17:17:15 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "ALF employee accused of killing autistic patient at Fort Lauderdale group home released on bond",
     "url": "https://www.local10.com/news/local/2026/10/08/alf-employee-accused-of-killing-autistic-patient-at-fort-lauderdale-group-home-released-on-bond/",
     "published": "Thu, 08 Oct 2026 21:41:46 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "Miramar man accused of strangling Goldendoodle, throwing dog against wall, killing it",
-    "url": "https://www.local10.com/news/local/2026/10/08/miramar-man-accused-of-strangling-goldendoodle-throwing-dog-against-wall-killing-it/",
-    "published": "Thu, 08 Oct 2026 17:17:15 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/LZLYBA3TVREWVOPUFQYLAGZRMU.jpg?auth=949846e89576040b7a39a84f5f9c62cea7431c77490a1817fba9823a67d5fe6e&smart=true&width=1200&height=900",
-    "media_type": "image"
    },
    {
     "title": "‘Robbery by seduction’: Miami woman used dates to steal more than $135K in jewelry, cash: Cops",
@@ -876,6 +814,14 @@
   ],
   "colombia": [
    {
+    "title": "Temblor hoy en Colombia | Reportan sismo de magnitud 4,0 con epicentro en Chaparral, Tolima: se sintió en Bogotá, Ibagué, Cali, Armenia y más ciudades",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-sismo-de-magnitud-4-0-con-epicentro-en-chaparral-tolima-se-sintio-en-bogota-ibague-cali-armenia-y-mas-ciudades-3592328",
+    "published": "2026-10-08T16:53:59-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/08/6ac810e277a0d.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "¿Shakira vendrá al Carnaval de Barranquilla 2027? La respuesta que dio en Madrid y que despierta expectativa en su tierra",
     "url": "https://www.eltiempo.com/colombia/barranquilla/shakira-vendra-al-carnaval-de-barranquilla-2027-la-respuesta-que-dio-en-madrid-y-que-despierta-expectativa-en-su-tierra-3592321",
     "published": "2026-10-08T16:44:24-05:00",
@@ -929,14 +875,6 @@
     "published": "2026-10-08T14:32:10-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/08/6ac7e6841177c.r_d.520-441-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Las hipótesis que aparecieron tras el crimen del empresario acribillado en Barbosa al salir de un gimnasio: uno de los capturados aceptó cargos",
-    "url": "https://www.eltiempo.com/colombia/santander/las-hipotesis-que-aparecieron-tras-el-crimen-del-empresario-acribillado-en-barbosa-al-salir-de-un-gimnasio-uno-de-los-capturados-acepto-cargos-3592266",
-    "published": "2026-10-08T15:34:55-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/08/6ac7e8032a4eb.r_d.303-152-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -1010,7 +948,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-08T17:56:39-04:00",
+  "fetched_at": "2026-10-08T18:01:25-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1018,7 +956,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (190) + USGS (14)",
-  "fetched_at": "2026-10-08T17:56:41-04:00",
+  "fetched_at": "2026-10-08T18:01:27-04:00",
   "events": [
    {
     "lat": -15.5411,
@@ -2487,8 +2425,34 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-08T17:56:41-04:00",
+  "fetched_at": "2026-10-08T18:01:27-04:00",
   "countries": [
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "Temblor hoy en Colombia | Reportan sismo de magnitud 4,0 con epicentro en Chaparral, Tolima: se sintió en Bogotá, Ibagué, Cali, Armenia y más ciudades",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-sismo-de-magnitud-4-0-con-epicentro-en-chaparral-tolima-se-sintio-en-bogota-ibague-cali-armenia-y-mas-ciudades-3592328",
+      "published": "2026-10-08T16:53:59-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "Deportista de surf de 16 años denunció abuso sexual tras entrenar en un establecimiento de playa en Puerto Colombia, Atlántico: está siendo amenazada",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/deportista-de-surf-de-16-anos-denuncio-abuso-sexual-tras-entrenar-en-un-establecimiento-de-playa-en-puerto-colombia-atlantico-esta-siendo-amenazada-3592282",
+      "published": "2026-10-08T15:52:54-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "Entre 21 cirugías, visitas ilustres y fuertes emociones: así fueron los 57 días de Stephany Echavarría en la clínica tras el terremoto de Cali",
+      "url": "https://www.eltiempo.com/colombia/cali/entre-21-cirugias-visitas-ilustres-y-fuertes-emociones-asi-fueron-los-57-dias-de-stephany-echavarria-en-la-clinica-tras-el-terremoto-de-cali-3592268",
+      "published": "2026-10-08T14:32:10-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 3,
+    "issue": "Temblor hoy en Colombia | Reportan sismo de magnitud 4,0 con epicentro en Chaparral, Tolima: se sintió en Bogotá, Ibagué, Cali, Armenia y más ciudades"
+   },
    {
     "iso": "UKR",
     "name": "Ukraine",
@@ -2514,26 +2478,6 @@
     ],
     "count": 3,
     "issue": "South Korea to recall its ambassador to Ukraine over North Korean POW dispute"
-   },
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Deportista de surf de 16 años denunció abuso sexual tras entrenar en un establecimiento de playa en Puerto Colombia, Atlántico: está siendo amenazada",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/deportista-de-surf-de-16-anos-denuncio-abuso-sexual-tras-entrenar-en-un-establecimiento-de-playa-en-puerto-colombia-atlantico-esta-siendo-amenazada-3592282",
-      "published": "2026-10-08T15:52:54-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Entre 21 cirugías, visitas ilustres y fuertes emociones: así fueron los 57 días de Stephany Echavarría en la clínica tras el terremoto de Cali",
-      "url": "https://www.eltiempo.com/colombia/cali/entre-21-cirugias-visitas-ilustres-y-fuertes-emociones-asi-fueron-los-57-dias-de-stephany-echavarria-en-la-clinica-tras-el-terremoto-de-cali-3592268",
-      "published": "2026-10-08T14:32:10-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 2,
-    "issue": "Deportista de surf de 16 años denunció abuso sexual tras entrenar en un establecimiento de playa en Puerto Colombia, Atlántico: está siendo amenazada"
    },
    {
     "iso": "CUB",
@@ -2594,6 +2538,20 @@
     ],
     "count": 2,
     "issue": "¿Shakira vendrá al Carnaval de Barranquilla 2027? La respuesta que dio en Madrid y que despierta expectativa en su tierra"
+   },
+   {
+    "iso": "ARM",
+    "name": "Armenia",
+    "stories": [
+     {
+      "title": "Temblor hoy en Colombia | Reportan sismo de magnitud 4,0 con epicentro en Chaparral, Tolima: se sintió en Bogotá, Ibagué, Cali, Armenia y más ciudades",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-sismo-de-magnitud-4-0-con-epicentro-en-chaparral-tolima-se-sintio-en-bogota-ibague-cali-armenia-y-mas-ciudades-3592328",
+      "published": "2026-10-08T16:53:59-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 1,
+    "issue": "Temblor hoy en Colombia | Reportan sismo de magnitud 4,0 con epicentro en Chaparral, Tolima: se sintió en Bogotá, Ibagué, Cali, Armenia y más ciudades"
    },
    {
     "iso": "LBN",
@@ -2667,7 +2625,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 10,
+  "countries_matched": 11,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
