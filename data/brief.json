@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-08T06:01:23-04:00",
- "generated_at_utc": "2026-10-08T10:01:23+00:00",
+ "generated_at": "2026-10-08T06:16:18-04:00",
+ "generated_at_utc": "2026-10-08T10:16:18+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, October 8",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-08T06:01:23-04:00",
+  "fetched_at": "2026-10-08T06:16:18-04:00",
   "curve": [
    {
     "time": "2026-10-08T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 78.0,
-   "feels": 88.6,
+   "temp": 77.9,
+   "feels": 88.5,
    "humidity": 93,
    "wind_mph": 1.8,
-   "wind_dir": 115,
-   "observed_at": "2026-10-08T06:00"
+   "wind_dir": 130,
+   "observed_at": "2026-10-08T06:15"
   },
   "today": {
    "high": 88.9,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-08T06:01:24-04:00",
+  "fetched_at": "2026-10-08T06:16:18-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-08T06:01:25-04:00",
+  "fetched_at": "2026-10-08T06:16:20-04:00",
   "aqi": 46,
   "category": "Good",
   "pm25": 8.4,
@@ -185,38 +185,38 @@
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-10-08T06:01:27-04:00",
+  "fetched_at": "2026-10-08T06:16:21-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
   "depart_clock": "5:45 AM",
   "depart_at": "now",
   "miles": 19.9,
-  "minutes": 42,
+  "minutes": 45,
   "delay_minutes": 0,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 24.7,
-    "minutes": 38,
-    "toll": true,
-    "saves": 4
-   },
-   {
-    "miles": 27.1,
-    "minutes": 38,
-    "toll": true,
-    "saves": 4
-   },
-   {
-    "miles": 22.7,
-    "minutes": 39,
+    "miles": 20.7,
+    "minutes": 42,
     "toll": true,
     "saves": 3
    },
    {
+    "miles": 24.7,
+    "minutes": 43,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 27.1,
+    "minutes": 45,
+    "toll": true,
+    "saves": 0
+   },
+   {
     "miles": 21.9,
-    "minutes": 41,
+    "minutes": 44,
     "toll": true,
     "saves": 1
    }
@@ -225,29 +225,29 @@
   "free_alternates": [
    {
     "miles": 19.9,
-    "minutes": 42,
+    "minutes": 45,
     "delay_minutes": 0,
     "saves": 0
    },
    {
-    "miles": 29.3,
-    "minutes": 48,
+    "miles": 22.1,
+    "minutes": 54,
     "delay_minutes": 0
    },
    {
-    "miles": 21.7,
+    "miles": 23.1,
+    "minutes": 60,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 20.8,
     "minutes": 49,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 22.8,
-    "minutes": 58,
     "delay_minutes": 0
    }
   ],
   "best_free": {
    "miles": 19.9,
-   "minutes": 42,
+   "minutes": 45,
    "delay_minutes": 0,
    "saves": 0
   },
@@ -258,20 +258,10 @@
      "Florida's Tpke N",
      "FL-821 N"
     ],
-    "delay_s": 1357,
+    "delay_s": 1076,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-08T09:23:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-10-07T16:33:00Z"
+    "start": "2026-10-08T10:01:00Z"
    },
    {
     "county": "Broward",
@@ -290,8 +280,8 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "description": "Closed",
+    "start": "2026-10-07T16:33:00Z"
    },
    {
     "county": "Broward",
@@ -302,6 +292,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -336,43 +336,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 S",
-     "US-41 S",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-10-08T09:23:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-41 N",
-     "FL-5"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-10-08T03:21:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-887 S"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Tunnel closed",
-    "start": "2026-10-08T04:08:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-821 N"
     ],
-    "delay_s": 740,
+    "delay_s": 832,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-08T09:29:00Z"
@@ -380,13 +346,97 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-997"
+    ],
+    "delay_s": 634,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-08T10:01:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 263,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-08T09:29:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-994"
+    ],
+    "delay_s": 261,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-08T10:10:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "US-1 N",
      "FL-5"
     ],
-    "delay_s": 217,
+    "delay_s": 256,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-08T10:03:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Florida's Tpke N",
+     "FL-821 N"
+    ],
+    "delay_s": 193,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-08T10:07:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 191,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-10-08T09:58:00Z"
+    "start": "2026-10-08T10:08:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 160,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-08T10:12:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 N"
+    ],
+    "delay_s": 159,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-08T10:07:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-997"
+    ],
+    "delay_s": 143,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-08T10:13:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -395,41 +445,41 @@
      "S Dade Expy N",
      "FL-874 N"
     ],
-    "delay_s": 176,
-    "magnitude": 3,
-    "description": "Stationary traffic",
+    "delay_s": 140,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-10-08T09:54:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-823"
-    ],
-    "delay_s": 139,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-08T09:52:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
+     "US-1 N",
      "FL-5"
     ],
-    "delay_s": 67,
+    "delay_s": 125,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-10-08T09:54:30Z"
+    "start": "2026-10-08T10:13:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 N"
+     "FL-836 E"
     ],
-    "delay_s": 38,
+    "delay_s": 73,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-10-08T09:59:00Z"
+    "start": "2026-10-08T10:11:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 60,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-08T10:02:30Z"
    },
    {
     "county": "Broward",
@@ -512,68 +562,17 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-10-08T08:16:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-7",
-     "US-441 N"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-22T06:11:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N",
-     "FL-826 W"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-10-08T02:16:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-09-11T22:21:17Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-886"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-10-07T14:13:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-18T20:48:14Z"
    }
   ],
-  "incident_count": 267,
-  "named_count": 29,
-  "major_count": 12,
+  "incident_count": 283,
+  "named_count": 34,
+  "major_count": 10,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-08T06:01:28-04:00",
+  "fetched_at": "2026-10-08T06:16:22-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -617,7 +616,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-08T06:01:28-04:00",
+  "fetched_at": "2026-10-08T06:16:22-04:00",
   "issued": "200 AM EDT Thu Oct 8 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 080510\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Thu Oct 8 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on upgraded \nHurricane Isaias, located over the southwestern Gulf of America.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Roberts"
@@ -625,7 +624,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-08T06:01:28-04:00",
+  "fetched_at": "2026-10-08T06:16:22-04:00",
   "florida": "$4.1798",
   "national": "$4.3612",
   "diesel": "$5.9225",
@@ -634,7 +633,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-08T06:01:29-04:00",
+  "fetched_at": "2026-10-08T06:16:23-04:00",
   "streams": {
    "local": [
     {
@@ -742,70 +741,6 @@
    }
   ],
   "local": [
-   {
-    "title": "Fort Lauderdale ALF employee facing manslaughter charge after patient’s 2023 death",
-    "url": "https://www.local10.com/news/local/2026/10/07/fort-lauderdale-alf-employee-facing-manslaughter-charge-after-patients-2023-death/",
-    "published": "Wed, 07 Oct 2026 15:05:36 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Miami voters to decide fate of $80M Virginia Key redevelopment",
-    "url": "https://www.local10.com/news/local/2026/10/07/miami-voters-to-decide-fate-of-80m-virginia-key-redevelopment/",
-    "published": "Thu, 08 Oct 2026 02:37:30 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Daughter fulfills dying father’s final wish with hospital wedding",
-    "url": "https://www.local10.com/news/local/2026/10/07/daughter-fulfills-dying-fathers-final-wish-with-hospital-wedding/",
-    "published": "Wed, 07 Oct 2026 23:49:15 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Man wanted in Wynwood shooting arrested at rapper Trippie Redd’s Southwest Ranches home, cops say",
-    "url": "https://www.local10.com/news/local/2026/10/07/man-wanted-in-wynwood-shooting-arrested-at-rapper-trippie-redds-southwest-ranches-home-cops-say/",
-    "published": "Wed, 07 Oct 2026 14:14:59 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Estranged wife of Tyreek Hill continues testimony in divorce trial, alleging incidents of domestic violence",
-    "url": "https://www.local10.com/news/local/2026/10/07/estranged-wife-of-tyreek-hill-continues-testimony-in-divorce-trial-alleging-incidents-of-domestic-violence/",
-    "published": "Wed, 07 Oct 2026 16:26:32 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "South Florida cop arrested, accused of biting, scratching boyfriend",
-    "url": "https://www.local10.com/news/local/2026/10/07/south-florida-cop-arrested-accused-of-biting-scratching-boyfriend/",
-    "published": "Wed, 07 Oct 2026 16:20:49 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Citing diabetes, brain injury, defense makes case for sparing Miami-Dade triple murderer’s life",
-    "url": "https://www.local10.com/news/local/2026/10/07/citing-diabetes-brain-injury-defense-makes-case-for-sparing-miami-dade-triple-murderers-life/",
-    "published": "Wed, 07 Oct 2026 20:10:59 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Man rushed to hospital with ‘life-threatening’ injuries after Fort Lauderdale shooting",
-    "url": "https://www.local10.com/news/local/2026/10/07/man-rushed-to-hospital-with-life-threatening-injuries-after-fort-lauderdale-shooting/",
-    "published": "Wed, 07 Oct 2026 15:37:15 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
    {
     "title": "Baby Jay’ce celebrates birthday one year since rare emergency surgery saved his life",
     "url": "https://wsvn.com/news/local/broward/baby-jayce-celebrates-birthday-one-year-since-rare-emergency-surgery-saved-his-life/",
@@ -971,6 +906,14 @@
     "media_type": null
    },
    {
+    "title": "'We need to go. We need to help.' Israelis return to border to rebuild after Oct. 7",
+    "url": "https://www.npr.org/2026/10/07/nx-s1-5948736/israel-border-gaza-oct-7-hamas-attack",
+    "published": "Wed, 07 Oct 2026 16:18:46 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Gut microbes followed migrating humans across continents, new study suggests",
     "url": "https://www.npr.org/2026/10/07/nx-s1-5987874/ancient-gut-microbiome-migration-evolution-hadza-tsimane",
     "published": "Wed, 07 Oct 2026 11:00:47 -0400",
@@ -993,37 +936,29 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "U.S. moves long-range bombers from U.K. And, Israel allegedly warned before Oct. 7",
-    "url": "https://www.npr.org/2026/10/07/g-s1-146853/up-first-newsletter-long-range-bombers-france-high-school-protest-germany-august-hanning-oct-7-memorial-day",
-    "published": "Wed, 07 Oct 2026 06:52:58 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-08T06:01:31-04:00",
+  "fetched_at": "2026-10-08T06:16:23-04:00",
   "items": [],
-  "scanned": 4,
+  "scanned": 0,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
   "source": "GDACS (169) + USGS (18)",
-  "fetched_at": "2026-10-08T06:01:34-04:00",
+  "fetched_at": "2026-10-08T06:16:26-04:00",
   "events": [
    {
     "lat": 15.4,
     "lon": -103.1,
     "kind": "cyclone",
     "level": "red",
-    "title": "Red notification for tropical cyclone SIMON-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0.758 million .",
-    "place": "Mexico",
+    "title": "Red notification for tropical cyclone SIMON-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0.566 million .",
+    "place": null,
     "severity": "Tropical Storm (maximum wind speed of 204 km/h)",
     "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001335",
     "when": "Wed, 07 Oct 2026 15:33:28 GMT",
@@ -1428,7 +1363,7 @@
     "place": "Thailand",
     "severity": "Magnitude 0",
     "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104169",
-    "when": "Thu, 08 Oct 2026 09:47:38 GMT",
+    "when": "Thu, 08 Oct 2026 10:07:57 GMT",
     "source": "GDACS"
    },
    {
@@ -1932,7 +1867,7 @@
     "place": "France",
     "severity": "Magnitude 0",
     "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104202",
-    "when": "Thu, 08 Oct 2026 09:53:58 GMT",
+    "when": "Thu, 08 Oct 2026 10:14:55 GMT",
     "source": "GDACS"
    },
    {
@@ -2488,7 +2423,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-08T06:01:34-04:00",
+  "fetched_at": "2026-10-08T06:16:26-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2533,9 +2468,9 @@
       "section": "local"
      },
      {
-      "title": "U.S. moves long-range bombers from U.K. And, Israel allegedly warned before Oct. 7",
-      "url": "https://www.npr.org/2026/10/07/g-s1-146853/up-first-newsletter-long-range-bombers-france-high-school-protest-germany-august-hanning-oct-7-memorial-day",
-      "published": "Wed, 07 Oct 2026 06:52:58 -0400",
+      "title": "'We need to go. We need to help.' Israelis return to border to rebuild after Oct. 7",
+      "url": "https://www.npr.org/2026/10/07/nx-s1-5948736/israel-border-gaza-oct-7-hamas-attack",
+      "published": "Wed, 07 Oct 2026 16:18:46 -0400",
       "section": "world"
      }
     ],
@@ -2641,7 +2576,7 @@
     "issue": "Former ambassador on NATO's meeting in Ukraine and the ongoing war"
    }
   ],
-  "headlines_scanned": 32,
+  "headlines_scanned": 24,
   "countries_matched": 9,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
