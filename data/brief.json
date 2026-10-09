@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-09T02:46:20-04:00",
- "generated_at_utc": "2026-10-09T06:46:20+00:00",
+ "generated_at": "2026-10-09T03:01:12-04:00",
+ "generated_at_utc": "2026-10-09T07:01:12+00:00",
  "weekday": "Friday",
  "date_label": "Friday, October 9",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-09T02:46:21-04:00",
+  "fetched_at": "2026-10-09T03:01:12-04:00",
   "curve": [
    {
     "time": "2026-10-09T05:00",
@@ -148,11 +148,11 @@
   ],
   "current": {
    "temp": 80.6,
-   "feels": 92.9,
+   "feels": 92.6,
    "humidity": 93,
-   "wind_mph": 2.0,
-   "wind_dir": 74,
-   "observed_at": "2026-10-09T02:45"
+   "wind_mph": 2.7,
+   "wind_dir": 55,
+   "observed_at": "2026-10-09T03:00"
   },
   "today": {
    "high": 88.7,
@@ -166,29 +166,91 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-09T02:46:21-04:00",
+  "fetched_at": "2026-10-09T03:01:13-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-09T02:46:22-04:00",
-  "aqi": 62,
+  "fetched_at": "2026-10-09T03:01:13-04:00",
+  "aqi": 64,
   "category": "Moderate",
-  "pm25": 21.4,
-  "pm10": 23.6,
-  "observed": "2026-10-09T02:00",
+  "pm25": 17.9,
+  "pm10": 20.1,
+  "observed": "2026-10-09T03:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-10-09T02:46:23-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-10-09T03:01:15-04:00",
+  "route_shown": true,
+  "leg": "Home → Jackson Memorial",
+  "direction": "outbound",
+  "depart_clock": "5:45 AM",
+  "depart_at": "2026-10-09T05:45:00-04:00",
+  "miles": 19.9,
+  "minutes": 39,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 24.9,
+    "minutes": 36,
+    "toll": true,
+    "saves": 3
+   },
+   {
+    "miles": 27.1,
+    "minutes": 37,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 23.9,
+    "minutes": 38,
+    "toll": true,
+    "saves": 1
+   },
+   {
+    "miles": 19.9,
+    "minutes": 39,
+    "toll": false,
+    "saves": 0
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 19.9,
+    "minutes": 39,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 21.9,
+    "minutes": 40,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 24.9,
+    "minutes": 50,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.8,
+    "minutes": 54,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 19.9,
+   "minutes": 39,
+   "delay_minutes": 0,
+   "saves": 0
+  },
   "incidents": [
    {
     "county": "Broward",
@@ -268,7 +330,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-10-09T00:07:00Z"
+    "start": "2026-10-09T00:57:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -278,7 +340,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-10-09T00:57:00Z"
+    "start": "2026-10-09T00:07:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -387,12 +449,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-907"
+     "FL-887 S"
     ],
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-10-09T01:21:00Z"
+    "start": "2026-10-09T05:56:30Z"
    },
    {
     "county": "Broward",
@@ -400,7 +462,7 @@
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 80,
+    "delay_s": 95,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-10-09T06:25:00Z"
@@ -498,7 +560,7 @@
     "start": "2026-09-07T13:07:38Z"
    }
   ],
-  "incident_count": 294,
+  "incident_count": 295,
   "named_count": 37,
   "major_count": 20,
   "coverage": "Miami-Dade + Broward"
@@ -506,7 +568,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-09T02:46:23-04:00",
+  "fetched_at": "2026-10-09T03:01:16-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -550,7 +612,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-09T02:46:23-04:00",
+  "fetched_at": "2026-10-09T03:01:16-04:00",
   "issued": "200 AM EDT Fri Oct 9 2026",
   "areas": [],
   "raw": "en Español\n\n103 \nABNT20 KNHC 090503\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Fri Oct 9 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane \nIsaias, located over the central Gulf of America.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Gibbs"
@@ -558,7 +620,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-09T02:46:23-04:00",
+  "fetched_at": "2026-10-09T03:01:16-04:00",
   "florida": "$4.1798",
   "national": "$4.3612",
   "diesel": "$5.9225",
@@ -567,7 +629,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-09T02:46:24-04:00",
+  "fetched_at": "2026-10-09T03:01:17-04:00",
   "streams": {
    "local": [
     {
@@ -675,6 +737,70 @@
    }
   ],
   "local": [
+   {
+    "title": "Miami police seek suspect in hit-and-run that left 26-year-old man dead",
+    "url": "https://www.local10.com/news/local/2026/10/08/miami-police-seek-suspect-in-hit-and-run-that-left-26-year-old-man-dead/",
+    "published": "Thu, 08 Oct 2026 20:48:54 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/EE62LTAIJFFYPI7DQPZSMXRBLQ.jpg?auth=9d8eddb3ff8f46ab2414db38d68823ad1b0977857d3e72f4cf0f642e9557e9cd&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Miramar man accused of strangling Goldendoodle, throwing dog against wall, killing it",
+    "url": "https://www.local10.com/news/local/2026/10/08/miramar-man-accused-of-strangling-goldendoodle-throwing-dog-against-wall-killing-it/",
+    "published": "Thu, 08 Oct 2026 17:17:15 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "ALF employee accused of killing autistic patient at Fort Lauderdale group home released on bond",
+    "url": "https://www.local10.com/news/local/2026/10/08/alf-employee-accused-of-killing-autistic-patient-at-fort-lauderdale-group-home-released-on-bond/",
+    "published": "Thu, 08 Oct 2026 21:41:46 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "‘Robbery by seduction’: Miami woman used dates to steal more than $135K in jewelry, cash: Cops",
+    "url": "https://www.local10.com/news/local/2026/10/08/robbery-by-seduction-miami-woman-used-dates-to-steal-more-than-135k-in-jewelry-cash-cops/",
+    "published": "Thu, 08 Oct 2026 21:08:22 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Miami voters to decide fate of $80M Virginia Key redevelopment",
+    "url": "https://www.local10.com/news/local/2026/10/07/miami-voters-to-decide-fate-of-80m-virginia-key-redevelopment/",
+    "published": "Thu, 08 Oct 2026 02:37:30 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Senior truck driver hospitalized after plunging into Sunrise canal",
+    "url": "https://www.local10.com/news/local/2026/10/08/truck-driver-hospitalized-after-plunging-into-sunrise-lake/",
+    "published": "Thu, 08 Oct 2026 17:51:25 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Hialeah man busted for recording 13-year-old girl in bathroom, cops say",
+    "url": "https://www.local10.com/news/local/2026/10/08/hialeah-man-busted-for-recording-13-year-old-girl-in-bathroom-cops-say/",
+    "published": "Thu, 08 Oct 2026 18:06:58 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/PB52GIG6UREHJMLLD74TOXWTNU.jpg?auth=0e545325a0c0b98dc6e5b65a9b283472396a31794a61f25feec2ff23ad3c1750&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Miami art dealer gets nearly 4 years for selling fake Warhol paintings",
+    "url": "https://www.local10.com/news/local/2026/10/08/miami-art-dealer-gets-nearly-4-years-for-selling-fake-warhol-paintings/",
+    "published": "Thu, 08 Oct 2026 18:10:00 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/AH43CHACFY6D7CHVVLO6RQHVBM.jpg?auth=38938597767e64b4b794ce7857eea623942e874e45f35501d8bd23f3062b7448&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
    {
     "title": "Elderly man dies after his truck crashed through a wall, plunging into canal in Sunrise",
     "url": "https://wsvn.com/news/local/broward/sunrise-truck-crash-canal/",
@@ -876,15 +1002,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-09T02:46:24-04:00",
+  "fetched_at": "2026-10-09T03:01:18-04:00",
   "items": [],
-  "scanned": 0,
+  "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (186) + USGS (11)",
-  "fetched_at": "2026-10-09T02:46:27-04:00",
+  "source": "GDACS (186) + USGS (10)",
+  "fetched_at": "2026-10-09T03:01:20-04:00",
   "events": [
    {
     "lat": -15.5411,
@@ -910,19 +1036,6 @@
     "mag": 5.5,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0x4",
     "when": 1791446879114,
-    "source": "USGS"
-   },
-   {
-    "lat": -52.5475,
-    "lon": 140.2121,
-    "kind": "earthquake",
-    "level": "orange",
-    "title": "M5.5 — west of Macquarie Island",
-    "place": "west of Macquarie Island",
-    "severity": "M5.5",
-    "mag": 5.5,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0ws",
-    "when": 1791442007971,
     "source": "USGS"
    },
    {
@@ -2336,12 +2449,24 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032545",
     "when": "Sat, 03 Oct 2026 11:02:58 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -9.202227806177287,
+    "lon": 14.529234811460054,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 7708 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032649",
+    "when": "Fri, 09 Oct 2026 03:08:39 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 197,
+  "event_count": 196,
   "counts": {
    "red": 0,
-   "orange": 10,
+   "orange": 9,
    "green": 187
   },
   "failed_sources": [],
@@ -2350,7 +2475,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-09T02:46:27-04:00",
+  "fetched_at": "2026-10-09T03:01:20-04:00",
   "countries": [
    {
     "iso": "UKR",
@@ -2497,7 +2622,7 @@
     "issue": "New U.S. indictment charges former Venezuelan President Nicolás Maduro with torture"
    }
   ],
-  "headlines_scanned": 24,
+  "headlines_scanned": 32,
   "countries_matched": 9,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
