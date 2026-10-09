@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-09T17:46:14-04:00",
- "generated_at_utc": "2026-10-09T21:46:14+00:00",
+ "generated_at": "2026-10-09T18:01:15-04:00",
+ "generated_at_utc": "2026-10-09T22:01:15+00:00",
  "weekday": "Friday",
  "date_label": "Friday, October 9",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-09T17:46:14-04:00",
+  "fetched_at": "2026-10-09T18:01:15-04:00",
   "curve": [
    {
     "time": "2026-10-09T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 87.7,
-   "feels": 94.9,
-   "humidity": 70,
-   "wind_mph": 11.1,
-   "wind_dir": 151,
-   "observed_at": "2026-10-09T17:45"
+   "temp": 87.3,
+   "feels": 95.0,
+   "humidity": 71,
+   "wind_mph": 10.1,
+   "wind_dir": 135,
+   "observed_at": "2026-10-09T18:00"
   },
   "today": {
    "high": 91.3,
@@ -166,98 +166,36 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-09T17:46:14-04:00",
+  "fetched_at": "2026-10-09T18:01:16-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-09T17:46:15-04:00",
+  "fetched_at": "2026-10-09T18:01:16-04:00",
   "aqi": 62,
   "category": "Moderate",
-  "pm25": 7.7,
-  "pm10": 10.9,
-  "observed": "2026-10-09T17:00",
+  "pm25": 7.9,
+  "pm10": 11.3,
+  "observed": "2026-10-09T18:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-10-09T17:46:17-04:00",
-  "route_shown": true,
-  "leg": "Jackson Memorial → Home",
-  "direction": "return",
-  "depart_clock": "3:30 PM",
-  "depart_at": "now",
-  "miles": 20.6,
-  "minutes": 59,
-  "delay_minutes": 5,
-  "toll_free": true,
-  "alternates": [
-   {
-    "miles": 25.5,
-    "minutes": 49,
-    "toll": true,
-    "saves": 10
-   },
-   {
-    "miles": 20.8,
-    "minutes": 58,
-    "toll": true,
-    "saves": 1
-   },
-   {
-    "miles": 28.6,
-    "minutes": 57,
-    "toll": true,
-    "saves": 2
-   },
-   {
-    "miles": 22.6,
-    "minutes": 60,
-    "toll": true,
-    "saves": -1
-   }
-  ],
-  "alternates_worth_taking": [],
-  "free_alternates": [
-   {
-    "miles": 20.6,
-    "minutes": 59,
-    "delay_minutes": 5,
-    "saves": 0
-   },
-   {
-    "miles": 23.4,
-    "minutes": 69,
-    "delay_minutes": 2
-   },
-   {
-    "miles": 23.7,
-    "minutes": 71,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 23.1,
-    "minutes": 73,
-    "delay_minutes": 2
-   }
-  ],
-  "best_free": {
-   "miles": 20.6,
-   "minutes": 59,
-   "delay_minutes": 5,
-   "saves": 0
-  },
+  "source": "TomTom Traffic",
+  "fetched_at": "2026-10-09T18:01:17-04:00",
+  "route_shown": false,
+  "leg": null,
+  "direction": null,
   "incidents": [
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 2422,
+    "delay_s": 2637,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-09T16:38:00Z"
@@ -268,17 +206,58 @@
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 1678,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 1711,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-10-09T18:35:41Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 1615,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-09T21:43:11Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-91 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 1552,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-10-09T09:37:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 1529,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-09T19:09:33Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-858"
+    ],
+    "delay_s": 1529,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-09T19:01:04Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-826 N"
     ],
-    "delay_s": 1510,
+    "delay_s": 1181,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-09T19:35:04Z"
@@ -288,7 +267,7 @@
     "roads": [
      "FL-860"
     ],
-    "delay_s": 1465,
+    "delay_s": 1094,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-09T19:41:56Z"
@@ -296,41 +275,10 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 1443,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-10-09T09:37:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-858"
-    ],
-    "delay_s": 1405,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-09T19:01:04Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 1261,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-09T19:09:33Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-836",
      "FL-836 W"
     ],
-    "delay_s": 1169,
+    "delay_s": 974,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-09T20:22:49Z"
@@ -342,41 +290,10 @@
      "FL-874 S",
      "S Dade Expy S"
     ],
-    "delay_s": 1078,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-09T20:22:13Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 1061,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-09T20:30:09Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-7",
-     "US-441 S"
-    ],
-    "delay_s": 1020,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-09T20:35:43Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-823"
-    ],
     "delay_s": 902,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-09T18:23:30Z"
+    "start": "2026-10-09T20:22:13Z"
    },
    {
     "county": "Broward",
@@ -406,7 +323,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -416,7 +333,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -449,105 +366,34 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-820"
+     "I-95 N"
     ],
-    "delay_s": 794,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-09T21:06:50Z"
+    "delay_s": 881,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-09T20:30:09Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 N"
+     "FL-823"
     ],
-    "delay_s": 794,
+    "delay_s": 846,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-09T13:37:00Z"
+    "start": "2026-10-09T18:23:30Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 728,
+    "delay_s": 753,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-10-09T18:24:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S"
-    ],
-    "delay_s": 727,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-09T18:49:12Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-824"
-    ],
-    "delay_s": 682,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-09T20:25:54Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 598,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-09T19:17:39Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 S",
-     "US-41 N"
-    ],
-    "delay_s": 579,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-09T20:41:49Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 558,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-09T21:26:07Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 S"
-    ],
-    "delay_s": 557,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-09T18:24:05Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-816"
-    ],
-    "delay_s": 540,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-09T20:41:49Z"
    },
    {
     "county": "Broward",
@@ -555,21 +401,117 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 536,
+    "delay_s": 696,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-10-09T17:46:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S"
+    ],
+    "delay_s": 694,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-09T18:49:12Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 593,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-09T18:14:12Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-7",
+     "US-441 S"
+    ],
+    "delay_s": 583,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-09T20:35:43Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "US-1 N",
+     "US-1 S",
+     "FL-A1A",
+     "FL-5"
+    ],
+    "delay_s": 569,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-09T20:31:18Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 N"
+    ],
+    "delay_s": 556,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-09T13:37:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-112 W",
+     "I-195 W"
+    ],
+    "delay_s": 549,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-09T20:34:24Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-824"
+    ],
+    "delay_s": 512,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-09T20:25:54Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S"
+    ],
+    "delay_s": 471,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-09T18:37:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-7",
+     "US-441 N"
+    ],
+    "delay_s": 447,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-09T21:26:07Z"
    }
   ],
-  "incident_count": 656,
-  "named_count": 252,
-  "major_count": 24,
+  "incident_count": 605,
+  "named_count": 221,
+  "major_count": 22,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-09T17:46:18-04:00",
+  "fetched_at": "2026-10-09T18:01:18-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -605,7 +547,7 @@
    }
   ],
   "fl511_all": [
-   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Oct 9 2026, 7:07 AM",
+   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Oct 9 2026, 5:49 PM",
    "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Purple Alert has been issued for Aldolphus Noble Jr. out of Charlotte, NC. Look for a 2019 Black Ford Fusion, NC Tag 6026UF. Call *347. | Oct 9 2026, 4:57 PM"
   ],
   "fl511_local": [
@@ -615,7 +557,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-09T17:46:18-04:00",
+  "fetched_at": "2026-10-09T18:01:18-04:00",
   "issued": "200 PM EDT Fri Oct 9 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 091715\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Fri Oct 9 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane \nIsaias, located over the north-central Gulf of America.\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Brown"
@@ -623,7 +565,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-09T17:46:18-04:00",
+  "fetched_at": "2026-10-09T18:01:18-04:00",
   "florida": "$4.1468",
   "national": "$4.3718",
   "diesel": "$5.8985",
@@ -632,7 +574,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-09T17:46:19-04:00",
+  "fetched_at": "2026-10-09T18:01:19-04:00",
   "streams": {
    "local": [
     {
@@ -741,17 +683,25 @@
   ],
   "local": [
    {
-    "title": "Drone video shows dramatic Sunrise rescue from submerged truck",
-    "url": "https://www.local10.com/news/local/2026/10/09/drone-video-shows-dramatic-sunrise-rescue-from-submerged-truck/",
-    "published": "Fri, 09 Oct 2026 21:35:25 +0000",
+    "title": "Broward mayor, commission launching probe into BSO spending amid tit-for-tat over budget",
+    "url": "https://www.local10.com/news/local/2026/10/09/broward-mayor-commission-launching-probe-into-bso-spending-amid-tit-for-tat-over-budget/",
+    "published": "Fri, 09 Oct 2026 21:53:58 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
+    "media": "https://www.local10.com/resizer/v2/FJXF27YAAGHJM3Q5R5ADRGHZ2M.jpg?auth=31d822805678351e668c0e9fbae80b9e60c37c72a19d43e9ebab389a1ee056e5&smart=true&width=1200&height=900",
+    "media_type": "image"
    },
    {
     "title": "Family of bystander killed by Miami police in 2025 meets with state attorney, hopes to see charges",
     "url": "https://www.local10.com/news/local/2026/10/09/family-of-bystander-killed-by-miami-police-in-2025-meets-with-state-attorney-hopes-to-see-charges/",
     "published": "Fri, 09 Oct 2026 21:16:20 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Drone video shows dramatic Sunrise rescue from submerged truck",
+    "url": "https://www.local10.com/news/local/2026/10/09/drone-video-shows-dramatic-sunrise-rescue-from-submerged-truck/",
+    "published": "Fri, 09 Oct 2026 21:35:25 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -794,14 +744,6 @@
     "published": "Fri, 09 Oct 2026 15:51:51 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/5FOIPXXC4NDLJOVRZBEHGNYES4.png?auth=9a705750d6b252a61f73d36e4b78242bd9b04015a4fa12c04d650ff16da00e46&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "1 wounded in Pompano Beach shooting, deputies say",
-    "url": "https://www.local10.com/news/local/2026/10/09/1-wounded-in-pompano-beach-shooting-deputies-say/",
-    "published": "Fri, 09 Oct 2026 15:05:28 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/2KMAWTONJ3TER76NQ22CEA3UK4.jpg?auth=2f5053898c6d0b5bc0ef108bcf19dfbc7a3b037d3f2188fa25f5bd60e86f1ff3&smart=true&width=1200&height=900",
     "media_type": "image"
    },
    {
@@ -1005,15 +947,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-09T17:46:21-04:00",
+  "fetched_at": "2026-10-09T18:01:21-04:00",
   "items": [],
   "scanned": 6,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (211) + USGS (25)",
-  "fetched_at": "2026-10-09T17:46:23-04:00",
+  "source": "GDACS (211) + USGS (30)",
+  "fetched_at": "2026-10-09T18:01:23-04:00",
   "events": [
    {
     "lat": 7.5868,
@@ -1241,6 +1183,32 @@
     "source": "USGS"
    },
    {
+    "lat": 7.7249,
+    "lon": -81.4589,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M5 — 13 km W of Río Grande, Panama",
+    "place": "13 km W of Río Grande, Panama",
+    "severity": "M5",
+    "mag": 5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1aa",
+    "when": 1791578528725,
+    "source": "USGS"
+   },
+   {
+    "lat": 7.4734,
+    "lon": -80.5491,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M5 — 6 km NE of La Tronosa, Panama",
+    "place": "6 km NE of La Tronosa, Panama",
+    "severity": "M5",
+    "mag": 5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19t",
+    "when": 1791577297940,
+    "source": "USGS"
+   },
+   {
     "lat": 7.6161,
     "lon": -81.2492,
     "kind": "earthquake",
@@ -1277,6 +1245,32 @@
     "mag": 5,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u195",
     "when": 1791571624065,
+    "source": "USGS"
+   },
+   {
+    "lat": 7.7299,
+    "lon": -81.452,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.9 — 13 km W of Río Grande, Panama",
+    "place": "13 km W of Río Grande, Panama",
+    "severity": "M4.9",
+    "mag": 4.9,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1a9",
+    "when": 1791579925304,
+    "source": "USGS"
+   },
+   {
+    "lat": 7.6771,
+    "lon": -81.0923,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.9 — 8 km SSE of Leones Arriba, Panama",
+    "place": "8 km SSE of Leones Arriba, Panama",
+    "severity": "M4.9",
+    "mag": 4.9,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1a5",
+    "when": 1791578464293,
     "source": "USGS"
    },
    {
@@ -1433,6 +1427,19 @@
     "mag": 4.6,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u14r",
     "when": 1791537438680,
+    "source": "USGS"
+   },
+   {
+    "lat": 7.5554,
+    "lon": -80.2145,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.5 — 5 km N of Oria Arriba, Panama",
+    "place": "5 km N of Oria Arriba, Panama",
+    "severity": "M4.5",
+    "mag": 4.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19e",
+    "when": 1791574970202,
     "source": "USGS"
    },
    {
@@ -2419,73 +2426,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032631",
     "when": "Thu, 08 Oct 2026 11:03:37 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -10.584076146312166,
-    "lon": 34.847984920317835,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Tanzania",
-    "place": "Tanzania",
-    "severity": "Green impact for forestfire in 5057 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032681",
-    "when": "Fri, 09 Oct 2026 19:06:30 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -8.679096286355659,
-    "lon": 14.12804321493413,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 11437 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032645",
-    "when": "Thu, 08 Oct 2026 23:04:38 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -8.594748457306425,
-    "lon": 14.032482576242478,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 5420 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032646",
-    "when": "Thu, 08 Oct 2026 19:05:07 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -4.278992412045451,
-    "lon": -50.77749901824572,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 9577 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032517",
-    "when": "Thu, 01 Oct 2026 11:00:28 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -3.117873830135133,
-    "lon": -53.74156440351331,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 6816 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032575",
-    "when": "Mon, 05 Oct 2026 23:01:42 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 236,
+  "event_count": 241,
   "counts": {
    "red": 2,
    "orange": 12,
-   "green": 222
+   "green": 227
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2493,7 +2440,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-09T17:46:23-04:00",
+  "fetched_at": "2026-10-09T18:01:23-04:00",
   "countries": [
    {
     "iso": "COL",
