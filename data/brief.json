@@ -1,26 +1,179 @@
 {
- "generated_at": "2026-10-10T04:01:15-04:00",
- "generated_at_utc": "2026-10-10T08:01:15+00:00",
+ "generated_at": "2026-10-10T04:16:16-04:00",
+ "generated_at_utc": "2026-10-10T08:16:16+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, October 10",
  "is_weekend": true,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-10-10T04:01:15-04:00",
-  "error": "503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpre"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-10-10T04:16:17-04:00",
+  "curve": [
+   {
+    "time": "2026-10-10T05:00",
+    "hour": 5,
+    "temp": 81.7,
+    "feels": 91.0,
+    "humidity": 87,
+    "pop": 12
+   },
+   {
+    "time": "2026-10-10T06:00",
+    "hour": 6,
+    "temp": 79.7,
+    "feels": 87.9,
+    "humidity": 83,
+    "pop": 13
+   },
+   {
+    "time": "2026-10-10T07:00",
+    "hour": 7,
+    "temp": 79.3,
+    "feels": 88.8,
+    "humidity": 88,
+    "pop": 5
+   },
+   {
+    "time": "2026-10-10T08:00",
+    "hour": 8,
+    "temp": 80.5,
+    "feels": 91.0,
+    "humidity": 89,
+    "pop": 7
+   },
+   {
+    "time": "2026-10-10T09:00",
+    "hour": 9,
+    "temp": 83.9,
+    "feels": 92.4,
+    "humidity": 80,
+    "pop": 7
+   },
+   {
+    "time": "2026-10-10T10:00",
+    "hour": 10,
+    "temp": 86.1,
+    "feels": 94.0,
+    "humidity": 74,
+    "pop": 9
+   },
+   {
+    "time": "2026-10-10T11:00",
+    "hour": 11,
+    "temp": 88.5,
+    "feels": 94.9,
+    "humidity": 65,
+    "pop": 13
+   },
+   {
+    "time": "2026-10-10T12:00",
+    "hour": 12,
+    "temp": 90.1,
+    "feels": 95.7,
+    "humidity": 60,
+    "pop": 12
+   },
+   {
+    "time": "2026-10-10T13:00",
+    "hour": 13,
+    "temp": 90.8,
+    "feels": 96.4,
+    "humidity": 57,
+    "pop": 13
+   },
+   {
+    "time": "2026-10-10T14:00",
+    "hour": 14,
+    "temp": 91.3,
+    "feels": 96.7,
+    "humidity": 57,
+    "pop": 19
+   },
+   {
+    "time": "2026-10-10T15:00",
+    "hour": 15,
+    "temp": 91.3,
+    "feels": 96.2,
+    "humidity": 56,
+    "pop": 19
+   },
+   {
+    "time": "2026-10-10T16:00",
+    "hour": 16,
+    "temp": 90.4,
+    "feels": 94.6,
+    "humidity": 55,
+    "pop": 15
+   },
+   {
+    "time": "2026-10-10T17:00",
+    "hour": 17,
+    "temp": 90.0,
+    "feels": 94.9,
+    "humidity": 58,
+    "pop": 18
+   },
+   {
+    "time": "2026-10-10T18:00",
+    "hour": 18,
+    "temp": 88.4,
+    "feels": 94.0,
+    "humidity": 61,
+    "pop": 20
+   },
+   {
+    "time": "2026-10-10T19:00",
+    "hour": 19,
+    "temp": 85.4,
+    "feels": 91.8,
+    "humidity": 68,
+    "pop": 20
+   },
+   {
+    "time": "2026-10-10T20:00",
+    "hour": 20,
+    "temp": 83.8,
+    "feels": 91.3,
+    "humidity": 75,
+    "pop": 12
+   },
+   {
+    "time": "2026-10-10T21:00",
+    "hour": 21,
+    "temp": 83.1,
+    "feels": 92.1,
+    "humidity": 77,
+    "pop": 11
+   }
+  ],
+  "current": {
+   "temp": 82.3,
+   "feels": 92.8,
+   "humidity": 87,
+   "wind_mph": 5.7,
+   "wind_dir": 152,
+   "observed_at": "2026-10-10T04:15"
+  },
+  "today": {
+   "high": 91.3,
+   "low": 79.3,
+   "feels_max": 96.7,
+   "pop_max": 20
+  },
+  "peak_feels": 96.7,
+  "peak_hour": 14
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-10T04:01:16-04:00",
+  "fetched_at": "2026-10-10T04:16:17-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-10T04:01:16-04:00",
+  "fetched_at": "2026-10-10T04:16:18-04:00",
   "aqi": 48,
   "category": "Good",
   "pm25": 5.8,
@@ -32,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-10-10T04:01:16-04:00",
+  "fetched_at": "2026-10-10T04:16:19-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -141,6 +294,16 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-836 E"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Bridge closed",
+    "start": "2026-10-10T08:01:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-934"
     ],
     "delay_s": null,
@@ -178,9 +341,19 @@
      "FL-820"
     ],
     "delay_s": 175,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-10T07:59:30Z"
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-10T08:13:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 140,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-10T08:07:00Z"
    },
    {
     "county": "Broward",
@@ -324,33 +497,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-10-07T14:13:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-18T20:48:14Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-10-06T22:36:50Z"
    }
   ],
-  "incident_count": 257,
-  "named_count": 28,
-  "major_count": 13,
+  "incident_count": 259,
+  "named_count": 30,
+  "major_count": 14,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-10T04:01:17-04:00",
+  "fetched_at": "2026-10-10T04:16:20-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -396,7 +553,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-10T04:01:18-04:00",
+  "fetched_at": "2026-10-10T04:16:20-04:00",
   "issued": "200 AM EDT Sat Oct 10 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 100512\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Sat Oct 10 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane \nIsaias, located inland over southern Alabama. \n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Gibbs"
@@ -404,7 +561,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-10T04:01:18-04:00",
+  "fetched_at": "2026-10-10T04:16:20-04:00",
   "florida": "$4.1099",
   "national": "$4.3718",
   "diesel": "$5.8921",
@@ -413,7 +570,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-10T04:01:19-04:00",
+  "fetched_at": "2026-10-10T04:16:21-04:00",
   "streams": {
    "local": [
     {
@@ -786,15 +943,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-10T04:01:19-04:00",
+  "fetched_at": "2026-10-10T04:16:22-04:00",
   "items": [],
   "scanned": 6,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (220) + USGS (56)",
-  "fetched_at": "2026-10-10T04:01:22-04:00",
+  "source": "GDACS (220) + USGS (57)",
+  "fetched_at": "2026-10-10T04:16:24-04:00",
   "events": [
    {
     "lat": 7.5868,
@@ -827,8 +984,8 @@
     "lon": -104.6,
     "kind": "cyclone",
     "level": "red",
-    "title": "Red notification for tropical cyclone SIMON-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0.845 million .",
-    "place": "Mexico",
+    "title": "Red notification for tropical cyclone SIMON-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 0.507 million .",
+    "place": null,
     "severity": "Hurricane/Typhoon > 74 mph (maximum wind speed of 222 km/h)",
     "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001335",
     "when": "Wed, 07 Oct 2026 15:33:28 GMT",
@@ -1464,6 +1621,19 @@
     "source": "USGS"
    },
    {
+    "lat": 7.6182,
+    "lon": -80.5348,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.6 — 6 km SSE of Llano de Piedra, Panama",
+    "place": "6 km SSE of Llano de Piedra, Panama",
+    "severity": "M4.6",
+    "mag": 4.6,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1dc",
+    "when": 1791616410583,
+    "source": "USGS"
+   },
+   {
     "lat": 7.6272,
     "lon": -81.3237,
     "kind": "earthquake",
@@ -1542,6 +1712,19 @@
     "source": "USGS"
    },
    {
+    "lat": 7.4558,
+    "lon": -79.9613,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.5 — 10 km SE of Pedasí, Panama",
+    "place": "10 km SE of Pedasí, Panama",
+    "severity": "M4.5",
+    "mag": 4.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1db",
+    "when": 1791614869431,
+    "source": "USGS"
+   },
+   {
     "lat": 7.3167,
     "lon": -79.9478,
     "kind": "earthquake",
@@ -1617,19 +1800,6 @@
     "mag": 4.5,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19e",
     "when": 1791574970202,
-    "source": "USGS"
-   },
-   {
-    "lat": -17.72,
-    "lon": -178.3548,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.5 — 249 km E of Levuka, Fiji",
-    "place": "249 km E of Levuka, Fiji",
-    "severity": "M4.5",
-    "mag": 4.5,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u14e",
-    "when": 1791533507203,
     "source": "USGS"
    },
    {
@@ -2279,25 +2449,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001333",
     "when": "Mon, 05 Oct 2026 02:11:52 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -12.005217988256803,
-    "lon": -43.46422372308275,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Brazil",
-    "place": "Brazil",
-    "severity": "Green impact for forestfire in 6893 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032688",
-    "when": "Fri, 09 Oct 2026 23:02:20 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 276,
+  "event_count": 277,
   "counts": {
    "red": 3,
    "orange": 12,
-   "green": 261
+   "green": 262
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2305,7 +2463,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-10T04:01:22-04:00",
+  "fetched_at": "2026-10-10T04:16:24-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2462,8 +2620,6 @@
   "countries_matched": 9,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
