@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-10T01:46:17-04:00",
- "generated_at_utc": "2026-10-10T05:46:17+00:00",
+ "generated_at": "2026-10-10T02:01:13-04:00",
+ "generated_at_utc": "2026-10-10T06:01:13+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, October 10",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-10T01:46:18-04:00",
+  "fetched_at": "2026-10-10T02:01:15-04:00",
   "curve": [
    {
     "time": "2026-10-10T05:00",
@@ -148,11 +148,11 @@
   ],
   "current": {
    "temp": 81.7,
-   "feels": 90.6,
-   "humidity": 87,
-   "wind_mph": 8.5,
-   "wind_dir": 136,
-   "observed_at": "2026-10-10T01:45"
+   "feels": 91.4,
+   "humidity": 88,
+   "wind_mph": 7.0,
+   "wind_dir": 131,
+   "observed_at": "2026-10-10T02:00"
   },
   "today": {
    "high": 91.7,
@@ -166,26 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-10T01:46:18-04:00",
+  "fetched_at": "2026-10-10T02:01:15-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-10T01:46:19-04:00",
-  "aqi": 54,
+  "fetched_at": "2026-10-10T02:01:16-04:00",
+  "aqi": 52,
   "category": "Moderate",
-  "pm25": 6.2,
-  "pm10": 7.8,
-  "observed": "2026-10-10T01:00",
+  "pm25": 6.0,
+  "pm10": 7.6,
+  "observed": "2026-10-10T02:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-10-10T01:46:20-04:00",
+  "fetched_at": "2026-10-10T02:01:17-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -314,24 +314,36 @@
     "start": "2026-10-10T04:43:00Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "US-1 N",
+     "US-41 N",
+     "FL-5"
     ],
-    "delay_s": 395,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-10T05:01:30Z"
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-10-10T05:49:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-820"
     ],
-    "delay_s": 335,
+    "delay_s": 392,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-10-10T04:17:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 93,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-10T05:59:00Z"
    },
    {
     "county": "Broward",
@@ -402,7 +414,7 @@
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Lane closed; Roadworks",
+    "description": "Roadworks",
     "start": "2026-09-07T13:07:38Z"
    },
    {
@@ -412,7 +424,7 @@
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Roadworks",
+    "description": "Lane closed; Roadworks",
     "start": "2026-09-07T13:07:38Z"
    },
    {
@@ -485,27 +497,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-10-09T13:19:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-886"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-10-07T14:13:30Z"
    }
   ],
-  "incident_count": 260,
-  "named_count": 30,
-  "major_count": 12,
+  "incident_count": 268,
+  "named_count": 31,
+  "major_count": 13,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-10T01:46:20-04:00",
+  "fetched_at": "2026-10-10T02:01:18-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -543,7 +545,7 @@
   "fl511_all": [
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Oct 9 2026, 11:36 PM",
    "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Silver Alert has been issued for Edward Kay out of Cape Coral. Look for a 2023 Blue Kia Telluride Fl Tag KULH67. CALL *347. | Oct 10 2026, 1:04 AM",
-   "Central | Seminole | Crash on SR-436 / Semoran Blvd / Altamonte Dr West in Seminole County at S Westmonte Dr with All Lanes Blocked, Right Shoulder Blocked. Motorists should seek an alternate route and expect significant delays approaching the area. | Oct 10 2026, 1:46 AM"
+   "Central | Seminole | Crash on SR-436 / Semoran Blvd / Altamonte Dr West in Seminole County at S Westmonte Dr with All Lanes Blocked, Exit Ramp Closed, Left Shoulder Blocked, Right Shoulder Blocked. Motorists should seek an alternate route and expect significant delays approaching the area. | Oct 10 2026, 2:01 AM"
   ],
   "fl511_local": [
    "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Silver Alert has been issued for Edward Kay out of Cape Coral. Look for a 2023 Blue Kia Telluride Fl Tag KULH67. CALL *347. | Oct 10 2026, 1:04 AM"
@@ -552,7 +554,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-10T01:46:20-04:00",
+  "fetched_at": "2026-10-10T02:01:18-04:00",
   "issued": "200 AM EDT Sat Oct 10 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 100512\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Sat Oct 10 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane \nIsaias, located inland over southern Alabama. \n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Gibbs"
@@ -560,7 +562,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-10T01:46:21-04:00",
+  "fetched_at": "2026-10-10T02:01:18-04:00",
   "florida": "$4.1468",
   "national": "$4.3718",
   "diesel": "$5.8985",
@@ -569,7 +571,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-10T01:46:22-04:00",
+  "fetched_at": "2026-10-10T02:01:19-04:00",
   "streams": {
    "local": [
     {
@@ -678,6 +680,70 @@
   ],
   "local": [
    {
+    "title": "Drone video shows dramatic Sunrise rescue from submerged truck",
+    "url": "https://www.local10.com/news/local/2026/10/09/drone-video-shows-dramatic-sunrise-rescue-from-submerged-truck/",
+    "published": "Fri, 09 Oct 2026 21:35:25 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Broward mayor, commission launching probe into BSO spending amid tit-for-tat over budget",
+    "url": "https://www.local10.com/news/local/2026/10/09/broward-mayor-commission-launching-probe-into-bso-spending-amid-tit-for-tat-over-budget/",
+    "published": "Fri, 09 Oct 2026 21:53:58 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Family of bystander killed by Miami police in 2025 meets with state attorney, hopes to see charges",
+    "url": "https://www.local10.com/news/local/2026/10/09/family-of-bystander-killed-by-miami-police-in-2025-meets-with-state-attorney-hopes-to-see-charges/",
+    "published": "Fri, 09 Oct 2026 21:16:20 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Deerfield Beach man jailed for uploading sex abuse videos showing children as young as 5, cops say",
+    "url": "https://www.local10.com/news/local/2026/10/09/deerfield-beach-man-jailed-for-uploading-sex-abuse-videos-showing-children-as-young-as-5-cops-say/",
+    "published": "Fri, 09 Oct 2026 20:18:17 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/BTLZP2GGJ5EARPWNFUVCGVRNY4.jpg?auth=1371fced84c3c667e7698b2e0d512be1ac90e0d30edef727cac4eb978f0a1e8c&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Man attacks child who went to Miami-Dade home ‘to ask for cereal,’ deputies say",
+    "url": "https://www.local10.com/news/local/2026/10/09/miami-dade-man-attacks-child-who-went-to-home-to-ask-for-cereal-deputies-say/",
+    "published": "Fri, 09 Oct 2026 17:12:49 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/O2RPTHZ63ZCF7JXX7Q5NMWOWOM.jpg?auth=04a3a860dc06809dc99608515906216745d83fc3daf2d5afed1daa46b3f4cd55&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Man with 17 license suspensions arrested after crashing into North Miami bar & grill, fleeing: Cops",
+    "url": "https://www.local10.com/news/local/2026/10/09/man-with-17-license-suspensions-arrested-after-crashing-into-north-miami-bar-grill-fleeing-cops/",
+    "published": "Fri, 09 Oct 2026 18:33:23 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/FW4S26MWCZFQDCNRWT7Y7G4NOY.png?auth=594a772a6980b42f5839dcc526d8ccd70aa13a36e5bfb9aebcf4cdf8a6eb69e6&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Man pleads not guilty in Haiti president assassination case",
+    "url": "https://www.local10.com/news/local/2026/10/09/man-pleads-not-guilty-in-haiti-president-assassination-case/",
+    "published": "Fri, 09 Oct 2026 16:46:53 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Homestead mail thieves wreck after getting caught, police say",
+    "url": "https://www.local10.com/news/local/2026/10/09/homestead-mail-thieves-wreck-after-getting-caught-police-say/",
+    "published": "Fri, 09 Oct 2026 15:51:51 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/5FOIPXXC4NDLJOVRZBEHGNYES4.png?auth=9a705750d6b252a61f73d36e4b78242bd9b04015a4fa12c04d650ff16da00e46&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
     "title": "Drone video shows first responders removing elderly driver from submerged truck in Sunrise",
     "url": "https://wsvn.com/news/local/broward/drone-video-shows-first-responders-removing-elderly-driver-from-submerged-truck-in-sunrise/",
     "published": "Fri, 09 Oct 2026 19:14:40 +0000",
@@ -744,6 +810,14 @@
   ],
   "colombia": [
    {
+    "title": "Una placa falsa delató a un vehículo que ocultaba dos cilindros cargados con explosivos en calles de Pasto: atribuyen el hecho a las disidencias",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/una-placa-falsa-delato-a-un-vehiculo-que-ocultaba-dos-cilindros-cargados-con-explosivos-en-calles-de-pasto-atribuyen-el-hecho-a-las-disidencias-3592708",
+    "published": "2026-10-10T00:59:07-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/10/6ac9d1eb926fc.r_d.534-243-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "La venta de bebidas alcohólicas durante la madrugada en Bucaramanga tiene nuevas condiciones tras desórdenes públicos: estas son las reglas",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/la-venta-de-bebidas-alcoholicas-durante-la-madrugada-en-bucaramanga-tiene-nuevas-condiciones-tras-desordenes-publicos-estas-son-las-reglas-3592507",
     "published": "2026-10-09T23:11:31-05:00",
@@ -797,14 +871,6 @@
     "published": "2026-10-09T20:42:49-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/09/6ac9089ec3f9b.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Asesinan a Oliver Sánchez, líder social que acompañaba a jóvenes en condición de vulnerabilidad en el Catatumbo",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/asesinan-a-oliver-sanchez-lider-social-que-acompanaba-a-jovenes-en-condicion-de-vulnerabilidad-en-el-catatumbo-3592660",
-    "published": "2026-10-09T18:35:03-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/09/6ac9795482ad6.jpeg",
     "media_type": "image"
    }
   ],
@@ -878,15 +944,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-10T01:46:22-04:00",
+  "fetched_at": "2026-10-10T02:01:20-04:00",
   "items": [],
-  "scanned": 0,
+  "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (211) + USGS (50)",
-  "fetched_at": "2026-10-10T01:46:25-04:00",
+  "source": "GDACS (211) + USGS (51)",
+  "fetched_at": "2026-10-10T02:01:22-04:00",
   "events": [
    {
     "lat": 7.5868,
@@ -1163,6 +1229,19 @@
     "mag": 5.1,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u153",
     "when": 1791541334915,
+    "source": "USGS"
+   },
+   {
+    "lat": 1.6248,
+    "lon": 126.3886,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M5 — 141 km E of Bitung, Indonesia",
+    "place": "141 km E of Bitung, Indonesia",
+    "severity": "M5",
+    "mag": 5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1cv",
+    "when": 1791610321552,
     "source": "USGS"
    },
    {
@@ -2365,25 +2444,13 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032643",
     "when": "Sat, 10 Oct 2026 03:03:17 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -21.07623829371567,
-    "lon": 132.7494483364101,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 7095 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032621",
-    "when": "Thu, 08 Oct 2026 07:01:25 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 261,
+  "event_count": 262,
   "counts": {
    "red": 3,
    "orange": 12,
-   "green": 246
+   "green": 247
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2391,7 +2458,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-10T01:46:25-04:00",
+  "fetched_at": "2026-10-10T02:01:22-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2458,6 +2525,20 @@
     ],
     "count": 2,
     "issue": "South African human rights lawyer Navi Pillay wins Nobel Peace Prize"
+   },
+   {
+    "iso": "HTI",
+    "name": "Haiti",
+    "stories": [
+     {
+      "title": "Man pleads not guilty in Haiti president assassination case",
+      "url": "https://www.local10.com/news/local/2026/10/09/man-pleads-not-guilty-in-haiti-president-assassination-case/",
+      "published": "Fri, 09 Oct 2026 16:46:53 +0000",
+      "section": "local"
+     }
+    ],
+    "count": 1,
+    "issue": "Man pleads not guilty in Haiti president assassination case"
    },
    {
     "iso": "IRN",
@@ -2530,8 +2611,8 @@
     "issue": "New U.S. indictment charges former Venezuelan President Nicolás Maduro with torture"
    }
   ],
-  "headlines_scanned": 24,
-  "countries_matched": 8,
+  "headlines_scanned": 32,
+  "countries_matched": 9,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
