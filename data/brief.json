@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-10T01:01:16-04:00",
- "generated_at_utc": "2026-10-10T05:01:16+00:00",
+ "generated_at": "2026-10-10T01:16:21-04:00",
+ "generated_at_utc": "2026-10-10T05:16:21+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, October 10",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-10T01:01:17-04:00",
+  "fetched_at": "2026-10-10T01:16:22-04:00",
   "curve": [
    {
     "time": "2026-10-10T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 82.9,
-   "feels": 92.9,
-   "humidity": 85,
-   "wind_mph": 6.5,
-   "wind_dir": 150,
-   "observed_at": "2026-10-10T01:00"
+   "temp": 81.4,
+   "feels": 89.9,
+   "humidity": 86,
+   "wind_mph": 8.4,
+   "wind_dir": 142,
+   "observed_at": "2026-10-10T01:15"
   },
   "today": {
    "high": 90.0,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-10T01:01:17-04:00",
+  "fetched_at": "2026-10-10T01:16:22-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-10T01:01:18-04:00",
+  "fetched_at": "2026-10-10T01:16:23-04:00",
   "aqi": 54,
   "category": "Moderate",
   "pm25": 6.2,
@@ -185,11 +185,21 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-10-10T01:01:19-04:00",
+  "fetched_at": "2026-10-10T01:16:23-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 1009,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-10T02:12:30Z"
+   },
    {
     "county": "Broward",
     "roads": [
@@ -218,7 +228,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -228,7 +238,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -303,14 +313,14 @@
     "start": "2026-10-10T04:43:00Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "I-95 S"
+     "FL-820"
     ],
-    "delay_s": 612,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-10T02:12:30Z"
+    "delay_s": 272,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-10T04:17:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -318,31 +328,30 @@
      "US-41 N",
      "FL-A1A"
     ],
-    "delay_s": 344,
-    "magnitude": 3,
-    "description": "Stationary traffic",
+    "delay_s": 233,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-10-10T04:21:00Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-7",
-     "US-441 N"
+     "FL-934"
     ],
-    "delay_s": 293,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-10T04:50:00Z"
+    "delay_s": 219,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-10T04:41:30Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-820"
+     "I-95 S"
     ],
-    "delay_s": 230,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-10-10T04:17:30Z"
+    "delay_s": 216,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-10T05:01:30Z"
    },
    {
     "county": "Broward",
@@ -486,27 +495,17 @@
     "magnitude": 0,
     "description": "Roadworks",
     "start": "2026-10-10T02:21:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-886"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-10-09T13:19:00Z"
    }
   ],
-  "incident_count": 273,
-  "named_count": 31,
+  "incident_count": 271,
+  "named_count": 32,
   "major_count": 12,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-10T01:01:20-04:00",
+  "fetched_at": "2026-10-10T01:16:24-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -542,22 +541,25 @@
    }
   ],
   "fl511_all": [
-   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Oct 9 2026, 11:36 PM"
+   "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Oct 9 2026, 11:36 PM",
+   "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Silver Alert has been issued for Edward Kay out of Cape Coral. Look for a 2023 Blue Kia Telluride Fl Tag KULH67. CALL *347. | Oct 10 2026, 1:04 AM"
   ],
-  "fl511_local": []
+  "fl511_local": [
+   "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Silver Alert has been issued for Edward Kay out of Cape Coral. Look for a 2023 Blue Kia Telluride Fl Tag KULH67. CALL *347. | Oct 10 2026, 1:04 AM"
+  ]
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-10T01:01:20-04:00",
-  "issued": "800 PM EDT Fri Oct 9 2026",
+  "fetched_at": "2026-10-10T01:16:24-04:00",
+  "issued": "200 AM EDT Sat Oct 10 2026",
   "areas": [],
-  "raw": "en Español\n\n434 \nABNT20 KNHC 092315\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 PM EDT Fri Oct 9 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane \nIsaias, currently approaching the northern Gulf Coast. \n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Adams"
+  "raw": "en Español\n\n000\nABNT20 KNHC 100512\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Sat Oct 10 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nActive Systems:\nThe National Hurricane Center is issuing advisories on Hurricane \nIsaias, located inland over southern Alabama. \n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Gibbs"
  },
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-10T01:01:20-04:00",
+  "fetched_at": "2026-10-10T01:16:24-04:00",
   "florida": "$4.1468",
   "national": "$4.3718",
   "diesel": "$5.8985",
@@ -566,7 +568,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-10T01:01:22-04:00",
+  "fetched_at": "2026-10-10T01:16:25-04:00",
   "streams": {
    "local": [
     {
@@ -675,70 +677,6 @@
   ],
   "local": [
    {
-    "title": "Drone video shows dramatic Sunrise rescue from submerged truck",
-    "url": "https://www.local10.com/news/local/2026/10/09/drone-video-shows-dramatic-sunrise-rescue-from-submerged-truck/",
-    "published": "Fri, 09 Oct 2026 21:35:25 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Broward mayor, commission launching probe into BSO spending amid tit-for-tat over budget",
-    "url": "https://www.local10.com/news/local/2026/10/09/broward-mayor-commission-launching-probe-into-bso-spending-amid-tit-for-tat-over-budget/",
-    "published": "Fri, 09 Oct 2026 21:53:58 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Family of bystander killed by Miami police in 2025 meets with state attorney, hopes to see charges",
-    "url": "https://www.local10.com/news/local/2026/10/09/family-of-bystander-killed-by-miami-police-in-2025-meets-with-state-attorney-hopes-to-see-charges/",
-    "published": "Fri, 09 Oct 2026 21:16:20 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Deerfield Beach man jailed for uploading sex abuse videos showing children as young as 5, cops say",
-    "url": "https://www.local10.com/news/local/2026/10/09/deerfield-beach-man-jailed-for-uploading-sex-abuse-videos-showing-children-as-young-as-5-cops-say/",
-    "published": "Fri, 09 Oct 2026 20:18:17 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/BTLZP2GGJ5EARPWNFUVCGVRNY4.jpg?auth=1371fced84c3c667e7698b2e0d512be1ac90e0d30edef727cac4eb978f0a1e8c&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "Man attacks child who went to Miami-Dade home ‘to ask for cereal,’ deputies say",
-    "url": "https://www.local10.com/news/local/2026/10/09/miami-dade-man-attacks-child-who-went-to-home-to-ask-for-cereal-deputies-say/",
-    "published": "Fri, 09 Oct 2026 17:12:49 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/O2RPTHZ63ZCF7JXX7Q5NMWOWOM.jpg?auth=04a3a860dc06809dc99608515906216745d83fc3daf2d5afed1daa46b3f4cd55&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "Man with 17 license suspensions arrested after crashing into North Miami bar & grill, fleeing: Cops",
-    "url": "https://www.local10.com/news/local/2026/10/09/man-with-17-license-suspensions-arrested-after-crashing-into-north-miami-bar-grill-fleeing-cops/",
-    "published": "Fri, 09 Oct 2026 18:33:23 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/FW4S26MWCZFQDCNRWT7Y7G4NOY.png?auth=594a772a6980b42f5839dcc526d8ccd70aa13a36e5bfb9aebcf4cdf8a6eb69e6&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "Man pleads not guilty in Haiti president assassination case",
-    "url": "https://www.local10.com/news/local/2026/10/09/man-pleads-not-guilty-in-haiti-president-assassination-case/",
-    "published": "Fri, 09 Oct 2026 16:46:53 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Homestead mail thieves wreck after getting caught, police say",
-    "url": "https://www.local10.com/news/local/2026/10/09/homestead-mail-thieves-wreck-after-getting-caught-police-say/",
-    "published": "Fri, 09 Oct 2026 15:51:51 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/5FOIPXXC4NDLJOVRZBEHGNYES4.png?auth=9a705750d6b252a61f73d36e4b78242bd9b04015a4fa12c04d650ff16da00e46&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
     "title": "Drone video shows first responders removing elderly driver from submerged truck in Sunrise",
     "url": "https://wsvn.com/news/local/broward/drone-video-shows-first-responders-removing-elderly-driver-from-submerged-truck-in-sunrise/",
     "published": "Fri, 09 Oct 2026 19:14:40 +0000",
@@ -783,7 +721,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/miami-police-stray-bullet-death/",
     "published": "Fri, 09 Oct 2026 22:57:52 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/e15ea5d9-6434-40fe-acfe-ece8fe01b326/37a40c75-8bb3-42c0-bde9-ecf6445cb9b6/main.mp4?fastly_token=NmFjOWM5ZTZfNjYyMTBiM2MwNzQ1YTVjYzkzYzM0OGQyMTFkNGY3MDU4MTVkYjQ2NGY5OTFlNjYwOGZhZmFhN2JhYTcxODQwY18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9lMTVlYTVkOS02NDM0LTQwZmUtYWNmZS1lY2U4ZmUwMWIzMjYvMzdhNDBjNzUtOGJiMy00MmMwLWJkZTktZWNmNjQ0NWNiOWI2L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/e15ea5d9-6434-40fe-acfe-ece8fe01b326/37a40c75-8bb3-42c0-bde9-ecf6445cb9b6/main.mp4?fastly_token=NmFjYTE0NGJfNTU2ZmJkZjRiMGI4ZThhMDE5MDczNTVjMWFkOTU3ZGIwYjc4NTE3ZDUyMTQ5YTY1ZTY0NTNmYjg3YjRlMzJhMV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9lMTVlYTVkOS02NDM0LTQwZmUtYWNmZS1lY2U4ZmUwMWIzMjYvMzdhNDBjNzUtOGJiMy00MmMwLWJkZTktZWNmNjQ0NWNiOWI2L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -815,7 +753,7 @@
    {
     "title": "Pasajera del vuelo Medellín - Nueva York contó detalles sobre la angustia y el susto ante las fuertes turbulencias: 'No nos matamos por un poquito'",
     "url": "https://www.eltiempo.com/colombia/medellin/pasajera-del-vuelo-medellin-nueva-york-conto-detalles-sobre-la-angustia-y-el-susto-ante-las-fuertes-turbulencias-no-nos-matamos-por-un-poquito-3592704",
-    "published": "2026-10-09T23:03:31-05:00",
+    "published": "2026-10-09T23:53:48-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/09/6ac9b8fbaca9c.r_d.562-360-0.jpeg",
     "media_type": "image"
@@ -939,15 +877,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-10T01:01:22-04:00",
+  "fetched_at": "2026-10-10T01:16:25-04:00",
   "items": [],
-  "scanned": 5,
+  "scanned": 0,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (211) + USGS (52)",
-  "fetched_at": "2026-10-10T01:01:25-04:00",
+  "source": "GDACS (211) + USGS (51)",
+  "fetched_at": "2026-10-10T01:16:28-04:00",
   "events": [
    {
     "lat": 7.5868,
@@ -1185,19 +1123,6 @@
     "mag": 5.2,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19h",
     "when": 1791575335624,
-    "source": "USGS"
-   },
-   {
-    "lat": 0.7587,
-    "lon": 125.9365,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M5.2 — 117 km SE of Bitung, Indonesia",
-    "place": "117 km SE of Bitung, Indonesia",
-    "severity": "M5.2",
-    "mag": 5.2,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u13v",
-    "when": 1791522664200,
     "source": "USGS"
    },
    {
@@ -2070,18 +1995,6 @@
     "source": "GDACS"
    },
    {
-    "lat": 17.1053568,
-    "lon": 98.9953943,
-    "kind": "flood",
-    "level": "green",
-    "title": "Green flood alert in Thailand",
-    "place": "Thailand",
-    "severity": "Magnitude 0",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104169",
-    "when": "Fri, 09 Oct 2026 22:08:41 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": 17.666667,
     "lon": -100.0,
     "kind": "flood",
@@ -2106,15 +2019,15 @@
     "source": "GDACS"
    },
    {
-    "lat": -15.870790916579173,
-    "lon": 14.917230822948815,
-    "kind": "wildfire",
+    "lat": 17.1053568,
+    "lon": 98.9953943,
+    "kind": "flood",
     "level": "green",
-    "title": "Green forest fire notification in Angola",
-    "place": "Angola",
-    "severity": "Green impact for forestfire in 5223 ha",
-    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032604",
-    "when": "Wed, 07 Oct 2026 15:01:35 GMT",
+    "title": "Green flood alert in Thailand",
+    "place": "Thailand",
+    "severity": "Magnitude 0",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104169",
+    "when": "Fri, 09 Oct 2026 22:08:41 GMT",
     "source": "GDACS"
    },
    {
@@ -2139,6 +2052,18 @@
     "severity": "Green impact for forestfire in 8564 ha",
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032619",
     "when": "Sat, 10 Oct 2026 03:02:47 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -15.870790916579173,
+    "lon": 14.917230822948815,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 5223 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032604",
+    "when": "Wed, 07 Oct 2026 15:01:35 GMT",
     "source": "GDACS"
    },
    {
@@ -2440,13 +2365,25 @@
     "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032562",
     "when": "Wed, 07 Oct 2026 15:02:06 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -15.854962012978978,
+    "lon": 16.58367394911128,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Angola",
+    "place": "Angola",
+    "severity": "Green impact for forestfire in 5485 ha",
+    "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032643",
+    "when": "Sat, 10 Oct 2026 03:03:17 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 263,
+  "event_count": 262,
   "counts": {
    "red": 3,
    "orange": 12,
-   "green": 248
+   "green": 247
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2454,7 +2391,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-10T01:01:25-04:00",
+  "fetched_at": "2026-10-10T01:16:28-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2463,7 +2400,7 @@
      {
       "title": "Pasajera del vuelo Medellín - Nueva York contó detalles sobre la angustia y el susto ante las fuertes turbulencias: 'No nos matamos por un poquito'",
       "url": "https://www.eltiempo.com/colombia/medellin/pasajera-del-vuelo-medellin-nueva-york-conto-detalles-sobre-la-angustia-y-el-susto-ante-las-fuertes-turbulencias-no-nos-matamos-por-un-poquito-3592704",
-      "published": "2026-10-09T23:03:31-05:00",
+      "published": "2026-10-09T23:53:48-05:00",
       "section": "colombia"
      },
      {
@@ -2521,20 +2458,6 @@
     ],
     "count": 2,
     "issue": "South African human rights lawyer Navi Pillay wins Nobel Peace Prize"
-   },
-   {
-    "iso": "HTI",
-    "name": "Haiti",
-    "stories": [
-     {
-      "title": "Man pleads not guilty in Haiti president assassination case",
-      "url": "https://www.local10.com/news/local/2026/10/09/man-pleads-not-guilty-in-haiti-president-assassination-case/",
-      "published": "Fri, 09 Oct 2026 16:46:53 +0000",
-      "section": "local"
-     }
-    ],
-    "count": 1,
-    "issue": "Man pleads not guilty in Haiti president assassination case"
    },
    {
     "iso": "IRN",
@@ -2607,8 +2530,8 @@
     "issue": "New U.S. indictment charges former Venezuelan President Nicolás Maduro with torture"
    }
   ],
-  "headlines_scanned": 32,
-  "countries_matched": 9,
+  "headlines_scanned": 24,
+  "countries_matched": 8,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
