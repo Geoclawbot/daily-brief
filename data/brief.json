@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-11T18:46:17-04:00",
- "generated_at_utc": "2026-10-11T22:46:17+00:00",
+ "generated_at": "2026-10-11T19:01:20-04:00",
+ "generated_at_utc": "2026-10-11T23:01:20+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, October 11",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-11T18:46:18-04:00",
+  "fetched_at": "2026-10-11T19:01:21-04:00",
   "curve": [
    {
     "time": "2026-10-11T05:00",
@@ -127,7 +127,7 @@
     "temp": 85.9,
     "feels": 94.4,
     "humidity": 69,
-    "pop": 10
+    "pop": 15
    },
    {
     "time": "2026-10-11T20:00",
@@ -135,7 +135,7 @@
     "temp": 83.3,
     "feels": 93.3,
     "humidity": 81,
-    "pop": 9
+    "pop": 12
    },
    {
     "time": "2026-10-11T21:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 86.8,
-   "feels": 96.9,
-   "humidity": 67,
-   "wind_mph": 1.4,
-   "wind_dir": 1,
-   "observed_at": "2026-10-11T18:45"
+   "temp": 85.9,
+   "feels": 94.4,
+   "humidity": 69,
+   "wind_mph": 4.7,
+   "wind_dir": 11,
+   "observed_at": "2026-10-11T19:00"
   },
   "today": {
    "high": 92.2,
@@ -166,30 +166,51 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-11T18:46:18-04:00",
+  "fetched_at": "2026-10-11T19:01:21-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-11T18:46:19-04:00",
-  "aqi": 38,
+  "fetched_at": "2026-10-11T19:01:22-04:00",
+  "aqi": 39,
   "category": "Good",
   "pm25": 7.7,
-  "pm10": 10.9,
-  "observed": "2026-10-11T18:00",
+  "pm10": 10.0,
+  "observed": "2026-10-11T19:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-10-11T18:46:19-04:00",
+  "fetched_at": "2026-10-11T19:01:22-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 N"
+    ],
+    "delay_s": 1811,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-11T22:23:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Florida's Tpke N",
+     "FL-821 N"
+    ],
+    "delay_s": 1632,
+    "magnitude": 3,
+    "description": "Stationary traffic; Incident",
+    "start": "2026-10-11T22:23:30Z"
+   },
    {
     "county": "Broward",
     "roads": [
@@ -283,45 +304,13 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 N"
-    ],
-    "delay_s": 776,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-11T22:23:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
-    ],
-    "delay_s": 765,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-11T22:23:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 317,
+    "delay_s": 248,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-10-11T22:12:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-970"
-    ],
-    "delay_s": 233,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-11T22:37:00Z"
    },
    {
     "county": "Broward",
@@ -329,7 +318,7 @@
      "FL-7",
      "US-441 N"
     ],
-    "delay_s": 220,
+    "delay_s": 235,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-10-11T15:58:30Z"
@@ -337,22 +326,76 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-953"
+     "US-1 N",
+     "US-41 N",
+     "FL-5"
     ],
-    "delay_s": 211,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-11T21:23:00Z"
+    "delay_s": 191,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-11T22:48:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-858"
+    ],
+    "delay_s": 187,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-11T22:55:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": 173,
+    "magnitude": 2,
+    "description": "Queuing traffic; Roadworks",
+    "start": "2026-10-11T22:52:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-907"
+     "FL-953"
     ],
-    "delay_s": 209,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-11T22:41:30Z"
+    "delay_s": 166,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-11T22:53:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 165,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-11T19:59:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-7",
+     "US-441 S"
+    ],
+    "delay_s": 160,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-11T22:52:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 155,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-11T22:50:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -360,98 +403,68 @@
      "US-41 S",
      "FL-5"
     ],
-    "delay_s": 203,
+    "delay_s": 155,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-10-11T22:41:00Z"
    },
    {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-970"
-    ],
-    "delay_s": 169,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-11T22:39:00Z"
-   },
-   {
     "county": "Broward",
     "roads": [
-     "I-95 S"
+     "FL-824"
     ],
-    "delay_s": 157,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-11T19:59:00Z"
+    "delay_s": 147,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-10-11T22:59:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-934"
+     "US-441 N",
+     "US-441 S"
     ],
-    "delay_s": 156,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-11T22:39:00Z"
+    "delay_s": 142,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-11T22:55:00Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-838"
+     "FL-820"
     ],
-    "delay_s": 148,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-11T22:42:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-A1A"
-    ],
-    "delay_s": 146,
+    "delay_s": 141,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-10-11T22:44:00Z"
+    "start": "2026-10-11T22:59:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 129,
+    "delay_s": 134,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-10-11T22:17:00Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-5"
+     "I-95 S"
     ],
-    "delay_s": 119,
+    "delay_s": 128,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-10-11T22:37:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 N"
-    ],
-    "delay_s": 104,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-11T22:41:30Z"
+    "start": "2026-10-11T22:54:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-395 E"
     ],
-    "delay_s": 85,
+    "delay_s": 87,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-10-11T22:39:00Z"
@@ -469,44 +482,33 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-7",
-     "US-441 N"
+     "FL-826"
     ],
-    "delay_s": 65,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-10-11T22:25:30Z"
+    "delay_s": 54,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-10-11T22:57:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-395 W"
+     "I-95 S"
     ],
-    "delay_s": 35,
+    "delay_s": 33,
     "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-10-11T22:44:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": 32,
-    "magnitude": 0,
-    "description": "Roadworks",
-    "start": "2026-10-08T12:17:03Z"
+    "description": "Heavy traffic",
+    "start": "2026-10-11T22:58:30Z"
    }
   ],
-  "incident_count": 275,
-  "named_count": 42,
+  "incident_count": 274,
+  "named_count": 45,
   "major_count": 11,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-11T18:46:20-04:00",
+  "fetched_at": "2026-10-11T19:01:24-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -549,7 +551,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-11T18:46:20-04:00",
+  "fetched_at": "2026-10-11T19:01:24-04:00",
   "issued": "200 PM EDT Sun Oct 11 2026",
   "areas": [
    {
@@ -563,7 +565,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-11T18:46:20-04:00",
+  "fetched_at": "2026-10-11T19:01:24-04:00",
   "florida": "$4.0879",
   "national": "$4.3585",
   "diesel": "$5.8802",
@@ -572,7 +574,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-11T18:46:22-04:00",
+  "fetched_at": "2026-10-11T19:01:25-04:00",
   "streams": {
    "local": [
     {
@@ -821,9 +823,9 @@
    {
     "title": "Ciudadano australiano recibió 25 puñaladas en Medellín: investigan posible hurto tras salir de un evento",
     "url": "https://www.eltiempo.com/colombia/medellin/australiano-recibio-25-punaladas-en-medellin-tras-salir-del-festival-edc-investigan-posible-hurto-3592919",
-    "published": "2026-10-11T17:18:51-05:00",
+    "published": "2026-10-11T17:43:06-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/11/6acbfc976dcad.jpeg",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2023/10/18/653037fac9569.r_d.1378-553-0.jpeg",
     "media_type": "image"
    },
    {
@@ -945,15 +947,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-11T18:46:23-04:00",
+  "fetched_at": "2026-10-11T19:01:28-04:00",
   "items": [],
-  "scanned": 7,
+  "scanned": 6,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
   "source": "GDACS (225) + USGS (17)",
-  "fetched_at": "2026-10-11T18:46:26-04:00",
+  "fetched_at": "2026-10-11T19:01:30-04:00",
   "events": [
    {
     "lat": -7.0062,
@@ -1077,16 +1079,16 @@
     "source": "GDACS"
    },
    {
-    "lat": 0.5266,
-    "lon": 121.6986,
+    "lat": 0.49,
+    "lon": 121.7071,
     "kind": "earthquake",
     "level": "green",
-    "title": "M5.3 — 151 km W of Gorontalo, Indonesia",
-    "place": "151 km W of Gorontalo, Indonesia",
+    "title": "M5.3 — 150 km W of Gorontalo, Indonesia",
+    "place": "150 km W of Gorontalo, Indonesia",
     "severity": "M5.3",
     "mag": 5.3,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1mj",
-    "when": 1791754493418,
+    "when": 1791754493822,
     "source": "USGS"
    },
    {
@@ -2425,7 +2427,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-11T18:46:26-04:00",
+  "fetched_at": "2026-10-11T19:01:30-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2434,7 +2436,7 @@
      {
       "title": "Ciudadano australiano recibió 25 puñaladas en Medellín: investigan posible hurto tras salir de un evento",
       "url": "https://www.eltiempo.com/colombia/medellin/australiano-recibio-25-punaladas-en-medellin-tras-salir-del-festival-edc-investigan-posible-hurto-3592919",
-      "published": "2026-10-11T17:18:51-05:00",
+      "published": "2026-10-11T17:43:06-05:00",
       "section": "colombia"
      },
      {
