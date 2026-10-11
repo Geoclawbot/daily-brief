@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-11T05:46:15-04:00",
- "generated_at_utc": "2026-10-11T09:46:15+00:00",
+ "generated_at": "2026-10-11T06:01:16-04:00",
+ "generated_at_utc": "2026-10-11T10:01:16+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, October 11",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-11T05:46:15-04:00",
+  "fetched_at": "2026-10-11T06:01:16-04:00",
   "curve": [
    {
     "time": "2026-10-11T05:00",
@@ -148,11 +148,11 @@
   ],
   "current": {
    "temp": 80.5,
-   "feels": 88.0,
-   "humidity": 82,
-   "wind_mph": 7.0,
-   "wind_dir": 183,
-   "observed_at": "2026-10-11T05:45"
+   "feels": 89.3,
+   "humidity": 83,
+   "wind_mph": 4.4,
+   "wind_dir": 156,
+   "observed_at": "2026-10-11T06:00"
   },
   "today": {
    "high": 91.6,
@@ -166,40 +166,30 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-11T05:46:15-04:00",
+  "fetched_at": "2026-10-11T06:01:17-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-11T05:46:16-04:00",
-  "aqi": 31,
+  "fetched_at": "2026-10-11T06:01:17-04:00",
+  "aqi": 33,
   "category": "Good",
-  "pm25": 4.4,
-  "pm10": 5.4,
-  "observed": "2026-10-11T05:00",
+  "pm25": 4.6,
+  "pm10": 5.9,
+  "observed": "2026-10-11T06:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-10-11T05:46:17-04:00",
+  "fetched_at": "2026-10-11T06:01:18-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-10-09T14:17:30Z"
-   },
    {
     "county": "Broward",
     "roads": [
@@ -217,8 +207,8 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "description": "Closed",
+    "start": "2026-10-09T14:17:30Z"
    },
    {
     "county": "Broward",
@@ -229,6 +219,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:05:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -313,23 +313,12 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 816,
-    "magnitude": 3,
-    "description": "Stationary traffic; Incident",
-    "start": "2026-10-11T09:10:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
      "I-95 S"
     ],
-    "delay_s": 163,
+    "delay_s": 198,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-10-11T09:22:30Z"
+    "start": "2026-10-11T09:46:00Z"
    },
    {
     "county": "Broward",
@@ -337,10 +326,10 @@
      "FL-91 N",
      "Florida's Tpke N"
     ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Incident",
-    "start": "2026-10-11T09:37:00Z"
+    "delay_s": 73,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-10-11T09:56:30Z"
    },
    {
     "county": "Broward",
@@ -411,7 +400,7 @@
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Roadworks",
+    "description": "Lane closed; Roadworks",
     "start": "2026-09-07T13:07:38Z"
    },
    {
@@ -421,7 +410,7 @@
     ],
     "delay_s": null,
     "magnitude": 0,
-    "description": "Lane closed; Roadworks",
+    "description": "Roadworks",
     "start": "2026-09-07T13:07:38Z"
    },
    {
@@ -490,17 +479,25 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-02-18T17:07:36Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-09-30T17:37:00Z"
    }
   ],
   "incident_count": 242,
-  "named_count": 28,
-  "major_count": 13,
+  "named_count": 27,
+  "major_count": 12,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-11T05:46:17-04:00",
+  "fetched_at": "2026-10-11T06:01:19-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -537,18 +534,18 @@
   ],
   "fl511_all": [
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at the Trout River Bridge. Use caution in the area. | Oct 11 2026, 5:37 AM",
-   "Central | Brevard | Crash on I-95 North in Brevard County beyond MM 220/SR-406 with All Lanes Closed. Motorists should seek an alternate route and expect significant delays approaching the area. Crash I-95 NB Beyond MM 220 / SR-406. ALL LANES ARE BLOCKED. MOTORIST SHOULD SEEK AN ALTERNATE ROUTE. USE CAUTION AND EXPECT DELAYS. | Oct 11 2026, 5:46 AM",
-   "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Silver Alert has been issued for Terry Rupert out of Brandon. Look for a 2017 Dark Blue Lincoln Mkz Fl Tag UU0UG. | Oct 11 2026, 5:46 AM",
-   "Central | Marion | Motorists should expect severe weather in Marion County. Slow down, increase following distance, and use caution while driving as conditions may change quickly. Motorists should expect limited visibility due to fog in Marion County. Motorists are reminded to reduce their speed in order to adapt to changing weather conditions and stay alert. | Oct 11 2026, 5:46 AM"
+   "Central | Brevard | Crash on I-95 North in Brevard County beyond MM 220/SR-406 with All Lanes Closed. Motorists should seek an alternate route and expect significant delays approaching the area. Crash I-95 NB Beyond MM 220 / SR-406. ALL LANES ARE BLOCKED. MOTORIST SHOULD SEEK AN ALTERNATE ROUTE. USE CAUTION AND EXPECT DELAYS. | Oct 11 2026, 6:00 AM",
+   "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Silver Alert has been issued for Terry Rupert out of Brandon. Look for a 2017 Dark Blue Lincoln Mkz Fl Tag UU0UG. | Oct 11 2026, 6:00 AM",
+   "Central | Marion | Motorists should expect severe weather in Marion County. Slow down, increase following distance, and use caution while driving as conditions may change quickly. Motorists should expect limited visibility due to fog in Marion County. Motorists are reminded to reduce their speed in order to adapt to changing weather conditions and stay alert. | Oct 11 2026, 6:00 AM"
   ],
   "fl511_local": [
-   "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Silver Alert has been issued for Terry Rupert out of Brandon. Look for a 2017 Dark Blue Lincoln Mkz Fl Tag UU0UG. | Oct 11 2026, 5:46 AM"
+   "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Silver Alert has been issued for Terry Rupert out of Brandon. Look for a 2017 Dark Blue Lincoln Mkz Fl Tag UU0UG. | Oct 11 2026, 6:00 AM"
   ]
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-11T05:46:17-04:00",
+  "fetched_at": "2026-10-11T06:01:19-04:00",
   "issued": "200 AM EDT Sun Oct 11 2026",
   "areas": [
    {
@@ -562,7 +559,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-11T05:46:18-04:00",
+  "fetched_at": "2026-10-11T06:01:19-04:00",
   "florida": "$4.0879",
   "national": "$4.3585",
   "diesel": "$5.8802",
@@ -571,7 +568,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-11T05:46:19-04:00",
+  "fetched_at": "2026-10-11T06:01:21-04:00",
   "streams": {
    "local": [
     {
@@ -944,7 +941,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-11T05:46:20-04:00",
+  "fetched_at": "2026-10-11T06:01:22-04:00",
   "items": [],
   "scanned": 8,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -952,7 +949,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (228) + USGS (20)",
-  "fetched_at": "2026-10-11T05:46:23-04:00",
+  "fetched_at": "2026-10-11T06:01:25-04:00",
   "events": [
    {
     "lat": 7.5868,
@@ -2427,7 +2424,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-11T05:46:23-04:00",
+  "fetched_at": "2026-10-11T06:01:25-04:00",
   "countries": [
    {
     "iso": "COL",
