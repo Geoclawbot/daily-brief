@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-13T11:46:14-04:00",
- "generated_at_utc": "2026-10-13T15:46:14+00:00",
+ "generated_at": "2026-10-13T12:01:18-04:00",
+ "generated_at_utc": "2026-10-13T16:01:18+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, October 13",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-13T11:46:15-04:00",
+  "fetched_at": "2026-10-13T12:01:20-04:00",
   "curve": [
    {
     "time": "2026-10-13T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 86.1,
-   "feels": 94.9,
-   "humidity": 66,
-   "wind_mph": 6.9,
-   "wind_dir": 40,
-   "observed_at": "2026-10-13T11:45"
+   "temp": 86.6,
+   "feels": 95.3,
+   "humidity": 65,
+   "wind_mph": 6.6,
+   "wind_dir": 39,
+   "observed_at": "2026-10-13T12:00"
   },
   "today": {
    "high": 89.6,
@@ -166,29 +166,91 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-13T11:46:15-04:00",
+  "fetched_at": "2026-10-13T12:01:20-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-13T11:46:16-04:00",
+  "fetched_at": "2026-10-13T12:01:21-04:00",
   "aqi": 55,
   "category": "Moderate",
-  "pm25": 8.8,
-  "pm10": 11.1,
-  "observed": "2026-10-13T11:00",
+  "pm25": 8.2,
+  "pm10": 10.4,
+  "observed": "2026-10-13T12:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-10-13T11:46:16-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-10-13T12:01:24-04:00",
+  "route_shown": true,
+  "leg": "Jackson Memorial → Home",
+  "direction": "return",
+  "depart_clock": "3:30 PM",
+  "depart_at": "2026-10-13T15:30:00-04:00",
+  "miles": 20.6,
+  "minutes": 62,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 22.6,
+    "minutes": 55,
+    "toll": true,
+    "saves": 7
+   },
+   {
+    "miles": 25.5,
+    "minutes": 60,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 28.6,
+    "minutes": 60,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 20.8,
+    "minutes": 61,
+    "toll": true,
+    "saves": 1
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 62,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 26.6,
+    "minutes": 66,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.1,
+    "minutes": 76,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.5,
+    "minutes": 72,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 62,
+   "delay_minutes": 0,
+   "saves": 0
+  },
   "incidents": [],
   "incident_count": 0,
   "named_count": 0,
@@ -198,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-13T11:46:17-04:00",
+  "fetched_at": "2026-10-13T12:01:24-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -242,7 +304,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-13T11:46:18-04:00",
+  "fetched_at": "2026-10-13T12:01:25-04:00",
   "issued": "800 AM EDT Tue Oct 13 2026",
   "areas": [
    {
@@ -256,7 +318,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-13T11:46:18-04:00",
+  "fetched_at": "2026-10-13T12:01:25-04:00",
   "florida": "$4.1151",
   "national": "$4.3413",
   "diesel": "$5.9463",
@@ -265,7 +327,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-13T11:46:19-04:00",
+  "fetched_at": "2026-10-13T12:01:26-04:00",
   "streams": {
    "local": [
     {
@@ -638,7 +700,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-13T11:46:20-04:00",
+  "fetched_at": "2026-10-13T12:01:27-04:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -646,7 +708,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (250) + USGS (22)",
-  "fetched_at": "2026-10-13T11:46:23-04:00",
+  "fetched_at": "2026-10-13T12:01:29-04:00",
   "events": [
    {
     "lat": -0.4085,
@@ -2123,7 +2185,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-13T11:46:23-04:00",
+  "fetched_at": "2026-10-13T12:01:29-04:00",
   "countries": [
    {
     "iso": "RUS",
