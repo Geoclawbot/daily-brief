@@ -1,26 +1,179 @@
 {
- "generated_at": "2026-10-13T17:01:17-04:00",
- "generated_at_utc": "2026-10-13T21:01:17+00:00",
+ "generated_at": "2026-10-13T17:16:20-04:00",
+ "generated_at_utc": "2026-10-13T21:16:20+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, October 13",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-10-13T17:01:17-04:00",
-  "error": "503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpre"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-10-13T17:16:20-04:00",
+  "curve": [
+   {
+    "time": "2026-10-13T05:00",
+    "hour": 5,
+    "temp": 75.7,
+    "feels": 81.2,
+    "humidity": 78,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T06:00",
+    "hour": 6,
+    "temp": 75.4,
+    "feels": 81.5,
+    "humidity": 81,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T07:00",
+    "hour": 7,
+    "temp": 75.4,
+    "feels": 82.5,
+    "humidity": 83,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T08:00",
+    "hour": 8,
+    "temp": 76.4,
+    "feels": 82.4,
+    "humidity": 81,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T09:00",
+    "hour": 9,
+    "temp": 80.2,
+    "feels": 86.7,
+    "humidity": 77,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T10:00",
+    "hour": 10,
+    "temp": 83.5,
+    "feels": 88.2,
+    "humidity": 63,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T11:00",
+    "hour": 11,
+    "temp": 86.0,
+    "feels": 92.3,
+    "humidity": 62,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T12:00",
+    "hour": 12,
+    "temp": 88.0,
+    "feels": 95.3,
+    "humidity": 59,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T13:00",
+    "hour": 13,
+    "temp": 88.4,
+    "feels": 97.7,
+    "humidity": 62,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T14:00",
+    "hour": 14,
+    "temp": 88.3,
+    "feels": 94.3,
+    "humidity": 51,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T15:00",
+    "hour": 15,
+    "temp": 88.9,
+    "feels": 92.0,
+    "humidity": 48,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T16:00",
+    "hour": 16,
+    "temp": 88.2,
+    "feels": 92.8,
+    "humidity": 58,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T17:00",
+    "hour": 17,
+    "temp": 87.0,
+    "feels": 91.4,
+    "humidity": 59,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T18:00",
+    "hour": 18,
+    "temp": 85.2,
+    "feels": 89.4,
+    "humidity": 61,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T19:00",
+    "hour": 19,
+    "temp": 82.2,
+    "feels": 86.7,
+    "humidity": 65,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T20:00",
+    "hour": 20,
+    "temp": 80.5,
+    "feels": 85.1,
+    "humidity": 67,
+    "pop": 0
+   },
+   {
+    "time": "2026-10-13T21:00",
+    "hour": 21,
+    "temp": 79.2,
+    "feels": 84.2,
+    "humidity": 70,
+    "pop": 0
+   }
+  ],
+  "current": {
+   "temp": 86.6,
+   "feels": 90.6,
+   "humidity": 59,
+   "wind_mph": 9.9,
+   "wind_dir": 65,
+   "observed_at": "2026-10-13T17:15"
+  },
+  "today": {
+   "high": 89.4,
+   "low": 74.6,
+   "feels_max": 97.7,
+   "pop_max": 1
+  },
+  "peak_feels": 97.7,
+  "peak_hour": 13
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-13T17:01:18-04:00",
+  "fetched_at": "2026-10-13T17:16:20-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-13T17:01:18-04:00",
+  "fetched_at": "2026-10-13T17:16:21-04:00",
   "aqi": 54,
   "category": "Moderate",
   "pm25": 8.1,
@@ -32,38 +185,38 @@
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-10-13T17:01:21-04:00",
+  "fetched_at": "2026-10-13T17:16:24-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 21.2,
-  "minutes": 74,
-  "delay_minutes": 9,
+  "miles": 20.9,
+  "minutes": 71,
+  "delay_minutes": 11,
   "toll_free": true,
   "alternates": [
    {
     "miles": 22.6,
-    "minutes": 64,
+    "minutes": 62,
     "toll": true,
-    "saves": 10
+    "saves": 9
    },
    {
     "miles": 22.8,
-    "minutes": 71,
+    "minutes": 68,
     "toll": true,
     "saves": 3
    },
    {
-    "miles": 26.2,
-    "minutes": 71,
+    "miles": 25.7,
+    "minutes": 68,
     "toll": true,
     "saves": 3
    },
    {
-    "miles": 27.8,
-    "minutes": 76,
+    "miles": 27.6,
+    "minutes": 73,
     "toll": true,
     "saves": -2
    }
@@ -71,31 +224,31 @@
   "alternates_worth_taking": [],
   "free_alternates": [
    {
-    "miles": 21.2,
-    "minutes": 74,
-    "delay_minutes": 9,
+    "miles": 20.9,
+    "minutes": 71,
+    "delay_minutes": 11,
     "saves": 0
    },
    {
     "miles": 23.4,
-    "minutes": 78,
+    "minutes": 74,
     "delay_minutes": 0
    },
    {
-    "miles": 22.5,
-    "minutes": 78,
-    "delay_minutes": 3
+    "miles": 23.1,
+    "minutes": 74,
+    "delay_minutes": 2
    },
    {
-    "miles": 23.1,
-    "minutes": 83,
+    "miles": 22.9,
+    "minutes": 79,
     "delay_minutes": 0
    }
   ],
   "best_free": {
-   "miles": 21.2,
-   "minutes": 74,
-   "delay_minutes": 9,
+   "miles": 20.9,
+   "minutes": 71,
+   "delay_minutes": 11,
    "saves": 0
   },
   "incidents": [],
@@ -107,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-13T17:01:21-04:00",
+  "fetched_at": "2026-10-13T17:16:25-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -151,7 +304,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-13T17:01:22-04:00",
+  "fetched_at": "2026-10-13T17:16:25-04:00",
   "issued": "200 PM EDT Tue Oct 13 2026",
   "areas": [],
   "raw": "en Español\n\n958 \nABNT20 KNHC 131717\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Tue Oct 13 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected over the next 7 days.\n\n$$\nForecaster Papin"
@@ -159,7 +312,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-13T17:01:22-04:00",
+  "fetched_at": "2026-10-13T17:16:26-04:00",
   "florida": "$4.1151",
   "national": "$4.3413",
   "diesel": "$5.9463",
@@ -168,7 +321,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-13T17:01:23-04:00",
+  "fetched_at": "2026-10-13T17:16:27-04:00",
   "streams": {
    "local": [
     {
@@ -277,6 +430,14 @@
   ],
   "local": [
    {
+    "title": "Miami-Dade man shoots Uber Eats driver in buttocks for trying to get girlfriend’s number, cops say",
+    "url": "https://www.local10.com/news/local/2026/10/13/miami-dade-man-shoots-uber-eats-driver-in-buttocks-for-trying-to-get-girlfriends-number-cops-say/",
+    "published": "Tue, 13 Oct 2026 15:17:53 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/FNVBSROFPRGSTO4XKU5YJRM6PU.jpg?auth=1732fe54b9e5356f763b1c36724de0bcb57de39f9a29cf9e4091dd1686e2353d&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
     "title": "Driver of truck fatally shot after Palm Beach County chase, sheriff says",
     "url": "https://www.local10.com/news/local/2026/10/13/driver-of-stolen-truck-crashes-hurt-after-palm-beach-county-chase-troopers-say/",
     "published": "Tue, 13 Oct 2026 19:15:25 +0000",
@@ -333,14 +494,6 @@
     "media_type": null
    },
    {
-    "title": "In latest budget battle salvo, Broward commission votes to pursue legal action against Tony",
-    "url": "https://www.local10.com/news/local/2026/10/13/in-latest-budget-battle-salvo-broward-commission-votes-to-pursue-legal-action-against-tony/",
-    "published": "Tue, 13 Oct 2026 16:06:31 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "Knaus Berry Farm opens for the season in SW Miami-Dade",
     "url": "https://wsvn.com/news/local/miami-dade/knaus-berry-farm-reopens/",
     "published": "Tue, 13 Oct 2026 12:57:59 +0000",
@@ -385,8 +538,8 @@
     "url": "https://wsvn.com/news/local/man-arrested-after-shooting-delivery-driver/",
     "published": "Tue, 13 Oct 2026 17:10:45 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/10/Khuslen-Saruultuya.png",
-    "media_type": "image"
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/a6656e23-0626-4726-9d92-b2dcb493db06/e8e3eb47-5dc0-422a-a3bd-46f08431920e/main.mp4?fastly_token=NmFjZWYzOWFfMTk0N2Y2YTI3NzA0NDg0ODUzOWEwNTVjMTZmMTcyYzc5MGVhYmY4ZjUwMjVjY2M2Y2JmY2NjZTc4MTMyMGUzNl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hNjY1NmUyMy0wNjI2LTQ3MjYtOWQ5Mi1iMmRjYjQ5M2RiMDYvZThlM2ViNDctNWRjMC00MjJhLWEzYmQtNDZmMDg0MzE5MjBlL21haW4ubXA0",
+    "media_type": "video"
    },
    {
     "title": "Tugboat captain in Biscayne Bay barge crash that killed 3 girls set to receive sentencing",
@@ -406,6 +559,14 @@
    }
   ],
   "colombia": [
+   {
+    "title": "Angustia en el Atlántico: hombre completa más de 72 horas desaparecido tras accidente en moto acuática en playas de Tubará",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/angustia-en-el-atlantico-hombre-completa-mas-de-72-horas-desaparecido-tras-accidente-en-moto-acuatica-en-playas-de-tubara-3593278",
+    "published": "2026-10-13T15:53:16-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/12/6acce0674a6aa.png",
+    "media_type": "image"
+   },
    {
     "title": "Disidentes lanzaron explosivo contra la Policía en el corregimiento de Potrerito, en Jamundí, Valle: lo que se sabe de la nueva acción terrorista",
     "url": "https://www.eltiempo.com/colombia/cali/disidentes-lanzaron-explosivo-contra-la-policia-en-el-corregimiento-de-potrerito-en-jamundi-valle-lo-que-se-sabe-de-la-nueva-accion-terrorista-3593267",
@@ -449,7 +610,7 @@
    {
     "title": "Más de 1.000 policías en el operativo de seguridad en Cali, este 14 de octubre: 'Mantengamos el respeto y la unión', dijo el alcalde Alejandro Eder",
     "url": "https://www.eltiempo.com/colombia/cali/mas-de-1-000-policias-en-el-operativo-de-seguridad-en-cali-este-14-de-octubre-mantengamos-el-respeto-y-la-union-dijo-el-alcalde-alejandro-eder-3593248",
-    "published": "2026-10-13T14:00:19-05:00",
+    "published": "2026-10-13T15:52:11-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/08/28/6a92167d13a30.r_d.552-247-0.jpeg",
     "media_type": "image"
@@ -460,14 +621,6 @@
     "published": "2026-10-13T14:50:57-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/13/6ace76ecbcb99.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Ataque contra la Policía en Silvia, Cauca, con ráfagas de fusil: disidentes, detrás del hostigamiento que se suma a escalada de violencia en la región",
-    "url": "https://www.eltiempo.com/colombia/cali/ataque-contra-la-policia-en-silvia-cauca-con-rafagas-de-fusil-disidentes-detras-del-hostigamiento-que-se-suma-a-escalada-de-violencia-en-la-region-3593241",
-    "published": "2026-10-13T13:28:19-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2020/06/21/5eef6c691a18d.jpeg",
     "media_type": "image"
    }
   ],
@@ -541,7 +694,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-13T17:01:25-04:00",
+  "fetched_at": "2026-10-13T17:16:28-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -549,7 +702,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (251) + USGS (22)",
-  "fetched_at": "2026-10-13T17:01:27-04:00",
+  "fetched_at": "2026-10-13T17:16:30-04:00",
   "events": [
    {
     "lat": -0.4085,
@@ -2026,7 +2179,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-13T17:01:27-04:00",
+  "fetched_at": "2026-10-13T17:16:30-04:00",
   "countries": [
    {
     "iso": "RUS",
@@ -2067,7 +2220,7 @@
      {
       "title": "Más de 1.000 policías en el operativo de seguridad en Cali, este 14 de octubre: 'Mantengamos el respeto y la unión', dijo el alcalde Alejandro Eder",
       "url": "https://www.eltiempo.com/colombia/cali/mas-de-1-000-policias-en-el-operativo-de-seguridad-en-cali-este-14-de-octubre-mantengamos-el-respeto-y-la-union-dijo-el-alcalde-alejandro-eder-3593248",
-      "published": "2026-10-13T14:00:19-05:00",
+      "published": "2026-10-13T15:52:11-05:00",
       "section": "colombia"
      },
      {
@@ -2147,8 +2300,6 @@
   "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
