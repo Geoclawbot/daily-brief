@@ -1,79 +1,232 @@
 {
- "generated_at": "2026-10-15T14:45:41-04:00",
- "generated_at_utc": "2026-10-15T18:45:41+00:00",
+ "generated_at": "2026-10-15T15:00:48-04:00",
+ "generated_at_utc": "2026-10-15T19:00:48+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, October 15",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-10-15T14:45:41-04:00",
-  "error": "503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpre"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-10-15T15:00:53-04:00",
+  "curve": [
+   {
+    "time": "2026-10-15T05:00",
+    "hour": 5,
+    "temp": 79.9,
+    "feels": 89.9,
+    "humidity": 88,
+    "pop": 9
+   },
+   {
+    "time": "2026-10-15T06:00",
+    "hour": 6,
+    "temp": 80.5,
+    "feels": 91.0,
+    "humidity": 88,
+    "pop": 3
+   },
+   {
+    "time": "2026-10-15T07:00",
+    "hour": 7,
+    "temp": 81.3,
+    "feels": 91.1,
+    "humidity": 86,
+    "pop": 3
+   },
+   {
+    "time": "2026-10-15T08:00",
+    "hour": 8,
+    "temp": 80.7,
+    "feels": 91.9,
+    "humidity": 89,
+    "pop": 7
+   },
+   {
+    "time": "2026-10-15T09:00",
+    "hour": 9,
+    "temp": 83.5,
+    "feels": 95.4,
+    "humidity": 86,
+    "pop": 4
+   },
+   {
+    "time": "2026-10-15T10:00",
+    "hour": 10,
+    "temp": 84.8,
+    "feels": 95.1,
+    "humidity": 83,
+    "pop": 8
+   },
+   {
+    "time": "2026-10-15T11:00",
+    "hour": 11,
+    "temp": 87.1,
+    "feels": 96.0,
+    "humidity": 74,
+    "pop": 8
+   },
+   {
+    "time": "2026-10-15T12:00",
+    "hour": 12,
+    "temp": 89.9,
+    "feels": 98.0,
+    "humidity": 64,
+    "pop": 4
+   },
+   {
+    "time": "2026-10-15T13:00",
+    "hour": 13,
+    "temp": 89.8,
+    "feels": 101.4,
+    "humidity": 70,
+    "pop": 7
+   },
+   {
+    "time": "2026-10-15T14:00",
+    "hour": 14,
+    "temp": 90.4,
+    "feels": 97.7,
+    "humidity": 59,
+    "pop": 7
+   },
+   {
+    "time": "2026-10-15T15:00",
+    "hour": 15,
+    "temp": 90.1,
+    "feels": 96.7,
+    "humidity": 58,
+    "pop": 6
+   },
+   {
+    "time": "2026-10-15T16:00",
+    "hour": 16,
+    "temp": 89.7,
+    "feels": 95.6,
+    "humidity": 56,
+    "pop": 4
+   },
+   {
+    "time": "2026-10-15T17:00",
+    "hour": 17,
+    "temp": 88.5,
+    "feels": 93.9,
+    "humidity": 59,
+    "pop": 4
+   },
+   {
+    "time": "2026-10-15T18:00",
+    "hour": 18,
+    "temp": 86.4,
+    "feels": 92.4,
+    "humidity": 64,
+    "pop": 3
+   },
+   {
+    "time": "2026-10-15T19:00",
+    "hour": 19,
+    "temp": 84.0,
+    "feels": 90.9,
+    "humidity": 69,
+    "pop": 3
+   },
+   {
+    "time": "2026-10-15T20:00",
+    "hour": 20,
+    "temp": 82.5,
+    "feels": 92.1,
+    "humidity": 80,
+    "pop": 4
+   },
+   {
+    "time": "2026-10-15T21:00",
+    "hour": 21,
+    "temp": 81.6,
+    "feels": 91.0,
+    "humidity": 80,
+    "pop": 4
+   }
+  ],
+  "current": {
+   "temp": 90.1,
+   "feels": 96.4,
+   "humidity": 58,
+   "wind_mph": 11.1,
+   "wind_dir": 93,
+   "observed_at": "2026-10-15T15:00"
+  },
+  "today": {
+   "high": 90.6,
+   "low": 79.7,
+   "feels_max": 101.4,
+   "pop_max": 11
+  },
+  "peak_feels": 101.4,
+  "peak_hour": 13
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-15T14:45:42-04:00",
+  "fetched_at": "2026-10-15T15:00:54-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-15T14:45:42-04:00",
-  "aqi": 35,
+  "fetched_at": "2026-10-15T15:00:55-04:00",
+  "aqi": 34,
   "category": "Good",
-  "pm25": 4.6,
-  "pm10": 6.0,
-  "observed": "2026-10-15T14:00",
+  "pm25": 4.7,
+  "pm10": 6.1,
+  "observed": "2026-10-15T15:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-10-15T14:45:45-04:00",
+  "fetched_at": "2026-10-15T15:00:57-04:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "2026-10-15T15:30:00-04:00",
   "miles": 20.6,
-  "minutes": 61,
-  "delay_minutes": 2,
+  "minutes": 62,
+  "delay_minutes": 3,
   "toll_free": true,
   "alternates": [
    {
     "miles": 22.6,
     "minutes": 55,
     "toll": true,
-    "saves": 6
-   },
-   {
-    "miles": 28.6,
-    "minutes": 59,
-    "toll": true,
-    "saves": 2
+    "saves": 7
    },
    {
     "miles": 25.5,
-    "minutes": 60,
+    "minutes": 62,
     "toll": true,
-    "saves": 1
+    "saves": 0
    },
    {
     "miles": 20.8,
     "minutes": 60,
     "toll": true,
-    "saves": 1
+    "saves": 2
+   },
+   {
+    "miles": 28.6,
+    "minutes": 60,
+    "toll": true,
+    "saves": 2
    }
   ],
   "alternates_worth_taking": [],
   "free_alternates": [
    {
     "miles": 20.6,
-    "minutes": 61,
-    "delay_minutes": 1,
+    "minutes": 62,
+    "delay_minutes": 3,
     "saves": 0
    },
    {
@@ -94,8 +247,8 @@
   ],
   "best_free": {
    "miles": 20.6,
-   "minutes": 61,
-   "delay_minutes": 1,
+   "minutes": 62,
+   "delay_minutes": 3,
    "saves": 0
   },
   "incidents": [],
@@ -107,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-15T14:45:46-04:00",
+  "fetched_at": "2026-10-15T15:00:58-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -152,7 +305,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-15T14:45:46-04:00",
+  "fetched_at": "2026-10-15T15:00:59-04:00",
   "issued": "200 PM EDT Thu Oct 15 2026",
   "areas": [],
   "raw": "en Español\n\n895 \nABNT20 KNHC 151751\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Thu Oct 15 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Beven"
@@ -160,7 +313,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-15T14:45:47-04:00",
+  "fetched_at": "2026-10-15T15:00:59-04:00",
   "florida": "$4.2263",
   "national": "$4.3344",
   "diesel": "$6.1155",
@@ -169,7 +322,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-15T14:45:48-04:00",
+  "fetched_at": "2026-10-15T15:01:00-04:00",
   "streams": {
    "local": [
     {
@@ -408,6 +561,14 @@
   ],
   "colombia": [
    {
+    "title": "Celebración terminó en tragedia en Puerto Colombia: joven se ahogó al intentar rescatar a un amigo en el mar durante la madrugada en su cumpleaños",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/celebracion-termino-en-tragedia-en-puerto-colombia-joven-se-ahogo-al-intentar-rescatar-a-un-amigo-en-el-mar-durante-la-madrugada-en-su-cumpleanos-3593812",
+    "published": "2026-10-15T13:47:47-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2024/07/01/66830ddb0fc32.r_d.873-979-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Sangre, cilindros, muerte y silencio: la arquitectura del terror que ha convertido la vía Panamericana en una de las más inseguras",
     "url": "https://www.eltiempo.com/colombia/cali/sangre-cilindros-muerte-y-silencio-la-arquitectura-del-terror-que-ha-convertido-la-via-panamericana-en-una-de-las-mas-inseguras-3593805",
     "published": "2026-10-15T13:21:33-05:00",
@@ -418,9 +579,9 @@
    {
     "title": "Aumentó el número de víctimas por el ataque armado contra un bus de pasajeros en la vía Panamericana: ya son cinco muertos y más de 60 heridos",
     "url": "https://www.eltiempo.com/colombia/cali/aumento-el-numero-de-victimas-por-el-ataque-armado-contra-un-bus-de-pasajeros-en-la-via-panamericana-ya-son-cinco-muertos-y-mas-de-60-heridos-3593807",
-    "published": "2026-10-15T13:31:42-05:00",
+    "published": "2026-10-15T13:48:59-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/15/6ad0ae9393040.r_d.822-297-0.png",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/15/6ad11e23487ea.jpeg",
     "media_type": "image"
    },
    {
@@ -434,7 +595,7 @@
    {
     "title": "La Panamericana aún es un corredor de miedo con retenes, disparos y más de 250 robos: 'El Cauca está siendo sometido a una violencia sistemática'",
     "url": "https://www.eltiempo.com/colombia/cali/la-panamericana-aun-es-un-corredor-de-miedo-con-retenes-disparos-y-mas-de-250-robos-el-cauca-esta-siendo-sometido-a-una-violencia-sistematica-3593777",
-    "published": "2026-10-15T13:21:54-05:00",
+    "published": "2026-10-15T13:58:21-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/01/24/6975509d04030.r_d.514-351-1.png",
     "media_type": "image"
@@ -461,14 +622,6 @@
     "published": "2026-10-15T10:17:25-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/15/6ad0e8f5b4a89.png",
-    "media_type": "image"
-   },
-   {
-    "title": "El bus atacado por hombres armados en la vía Panamericana era de una empresa ecuatoriana: salió de La Guajira hacia Perú",
-    "url": "https://www.eltiempo.com/colombia/cali/el-bus-atacado-por-hombres-armados-en-la-via-panamericana-era-de-una-empresa-ecuatoriana-salio-de-la-guajira-hacia-peru-3593727",
-    "published": "2026-10-15T09:59:54-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/29/6abbfad56347b.png",
     "media_type": "image"
    }
   ],
@@ -542,7 +695,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-15T14:45:48-04:00",
+  "fetched_at": "2026-10-15T15:01:01-04:00",
   "items": [],
   "scanned": 8,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -550,7 +703,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (250) + USGS (12)",
-  "fetched_at": "2026-10-15T14:45:51-04:00",
+  "fetched_at": "2026-10-15T15:01:03-04:00",
   "events": [
    {
     "lat": 64.22,
@@ -2017,8 +2170,34 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-15T14:45:51-04:00",
+  "fetched_at": "2026-10-15T15:01:03-04:00",
   "countries": [
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "Celebración terminó en tragedia en Puerto Colombia: joven se ahogó al intentar rescatar a un amigo en el mar durante la madrugada en su cumpleaños",
+      "url": "https://www.eltiempo.com/colombia/barranquilla/celebracion-termino-en-tragedia-en-puerto-colombia-joven-se-ahogo-al-intentar-rescatar-a-un-amigo-en-el-mar-durante-la-madrugada-en-su-cumpleanos-3593812",
+      "published": "2026-10-15T13:47:47-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "No se puede visitar el Castillo de Salgar: la Gobernación del Atlántico recuerda que el monumento de Puerto Colombia está en obras y no recibe público",
+      "url": "https://www.eltiempo.com/colombia/barranquilla/no-se-puede-visitar-el-castillo-de-salgar-la-gobernacion-del-atlantico-recuerda-que-el-monumento-de-puerto-colombia-esta-en-obras-y-no-recibe-publico-3593793",
+      "published": "2026-10-15T12:43:09-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "Más de 40 horas de video permitieron capturar al conductor de la moto del crimen del jefe de ventas de Coca-Cola en Medellín: buscan al asesino",
+      "url": "https://www.eltiempo.com/colombia/medellin/mas-de-40-horas-de-video-permitieron-capturar-al-conductor-de-la-moto-del-crimen-del-jefe-de-ventas-de-coca-cola-en-medellin-buscan-al-asesino-3593736",
+      "published": "2026-10-15T12:06:33-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 3,
+    "issue": "Celebración terminó en tragedia en Puerto Colombia: joven se ahogó al intentar rescatar a un amigo en el mar durante la madrugada en su cumpleaños"
+   },
    {
     "iso": "UKR",
     "name": "Ukraine",
@@ -2044,26 +2223,6 @@
     ],
     "count": 3,
     "issue": "Ukraine resumes attacks on Russian oil refineries, officials say, after brief truce"
-   },
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "No se puede visitar el Castillo de Salgar: la Gobernación del Atlántico recuerda que el monumento de Puerto Colombia está en obras y no recibe público",
-      "url": "https://www.eltiempo.com/colombia/barranquilla/no-se-puede-visitar-el-castillo-de-salgar-la-gobernacion-del-atlantico-recuerda-que-el-monumento-de-puerto-colombia-esta-en-obras-y-no-recibe-publico-3593793",
-      "published": "2026-10-15T12:43:09-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Más de 40 horas de video permitieron capturar al conductor de la moto del crimen del jefe de ventas de Coca-Cola en Medellín: buscan al asesino",
-      "url": "https://www.eltiempo.com/colombia/medellin/mas-de-40-horas-de-video-permitieron-capturar-al-conductor-de-la-moto-del-crimen-del-jefe-de-ventas-de-coca-cola-en-medellin-buscan-al-asesino-3593736",
-      "published": "2026-10-15T12:06:33-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 2,
-    "issue": "No se puede visitar el Castillo de Salgar: la Gobernación del Atlántico recuerda que el monumento de Puerto Colombia está en obras y no recibe público"
    },
    {
     "iso": "MEX",
@@ -2112,8 +2271,6 @@
   "countries_matched": 5,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
