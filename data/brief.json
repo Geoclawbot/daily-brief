@@ -1,26 +1,179 @@
 {
- "generated_at": "2026-10-16T04:00:24-04:00",
- "generated_at_utc": "2026-10-16T08:00:24+00:00",
+ "generated_at": "2026-10-16T04:15:17-04:00",
+ "generated_at_utc": "2026-10-16T08:15:17+00:00",
  "weekday": "Friday",
  "date_label": "Friday, October 16",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-10-16T04:00:25-04:00",
-  "error": "503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpre"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-10-16T04:15:18-04:00",
+  "curve": [
+   {
+    "time": "2026-10-16T05:00",
+    "hour": 5,
+    "temp": 80.7,
+    "feels": 91.5,
+    "humidity": 86,
+    "pop": 4
+   },
+   {
+    "time": "2026-10-16T06:00",
+    "hour": 6,
+    "temp": 80.2,
+    "feels": 91.4,
+    "humidity": 87,
+    "pop": 6
+   },
+   {
+    "time": "2026-10-16T07:00",
+    "hour": 7,
+    "temp": 79.5,
+    "feels": 88.9,
+    "humidity": 92,
+    "pop": 16
+   },
+   {
+    "time": "2026-10-16T08:00",
+    "hour": 8,
+    "temp": 80.2,
+    "feels": 91.3,
+    "humidity": 90,
+    "pop": 22
+   },
+   {
+    "time": "2026-10-16T09:00",
+    "hour": 9,
+    "temp": 81.3,
+    "feels": 92.8,
+    "humidity": 88,
+    "pop": 11
+   },
+   {
+    "time": "2026-10-16T10:00",
+    "hour": 10,
+    "temp": 84.3,
+    "feels": 94.9,
+    "humidity": 80,
+    "pop": 8
+   },
+   {
+    "time": "2026-10-16T11:00",
+    "hour": 11,
+    "temp": 86.5,
+    "feels": 95.7,
+    "humidity": 72,
+    "pop": 10
+   },
+   {
+    "time": "2026-10-16T12:00",
+    "hour": 12,
+    "temp": 88.0,
+    "feels": 97.1,
+    "humidity": 69,
+    "pop": 7
+   },
+   {
+    "time": "2026-10-16T13:00",
+    "hour": 13,
+    "temp": 89.7,
+    "feels": 99.3,
+    "humidity": 63,
+    "pop": 7
+   },
+   {
+    "time": "2026-10-16T14:00",
+    "hour": 14,
+    "temp": 90.6,
+    "feels": 97.6,
+    "humidity": 55,
+    "pop": 6
+   },
+   {
+    "time": "2026-10-16T15:00",
+    "hour": 15,
+    "temp": 90.5,
+    "feels": 98.6,
+    "humidity": 57,
+    "pop": 14
+   },
+   {
+    "time": "2026-10-16T16:00",
+    "hour": 16,
+    "temp": 89.6,
+    "feels": 96.2,
+    "humidity": 60,
+    "pop": 13
+   },
+   {
+    "time": "2026-10-16T17:00",
+    "hour": 17,
+    "temp": 88.2,
+    "feels": 93.4,
+    "humidity": 60,
+    "pop": 15
+   },
+   {
+    "time": "2026-10-16T18:00",
+    "hour": 18,
+    "temp": 85.6,
+    "feels": 91.6,
+    "humidity": 67,
+    "pop": 19
+   },
+   {
+    "time": "2026-10-16T19:00",
+    "hour": 19,
+    "temp": 83.5,
+    "feels": 91.3,
+    "humidity": 74,
+    "pop": 31
+   },
+   {
+    "time": "2026-10-16T20:00",
+    "hour": 20,
+    "temp": 82.5,
+    "feels": 91.2,
+    "humidity": 78,
+    "pop": 28
+   },
+   {
+    "time": "2026-10-16T21:00",
+    "hour": 21,
+    "temp": 81.9,
+    "feels": 91.4,
+    "humidity": 81,
+    "pop": 25
+   }
+  ],
+  "current": {
+   "temp": 80.9,
+   "feels": 91.7,
+   "humidity": 86,
+   "wind_mph": 2.0,
+   "wind_dir": 74,
+   "observed_at": "2026-10-16T04:15"
+  },
+  "today": {
+   "high": 90.7,
+   "low": 78.6,
+   "feels_max": 99.3,
+   "pop_max": 31
+  },
+  "peak_feels": 99.3,
+  "peak_hour": 13
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-16T04:00:26-04:00",
+  "fetched_at": "2026-10-16T04:15:18-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-16T04:00:26-04:00",
+  "fetched_at": "2026-10-16T04:15:19-04:00",
   "aqi": 36,
   "category": "Good",
   "pm25": 5.1,
@@ -32,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-10-16T04:00:28-04:00",
+  "fetched_at": "2026-10-16T04:15:21-04:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
@@ -63,9 +216,9 @@
    },
    {
     "miles": 23.7,
-    "minutes": 36,
+    "minutes": 37,
     "toll": true,
-    "saves": 1
+    "saves": 0
    }
   ],
   "alternates_worth_taking": [],
@@ -78,7 +231,7 @@
    },
    {
     "miles": 26.1,
-    "minutes": 45,
+    "minutes": 46,
     "delay_minutes": 0
    },
    {
@@ -88,7 +241,7 @@
    },
    {
     "miles": 22.8,
-    "minutes": 51,
+    "minutes": 52,
     "delay_minutes": 0
    }
   ],
@@ -107,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-16T04:00:29-04:00",
+  "fetched_at": "2026-10-16T04:15:21-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -144,7 +297,7 @@
   ],
   "fl511_all": [
    "Northeast | Duval | Jacksonville: There is lane blocking construction on US 17/N Main St at the Trout River Bridge. Use caution in the area. | Oct 15 2026, 9:28 PM",
-   "Central | Osceola | There is scheduled road work on SR417 beyond exit 2, Celebration Avenue. All lanes are scheduled to be closed from 11 PM-6 AM. | Oct 15 2026, 11:21 PM",
+   "Central | Osceola | There is scheduled road work on State Road 417 SB at exit 2, Celebration Avenue. All lanes are scheduled to be closed from 11pm to 6am. Motorists should follow posted detour signs to get to US-192 or I-4 WB. | Oct 16 2026, 4:06 AM",
    "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Silver Alert has been issued for Paulette Oberzol out of Inverness. Look for a 2009 Gray Nissan Altima Fl Tag 7955VI. CALL *347. | Oct 16 2026, 3:37 AM"
   ],
   "fl511_local": [
@@ -154,7 +307,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-16T04:00:30-04:00",
+  "fetched_at": "2026-10-16T04:15:22-04:00",
   "issued": "200 AM EDT Fri Oct 16 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 160516\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 AM EDT Fri Oct 16 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Evans/Reinhart"
@@ -162,7 +315,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-16T04:00:30-04:00",
+  "fetched_at": "2026-10-16T04:15:22-04:00",
   "florida": "$4.1903",
   "national": "$4.3271",
   "diesel": "$6.1121",
@@ -171,7 +324,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-16T04:00:31-04:00",
+  "fetched_at": "2026-10-16T04:15:23-04:00",
   "streams": {
    "local": [
     {
@@ -544,7 +697,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-16T04:00:31-04:00",
+  "fetched_at": "2026-10-16T04:15:24-04:00",
   "items": [],
   "scanned": 9,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -552,7 +705,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (232) + USGS (11)",
-  "fetched_at": "2026-10-16T04:00:34-04:00",
+  "fetched_at": "2026-10-16T04:15:28-04:00",
   "events": [
    {
     "lat": 51.9848,
@@ -2018,7 +2171,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-16T04:00:34-04:00",
+  "fetched_at": "2026-10-16T04:15:28-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2131,8 +2284,6 @@
   "countries_matched": 5,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
