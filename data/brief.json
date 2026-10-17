@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-17T14:00:16-04:00",
- "generated_at_utc": "2026-10-17T18:00:16+00:00",
+ "generated_at": "2026-10-17T14:15:18-04:00",
+ "generated_at_utc": "2026-10-17T18:15:18+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, October 17",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-17T14:00:18-04:00",
+  "fetched_at": "2026-10-17T14:15:19-04:00",
   "curve": [
    {
     "time": "2026-10-17T05:00",
@@ -87,7 +87,7 @@
     "temp": 91.2,
     "feels": 99.0,
     "humidity": 51,
-    "pop": 31
+    "pop": 19
    },
    {
     "time": "2026-10-17T15:00",
@@ -95,7 +95,7 @@
     "temp": 88.3,
     "feels": 94.0,
     "humidity": 62,
-    "pop": 57
+    "pop": 44
    },
    {
     "time": "2026-10-17T16:00",
@@ -103,7 +103,7 @@
     "temp": 77.6,
     "feels": 84.9,
     "humidity": 96,
-    "pop": 69
+    "pop": 66
    },
    {
     "time": "2026-10-17T17:00",
@@ -111,7 +111,7 @@
     "temp": 77.1,
     "feels": 84.6,
     "humidity": 96,
-    "pop": 80
+    "pop": 81
    },
    {
     "time": "2026-10-17T18:00",
@@ -119,7 +119,7 @@
     "temp": 76.6,
     "feels": 83.1,
     "humidity": 91,
-    "pop": 63
+    "pop": 70
    },
    {
     "time": "2026-10-17T19:00",
@@ -127,7 +127,7 @@
     "temp": 77.2,
     "feels": 85.8,
     "humidity": 94,
-    "pop": 69
+    "pop": 66
    },
    {
     "time": "2026-10-17T20:00",
@@ -135,7 +135,7 @@
     "temp": 76.8,
     "feels": 85.0,
     "humidity": 92,
-    "pop": 70
+    "pop": 73
    },
    {
     "time": "2026-10-17T21:00",
@@ -143,22 +143,22 @@
     "temp": 76.7,
     "feels": 84.7,
     "humidity": 93,
-    "pop": 49
+    "pop": 47
    }
   ],
   "current": {
-   "temp": 91.2,
-   "feels": 99.0,
-   "humidity": 51,
-   "wind_mph": 4.7,
-   "wind_dir": 101,
-   "observed_at": "2026-10-17T14:00"
+   "temp": 90.7,
+   "feels": 96.7,
+   "humidity": 52,
+   "wind_mph": 5.4,
+   "wind_dir": 110,
+   "observed_at": "2026-10-17T14:15"
   },
   "today": {
    "high": 91.2,
    "low": 74.8,
    "feels_max": 100.0,
-   "pop_max": 80
+   "pop_max": 81
   },
   "peak_feels": 100.0,
   "peak_hour": 12
@@ -166,20 +166,26 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-17T14:00:18-04:00",
+  "fetched_at": "2026-10-17T14:15:19-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
-  "ok": false,
-  "source": "Air quality",
-  "fetched_at": "2026-10-17T14:00:48-04:00",
-  "error": "HTTPSConnectionPool(host='air-quality-api.open-meteo.com', port=443): Read timed out. (read timeout=25)"
+  "ok": true,
+  "source": "Open-Meteo air quality (no key)",
+  "fetched_at": "2026-10-17T14:15:20-04:00",
+  "aqi": 45,
+  "category": "Good",
+  "pm25": 8.6,
+  "pm10": 10.7,
+  "observed": "2026-10-17T14:00",
+  "forecast": [],
+  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-10-17T14:00:48-04:00",
+  "fetched_at": "2026-10-17T14:15:20-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -192,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-17T14:00:49-04:00",
+  "fetched_at": "2026-10-17T14:15:21-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -237,7 +243,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-17T14:00:49-04:00",
+  "fetched_at": "2026-10-17T14:15:21-04:00",
   "issued": "200 PM EDT Sat Oct 17 2026",
   "areas": [
    {
@@ -251,7 +257,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-17T14:00:49-04:00",
+  "fetched_at": "2026-10-17T14:15:21-04:00",
   "florida": "$4.1399",
   "national": "$4.3085",
   "diesel": "$6.0820",
@@ -260,7 +266,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-17T14:00:51-04:00",
+  "fetched_at": "2026-10-17T14:15:23-04:00",
   "streams": {
    "local": [
     {
@@ -499,11 +505,27 @@
   ],
   "colombia": [
    {
+    "title": "Él era Andrés Felipe López Gutiérrez, escolta que murió asesinado en el atentado contra el exalcalde de Jamundí Andrés Felipe Ramírez",
+    "url": "https://www.eltiempo.com/colombia/cali/el-era-felipe-lopez-gutierrez-escolta-que-murio-asesinado-en-el-atentado-contra-el-exalcalde-de-jamundi-andres-felipe-ramirez-3594300",
+    "published": "2026-10-17T13:11:52-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/17/6ad3b754e3c66.r_d.844-218-1.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Fisuras en el deprimido de la Gran Vía reavivan dudas sobre la obra que conecta Barranquilla con Puerto Colombia y su sistema de drenaje del corredor",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/fisuras-en-el-deprimido-de-la-gran-via-reavivan-dudas-sobre-la-obra-que-conecta-barranquilla-con-puerto-colombia-y-su-sistema-de-drenaje-del-corredor-3594273",
+    "published": "2026-10-17T13:01:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/05/6ac3a1b12ce2f.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Tres capturados, cuatro allanamientos y un atentado resuelto: el golpe a la estructura que detonó un bus bomba frente al Batallón Pichincha de Cali",
     "url": "https://www.eltiempo.com/colombia/cali/tres-capturados-cuatro-allanamientos-y-un-atentado-resuelto-el-golpe-a-la-estructura-que-detono-un-bus-bomba-frente-al-batallon-pichincha-de-cali-3594292",
-    "published": "2026-10-17T12:33:03-05:00",
+    "published": "2026-10-17T12:57:55-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/17/6ad3ac018e09e.jpeg",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/17/6ad3b5b73f94e.jpeg",
     "media_type": "image"
    },
    {
@@ -511,7 +533,7 @@
     "url": "https://www.eltiempo.com/colombia/santander/terror-en-santander-incineran-bus-intermunicipal-en-la-via-entre-malaga-y-cerrito-senalan-al-eln-como-posible-responsable-3594284",
     "published": "2026-10-17T11:57:59-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/17/6ad3a87570035.jpeg",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/17/6ad3a87570035.r_d.239-339-0.jpeg",
     "media_type": "image"
    },
    {
@@ -544,22 +566,6 @@
     "published": "2026-10-17T10:21:22-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2023/11/01/6542b291d5fa3.r_d.1472-1060-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "La hipótesis tras el atentado de sicarios a Wilber Hernández en un cortejo fúnebre en una vía de Santander: ¿quién es el comerciante atacado?",
-    "url": "https://www.eltiempo.com/colombia/santander/la-hipotesis-tras-el-atentado-de-sicarios-a-wilber-hernandez-en-un-cortejo-funebre-en-una-via-de-santander-quien-es-el-comerciante-atacado-3594261",
-    "published": "2026-10-17T11:09:28-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/17/6ad3908c1bea4.r_d.1187-588-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Lluvias, deslizamientos y oleaje: estas son las alertas del Ideam para el fin de semana en el Caribe colombiano y las zonas que requieren atención",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/lluvias-deslizamientos-y-oleaje-estas-son-las-alertas-del-ideam-para-el-fin-de-semana-en-el-caribe-colombiano-y-las-zonas-que-requieren-atencion-3594266",
-    "published": "2026-10-17T10:13:15-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/02/02/69811ae26537d.jpeg",
     "media_type": "image"
    }
   ],
@@ -633,7 +639,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-17T14:00:52-04:00",
+  "fetched_at": "2026-10-17T14:15:23-04:00",
   "items": [],
   "scanned": 8,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -641,7 +647,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (225) + USGS (13)",
-  "fetched_at": "2026-10-17T14:00:58-04:00",
+  "fetched_at": "2026-10-17T14:15:26-04:00",
   "events": [
    {
     "lat": 12.6,
@@ -2109,16 +2115,22 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-17T14:00:58-04:00",
+  "fetched_at": "2026-10-17T14:15:26-04:00",
   "countries": [
    {
     "iso": "COL",
     "name": "Colombia",
     "stories": [
      {
+      "title": "Fisuras en el deprimido de la Gran Vía reavivan dudas sobre la obra que conecta Barranquilla con Puerto Colombia y su sistema de drenaje del corredor",
+      "url": "https://www.eltiempo.com/colombia/barranquilla/fisuras-en-el-deprimido-de-la-gran-via-reavivan-dudas-sobre-la-obra-que-conecta-barranquilla-con-puerto-colombia-y-su-sistema-de-drenaje-del-corredor-3594273",
+      "published": "2026-10-17T13:01:00-05:00",
+      "section": "colombia"
+     },
+     {
       "title": "Tres capturados, cuatro allanamientos y un atentado resuelto: el golpe a la estructura que detonó un bus bomba frente al Batallón Pichincha de Cali",
       "url": "https://www.eltiempo.com/colombia/cali/tres-capturados-cuatro-allanamientos-y-un-atentado-resuelto-el-golpe-a-la-estructura-que-detono-un-bus-bomba-frente-al-batallon-pichincha-de-cali-3594292",
-      "published": "2026-10-17T12:33:03-05:00",
+      "published": "2026-10-17T12:57:55-05:00",
       "section": "colombia"
      },
      {
@@ -2134,8 +2146,8 @@
       "section": "colombia"
      }
     ],
-    "count": 3,
-    "issue": "Tres capturados, cuatro allanamientos y un atentado resuelto: el golpe a la estructura que detonó un bus bomba frente al Batallón Pichincha de Cali"
+    "count": 4,
+    "issue": "Fisuras en el deprimido de la Gran Vía reavivan dudas sobre la obra que conecta Barranquilla con Puerto Colombia y su sistema de drenaje del corredor"
    },
    {
     "iso": "PSE",
@@ -2218,8 +2230,6 @@
   "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "air"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
