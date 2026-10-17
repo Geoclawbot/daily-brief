@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-17T14:30:13-04:00",
- "generated_at_utc": "2026-10-17T18:30:13+00:00",
+ "generated_at": "2026-10-17T14:45:17-04:00",
+ "generated_at_utc": "2026-10-17T18:45:17+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, October 17",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-17T14:30:14-04:00",
+  "fetched_at": "2026-10-17T14:45:18-04:00",
   "curve": [
    {
     "time": "2026-10-17T05:00",
@@ -147,16 +147,16 @@
    }
   ],
   "current": {
-   "temp": 90.2,
-   "feels": 95.7,
-   "humidity": 54,
-   "wind_mph": 7.4,
-   "wind_dir": 87,
-   "observed_at": "2026-10-17T14:30"
+   "temp": 89.0,
+   "feels": 93.8,
+   "humidity": 57,
+   "wind_mph": 9.9,
+   "wind_dir": 106,
+   "observed_at": "2026-10-17T14:45"
   },
   "today": {
    "high": 91.2,
-   "low": 75.0,
+   "low": 74.8,
    "feels_max": 100.0,
    "pop_max": 81
   },
@@ -166,26 +166,20 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-17T14:30:14-04:00",
+  "fetched_at": "2026-10-17T14:45:20-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
-  "ok": true,
-  "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-17T14:30:15-04:00",
-  "aqi": 45,
-  "category": "Good",
-  "pm25": 8.6,
-  "pm10": 10.7,
-  "observed": "2026-10-17T14:00",
-  "forecast": [],
-  "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
+  "ok": false,
+  "source": "Air quality",
+  "fetched_at": "2026-10-17T14:45:45-04:00",
+  "error": "HTTPSConnectionPool(host='air-quality-api.open-meteo.com', port=443): Read timed out. (read timeout=25)"
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-10-17T14:30:15-04:00",
+  "fetched_at": "2026-10-17T14:45:45-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -198,7 +192,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-17T14:30:16-04:00",
+  "fetched_at": "2026-10-17T14:45:46-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -243,7 +237,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-17T14:30:17-04:00",
+  "fetched_at": "2026-10-17T14:45:46-04:00",
   "issued": "200 PM EDT Sat Oct 17 2026",
   "areas": [
    {
@@ -257,7 +251,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-17T14:30:17-04:00",
+  "fetched_at": "2026-10-17T14:45:47-04:00",
   "florida": "$4.1399",
   "national": "$4.3085",
   "diesel": "$6.0820",
@@ -266,7 +260,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-17T14:30:18-04:00",
+  "fetched_at": "2026-10-17T14:45:47-04:00",
   "streams": {
    "local": [
     {
@@ -375,6 +369,14 @@
   ],
   "local": [
    {
+    "title": "Former congressional candidate Elijah Manley faces two intimidation charges",
+    "url": "https://www.local10.com/news/local/2026/10/16/former-congressional-candidate-elijah-manley-faces-two-intimidation-charges/",
+    "published": "Sat, 17 Oct 2026 02:07:52 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Humane Society of Broward seeks ‘furever’ home for Maggie, Cowboy and other furry friends",
     "url": "https://www.local10.com/news/local/2026/10/17/humane-society-of-broward-seeks-furever-home-for-maggie-cowboy-and-other-furry-friends/",
     "published": "Sat, 17 Oct 2026 15:39:52 +0000",
@@ -389,14 +391,6 @@
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": "https://www.local10.com/resizer/v2/PM2ZOPDDBJHP7JLM5Z4BH4OR4M.jpg?auth=82cc4f225fb24357381123d0f59efbf330446e0e228e9b804c68376b2524ff31&smart=true&width=1200&height=900",
     "media_type": "image"
-   },
-   {
-    "title": "Former congressional candidate Elijah Manley faces two intimidation charges",
-    "url": "https://www.local10.com/news/local/2026/10/16/former-congressional-candidate-elijah-manley-faces-two-intimidation-charges/",
-    "published": "Sat, 17 Oct 2026 02:07:52 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
    },
    {
     "title": "Fourth nationwide ‘No Kings’ protest focuses on midterm elections, voter access",
@@ -507,7 +501,7 @@
    {
     "title": "Él era Andrés Felipe López Gutiérrez, escolta que murió asesinado en el atentado contra el exalcalde de Jamundí Andrés Felipe Ramírez",
     "url": "https://www.eltiempo.com/colombia/cali/el-era-felipe-lopez-gutierrez-escolta-que-murio-asesinado-en-el-atentado-contra-el-exalcalde-de-jamundi-andres-felipe-ramirez-3594300",
-    "published": "2026-10-17T13:17:19-05:00",
+    "published": "2026-10-17T13:30:19-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/17/6ad3b754e3c66.r_d.844-218-1.jpeg",
     "media_type": "image"
@@ -529,9 +523,9 @@
     "media_type": "image"
    },
    {
-    "title": "Terror en Santander: incineran bus intermunicipal en la vía entre Málaga y Cerrito; señalan al ELN como posible responsable",
+    "title": "Terror en Santander: incineran bus intermunicipal en la vía entre Málaga y Cerrito; señalan al Eln como posible responsable",
     "url": "https://www.eltiempo.com/colombia/santander/terror-en-santander-incineran-bus-intermunicipal-en-la-via-entre-malaga-y-cerrito-senalan-al-eln-como-posible-responsable-3594284",
-    "published": "2026-10-17T11:57:59-05:00",
+    "published": "2026-10-17T13:22:02-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/17/6ad3a87570035.r_d.239-339-0.jpeg",
     "media_type": "image"
@@ -639,7 +633,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-17T14:30:19-04:00",
+  "fetched_at": "2026-10-17T14:45:49-04:00",
   "items": [],
   "scanned": 8,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -647,7 +641,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (225) + USGS (14)",
-  "fetched_at": "2026-10-17T14:30:21-04:00",
+  "fetched_at": "2026-10-17T14:45:53-04:00",
   "events": [
    {
     "lat": 12.6,
@@ -2116,7 +2110,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-17T14:30:21-04:00",
+  "fetched_at": "2026-10-17T14:45:53-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2231,6 +2225,8 @@
   "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [],
- "health": "11/11 sources ok"
+ "failures": [
+  "air"
+ ],
+ "health": "10/11 sources ok"
 }
