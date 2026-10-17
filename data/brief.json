@@ -1,26 +1,179 @@
 {
- "generated_at": "2026-10-17T12:00:16-04:00",
- "generated_at_utc": "2026-10-17T16:00:16+00:00",
+ "generated_at": "2026-10-17T12:15:22-04:00",
+ "generated_at_utc": "2026-10-17T16:15:22+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, October 17",
  "is_weekend": true,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-10-17T12:00:17-04:00",
-  "error": "503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpre"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-10-17T12:15:22-04:00",
+  "curve": [
+   {
+    "time": "2026-10-17T05:00",
+    "hour": 5,
+    "temp": 76.0,
+    "feels": 85.1,
+    "humidity": 93,
+    "pop": 3
+   },
+   {
+    "time": "2026-10-17T06:00",
+    "hour": 6,
+    "temp": 76.5,
+    "feels": 86.1,
+    "humidity": 92,
+    "pop": 2
+   },
+   {
+    "time": "2026-10-17T07:00",
+    "hour": 7,
+    "temp": 76.4,
+    "feels": 86.5,
+    "humidity": 93,
+    "pop": 2
+   },
+   {
+    "time": "2026-10-17T08:00",
+    "hour": 8,
+    "temp": 76.7,
+    "feels": 87.1,
+    "humidity": 95,
+    "pop": 2
+   },
+   {
+    "time": "2026-10-17T09:00",
+    "hour": 9,
+    "temp": 80.9,
+    "feels": 93.0,
+    "humidity": 91,
+    "pop": 4
+   },
+   {
+    "time": "2026-10-17T10:00",
+    "hour": 10,
+    "temp": 83.3,
+    "feels": 93.2,
+    "humidity": 80,
+    "pop": 2
+   },
+   {
+    "time": "2026-10-17T11:00",
+    "hour": 11,
+    "temp": 85.9,
+    "feels": 95.1,
+    "humidity": 70,
+    "pop": 7
+   },
+   {
+    "time": "2026-10-17T12:00",
+    "hour": 12,
+    "temp": 88.2,
+    "feels": 98.1,
+    "humidity": 61,
+    "pop": 7
+   },
+   {
+    "time": "2026-10-17T13:00",
+    "hour": 13,
+    "temp": 88.2,
+    "feels": 95.9,
+    "humidity": 61,
+    "pop": 14
+   },
+   {
+    "time": "2026-10-17T14:00",
+    "hour": 14,
+    "temp": 77.1,
+    "feels": 81.2,
+    "humidity": 93,
+    "pop": 30
+   },
+   {
+    "time": "2026-10-17T15:00",
+    "hour": 15,
+    "temp": 74.9,
+    "feels": 77.3,
+    "humidity": 86,
+    "pop": 47
+   },
+   {
+    "time": "2026-10-17T16:00",
+    "hour": 16,
+    "temp": 74.8,
+    "feels": 82.7,
+    "humidity": 96,
+    "pop": 59
+   },
+   {
+    "time": "2026-10-17T17:00",
+    "hour": 17,
+    "temp": 76.7,
+    "feels": 84.7,
+    "humidity": 86,
+    "pop": 71
+   },
+   {
+    "time": "2026-10-17T18:00",
+    "hour": 18,
+    "temp": 76.9,
+    "feels": 85.2,
+    "humidity": 88,
+    "pop": 62
+   },
+   {
+    "time": "2026-10-17T19:00",
+    "hour": 19,
+    "temp": 76.3,
+    "feels": 86.1,
+    "humidity": 92,
+    "pop": 50
+   },
+   {
+    "time": "2026-10-17T20:00",
+    "hour": 20,
+    "temp": 76.0,
+    "feels": 85.5,
+    "humidity": 92,
+    "pop": 67
+   },
+   {
+    "time": "2026-10-17T21:00",
+    "hour": 21,
+    "temp": 76.5,
+    "feels": 85.0,
+    "humidity": 93,
+    "pop": 66
+   }
+  ],
+  "current": {
+   "temp": 87.9,
+   "feels": 96.7,
+   "humidity": 60,
+   "wind_mph": 1.1,
+   "wind_dir": 349,
+   "observed_at": "2026-10-17T12:15"
+  },
+  "today": {
+   "high": 88.2,
+   "low": 74.8,
+   "feels_max": 98.1,
+   "pop_max": 71
+  },
+  "peak_feels": 98.1,
+  "peak_hour": 12
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-17T12:00:18-04:00",
+  "fetched_at": "2026-10-17T12:15:23-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-17T12:00:19-04:00",
+  "fetched_at": "2026-10-17T12:15:23-04:00",
   "aqi": 44,
   "category": "Good",
   "pm25": 7.9,
@@ -32,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-10-17T12:00:19-04:00",
+  "fetched_at": "2026-10-17T12:15:24-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -45,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-17T12:00:20-04:00",
+  "fetched_at": "2026-10-17T12:15:25-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -89,7 +242,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-17T12:00:20-04:00",
+  "fetched_at": "2026-10-17T12:15:25-04:00",
   "issued": "800 AM EDT Sat Oct 17 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 171135\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Sat Oct 17 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Beven"
@@ -97,7 +250,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-17T12:00:20-04:00",
+  "fetched_at": "2026-10-17T12:15:25-04:00",
   "florida": "$4.1399",
   "national": "$4.3085",
   "diesel": "$6.0820",
@@ -106,7 +259,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-17T12:00:21-04:00",
+  "fetched_at": "2026-10-17T12:15:26-04:00",
   "streams": {
    "local": [
     {
@@ -411,6 +564,14 @@
   ],
   "world": [
    {
+    "title": "Scuffles and fires break out as protesters rally across France, joining students",
+    "url": "https://www.npr.org/2026/10/17/nx-s1-6006773/student-protests-france",
+    "published": "Sat, 17 Oct 2026 11:57:40 -0400",
+    "feed": "https://feeds.npr.org/1004/rss.xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Pope Leo XIV leaves hospital days after lung cancer surgery",
     "url": "https://www.npr.org/2026/10/17/nx-s1-6006762/pope-leo-xiv-leaves-hospital-days-after-lung-cancer-surgery",
     "published": "Sat, 17 Oct 2026 11:10:14 -0400",
@@ -465,21 +626,13 @@
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
-   },
-   {
-    "title": "Russia's view amid Ukraine's strikes and Zelenskyy's growing rift with the U.S.",
-    "url": "https://www.npr.org/2026/10/16/nx-s1-6004281/russias-view-amid-ukraines-strikes-and-zelenskyys-growing-rift-with-the-u-s",
-    "published": "Fri, 16 Oct 2026 04:51:17 -0400",
-    "feed": "https://feeds.npr.org/1004/rss.xml",
-    "media": null,
-    "media_type": null
    }
   ]
  },
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-17T12:00:22-04:00",
+  "fetched_at": "2026-10-17T12:15:27-04:00",
   "items": [],
   "scanned": 7,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -487,7 +640,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (225) + USGS (14)",
-  "fetched_at": "2026-10-17T12:00:25-04:00",
+  "fetched_at": "2026-10-17T12:15:30-04:00",
   "events": [
    {
     "lat": 12.6,
@@ -1956,7 +2109,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-17T12:00:25-04:00",
+  "fetched_at": "2026-10-17T12:15:30-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -1999,24 +2152,18 @@
     "issue": "Israeli settlers beat Palestinians and a U.S. photojournalist in West Bank attacks"
    },
    {
-    "iso": "RUS",
-    "name": "Russia",
+    "iso": "FRA",
+    "name": "France",
     "stories": [
      {
-      "title": "Zelenskyy urges support for new US sanctions on Russia after Trump puts them on hold",
-      "url": "https://www.npr.org/2026/10/17/nx-s1-6006745/us-sanctions-russia",
-      "published": "Sat, 17 Oct 2026 10:25:10 -0400",
-      "section": "world"
-     },
-     {
-      "title": "Russia's view amid Ukraine's strikes and Zelenskyy's growing rift with the U.S.",
-      "url": "https://www.npr.org/2026/10/16/nx-s1-6004281/russias-view-amid-ukraines-strikes-and-zelenskyys-growing-rift-with-the-u-s",
-      "published": "Fri, 16 Oct 2026 04:51:17 -0400",
+      "title": "Scuffles and fires break out as protesters rally across France, joining students",
+      "url": "https://www.npr.org/2026/10/17/nx-s1-6006773/student-protests-france",
+      "published": "Sat, 17 Oct 2026 11:57:40 -0400",
       "section": "world"
      }
     ],
-    "count": 2,
-    "issue": "Zelenskyy urges support for new US sanctions on Russia after Trump puts them on hold"
+    "count": 1,
+    "issue": "Scuffles and fires break out as protesters rally across France, joining students"
    },
    {
     "iso": "IND",
@@ -2047,26 +2194,24 @@
     "issue": "Israeli settlers beat Palestinians and a U.S. photojournalist in West Bank attacks"
    },
    {
-    "iso": "UKR",
-    "name": "Ukraine",
+    "iso": "RUS",
+    "name": "Russia",
     "stories": [
      {
-      "title": "Russia's view amid Ukraine's strikes and Zelenskyy's growing rift with the U.S.",
-      "url": "https://www.npr.org/2026/10/16/nx-s1-6004281/russias-view-amid-ukraines-strikes-and-zelenskyys-growing-rift-with-the-u-s",
-      "published": "Fri, 16 Oct 2026 04:51:17 -0400",
+      "title": "Zelenskyy urges support for new US sanctions on Russia after Trump puts them on hold",
+      "url": "https://www.npr.org/2026/10/17/nx-s1-6006745/us-sanctions-russia",
+      "published": "Sat, 17 Oct 2026 10:25:10 -0400",
       "section": "world"
      }
     ],
     "count": 1,
-    "issue": "Russia's view amid Ukraine's strikes and Zelenskyy's growing rift with the U.S."
+    "issue": "Zelenskyy urges support for new US sanctions on Russia after Trump puts them on hold"
    }
   ],
   "headlines_scanned": 32,
   "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
