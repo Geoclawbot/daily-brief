@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-20T02:45:46-04:00",
- "generated_at_utc": "2026-10-20T06:45:46+00:00",
+ "generated_at": "2026-10-20T03:00:44-04:00",
+ "generated_at_utc": "2026-10-20T07:00:44+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, October 20",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-20T02:45:46-04:00",
+  "fetched_at": "2026-10-20T03:00:47-04:00",
   "curve": [
    {
     "time": "2026-10-20T05:00",
@@ -148,15 +148,15 @@
   ],
   "current": {
    "temp": 74.7,
-   "feels": 77.2,
-   "humidity": 81,
+   "feels": 77.1,
+   "humidity": 80,
    "wind_mph": 11.0,
-   "wind_dir": 353,
-   "observed_at": "2026-10-20T02:45"
+   "wind_dir": 359,
+   "observed_at": "2026-10-20T03:00"
   },
   "today": {
-   "high": 84.2,
-   "low": 72.5,
+   "high": 84.4,
+   "low": 71.8,
    "feels_max": 85.3,
    "pop_max": 14
   },
@@ -166,29 +166,91 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-20T02:45:47-04:00",
+  "fetched_at": "2026-10-20T03:00:47-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-20T02:45:47-04:00",
-  "aqi": 38,
+  "fetched_at": "2026-10-20T03:00:48-04:00",
+  "aqi": 39,
   "category": "Good",
   "pm25": 6.9,
   "pm10": 9.9,
-  "observed": "2026-10-20T02:00",
+  "observed": "2026-10-20T03:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-10-20T02:45:48-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-10-20T03:00:50-04:00",
+  "route_shown": true,
+  "leg": "Home → Jackson Memorial",
+  "direction": "outbound",
+  "depart_clock": "5:45 AM",
+  "depart_at": "2026-10-20T05:45:00-04:00",
+  "miles": 19.9,
+  "minutes": 37,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 24.4,
+    "minutes": 35,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 26.2,
+    "minutes": 34,
+    "toll": true,
+    "saves": 3
+   },
+   {
+    "miles": 20.7,
+    "minutes": 35,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 29.0,
+    "minutes": 38,
+    "toll": true,
+    "saves": -1
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 19.9,
+    "minutes": 37,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 21.9,
+    "minutes": 37,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 25.4,
+    "minutes": 47,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.8,
+    "minutes": 52,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 19.9,
+   "minutes": 37,
+   "delay_minutes": 0,
+   "saves": 0
+  },
   "incidents": [
    {
     "county": "Broward",
@@ -331,7 +393,7 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed; Roadworks",
+    "description": "Closed",
     "start": "2026-10-20T03:24:30Z"
    },
    {
@@ -500,7 +562,7 @@
     "start": "2026-10-17T05:37:00Z"
    }
   ],
-  "incident_count": 273,
+  "incident_count": 271,
   "named_count": 34,
   "major_count": 20,
   "coverage": "Miami-Dade + Broward"
@@ -508,7 +570,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-20T02:45:49-04:00",
+  "fetched_at": "2026-10-20T03:00:51-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -546,8 +608,7 @@
   "fl511_all": [
    "Northeast | Duval | Jacksonville: There is lane-blocking construction on US-17/N Main St at Trout River Bridge. Use caution in the area. | Oct 19 2026, 6:02 PM",
    "Southeast | Miami-Dade | There is scheduled road work on the Florida's Turnpike Northbound at exit 5, Biscayne Drive. All lanes are scheduled to be closed from 10pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike at exit 9, Southwest 112th Avenue. | Oct 19 2026, 8:21 PM",
-   "Panhandle | Jackson | SR 71: A major incident has closed all lanes near Logan Loop in Jackson County. Motorists are advised to seek alternate route and use caution in the area. | Oct 20 2026, 12:20 AM",
-   "Northeast | Madison | Lee: Due to a crash on I-10 EB at MM260 all lanes are blocked Use caution and seek alternate routes. | Oct 20 2026, 12:50 AM"
+   "Panhandle | Jackson | SR 71: A major incident has closed all lanes near Logan Loop in Jackson County. Motorists are advised to seek alternate route and use caution in the area. | Oct 20 2026, 12:20 AM"
   ],
   "fl511_local": [
    "Southeast | Miami-Dade | There is scheduled road work on the Florida's Turnpike Northbound at exit 5, Biscayne Drive. All lanes are scheduled to be closed from 10pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike at exit 9, Southwest 112th Avenue. | Oct 19 2026, 8:21 PM"
@@ -556,7 +617,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-20T02:45:49-04:00",
+  "fetched_at": "2026-10-20T03:00:51-04:00",
   "issued": "200 AM EDT Tue Oct 20 2026",
   "areas": [
    {
@@ -570,7 +631,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-20T02:45:49-04:00",
+  "fetched_at": "2026-10-20T03:00:51-04:00",
   "florida": "$4.0828",
   "national": "$4.2953",
   "diesel": "$6.0388",
@@ -579,7 +640,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-20T02:45:50-04:00",
+  "fetched_at": "2026-10-20T03:00:52-04:00",
   "streams": {
    "local": [
     {
@@ -952,7 +1013,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-20T02:45:51-04:00",
+  "fetched_at": "2026-10-20T03:00:52-04:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -960,7 +1021,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (232) + USGS (31)",
-  "fetched_at": "2026-10-20T02:45:53-04:00",
+  "fetched_at": "2026-10-20T03:00:55-04:00",
   "events": [
    {
     "lat": 15.9,
@@ -1165,6 +1226,19 @@
     "source": "USGS"
    },
    {
+    "lat": 37.9037,
+    "lon": 95.6436,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M5.1 — 263 km WSW of Yanglong, China",
+    "place": "263 km WSW of Yanglong, China",
+    "severity": "M5.1",
+    "mag": 5.1,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3ka",
+    "when": 1792478483116,
+    "source": "USGS"
+   },
+   {
     "lat": -56.3542,
     "lon": -27.0851,
     "kind": "earthquake",
@@ -1292,19 +1366,6 @@
     "mag": 4.9,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3b8",
     "when": 1792394452028,
-    "source": "USGS"
-   },
-   {
-    "lat": -13.9517,
-    "lon": 165.384,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.9 — 218 km WNW of Port-Olry, Vanuatu",
-    "place": "218 km WNW of Port-Olry, Vanuatu",
-    "severity": "M4.9",
-    "mag": 4.9,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3b4",
-    "when": 1792393202899,
     "source": "USGS"
    },
    {
@@ -2446,7 +2507,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-20T02:45:53-04:00",
+  "fetched_at": "2026-10-20T03:00:55-04:00",
   "countries": [
    {
     "iso": "CAN",
