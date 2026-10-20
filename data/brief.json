@@ -1,26 +1,179 @@
 {
- "generated_at": "2026-10-19T21:30:47-04:00",
- "generated_at_utc": "2026-10-20T01:30:47+00:00",
+ "generated_at": "2026-10-19T21:45:43-04:00",
+ "generated_at_utc": "2026-10-20T01:45:43+00:00",
  "weekday": "Monday",
  "date_label": "Monday, October 19",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-10-19T21:30:47-04:00",
-  "error": "503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpre"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-10-19T21:45:44-04:00",
+  "curve": [
+   {
+    "time": "2026-10-19T05:00",
+    "hour": 5,
+    "temp": 78.7,
+    "feels": 82.4,
+    "humidity": 70,
+    "pop": 4
+   },
+   {
+    "time": "2026-10-19T06:00",
+    "hour": 6,
+    "temp": 78.9,
+    "feels": 82.4,
+    "humidity": 67,
+    "pop": 2
+   },
+   {
+    "time": "2026-10-19T07:00",
+    "hour": 7,
+    "temp": 79.5,
+    "feels": 83.6,
+    "humidity": 66,
+    "pop": 2
+   },
+   {
+    "time": "2026-10-19T08:00",
+    "hour": 8,
+    "temp": 79.5,
+    "feels": 83.8,
+    "humidity": 67,
+    "pop": 1
+   },
+   {
+    "time": "2026-10-19T09:00",
+    "hour": 9,
+    "temp": 82.3,
+    "feels": 84.7,
+    "humidity": 66,
+    "pop": 3
+   },
+   {
+    "time": "2026-10-19T10:00",
+    "hour": 10,
+    "temp": 84.2,
+    "feels": 86.4,
+    "humidity": 64,
+    "pop": 2
+   },
+   {
+    "time": "2026-10-19T11:00",
+    "hour": 11,
+    "temp": 84.1,
+    "feels": 85.5,
+    "humidity": 60,
+    "pop": 2
+   },
+   {
+    "time": "2026-10-19T12:00",
+    "hour": 12,
+    "temp": 86.4,
+    "feels": 89.4,
+    "humidity": 62,
+    "pop": 1
+   },
+   {
+    "time": "2026-10-19T13:00",
+    "hour": 13,
+    "temp": 85.9,
+    "feels": 89.5,
+    "humidity": 60,
+    "pop": 3
+   },
+   {
+    "time": "2026-10-19T14:00",
+    "hour": 14,
+    "temp": 86.7,
+    "feels": 88.6,
+    "humidity": 55,
+    "pop": 6
+   },
+   {
+    "time": "2026-10-19T15:00",
+    "hour": 15,
+    "temp": 85.2,
+    "feels": 86.8,
+    "humidity": 62,
+    "pop": 15
+   },
+   {
+    "time": "2026-10-19T16:00",
+    "hour": 16,
+    "temp": 85.6,
+    "feels": 84.7,
+    "humidity": 52,
+    "pop": 15
+   },
+   {
+    "time": "2026-10-19T17:00",
+    "hour": 17,
+    "temp": 84.3,
+    "feels": 85.1,
+    "humidity": 55,
+    "pop": 18
+   },
+   {
+    "time": "2026-10-19T18:00",
+    "hour": 18,
+    "temp": 81.3,
+    "feels": 83.5,
+    "humidity": 68,
+    "pop": 6
+   },
+   {
+    "time": "2026-10-19T19:00",
+    "hour": 19,
+    "temp": 77.2,
+    "feels": 81.8,
+    "humidity": 79,
+    "pop": 7
+   },
+   {
+    "time": "2026-10-19T20:00",
+    "hour": 20,
+    "temp": 80.9,
+    "feels": 82.8,
+    "humidity": 66,
+    "pop": 10
+   },
+   {
+    "time": "2026-10-19T21:00",
+    "hour": 21,
+    "temp": 80.2,
+    "feels": 82.4,
+    "humidity": 66,
+    "pop": 7
+   }
+  ],
+  "current": {
+   "temp": 77.6,
+   "feels": 79.4,
+   "humidity": 70,
+   "wind_mph": 11.1,
+   "wind_dir": 19,
+   "observed_at": "2026-10-19T21:45"
+  },
+  "today": {
+   "high": 86.7,
+   "low": 75.9,
+   "feels_max": 89.5,
+   "pop_max": 18
+  },
+  "peak_feels": 89.5,
+  "peak_hour": 13
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-19T21:30:47-04:00",
+  "fetched_at": "2026-10-19T21:45:44-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-19T21:30:48-04:00",
+  "fetched_at": "2026-10-19T21:45:45-04:00",
   "aqi": 45,
   "category": "Good",
   "pm25": 7.4,
@@ -32,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-10-19T21:30:48-04:00",
+  "fetched_at": "2026-10-19T21:45:45-04:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -45,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-19T21:30:49-04:00",
+  "fetched_at": "2026-10-19T21:45:46-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -91,7 +244,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-19T21:30:50-04:00",
+  "fetched_at": "2026-10-19T21:45:47-04:00",
   "issued": "800 PM EDT Mon Oct 19 2026",
   "areas": [
    {
@@ -105,7 +258,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-19T21:30:50-04:00",
+  "fetched_at": "2026-10-19T21:45:47-04:00",
   "florida": "$4.0828",
   "national": "$4.2953",
   "diesel": "$6.0388",
@@ -114,7 +267,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-19T21:30:51-04:00",
+  "fetched_at": "2026-10-19T21:45:48-04:00",
   "streams": {
    "local": [
     {
@@ -355,9 +508,9 @@
    {
     "title": "Video | Relato de robo tras el concierto de Ryan Castro en Cali y el llamado a denunciar de las autoridades: 'Me meten la mano y siento un quemonazo'",
     "url": "https://www.eltiempo.com/colombia/cali/video-relato-de-robo-tras-el-concierto-de-ryan-castro-en-cali-y-el-llamado-a-denunciar-de-las-autoridades-me-meten-la-mano-y-siento-un-quemonazo-3594791",
-    "published": "2026-10-19T20:21:13-05:00",
+    "published": "2026-10-19T20:41:40-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/19/6ad6bf829d4f6.r_d.322-440-0.jpeg",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/19/6ad6bf829d4f6.r_d.1247-620-0.jpeg",
     "media_type": "image"
    },
    {
@@ -379,7 +532,7 @@
    {
     "title": "Reportan incendio forestal en Villa de Leyva, Boyacá: la emergencia se presenta en la parte alta del sector de Boquerón",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/reportan-incendio-en-forestal-en-villa-de-leyva-boyaca-la-emergencia-se-presenta-en-la-parte-alta-del-sector-de-boqueron-3594778",
-    "published": "2026-10-19T19:18:46-05:00",
+    "published": "2026-10-19T20:38:53-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/19/6ad6aed1655b2.r_d.600-800-0.jpeg",
     "media_type": "image"
@@ -487,7 +640,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-19T21:30:51-04:00",
+  "fetched_at": "2026-10-19T21:45:49-04:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -495,7 +648,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (228) + USGS (30)",
-  "fetched_at": "2026-10-19T21:30:54-04:00",
+  "fetched_at": "2026-10-19T21:45:51-04:00",
   "events": [
    {
     "lat": 15.4,
@@ -1980,7 +2133,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-19T21:30:54-04:00",
+  "fetched_at": "2026-10-19T21:45:51-04:00",
   "countries": [
    {
     "iso": "CAN",
@@ -2009,7 +2162,7 @@
      {
       "title": "Video | Relato de robo tras el concierto de Ryan Castro en Cali y el llamado a denunciar de las autoridades: 'Me meten la mano y siento un quemonazo'",
       "url": "https://www.eltiempo.com/colombia/cali/video-relato-de-robo-tras-el-concierto-de-ryan-castro-en-cali-y-el-llamado-a-denunciar-de-las-autoridades-me-meten-la-mano-y-siento-un-quemonazo-3594791",
-      "published": "2026-10-19T20:21:13-05:00",
+      "published": "2026-10-19T20:41:40-05:00",
       "section": "colombia"
      },
      {
@@ -2117,8 +2270,6 @@
   "countries_matched": 8,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
