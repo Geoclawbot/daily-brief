@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-22T11:46:18-04:00",
- "generated_at_utc": "2026-10-22T15:46:18+00:00",
+ "generated_at": "2026-10-22T12:01:24-04:00",
+ "generated_at_utc": "2026-10-22T16:01:24+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, October 22",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-22T11:46:18-04:00",
+  "fetched_at": "2026-10-22T12:01:25-04:00",
   "curve": [
    {
     "time": "2026-10-22T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 77.8,
-   "feels": 81.1,
+   "temp": 77.2,
+   "feels": 80.1,
    "humidity": 76,
-   "wind_mph": 10.8,
-   "wind_dir": 32,
-   "observed_at": "2026-10-22T11:45"
+   "wind_mph": 10.9,
+   "wind_dir": 34,
+   "observed_at": "2026-10-22T12:00"
   },
   "today": {
    "high": 82.9,
@@ -166,29 +166,91 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-22T11:46:19-04:00",
+  "fetched_at": "2026-10-22T12:01:25-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-22T11:46:20-04:00",
-  "aqi": 52,
+  "fetched_at": "2026-10-22T12:01:26-04:00",
+  "aqi": 51,
   "category": "Moderate",
-  "pm25": 11.0,
-  "pm10": 15.4,
-  "observed": "2026-10-22T11:00",
+  "pm25": 10.8,
+  "pm10": 15.1,
+  "observed": "2026-10-22T12:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-10-22T11:46:20-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-10-22T12:01:29-04:00",
+  "route_shown": true,
+  "leg": "Jackson Memorial → Home",
+  "direction": "return",
+  "depart_clock": "3:30 PM",
+  "depart_at": "2026-10-22T15:30:00-04:00",
+  "miles": 20.6,
+  "minutes": 59,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 22.6,
+    "minutes": 53,
+    "toll": true,
+    "saves": 6
+   },
+   {
+    "miles": 28.6,
+    "minutes": 58,
+    "toll": true,
+    "saves": 1
+   },
+   {
+    "miles": 20.8,
+    "minutes": 58,
+    "toll": true,
+    "saves": 1
+   },
+   {
+    "miles": 26.8,
+    "minutes": 59,
+    "toll": true,
+    "saves": 0
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 59,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 23.7,
+    "minutes": 68,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.5,
+    "minutes": 68,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.1,
+    "minutes": 73,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 59,
+   "delay_minutes": 0,
+   "saves": 0
+  },
   "incidents": [],
   "incident_count": 0,
   "named_count": 0,
@@ -198,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-22T11:46:21-04:00",
+  "fetched_at": "2026-10-22T12:01:30-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -241,7 +303,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-22T11:46:21-04:00",
+  "fetched_at": "2026-10-22T12:01:30-04:00",
   "issued": "800 AM EDT Thu Oct 22 2026",
   "areas": [
    {
@@ -255,7 +317,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-22T11:46:21-04:00",
+  "fetched_at": "2026-10-22T12:01:30-04:00",
   "florida": "$4.0570",
   "national": "$4.2701",
   "diesel": "$5.9900",
@@ -264,7 +326,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-22T11:46:22-04:00",
+  "fetched_at": "2026-10-22T12:01:31-04:00",
   "streams": {
    "local": [
     {
@@ -373,6 +435,70 @@
   ],
   "local": [
    {
+    "title": "Probe into Miami man’s chats with 11-year-old reveals videos of him victimizing children, cops say",
+    "url": "https://www.local10.com/news/local/2026/10/22/probe-into-miami-mans-chats-with-11-year-old-reveals-videos-of-him-victimizing-children-cops-say/",
+    "published": "Thu, 22 Oct 2026 15:52:55 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/3FMCDCGRTJCTTJZEX7BDEP4H2I.jpg?auth=e84e1d9e8044c752752be2472b13531dffaa7ff3a4c3764918e9f80e7879cb0a&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Miami-Dade deputies respond to reported shooting in Country Walk",
+    "url": "https://www.local10.com/news/local/2026/10/22/miami-dade-deputies-respond-to-reported-shooting-in-country-walk/",
+    "published": "Thu, 22 Oct 2026 15:38:09 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Sword-wielding man threatens to behead Miami-Dade contractor over fence work, cops say",
+    "url": "https://www.local10.com/news/local/2026/10/22/sword-wielding-man-threatens-to-behead-miami-dade-contractor-over-fence-work-cops-say/",
+    "published": "Thu, 22 Oct 2026 14:36:27 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/BTU3PS4CRZHWZKXL3RELRC7NAI.jpg?auth=0429579b0a4f19c97eb1c0ddea7bd9bfd8b0b0550893a9b775c65ee362583fda&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Broward woman arrested after tying dog to fence, leaving it to die, deputies say",
+    "url": "https://www.local10.com/news/local/2026/10/22/broward-woman-arrested-after-tying-dog-to-fence-leaving-it-to-die-deputies-say/",
+    "published": "Thu, 22 Oct 2026 11:41:16 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/YEMEW5JKCBC4RIXH3O2QZ2TL3I.jpg?auth=0682187675d5af6aebf5087476ac3930367572beeaba24b9844973cb942b2e13&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "South Florida man on deathbed pleads to see wife and son separated by immigration crackdown",
+    "url": "https://www.local10.com/news/local/2026/10/21/south-florida-man-on-deathbed-pleads-to-see-wife-and-son-separated-by-immigration-crackdown/",
+    "published": "Thu, 22 Oct 2026 02:49:36 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Dog on the loose after attack on girl in Miami-Dade",
+    "url": "https://www.local10.com/news/local/2026/10/21/dog-on-the-loose-after-attack-on-girl-in-miami-dade/",
+    "published": "Thu, 22 Oct 2026 02:12:59 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Duo jailed after ‘several hundred’ cockfighting roosters found on Redland property, cops say",
+    "url": "https://www.local10.com/news/local/2026/10/21/duo-jailed-after-several-hundred-cockfighting-roosters-found-on-redland-property-cops-say/",
+    "published": "Wed, 21 Oct 2026 15:08:40 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Lauderhill cop accused of stealing dead man’s home bonds out of jail, bolts from cameras",
+    "url": "https://www.local10.com/news/local/2026/10/21/lauderhill-police-officer-accused-of-taking-over-dead-mans-home-appears-in-court-gets-25k-bond/",
+    "published": "Wed, 21 Oct 2026 17:08:13 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "City of Miami unveils plans for Celia Cruz Park in tribute to legendary artist’s 101st birthday",
     "url": "https://wsvn.com/news/local/miami-dade/miami-plans-celia-cruz-monument/",
     "published": "Thu, 22 Oct 2026 03:02:48 +0000",
@@ -451,7 +577,7 @@
     "url": "https://www.eltiempo.com/colombia/medellin/dos-de-los-implicados-en-el-macabro-crimen-del-ingeniero-andres-camilo-pelaez-fueron-condenados-la-madre-de-la-victima-critico-las-penas-3595437",
     "published": "2026-10-22T10:28:26-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/22/6ada2594a62dc.png",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/22/6ada2594a62dc.r_d.1499-302-0.png",
     "media_type": "image"
    },
    {
@@ -573,15 +699,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-22T11:46:22-04:00",
+  "fetched_at": "2026-10-22T12:01:32-04:00",
   "items": [],
-  "scanned": 0,
+  "scanned": 6,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
   "source": "GDACS (286) + USGS (19)",
-  "fetched_at": "2026-10-22T11:46:26-04:00",
+  "fetched_at": "2026-10-22T12:01:35-04:00",
   "events": [
    {
     "lat": 32.3805,
@@ -927,6 +1053,18 @@
     "source": "GDACS"
    },
    {
+    "lat": -20.767629291110822,
+    "lon": 136.57610865116186,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 26776 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033018",
+    "when": "Thu, 22 Oct 2026 07:00:36 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -21.14133450321631,
     "lon": 125.55705400555235,
     "kind": "wildfire",
@@ -975,18 +1113,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -20.767629291110822,
-    "lon": 136.57610865116186,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 26776 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033018",
-    "when": "Thu, 22 Oct 2026 07:00:36 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -13.9906,
     "lon": 165.5892,
     "kind": "earthquake",
@@ -996,6 +1122,30 @@
     "severity": "Magnitude 6.3M, Depth:16km",
     "url": "http://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1572693",
     "when": "Tue, 20 Oct 2026 04:31:52 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -17.51894359277634,
+    "lon": 126.789193062473,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 5194 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033048",
+    "when": "Thu, 22 Oct 2026 15:02:21 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -19.790684402084864,
+    "lon": 130.32440313136948,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 6899 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033049",
+    "when": "Thu, 22 Oct 2026 15:03:29 GMT",
     "source": "GDACS"
    },
    {
@@ -1083,6 +1233,30 @@
     "source": "GDACS"
    },
    {
+    "lat": -16.90583529308687,
+    "lon": 132.9389361036909,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 22110 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032994",
+    "when": "Tue, 20 Oct 2026 23:00:51 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -21.605483320090194,
+    "lon": 122.32236105582476,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 16486 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032995",
+    "when": "Tue, 20 Oct 2026 23:00:59 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -23.341947306997373,
     "lon": 122.35297070417657,
     "kind": "wildfire",
@@ -1140,54 +1314,6 @@
     "severity": "Green impact for forestfire in 12877 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033013",
     "when": "Wed, 21 Oct 2026 15:01:35 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -16.90583529308687,
-    "lon": 132.9389361036909,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 22110 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032994",
-    "when": "Tue, 20 Oct 2026 23:00:51 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -21.605483320090194,
-    "lon": 122.32236105582476,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 16486 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032995",
-    "when": "Tue, 20 Oct 2026 23:00:59 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -17.51894359277634,
-    "lon": 126.789193062473,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 5194 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033048",
-    "when": "Thu, 22 Oct 2026 15:02:21 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -19.790684402084864,
-    "lon": 130.32440313136948,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 6899 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033049",
-    "when": "Thu, 22 Oct 2026 15:03:29 GMT",
     "source": "GDACS"
    },
    {
@@ -1287,15 +1413,15 @@
     "source": "GDACS"
    },
    {
-    "lat": -17.553805882014153,
-    "lon": 132.8978114554773,
+    "lat": -19.179648343232703,
+    "lon": 16.358839197677526,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 6125 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033050",
-    "when": "Thu, 22 Oct 2026 11:04:28 GMT",
+    "title": "Green forest fire notification in Namibia",
+    "place": "Namibia",
+    "severity": "Green impact for forestfire in 12031 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033007",
+    "when": "Wed, 21 Oct 2026 11:01:15 GMT",
     "source": "GDACS"
    },
    {
@@ -1323,18 +1449,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -19.179648343232703,
-    "lon": 16.358839197677526,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Namibia",
-    "place": "Namibia",
-    "severity": "Green impact for forestfire in 12031 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033007",
-    "when": "Wed, 21 Oct 2026 11:01:15 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": 14.294799592461777,
     "lon": -0.8250786838088804,
     "kind": "wildfire",
@@ -1347,15 +1461,15 @@
     "source": "GDACS"
    },
    {
-    "lat": -19.209268999046945,
-    "lon": 48.13347698843011,
+    "lat": -17.553805882014153,
+    "lon": 132.8978114554773,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Madagascar",
-    "place": "Madagascar",
-    "severity": "Green impact for forestfire in 7483 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033028",
-    "when": "Thu, 22 Oct 2026 11:05:55 GMT",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 6125 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033050",
+    "when": "Thu, 22 Oct 2026 11:04:28 GMT",
     "source": "GDACS"
    },
    {
@@ -1368,6 +1482,18 @@
     "severity": "Green impact for forestfire in 5064 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033014",
     "when": "Thu, 22 Oct 2026 15:06:59 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -19.209268999046945,
+    "lon": 48.13347698843011,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Madagascar",
+    "place": "Madagascar",
+    "severity": "Green impact for forestfire in 7483 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033028",
+    "when": "Thu, 22 Oct 2026 11:05:55 GMT",
     "source": "GDACS"
    },
    {
@@ -1623,27 +1749,15 @@
     "source": "GDACS"
    },
    {
-    "lat": -16.305503485124103,
-    "lon": 129.14000483857916,
+    "lat": -14.506905477940226,
+    "lon": 133.50249051831523,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Australia",
     "place": "Australia",
-    "severity": "Green impact for forestfire in 7224 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033010",
-    "when": "Wed, 21 Oct 2026 11:03:28 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -19.59096016345898,
-    "lon": 15.5878623677347,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Namibia",
-    "place": "Namibia",
-    "severity": "Green impact for forestfire in 5773 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032975",
-    "when": "Tue, 20 Oct 2026 19:01:51 GMT",
+    "severity": "Green impact for forestfire in 5441 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033051",
+    "when": "Thu, 22 Oct 2026 15:08:18 GMT",
     "source": "GDACS"
    },
    {
@@ -1659,15 +1773,27 @@
     "source": "GDACS"
    },
    {
-    "lat": -14.506905477940226,
-    "lon": 133.50249051831523,
+    "lat": -19.59096016345898,
+    "lon": 15.5878623677347,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Namibia",
+    "place": "Namibia",
+    "severity": "Green impact for forestfire in 5773 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032975",
+    "when": "Tue, 20 Oct 2026 19:01:51 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -16.305503485124103,
+    "lon": 129.14000483857916,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Australia",
     "place": "Australia",
-    "severity": "Green impact for forestfire in 5441 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033051",
-    "when": "Thu, 22 Oct 2026 15:08:18 GMT",
+    "severity": "Green impact for forestfire in 7224 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033010",
+    "when": "Wed, 21 Oct 2026 11:03:28 GMT",
     "source": "GDACS"
    },
    {
@@ -1767,15 +1893,15 @@
     "source": "GDACS"
    },
    {
-    "lat": -17.44128014167728,
-    "lon": 135.35652160809138,
+    "lat": 12.069644259212875,
+    "lon": 14.435079954700326,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 21765 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032962",
-    "when": "Tue, 20 Oct 2026 13:32:07 GMT",
+    "title": "Green forest fire notification in Nigeria, Cameroon",
+    "place": "Nigeria, Cameroon",
+    "severity": "Green impact for forestfire in 5314 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033043",
+    "when": "Thu, 22 Oct 2026 11:08:26 GMT",
     "source": "GDACS"
    },
    {
@@ -1791,15 +1917,15 @@
     "source": "GDACS"
    },
    {
-    "lat": 12.069644259212875,
-    "lon": 14.435079954700326,
+    "lat": -17.44128014167728,
+    "lon": 135.35652160809138,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Nigeria, Cameroon",
-    "place": "Nigeria, Cameroon",
-    "severity": "Green impact for forestfire in 5314 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033043",
-    "when": "Thu, 22 Oct 2026 11:08:26 GMT",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 21765 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032962",
+    "when": "Tue, 20 Oct 2026 13:32:07 GMT",
     "source": "GDACS"
    },
    {
@@ -2055,7 +2181,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-22T11:46:26-04:00",
+  "fetched_at": "2026-10-22T12:01:35-04:00",
   "countries": [
    {
     "iso": "IRN",
@@ -2238,7 +2364,7 @@
     "issue": "Former U.S. Ambassador to Ukraine William Taylor on Trump's embrace of Russia"
    }
   ],
-  "headlines_scanned": 24,
+  "headlines_scanned": 32,
   "countries_matched": 12,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
