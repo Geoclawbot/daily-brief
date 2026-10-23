@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-23T11:46:11-04:00",
- "generated_at_utc": "2026-10-23T15:46:11+00:00",
+ "generated_at": "2026-10-23T12:01:15-04:00",
+ "generated_at_utc": "2026-10-23T16:01:15+00:00",
  "weekday": "Friday",
  "date_label": "Friday, October 23",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-23T11:46:11-04:00",
+  "fetched_at": "2026-10-23T12:01:17-04:00",
   "curve": [
    {
     "time": "2026-10-23T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 80.2,
-   "feels": 83.1,
+   "temp": 81.2,
+   "feels": 84.3,
    "humidity": 62,
-   "wind_mph": 7.3,
-   "wind_dir": 38,
-   "observed_at": "2026-10-23T11:45"
+   "wind_mph": 7.7,
+   "wind_dir": 33,
+   "observed_at": "2026-10-23T12:00"
   },
   "today": {
    "high": 84.3,
@@ -166,29 +166,91 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-23T11:46:12-04:00",
+  "fetched_at": "2026-10-23T12:01:18-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-23T11:46:12-04:00",
-  "aqi": 46,
+  "fetched_at": "2026-10-23T12:01:19-04:00",
+  "aqi": 47,
   "category": "Good",
-  "pm25": 10.5,
-  "pm10": 14.1,
-  "observed": "2026-10-23T11:00",
+  "pm25": 10.0,
+  "pm10": 13.8,
+  "observed": "2026-10-23T12:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-10-23T11:46:13-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-10-23T12:01:21-04:00",
+  "route_shown": true,
+  "leg": "Jackson Memorial → Home",
+  "direction": "return",
+  "depart_clock": "3:30 PM",
+  "depart_at": "2026-10-23T15:30:00-04:00",
+  "miles": 20.6,
+  "minutes": 58,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 22.6,
+    "minutes": 53,
+    "toll": true,
+    "saves": 5
+   },
+   {
+    "miles": 28.6,
+    "minutes": 56,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 20.8,
+    "minutes": 57,
+    "toll": true,
+    "saves": 1
+   },
+   {
+    "miles": 25.5,
+    "minutes": 57,
+    "toll": true,
+    "saves": 1
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 58,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 23.4,
+    "minutes": 67,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.4,
+    "minutes": 72,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.5,
+    "minutes": 68,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 58,
+   "delay_minutes": 0,
+   "saves": 0
+  },
   "incidents": [],
   "incident_count": 0,
   "named_count": 0,
@@ -198,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-23T11:46:14-04:00",
+  "fetched_at": "2026-10-23T12:01:22-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -239,7 +301,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-23T11:46:14-04:00",
+  "fetched_at": "2026-10-23T12:01:22-04:00",
   "issued": "800 AM EDT Fri Oct 23 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 231114\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Fri Oct 23 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Beven"
@@ -247,7 +309,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-23T11:46:14-04:00",
+  "fetched_at": "2026-10-23T12:01:22-04:00",
   "florida": "$4.1272",
   "national": "$4.2926",
   "diesel": "$6.0974",
@@ -256,7 +318,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-23T11:46:16-04:00",
+  "fetched_at": "2026-10-23T12:01:23-04:00",
   "streams": {
    "local": [
     {
@@ -365,6 +427,14 @@
   ],
   "local": [
    {
+    "title": "USPS worker accused of stealing iPhones, ring from packages in Hialeah",
+    "url": "https://www.local10.com/news/local/2026/10/23/usps-carrier-accused-of-stealing-iphones-ring-from-packages-in-hialeah/",
+    "published": "Fri, 23 Oct 2026 15:50:23 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/MLQOKZA6O5A47OV72QY75UEZCU.jpg?auth=40a9ddbe71878bd848a20bdbc7a1541e6c6e23eb588ed63fa4836f2e8d0d7c56&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
     "title": "Miami-Dade budget battle escalates as sheriff moves to end commissioners’ security detail",
     "url": "https://www.local10.com/news/local/2026/10/23/miami-dade-budget-battle-escalates-as-sheriff-moves-to-end-commissioners-security-detail/",
     "published": "Fri, 23 Oct 2026 12:16:09 +0000",
@@ -421,19 +491,11 @@
     "media_type": null
    },
    {
-    "title": "Man shares breast cancer journey, urges others to get checked",
-    "url": "https://www.local10.com/news/local/2026/10/22/man-shares-breast-cancer-journey-urges-others-to-get-checked/",
-    "published": "Thu, 22 Oct 2026 22:23:15 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "Apple store on Lincoln Road opens to long line of customers waiting to buy foldable iPhone Duo",
     "url": "https://wsvn.com/news/local/miami-dade/apple-iphone-duo-miami-launch/",
     "published": "Fri, 23 Oct 2026 13:49:02 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1b5e1cbb-5856-4988-a19f-7a2ee8d55da0/913e17d0-87df-4d16-98e5-28196459f81b/main.mp4?fastly_token=NmFkYmJlZDdfOTk1ZTAxZDhmYTI4YmRmN2VjNDM2OWViNTk0NmY2OTU5YWY2NmEyNTE5MTg3OWIwMGU1NTk1OTMzZWM3NzE2Ml8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xYjVlMWNiYi01ODU2LTQ5ODgtYTE5Zi03YTJlZThkNTVkYTAvOTEzZTE3ZDAtODdkZi00ZDE2LTk4ZTUtMjgxOTY0NTlmODFiL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1b5e1cbb-5856-4988-a19f-7a2ee8d55da0/913e17d0-87df-4d16-98e5-28196459f81b/main.mp4?fastly_token=NmFkYmM3MDlfM2UzYjQxN2I1YzllN2JmZGZmNTZlODUzMDU0MTMwOGJiNDMwZTM3YWUxYmE1ODkyMGFmMGI1MTZiNWQ5MzJkOF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xYjVlMWNiYi01ODU2LTQ5ODgtYTE5Zi03YTJlZThkNTVkYTAvOTEzZTE3ZDAtODdkZi00ZDE2LTk4ZTUtMjgxOTY0NTlmODFiL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -465,7 +527,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/apple-iphone-duo-miami-launch/",
     "published": "Fri, 23 Oct 2026 13:49:02 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1b5e1cbb-5856-4988-a19f-7a2ee8d55da0/913e17d0-87df-4d16-98e5-28196459f81b/main.mp4?fastly_token=NmFkYmJlZDdfOTk1ZTAxZDhmYTI4YmRmN2VjNDM2OWViNTk0NmY2OTU5YWY2NmEyNTE5MTg3OWIwMGU1NTk1OTMzZWM3NzE2Ml8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xYjVlMWNiYi01ODU2LTQ5ODgtYTE5Zi03YTJlZThkNTVkYTAvOTEzZTE3ZDAtODdkZi00ZDE2LTk4ZTUtMjgxOTY0NTlmODFiL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1b5e1cbb-5856-4988-a19f-7a2ee8d55da0/913e17d0-87df-4d16-98e5-28196459f81b/main.mp4?fastly_token=NmFkYmM3MDlfM2UzYjQxN2I1YzllN2JmZGZmNTZlODUzMDU0MTMwOGJiNDMwZTM3YWUxYmE1ODkyMGFmMGI1MTZiNWQ5MzJkOF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xYjVlMWNiYi01ODU2LTQ5ODgtYTE5Zi03YTJlZThkNTVkYTAvOTEzZTE3ZDAtODdkZi00ZDE2LTk4ZTUtMjgxOTY0NTlmODFiL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -489,11 +551,27 @@
     "url": "https://wsvn.com/news/local/miami-dade/miami-facebook-marketplace-scam/",
     "published": "Fri, 23 Oct 2026 03:03:40 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/88159e7c-9456-41d1-81d3-a160bfa9bdae/b61c1737-cdce-4162-899c-08021bf64419/main.mp4?fastly_token=NmFkYmFkYmJfYzA1MDAzZDIzNGU3YzNiN2ZhNDk3Mzg1NmEyMjY1M2ZjYjY5MmE4MTVlODNiMDk4YjQxNmJmMWVjMzI0ZTgxY18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84ODE1OWU3Yy05NDU2LTQxZDEtODFkMy1hMTYwYmZhOWJkYWUvYjYxYzE3MzctY2RjZS00MTYyLTg5OWMtMDgwMjFiZjY0NDE5L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/9dc90990-7cff-4d65-897b-6069b0e75b1d/e2018613-8eb4-4d4c-a3a2-e68a4a7d6870/main.mp4?fastly_token=NmFkYmQ3NTBfMzc4MmZmNjI0MTVhMmU3M2RiNGE0ZDlhMTM0YzhmMmRiOTdmZmM0YTI5MTM5MTdhYjk0MTM4NzUzYzJmM2FiZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85ZGM5MDk5MC03Y2ZmLTRkNjUtODk3Yi02MDY5YjBlNzViMWQvZTIwMTg2MTMtOGViNC00ZDRjLWEzYTItZTY4YTRhN2Q2ODcwL21haW4ubXA0",
     "media_type": "video"
    }
   ],
   "colombia": [
+   {
+    "title": "Avanzan las investigaciones por la tragedia en el Batallón Tarqui de Sogamoso donde un soldado le disparó a un sargento y luego se quitó la vida",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/avanzan-las-investigaciones-por-la-tragedia-en-el-batallon-tarqui-de-sogamoso-donde-un-soldado-le-disparo-a-un-sargento-y-luego-se-quito-la-vida-3595778",
+    "published": "2026-10-23T10:27:45-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/23/6adb7a9f6e4b7.r_d.52-339-0.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "Sobrevivió tres veces a la muerte y a ataques de la guerrilla colombiana: la historia de un policía que vio en su cara la muerte de sus compañeros",
+    "url": "https://www.eltiempo.com/colombia/santander/sobrevivio-tres-veces-a-la-muerte-y-a-ataques-de-la-guerrilla-colombiana-la-historia-de-un-policia-que-vio-en-su-cara-la-muerte-de-sus-companeros-3595776",
+    "published": "2026-10-23T10:25:11-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/23/6adb7a88b9982.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "El misterioso crimen de la Ruta 90: quién era el contador público que fue baleado dentro de un Chevrolet en el norte de Cartagena",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/el-misterioso-crimen-de-la-ruta-90-quien-era-el-contador-publico-que-fue-baleado-dentro-de-un-chevrolet-en-el-norte-de-cartagena-3595758",
@@ -503,7 +581,7 @@
     "media_type": "image"
    },
    {
-    "title": "Incendio en el Centro Comercial Fundadores de Manizales obliga a cerrar temporalmente sus instalaciones tras emergencia en la noche del 22 de octubre",
+    "title": "Incendio en Centro Comercial Fundadores de Manizales obliga a cerrar temporalmente sus instalaciones: esto se sabe sobre la emergencia",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/incendio-en-el-centro-comercial-fundadores-de-manizales-obliga-a-cerrar-temporalmente-sus-instalaciones-tras-emergencia-en-la-noche-del-22-de-octubre-3595736",
     "published": "2026-10-23T09:58:31-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
@@ -540,22 +618,6 @@
     "published": "2026-10-23T09:44:15-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/23/6adb61323bf07.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Alcalde de Cartagena aseguró que invierte $6 billones en infraestructura para la ciudad e instó a Camacol a acelerar alianzas público-privadas",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/alcalde-de-cartagena-asegura-que-invirtio-6-billones-en-infraestructura-en-la-ciudad-e-insto-a-camacol-a-acelerar-alianzas-publico-privadas-3595726",
-    "published": "2026-10-23T08:07:40-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/09/08/6aa04e5a3bc23.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Ojo con los cortes: revise si su barrio está en la lista de trabajos de Emcali para este 23 de octubre en Cali",
-    "url": "https://www.eltiempo.com/colombia/cali/ojo-con-los-cortes-revise-si-su-barrio-esta-en-la-lista-de-trabajos-de-emcali-para-este-23-de-octubre-en-cali-3595723",
-    "published": "2026-10-23T07:29:23-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/06/23/6a3a7757404c6.jpeg",
     "media_type": "image"
    }
   ],
@@ -601,16 +663,16 @@
     "media_type": null
    },
    {
-    "title": "After nearly 6 years, ex-Myanmar leader Aung San Suu Kyi's son hears her voice",
-    "url": "https://www.npr.org/2026/10/23/nx-s1-6012784/aung-san-suu-kyi-son-phone-call-myanmar",
+    "title": "Brazil's runoff: Lula's legacy vs. Bolsonaro's dynasty",
+    "url": "https://www.npr.org/2026/10/23/nx-s1-6004277/brazil-vote-runoff-lula-bolsonaro",
     "published": "Fri, 23 Oct 2026 05:00:00 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
     "media_type": null
    },
    {
-    "title": "Brazil's runoff: Lula's legacy vs. Bolsonaro's dynasty",
-    "url": "https://www.npr.org/2026/10/23/nx-s1-6004277/brazil-vote-runoff-lula-bolsonaro",
+    "title": "After nearly 6 years, ex-Myanmar leader Aung San Suu Kyi's son hears her voice",
+    "url": "https://www.npr.org/2026/10/23/nx-s1-6012784/aung-san-suu-kyi-son-phone-call-myanmar",
     "published": "Fri, 23 Oct 2026 05:00:00 -0400",
     "feed": "https://feeds.npr.org/1004/rss.xml",
     "media": null,
@@ -629,7 +691,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-23T11:46:17-04:00",
+  "fetched_at": "2026-10-23T12:01:24-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -637,7 +699,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (309) + USGS (20)",
-  "fetched_at": "2026-10-23T11:46:19-04:00",
+  "fetched_at": "2026-10-23T12:01:26-04:00",
   "events": [
    {
     "lat": 32.3805,
@@ -1116,18 +1178,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -22.516804455310854,
-    "lon": 24.802334480610458,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Botswana",
-    "place": "Botswana",
-    "severity": "Green impact for forestfire in 7835 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033066",
-    "when": "Fri, 23 Oct 2026 03:02:14 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -18.976878677584082,
     "lon": 131.44615840789322,
     "kind": "wildfire",
@@ -1152,6 +1202,30 @@
     "source": "GDACS"
    },
    {
+    "lat": -22.516804455310854,
+    "lon": 24.802334480610458,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Botswana",
+    "place": "Botswana",
+    "severity": "Green impact for forestfire in 7835 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033066",
+    "when": "Fri, 23 Oct 2026 03:02:14 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -20.767629291110822,
+    "lon": 136.57610865116186,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 26776 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033018",
+    "when": "Thu, 22 Oct 2026 07:00:36 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -21.141517449373293,
     "lon": 125.5549640945027,
     "kind": "wildfire",
@@ -1173,18 +1247,6 @@
     "severity": "Green impact for forestfire in 6351 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033045",
     "when": "Fri, 23 Oct 2026 15:02:30 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -20.767629291110822,
-    "lon": 136.57610865116186,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 26776 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033018",
-    "when": "Thu, 22 Oct 2026 07:00:36 GMT",
     "source": "GDACS"
    },
    {
@@ -1224,6 +1286,18 @@
     "source": "GDACS"
    },
    {
+    "lat": -19.790684402084864,
+    "lon": 130.32440313136948,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 6899 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033049",
+    "when": "Fri, 23 Oct 2026 15:04:39 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -19.834542026837855,
     "lon": 25.966342581786353,
     "kind": "wildfire",
@@ -1260,15 +1334,27 @@
     "source": "GDACS"
    },
    {
-    "lat": -19.790684402084864,
-    "lon": 130.32440313136948,
+    "lat": 10.340613856806758,
+    "lon": 24.12889861126051,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 6899 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033049",
-    "when": "Fri, 23 Oct 2026 15:04:39 GMT",
+    "title": "Green forest fire notification in Sudan",
+    "place": "Sudan",
+    "severity": "Green impact for forestfire in 5733 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033067",
+    "when": "Fri, 23 Oct 2026 03:02:24 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": 1.907253215636653,
+    "lon": -55.912744941714706,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Suriname, Brazil",
+    "place": "Suriname, Brazil",
+    "severity": "Green impact for forestfire in 5022 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033068",
+    "when": "Fri, 23 Oct 2026 07:03:57 GMT",
     "source": "GDACS"
    },
    {
@@ -1284,15 +1370,63 @@
     "source": "GDACS"
    },
    {
-    "lat": -21.332679832715414,
-    "lon": 122.85961794695213,
+    "lat": -16.153712349905874,
+    "lon": 126.66217579745087,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Australia",
     "place": "Australia",
-    "severity": "Green impact for forestfire in 21767 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033013",
-    "when": "Wed, 21 Oct 2026 15:01:35 GMT",
+    "severity": "Green impact for forestfire in 5333 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033093",
+    "when": "Fri, 23 Oct 2026 15:03:36 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -23.672353188749213,
+    "lon": 122.29995563756874,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 5422 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033094",
+    "when": "Fri, 23 Oct 2026 15:03:43 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -21.647575779673556,
+    "lon": 123.46236274685968,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 6277 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033095",
+    "when": "Fri, 23 Oct 2026 11:06:15 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -16.90292529105361,
+    "lon": 132.937894927101,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 25859 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032994",
+    "when": "Tue, 20 Oct 2026 23:00:51 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -21.604203781247318,
+    "lon": 122.31917633031877,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 17389 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032995",
+    "when": "Tue, 20 Oct 2026 23:00:59 GMT",
     "source": "GDACS"
    },
    {
@@ -1356,30 +1490,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -16.90292529105361,
-    "lon": 132.937894927101,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 25859 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032994",
-    "when": "Tue, 20 Oct 2026 23:00:51 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -21.604203781247318,
-    "lon": 122.31917633031877,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 17389 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032995",
-    "when": "Tue, 20 Oct 2026 23:00:59 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -23.3386022159262,
     "lon": 122.3445052381848,
     "kind": "wildfire",
@@ -1416,63 +1526,15 @@
     "source": "GDACS"
    },
    {
-    "lat": 10.340613856806758,
-    "lon": 24.12889861126051,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Sudan",
-    "place": "Sudan",
-    "severity": "Green impact for forestfire in 5733 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033067",
-    "when": "Fri, 23 Oct 2026 03:02:24 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": 1.907253215636653,
-    "lon": -55.912744941714706,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Suriname, Brazil",
-    "place": "Suriname, Brazil",
-    "severity": "Green impact for forestfire in 5022 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033068",
-    "when": "Fri, 23 Oct 2026 07:03:57 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -16.153712349905874,
-    "lon": 126.66217579745087,
+    "lat": -21.332679832715414,
+    "lon": 122.85961794695213,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Australia",
     "place": "Australia",
-    "severity": "Green impact for forestfire in 5333 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033093",
-    "when": "Fri, 23 Oct 2026 15:03:36 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -23.672353188749213,
-    "lon": 122.29995563756874,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 5422 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033094",
-    "when": "Fri, 23 Oct 2026 15:03:43 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -21.647575779673556,
-    "lon": 123.46236274685968,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 6277 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033095",
-    "when": "Fri, 23 Oct 2026 11:06:15 GMT",
+    "severity": "Green impact for forestfire in 21767 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033013",
+    "when": "Wed, 21 Oct 2026 15:01:35 GMT",
     "source": "GDACS"
    },
    {
@@ -1536,30 +1598,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -13.102498545921595,
-    "lon": 36.339737013759496,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Mozambique",
-    "place": "Mozambique",
-    "severity": "Green impact for forestfire in 5642 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033055",
-    "when": "Thu, 22 Oct 2026 19:05:03 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": 9.730388402358367,
-    "lon": 26.198524856294828,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in South Sudan, Sudan",
-    "place": "South Sudan, Sudan",
-    "severity": "Green impact for forestfire in 10307 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033056",
-    "when": "Thu, 22 Oct 2026 19:05:20 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": 10.095193768270544,
     "lon": 26.59004598869576,
     "kind": "wildfire",
@@ -1596,39 +1634,27 @@
     "source": "GDACS"
    },
    {
-    "lat": -19.21166907526989,
-    "lon": 128.60119440608614,
+    "lat": -13.102498545921595,
+    "lon": 36.339737013759496,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 5040 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033096",
-    "when": "Fri, 23 Oct 2026 15:07:57 GMT",
+    "title": "Green forest fire notification in Mozambique",
+    "place": "Mozambique",
+    "severity": "Green impact for forestfire in 5642 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033055",
+    "when": "Thu, 22 Oct 2026 19:05:03 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -18.210967040711886,
-    "lon": 127.15513769784937,
+    "lat": 9.730388402358367,
+    "lon": 26.198524856294828,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 6571 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033053",
-    "when": "Thu, 22 Oct 2026 15:05:16 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": 9.924567296590673,
-    "lon": 25.386569898982266,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in South Sudan",
-    "place": "South Sudan",
-    "severity": "Green impact for forestfire in 6808 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033057",
-    "when": "Thu, 22 Oct 2026 19:05:52 GMT",
+    "title": "Green forest fire notification in South Sudan, Sudan",
+    "place": "South Sudan, Sudan",
+    "severity": "Green impact for forestfire in 10307 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033056",
+    "when": "Thu, 22 Oct 2026 19:05:20 GMT",
     "source": "GDACS"
    },
    {
@@ -1641,30 +1667,6 @@
     "severity": "Green impact for forestfire in 27638 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033007",
     "when": "Wed, 21 Oct 2026 11:01:15 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -17.898202715715637,
-    "lon": 124.97139421268042,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 11513 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032996",
-    "when": "Tue, 20 Oct 2026 23:01:31 GMT",
-    "source": "GDACS"
-   },
-   {
-    "lat": -17.600543719213306,
-    "lon": 132.69487716069165,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 13392 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032959",
-    "when": "Tue, 20 Oct 2026 13:30:49 GMT",
     "source": "GDACS"
    },
    {
@@ -1692,6 +1694,54 @@
     "source": "GDACS"
    },
    {
+    "lat": -17.898202715715637,
+    "lon": 124.97139421268042,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 11513 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032996",
+    "when": "Tue, 20 Oct 2026 23:01:31 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -17.600543719213306,
+    "lon": 132.69487716069165,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 13392 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032959",
+    "when": "Tue, 20 Oct 2026 13:30:49 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -19.21166907526989,
+    "lon": 128.60119440608614,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 5040 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033096",
+    "when": "Fri, 23 Oct 2026 15:07:57 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": -18.210967040711886,
+    "lon": 127.15513769784937,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 6571 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033053",
+    "when": "Thu, 22 Oct 2026 15:05:16 GMT",
+    "source": "GDACS"
+   },
+   {
     "lat": -17.544284034280277,
     "lon": 132.91206220035696,
     "kind": "wildfire",
@@ -1701,6 +1751,18 @@
     "severity": "Green impact for forestfire in 8917 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033050",
     "when": "Thu, 22 Oct 2026 11:04:28 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": 9.924567296590673,
+    "lon": 25.386569898982266,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in South Sudan",
+    "place": "South Sudan",
+    "severity": "Green impact for forestfire in 6808 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033057",
+    "when": "Thu, 22 Oct 2026 19:05:52 GMT",
     "source": "GDACS"
    },
    {
@@ -1980,18 +2042,6 @@
     "source": "GDACS"
    },
    {
-    "lat": -12.40255716166444,
-    "lon": 37.855810964086515,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Mozambique",
-    "place": "Mozambique",
-    "severity": "Green impact for forestfire in 10992 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033029",
-    "when": "Thu, 22 Oct 2026 15:08:11 GMT",
-    "source": "GDACS"
-   },
-   {
     "lat": -1.6785174611729485,
     "lon": 120.96605495604189,
     "kind": "wildfire",
@@ -2040,15 +2090,15 @@
     "source": "GDACS"
    },
    {
-    "lat": 8.66875883279599,
-    "lon": 25.63927184072733,
+    "lat": -12.40255716166444,
+    "lon": 37.855810964086515,
     "kind": "wildfire",
     "level": "green",
-    "title": "Green forest fire notification in South Sudan",
-    "place": "South Sudan",
-    "severity": "Green impact for forestfire in 5175 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033072",
-    "when": "Fri, 23 Oct 2026 15:12:00 GMT",
+    "title": "Green forest fire notification in Mozambique",
+    "place": "Mozambique",
+    "severity": "Green impact for forestfire in 10992 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033029",
+    "when": "Thu, 22 Oct 2026 15:08:11 GMT",
     "source": "GDACS"
    },
    {
@@ -2061,6 +2111,18 @@
     "severity": "Green impact for forestfire in 7397 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033058",
     "when": "Thu, 22 Oct 2026 19:10:49 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": 8.66875883279599,
+    "lon": 25.63927184072733,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in South Sudan",
+    "place": "South Sudan",
+    "severity": "Green impact for forestfire in 5175 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033072",
+    "when": "Fri, 23 Oct 2026 15:12:00 GMT",
     "source": "GDACS"
    },
    {
@@ -2112,7 +2174,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-23T11:46:19-04:00",
+  "fetched_at": "2026-10-23T12:01:27-04:00",
   "countries": [
    {
     "iso": "ISR",
@@ -2147,20 +2209,6 @@
     ],
     "count": 1,
     "issue": "Brazil's runoff: Lula's legacy vs. Bolsonaro's dynasty"
-   },
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Ojo con los cortes: revise si su barrio está en la lista de trabajos de Emcali para este 23 de octubre en Cali",
-      "url": "https://www.eltiempo.com/colombia/cali/ojo-con-los-cortes-revise-si-su-barrio-esta-en-la-lista-de-trabajos-de-emcali-para-este-23-de-octubre-en-cali-3595723",
-      "published": "2026-10-23T07:29:23-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 1,
-    "issue": "Ojo con los cortes: revise si su barrio está en la lista de trabajos de Emcali para este 23 de octubre en Cali"
    },
    {
     "iso": "IRN",
@@ -2234,7 +2282,7 @@
    }
   ],
   "headlines_scanned": 32,
-  "countries_matched": 8,
+  "countries_matched": 7,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
  "failures": [],
