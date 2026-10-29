@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-29T14:00:38-04:00",
- "generated_at_utc": "2026-10-29T18:00:38+00:00",
+ "generated_at": "2026-10-29T14:15:30-04:00",
+ "generated_at_utc": "2026-10-29T18:15:30+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, October 29",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-29T14:00:39-04:00",
+  "fetched_at": "2026-10-29T14:15:30-04:00",
   "curve": [
    {
     "time": "2026-10-29T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 87.0,
-   "feels": 94.6,
+   "temp": 86.6,
+   "feels": 91.7,
    "humidity": 63,
-   "wind_mph": 9.4,
-   "wind_dir": 61,
-   "observed_at": "2026-10-29T14:00"
+   "wind_mph": 10.8,
+   "wind_dir": 56,
+   "observed_at": "2026-10-29T14:15"
   },
   "today": {
    "high": 87.0,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-29T14:00:42-04:00",
+  "fetched_at": "2026-10-29T14:15:31-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-29T14:00:43-04:00",
+  "fetched_at": "2026-10-29T14:15:32-04:00",
   "aqi": 36,
   "category": "Good",
   "pm25": 6.3,
@@ -183,15 +183,84 @@
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
-  "ok": false,
-  "source": "TomTom",
-  "fetched_at": "2026-10-29T14:01:08-04:00",
-  "error": "HTTPSConnectionPool(host='api.tomtom.com', port=443): Read timed out. (read timeout=25)"
+  "ok": true,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-10-29T14:15:34-04:00",
+  "route_shown": true,
+  "leg": "Jackson Memorial → Home",
+  "direction": "return",
+  "depart_clock": "3:30 PM",
+  "depart_at": "2026-10-29T15:30:00-04:00",
+  "miles": 20.6,
+  "minutes": 62,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 22.6,
+    "minutes": 55,
+    "toll": true,
+    "saves": 7
+   },
+   {
+    "miles": 28.6,
+    "minutes": 59,
+    "toll": true,
+    "saves": 3
+   },
+   {
+    "miles": 20.8,
+    "minutes": 61,
+    "toll": true,
+    "saves": 1
+   },
+   {
+    "miles": 26.8,
+    "minutes": 61,
+    "toll": true,
+    "saves": 1
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 62,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 26.6,
+    "minutes": 66,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.1,
+    "minutes": 77,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.5,
+    "minutes": 72,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 62,
+   "delay_minutes": 0,
+   "saves": 0
+  },
+  "incidents": [],
+  "incident_count": 0,
+  "named_count": 0,
+  "major_count": 0,
+  "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-29T14:01:09-04:00",
+  "fetched_at": "2026-10-29T14:15:35-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -235,7 +304,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-29T14:01:09-04:00",
+  "fetched_at": "2026-10-29T14:15:35-04:00",
   "issued": "200 PM EDT Thu Oct 29 2026",
   "areas": [],
   "raw": "en Español\n\n723 \nABNT20 KNHC 291708\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n200 PM EDT Thu Oct 29 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Reinhart"
@@ -243,7 +312,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-29T14:01:09-04:00",
+  "fetched_at": "2026-10-29T14:15:35-04:00",
   "florida": "$3.9629",
   "national": "$4.2258",
   "diesel": "$6.0560",
@@ -252,7 +321,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-29T14:01:11-04:00",
+  "fetched_at": "2026-10-29T14:15:36-04:00",
   "streams": {
    "local": [
     {
@@ -361,6 +430,22 @@
   ],
   "local": [
    {
+    "title": "Miami-Dade men accused in moped chop shop case",
+    "url": "https://www.local10.com/news/local/2026/10/29/miami-dade-men-accused-in-moped-chop-shop-case/",
+    "published": "Thu, 29 Oct 2026 18:03:23 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/C5J7WFZQO5CKLO7AEDY6VXYFSA.png?auth=fa86e16aac7f7810df1b424c73a9992e3820486f6c2bb55b33a65b0a1bed8f91&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Florida state agency data breach could affect nearly 5 million people",
+    "url": "https://www.local10.com/news/local/2026/10/29/florida-state-agency-data-breach-could-affect-nearly-5-million-people/",
+    "published": "Thu, 29 Oct 2026 17:59:55 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/3YVALNXHWFAUXDD6ZHA4ZJIV74.jpg?auth=1c180bb90e826d299024d763ecfc3bd477774423d6cfcec47ea2ba3cb9eeb69b&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
     "title": "Man sentenced to 50 years for killing tourist who shielded his 1-year-old son in Miami Beach",
     "url": "https://www.local10.com/news/local/2026/10/29/man-sentenced-to-50-years-for-killing-tourist-who-shielded-his-1-year-old-son-in-miami-beach/",
     "published": "Thu, 29 Oct 2026 16:15:01 +0000",
@@ -409,22 +494,6 @@
     "media_type": "image"
    },
    {
-    "title": "Broward man with ‘My Life...My Rules’ tattoo attacks friend with baseball bat over bracelet: Police",
-    "url": "https://www.local10.com/news/local/2026/10/29/broward-man-with-my-lifemy-rules-tattoo-attacks-friend-with-baseball-bat-over-bracelet-police/",
-    "published": "Thu, 29 Oct 2026 14:42:43 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/NSNAQ64C5NAMLIJ5RHRTDSNONY.jpg?auth=52a26bf07e7ef21f783740f394ac9dfa830a6080e51a8efe53a9ba6316cbe3ef&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "Miami-Dade’s Underline adds bike-sharing program to help reduce traffic, greenhouse gas emissions",
-    "url": "https://www.local10.com/news/local/2026/10/29/miami-dades-underline-adds-bike-sharing-program-to-help-reduce-traffic-greenhouse-gas-emissions/",
-    "published": "Thu, 29 Oct 2026 12:34:06 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "Grammy winners, nominees share advice with Miami students to build next generation of music talent",
     "url": "https://wsvn.com/entertainment/grammy-museum-miami-music-program/",
     "published": "Wed, 28 Oct 2026 22:59:30 +0000",
@@ -457,6 +526,14 @@
     "media_type": "video"
    },
    {
+    "title": "Man sentenced to 50 years in prison for 2021 murder of 21-year-old tourist in Miami Beach",
+    "url": "https://wsvn.com/news/local/miami-dade/tamarius-davis-sentenced-50-years/",
+    "published": "Thu, 29 Oct 2026 17:14:32 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1ab690bc-0aa4-4815-8b35-ff578257046e/546bb334-56e7-4e66-a0fb-78c2ff665a87/main.mp4?fastly_token=NmFlM2Q4ODlfN2ZjYTk2Y2I3YzI2OTM4ZGM4YmZiNjg5OGVlYmYyNTAwNTBmZTBkMWYxZTVhNWYwNzY1OTc4YTQwZmM1NDJkYV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xYWI2OTBiYy0wYWE0LTQ4MTUtOGIzNS1mZjU3ODI1NzA0NmUvNTQ2YmIzMzQtNTZlNy00ZTY2LWEwZmItNzhjMmZmNjY1YTg3L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "King tide flooding persists across South Florida as cycle reaches end",
     "url": "https://wsvn.com/news/local/miami-dade/south-florida-roads-flood-king-tide/",
     "published": "Thu, 29 Oct 2026 17:02:30 +0000",
@@ -478,14 +555,6 @@
     "published": "Thu, 29 Oct 2026 15:28:06 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c97957af-edd7-4345-a455-84a471e749cf/85bd586e-ae5b-487a-b4df-e3ed1198a784/main.mp4?fastly_token=NmFlM2JlMWZfOTBmYTFiZWJjZmZmMTUxZWExYmRhNDdiMDRhNWNmOGJhZDQ0YTM1MTg0ZWVmMWMwYjU3NDE2ZmM5ODNiNzMxY18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jOTc5NTdhZi1lZGQ3LTQzNDUtYTQ1NS04NGE0NzFlNzQ5Y2YvODViZDU4NmUtYWU1Yi00ODdhLWI0ZGYtZTNlZDExOThhNzg0L21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "The battle for District 27 seat ramping up ahead of November election",
-    "url": "https://wsvn.com/news/politics/journalists-vying-florida-district-27/",
-    "published": "Thu, 29 Oct 2026 15:26:12 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/769b70b2-0193-4b65-9ba6-ccc15c93c562/28af6184-822c-4e58-b8b2-edb765d2400e/main.mp4?fastly_token=NmFlM2JlNjlfMDdhY2JhZmNkYjFkZjUwOTI4ZjdkZDU1ZGRiMjUxZmZjMzI1NjVhNTM3NjM5MzFlN2EwODFiNzI4YzgzNjYyYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83NjliNzBiMi0wMTkzLTRiNjUtOWJhNi1jY2MxNWM5M2M1NjIvMjhhZjYxODQtODIyYy00ZTU4LWI4YjItZWRiNzY1ZDI0MDBlL21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -625,7 +694,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-29T14:01:11-04:00",
+  "fetched_at": "2026-10-29T14:15:37-04:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -633,7 +702,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (308) + USGS (23)",
-  "fetched_at": "2026-10-29T14:01:20-04:00",
+  "fetched_at": "2026-10-29T14:15:40-04:00",
   "events": [
    {
     "lat": 16.4,
@@ -2111,7 +2180,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-29T14:01:20-04:00",
+  "fetched_at": "2026-10-29T14:15:40-04:00",
   "countries": [
    {
     "iso": "COL",
@@ -2262,8 +2331,6 @@
   "countries_matched": 9,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "commute"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
