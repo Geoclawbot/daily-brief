@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-10-30T11:45:30-04:00",
- "generated_at_utc": "2026-10-30T15:45:30+00:00",
+ "generated_at": "2026-10-30T12:00:34-04:00",
+ "generated_at_utc": "2026-10-30T16:00:34+00:00",
  "weekday": "Friday",
  "date_label": "Friday, October 30",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-10-30T11:45:31-04:00",
+  "fetched_at": "2026-10-30T12:00:35-04:00",
   "curve": [
    {
     "time": "2026-10-30T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 83.5,
-   "feels": 91.6,
-   "humidity": 79,
-   "wind_mph": 8.5,
-   "wind_dir": 29,
-   "observed_at": "2026-10-30T11:45"
+   "temp": 83.0,
+   "feels": 90.6,
+   "humidity": 78,
+   "wind_mph": 8.2,
+   "wind_dir": 46,
+   "observed_at": "2026-10-30T12:00"
   },
   "today": {
    "high": 85.6,
@@ -166,29 +166,91 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-10-30T11:45:31-04:00",
+  "fetched_at": "2026-10-30T12:00:37-04:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-10-30T11:45:32-04:00",
+  "fetched_at": "2026-10-30T12:00:37-04:00",
   "aqi": 36,
   "category": "Good",
-  "pm25": 5.4,
-  "pm10": 7.2,
-  "observed": "2026-10-30T11:00",
+  "pm25": 4.9,
+  "pm10": 6.7,
+  "observed": "2026-10-30T12:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-10-30T11:45:33-04:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-10-30T12:00:40-04:00",
+  "route_shown": true,
+  "leg": "Jackson Memorial → Home",
+  "direction": "return",
+  "depart_clock": "3:30 PM",
+  "depart_at": "2026-10-30T15:30:00-04:00",
+  "miles": 20.6,
+  "minutes": 59,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 22.6,
+    "minutes": 53,
+    "toll": true,
+    "saves": 6
+   },
+   {
+    "miles": 28.6,
+    "minutes": 57,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 25.5,
+    "minutes": 58,
+    "toll": true,
+    "saves": 1
+   },
+   {
+    "miles": 20.8,
+    "minutes": 58,
+    "toll": true,
+    "saves": 1
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 59,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 23.4,
+    "minutes": 68,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.4,
+    "minutes": 73,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.5,
+    "minutes": 69,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 59,
+   "delay_minutes": 0,
+   "saves": 0
+  },
   "incidents": [],
   "incident_count": 0,
   "named_count": 0,
@@ -198,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-10-30T11:45:33-04:00",
+  "fetched_at": "2026-10-30T12:00:41-04:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -241,7 +303,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-10-30T11:45:34-04:00",
+  "fetched_at": "2026-10-30T12:00:41-04:00",
   "issued": "800 AM EDT Fri Oct 30 2026",
   "areas": [],
   "raw": "en Español\n\n869 \nABNT20 KNHC 301118\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n800 AM EDT Fri Oct 30 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Reinhart"
@@ -249,7 +311,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-10-30T11:45:34-04:00",
+  "fetched_at": "2026-10-30T12:00:42-04:00",
   "florida": "$3.9154",
   "national": "$4.2046",
   "diesel": "$6.0244",
@@ -258,7 +320,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-10-30T11:45:35-04:00",
+  "fetched_at": "2026-10-30T12:00:43-04:00",
   "streams": {
    "local": [
     {
@@ -463,6 +525,14 @@
     "media_type": "video"
    },
    {
+    "title": "Woman accused of reopening surgical wounds while providing unlicensed massages",
+    "url": "https://wsvn.com/news/local/unlicensed-post-surgery-massages-arrest/",
+    "published": "Fri, 30 Oct 2026 15:57:06 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/10/Sulky-Roose-Accius.png",
+    "media_type": "image"
+   },
+   {
     "title": "Yelp says Knaus Berry Farm in SW Miami-Dade has Florida’s best cinnamon rolls",
     "url": "https://wsvn.com/news/local/miami-dade/knaus-berry-farm-best-cinnamon-rolls/",
     "published": "Fri, 30 Oct 2026 13:09:46 +0000",
@@ -484,14 +554,6 @@
     "published": "Fri, 30 Oct 2026 12:09:17 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/cc51a207-1fa2-437c-8c13-52dd5d2be943/2af5afe4-b49a-4746-b511-8d473c13443a/main.mp4?fastly_token=NmFlNTA0ZGZfNWI0YzVkZTU4YmQ2MDJjZTdkNTMxOTkwYjU2YzgxZTZlNmJkNGNlYjFiYjVjMmI5NzgwYWIxZDI1MjdmZjRjNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jYzUxYTIwNy0xZmEyLTQzN2MtOGMxMy01MmRkNWQyYmU5NDMvMmFmNWFmZTQtYjQ5YS00NzQ2LWI1MTEtOGQ0NzNjMTM0NDNhL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Miami Heat hosts event with M-DCPS, MDC, Supervisor of Elections to help young first-time voters",
-    "url": "https://wsvn.com/news/politics/miami-heat-student-voters/",
-    "published": "Fri, 30 Oct 2026 11:50:07 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/7e1116d2-61b9-456a-b19b-3998f52934d3/60c3a487-63a0-4caf-9bcd-50823ecb9623/main.mp4?fastly_token=NmFlNGRjOTRfMGMyYmRkMGIyYWIxMTg0ZTEyNzljZGY1YTYxMGIzYjhmOThjZmFjMzI2N2NiMDdjYzdkYWJhMDQyOTJjOGMyMF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83ZTExMTZkMi02MWI5LTQ1NmEtYjE5Yi0zOTk4ZjUyOTM0ZDMvNjBjM2E0ODctNjNhMC00Y2FmLTliY2QtNTA4MjNlY2I5NjIzL21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -631,7 +693,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-10-30T11:45:35-04:00",
+  "fetched_at": "2026-10-30T12:00:46-04:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -639,7 +701,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (274) + USGS (14)",
-  "fetched_at": "2026-10-30T11:45:38-04:00",
+  "fetched_at": "2026-10-30T12:00:49-04:00",
   "events": [
    {
     "lat": 16.4,
@@ -2108,7 +2170,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-10-30T11:45:38-04:00",
+  "fetched_at": "2026-10-30T12:00:49-04:00",
   "countries": [
    {
     "iso": "COL",
