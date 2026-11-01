@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-01T08:31:02-05:00",
- "generated_at_utc": "2026-11-01T13:31:02+00:00",
+ "generated_at": "2026-11-01T08:46:02-05:00",
+ "generated_at_utc": "2026-11-01T13:46:02+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, November 1",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-01T08:31:03-05:00",
+  "fetched_at": "2026-11-01T08:46:02-05:00",
   "curve": [
    {
     "time": "2026-11-01T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 75.7,
-   "feels": 79.0,
+   "temp": 76.0,
+   "feels": 82.2,
    "humidity": 81,
-   "wind_mph": 10.4,
-   "wind_dir": 348,
-   "observed_at": "2026-11-01T08:30"
+   "wind_mph": 3.8,
+   "wind_dir": 51,
+   "observed_at": "2026-11-01T08:45"
   },
   "today": {
    "high": 80.5,
@@ -166,7 +166,7 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-01T08:31:03-05:00",
+  "fetched_at": "2026-11-01T08:46:02-05:00",
   "alerts": [
    {
     "event": "Flood Watch",
@@ -183,7 +183,7 @@
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-01T08:31:04-05:00",
+  "fetched_at": "2026-11-01T08:46:03-05:00",
   "aqi": 32,
   "category": "Good",
   "pm25": 4.7,
@@ -195,7 +195,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-11-01T08:31:04-05:00",
+  "fetched_at": "2026-11-01T08:46:03-05:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -283,23 +283,24 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
+     "US-41 S",
      "FL-5"
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-11-01T11:35:30Z"
+    "description": "Bridge closed",
+    "start": "2026-11-01T13:35:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-887 N"
+     "US-41 N",
+     "FL-5"
     ],
-    "delay_s": 53,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-01T13:28:30Z"
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Bridge closed",
+    "start": "2026-11-01T11:35:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -307,21 +308,31 @@
      "FL-91 N",
      "Florida's Tpke N"
     ],
-    "delay_s": 35,
-    "magnitude": 2,
-    "description": "Queuing traffic; Accident",
+    "delay_s": 144,
+    "magnitude": 3,
+    "description": "Stationary traffic; Accident",
     "start": "2026-11-01T13:29:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
+     "FL-9"
     ],
-    "delay_s": 34,
-    "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-11-01T13:29:00Z"
+    "delay_s": 124,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-01T13:38:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-91 N",
+     "Florida's Tpke N"
+    ],
+    "delay_s": 82,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-01T13:34:00Z"
    },
    {
     "county": "Broward",
@@ -374,6 +385,17 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-10-31T13:24:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Accident; Left lane closed",
+    "start": "2026-11-01T13:40:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -480,33 +502,17 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-10-30T21:30:11Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-10-24T22:08:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-06-19T12:50:30Z"
    }
   ],
   "incident_count": 266,
-  "named_count": 24,
-  "major_count": 9,
+  "named_count": 26,
+  "major_count": 10,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-01T08:31:05-05:00",
+  "fetched_at": "2026-11-01T08:46:04-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -550,7 +556,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-01T08:31:05-05:00",
+  "fetched_at": "2026-11-01T08:46:04-05:00",
   "issued": "700 AM EST Sun Nov 1 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 011118\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n700 AM EST Sun Nov 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Kelly"
@@ -558,7 +564,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-01T08:31:05-05:00",
+  "fetched_at": "2026-11-01T08:46:05-05:00",
   "florida": "$3.8690",
   "national": "$4.1732",
   "diesel": "$5.9926",
@@ -567,7 +573,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-01T08:31:06-05:00",
+  "fetched_at": "2026-11-01T08:46:05-05:00",
   "streams": {
    "local": [
     {
@@ -940,7 +946,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-01T08:31:07-05:00",
+  "fetched_at": "2026-11-01T08:46:06-05:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -948,7 +954,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (252) + USGS (17)",
-  "fetched_at": "2026-11-01T08:31:09-05:00",
+  "fetched_at": "2026-11-01T08:46:09-05:00",
   "events": [
    {
     "lat": 12.2,
@@ -2420,7 +2426,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-01T08:31:09-05:00",
+  "fetched_at": "2026-11-01T08:46:09-05:00",
   "countries": [
    {
     "iso": "COL",
