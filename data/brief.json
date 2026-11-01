@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-01T11:01:04-05:00",
- "generated_at_utc": "2026-11-01T16:01:04+00:00",
+ "generated_at": "2026-11-01T11:16:06-05:00",
+ "generated_at_utc": "2026-11-01T16:16:06+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, November 1",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-01T11:01:04-05:00",
+  "fetched_at": "2026-11-01T11:16:06-05:00",
   "curve": [
    {
     "time": "2026-11-01T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 79.6,
-   "feels": 84.3,
-   "humidity": 80,
-   "wind_mph": 11.7,
-   "wind_dir": 105,
-   "observed_at": "2026-11-01T11:00"
+   "temp": 78.7,
+   "feels": 83.2,
+   "humidity": 81,
+   "wind_mph": 11.5,
+   "wind_dir": 114,
+   "observed_at": "2026-11-01T11:15"
   },
   "today": {
    "high": 81.1,
@@ -166,7 +166,7 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-01T11:01:05-05:00",
+  "fetched_at": "2026-11-01T11:16:07-05:00",
   "alerts": [
    {
     "event": "Flood Watch",
@@ -183,7 +183,7 @@
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-01T11:01:06-05:00",
+  "fetched_at": "2026-11-01T11:16:08-05:00",
   "aqi": 31,
   "category": "Good",
   "pm25": 4.6,
@@ -195,11 +195,22 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-11-01T11:01:06-05:00",
+  "fetched_at": "2026-11-01T11:16:08-05:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-887 S",
+     "FL-887 N"
+    ],
+    "delay_s": 1178,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-01T15:45:00Z"
+   },
    {
     "county": "Broward",
     "roads": [
@@ -209,6 +220,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-10-31T10:11:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-11-01T16:06:30Z"
    },
    {
     "county": "Broward",
@@ -303,20 +324,40 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-887 S",
-     "FL-887 N"
+     "FL-821 S",
+     "Florida's Tpke S"
     ],
-    "delay_s": 635,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-01T15:45:00Z"
+    "delay_s": 265,
+    "magnitude": 1,
+    "description": "Heavy rain; Heavy traffic",
+    "start": "2026-11-01T16:04:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 242,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-01T16:10:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 219,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-01T15:54:00Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 374,
+    "delay_s": 202,
     "magnitude": 1,
     "description": "Heavy rain; Slow traffic",
     "start": "2026-11-01T15:42:00Z"
@@ -324,23 +365,13 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 N"
+     "Florida's Tpke N",
+     "FL-821 N"
     ],
-    "delay_s": 263,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-01T15:19:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 261,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-01T15:20:30Z"
+    "delay_s": 200,
+    "magnitude": 1,
+    "description": "Heavy rain; Heavy traffic",
+    "start": "2026-11-01T16:05:30Z"
    },
    {
     "county": "Miami-Dade",
@@ -349,180 +380,144 @@
      "Don Shula Expy N",
      "FL-874 N"
     ],
-    "delay_s": 208,
+    "delay_s": 136,
     "magnitude": 1,
-    "description": "Slow traffic",
+    "description": "Heavy rain; Slow traffic",
     "start": "2026-11-01T15:48:00Z"
    },
    {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 192,
-    "magnitude": 1,
-    "description": "Heavy rain; Slow traffic",
-    "start": "2026-11-01T15:44:00Z"
-   },
-   {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 S"
+     "FL-826 N"
     ],
-    "delay_s": 175,
-    "magnitude": 1,
-    "description": "Heavy rain; Slow traffic",
-    "start": "2026-11-01T15:46:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 156,
-    "magnitude": 2,
-    "description": "Heavy rain; Queuing traffic",
-    "start": "2026-11-01T15:54:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 153,
+    "delay_s": 134,
     "magnitude": 1,
     "description": "Heavy rain; Heavy traffic",
-    "start": "2026-11-01T15:52:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": 152,
-    "magnitude": 2,
-    "description": "Heavy rain; Queuing traffic; Roadworks",
-    "start": "2026-11-01T15:59:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-1 S",
-     "US-41 S",
-     "FL-5"
-    ],
-    "delay_s": 137,
-    "magnitude": 1,
-    "description": "Heavy rain; Slow traffic",
-    "start": "2026-11-01T15:50:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 135,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-01T15:44:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Don Shula Expy S",
-     "FL-874 S",
-     "S Dade Expy S"
-    ],
-    "delay_s": 113,
-    "magnitude": 1,
-    "description": "Heavy rain; Slow traffic",
-    "start": "2026-11-01T15:52:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 95,
-    "magnitude": 1,
-    "description": "Heavy rain; Heavy traffic",
-    "start": "2026-11-01T15:53:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-75 S"
-    ],
-    "delay_s": 92,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-01T15:56:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 89,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-01T15:52:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 87,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-01T15:21:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 81,
-    "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-11-01T15:54:00Z"
+    "start": "2026-11-01T15:54:30Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-869 S"
     ],
-    "delay_s": 78,
+    "delay_s": 126,
     "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-11-01T15:53:00Z"
+    "description": "Heavy rain; Slow traffic",
+    "start": "2026-11-01T16:10:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826 N"
+    ],
+    "delay_s": 125,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-01T16:01:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 121,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-01T16:12:30Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "Florida's Tpke N",
+     "I-95 N"
+    ],
+    "delay_s": 106,
+    "magnitude": 1,
+    "description": "Heavy rain; Heavy traffic",
+    "start": "2026-11-01T15:42:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 102,
+    "magnitude": 1,
+    "description": "Heavy rain; Heavy traffic",
+    "start": "2026-11-01T15:44:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-821 N"
+    ],
+    "delay_s": 98,
+    "magnitude": 1,
+    "description": "Heavy rain; Heavy traffic",
+    "start": "2026-11-01T15:59:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 97,
+    "magnitude": 1,
+    "description": "Heavy rain; Slow traffic",
+    "start": "2026-11-01T15:44:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 92,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-01T15:36:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 91,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-11-01T15:19:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-869 S"
+    ],
+    "delay_s": 89,
+    "magnitude": 1,
+    "description": "Heavy rain; Heavy traffic",
+    "start": "2026-11-01T16:10:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "Snapper Creek Expy W",
+     "FL-878 W"
     ],
     "delay_s": 75,
     "magnitude": 1,
     "description": "Heavy rain; Heavy traffic",
-    "start": "2026-11-01T15:30:00Z"
+    "start": "2026-11-01T15:48:30Z"
    }
   ],
-  "incident_count": 345,
-  "named_count": 86,
-  "major_count": 11,
+  "incident_count": 329,
+  "named_count": 67,
+  "major_count": 12,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-01T11:01:07-05:00",
+  "fetched_at": "2026-11-01T11:16:09-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -566,7 +561,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-01T11:01:07-05:00",
+  "fetched_at": "2026-11-01T11:16:09-05:00",
   "issued": "700 AM EST Sun Nov 1 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 011118\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n700 AM EST Sun Nov 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Kelly"
@@ -574,7 +569,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-01T11:01:08-05:00",
+  "fetched_at": "2026-11-01T11:16:09-05:00",
   "florida": "$3.8690",
   "national": "$4.1732",
   "diesel": "$5.9926",
@@ -583,7 +578,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-01T11:01:09-05:00",
+  "fetched_at": "2026-11-01T11:16:11-05:00",
   "streams": {
    "local": [
     {
@@ -692,6 +687,14 @@
   ],
   "local": [
    {
+    "title": "Miami-Dade Sheriff’s Office deputies search for 18-year-old student’s killer",
+    "url": "https://www.local10.com/news/local/2026/11/01/miami-dade-sheriffs-office-deputies-search-for-18-year-old-students-killer/",
+    "published": "Sun, 01 Nov 2026 16:09:37 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Cubans skeptical of CIA recruitment appeal as daily struggles take priority",
     "url": "https://www.local10.com/news/local/2026/10/31/cubans-skeptical-of-cia-recruitment-appeal-as-daily-struggles-take-priority/",
     "published": "Sat, 31 Oct 2026 22:06:56 +0000",
@@ -743,14 +746,6 @@
     "title": "Police: Hialeah apartment complex shooting leaves 2 injured, 1 charged",
     "url": "https://www.local10.com/news/local/2026/10/31/police-hialeah-apartment-complex-shooting-leaves-2-injured-1-arrested/",
     "published": "Sat, 31 Oct 2026 11:07:14 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "New body camera video shows former Lauderhill officer questioned in Davie hit-and-run",
-    "url": "https://www.local10.com/news/local/2026/10/30/new-body-camera-video-shows-former-lauderhill-officer-questioned-in-davie-hit-and-run/",
-    "published": "Sat, 31 Oct 2026 03:25:59 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -956,7 +951,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-01T11:01:10-05:00",
+  "fetched_at": "2026-11-01T11:16:11-05:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -964,7 +959,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (252) + USGS (15)",
-  "fetched_at": "2026-11-01T11:01:13-05:00",
+  "fetched_at": "2026-11-01T11:16:15-05:00",
   "events": [
    {
     "lat": 12.8,
@@ -1266,7 +1261,7 @@
     "place": "China",
     "severity": "Green impact for forestfire in 5299 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033390",
-    "when": "Sun, 01 Nov 2026 12:01:35 GMT",
+    "when": "Sun, 01 Nov 2026 16:01:54 GMT",
     "source": "GDACS"
    },
    {
@@ -1278,7 +1273,7 @@
     "place": "China",
     "severity": "Green impact for forestfire in 5236 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033391",
-    "when": "Sun, 01 Nov 2026 12:02:25 GMT",
+    "when": "Sun, 01 Nov 2026 16:00:51 GMT",
     "source": "GDACS"
    },
    {
@@ -1290,7 +1285,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 5659 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033392",
-    "when": "Sun, 01 Nov 2026 12:03:26 GMT",
+    "when": "Sun, 01 Nov 2026 16:05:05 GMT",
     "source": "GDACS"
    },
    {
@@ -1302,7 +1297,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 5302 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033393",
-    "when": "Sun, 01 Nov 2026 12:03:57 GMT",
+    "when": "Sun, 01 Nov 2026 16:06:57 GMT",
     "source": "GDACS"
    },
    {
@@ -1350,7 +1345,7 @@
     "place": "Burkina Faso",
     "severity": "Green impact for forestfire in 5805 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033388",
-    "when": "Sun, 01 Nov 2026 12:04:38 GMT",
+    "when": "Sun, 01 Nov 2026 16:07:42 GMT",
     "source": "GDACS"
    },
    {
@@ -1458,7 +1453,7 @@
     "place": "Brazil",
     "severity": "Green impact for forestfire in 5300 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033394",
-    "when": "Sun, 01 Nov 2026 12:06:43 GMT",
+    "when": "Sun, 01 Nov 2026 16:08:36 GMT",
     "source": "GDACS"
    },
    {
@@ -1470,7 +1465,7 @@
     "place": "Burkina Faso",
     "severity": "Green impact for forestfire in 6664 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033383",
-    "when": "Sun, 01 Nov 2026 12:05:02 GMT",
+    "when": "Sun, 01 Nov 2026 16:11:32 GMT",
     "source": "GDACS"
    },
    {
@@ -1554,7 +1549,7 @@
     "place": "Niger",
     "severity": "Green impact for forestfire in 5758 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033345",
-    "when": "Sun, 01 Nov 2026 12:06:25 GMT",
+    "when": "Sun, 01 Nov 2026 16:11:19 GMT",
     "source": "GDACS"
    },
    {
@@ -1638,7 +1633,7 @@
     "place": "China",
     "severity": "Green impact for forestfire in 5088 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033270",
-    "when": "Sun, 01 Nov 2026 12:09:06 GMT",
+    "when": "Sun, 01 Nov 2026 16:13:21 GMT",
     "source": "GDACS"
    },
    {
@@ -1794,17 +1789,17 @@
     "place": "China",
     "severity": "Green impact for forestfire in 5672 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033371",
-    "when": "Sun, 01 Nov 2026 12:09:31 GMT",
+    "when": "Sun, 01 Nov 2026 16:12:56 GMT",
     "source": "GDACS"
    },
    {
-    "lat": -17.366040154051564,
-    "lon": 143.94462883284763,
+    "lat": -17.36604717364356,
+    "lon": 143.9447146048909,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Australia",
     "place": "Australia",
-    "severity": "Green impact for forestfire in 5002 ha",
+    "severity": "Green impact for forestfire in 5010 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033395",
     "when": "Sun, 01 Nov 2026 12:11:05 GMT",
     "source": "GDACS"
@@ -1818,7 +1813,7 @@
     "place": "Botswana",
     "severity": "Green impact for forestfire in 5168 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033396",
-    "when": "Sun, 01 Nov 2026 12:11:25 GMT",
+    "when": "Sun, 01 Nov 2026 16:11:52 GMT",
     "source": "GDACS"
    },
    {
@@ -2434,7 +2429,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-01T11:01:13-05:00",
+  "fetched_at": "2026-11-01T11:16:15-05:00",
   "countries": [
    {
     "iso": "COL",
