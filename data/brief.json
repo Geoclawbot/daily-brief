@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-01T09:54:18-05:00",
- "generated_at_utc": "2026-11-01T14:54:18+00:00",
+ "generated_at": "2026-11-01T10:01:04-05:00",
+ "generated_at_utc": "2026-11-01T15:01:04+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, November 1",
  "is_weekend": true,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-01T09:54:18-05:00",
+  "fetched_at": "2026-11-01T10:01:05-05:00",
   "curve": [
    {
     "time": "2026-11-01T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 78.3,
-   "feels": 83.1,
-   "humidity": 86,
-   "wind_mph": 12.6,
+   "temp": 78.0,
+   "feels": 82.3,
+   "humidity": 87,
+   "wind_mph": 13.9,
    "wind_dir": 96,
-   "observed_at": "2026-11-01T09:45"
+   "observed_at": "2026-11-01T10:00"
   },
   "today": {
    "high": 81.0,
@@ -166,7 +166,7 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-01T09:54:18-05:00",
+  "fetched_at": "2026-11-01T10:01:08-05:00",
   "alerts": [
    {
     "event": "Flood Watch",
@@ -183,33 +183,23 @@
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-01T09:54:19-05:00",
+  "fetched_at": "2026-11-01T10:01:09-05:00",
   "aqi": 32,
   "category": "Good",
-  "pm25": 4.8,
-  "pm10": 6.5,
-  "observed": "2026-11-01T09:00",
+  "pm25": 4.6,
+  "pm10": 6.1,
+  "observed": "2026-11-01T10:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-11-01T09:54:20-05:00",
+  "fetched_at": "2026-11-01T10:01:09-05:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-10-31T10:11:30Z"
-   },
    {
     "county": "Broward",
     "roads": [
@@ -228,17 +218,37 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
+    "start": "2026-10-31T10:11:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-818"
+     "I-595 W"
     ],
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-11-01T14:41:30Z"
+    "start": "2026-11-01T14:01:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-595 E"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-11-01T14:16:30Z"
    },
    {
     "county": "Broward",
@@ -291,21 +301,11 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-887 N"
-    ],
-    "delay_s": 488,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-01T13:46:00Z"
-   },
-   {
     "county": "Broward",
     "roads": [
      "FL-A1A"
     ],
-    "delay_s": 382,
+    "delay_s": 427,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-01T14:22:00Z"
@@ -313,29 +313,29 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-887 N"
+    ],
+    "delay_s": 416,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-01T13:46:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "I-395 W"
     ],
-    "delay_s": 210,
+    "delay_s": 250,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-01T14:11:00Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": 177,
-    "magnitude": 2,
-    "description": "Queuing traffic; Roadworks",
-    "start": "2026-11-01T14:42:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 157,
+    "delay_s": 148,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-11-01T14:38:30Z"
@@ -343,31 +343,51 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-9"
+     "I-395 W"
     ],
-    "delay_s": 152,
+    "delay_s": 131,
+    "magnitude": 2,
+    "description": "Heavy rain; Queuing traffic",
+    "start": "2026-11-01T14:08:00Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": 128,
     "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-01T14:53:00Z"
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-11-01T14:59:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": 127,
+    "magnitude": 2,
+    "description": "Queuing traffic; Roadworks",
+    "start": "2026-11-01T14:42:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-395 W"
+     "FL-887 S"
     ],
-    "delay_s": 100,
+    "delay_s": 95,
     "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-01T14:08:00Z"
+    "description": "Heavy rain; Slow traffic",
+    "start": "2026-11-01T14:49:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 90,
+    "delay_s": 82,
     "magnitude": 1,
-    "description": "Heavy traffic",
+    "description": "Heavy rain; Heavy traffic",
     "start": "2026-11-01T14:41:00Z"
    },
    {
@@ -376,81 +396,50 @@
      "US-41 W",
      "FL-A1A S"
     ],
-    "delay_s": 79,
+    "delay_s": 66,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-01T14:39:30Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-887 S"
+     "I-95 N"
     ],
-    "delay_s": 71,
-    "magnitude": 2,
-    "description": "Heavy rain; Queuing traffic",
-    "start": "2026-11-01T14:49:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 45,
+    "delay_s": 35,
     "magnitude": 1,
     "description": "Heavy rain; Heavy traffic",
-    "start": "2026-11-01T14:24:00Z"
+    "start": "2026-11-01T14:58:30Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 44,
+    "delay_s": 35,
     "magnitude": 1,
-    "description": "Heavy traffic",
+    "description": "Heavy rain; Heavy traffic",
     "start": "2026-11-01T14:44:00Z"
    },
    {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 S"
-    ],
-    "delay_s": 40,
-    "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-11-01T14:50:30Z"
-   },
-   {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 31,
+    "delay_s": 32,
     "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-11-01T14:38:30Z"
+    "description": "Heavy rain; Heavy traffic",
+    "start": "2026-11-01T14:57:00Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 N"
+     "I-195 E"
     ],
-    "delay_s": 31,
+    "delay_s": 29,
     "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-01T14:44:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 27,
-    "magnitude": 1,
-    "description": "Heavy traffic",
-    "start": "2026-11-01T14:50:30Z"
+    "description": "Heavy rain; Slow traffic",
+    "start": "2026-11-01T14:57:30Z"
    },
    {
     "county": "Broward",
@@ -503,17 +492,28 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-10-31T13:24:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 W",
+     "US-41 E"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-10-31T13:24:00Z"
    }
   ],
-  "incident_count": 289,
-  "named_count": 38,
-  "major_count": 9,
+  "incident_count": 291,
+  "named_count": 37,
+  "major_count": 10,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-01T09:54:20-05:00",
+  "fetched_at": "2026-11-01T10:01:10-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -557,7 +557,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-01T09:54:21-05:00",
+  "fetched_at": "2026-11-01T10:01:10-05:00",
   "issued": "700 AM EST Sun Nov 1 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 011118\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n700 AM EST Sun Nov 1 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Kelly"
@@ -565,7 +565,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-01T09:54:21-05:00",
+  "fetched_at": "2026-11-01T10:01:10-05:00",
   "florida": "$3.8690",
   "national": "$4.1732",
   "diesel": "$5.9926",
@@ -574,7 +574,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-01T09:54:22-05:00",
+  "fetched_at": "2026-11-01T10:01:11-05:00",
   "streams": {
    "local": [
     {
@@ -813,6 +813,14 @@
   ],
   "colombia": [
    {
+    "title": "Esperanzador parte médico de 'Kbeto' Zuleta: se conocen detalles sobre el estado de salud del cantante vallenato desde Barranquilla",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/cuerpo-medico-de-kbeto-zuleta-entrega-parte-esperanzador-sobre-el-estado-de-salud-del-cantante-vallenato-3597809",
+    "published": "2026-11-01T09:45:45-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/28/6ae25bba80c2f.r_d.57-233-0.png",
+    "media_type": "image"
+   },
+   {
     "title": "El testimonio de los pobladores que se lanzaron al río para salvar a 23 integrantes de la agrupación de Kbeto Zuleta tras el accidente en Ariguaní",
     "url": "https://www.eltiempo.com/colombia/barranquilla/los-heroes-de-la-madrugada-en-ariguani-relato-de-los-pobladores-que-se-lanzaron-al-rio-para-salvar-a-23-integrantes-de-la-agrupacion-de-kbeto-zuleta-3597597",
     "published": "2026-11-01T09:15:00-05:00",
@@ -866,14 +874,6 @@
     "published": "2026-10-31T20:34:01-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/07/10/6a515de451d68.r_d.647-469-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Trabajo sí hay: más de 20.000 vacantes en el Empleo Fest 2026 que se llevará a cabo en Medellín en el centro de convenciones Plaza Mayor",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/trabajo-si-hay-mas-de-20-000-vacantes-en-el-empleo-fest-2026-que-se-llevara-a-cabo-en-medellin-en-el-centro-de-convenciones-plaza-mayor-3597769",
-    "published": "2026-10-31T20:19:46-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/02/6abfa737b93f3.jpeg",
     "media_type": "image"
    }
   ],
@@ -947,7 +947,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-01T09:54:23-05:00",
+  "fetched_at": "2026-11-01T10:01:12-05:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -955,7 +955,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (252) + USGS (16)",
-  "fetched_at": "2026-11-01T09:54:26-05:00",
+  "fetched_at": "2026-11-01T10:01:16-05:00",
   "events": [
    {
     "lat": 12.8,
@@ -2426,28 +2426,8 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-01T09:54:26-05:00",
+  "fetched_at": "2026-11-01T10:01:16-05:00",
   "countries": [
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "Temblor hoy en Colombia | Reportan sismo de magnitud 3,1 en el océano Pacífico este domingo 1 de noviembre de 2026: ¿se sintió en el Eje Cafetero?",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-sismo-de-magnitud-3-1-en-el-oceano-pacifico-este-domingo-1-de-noviembre-de-2026-se-sintio-en-el-eje-cafetero-3597797",
-      "published": "2026-11-01T07:08:47-05:00",
-      "section": "colombia"
-     },
-     {
-      "title": "Trabajo sí hay: más de 20.000 vacantes en el Empleo Fest 2026 que se llevará a cabo en Medellín en el centro de convenciones Plaza Mayor",
-      "url": "https://www.eltiempo.com/colombia/otras-ciudades/trabajo-si-hay-mas-de-20-000-vacantes-en-el-empleo-fest-2026-que-se-llevara-a-cabo-en-medellin-en-el-centro-de-convenciones-plaza-mayor-3597769",
-      "published": "2026-10-31T20:19:46-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 2,
-    "issue": "Temblor hoy en Colombia | Reportan sismo de magnitud 3,1 en el océano Pacífico este domingo 1 de noviembre de 2026: ¿se sintió en el Eje Cafetero?"
-   },
    {
     "iso": "CHN",
     "name": "China",
@@ -2461,6 +2441,20 @@
     ],
     "count": 1,
     "issue": "Key takeaways from this week's political meeting in Beijing"
+   },
+   {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "Temblor hoy en Colombia | Reportan sismo de magnitud 3,1 en el océano Pacífico este domingo 1 de noviembre de 2026: ¿se sintió en el Eje Cafetero?",
+      "url": "https://www.eltiempo.com/colombia/otras-ciudades/temblor-hoy-en-colombia-reportan-sismo-de-magnitud-3-1-en-el-oceano-pacifico-este-domingo-1-de-noviembre-de-2026-se-sintio-en-el-eje-cafetero-3597797",
+      "published": "2026-11-01T07:08:47-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 1,
+    "issue": "Temblor hoy en Colombia | Reportan sismo de magnitud 3,1 en el océano Pacífico este domingo 1 de noviembre de 2026: ¿se sintió en el Eje Cafetero?"
    },
    {
     "iso": "FRA",
