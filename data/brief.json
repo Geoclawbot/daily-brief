@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-03T11:56:05-05:00",
- "generated_at_utc": "2026-11-03T16:56:05+00:00",
+ "generated_at": "2026-11-03T12:01:04-05:00",
+ "generated_at_utc": "2026-11-03T17:01:04+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, November 3",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-03T11:56:05-05:00",
+  "fetched_at": "2026-11-03T12:01:05-05:00",
   "curve": [
    {
     "time": "2026-11-03T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 82.2,
-   "feels": 90.3,
+   "temp": 82.1,
+   "feels": 89.8,
    "humidity": 82,
-   "wind_mph": 11.0,
-   "wind_dir": 102,
-   "observed_at": "2026-11-03T11:45"
+   "wind_mph": 11.2,
+   "wind_dir": 101,
+   "observed_at": "2026-11-03T12:00"
   },
   "today": {
    "high": 82.4,
@@ -166,29 +166,91 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-03T11:56:05-05:00",
+  "fetched_at": "2026-11-03T12:01:05-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-03T11:56:06-05:00",
-  "aqi": 35,
+  "fetched_at": "2026-11-03T12:01:06-05:00",
+  "aqi": 36,
   "category": "Good",
   "pm25": 10.9,
-  "pm10": 16.2,
-  "observed": "2026-11-03T11:00",
+  "pm10": 16.5,
+  "observed": "2026-11-03T12:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-11-03T11:56:06-05:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-11-03T12:01:09-05:00",
+  "route_shown": true,
+  "leg": "Jackson Memorial → Home",
+  "direction": "return",
+  "depart_clock": "3:30 PM",
+  "depart_at": "2026-11-03T15:30:00-05:00",
+  "miles": 20.6,
+  "minutes": 60,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 22.6,
+    "minutes": 53,
+    "toll": true,
+    "saves": 7
+   },
+   {
+    "miles": 28.6,
+    "minutes": 57,
+    "toll": true,
+    "saves": 3
+   },
+   {
+    "miles": 25.5,
+    "minutes": 57,
+    "toll": true,
+    "saves": 3
+   },
+   {
+    "miles": 20.8,
+    "minutes": 59,
+    "toll": true,
+    "saves": 1
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 60,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 26.6,
+    "minutes": 64,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.1,
+    "minutes": 74,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.5,
+    "minutes": 70,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 60,
+   "delay_minutes": 0,
+   "saves": 0
+  },
   "incidents": [
    {
     "county": "Broward",
@@ -258,7 +320,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-11-02T00:11:00Z"
+    "start": "2026-11-02T00:18:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -268,7 +330,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-11-02T00:18:00Z"
+    "start": "2026-11-02T00:11:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -293,12 +355,63 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 669,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-03T13:52:38Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-932"
     ],
-    "delay_s": 466,
+    "delay_s": 449,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-03T15:44:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-976"
+    ],
+    "delay_s": 386,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-03T16:48:24Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-94"
+    ],
+    "delay_s": 308,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-03T16:51:53Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 297,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-03T15:57:50Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-948"
+    ],
+    "delay_s": 296,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-11-03T16:49:49Z"
    },
    {
     "county": "Miami-Dade",
@@ -307,52 +420,10 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 395,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-03T16:46:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 374,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-03T13:52:38Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 337,
+    "delay_s": 286,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-11-03T15:56:22Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-948"
-    ],
-    "delay_s": 282,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-11-03T16:49:49Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 270,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-03T16:48:24Z"
+    "start": "2026-11-03T16:46:45Z"
    },
    {
     "county": "Miami-Dade",
@@ -362,58 +433,17 @@
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 266,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 221,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-11-03T16:36:18Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 262,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-03T15:57:50Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 253,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-03T11:17:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 200,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-03T16:25:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-94"
-    ],
-    "delay_s": 187,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-03T16:51:53Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-986"
     ],
-    "delay_s": 182,
+    "delay_s": 213,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-03T16:42:15Z"
@@ -421,20 +451,30 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S",
-     "US-41 N"
+     "FL-91 S",
+     "Florida's Tpke S"
     ],
-    "delay_s": 182,
+    "delay_s": 207,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-03T15:56:22Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 207,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-03T16:34:19Z"
+    "start": "2026-11-03T16:25:45Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-823"
     ],
-    "delay_s": 180,
+    "delay_s": 191,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-03T16:24:45Z"
@@ -442,13 +482,34 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-441 N",
-     "US-441 S"
+     "US-41 S",
+     "US-41 N"
     ],
-    "delay_s": 176,
+    "delay_s": 173,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-03T16:34:19Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 170,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-03T16:45:48Z"
+    "start": "2026-11-03T11:17:15Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 163,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-03T16:58:13Z"
    },
    {
     "county": "Miami-Dade",
@@ -456,7 +517,7 @@
      "US-41 S",
      "US-41 N"
     ],
-    "delay_s": 165,
+    "delay_s": 160,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-11-03T16:32:32Z"
@@ -464,19 +525,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-968"
-    ],
-    "delay_s": 158,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-03T16:18:21Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-907"
     ],
-    "delay_s": 156,
+    "delay_s": 160,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-11-03T16:52:56Z"
@@ -484,33 +535,43 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-823"
+     "I-95 S"
     ],
     "delay_s": 155,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-11-03T16:32:32Z"
+    "start": "2026-11-03T16:19:15Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "FL-9336"
     ],
-    "delay_s": 154,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-03T16:19:15Z"
+    "delay_s": 151,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-03T15:50:15Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-858"
+    ],
+    "delay_s": 150,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-03T16:58:13Z"
    }
   ],
-  "incident_count": 348,
-  "named_count": 69,
-  "major_count": 10,
+  "incident_count": 349,
+  "named_count": 71,
+  "major_count": 11,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-03T11:56:07-05:00",
+  "fetched_at": "2026-11-03T12:01:09-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -562,7 +623,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-03T11:56:08-05:00",
+  "fetched_at": "2026-11-03T12:01:09-05:00",
   "issued": "700 AM EST Tue Nov 3 2026",
   "areas": [
    {
@@ -576,7 +637,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-03T11:56:08-05:00",
+  "fetched_at": "2026-11-03T12:01:10-05:00",
   "florida": "$3.8641",
   "national": "$4.1493",
   "diesel": "$5.9748",
@@ -585,7 +646,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-03T11:56:09-05:00",
+  "fetched_at": "2026-11-03T12:01:12-05:00",
   "streams": {
    "local": [
     {
@@ -882,7 +943,7 @@
    {
     "title": "Escalada terrorista en Tolima y el suroccidente de Colombia; hay 18 heridos y 117 viviendas afectadas, según la gobernadora Adriana Magali Matiz",
     "url": "https://www.eltiempo.com/colombia/otras-ciudades/escalada-terrorista-en-tolima-y-el-suroccidente-de-colombia-hay-18-heridos-y-117-viviendas-afectadas-segun-la-gobernadora-adriana-magali-matiz-3598079",
-    "published": "2026-11-03T11:31:56-05:00",
+    "published": "2026-11-03T11:49:28-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/11/02/6ae8acffbb63f.r_d.511-427-0.jpeg",
     "media_type": "image"
@@ -958,7 +1019,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-03T11:56:10-05:00",
+  "fetched_at": "2026-11-03T12:01:12-05:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -966,7 +1027,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (238) + USGS (9)",
-  "fetched_at": "2026-11-03T11:56:16-05:00",
+  "fetched_at": "2026-11-03T12:01:17-05:00",
   "events": [
    {
     "lat": 15.8,
@@ -2430,7 +2491,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-03T11:56:16-05:00",
+  "fetched_at": "2026-11-03T12:01:17-05:00",
   "countries": [
    {
     "iso": "UKR",
@@ -2471,7 +2532,7 @@
      {
       "title": "Escalada terrorista en Tolima y el suroccidente de Colombia; hay 18 heridos y 117 viviendas afectadas, según la gobernadora Adriana Magali Matiz",
       "url": "https://www.eltiempo.com/colombia/otras-ciudades/escalada-terrorista-en-tolima-y-el-suroccidente-de-colombia-hay-18-heridos-y-117-viviendas-afectadas-segun-la-gobernadora-adriana-magali-matiz-3598079",
-      "published": "2026-11-03T11:31:56-05:00",
+      "published": "2026-11-03T11:49:28-05:00",
       "section": "colombia"
      }
     ],
