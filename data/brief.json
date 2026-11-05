@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-05T11:45:57-05:00",
- "generated_at_utc": "2026-11-05T16:45:57+00:00",
+ "generated_at": "2026-11-05T12:01:00-05:00",
+ "generated_at_utc": "2026-11-05T17:01:00+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, November 5",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-05T11:45:57-05:00",
+  "fetched_at": "2026-11-05T12:01:01-05:00",
   "curve": [
    {
     "time": "2026-11-05T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 81.4,
-   "feels": 88.7,
-   "humidity": 73,
-   "wind_mph": 5.4,
-   "wind_dir": 59,
-   "observed_at": "2026-11-05T11:45"
+   "temp": 81.6,
+   "feels": 89.2,
+   "humidity": 72,
+   "wind_mph": 5.5,
+   "wind_dir": 57,
+   "observed_at": "2026-11-05T12:00"
   },
   "today": {
    "high": 81.7,
@@ -166,40 +166,92 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-05T11:45:58-05:00",
+  "fetched_at": "2026-11-05T12:01:02-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-05T11:45:59-05:00",
-  "aqi": 55,
+  "fetched_at": "2026-11-05T12:01:03-05:00",
+  "aqi": 56,
   "category": "Moderate",
-  "pm25": 10.7,
-  "pm10": 15.1,
-  "observed": "2026-11-05T11:00",
+  "pm25": 10.6,
+  "pm10": 15.0,
+  "observed": "2026-11-05T12:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-11-05T11:45:59-05:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
-  "incidents": [
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-11-05T12:01:05-05:00",
+  "route_shown": true,
+  "leg": "Jackson Memorial → Home",
+  "direction": "return",
+  "depart_clock": "3:30 PM",
+  "depart_at": "2026-11-05T15:30:00-05:00",
+  "miles": 20.6,
+  "minutes": 60,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
    {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-10-31T10:12:00Z"
+    "miles": 22.6,
+    "minutes": 54,
+    "toll": true,
+    "saves": 6
    },
+   {
+    "miles": 28.6,
+    "minutes": 58,
+    "toll": true,
+    "saves": 2
+   },
+   {
+    "miles": 20.8,
+    "minutes": 59,
+    "toll": true,
+    "saves": 1
+   },
+   {
+    "miles": 26.8,
+    "minutes": 59,
+    "toll": true,
+    "saves": 1
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 60,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 23.7,
+    "minutes": 69,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.5,
+    "minutes": 70,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.1,
+    "minutes": 75,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 60,
+   "delay_minutes": 0,
+   "saves": 0
+  },
+  "incidents": [
    {
     "county": "Broward",
     "roads": [
@@ -218,7 +270,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-10-31T10:12:00Z"
    },
    {
     "county": "Broward",
@@ -229,6 +281,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -283,30 +345,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Bridge closed",
-    "start": "2026-11-05T16:42:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 890,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-05T13:25:55Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-922"
     ],
-    "delay_s": 804,
+    "delay_s": 833,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-05T15:05:15Z"
@@ -314,50 +355,30 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 722,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-05T13:25:55Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-826 S"
     ],
-    "delay_s": 737,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-05T15:45:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 517,
+    "delay_s": 647,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-11-05T15:23:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 W",
-     "US-41 E"
-    ],
-    "delay_s": 496,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-05T16:36:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 490,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-05T12:45:16Z"
+    "start": "2026-11-05T15:45:45Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-953"
     ],
-    "delay_s": 352,
+    "delay_s": 562,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-05T16:35:45Z"
@@ -365,44 +386,19 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-27 S",
-     "FL-25"
+     "FL-112 W"
     ],
-    "delay_s": 329,
+    "delay_s": 552,
     "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-11-05T13:29:49Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826",
-     "FL-826 E",
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 327,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-05T15:31:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 307,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-05T16:41:15Z"
+    "description": "Stationary traffic",
+    "start": "2026-11-05T12:09:15Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-907"
     ],
-    "delay_s": 294,
+    "delay_s": 455,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-11-05T16:15:45Z"
@@ -410,57 +406,63 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "US-1 S",
-     "US-41 S",
-     "FL-5"
+     "FL-826"
     ],
-    "delay_s": 293,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-05T16:22:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-9"
-    ],
-    "delay_s": 262,
+    "delay_s": 398,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-05T16:39:15Z"
+    "start": "2026-11-05T16:58:15Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "US-1 S",
-     "FL-5"
+     "US-41 W",
+     "US-41 E"
     ],
-    "delay_s": 257,
+    "delay_s": 379,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-05T16:08:45Z"
+    "start": "2026-11-05T16:36:45Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-A1A"
+     "I-95 S"
     ],
-    "delay_s": 242,
+    "delay_s": 363,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-11-05T16:39:45Z"
+    "start": "2026-11-05T15:23:15Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-824"
+    ],
+    "delay_s": 359,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-05T16:48:15Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-932"
+     "FL-976"
     ],
-    "delay_s": 229,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-05T16:28:45Z"
+    "delay_s": 334,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-05T12:45:16Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 N"
+    ],
+    "delay_s": 324,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-05T16:40:15Z"
    },
    {
     "county": "Miami-Dade",
@@ -468,52 +470,104 @@
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 225,
+    "delay_s": 316,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-05T16:19:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 E"
-    ],
-    "delay_s": 221,
-    "magnitude": 1,
-    "description": "Slow traffic; Roadworks",
-    "start": "2026-11-05T13:56:48Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 221,
-    "magnitude": 2,
-    "description": "Queuing traffic",
     "start": "2026-11-05T10:34:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 305,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-05T11:34:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 W",
+     "US-41 E"
+    ],
+    "delay_s": 256,
+    "magnitude": 3,
+    "description": "Stationary traffic; Lane closed",
+    "start": "2026-11-05T16:57:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 250,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-05T16:52:15Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-820"
+    ],
+    "delay_s": 248,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-05T16:49:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-969"
+    ],
+    "delay_s": 239,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-05T16:18:45Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-948"
     ],
-    "delay_s": 212,
+    "delay_s": 233,
     "magnitude": 3,
     "description": "Stationary traffic; Roadworks",
     "start": "2026-11-05T16:41:15Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-854"
+    ],
+    "delay_s": 231,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-05T12:28:45Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-811"
+    ],
+    "delay_s": 222,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-05T16:54:45Z"
    }
   ],
-  "incident_count": 443,
-  "named_count": 101,
-  "major_count": 13,
+  "incident_count": 454,
+  "named_count": 104,
+  "major_count": 12,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-05T11:46:00-05:00",
+  "fetched_at": "2026-11-05T12:01:06-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -558,7 +612,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-05T11:46:00-05:00",
+  "fetched_at": "2026-11-05T12:01:06-05:00",
   "issued": "700 AM EST Thu Nov 5 2026",
   "areas": [
    {
@@ -572,7 +626,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-05T11:46:00-05:00",
+  "fetched_at": "2026-11-05T12:01:06-05:00",
   "florida": "$3.8344",
   "national": "$4.1003",
   "diesel": "$5.9413",
@@ -581,7 +635,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-05T11:46:02-05:00",
+  "fetched_at": "2026-11-05T12:01:08-05:00",
   "streams": {
    "local": [
     {
@@ -758,7 +812,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/mayor-meiner-proposes-mounted-cops/",
     "published": "Thu, 05 Nov 2026 03:49:32 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/ab16507c-6544-4abb-aaad-d851911848c7/ddf89109-4984-48ac-be5e-1a7e94b18202/main.mp4?fastly_token=NmFlY2I2ZDJfZWE5NmU1ZmU0Mjg2ZmY1MGVjNTBlYTQ5MjZjMTg0ZThjNzY3NmY0NzdkYmM0YTc3MTExMDUwODM5ZDgwNjdkZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hYjE2NTA3Yy02NTQ0LTRhYmItYWFhZC1kODUxOTExODQ4YzcvZGRmODkxMDktNDk4NC00OGFjLWJlNWUtMWE3ZTk0YjE4MjAyL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/ab16507c-6544-4abb-aaad-d851911848c7/ddf89109-4984-48ac-be5e-1a7e94b18202/main.mp4?fastly_token=NmFlZDAxN2JfOTg3YjM2NjQwMjMzZjZiMmY3ZDk5NDUyNGJmYmU1N2U5NDI1ODM5MzdkMDVmNTZiNTcxNGE1YWExYjJlOTRiNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hYjE2NTA3Yy02NTQ0LTRhYmItYWFhZC1kODUxOTExODQ4YzcvZGRmODkxMDktNDk4NC00OGFjLWJlNWUtMWE3ZTk0YjE4MjAyL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -766,7 +820,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/coral-way-dangerous-drive-crash/",
     "published": "Thu, 05 Nov 2026 03:23:50 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/64236868-efbd-4cb4-a018-ba04aa528a58/1026297a-5adb-42c5-a360-5b9f1f4bd1ae/main.mp4?fastly_token=NmFlY2I1MWFfYjBkOGQ0MDYwNmY3ZWIzYTAyMzk2OTg4OWY2OWQzMTA2ODA3MWI5NmFjMmU2NWZmYmNmMTI3N2IyZmI3Y2M4ZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82NDIzNjg2OC1lZmJkLTRjYjQtYTAxOC1iYTA0YWE1MjhhNTgvMTAyNjI5N2EtNWFkYi00MmM1LWEzNjAtNWI5ZjFmNGJkMWFlL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/64236868-efbd-4cb4-a018-ba04aa528a58/1026297a-5adb-42c5-a360-5b9f1f4bd1ae/main.mp4?fastly_token=NmFlY2ZmMTlfNTQ0M2JmZDBiNDI3YmViNjE5OWZlZDBkZTBjZTFjZTQ5Y2QyYWVkYjViNWE3M2ZiOWE3MGY4ZTA0ODg2NDlhMV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82NDIzNjg2OC1lZmJkLTRjYjQtYTAxOC1iYTA0YWE1MjhhNTgvMTAyNjI5N2EtNWFkYi00MmM1LWEzNjAtNWI5ZjFmNGJkMWFlL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -782,43 +836,27 @@
     "url": "https://wsvn.com/news/local/miami-dade/rodne-joseph-faces-felony-charges/",
     "published": "Wed, 04 Nov 2026 19:14:22 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/86dc8a87-d5b4-4124-92cd-3ae0dd4c8727/099cc069-12af-4f9f-8ca3-00a86718014d/main.mp4?fastly_token=NmFlY2JhOGJfNmMyOTVmZDIzOTkzYTkxZmVmMWZjMTgxNzNmOWI2NjM1OGZhNmQzMTI3OGFjMDdkMjNiYzQ3NTQ4YmJiMjkyZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84NmRjOGE4Ny1kNWI0LTQxMjQtOTJjZC0zYWUwZGQ0Yzg3MjcvMDk5Y2MwNjktMTJhZi00ZjlmLThjYTMtMDBhODY3MTgwMTRkL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Questions swirl after deadly chopper crash off Key Biscayne as 2 surviving victims recover",
-    "url": "https://wsvn.com/news/local/miami-dade/key-biscayne-helicopter-crash/",
-    "published": "Thu, 05 Nov 2026 11:35:49 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/36ac03c0-b744-42f6-ab99-81f7b83195c2/cb9bcb04-c8ca-4517-a248-bec51f867456/main.mp4?fastly_token=NmFlY2YyZjlfMmM4NWRjNjhiMjAwOTQ5Y2FhNGIyM2E3ZmVkZDYyM2VkZTU5NGJhZjVhNDczYTg4MTk5ODcwYmMxNThkNTRmY18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zNmFjMDNjMC1iNzQ0LTQyZjYtYWI5OS04MWY3YjgzMTk1YzIvY2I5YmNiMDQtYzhjYS00NTE3LWEyNDgtYmVjNTFmODY3NDU2L21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Miami Beach officials propose adding a horseback patrol unit by 2028",
-    "url": "https://wsvn.com/news/local/miami-dade/mayor-meiner-proposes-mounted-cops/",
-    "published": "Thu, 05 Nov 2026 03:49:32 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/ab16507c-6544-4abb-aaad-d851911848c7/ddf89109-4984-48ac-be5e-1a7e94b18202/main.mp4?fastly_token=NmFlY2I2ZDJfZWE5NmU1ZmU0Mjg2ZmY1MGVjNTBlYTQ5MjZjMTg0ZThjNzY3NmY0NzdkYmM0YTc3MTExMDUwODM5ZDgwNjdkZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hYjE2NTA3Yy02NTQ0LTRhYmItYWFhZC1kODUxOTExODQ4YzcvZGRmODkxMDktNDk4NC00OGFjLWJlNWUtMWE3ZTk0YjE4MjAyL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Doral residents raise questions in town hall over potential traffic gridlock ahead of G20 summit",
-    "url": "https://wsvn.com/news/local/miami-dade/doral-residents-g20-concerns/",
-    "published": "Thu, 05 Nov 2026 03:30:49 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/823b8b09-bc91-4f4e-8d85-de2c2fd37360/6594655d-3ab7-4b6a-be07-f41081d4b431/main.mp4?fastly_token=NmFlY2U2MDVfMDBkNTNmOWI1OGFkMWI1OTQyYzczMjM5OWZjZDNlNDU1MjkyZDhmZDRhMDUxNmI1MmM3YjQzZjhjMjFlZmYwZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84MjNiOGIwOS1iYzkxLTRmNGUtOGQ4NS1kZTJjMmZkMzczNjAvNjU5NDY1NWQtM2FiNy00YjZhLWJlMDctZjQxMDgxZDRiNDMxL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Coral Way reopens after car comes to crashing stop near SW 72nd Ave",
-    "url": "https://wsvn.com/news/local/miami-dade/coral-way-dangerous-drive-crash/",
-    "published": "Thu, 05 Nov 2026 03:23:50 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/64236868-efbd-4cb4-a018-ba04aa528a58/1026297a-5adb-42c5-a360-5b9f1f4bd1ae/main.mp4?fastly_token=NmFlY2I1MWFfYjBkOGQ0MDYwNmY3ZWIzYTAyMzk2OTg4OWY2OWQzMTA2ODA3MWI5NmFjMmU2NWZmYmNmMTI3N2IyZmI3Y2M4ZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82NDIzNjg2OC1lZmJkLTRjYjQtYTAxOC1iYTA0YWE1MjhhNTgvMTAyNjI5N2EtNWFkYi00MmM1LWEzNjAtNWI5ZjFmNGJkMWFlL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/86dc8a87-d5b4-4124-92cd-3ae0dd4c8727/099cc069-12af-4f9f-8ca3-00a86718014d/main.mp4?fastly_token=NmFlZDA0YjBfNzllOWQxYmYyZTgzNDI1YWZkNzE2ZmZmZmMwNzliNzk4MDA1ODdkMDU3N2FhOThmYWY4NGZkZjVmMWUyM2U1YV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84NmRjOGE4Ny1kNWI0LTQxMjQtOTJjZC0zYWUwZGQ0Yzg3MjcvMDk5Y2MwNjktMTJhZi00ZjlmLThjYTMtMDBhODY3MTgwMTRkL21haW4ubXA0",
     "media_type": "video"
    }
   ],
   "colombia": [
+   {
+    "title": "Fuertes combates entre el Ejército y las disidencias de las Farc mantienen confinada a la población en Timba, Cauca",
+    "url": "https://www.eltiempo.com/colombia/cali/fuertes-combates-entre-el-ejercito-y-las-disidencias-de-las-farc-mantienen-confinada-a-la-poblacion-en-timba-cauca-3598723",
+    "published": "2026-11-05T11:49:19-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/11/05/6aecb12781113.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "En Santander se hizo el único Laboratorio de Aguas, Suelos e Hidrología del nororiente colombiano, ¿para qué sirve y cuál es su funcionalidad?",
+    "url": "https://www.eltiempo.com/colombia/santander/en-santander-se-hizo-el-unico-laboratorio-de-aguas-suelos-e-hidrologia-del-nororiente-colombiano-para-que-sirve-y-cual-es-su-funcionalidad-3598721",
+    "published": "2026-11-05T11:36:45-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/11/05/6aecaf0661cb6.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Así se alista Barranquilla para recibir la final de la Copa Sudamericana entre Boca Juniors y Atlético Mineiro en el renovado estadio Metropolitano",
     "url": "https://www.eltiempo.com/colombia/barranquilla/asi-se-alista-barranquilla-para-recibir-la-final-de-la-copa-sudamericana-entre-boca-juniors-y-atletico-mineiro-en-el-renovado-estadio-metropolitano-3598708",
@@ -865,22 +903,6 @@
     "published": "2026-11-05T10:15:26-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/11/05/6aec9c6a84922.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Empezó a boxear a los 9 años en Barranquilla y la pandemia lo bajó del ring: el patrullero que enseña a pelear a niños de pueblos del Atlántico",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/empezo-a-boxear-a-los-9-anos-en-barranquilla-y-la-pandemia-lo-bajo-del-ring-el-patrullero-que-ensena-a-pelear-a-ninos-de-pueblos-del-atlantico-3598650",
-    "published": "2026-11-05T10:01:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/11/05/6aec8cf4e1d51.png",
-    "media_type": "image"
-   },
-   {
-    "title": "¿Cómo sigue Kbeto Zuleta? Entre oraciones, homenajes y mensajes de apoyo, el vallenato sigue de cerca la recuperación del artista en Barranquilla",
-    "url": "https://www.eltiempo.com/colombia/barranquilla/como-sigue-kbeto-zuleta-entre-oraciones-homenajes-y-mensajes-de-apoyo-el-vallenato-sigue-de-cerca-la-recuperacion-del-artista-en-barranquilla-3598667",
-    "published": "2026-11-05T10:05:46-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/28/6ae1d9e368ffb.r_d.168-252-0.png",
     "media_type": "image"
    }
   ],
@@ -954,7 +976,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-05T11:46:03-05:00",
+  "fetched_at": "2026-11-05T12:01:08-05:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -962,7 +984,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (233) + USGS (6)",
-  "fetched_at": "2026-11-05T11:46:06-05:00",
+  "fetched_at": "2026-11-05T12:01:12-05:00",
   "events": [
    {
     "lat": 15.8,
@@ -2423,7 +2445,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-05T11:46:06-05:00",
+  "fetched_at": "2026-11-05T12:01:12-05:00",
   "countries": [
    {
     "iso": "COL",
@@ -2496,7 +2518,7 @@
     "issue": "Democrats seize full control of Congress. And, which candidates made history last night"
    }
   ],
-  "headlines_scanned": 32,
+  "headlines_scanned": 28,
   "countries_matched": 5,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
