@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-06T11:00:27-05:00",
- "generated_at_utc": "2026-11-06T16:00:27+00:00",
+ "generated_at": "2026-11-06T11:15:27-05:00",
+ "generated_at_utc": "2026-11-06T16:15:27+00:00",
  "weekday": "Friday",
  "date_label": "Friday, November 6",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-06T11:00:28-05:00",
+  "fetched_at": "2026-11-06T11:15:27-05:00",
   "curve": [
    {
     "time": "2026-11-06T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 79.7,
-   "feels": 88.6,
-   "humidity": 83,
+   "temp": 80.4,
+   "feels": 89.2,
+   "humidity": 81,
    "wind_mph": 3.4,
-   "wind_dir": 18,
-   "observed_at": "2026-11-06T11:00"
+   "wind_dir": 42,
+   "observed_at": "2026-11-06T11:15"
   },
   "today": {
    "high": 82.3,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-06T11:00:29-05:00",
+  "fetched_at": "2026-11-06T11:15:28-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-06T11:00:30-05:00",
+  "fetched_at": "2026-11-06T11:15:28-05:00",
   "aqi": 53,
   "category": "Moderate",
   "pm25": 8.8,
@@ -185,18 +185,28 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-11-06T11:00:30-05:00",
+  "fetched_at": "2026-11-06T11:15:29-05:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 E"
+    ],
+    "delay_s": 1242,
+    "magnitude": 3,
+    "description": "Stationary traffic; Left lane closed",
+    "start": "2026-11-06T13:07:53Z"
+   },
    {
     "county": "Broward",
     "roads": [
      "FL-91 N",
      "Florida's Tpke N"
     ],
-    "delay_s": 954,
+    "delay_s": 901,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-06T15:43:45Z"
@@ -274,6 +284,16 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-968"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Bridge closed",
+    "start": "2026-11-06T15:28:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-934"
     ],
     "delay_s": null,
@@ -284,13 +304,22 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 N",
-     "FL-5"
+     "I-95 S"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Bridge closed",
-    "start": "2026-11-06T15:57:45Z"
+    "delay_s": 638,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-06T12:23:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-997"
+    ],
+    "delay_s": 578,
+    "magnitude": 3,
+    "description": "Stationary traffic; Accident",
+    "start": "2026-11-06T15:28:15Z"
    },
    {
     "county": "Miami-Dade",
@@ -300,7 +329,7 @@
      "US-41 S",
      "FL-5"
     ],
-    "delay_s": 823,
+    "delay_s": 487,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-06T15:01:15Z"
@@ -308,22 +337,13 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "FL-91 S",
+     "Florida's Tpke S"
     ],
-    "delay_s": 780,
+    "delay_s": 467,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-06T12:23:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 E"
-    ],
-    "delay_s": 753,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-06T13:07:53Z"
+    "start": "2026-11-06T10:42:45Z"
    },
    {
     "county": "Miami-Dade",
@@ -331,7 +351,7 @@
      "US-1 N",
      "FL-5"
     ],
-    "delay_s": 706,
+    "delay_s": 424,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-06T14:58:15Z"
@@ -341,7 +361,7 @@
     "roads": [
      "FL-854"
     ],
-    "delay_s": 436,
+    "delay_s": 339,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-06T12:25:45Z"
@@ -349,168 +369,149 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-997"
-    ],
-    "delay_s": 363,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-06T15:28:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "US-1 N",
-     "FL-970"
+     "US-1 S",
+     "US-41 S",
+     "FL-5"
     ],
-    "delay_s": 352,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-06T15:53:15Z"
+    "delay_s": 325,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-06T16:08:15Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-932"
     ],
-    "delay_s": 316,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 264,
+    "magnitude": 3,
+    "description": "Stationary traffic",
     "start": "2026-11-06T14:08:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 W",
+     "FL-A1A S"
+    ],
+    "delay_s": 261,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-06T15:45:45Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-816"
+     "FL-84"
     ],
-    "delay_s": 279,
+    "delay_s": 245,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-06T15:55:45Z"
+    "start": "2026-11-06T16:12:15Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826",
-     "FL-826 E",
-     "FL-91 S",
-     "Florida's Tpke S"
+     "US-1 N",
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 278,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-06T15:19:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-9"
-    ],
-    "delay_s": 265,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-06T15:57:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-907"
-    ],
-    "delay_s": 221,
+    "delay_s": 225,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-06T15:54:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-195 E"
-    ],
-    "delay_s": 220,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-06T15:41:15Z"
+    "start": "2026-11-06T15:24:19Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 216,
+    "delay_s": 220,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-11-06T14:56:45Z"
    },
    {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-922"
+    ],
+    "delay_s": 220,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-06T16:09:15Z"
+   },
+   {
     "county": "Broward",
     "roads": [
-     "I-95 N"
+     "FL-A1A"
     ],
-    "delay_s": 213,
+    "delay_s": 202,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-06T16:09:45Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 196,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-11-06T11:29:45Z"
+    "start": "2026-11-06T15:09:45Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-907"
     ],
-    "delay_s": 204,
+    "delay_s": 191,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-11-06T15:43:15Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 200,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-06T15:53:15Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 187,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-06T12:16:45Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": 186,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-06T15:56:15Z"
+    "start": "2026-11-06T16:05:15Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-968"
+     "FL-823"
     ],
-    "delay_s": 185,
+    "delay_s": 187,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-06T15:49:45Z"
+    "start": "2026-11-06T14:44:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 179,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-06T16:08:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-907"
+    ],
+    "delay_s": 179,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-06T15:54:45Z"
    }
   ],
-  "incident_count": 417,
-  "named_count": 87,
-  "major_count": 14,
+  "incident_count": 396,
+  "named_count": 84,
+  "major_count": 12,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-06T11:00:31-05:00",
+  "fetched_at": "2026-11-06T11:15:30-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -553,7 +554,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-06T11:00:31-05:00",
+  "fetched_at": "2026-11-06T11:15:30-05:00",
   "issued": "700 AM EST Fri Nov 6 2026",
   "areas": [
    {
@@ -567,7 +568,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-06T11:00:31-05:00",
+  "fetched_at": "2026-11-06T11:15:30-05:00",
   "florida": "$3.8351",
   "national": "$4.0688",
   "diesel": "$5.9229",
@@ -576,7 +577,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-06T11:00:32-05:00",
+  "fetched_at": "2026-11-06T11:15:31-05:00",
   "streams": {
    "local": [
     {
@@ -685,6 +686,14 @@
   ],
   "local": [
    {
+    "title": "South Florida man stole school bus, drove it around for a ‘whole day,’ deputies say",
+    "url": "https://www.local10.com/news/local/2026/11/06/south-florida-man-stole-school-bus-drove-it-around-for-a-day-deputies-say/",
+    "published": "Fri, 06 Nov 2026 16:00:11 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/4ARFVVQLPNCHRM3CQKXOZM7BIM.jpg?auth=3058de590d4484e81a7fb49881678adfbc82854132f9ec5460bc8bae72902eb7&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
     "title": "Man, dog found dead inside Lauderhill apartment after fire, police say",
     "url": "https://www.local10.com/news/local/2026/11/06/man-dog-found-dead-inside-lauderhill-apartment-after-fire-police-say/",
     "published": "Fri, 06 Nov 2026 13:10:49 +0000",
@@ -741,14 +750,6 @@
     "media_type": null
    },
    {
-    "title": "Days later, some residents remain unable to get into their homes after Learjet crash",
-    "url": "https://www.local10.com/news/local/2026/11/05/days-later-some-residents-remain-unable-to-get-into-their-homes-after-learjet-crash/",
-    "published": "Thu, 05 Nov 2026 22:46:38 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "Hallmark Christmas Cruise set to return to South Florida in 2027 following fall cruise to Bahamas",
     "url": "https://wsvn.com/entertainment/hallmark-christmas-cruise-returns/",
     "published": "Fri, 06 Nov 2026 12:54:23 +0000",
@@ -769,7 +770,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/i-395-i-95-ramp-opened/",
     "published": "Thu, 05 Nov 2026 18:44:54 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/717ef082-a25d-4a80-ad0c-71e8b4a57613/8077f728-ce30-4882-b5c9-bfe69c1a84bc/main.mp4?fastly_token=NmFlZTA1MTBfYzcxZjRmNTIzYjA3ZjY4MzNjMzBhOTNiYzdjODZkYzJmOTZhZmYyMTM4ZjRjNjhjNDkwMTUzMjE5ZTk5MzNmZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83MTdlZjA4Mi1hMjVkLTRhODAtYWQwYy03MWU4YjRhNTc2MTMvODA3N2Y3MjgtY2UzMC00ODgyLWI1YzktYmZlNjljMWE4NGJjL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/717ef082-a25d-4a80-ad0c-71e8b4a57613/8077f728-ce30-4882-b5c9-bfe69c1a84bc/main.mp4?fastly_token=NmFlZTRmMWZfMWJhYTUxZDZhNjc2OWI4YjYzY2Y2MGY3MmVkNDc4ZThkZTQxYjJkOWE3ODQ2ZmM5ZmUxNjdjMjZkY2NkZjJmZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83MTdlZjA4Mi1hMjVkLTRhODAtYWQwYy03MWU4YjRhNTc2MTMvODA3N2Y3MjgtY2UzMC00ODgyLWI1YzktYmZlNjljMWE4NGJjL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -814,6 +815,14 @@
    }
   ],
   "colombia": [
+   {
+    "title": "11 días sin noticias de Jorge Agudelo, excandidato a la alcaldía de Santa Marta: su familia niega la versión de una ausencia voluntaria",
+    "url": "https://www.eltiempo.com/colombia/otras-ciudades/11-dias-sin-noticias-de-jorge-agudelo-excandidato-a-la-alcaldia-de-santa-marta-su-familia-niega-la-version-de-una-ausencia-voluntaria-3598999",
+    "published": "2026-11-06T10:55:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/30/6ae49af43b369.png",
+    "media_type": "image"
+   },
    {
     "title": "¿Falsos policías al acecho?: las dudas e interrogantes que deja una accidentada persecución en el sur de Cali",
     "url": "https://www.eltiempo.com/colombia/cali/falsos-policias-al-acecho-las-dudas-e-interrogantes-que-deja-una-accidentada-persecucion-en-el-sur-de-cali-3598985",
@@ -868,14 +877,6 @@
     "published": "2026-11-06T09:37:56-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/11/06/6aede14aa4399.r_d.668-604-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "48 horas de terror: el escalofriante modus operandi de los falsos guías que vaciaron cuentas de nueve turistas en Cali",
-    "url": "https://www.eltiempo.com/colombia/cali/48-horas-de-terror-el-escalofriante-modus-operandi-de-los-falsos-guias-que-vaciaron-cuentas-de-nueve-turistas-en-cali-3598939",
-    "published": "2026-11-06T09:09:16-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/11/06/6aeddccddb456.jpeg",
     "media_type": "image"
    }
   ],
@@ -949,7 +950,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-06T11:00:33-05:00",
+  "fetched_at": "2026-11-06T11:15:32-05:00",
   "items": [],
   "scanned": 7,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -957,7 +958,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (234) + USGS (11)",
-  "fetched_at": "2026-11-06T11:00:36-05:00",
+  "fetched_at": "2026-11-06T11:15:36-05:00",
   "events": [
    {
     "lat": 15.8,
@@ -2423,7 +2424,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-06T11:00:36-05:00",
+  "fetched_at": "2026-11-06T11:15:36-05:00",
   "countries": [
    {
     "iso": "COL",
@@ -2440,15 +2441,9 @@
       "url": "https://www.eltiempo.com/colombia/don-omar-iniciara-el-registro-de-la-preventa-para-sus-conciertos-en-colombia-y-suramerica-este-sabado-7-de-noviembre-se-que-llevan-mucho-esperando-3598954",
       "published": "2026-11-06T08:35:18-05:00",
       "section": "colombia"
-     },
-     {
-      "title": "48 horas de terror: el escalofriante modus operandi de los falsos guías que vaciaron cuentas de nueve turistas en Cali",
-      "url": "https://www.eltiempo.com/colombia/cali/48-horas-de-terror-el-escalofriante-modus-operandi-de-los-falsos-guias-que-vaciaron-cuentas-de-nueve-turistas-en-cali-3598939",
-      "published": "2026-11-06T09:09:16-05:00",
-      "section": "colombia"
      }
     ],
-    "count": 3,
+    "count": 2,
     "issue": "¿Falsos policías al acecho?: las dudas e interrogantes que deja una accidentada persecución en el sur de Cali"
    },
    {
