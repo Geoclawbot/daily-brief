@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-05T21:46:05-05:00",
- "generated_at_utc": "2026-11-06T02:46:05+00:00",
+ "generated_at": "2026-11-05T22:00:59-05:00",
+ "generated_at_utc": "2026-11-06T03:00:59+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, November 5",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-05T21:46:05-05:00",
+  "fetched_at": "2026-11-05T22:00:59-05:00",
   "curve": [
    {
     "time": "2026-11-05T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 76.0,
+   "temp": 75.9,
    "feels": 83.8,
    "humidity": 88,
-   "wind_mph": 3.1,
-   "wind_dir": 11,
-   "observed_at": "2026-11-05T21:45"
+   "wind_mph": 2.8,
+   "wind_dir": 25,
+   "observed_at": "2026-11-05T22:00"
   },
   "today": {
    "high": 83.3,
@@ -166,42 +166,30 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-05T21:46:05-05:00",
+  "fetched_at": "2026-11-05T22:01:01-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-05T21:46:06-05:00",
-  "aqi": 58,
+  "fetched_at": "2026-11-05T22:01:02-05:00",
+  "aqi": 57,
   "category": "Moderate",
-  "pm25": 11.6,
-  "pm10": 13.9,
-  "observed": "2026-11-05T21:00",
+  "pm25": 11.4,
+  "pm10": 13.6,
+  "observed": "2026-11-05T22:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-11-05T21:46:06-05:00",
+  "fetched_at": "2026-11-05T22:01:02-05:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Don Shula Expy S",
-     "FL-874 S",
-     "S Dade Expy S"
-    ],
-    "delay_s": 2540,
-    "magnitude": 3,
-    "description": "Stationary traffic; Multi-vehicle accident",
-    "start": "2026-11-05T20:47:45Z"
-   },
    {
     "county": "Broward",
     "roads": [
@@ -241,7 +229,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -251,7 +239,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -280,8 +268,8 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-11-02T00:18:00Z"
+    "description": "Closed; Roadworks",
+    "start": "2026-11-02T00:11:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -290,8 +278,8 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-11-02T00:11:00Z"
+    "description": "Closed",
+    "start": "2026-11-02T00:18:00Z"
    },
    {
     "county": "Miami-Dade",
@@ -338,6 +326,16 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-968"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Bridge closed",
+    "start": "2026-11-06T02:52:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-934"
     ],
     "delay_s": null,
@@ -346,12 +344,35 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
+    "county": "Miami-Dade",
+    "roads": [
+     "Don Shula Expy S",
+     "FL-874 S",
+     "S Dade Expy S"
+    ],
+    "delay_s": 291,
+    "magnitude": 1,
+    "description": "Slow traffic; Multi-vehicle accident",
+    "start": "2026-11-06T02:55:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-970"
+    ],
+    "delay_s": 237,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-06T02:47:15Z"
+   },
+   {
     "county": "Broward",
     "roads": [
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 175,
+    "delay_s": 230,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-06T01:23:15Z"
@@ -361,51 +382,53 @@
     "roads": [
      "FL-836 E"
     ],
-    "delay_s": 159,
-    "magnitude": 1,
-    "description": "Slow traffic",
+    "delay_s": 228,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-11-06T01:56:45Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "Snapper Creek Expy W",
-     "FL-878 W"
+     "US-1 N",
+     "FL-970"
     ],
-    "delay_s": 124,
+    "delay_s": 176,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-06T00:18:45Z"
+    "start": "2026-11-06T02:58:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 154,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-06T02:54:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 N",
+     "FL-5"
+    ],
+    "delay_s": 139,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-06T02:49:15Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-836 W"
     ],
-    "delay_s": 121,
+    "delay_s": 97,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-11-06T02:18:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 120,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-06T02:20:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-5"
-    ],
-    "delay_s": 76,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-06T02:29:45Z"
    },
    {
     "county": "Miami-Dade",
@@ -418,14 +441,14 @@
     "start": "2026-11-06T02:41:15Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-814"
+     "I-95 S"
     ],
-    "delay_s": 67,
+    "delay_s": 28,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-11-06T02:23:15Z"
+    "start": "2026-11-06T02:54:45Z"
    },
    {
     "county": "Broward",
@@ -477,40 +500,18 @@
     "delay_s": null,
     "magnitude": 0,
     "description": "Multi-vehicle accident; Right lane closed",
-    "start": "2026-11-06T01:19:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-09-15T16:05:00Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Roadworks; New roadworks layout",
-    "start": "2026-10-31T19:49:00Z"
+    "start": "2026-11-06T02:57:45Z"
    }
   ],
-  "incident_count": 325,
-  "named_count": 39,
+  "incident_count": 329,
+  "named_count": 41,
   "major_count": 15,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-05T21:46:07-05:00",
+  "fetched_at": "2026-11-05T22:01:03-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -554,7 +555,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-05T21:46:08-05:00",
+  "fetched_at": "2026-11-05T22:01:03-05:00",
   "issued": "700 PM EST Thu Nov 5 2026",
   "areas": [
    {
@@ -568,7 +569,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-05T21:46:08-05:00",
+  "fetched_at": "2026-11-05T22:01:03-05:00",
   "florida": "$3.8344",
   "national": "$4.1003",
   "diesel": "$5.9413",
@@ -577,7 +578,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-05T21:46:10-05:00",
+  "fetched_at": "2026-11-05T22:01:04-05:00",
   "streams": {
    "local": [
     {
@@ -950,7 +951,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-05T21:46:11-05:00",
+  "fetched_at": "2026-11-05T22:01:04-05:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -958,7 +959,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (229) + USGS (11)",
-  "fetched_at": "2026-11-05T21:46:14-05:00",
+  "fetched_at": "2026-11-05T22:01:07-05:00",
   "events": [
    {
     "lat": 15.8,
@@ -2424,7 +2425,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-05T21:46:14-05:00",
+  "fetched_at": "2026-11-05T22:01:07-05:00",
   "countries": [
    {
     "iso": "COL",
