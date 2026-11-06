@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-06T07:46:00-05:00",
- "generated_at_utc": "2026-11-06T12:46:00+00:00",
+ "generated_at": "2026-11-06T08:01:01-05:00",
+ "generated_at_utc": "2026-11-06T13:01:01+00:00",
  "weekday": "Friday",
  "date_label": "Friday, November 6",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-06T07:46:00-05:00",
+  "fetched_at": "2026-11-06T08:01:02-05:00",
   "curve": [
    {
     "time": "2026-11-06T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 75.1,
-   "feels": 83.7,
+   "temp": 75.0,
+   "feels": 83.8,
    "humidity": 95,
-   "wind_mph": 3.4,
-   "wind_dir": 18,
-   "observed_at": "2026-11-06T07:45"
+   "wind_mph": 2.6,
+   "wind_dir": 340,
+   "observed_at": "2026-11-06T08:00"
   },
   "today": {
    "high": 82.6,
@@ -166,123 +166,132 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-06T07:46:01-05:00",
+  "fetched_at": "2026-11-06T08:01:05-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-06T07:46:01-05:00",
+  "fetched_at": "2026-11-06T08:01:05-05:00",
   "aqi": 54,
   "category": "Moderate",
-  "pm25": 10.2,
-  "pm10": 11.3,
-  "observed": "2026-11-06T07:00",
+  "pm25": 11.2,
+  "pm10": 12.1,
+  "observed": "2026-11-06T08:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-11-06T07:46:04-05:00",
+  "fetched_at": "2026-11-06T08:01:08-05:00",
   "route_shown": true,
   "leg": "Home → Jackson Memorial",
   "direction": "outbound",
   "depart_clock": "5:45 AM",
   "depart_at": "now",
   "miles": 21.9,
-  "minutes": 65,
-  "delay_minutes": 11,
+  "minutes": 63,
+  "delay_minutes": 10,
   "toll_free": true,
   "alternates": [
    {
     "miles": 21.9,
-    "minutes": 58,
+    "minutes": 55,
+    "toll": true,
+    "saves": 8
+   },
+   {
+    "miles": 28.1,
+    "minutes": 56,
     "toll": true,
     "saves": 7
    },
    {
-    "miles": 28.1,
-    "minutes": 59,
+    "miles": 24.5,
+    "minutes": 58,
     "toll": true,
-    "saves": 6
+    "saves": 5
    },
    {
-    "miles": 26.2,
-    "minutes": 62,
+    "miles": 24.6,
+    "minutes": 65,
     "toll": true,
-    "saves": 3
-   },
-   {
-    "miles": 25.2,
-    "minutes": 63,
-    "toll": true,
-    "saves": 2
+    "saves": -2
    }
   ],
   "alternates_worth_taking": [],
   "free_alternates": [
    {
     "miles": 21.9,
-    "minutes": 65,
-    "delay_minutes": 11,
+    "minutes": 63,
+    "delay_minutes": 10,
     "saves": 0
    },
    {
-    "miles": 23.1,
-    "minutes": 71,
-    "delay_minutes": 0
+    "miles": 26.3,
+    "minutes": 65,
+    "delay_minutes": 2
    },
    {
     "miles": 23.0,
-    "minutes": 74,
+    "minutes": 73,
     "delay_minutes": 0
    },
    {
-    "miles": 20.3,
-    "minutes": 72,
+    "miles": 19.9,
+    "minutes": 70,
     "delay_minutes": 6
    }
   ],
   "best_free": {
    "miles": 21.9,
-   "minutes": 65,
-   "delay_minutes": 11,
+   "minutes": 63,
+   "delay_minutes": 10,
    "saves": 0
   },
   "incidents": [
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-25",
+     "US-27 N"
+    ],
+    "delay_s": 1700,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-06T12:11:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-836 E"
     ],
-    "delay_s": 1282,
+    "delay_s": 1381,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-06T12:36:45Z"
    },
    {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": 1169,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-06T11:41:45Z"
-   },
-   {
     "county": "Broward",
     "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
+     "FL-854"
     ],
-    "delay_s": 1074,
+    "delay_s": 1380,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-06T12:26:45Z"
+    "start": "2026-11-06T12:25:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": 1372,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-06T12:23:45Z"
    },
    {
     "county": "Miami-Dade",
@@ -290,7 +299,7 @@
      "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 1033,
+    "delay_s": 1294,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-06T10:42:45Z"
@@ -298,32 +307,23 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "I-95 S"
+     "US-27 S",
+     "FL-25"
     ],
-    "delay_s": 1009,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-06T12:23:45Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 932,
+    "delay_s": 1118,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-06T12:25:45Z"
+    "start": "2026-11-06T11:41:45Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-827"
+     "FL-953"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-11-01T16:06:30Z"
+    "delay_s": 954,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-06T11:39:45Z"
    },
    {
     "county": "Broward",
@@ -343,7 +343,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-11-01T16:06:30Z"
    },
    {
     "county": "Broward",
@@ -354,6 +354,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:06:35Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -388,40 +398,19 @@
    {
     "county": "Broward",
     "roads": [
-     "I-95 S"
+     "FL-810"
     ],
-    "delay_s": 850,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-06T12:06:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-953"
-    ],
-    "delay_s": 843,
+    "delay_s": 781,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-06T11:39:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Florida's Tpke N",
-     "FL-821 N"
-    ],
-    "delay_s": 795,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-06T11:01:15Z"
+    "start": "2026-11-06T12:41:46Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 733,
+    "delay_s": 757,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-11-06T11:29:45Z"
@@ -429,29 +418,61 @@
    {
     "county": "Broward",
     "roads": [
-     "I-95 N"
+     "I-95 S"
     ],
-    "delay_s": 648,
+    "delay_s": 712,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-06T12:06:15Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-91 N",
+     "Florida's Tpke N"
+    ],
+    "delay_s": 664,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-06T12:16:45Z"
+    "start": "2026-11-06T12:26:45Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-94"
+     "Florida's Tpke N",
+     "FL-821 N"
     ],
-    "delay_s": 571,
+    "delay_s": 618,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-06T11:01:15Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-824"
+    ],
+    "delay_s": 592,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-06T11:31:15Z"
+    "start": "2026-11-06T12:19:15Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 569,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-11-06T12:16:45Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-A1A"
     ],
-    "delay_s": 557,
+    "delay_s": 559,
     "magnitude": 3,
     "description": "Stationary traffic; Roadworks",
     "start": "2026-11-06T12:20:15Z"
@@ -459,9 +480,63 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-976"
+    ],
+    "delay_s": 550,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-06T12:14:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 S",
+     "FL-25"
+    ],
+    "delay_s": 528,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-06T12:30:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 E",
+     "FL-A1A N",
+     "US-41 S",
+     "FL-A1A"
+    ],
+    "delay_s": 521,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-06T12:32:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": 519,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-06T12:37:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-986"
+    ],
+    "delay_s": 510,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-06T12:14:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-821 N"
     ],
-    "delay_s": 543,
+    "delay_s": 502,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-11-06T10:51:15Z"
@@ -469,106 +544,34 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-994"
+     "US-1 N",
+     "FL-5"
     ],
-    "delay_s": 534,
+    "delay_s": 501,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-06T12:14:45Z"
+    "start": "2026-11-06T12:27:45Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-25",
-     "US-27 N"
+     "FL-A1A"
     ],
-    "delay_s": 525,
+    "delay_s": 500,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-06T12:11:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-195 E"
-    ],
-    "delay_s": 522,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-06T12:36:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-992"
-    ],
-    "delay_s": 504,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-06T12:27:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 499,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-06T12:14:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-7",
-     "FL-9",
-     "US-441 S"
-    ],
-    "delay_s": 491,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-06T12:39:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 S"
-    ],
-    "delay_s": 487,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-06T12:24:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": 481,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-06T12:14:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-932"
-    ],
-    "delay_s": 469,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-06T12:03:15Z"
+    "start": "2026-11-06T12:33:45Z"
    }
   ],
-  "incident_count": 647,
-  "named_count": 223,
-  "major_count": 18,
+  "incident_count": 679,
+  "named_count": 229,
+  "major_count": 19,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-06T07:46:05-05:00",
+  "fetched_at": "2026-11-06T08:01:08-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -612,7 +615,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-06T07:46:05-05:00",
+  "fetched_at": "2026-11-06T08:01:08-05:00",
   "issued": "700 AM EST Fri Nov 6 2026",
   "areas": [
    {
@@ -626,7 +629,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-06T07:46:05-05:00",
+  "fetched_at": "2026-11-06T08:01:09-05:00",
   "florida": "$3.8351",
   "national": "$4.0688",
   "diesel": "$5.9229",
@@ -635,7 +638,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-06T07:46:06-05:00",
+  "fetched_at": "2026-11-06T08:01:09-05:00",
   "streams": {
    "local": [
     {
@@ -744,68 +747,12 @@
   ],
   "local": [
    {
-    "title": "Weekday Recap: Trending Stories on Local10.com",
-    "url": "https://www.local10.com/news/local/2026/10/09/weekday-recap-trending-stories-on-local10com/",
-    "published": "Fri, 09 Oct 2026 15:45:08 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/XRFY3TGIJJFCTHOPV7ITXPYVHM.png?auth=e9a67cf5fb2dc899eeb0bc14cfb588292199632c1d46fc8b9db7d827acb0fd33&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "Man shares breast cancer journey, urges others to get checked",
-    "url": "https://www.local10.com/news/local/2026/10/22/man-shares-breast-cancer-journey-urges-others-to-get-checked/",
-    "published": "Thu, 22 Oct 2026 22:23:15 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Student arrested after anonymous tip about gun at Miami Carol City Senior High School, police say",
-    "url": "https://www.local10.com/news/local/2026/11/05/student-arrested-after-anonymous-tip-about-gun-at-miami-carol-city-senior-high-school-police-say/",
-    "published": "Thu, 05 Nov 2026 15:08:03 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Days later, some residents remain unable to get into their homes after Learjet crash",
-    "url": "https://www.local10.com/news/local/2026/11/05/days-later-some-residents-remain-unable-to-get-into-their-homes-after-learjet-crash/",
-    "published": "Thu, 05 Nov 2026 22:46:38 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Amendment 3 property tax savings could give Florida real estate market a boost",
-    "url": "https://www.local10.com/news/local/2026/11/05/amendment-3-property-tax-savings-could-give-florida-real-estate-market-a-boost/",
-    "published": "Thu, 05 Nov 2026 22:57:55 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Bodycam video shows Island Boys rapper arrested in Broward County Walgreens theft case: Cops",
-    "url": "https://www.local10.com/news/local/2026/11/05/bodycam-video-shows-island-boys-rapper-arrested-in-broward-county-walgreens-theft-case-cops/",
-    "published": "Thu, 05 Nov 2026 22:18:08 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "NTSB lays out investigation timeline after deadly Biscayne Bay helicopter crash",
-    "url": "https://www.local10.com/news/local/2026/11/05/officials-set-to-give-more-information-about-deadly-biscayne-bay-helicopter-crash/",
-    "published": "Thu, 05 Nov 2026 17:23:19 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Alligator spotted swimming near Melbourne home amid Florida flooding",
-    "url": "https://www.local10.com/news/local/2026/11/05/alligator-spotted-swimming-near-melbourne-home-amid-florida-flooding/",
-    "published": "Thu, 05 Nov 2026 23:25:11 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
+    "title": "Hallmark Christmas Cruise set to return to South Florida in 2027 following fall cruise to Bahamas",
+    "url": "https://wsvn.com/entertainment/hallmark-christmas-cruise-returns/",
+    "published": "Fri, 06 Nov 2026 12:54:23 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/046aa37d-639b-42e6-8dc1-78f119a98032/a8b4bce8-96b3-4531-98d5-12724dd12ef6/main.mp4?fastly_token=NmFlZTI2MDNfNjg4YWE1NzZiZmM1MjYyNmZlZmQ2OWNhY2Y2YjdhMjhlNTllYzE5OTEyMWFjN2E3NTBhMjEzZDFjNzM1YmRlNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8wNDZhYTM3ZC02MzliLTQyZTYtOGRjMS03OGYxMTlhOTgwMzIvYThiNGJjZTgtOTZiMy00NTMxLTk4ZDUtMTI3MjRkZDEyZWY2L21haW4ubXA0",
+    "media_type": "video"
    },
    {
     "title": "Partial bridge collapse shuts down roadway near Coconut Creek neighborhood; no injuries reported",
@@ -832,11 +779,11 @@
     "media_type": "video"
    },
    {
-    "title": "Miami Beach officials propose adding a horseback patrol unit by 2028",
-    "url": "https://wsvn.com/news/local/miami-dade/mayor-meiner-proposes-mounted-cops/",
-    "published": "Thu, 05 Nov 2026 03:49:32 +0000",
+    "title": "Hallmark Christmas Cruise set to return to South Florida in 2027 following fall cruise to Bahamas",
+    "url": "https://wsvn.com/entertainment/hallmark-christmas-cruise-returns/",
+    "published": "Fri, 06 Nov 2026 12:54:23 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/ab16507c-6544-4abb-aaad-d851911848c7/ddf89109-4984-48ac-be5e-1a7e94b18202/main.mp4?fastly_token=NmFlZGUxNzNfNGM1ZDg1ZWU1NDg5YTc3OGUxMjE4ZDQ0MjIxMjViY2Q5ZWFkNDMxNmIyYjM5YjZiYTUzNjk2MDJhNmJlM2U5M18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9hYjE2NTA3Yy02NTQ0LTRhYmItYWFhZC1kODUxOTExODQ4YzcvZGRmODkxMDktNDk4NC00OGFjLWJlNWUtMWE3ZTk0YjE4MjAyL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/046aa37d-639b-42e6-8dc1-78f119a98032/a8b4bce8-96b3-4531-98d5-12724dd12ef6/main.mp4?fastly_token=NmFlZTI2MDNfNjg4YWE1NzZiZmM1MjYyNmZlZmQ2OWNhY2Y2YjdhMjhlNTllYzE5OTEyMWFjN2E3NTBhMjEzZDFjNzM1YmRlNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8wNDZhYTM3ZC02MzliLTQyZTYtOGRjMS03OGYxMTlhOTgwMzIvYThiNGJjZTgtOTZiMy00NTMxLTk4ZDUtMTI3MjRkZDEyZWY2L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -861,14 +808,6 @@
     "published": "Thu, 05 Nov 2026 22:12:17 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/2d61ba6a-10b4-45df-bfbf-d32ae7b4bdbb/8ed3bc89-eb62-4a32-8dfc-a85c0e073326/main.mp4?fastly_token=NmFlZGViODNfMzc2MGRlMjc5ODBkNzY2MTQ5NzdkZmY5YmQxODJjYTUxYmMzZDUwZmQ0Y2YxMWY1NjM0NWU4ODQ4MjM5NTBjN18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8yZDYxYmE2YS0xMGI0LTQ1ZGYtYmZiZi1kMzJhZTdiNGJkYmIvOGVkM2JjODktZWI2Mi00YTMyLThkZmMtYTg1YzBlMDczMzI2L21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "New westbound I-395 ramp to southbound I-95 now open to drivers",
-    "url": "https://wsvn.com/news/local/miami-dade/i-395-i-95-ramp-opened/",
-    "published": "Thu, 05 Nov 2026 18:44:54 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/717ef082-a25d-4a80-ad0c-71e8b4a57613/8077f728-ce30-4882-b5c9-bfe69c1a84bc/main.mp4?fastly_token=NmFlZTA1MTBfYzcxZjRmNTIzYjA3ZjY4MzNjMzBhOTNiYzdjODZkYzJmOTZhZmYyMTM4ZjRjNjhjNDkwMTUzMjE5ZTk5MzNmZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83MTdlZjA4Mi1hMjVkLTRhODAtYWQwYy03MWU4YjRhNTc2MTMvODA3N2Y3MjgtY2UzMC00ODgyLWI1YzktYmZlNjljMWE4NGJjL21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -1008,15 +947,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-06T07:46:07-05:00",
+  "fetched_at": "2026-11-06T08:01:09-05:00",
   "items": [],
-  "scanned": 5,
+  "scanned": 0,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
   "source": "GDACS (234) + USGS (11)",
-  "fetched_at": "2026-11-06T07:46:17-05:00",
+  "fetched_at": "2026-11-06T08:01:13-05:00",
   "events": [
    {
     "lat": 15.8,
@@ -2482,7 +2421,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-06T07:46:17-05:00",
+  "fetched_at": "2026-11-06T08:01:13-05:00",
   "countries": [
    {
     "iso": "COL",
@@ -2531,7 +2470,7 @@
     "issue": "Paraguay's president is impeached minutes after resigning following a bank collapse"
    }
   ],
-  "headlines_scanned": 32,
+  "headlines_scanned": 24,
   "countries_matched": 2,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
