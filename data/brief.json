@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-06T20:00:32-05:00",
- "generated_at_utc": "2026-11-07T01:00:32+00:00",
+ "generated_at": "2026-11-06T20:15:28-05:00",
+ "generated_at_utc": "2026-11-07T01:15:28+00:00",
  "weekday": "Friday",
  "date_label": "Friday, November 6",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-06T20:00:33-05:00",
+  "fetched_at": "2026-11-06T20:15:29-05:00",
   "curve": [
    {
     "time": "2026-11-06T05:00",
@@ -148,11 +148,11 @@
   ],
   "current": {
    "temp": 76.0,
-   "feels": 83.6,
-   "humidity": 86,
-   "wind_mph": 3.0,
-   "wind_dir": 65,
-   "observed_at": "2026-11-06T20:00"
+   "feels": 83.7,
+   "humidity": 87,
+   "wind_mph": 2.9,
+   "wind_dir": 62,
+   "observed_at": "2026-11-06T20:15"
   },
   "today": {
    "high": 83.4,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-06T20:00:35-05:00",
+  "fetched_at": "2026-11-06T20:15:29-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-06T20:00:36-05:00",
+  "fetched_at": "2026-11-06T20:15:30-05:00",
   "aqi": 53,
   "category": "Moderate",
   "pm25": 15.4,
@@ -185,21 +185,20 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-11-06T20:00:36-05:00",
+  "fetched_at": "2026-11-06T20:15:30-05:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-821 S",
-     "Florida's Tpke S"
+     "FL-827"
     ],
-    "delay_s": 1027,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-06T19:06:17Z"
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-10-31T10:12:00Z"
    },
    {
     "county": "Broward",
@@ -210,16 +209,6 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-11-01T16:06:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-10-31T10:12:00Z"
    },
    {
     "county": "Broward",
@@ -258,6 +247,16 @@
     ],
     "delay_s": null,
     "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-11-07T01:10:45Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-838"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
     "description": "Closed",
     "start": "2026-07-16T20:45:02Z"
    },
@@ -270,16 +269,6 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-02-23T10:56:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-441 N"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Bridge closed",
-    "start": "2026-11-06T23:11:35Z"
    },
    {
     "county": "Miami-Dade",
@@ -304,9 +293,20 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-821 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 890,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-06T19:06:17Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-821 S"
     ],
-    "delay_s": 690,
+    "delay_s": 596,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-06T19:37:40Z"
@@ -316,7 +316,7 @@
     "roads": [
      "FL-817"
     ],
-    "delay_s": 535,
+    "delay_s": 539,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-07T00:48:45Z"
@@ -326,27 +326,17 @@
     "roads": [
      "FL-838"
     ],
-    "delay_s": 529,
+    "delay_s": 465,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-07T00:39:17Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": 422,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-07T00:19:28Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-825"
     ],
-    "delay_s": 388,
+    "delay_s": 326,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-06T23:58:04Z"
@@ -354,21 +344,129 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "Don Shula Expy S",
-     "FL-874 S",
-     "S Dade Expy S"
+     "FL-821 S"
     ],
-    "delay_s": 338,
+    "delay_s": 279,
     "magnitude": 2,
     "description": "Queuing traffic",
-    "start": "2026-11-06T22:38:37Z"
+    "start": "2026-11-06T19:09:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S"
+    ],
+    "delay_s": 237,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-07T00:57:15Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": 231,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-11-07T01:11:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-9"
+    ],
+    "delay_s": 226,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-07T01:10:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": 217,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-07T00:59:45Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-820"
+    ],
+    "delay_s": 216,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-07T00:39:17Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-A1A"
     ],
-    "delay_s": 322,
+    "delay_s": 183,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-07T01:12:45Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-824"
+    ],
+    "delay_s": 168,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-07T01:02:15Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": 166,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-11-07T01:09:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 N"
+    ],
+    "delay_s": 133,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-07T01:12:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826"
+    ],
+    "delay_s": 129,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-07T01:07:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 127,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-06T17:53:25Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-A1A"
+    ],
+    "delay_s": 127,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-07T00:19:01Z"
@@ -376,139 +474,34 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 S"
+     "FL-A1A"
     ],
-    "delay_s": 306,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-06T19:09:30Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": 294,
+    "delay_s": 126,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-11-07T00:46:15Z"
+    "start": "2026-11-07T01:00:45Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "FL-970"
-    ],
-    "delay_s": 263,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-07T00:56:45Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 233,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-07T00:57:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S"
-    ],
-    "delay_s": 217,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-07T00:57:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-41 N",
+     "US-41 S",
      "FL-5"
     ],
-    "delay_s": 198,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-07T00:55:48Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826",
-     "FL-826 E",
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 196,
+    "delay_s": 115,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-11-07T00:56:15Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 192,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-06T22:45:11Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 182,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-06T17:53:25Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-820"
-    ],
-    "delay_s": 179,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-07T00:39:17Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "I-95 N"
-    ],
-    "delay_s": 169,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-06T22:44:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-441 S"
-    ],
-    "delay_s": 164,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-07T00:47:16Z"
+    "start": "2026-11-07T01:08:15Z"
    }
   ],
-  "incident_count": 375,
-  "named_count": 63,
-  "major_count": 12,
+  "incident_count": 355,
+  "named_count": 55,
+  "major_count": 11,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-06T20:00:37-05:00",
+  "fetched_at": "2026-11-06T20:15:31-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -553,7 +546,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-06T20:00:37-05:00",
+  "fetched_at": "2026-11-06T20:15:31-05:00",
   "issued": "700 PM EST Fri Nov 6 2026",
   "areas": [
    {
@@ -567,7 +560,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-06T20:00:38-05:00",
+  "fetched_at": "2026-11-06T20:15:31-05:00",
   "florida": "$3.8351",
   "national": "$4.0688",
   "diesel": "$5.9229",
@@ -576,7 +569,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-06T20:00:39-05:00",
+  "fetched_at": "2026-11-06T20:15:32-05:00",
   "streams": {
    "local": [
     {
@@ -685,6 +678,14 @@
   ],
   "local": [
    {
+    "title": "Teen arrested after group allegedly breaks into Williams Island Penthouse, throws tools from roof",
+    "url": "https://www.local10.com/news/local/2026/11/06/teen-arrested-after-group-allegedly-breaks-into-williams-island-penthouse-throws-tools-from-roof/",
+    "published": "Fri, 06 Nov 2026 22:46:08 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Miami Springs corrects conflicting school zone traffic signs after Local 10 investigation",
     "url": "https://www.local10.com/news/local/2026/11/06/miami-springs-corrects-conflicting-school-zone-traffic-signs-after-local-10-investigation/",
     "published": "Sat, 07 Nov 2026 00:31:36 +0000",
@@ -704,14 +705,6 @@
     "title": "Salvage crews remove wreckage from deadly Biscayne Bay helicopter crash",
     "url": "https://www.local10.com/news/local/2026/11/06/salvage-crews-remove-wreckage-from-deadly-biscayne-bay-helicopter-crash/",
     "published": "Fri, 06 Nov 2026 17:19:28 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Teen arrested after group allegedly breaks into Williams Island Penthouse, throws tools from roof",
-    "url": "https://www.local10.com/news/local/2026/11/06/teen-arrested-after-group-allegedly-breaks-into-williams-island-penthouse-throws-tools-from-roof/",
-    "published": "Fri, 06 Nov 2026 22:46:08 +0000",
     "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
     "media": null,
     "media_type": null
@@ -781,6 +774,14 @@
     "media_type": "video"
    },
    {
+    "title": "Canes fan send support to players from Coral Gables campus ahead of matchup with Notre Dame",
+    "url": "https://wsvn.com/sports/college/miami-hurricanes/miami-hurricanes-notre-dame-rivalry/",
+    "published": "Sat, 07 Nov 2026 00:06:44 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/d563b9f0-b7e8-4e5b-89bd-e5d8168bfac8/258054a7-7790-4c72-91cc-20ac71f0c50c/main.mp4?fastly_token=NmFlZWM0MTlfYTY0NDc2M2I2MzUzMGIyYjY3MWM5Nzg4OTA0YjczNWVmNWRkYzMxNzMwYjhlMTY0M2Y3ZTFmOTk0Y2I1NjYwM18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9kNTYzYjlmMC1iN2U4LTRlNWItODliZC1lNWQ4MTY4YmZhYzgvMjU4MDU0YTctNzc5MC00YzcyLTkxY2MtMjBhYzcxZjBjNTBjL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "Maluma announces ‘Loco x Volver World Tour’ during surprise show at Miami International Airport",
     "url": "https://wsvn.com/entertainment/maluma-announces-loco-x-volver-world-tour-during-surprise-show-at-miami-international-airport/",
     "published": "Fri, 06 Nov 2026 22:54:49 +0000",
@@ -802,14 +803,6 @@
     "published": "Fri, 06 Nov 2026 18:33:55 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/78702b2b-0b20-40ce-86e0-083b53435a7f/5e25dd3e-d5ab-48f2-a3b4-4e179a579d8d/main.mp4?fastly_token=NmFlZWIwMjVfMDQ5MzczYmQ1YjY1ZmRkZGQ3ZmU5ODI4ZTVmYWNjMDg2ZDZhN2YxMThlYjc0MWViOWYzZDRkNDkxOTUzZTk3Yl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS83ODcwMmIyYi0wYjIwLTQwY2UtODZlMC0wODNiNTM0MzVhN2YvNWUyNWRkM2UtZDVhYi00OGYyLWEzYjQtNGUxNzlhNTc5ZDhkL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "District 27 race, separated by about 1,100 votes, is headed for a recount; Rodriguez campaign sues Miami-Dade elections supervisor",
-    "url": "https://wsvn.com/news/politics/salazar-rodriguez-recount-miami/",
-    "published": "Fri, 06 Nov 2026 18:12:18 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/b99a02cb-ae68-4884-bec6-c4d5bfb8d5e4/437506cd-62ea-4d41-a60e-079f3aa06f4f/main.mp4?fastly_token=NmFlZWI0Y2VfNjkzOWVhODBkMGI2NjM2N2JhN2IzZTUzZDVmODZmZTc3MzM4MjcyN2FhN2M5NzEwNzU5MzkzNzI4M2ZiMzJlZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9iOTlhMDJjYi1hZTY4LTQ4ODQtYmVjNi1jNGQ1YmZiOGQ1ZTQvNDM3NTA2Y2QtNjJlYS00ZDQxLWE2MGUtMDc5ZjNhYTA2ZjRmL21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -949,7 +942,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-06T20:00:40-05:00",
+  "fetched_at": "2026-11-06T20:15:33-05:00",
   "items": [],
   "scanned": 8,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -957,7 +950,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (229) + USGS (7)",
-  "fetched_at": "2026-11-06T20:00:43-05:00",
+  "fetched_at": "2026-11-06T20:15:37-05:00",
   "events": [
    {
     "lat": 15.8,
@@ -2419,7 +2412,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-06T20:00:43-05:00",
+  "fetched_at": "2026-11-06T20:15:37-05:00",
   "countries": [
    {
     "iso": "COL",
