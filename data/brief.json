@@ -1,26 +1,179 @@
 {
- "generated_at": "2026-11-06T20:30:32-05:00",
- "generated_at_utc": "2026-11-07T01:30:32+00:00",
+ "generated_at": "2026-11-06T20:45:29-05:00",
+ "generated_at_utc": "2026-11-07T01:45:29+00:00",
  "weekday": "Friday",
  "date_label": "Friday, November 6",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-11-06T20:30:33-05:00",
-  "error": "503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpre"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-11-06T20:45:29-05:00",
+  "curve": [
+   {
+    "time": "2026-11-06T05:00",
+    "hour": 5,
+    "temp": 73.0,
+    "feels": 80.6,
+    "humidity": 94,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-06T06:00",
+    "hour": 6,
+    "temp": 73.3,
+    "feels": 80.6,
+    "humidity": 94,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-06T07:00",
+    "hour": 7,
+    "temp": 74.5,
+    "feels": 82.5,
+    "humidity": 95,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-06T08:00",
+    "hour": 8,
+    "temp": 76.3,
+    "feels": 84.6,
+    "humidity": 93,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-06T09:00",
+    "hour": 9,
+    "temp": 78.0,
+    "feels": 86.8,
+    "humidity": 92,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-06T10:00",
+    "hour": 10,
+    "temp": 80.7,
+    "feels": 89.7,
+    "humidity": 82,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-06T11:00",
+    "hour": 11,
+    "temp": 83.4,
+    "feels": 89.4,
+    "humidity": 67,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-06T12:00",
+    "hour": 12,
+    "temp": 83.3,
+    "feels": 88.2,
+    "humidity": 62,
+    "pop": 3
+   },
+   {
+    "time": "2026-11-06T13:00",
+    "hour": 13,
+    "temp": 83.4,
+    "feels": 91.6,
+    "humidity": 68,
+    "pop": 3
+   },
+   {
+    "time": "2026-11-06T14:00",
+    "hour": 14,
+    "temp": 82.6,
+    "feels": 90.8,
+    "humidity": 73,
+    "pop": 1
+   },
+   {
+    "time": "2026-11-06T15:00",
+    "hour": 15,
+    "temp": 82.9,
+    "feels": 91.1,
+    "humidity": 71,
+    "pop": 5
+   },
+   {
+    "time": "2026-11-06T16:00",
+    "hour": 16,
+    "temp": 82.1,
+    "feels": 88.8,
+    "humidity": 72,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-06T17:00",
+    "hour": 17,
+    "temp": 80.6,
+    "feels": 88.9,
+    "humidity": 78,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-06T18:00",
+    "hour": 18,
+    "temp": 78.7,
+    "feels": 86.7,
+    "humidity": 82,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-06T19:00",
+    "hour": 19,
+    "temp": 77.8,
+    "feels": 85.6,
+    "humidity": 83,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-06T20:00",
+    "hour": 20,
+    "temp": 77.1,
+    "feels": 84.9,
+    "humidity": 86,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-06T21:00",
+    "hour": 21,
+    "temp": 76.5,
+    "feels": 85.1,
+    "humidity": 89,
+    "pop": 0
+   }
+  ],
+  "current": {
+   "temp": 76.7,
+   "feels": 85.1,
+   "humidity": 88,
+   "wind_mph": 2.7,
+   "wind_dir": 59,
+   "observed_at": "2026-11-06T20:45"
+  },
+  "today": {
+   "high": 83.4,
+   "low": 72.8,
+   "feels_max": 91.6,
+   "pop_max": 5
+  },
+  "peak_feels": 91.6,
+  "peak_hour": 13
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-06T20:30:33-05:00",
+  "fetched_at": "2026-11-06T20:45:30-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-06T20:30:34-05:00",
+  "fetched_at": "2026-11-06T20:45:30-05:00",
   "aqi": 53,
   "category": "Moderate",
   "pm25": 15.4,
@@ -32,21 +185,11 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-11-06T20:30:34-05:00",
+  "fetched_at": "2026-11-06T20:45:30-05:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
   "incidents": [
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-827"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-10-31T10:12:00Z"
-   },
    {
     "county": "Broward",
     "roads": [
@@ -65,7 +208,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:06:35Z"
+    "start": "2026-10-31T10:12:00Z"
    },
    {
     "county": "Broward",
@@ -76,6 +219,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:05:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:06:35Z"
    },
    {
     "county": "Broward",
@@ -120,16 +273,6 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-441 S"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Bridge closed",
-    "start": "2026-11-06T23:10:13Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-934"
     ],
     "delay_s": null,
@@ -138,42 +281,42 @@
     "start": "2026-08-02T04:33:30Z"
    },
    {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": 457,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-07T01:11:45Z"
+   },
+   {
     "county": "Miami-Dade",
     "roads": [
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 667,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 342,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-11-06T19:06:17Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-821 S"
+     "FL-A1A"
     ],
-    "delay_s": 402,
+    "delay_s": 270,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-06T19:37:40Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-9"
-    ],
-    "delay_s": 395,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-07T01:10:45Z"
+    "start": "2026-11-07T01:12:45Z"
    },
    {
     "county": "Broward",
     "roads": [
      "FL-817"
     ],
-    "delay_s": 369,
+    "delay_s": 258,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-07T00:48:45Z"
@@ -181,120 +324,9 @@
    {
     "county": "Broward",
     "roads": [
-     "FL-842"
-    ],
-    "delay_s": 350,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-07T01:11:45Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
      "FL-838"
     ],
-    "delay_s": 313,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-07T00:39:17Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-821 S"
-    ],
-    "delay_s": 290,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-06T19:09:30Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-A1A"
-    ],
-    "delay_s": 267,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-07T01:12:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-A1A"
-    ],
-    "delay_s": 260,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-07T00:19:01Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 N"
-    ],
-    "delay_s": 207,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-07T01:22:45Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": 196,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-07T01:25:46Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-825"
-    ],
-    "delay_s": 193,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-06T23:58:04Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-934"
-    ],
-    "delay_s": 130,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-07T00:59:45Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-842"
-    ],
-    "delay_s": 119,
-    "magnitude": 1,
-    "description": "Slow traffic",
-    "start": "2026-11-07T01:25:15Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-816"
-    ],
-    "delay_s": 95,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-07T01:12:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 93,
+    "delay_s": 226,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-07T00:39:17Z"
@@ -305,27 +337,87 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 70,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-07T01:12:15Z"
+    "delay_s": 207,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-07T01:38:45Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-836 W"
+     "FL-9"
     ],
-    "delay_s": 47,
+    "delay_s": 206,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-07T01:10:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S"
+    ],
+    "delay_s": 193,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-06T19:37:40Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S"
+    ],
+    "delay_s": 170,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-11-06T17:53:25Z"
+    "start": "2026-11-06T19:09:30Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": 138,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-11-07T01:42:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-A1A"
+    ],
+    "delay_s": 132,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-07T00:19:01Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": 119,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-11-07T01:25:46Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-818"
+    ],
+    "delay_s": 81,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-11-07T01:38:45Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 37,
+    "delay_s": 63,
     "magnitude": 1,
     "description": "Slow traffic",
     "start": "2026-11-06T22:44:30Z"
@@ -339,17 +431,80 @@
     "magnitude": 0,
     "description": "Roadworks; New roadworks layout",
     "start": "2026-09-10T03:16:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-842"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-10-29T12:41:38Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 S",
+     "FL-25"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-09-15T16:05:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-27 S",
+     "FL-25"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks; New roadworks layout",
+    "start": "2026-10-31T19:49:00Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-25",
+     "US-27 N"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Lane closed; Roadworks",
+    "start": "2026-11-06T19:40:40Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 E"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-11-06T10:28:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 S"
+    ],
+    "delay_s": null,
+    "magnitude": 0,
+    "description": "Roadworks",
+    "start": "2026-11-04T11:33:45Z"
    }
   ],
-  "incident_count": 343,
-  "named_count": 46,
-  "major_count": 11,
+  "incident_count": 328,
+  "named_count": 35,
+  "major_count": 9,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-06T20:30:35-05:00",
+  "fetched_at": "2026-11-06T20:45:32-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -394,7 +549,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-06T20:30:35-05:00",
+  "fetched_at": "2026-11-06T20:45:32-05:00",
   "issued": "700 PM EST Fri Nov 6 2026",
   "areas": [
    {
@@ -408,7 +563,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-06T20:30:36-05:00",
+  "fetched_at": "2026-11-06T20:45:32-05:00",
   "florida": "$3.8351",
   "national": "$4.0688",
   "diesel": "$5.9229",
@@ -417,7 +572,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-06T20:30:37-05:00",
+  "fetched_at": "2026-11-06T20:45:33-05:00",
   "streams": {
    "local": [
     {
@@ -790,15 +945,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-06T20:30:38-05:00",
+  "fetched_at": "2026-11-06T20:45:34-05:00",
   "items": [],
-  "scanned": 8,
+  "scanned": 7,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (229) + USGS (7)",
-  "fetched_at": "2026-11-06T20:30:41-05:00",
+  "source": "GDACS (229) + USGS (6)",
+  "fetched_at": "2026-11-06T20:45:38-05:00",
   "events": [
    {
     "lat": 15.8,
@@ -898,19 +1053,6 @@
     "mag": 4.7,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tweq",
     "when": 1793932525631,
-    "source": "USGS"
-   },
-   {
-    "lat": -19.3647,
-    "lon": 168.7529,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.6 — 58 km WNW of Isangel, Vanuatu",
-    "place": "58 km WNW of Isangel, Vanuatu",
-    "severity": "M4.6",
-    "mag": 4.6,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tweb",
-    "when": 1793929059847,
     "source": "USGS"
    },
    {
@@ -2246,13 +2388,25 @@
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033555",
     "when": "Sat, 07 Nov 2026 00:23:58 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -13.272497682159262,
+    "lon": -65.12145291922874,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Bolivia",
+    "place": "Bolivia",
+    "severity": "Green impact for forestfire in 6992 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033500",
+    "when": "Thu, 05 Nov 2026 08:06:29 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 236,
+  "event_count": 235,
   "counts": {
    "red": 1,
    "orange": 4,
-   "green": 231
+   "green": 230
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2260,7 +2414,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-06T20:30:41-05:00",
+  "fetched_at": "2026-11-06T20:45:38-05:00",
   "countries": [
    {
     "iso": "COL",
@@ -2341,8 +2495,6 @@
   "countries_matched": 4,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
