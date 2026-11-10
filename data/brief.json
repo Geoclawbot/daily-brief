@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-10T17:45:21-05:00",
- "generated_at_utc": "2026-11-10T22:45:21+00:00",
+ "generated_at": "2026-11-10T18:00:21-05:00",
+ "generated_at_utc": "2026-11-10T23:00:21+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, November 10",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-10T17:45:22-05:00",
+  "fetched_at": "2026-11-10T18:00:21-05:00",
   "curve": [
    {
     "time": "2026-11-10T05:00",
@@ -101,58 +101,58 @@
     "time": "2026-11-10T16:00",
     "hour": 16,
     "temp": 83.2,
-    "feels": 89.7,
-    "humidity": 63,
+    "feels": 91.2,
+    "humidity": 69,
     "pop": 9
    },
    {
     "time": "2026-11-10T17:00",
     "hour": 17,
     "temp": 81.3,
-    "feels": 87.8,
-    "humidity": 70,
+    "feels": 87.6,
+    "humidity": 69,
     "pop": 14
    },
    {
     "time": "2026-11-10T18:00",
     "hour": 18,
     "temp": 78.2,
-    "feels": 85.1,
-    "humidity": 80,
+    "feels": 84.6,
+    "humidity": 78,
     "pop": 9
    },
    {
     "time": "2026-11-10T19:00",
     "hour": 19,
     "temp": 76.7,
-    "feels": 83.5,
-    "humidity": 83,
+    "feels": 83.7,
+    "humidity": 84,
     "pop": 2
    },
    {
     "time": "2026-11-10T20:00",
     "hour": 20,
     "temp": 76.0,
-    "feels": 83.0,
-    "humidity": 84,
+    "feels": 83.3,
+    "humidity": 86,
     "pop": 1
    },
    {
     "time": "2026-11-10T21:00",
     "hour": 21,
     "temp": 75.6,
-    "feels": 82.9,
-    "humidity": 86,
+    "feels": 83.2,
+    "humidity": 88,
     "pop": 1
    }
   ],
   "current": {
-   "temp": 78.7,
-   "feels": 85.2,
+   "temp": 78.2,
+   "feels": 84.6,
    "humidity": 78,
-   "wind_mph": 4.9,
+   "wind_mph": 4.7,
    "wind_dir": 117,
-   "observed_at": "2026-11-10T17:45"
+   "observed_at": "2026-11-10T18:00"
   },
   "today": {
    "high": 84.5,
@@ -166,129 +166,46 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-10T17:45:23-05:00",
+  "fetched_at": "2026-11-10T18:00:24-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-10T17:45:23-05:00",
+  "fetched_at": "2026-11-10T18:00:25-05:00",
   "aqi": 56,
   "category": "Moderate",
-  "pm25": 9.2,
-  "pm10": 11.9,
-  "observed": "2026-11-10T17:00",
+  "pm25": 12.0,
+  "pm10": 14.6,
+  "observed": "2026-11-10T18:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-11-10T17:45:26-05:00",
-  "route_shown": true,
-  "leg": "Jackson Memorial → Home",
-  "direction": "return",
-  "depart_clock": "3:30 PM",
-  "depart_at": "now",
-  "miles": 26.6,
-  "minutes": 67,
-  "delay_minutes": 4,
-  "toll_free": true,
-  "alternates": [
-   {
-    "miles": 22.6,
-    "minutes": 58,
-    "toll": true,
-    "saves": 9
-   },
-   {
-    "miles": 27.7,
-    "minutes": 59,
-    "toll": true,
-    "saves": 8
-   },
-   {
-    "miles": 22.0,
-    "minutes": 64,
-    "toll": true,
-    "saves": 3
-   },
-   {
-    "miles": 27.8,
-    "minutes": 69,
-    "toll": true,
-    "saves": -2
-   }
-  ],
-  "alternates_worth_taking": [],
-  "free_alternates": [
-   {
-    "miles": 26.6,
-    "minutes": 67,
-    "delay_minutes": 4,
-    "saves": 0
-   },
-   {
-    "miles": 20.4,
-    "minutes": 71,
-    "delay_minutes": 6
-   },
-   {
-    "miles": 23.1,
-    "minutes": 74,
-    "delay_minutes": 0
-   },
-   {
-    "miles": 23.2,
-    "minutes": 73,
-    "delay_minutes": 0
-   }
-  ],
-  "best_free": {
-   "miles": 26.6,
-   "minutes": 67,
-   "delay_minutes": 4,
-   "saves": 0
-  },
+  "source": "TomTom Traffic",
+  "fetched_at": "2026-11-10T18:00:25-05:00",
+  "route_shown": false,
+  "leg": null,
+  "direction": null,
   "incidents": [
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-972"
-    ],
-    "delay_s": 2147,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T19:38:15Z"
-   },
    {
     "county": "Miami-Dade",
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 1862,
+    "delay_s": 1893,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T16:22:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 S",
-     "US-41 N"
-    ],
-    "delay_s": 1579,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T20:25:03Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 1535,
+    "delay_s": 1777,
     "magnitude": 3,
     "description": "Stationary traffic; Multi-vehicle accident",
     "start": "2026-11-10T20:38:13Z"
@@ -299,28 +216,28 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 1502,
+    "delay_s": 1563,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T19:16:51Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-821 S",
+     "FL-91 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 1295,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-10T21:43:15Z"
+    "delay_s": 1547,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T22:35:29Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-976"
     ],
-    "delay_s": 1288,
+    "delay_s": 1408,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T21:44:36Z"
@@ -328,42 +245,56 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-1 N",
+     "US-41 N",
+     "FL-5"
+    ],
+    "delay_s": 1395,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T14:47:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 1253,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T20:25:03Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-821 S",
+     "Florida's Tpke S"
+    ],
+    "delay_s": 1231,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-10T21:43:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-972"
+    ],
+    "delay_s": 1191,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T19:38:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-826 N"
     ],
-    "delay_s": 1269,
+    "delay_s": 1153,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T19:52:55Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": 1258,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T19:58:13Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-854"
-    ],
-    "delay_s": 1143,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T21:27:44Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-A1A"
-    ],
-    "delay_s": 1141,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T19:09:45Z"
    },
    {
     "county": "Miami-Dade",
@@ -373,38 +304,17 @@
      "FL-A1A S",
      "FL-A1A"
     ],
-    "delay_s": 1087,
+    "delay_s": 1085,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T20:14:44Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-836 W"
-    ],
-    "delay_s": 1068,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T18:21:45Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": 1058,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T20:48:19Z"
    },
    {
     "county": "Broward",
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 1044,
+    "delay_s": 1073,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T22:04:12Z"
@@ -412,74 +322,53 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 1056,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-10T18:21:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-826",
+     "FL-91 N",
+     "Florida's Tpke N",
+     "FL-826 W"
+    ],
+    "delay_s": 1043,
+    "magnitude": 3,
+    "description": "Stationary traffic; Roadworks",
+    "start": "2026-11-10T20:32:08Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-985"
+    ],
+    "delay_s": 985,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T22:32:26Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "US-1 N",
      "I-95 N"
     ],
-    "delay_s": 1023,
+    "delay_s": 962,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T16:22:45Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 S",
-     "Florida's Tpke S"
-    ],
-    "delay_s": 1008,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T22:35:29Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-A1A"
-    ],
-    "delay_s": 994,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T20:59:46Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "Don Shula Expy S",
-     "FL-874 S",
-     "S Dade Expy S"
-    ],
-    "delay_s": 938,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T22:25:04Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 928,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T19:36:47Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 S"
-    ],
-    "delay_s": 916,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T20:14:12Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-860"
     ],
-    "delay_s": 909,
+    "delay_s": 932,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T20:38:47Z"
@@ -487,22 +376,24 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826"
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 905,
+    "delay_s": 930,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-10T20:32:08Z"
+    "start": "2026-11-10T19:36:47Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-827"
+     "FL-7",
+     "US-441 S"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "delay_s": 911,
+    "magnitude": 3,
+    "description": "Stationary traffic; Accident",
+    "start": "2026-11-10T22:04:12Z"
    },
    {
     "county": "Broward",
@@ -513,6 +404,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-10-31T10:11:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -566,17 +467,57 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-11-10T22:28:45Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-838"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-11-10T02:10:15Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-838"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-11-10T02:11:15Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-838"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-07-16T20:45:02Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-934"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-02-23T10:56:30Z"
    }
   ],
-  "incident_count": 838,
-  "named_count": 352,
+  "incident_count": 811,
+  "named_count": 321,
   "major_count": 51,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-10T17:45:26-05:00",
+  "fetched_at": "2026-11-10T18:00:26-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -615,15 +556,14 @@
    "Northeast | St. Johns | St. Augustine: There is lane blocking construction on US-1 between Bartola Genovar Rd and Southpark Blvd. Use caution in the area. | Nov 10 2026, 6:52 AM",
    "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Nov 10 2026, 7:43 AM",
    "Northeast | Alachua | Gainseville: There is lane blocking construction on SR-121 from SW 47th St to SW 41st Pl. Use caution in the area. | Nov 10 2026, 9:22 AM",
-   "Northeast | Duval | Jacksonville: There is lane blocking construction on US-17/Main St at 7th St. Use caution in the area. | Nov 10 2026, 9:39 AM",
-   "Northeast | Nassau | Callahan: Due to a crash all SB lanes are blocked on US-301 at US-1. Use caution in the area. | Nov 10 2026, 2:35 PM"
+   "Northeast | Duval | Jacksonville: There is lane blocking construction on US-17/Main St at 7th St. Use caution in the area. | Nov 10 2026, 9:39 AM"
   ],
   "fl511_local": []
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-10T17:45:26-05:00",
+  "fetched_at": "2026-11-10T18:00:26-05:00",
   "issued": "100 PM EST Tue Nov 10 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 101746\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\nIssued by the NWS Weather Prediction Center College Park MD\n100 PM EST Tue Nov 10 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Chenard"
@@ -631,7 +571,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-10T17:45:27-05:00",
+  "fetched_at": "2026-11-10T18:00:26-05:00",
   "florida": "$3.7697",
   "national": "$3.9788",
   "diesel": "$5.8720",
@@ -640,7 +580,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-10T17:45:27-05:00",
+  "fetched_at": "2026-11-10T18:00:27-05:00",
   "streams": {
    "local": [
     {
@@ -749,6 +689,70 @@
   ],
   "local": [
    {
+    "title": "Terra unveils plans for new Miami Seaquarium, including aquarium, marina and public baywalk",
+    "url": "https://www.local10.com/news/local/2026/11/10/terra-unveils-plans-for-new-miami-seaquarium-including-aquarium-marina-and-public-baywalk/",
+    "published": "Tue, 10 Nov 2026 17:21:41 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/E37PGTTQMJD4VCRIMKQPKPBB2Q.png?auth=6e8ff6f959fb22379cf8cb3b7b7618a125d8b81c07f9a651b27bb527b599dda7&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Man arrested in Miami Beach for multiple rapes, including recent New York City assault, jail records show",
+    "url": "https://www.local10.com/news/local/2026/11/10/man-arrested-in-miami-beach-for-multiple-rapes-including-recent-new-york-city-assault-jail-records-show/",
+    "published": "Tue, 10 Nov 2026 22:25:10 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Homestead man accused of leaving 1-year-old girl in car for 8 hours, causing her death",
+    "url": "https://www.local10.com/news/local/2026/11/09/homestead-man-accused-of-leaving-1-year-old-girl-in-car-for-8-hours-causing-her-death/",
+    "published": "Mon, 09 Nov 2026 14:40:34 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Loss of CAIR-Florida could impact many following DeSantis’ designation as terrorist organization",
+    "url": "https://www.local10.com/news/local/2026/11/10/loss-of-cair-florida-could-impact-many-following-desantis-designation-as-terrorist-organization/",
+    "published": "Tue, 10 Nov 2026 20:49:32 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Man accused of beating senior, breaking his glasses in Brickell",
+    "url": "https://www.local10.com/news/local/2026/11/10/man-accused-of-beating-senior-breaking-his-glasses-in-brickell-miami-police-say/",
+    "published": "Tue, 10 Nov 2026 20:36:10 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/LCA6XBJQJFD4HM2OSI7NTXQEB4.jpg?auth=94870d4a2124005bacd69172f50142e7935df40fa62bdd1d237828dc26dcfd74&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Traffic backed up on Palmetto Expressway due to rollover crash",
+    "url": "https://www.local10.com/news/local/2026/11/10/traffic-backed-up-on-palmetto-expressway-due-to-rollover-crash/",
+    "published": "Tue, 10 Nov 2026 20:18:29 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Miami Carol City Senior High student accused of bringing loaded gun to school had posted photo with weapon on Instagram chat, police say",
+    "url": "https://www.local10.com/news/local/2026/11/10/miami-carol-city-senior-high-student-accused-of-bringing-loaded-gun-to-school-had-posted-photo-with-weapon-on-instagram-chat-police-say/",
+    "published": "Tue, 10 Nov 2026 18:41:42 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/AIWBXXLQ2NHTNICAQLY36LQVWQ.jpg?auth=cfc9fb3d076fe8bddaf880a62272d6fa052a10ca255604ae452a4f5728cc6fed&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Fire engulfs tractor-trailer, spreads to second trailer in Sweetwater, MDFR says",
+    "url": "https://www.local10.com/news/local/2026/11/10/2-trailers-containing-unknown-chemicals-catch-fire-in-sweetwater-officials-say/",
+    "published": "Tue, 10 Nov 2026 12:44:50 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "MIA hosts American Airlines Jet Pull event to raise money for airline’s Family Fund",
     "url": "https://wsvn.com/news/us-world/mia-hosts-american-airlines-jet-pull-event-to-raise-money-for-airlines-family-fund/",
     "published": "Tue, 10 Nov 2026 18:00:12 +0000",
@@ -781,6 +785,22 @@
     "media_type": "video"
    },
    {
+    "title": "Fatal crash between tow trucks in SW Miami-Dade possibly linked to crash scene solicitation scheme, MDSO says",
+    "url": "https://wsvn.com/news/local/miami-dade/fatal-tow-truck-crash-scam/",
+    "published": "Tue, 10 Nov 2026 22:46:46 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c5b72b4b-9804-480c-99e9-75062f63b811/2751f748-0040-4609-947e-b377e087c727/main.mp4?fastly_token=NmFmM2Y3OTFfZGNlNDY4MTcxOGRlMTQzNzkxNmQ1MWE0ZDIzNzcwZWMxMzQzOWE0NzJmYjFhYmUxNDI1M2ZiYjk1NTUyZjg5Nl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jNWI3MmI0Yi05ODA0LTQ4MGMtOTllOS03NTA2MmY2M2I4MTEvMjc1MWY3NDgtMDA0MC00NjA5LTk0N2UtYjM3N2UwODdjNzI3L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
+    "title": "1 in critical condition, family of 9 displaced after flames tear through Liberty City home",
+    "url": "https://wsvn.com/news/local/miami-dade/miami-liberty-city-home-fire/",
+    "published": "Tue, 10 Nov 2026 22:19:47 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/e0b5b31c-4d2e-4dbf-9dd6-d169808f5d02/4038918f-6997-447a-b769-8a10c750eb11/main.mp4?fastly_token=NmFmM2YwY2FfODQ4N2EyNTA1ZmFhNzJkNzdkMzA1NDJhYzI3OTU3ZGQxMmM1YjZlN2MyMzA1ZmM1ZDIyMzIxZWVkMjE5NmIxOF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9lMGI1YjMxYy00ZDJlLTRkYmYtOWRkNi1kMTY5ODA4ZjVkMDIvNDAzODkxOGYtNjk5Ny00NDdhLWI3NjktOGExMGM3NTBlYjExL21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "Ahead of Veterans Day, South Florida honors veterans with sports event, vehicle giveaway",
     "url": "https://wsvn.com/news/local/miami-dade/south-florida-veterans-day-celebrations/",
     "published": "Tue, 10 Nov 2026 21:59:45 +0000",
@@ -794,22 +814,6 @@
     "published": "Tue, 10 Nov 2026 19:46:59 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/94eda98a-31cf-492a-aff4-775a5b2ec2c7/517cdd1c-718b-49ca-896a-491838386a2d/main.mp4?fastly_token=NmFmM2RmOWZfYWUxZDBlYjVhYmQ1NjQ1Nzk2NmEwM2RhMDdkMzczN2FhYmMyZDBkYzQ2YzBkM2M5MGI4YmRkMmM2YjU4MGVjMV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85NGVkYTk4YS0zMWNmLTQ5MmEtYWZmNC03NzVhNWIyZWMyYzcvNTE3Y2RkMWMtNzE4Yi00OWNhLTg5NmEtNDkxODM4Mzg2YTJkL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "MIA ranks 4th worst for delays and cancellations in the US",
-    "url": "https://wsvn.com/news/local/miami-dade/mia-ranks-4th-worst-for-delays-and-cancellations-in-the-us/",
-    "published": "Tue, 10 Nov 2026 18:59:12 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/50f2e1ca-ee16-4e49-9348-9c96c8636b29/1b942bd8-802f-4cf9-8784-580cb152951d/main.mp4?fastly_token=NmFmM2MxODRfMTE4ZmNkYjU4YWRkNjJjMWE3Y2ZjYjA0YjNmNmE4ZmIwMmFjN2EyODY1M2RjYTgyZGYwM2Y4M2RkNGQ3MDVlZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS81MGYyZTFjYS1lZTE2LTRlNDktOTM0OC05Yzk2Yzg2MzZiMjkvMWI5NDJiZDgtODAyZi00Y2Y5LTg3ODQtNTgwY2IxNTI5NTFkL21haW4ubXA0",
-    "media_type": "video"
-   },
-   {
-    "title": "Mother seen on video hitting and biting sons at Hialeah supermarket charged with child abuse",
-    "url": "https://wsvn.com/news/local/miami-dade/hialeah-mother-child-abuse-arrested/",
-    "published": "Tue, 10 Nov 2026 18:14:22 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/44166330-3db3-404a-bec5-f6131a05e2c5/23da0a32-858c-4944-a720-4a51f705e7fc/main.mp4?fastly_token=NmFmM2UxMTBfNmMyYzllZjE1N2RkMTVjYzQ5YWUxZDZlYzAyZTE0ZWQ1NGZlNzZjNWY1MjBkYzRkZjA5NmEyMzQ1ODk5MzkxMF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS80NDE2NjMzMC0zZGIzLTQwNGEtYmVjNS1mNjEzMWEwNWUyYzUvMjNkYTBhMzItODU4Yy00OTQ0LWE3MjAtNGE1MWY3MDVlN2ZjL21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -949,15 +953,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-10T17:45:27-05:00",
+  "fetched_at": "2026-11-10T18:00:28-05:00",
   "items": [],
-  "scanned": 0,
+  "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (287) + USGS (19)",
-  "fetched_at": "2026-11-10T17:45:31-05:00",
+  "source": "GDACS (287) + USGS (20)",
+  "fetched_at": "2026-11-10T18:00:32-05:00",
   "events": [
    {
     "lat": 13.5381,
@@ -1240,6 +1244,19 @@
     "mag": 4.6,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000tx8z",
     "when": 1794285017109,
+    "source": "USGS"
+   },
+   {
+    "lat": -2.3853,
+    "lon": 138.6219,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.5 — 224 km W of Abepura, Indonesia",
+    "place": "224 km W of Abepura, Indonesia",
+    "severity": "M4.5",
+    "mag": 4.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000txa7",
+    "when": 1794269483263,
     "source": "USGS"
    },
    {
@@ -2405,25 +2422,13 @@
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033613",
     "when": "Sun, 08 Nov 2026 08:09:10 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": -19.506017224323998,
-    "lon": 144.52062165348175,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Australia",
-    "place": "Australia",
-    "severity": "Green impact for forestfire in 20970 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033614",
-    "when": "Sun, 08 Nov 2026 08:09:38 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 306,
+  "event_count": 307,
   "counts": {
    "red": 0,
    "orange": 4,
-   "green": 302
+   "green": 303
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2431,7 +2436,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-10T17:45:31-05:00",
+  "fetched_at": "2026-11-10T18:00:32-05:00",
   "countries": [
    {
     "iso": "COL",
@@ -2590,7 +2595,7 @@
     "issue": "MIA hosts American Airlines Jet Pull event to raise money for airline’s Family Fund"
    }
   ],
-  "headlines_scanned": 24,
+  "headlines_scanned": 32,
   "countries_matched": 9,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
