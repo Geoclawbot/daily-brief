@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-09T23:15:18-05:00",
- "generated_at_utc": "2026-11-10T04:15:18+00:00",
+ "generated_at": "2026-11-09T23:30:29-05:00",
+ "generated_at_utc": "2026-11-10T04:30:29+00:00",
  "weekday": "Monday",
  "date_label": "Monday, November 9",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-09T23:15:18-05:00",
+  "fetched_at": "2026-11-09T23:30:30-05:00",
   "curve": [
    {
     "time": "2026-11-09T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 75.6,
-   "feels": 82.0,
+   "temp": 75.8,
+   "feels": 82.5,
    "humidity": 79,
-   "wind_mph": 2.1,
-   "wind_dir": 321,
-   "observed_at": "2026-11-09T23:15"
+   "wind_mph": 1.4,
+   "wind_dir": 319,
+   "observed_at": "2026-11-09T23:30"
   },
   "today": {
    "high": 83.3,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-09T23:15:19-05:00",
+  "fetched_at": "2026-11-09T23:30:30-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-09T23:15:20-05:00",
+  "fetched_at": "2026-11-09T23:30:31-05:00",
   "aqi": 57,
   "category": "Moderate",
   "pm25": 19.8,
@@ -185,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-11-09T23:15:20-05:00",
+  "fetched_at": "2026-11-09T23:30:32-05:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -336,21 +336,41 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "FL-887 S"
+    ],
+    "delay_s": 146,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-11-10T04:28:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "I-95 S"
     ],
-    "delay_s": 230,
-    "magnitude": 3,
-    "description": "Stationary traffic",
+    "delay_s": 105,
+    "magnitude": 2,
+    "description": "Queuing traffic",
     "start": "2026-11-10T02:27:45Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-869 S"
+    ],
+    "delay_s": 78,
+    "magnitude": 1,
+    "description": "Slow traffic",
+    "start": "2026-11-10T04:06:15Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-836 E"
     ],
-    "delay_s": 181,
-    "magnitude": 2,
-    "description": "Queuing traffic",
+    "delay_s": 75,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-11-10T02:11:45Z"
    },
    {
@@ -358,31 +378,21 @@
     "roads": [
      "FL-112 E"
     ],
-    "delay_s": 174,
-    "magnitude": 3,
-    "description": "Stationary traffic",
+    "delay_s": 71,
+    "magnitude": 1,
+    "description": "Slow traffic",
     "start": "2026-11-10T03:01:15Z"
    },
    {
-    "county": "Broward",
+    "county": "Miami-Dade",
     "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
+     "US-1 N",
+     "FL-5"
     ],
-    "delay_s": 120,
-    "magnitude": 2,
-    "description": "Queuing traffic; Multi-vehicle accident",
-    "start": "2026-11-10T02:27:15Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-869 S"
-    ],
-    "delay_s": 104,
+    "delay_s": 62,
     "magnitude": 1,
     "description": "Slow traffic",
-    "start": "2026-11-10T04:06:15Z"
+    "start": "2026-11-10T04:25:45Z"
    },
    {
     "county": "Broward",
@@ -394,17 +404,6 @@
     "magnitude": 0,
     "description": "Lane closed; Right lane closed; Roadworks",
     "start": "2026-11-10T03:53:45Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "FL-91 N",
-     "Florida's Tpke N"
-    ],
-    "delay_s": null,
-    "magnitude": 0,
-    "description": "Multi-vehicle accident; Right lane closed",
-    "start": "2026-11-10T02:55:45Z"
    },
    {
     "county": "Broward",
@@ -501,7 +500,7 @@
     "start": "2026-11-08T22:34:15Z"
    }
   ],
-  "incident_count": 293,
+  "incident_count": 300,
   "named_count": 30,
   "major_count": 14,
   "coverage": "Miami-Dade + Broward"
@@ -509,7 +508,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-09T23:15:21-05:00",
+  "fetched_at": "2026-11-09T23:30:32-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -554,7 +553,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-09T23:15:21-05:00",
+  "fetched_at": "2026-11-09T23:30:33-05:00",
   "issued": "700 PM EST Mon Nov 9 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 092312\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n700 PM EST Mon Nov 9 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Kelly"
@@ -562,7 +561,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-09T23:15:21-05:00",
+  "fetched_at": "2026-11-09T23:30:33-05:00",
   "florida": "$3.7925",
   "national": "$4.0093",
   "diesel": "$5.8863",
@@ -571,7 +570,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-09T23:15:22-05:00",
+  "fetched_at": "2026-11-09T23:30:35-05:00",
   "streams": {
    "local": [
     {
@@ -944,7 +943,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-09T23:15:23-05:00",
+  "fetched_at": "2026-11-09T23:30:37-05:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -952,7 +951,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (276) + USGS (18)",
-  "fetched_at": "2026-11-09T23:15:26-05:00",
+  "fetched_at": "2026-11-09T23:30:40-05:00",
   "events": [
    {
     "lat": 36.2471,
@@ -1297,13 +1296,13 @@
     "source": "GDACS"
    },
    {
-    "lat": -21.562932171154067,
-    "lon": 121.82738809132402,
+    "lat": -21.566439292733182,
+    "lon": 121.81702017096958,
     "kind": "wildfire",
     "level": "green",
     "title": "Green forest fire notification in Australia",
     "place": "Australia",
-    "severity": "Green impact for forestfire in 5485 ha",
+    "severity": "Green impact for forestfire in 6350 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033658",
     "when": "Tue, 10 Nov 2026 00:06:38 GMT",
     "source": "GDACS"
@@ -1353,7 +1352,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 5796 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033662",
-    "when": "Tue, 10 Nov 2026 00:01:31 GMT",
+    "when": "Tue, 10 Nov 2026 04:05:48 GMT",
     "source": "GDACS"
    },
    {
@@ -1509,7 +1508,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 5200 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033664",
-    "when": "Tue, 10 Nov 2026 00:10:38 GMT",
+    "when": "Tue, 10 Nov 2026 04:07:44 GMT",
     "source": "GDACS"
    },
    {
@@ -1545,7 +1544,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 7030 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033667",
-    "when": "Tue, 10 Nov 2026 00:08:36 GMT",
+    "when": "Tue, 10 Nov 2026 04:09:15 GMT",
     "source": "GDACS"
    },
    {
@@ -1557,7 +1556,7 @@
     "place": "Burkina Faso",
     "severity": "Green impact for forestfire in 5266 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033681",
-    "when": "Tue, 10 Nov 2026 00:07:16 GMT",
+    "when": "Tue, 10 Nov 2026 04:09:59 GMT",
     "source": "GDACS"
    },
    {
@@ -1569,7 +1568,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 5046 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033682",
-    "when": "Tue, 10 Nov 2026 00:07:33 GMT",
+    "when": "Tue, 10 Nov 2026 04:09:49 GMT",
     "source": "GDACS"
    },
    {
@@ -1581,7 +1580,7 @@
     "place": "Central African Republic",
     "severity": "Green impact for forestfire in 6064 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033676",
-    "when": "Tue, 10 Nov 2026 00:08:10 GMT",
+    "when": "Tue, 10 Nov 2026 04:08:32 GMT",
     "source": "GDACS"
    },
    {
@@ -1677,7 +1676,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 25039 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033623",
-    "when": "Tue, 10 Nov 2026 00:10:06 GMT",
+    "when": "Tue, 10 Nov 2026 04:09:54 GMT",
     "source": "GDACS"
    },
    {
@@ -1689,7 +1688,7 @@
     "place": "Botswana",
     "severity": "Green impact for forestfire in 5036 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033632",
-    "when": "Tue, 10 Nov 2026 00:07:57 GMT",
+    "when": "Tue, 10 Nov 2026 04:09:05 GMT",
     "source": "GDACS"
    },
    {
@@ -1701,7 +1700,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 7477 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033646",
-    "when": "Tue, 10 Nov 2026 00:11:00 GMT",
+    "when": "Tue, 10 Nov 2026 04:08:16 GMT",
     "source": "GDACS"
    },
    {
@@ -1713,7 +1712,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 15918 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033647",
-    "when": "Tue, 10 Nov 2026 00:09:36 GMT",
+    "when": "Tue, 10 Nov 2026 04:08:09 GMT",
     "source": "GDACS"
    },
    {
@@ -1725,7 +1724,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 5779 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033649",
-    "when": "Tue, 10 Nov 2026 00:08:59 GMT",
+    "when": "Tue, 10 Nov 2026 04:08:47 GMT",
     "source": "GDACS"
    },
    {
@@ -1773,7 +1772,7 @@
     "place": "Botswana",
     "severity": "Green impact for forestfire in 8293 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033582",
-    "when": "Tue, 10 Nov 2026 00:09:17 GMT",
+    "when": "Tue, 10 Nov 2026 04:09:09 GMT",
     "source": "GDACS"
    },
    {
@@ -1869,7 +1868,7 @@
     "place": "Indonesia",
     "severity": "Green impact for forestfire in 5215 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033624",
-    "when": "Tue, 10 Nov 2026 00:14:00 GMT",
+    "when": "Tue, 10 Nov 2026 04:11:19 GMT",
     "source": "GDACS"
    },
    {
@@ -1893,7 +1892,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 5276 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033650",
-    "when": "Tue, 10 Nov 2026 00:13:46 GMT",
+    "when": "Tue, 10 Nov 2026 04:10:39 GMT",
     "source": "GDACS"
    },
    {
@@ -1905,7 +1904,7 @@
     "place": "Mali",
     "severity": "Green impact for forestfire in 8018 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033633",
-    "when": "Tue, 10 Nov 2026 00:11:29 GMT",
+    "when": "Tue, 10 Nov 2026 04:12:12 GMT",
     "source": "GDACS"
    },
    {
@@ -2025,7 +2024,7 @@
     "place": "Botswana",
     "severity": "Green impact for forestfire in 7055 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033677",
-    "when": "Tue, 10 Nov 2026 00:11:12 GMT",
+    "when": "Tue, 10 Nov 2026 04:11:49 GMT",
     "source": "GDACS"
    },
    {
@@ -2037,7 +2036,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 7860 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033683",
-    "when": "Tue, 10 Nov 2026 00:11:43 GMT",
+    "when": "Tue, 10 Nov 2026 04:12:41 GMT",
     "source": "GDACS"
    },
    {
@@ -2049,7 +2048,7 @@
     "place": "Australia",
     "severity": "Green impact for forestfire in 6594 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033684",
-    "when": "Tue, 10 Nov 2026 00:12:19 GMT",
+    "when": "Tue, 10 Nov 2026 04:11:40 GMT",
     "source": "GDACS"
    },
    {
@@ -2061,7 +2060,7 @@
     "place": "Senegal",
     "severity": "Green impact for forestfire in 5875 ha",
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033685",
-    "when": "Tue, 10 Nov 2026 00:13:20 GMT",
+    "when": "Tue, 10 Nov 2026 04:11:25 GMT",
     "source": "GDACS"
    },
    {
@@ -2425,7 +2424,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-09T23:15:26-05:00",
+  "fetched_at": "2026-11-09T23:30:40-05:00",
   "countries": [
    {
     "iso": "FRA",
