@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-10T16:00:19-05:00",
- "generated_at_utc": "2026-11-10T21:00:19+00:00",
+ "generated_at": "2026-11-10T16:15:19-05:00",
+ "generated_at_utc": "2026-11-10T21:15:19+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, November 10",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-10T16:00:19-05:00",
+  "fetched_at": "2026-11-10T16:15:19-05:00",
   "curve": [
    {
     "time": "2026-11-10T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 81.6,
-   "feels": 88.0,
-   "humidity": 70,
-   "wind_mph": 4.9,
-   "wind_dir": 131,
-   "observed_at": "2026-11-10T16:00"
+   "temp": 80.5,
+   "feels": 87.3,
+   "humidity": 73,
+   "wind_mph": 3.9,
+   "wind_dir": 177,
+   "observed_at": "2026-11-10T16:15"
   },
   "today": {
    "high": 84.5,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-10T16:00:20-05:00",
+  "fetched_at": "2026-11-10T16:15:20-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-10T16:00:20-05:00",
+  "fetched_at": "2026-11-10T16:15:20-05:00",
   "aqi": 58,
   "category": "Moderate",
   "pm25": 10.7,
@@ -185,17 +185,23 @@
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-11-10T16:00:23-05:00",
+  "fetched_at": "2026-11-10T16:15:23-05:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 21.2,
+  "miles": 21.9,
   "minutes": 71,
-  "delay_minutes": 5,
+  "delay_minutes": 4,
   "toll_free": true,
   "alternates": [
+   {
+    "miles": 25.5,
+    "minutes": 57,
+    "toll": true,
+    "saves": 14
+   },
    {
     "miles": 22.6,
     "minutes": 60,
@@ -203,33 +209,27 @@
     "saves": 11
    },
    {
-    "miles": 26.8,
-    "minutes": 60,
-    "toll": true,
-    "saves": 11
-   },
-   {
-    "miles": 21.4,
+    "miles": 22.1,
     "minutes": 68,
     "toll": true,
     "saves": 3
    },
    {
-    "miles": 28.6,
-    "minutes": 70,
+    "miles": 45.6,
+    "minutes": 67,
     "toll": true,
-    "saves": 1
+    "saves": 4
    }
   ],
   "alternates_worth_taking": [
    {
-    "miles": 22.6,
-    "minutes": 60,
+    "miles": 25.5,
+    "minutes": 57,
     "toll": true,
-    "saves": 11
+    "saves": 14
    },
    {
-    "miles": 26.8,
+    "miles": 22.6,
     "minutes": 60,
     "toll": true,
     "saves": 11
@@ -237,51 +237,40 @@
   ],
   "free_alternates": [
    {
-    "miles": 21.2,
+    "miles": 21.9,
     "minutes": 71,
-    "delay_minutes": 5,
+    "delay_minutes": 4,
     "saves": 0
    },
    {
     "miles": 23.4,
-    "minutes": 78,
-    "delay_minutes": 2
-   },
-   {
-    "miles": 23.3,
-    "minutes": 85,
+    "minutes": 76,
     "delay_minutes": 0
    },
    {
+    "miles": 23.3,
+    "minutes": 84,
+    "delay_minutes": 1
+   },
+   {
     "miles": 22.6,
-    "minutes": 81,
+    "minutes": 80,
     "delay_minutes": 2
    }
   ],
   "best_free": {
-   "miles": 21.2,
+   "miles": 21.9,
    "minutes": 71,
-   "delay_minutes": 5,
+   "delay_minutes": 4,
    "saves": 0
   },
   "incidents": [
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 N",
-     "I-95 N"
-    ],
-    "delay_s": 1972,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-10T16:22:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-972"
     ],
-    "delay_s": 1911,
+    "delay_s": 2656,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T19:38:15Z"
@@ -291,7 +280,7 @@
     "roads": [
      "FL-976"
     ],
-    "delay_s": 1702,
+    "delay_s": 1804,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T19:44:33Z"
@@ -299,20 +288,9 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-1 S",
-     "FL-5"
-    ],
-    "delay_s": 1312,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T19:16:51Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
      "FL-A1A"
     ],
-    "delay_s": 1107,
+    "delay_s": 1363,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T19:09:45Z"
@@ -320,22 +298,55 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 N"
+     "US-1 N",
+     "I-95 N"
     ],
-    "delay_s": 1057,
+    "delay_s": 1247,
     "magnitude": 3,
-    "description": "Stationary traffic; Accident",
-    "start": "2026-11-10T19:34:45Z"
+    "description": "Stationary traffic",
+    "start": "2026-11-10T16:22:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "I-95 N"
+    ],
+    "delay_s": 1209,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-10T16:22:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-836 W"
+    ],
+    "delay_s": 1083,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T18:21:45Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "FL-827"
+     "FL-7",
+     "US-441 S"
     ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-10-31T10:11:30Z"
+    "delay_s": 1033,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T20:47:41Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-41 S",
+     "US-41 N"
+    ],
+    "delay_s": 963,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T20:25:03Z"
    },
    {
     "county": "Broward",
@@ -346,6 +357,16 @@
     "magnitude": 4,
     "description": "Closed; Roadworks",
     "start": "2026-01-12T19:05:30Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-827"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed; Roadworks",
+    "start": "2026-10-31T10:11:30Z"
    },
    {
     "county": "Broward",
@@ -366,6 +387,16 @@
     "magnitude": 4,
     "description": "Closed",
     "start": "2026-11-10T19:27:45Z"
+   },
+   {
+    "county": "Broward",
+    "roads": [
+     "FL-820"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Closed",
+    "start": "2026-11-10T20:55:17Z"
    },
    {
     "county": "Broward",
@@ -428,14 +459,15 @@
     "start": "2026-11-09T13:49:58Z"
    },
    {
-    "county": "Miami-Dade",
+    "county": "Broward",
     "roads": [
-     "FL-836 W"
+     "FL-91 N",
+     "Florida's Tpke N"
     ],
-    "delay_s": 873,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-10T18:21:45Z"
+    "delay_s": 834,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T20:48:19Z"
    },
    {
     "county": "Miami-Dade",
@@ -444,20 +476,10 @@
      "US-41 N",
      "FL-5"
     ],
-    "delay_s": 797,
+    "delay_s": 821,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T14:47:15Z"
-   },
-   {
-    "county": "Broward",
-    "roads": [
-     "I-95 S"
-    ],
-    "delay_s": 794,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-10T20:19:22Z"
    },
    {
     "county": "Miami-Dade",
@@ -465,7 +487,7 @@
      "FL-821 S",
      "Florida's Tpke S"
     ],
-    "delay_s": 704,
+    "delay_s": 801,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-11-10T20:25:03Z"
@@ -473,53 +495,56 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-9"
+     "US-41 W",
+     "FL-A1A S"
     ],
-    "delay_s": 680,
+    "delay_s": 780,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-10T20:47:41Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "County Hwy-913",
-     "FL-973"
-    ],
-    "delay_s": 667,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T19:32:20Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-976"
-    ],
-    "delay_s": 641,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T19:53:24Z"
+    "start": "2026-11-10T20:14:44Z"
    },
    {
     "county": "Broward",
     "roads": [
-     "I-95 S"
+     "US-1 N",
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 640,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-10T20:38:13Z"
+    "delay_s": 758,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T20:45:43Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-823"
+     "FL-826 N"
     ],
-    "delay_s": 619,
+    "delay_s": 748,
+    "magnitude": 3,
+    "description": "Stationary traffic; Accident",
+    "start": "2026-11-10T19:34:45Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-907"
+    ],
+    "delay_s": 733,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-10T19:36:47Z"
+    "start": "2026-11-10T19:40:19Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 710,
+    "magnitude": 2,
+    "description": "Queuing traffic",
+    "start": "2026-11-10T19:16:51Z"
    },
    {
     "county": "Miami-Dade",
@@ -527,7 +552,7 @@
      "I-395 W",
      "FL-836 W"
     ],
-    "delay_s": 601,
+    "delay_s": 654,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T19:12:20Z"
@@ -535,54 +560,34 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-94"
+     "Snapper Creek Expy W",
+     "FL-878 W"
     ],
-    "delay_s": 564,
+    "delay_s": 630,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-10T19:24:22Z"
+    "start": "2026-11-10T19:37:15Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-826 W"
+     "FL-953"
     ],
-    "delay_s": 555,
+    "delay_s": 626,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-10T19:35:45Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-41 S",
-     "US-41 N"
-    ],
-    "delay_s": 545,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T20:25:03Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-826 S"
-    ],
-    "delay_s": 534,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T20:10:57Z"
+    "start": "2026-11-10T20:45:43Z"
    }
   ],
-  "incident_count": 691,
-  "named_count": 251,
-  "major_count": 26,
+  "incident_count": 685,
+  "named_count": 253,
+  "major_count": 33,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-10T16:00:24-05:00",
+  "fetched_at": "2026-11-10T16:15:24-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -629,7 +634,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-10T16:00:24-05:00",
+  "fetched_at": "2026-11-10T16:15:24-05:00",
   "issued": "100 PM EST Tue Nov 10 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 101746\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\nIssued by the NWS Weather Prediction Center College Park MD\n100 PM EST Tue Nov 10 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Chenard"
@@ -637,7 +642,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-10T16:00:24-05:00",
+  "fetched_at": "2026-11-10T16:15:25-05:00",
   "florida": "$3.7697",
   "national": "$3.9788",
   "diesel": "$5.8720",
@@ -646,7 +651,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-10T16:00:25-05:00",
+  "fetched_at": "2026-11-10T16:15:25-05:00",
   "streams": {
    "local": [
     {
@@ -847,7 +852,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/camp-uots-thrive-fest-coral-gables/",
     "published": "Tue, 10 Nov 2026 14:23:24 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c29d3d82-38e1-4c9e-b052-00b8abc5b150/942561cc-a854-4e34-9b11-2c58e12a5fe6/main.mp4?fastly_token=NmFmMzk1ZDdfNDcyZWQ1YmMwYjJmMzU0MTVhOTEyOWY2YTVkYTNiNGNhYTNiZmJiZTYxYThhODMxNDU5YWVhZDI0OTQwMzY1Nl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jMjlkM2Q4Mi0zOGUxLTRjOWUtYjA1Mi0wMGI4YWJjNWIxNTAvOTQyNTYxY2MtYTg1NC00ZTM0LTliMTEtMmM1OGUxMmE1ZmU2L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/c29d3d82-38e1-4c9e-b052-00b8abc5b150/942561cc-a854-4e34-9b11-2c58e12a5fe6/main.mp4?fastly_token=NmFmM2UwMjdfZDhjMmIxZWNmMjdjY2JlYTJjM2FjMWQwN2ZkYjMwOTVkMmFhZjk2ZTQzNjE4MDc4ODU0MGM3OWU0MzllN2U3YV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9jMjlkM2Q4Mi0zOGUxLTRjOWUtYjA1Mi0wMGI4YWJjNWIxNTAvOTQyNTYxY2MtYTg1NC00ZTM0LTliMTEtMmM1OGUxMmE1ZmU2L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -855,8 +860,8 @@
     "url": "https://wsvn.com/news/local/miami-dade/family-displaced-after-fire-breaks-out-in-kitchen-at-miami-home/",
     "published": "Tue, 10 Nov 2026 19:46:59 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/11/111026-Miami-Fire-Rescue-rescues-dog-from-kitchen-fire.png",
-    "media_type": "image"
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/94eda98a-31cf-492a-aff4-775a5b2ec2c7/517cdd1c-718b-49ca-896a-491838386a2d/main.mp4?fastly_token=NmFmM2RmOWZfYWUxZDBlYjVhYmQ1NjQ1Nzk2NmEwM2RhMDdkMzczN2FhYmMyZDBkYzQ2YzBkM2M5MGI4YmRkMmM2YjU4MGVjMV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85NGVkYTk4YS0zMWNmLTQ5MmEtYWZmNC03NzVhNWIyZWMyYzcvNTE3Y2RkMWMtNzE4Yi00OWNhLTg5NmEtNDkxODM4Mzg2YTJkL21haW4ubXA0",
+    "media_type": "video"
    },
    {
     "title": "MIA ranks 4th worst for delays and cancellations in the US",
@@ -884,6 +889,22 @@
    }
   ],
   "colombia": [
+   {
+    "title": "Explosión en polvorería en Caldas, Antioquia, deja dos personas muertas: autoridades investigan las causas de la emergencia",
+    "url": "https://www.eltiempo.com/colombia/medellin/explosion-en-polvoreria-en-caldas-antioquia-deja-dos-personas-muertas-autoridades-investigan-las-causas-de-la-emergencia-3599982",
+    "published": "2026-11-10T16:07:45-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/11/10/6af3873c4fea1.jpeg",
+    "media_type": "image"
+   },
+   {
+    "title": "El INEM de Cali: el emblemático colegio que lucha contra el olvido y clama por reparar sus instalaciones tras el terremoto del 10 de agosto",
+    "url": "https://www.eltiempo.com/colombia/cali/el-inem-de-cali-el-emblematico-colegio-que-lucha-contra-el-olvido-y-clama-por-reparar-sus-instalaciones-tras-el-terremoto-del-10-de-agosto-3599969",
+    "published": "2026-11-10T15:46:12-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/11/10/6af37cfa4f6c8.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Así avanza la millonaria reconstrucción de viviendas en Antioquia tras el terremoto del 10 de agosto",
     "url": "https://www.eltiempo.com/colombia/medellin/asi-avanza-la-millonaria-reconstruccion-de-viviendas-en-antioquia-tras-el-terremoto-del-10-de-agosto-3599948",
@@ -930,22 +951,6 @@
     "published": "2026-11-10T13:01:00-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/11/10/6af360b61f405.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Dos adultos mayores tienen miedo por el tejado colapsado y aún esperan ayudas en Cali: 'Vivo con el casco puesto por si me caen más pedazos del techo'",
-    "url": "https://www.eltiempo.com/colombia/cali/la-dura-realidad-de-dos-adultos-mayores-damnificados-por-el-terremoto-en-cali-su-casa-tiene-rotulo-rojo-por-el-colapso-del-techo-y-aun-esperan-ayudas-3599924",
-    "published": "2026-11-10T13:35:25-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/11/10/6af355b498aff.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Los compromisos y anuncios que hizo el presidente Abelardo De La Espriella para el departamento de Boyacá tras su visita a Tunja",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/los-compromisos-y-anuncios-que-hizo-el-presidente-abelardo-de-la-espriella-para-el-departamento-de-boyaca-tras-su-visita-a-tunja-3599906",
-    "published": "2026-11-10T11:40:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/11/10/6af3495b1bc67.jpeg",
     "media_type": "image"
    }
   ],
@@ -1019,7 +1024,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-10T16:00:26-05:00",
+  "fetched_at": "2026-11-10T16:15:26-05:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -1027,7 +1032,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (287) + USGS (19)",
-  "fetched_at": "2026-11-10T16:00:29-05:00",
+  "fetched_at": "2026-11-10T16:15:28-05:00",
   "events": [
    {
     "lat": 13.5381,
@@ -2501,7 +2506,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-10T16:00:29-05:00",
+  "fetched_at": "2026-11-10T16:15:28-05:00",
   "countries": [
    {
     "iso": "RUS",
@@ -2568,14 +2573,14 @@
     "name": "Colombia",
     "stories": [
      {
-      "title": "Dos adultos mayores tienen miedo por el tejado colapsado y aún esperan ayudas en Cali: 'Vivo con el casco puesto por si me caen más pedazos del techo'",
-      "url": "https://www.eltiempo.com/colombia/cali/la-dura-realidad-de-dos-adultos-mayores-damnificados-por-el-terremoto-en-cali-su-casa-tiene-rotulo-rojo-por-el-colapso-del-techo-y-aun-esperan-ayudas-3599924",
-      "published": "2026-11-10T13:35:25-05:00",
+      "title": "El INEM de Cali: el emblemático colegio que lucha contra el olvido y clama por reparar sus instalaciones tras el terremoto del 10 de agosto",
+      "url": "https://www.eltiempo.com/colombia/cali/el-inem-de-cali-el-emblematico-colegio-que-lucha-contra-el-olvido-y-clama-por-reparar-sus-instalaciones-tras-el-terremoto-del-10-de-agosto-3599969",
+      "published": "2026-11-10T15:46:12-05:00",
       "section": "colombia"
      }
     ],
     "count": 1,
-    "issue": "Dos adultos mayores tienen miedo por el tejado colapsado y aún esperan ayudas en Cali: 'Vivo con el casco puesto por si me caen más pedazos del techo'"
+    "issue": "El INEM de Cali: el emblemático colegio que lucha contra el olvido y clama por reparar sus instalaciones tras el terremoto del 10 de agosto"
    },
    {
     "iso": "FRA",
