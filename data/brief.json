@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-10T15:15:20-05:00",
- "generated_at_utc": "2026-11-10T20:15:20+00:00",
+ "generated_at": "2026-11-10T15:30:19-05:00",
+ "generated_at_utc": "2026-11-10T20:30:19+00:00",
  "weekday": "Tuesday",
  "date_label": "Tuesday, November 10",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-10T15:15:21-05:00",
+  "fetched_at": "2026-11-10T15:30:19-05:00",
   "curve": [
    {
     "time": "2026-11-10T05:00",
@@ -147,12 +147,12 @@
    }
   ],
   "current": {
-   "temp": 83.9,
-   "feels": 89.4,
-   "humidity": 61,
-   "wind_mph": 4.5,
-   "wind_dir": 121,
-   "observed_at": "2026-11-10T15:15"
+   "temp": 83.0,
+   "feels": 88.3,
+   "humidity": 62,
+   "wind_mph": 4.6,
+   "wind_dir": 144,
+   "observed_at": "2026-11-10T15:30"
   },
   "today": {
    "high": 84.9,
@@ -166,14 +166,14 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-10T15:15:21-05:00",
+  "fetched_at": "2026-11-10T15:30:19-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-10T15:15:22-05:00",
+  "fetched_at": "2026-11-10T15:30:20-05:00",
   "aqi": 58,
   "category": "Moderate",
   "pm25": 10.9,
@@ -185,15 +185,15 @@
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-11-10T15:15:24-05:00",
+  "fetched_at": "2026-11-10T15:30:22-05:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
-  "depart_at": "2026-11-10T15:30:00-05:00",
+  "depart_at": "now",
   "miles": 20.6,
   "minutes": 64,
-  "delay_minutes": 3,
+  "delay_minutes": 2,
   "toll_free": true,
   "alternates": [
    {
@@ -203,22 +203,22 @@
     "saves": 8
    },
    {
-    "miles": 26.8,
-    "minutes": 55,
-    "toll": true,
-    "saves": 9
-   },
-   {
     "miles": 28.6,
-    "minutes": 62,
+    "minutes": 59,
     "toll": true,
-    "saves": 2
+    "saves": 5
    },
    {
     "miles": 20.8,
     "minutes": 62,
     "toll": true,
     "saves": 2
+   },
+   {
+    "miles": 27.2,
+    "minutes": 66,
+    "toll": true,
+    "saves": -2
    }
   ],
   "alternates_worth_taking": [],
@@ -226,7 +226,7 @@
    {
     "miles": 20.6,
     "minutes": 64,
-    "delay_minutes": 3,
+    "delay_minutes": 2,
     "saves": 0
    },
    {
@@ -240,24 +240,36 @@
     "delay_minutes": 0
    },
    {
-    "miles": 22.5,
-    "minutes": 75,
+    "miles": 23.7,
+    "minutes": 81,
     "delay_minutes": 0
    }
   ],
   "best_free": {
    "miles": 20.6,
    "minutes": 64,
-   "delay_minutes": 3,
+   "delay_minutes": 2,
    "saves": 0
   },
   "incidents": [
    {
     "county": "Miami-Dade",
     "roads": [
+     "S Dade Expy N",
+     "Don Shula Expy N",
+     "FL-874 N"
+    ],
+    "delay_s": 1740,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T19:58:43Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-826 N"
     ],
-    "delay_s": 1563,
+    "delay_s": 1683,
     "magnitude": 3,
     "description": "Stationary traffic; Accident",
     "start": "2026-11-10T19:34:45Z"
@@ -267,7 +279,7 @@
     "roads": [
      "FL-976"
     ],
-    "delay_s": 1137,
+    "delay_s": 1406,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T19:44:33Z"
@@ -277,7 +289,7 @@
     "roads": [
      "I-95 N"
     ],
-    "delay_s": 923,
+    "delay_s": 1064,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-11-10T16:22:45Z"
@@ -290,7 +302,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-01-12T19:05:30Z"
+    "start": "2026-10-31T10:11:30Z"
    },
    {
     "county": "Broward",
@@ -300,7 +312,7 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed; Roadworks",
-    "start": "2026-10-31T10:11:30Z"
+    "start": "2026-01-12T19:05:30Z"
    },
    {
     "county": "Broward",
@@ -329,8 +341,8 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed; Roadworks",
-    "start": "2026-11-10T02:10:15Z"
+    "description": "Closed",
+    "start": "2026-11-10T02:11:15Z"
    },
    {
     "county": "Broward",
@@ -339,8 +351,8 @@
     ],
     "delay_s": null,
     "magnitude": 4,
-    "description": "Closed",
-    "start": "2026-11-10T02:11:15Z"
+    "description": "Closed; Roadworks",
+    "start": "2026-11-10T02:10:15Z"
    },
    {
     "county": "Broward",
@@ -365,6 +377,16 @@
    {
     "county": "Miami-Dade",
     "roads": [
+     "US-441 S"
+    ],
+    "delay_s": null,
+    "magnitude": 4,
+    "description": "Bridge closed",
+    "start": "2026-11-10T17:13:15Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
      "FL-934"
     ],
     "delay_s": null,
@@ -380,36 +402,14 @@
     "delay_s": null,
     "magnitude": 4,
     "description": "Closed",
-    "start": "2026-11-09T13:49:21Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-968"
-    ],
-    "delay_s": null,
-    "magnitude": 4,
-    "description": "Closed",
     "start": "2026-11-09T13:49:58Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "S Dade Expy N",
-     "Don Shula Expy N",
-     "FL-874 N"
-    ],
-    "delay_s": 826,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T19:58:43Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-A1A"
     ],
-    "delay_s": 756,
+    "delay_s": 890,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T19:09:45Z"
@@ -419,7 +419,7 @@
     "roads": [
      "FL-836 W"
     ],
-    "delay_s": 668,
+    "delay_s": 878,
     "magnitude": 2,
     "description": "Queuing traffic",
     "start": "2026-11-10T18:21:45Z"
@@ -429,22 +429,10 @@
     "roads": [
      "I-95 S"
     ],
-    "delay_s": 619,
+    "delay_s": 791,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-10T20:07:06Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "US-41 N",
-     "FL-5"
-    ],
-    "delay_s": 559,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T14:47:15Z"
+    "start": "2026-11-10T20:19:22Z"
    },
    {
     "county": "Miami-Dade",
@@ -452,7 +440,7 @@
      "US-1 N",
      "I-95 N"
     ],
-    "delay_s": 558,
+    "delay_s": 753,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T18:51:45Z"
@@ -460,35 +448,12 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "US-41 S",
-     "US-41 N"
+     "FL-972"
     ],
-    "delay_s": 540,
+    "delay_s": 739,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-10T19:46:34Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-1 N",
-     "FL-5"
-    ],
-    "delay_s": 508,
-    "magnitude": 3,
-    "description": "Stationary traffic",
-    "start": "2026-11-10T18:00:17Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "US-27 S",
-     "FL-25"
-    ],
-    "delay_s": 497,
-    "magnitude": 3,
-    "description": "Stationary traffic; Roadworks",
-    "start": "2026-11-10T19:53:55Z"
+    "start": "2026-11-10T19:38:15Z"
    },
    {
     "county": "Miami-Dade",
@@ -496,17 +461,7 @@
      "US-1 S",
      "FL-5"
     ],
-    "delay_s": 492,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-10T19:16:51Z"
-   },
-   {
-    "county": "Miami-Dade",
-    "roads": [
-     "FL-986"
-    ],
-    "delay_s": 464,
+    "delay_s": 702,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T19:16:51Z"
@@ -514,31 +469,71 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-932"
+     "FL-860"
     ],
-    "delay_s": 460,
+    "delay_s": 673,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-10T19:30:15Z"
+    "start": "2026-11-10T19:51:57Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "Don Shula Expy S",
-     "FL-874 S",
-     "S Dade Expy S"
+     "US-41 S",
+     "US-41 N"
     ],
-    "delay_s": 445,
-    "magnitude": 2,
-    "description": "Queuing traffic",
-    "start": "2026-11-10T19:02:49Z"
+    "delay_s": 648,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T19:46:34Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-953"
+    ],
+    "delay_s": 615,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T20:08:46Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "US-1 S",
+     "FL-5"
+    ],
+    "delay_s": 610,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T19:24:51Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-825"
+    ],
+    "delay_s": 606,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T20:08:10Z"
+   },
+   {
+    "county": "Miami-Dade",
+    "roads": [
+     "FL-922"
+    ],
+    "delay_s": 592,
+    "magnitude": 3,
+    "description": "Stationary traffic",
+    "start": "2026-11-10T20:12:10Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
      "FL-932"
     ],
-    "delay_s": 440,
+    "delay_s": 568,
     "magnitude": 3,
     "description": "Stationary traffic",
     "start": "2026-11-10T19:39:45Z"
@@ -546,33 +541,35 @@
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-907"
+     "FL-932"
     ],
-    "delay_s": 432,
+    "delay_s": 554,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-10T19:40:19Z"
+    "start": "2026-11-10T19:30:15Z"
    },
    {
     "county": "Miami-Dade",
     "roads": [
-     "FL-860"
+     "US-1 N",
+     "US-1 S",
+     "FL-5"
     ],
-    "delay_s": 423,
+    "delay_s": 553,
     "magnitude": 3,
     "description": "Stationary traffic",
-    "start": "2026-11-10T19:51:57Z"
+    "start": "2026-11-10T19:20:47Z"
    }
   ],
-  "incident_count": 669,
-  "named_count": 224,
-  "major_count": 18,
+  "incident_count": 700,
+  "named_count": 250,
+  "major_count": 26,
   "coverage": "Miami-Dade + Broward"
  },
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-10T15:15:25-05:00",
+  "fetched_at": "2026-11-10T15:30:23-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -619,7 +616,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-10T15:15:25-05:00",
+  "fetched_at": "2026-11-10T15:30:23-05:00",
   "issued": "100 PM EST Tue Nov 10 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 101746\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\nIssued by the NWS Weather Prediction Center College Park MD\n100 PM EST Tue Nov 10 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Chenard"
@@ -627,7 +624,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-10T15:15:25-05:00",
+  "fetched_at": "2026-11-10T15:30:23-05:00",
   "florida": "$3.7697",
   "national": "$3.9788",
   "diesel": "$5.8720",
@@ -636,7 +633,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-10T15:15:26-05:00",
+  "fetched_at": "2026-11-10T15:30:24-05:00",
   "streams": {
    "local": [
     {
@@ -744,6 +741,70 @@
    }
   ],
   "local": [
+   {
+    "title": "Traffic backed up on Palmetto Expressway due to rollover crash",
+    "url": "https://www.local10.com/news/local/2026/11/10/traffic-backed-up-on-palmetto-expressway-due-to-rollover-crash/",
+    "published": "Tue, 10 Nov 2026 20:18:29 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Miami Carol City Senior High student accused of bringing loaded gun to school had posted photo with weapon on Instagram chat, police say",
+    "url": "https://www.local10.com/news/local/2026/11/10/miami-carol-city-senior-high-student-accused-of-bringing-loaded-gun-to-school-had-posted-photo-with-weapon-on-instagram-chat-police-say/",
+    "published": "Tue, 10 Nov 2026 18:41:42 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/AIWBXXLQ2NHTNICAQLY36LQVWQ.jpg?auth=cfc9fb3d076fe8bddaf880a62272d6fa052a10ca255604ae452a4f5728cc6fed&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Fire engulfs tractor-trailer, spreads to second trailer in Sweetwater, MDFR says",
+    "url": "https://www.local10.com/news/local/2026/11/10/2-trailers-containing-unknown-chemicals-catch-fire-in-sweetwater-officials-say/",
+    "published": "Tue, 10 Nov 2026 12:44:50 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
+    "title": "Driver accused of offering Miami Shores police officer $2,000 to avoid arrest after reckless driving stop",
+    "url": "https://www.local10.com/news/local/2026/11/10/driver-accused-of-offering-miami-shores-police-officer-2000-to-avoid-arrest-after-reckless-driving-stop/",
+    "published": "Tue, 10 Nov 2026 15:22:23 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/DWY3LADPYRA4LPA2EZ5T5VCUOU.jpg?auth=7762c5edc46cb15d8689c13ad38e95d9f7bd0ffe48b87723d6470e69b09ae7b7&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Miami man shoots victim, tries to shoot him again, but gun jams, police say",
+    "url": "https://www.local10.com/news/local/2026/11/10/miami-man-shoots-victim-tries-to-shoot-him-again-but-gun-jams-police-say/",
+    "published": "Tue, 10 Nov 2026 16:25:02 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/ZLPVNEMSXZHOBGCCDBJQMLZTAY.jpg?auth=ebe2b133ecfb54435f5c58ca395247fc4e6cb6ad190ab398a34d91ea8b08594e&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Police officers arrest woman for 5th time this year in Fort Lauderdale",
+    "url": "https://www.local10.com/news/local/2026/11/10/police-officers-arrest-woman-for-5th-time-this-year-in-fort-lauderdale/",
+    "published": "Tue, 10 Nov 2026 17:16:21 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/ZQ3KOGH25ZA23KI2ENXAZ2YMPQ.jpg?auth=c9b2aa84034ff38f88cb983a60c57fc08ff9daa932d57058be2fde23de2a54fe&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Terra unveils plans for new Miami Seaquarium, including aquarium, marina and public baywalk",
+    "url": "https://www.local10.com/news/local/2026/11/10/terra-unveils-plans-for-new-miami-seaquarium-including-aquarium-marina-and-public-baywalk/",
+    "published": "Tue, 10 Nov 2026 17:21:41 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/TTI7ZNGSFNWG5ZAHX2RX5MDGQU.jpg?auth=607e78fe2224fa01067cd752f753521df88a69c04e3c03ca405d4deccc44b7bb&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Argument between 2 men leads to report of possible shooting, Fort Lauderdale police say",
+    "url": "https://www.local10.com/news/local/2026/11/10/argument-between-2-men-leads-to-report-of-possible-shooting-fort-lauderdale-police-say/",
+    "published": "Tue, 10 Nov 2026 17:58:54 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
    {
     "title": "MIA hosts American Airlines Jet Pull event to raise money for airline’s Family Fund",
     "url": "https://wsvn.com/news/us-world/mia-hosts-american-airlines-jet-pull-event-to-raise-money-for-airlines-family-fund/",
@@ -945,15 +1006,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-10T15:15:26-05:00",
+  "fetched_at": "2026-11-10T15:30:25-05:00",
   "items": [],
-  "scanned": 0,
+  "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
   "source": "GDACS (287) + USGS (19)",
-  "fetched_at": "2026-11-10T15:15:29-05:00",
+  "fetched_at": "2026-11-10T15:30:27-05:00",
   "events": [
    {
     "lat": 13.5381,
@@ -1947,13 +2008,13 @@
     "source": "GDACS"
    },
    {
-    "lat": 26.1,
-    "lon": 142.1,
+    "lat": 26.9,
+    "lon": 144.6,
     "kind": "cyclone",
     "level": "green",
-    "title": "Green notification for tropical cyclone CEMPAKA-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 613 .",
+    "title": "Green notification for tropical cyclone CEMPAKA-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 953 .",
     "place": "Japan",
-    "severity": "Hurricane/Typhoon > 74 mph (maximum wind speed of 157 km/h)",
+    "severity": "Hurricane/Typhoon > 74 mph (maximum wind speed of 148 km/h)",
     "url": "http://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001347",
     "when": "Fri, 06 Nov 2026 07:50:41 GMT",
     "source": "GDACS"
@@ -2427,7 +2488,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-10T15:15:29-05:00",
+  "fetched_at": "2026-11-10T15:30:27-05:00",
   "countries": [
    {
     "iso": "RUS",
@@ -2588,7 +2649,7 @@
     "issue": "Russia and Ukraine hold nearly 4 hours of U.S.-mediated talks in Abu Dhabi"
    }
   ],
-  "headlines_scanned": 24,
+  "headlines_scanned": 32,
   "countries_matched": 10,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
