@@ -1,26 +1,179 @@
 {
- "generated_at": "2026-11-13T13:15:22-05:00",
- "generated_at_utc": "2026-11-13T18:15:22+00:00",
+ "generated_at": "2026-11-13T13:30:21-05:00",
+ "generated_at_utc": "2026-11-13T18:30:21+00:00",
  "weekday": "Friday",
  "date_label": "Friday, November 13",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-11-13T13:15:47-05:00",
-  "error": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=25)"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-11-13T13:30:21-05:00",
+  "curve": [
+   {
+    "time": "2026-11-13T05:00",
+    "hour": 5,
+    "temp": 72.2,
+    "feels": 77.5,
+    "humidity": 85,
+    "pop": 1
+   },
+   {
+    "time": "2026-11-13T06:00",
+    "hour": 6,
+    "temp": 72.3,
+    "feels": 78.8,
+    "humidity": 86,
+    "pop": 1
+   },
+   {
+    "time": "2026-11-13T07:00",
+    "hour": 7,
+    "temp": 72.2,
+    "feels": 79.1,
+    "humidity": 88,
+    "pop": 1
+   },
+   {
+    "time": "2026-11-13T08:00",
+    "hour": 8,
+    "temp": 73.3,
+    "feels": 80.2,
+    "humidity": 88,
+    "pop": 1
+   },
+   {
+    "time": "2026-11-13T09:00",
+    "hour": 9,
+    "temp": 75.0,
+    "feels": 82.0,
+    "humidity": 88,
+    "pop": 1
+   },
+   {
+    "time": "2026-11-13T10:00",
+    "hour": 10,
+    "temp": 77.8,
+    "feels": 85.8,
+    "humidity": 79,
+    "pop": 1
+   },
+   {
+    "time": "2026-11-13T11:00",
+    "hour": 11,
+    "temp": 79.1,
+    "feels": 85.8,
+    "humidity": 73,
+    "pop": 3
+   },
+   {
+    "time": "2026-11-13T12:00",
+    "hour": 12,
+    "temp": 79.0,
+    "feels": 85.0,
+    "humidity": 73,
+    "pop": 8
+   },
+   {
+    "time": "2026-11-13T13:00",
+    "hour": 13,
+    "temp": 76.5,
+    "feels": 82.2,
+    "humidity": 83,
+    "pop": 9
+   },
+   {
+    "time": "2026-11-13T14:00",
+    "hour": 14,
+    "temp": 75.7,
+    "feels": 80.6,
+    "humidity": 83,
+    "pop": 13
+   },
+   {
+    "time": "2026-11-13T15:00",
+    "hour": 15,
+    "temp": 75.0,
+    "feels": 79.1,
+    "humidity": 81,
+    "pop": 21
+   },
+   {
+    "time": "2026-11-13T16:00",
+    "hour": 16,
+    "temp": 74.6,
+    "feels": 77.6,
+    "humidity": 76,
+    "pop": 21
+   },
+   {
+    "time": "2026-11-13T17:00",
+    "hour": 17,
+    "temp": 72.2,
+    "feels": 74.5,
+    "humidity": 77,
+    "pop": 9
+   },
+   {
+    "time": "2026-11-13T18:00",
+    "hour": 18,
+    "temp": 70.5,
+    "feels": 74.4,
+    "humidity": 84,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-13T19:00",
+    "hour": 19,
+    "temp": 69.0,
+    "feels": 72.7,
+    "humidity": 87,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-13T20:00",
+    "hour": 20,
+    "temp": 68.1,
+    "feels": 71.5,
+    "humidity": 87,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-13T21:00",
+    "hour": 21,
+    "temp": 67.0,
+    "feels": 69.3,
+    "humidity": 86,
+    "pop": 0
+   }
+  ],
+  "current": {
+   "temp": 75.9,
+   "feels": 80.4,
+   "humidity": 84,
+   "wind_mph": 9.1,
+   "wind_dir": 340,
+   "observed_at": "2026-11-13T13:30"
+  },
+  "today": {
+   "high": 79.1,
+   "low": 62.5,
+   "feels_max": 85.8,
+   "pop_max": 21
+  },
+  "peak_feels": 85.8,
+  "peak_hour": 10
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-13T13:15:47-05:00",
+  "fetched_at": "2026-11-13T13:30:22-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-13T13:15:48-05:00",
+  "fetched_at": "2026-11-13T13:30:22-05:00",
   "aqi": 53,
   "category": "Moderate",
   "pm25": 10.0,
@@ -32,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-11-13T13:15:50-05:00",
+  "fetched_at": "2026-11-13T13:30:24-05:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
@@ -107,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-13T13:15:51-05:00",
+  "fetched_at": "2026-11-13T13:30:25-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -145,20 +298,18 @@
   "fl511_all": [
    "Southeast | Palm Beach | There is scheduled road work on the Florida's Turnpike Northbound at exit 98, Jog Road. All lanes are scheduled to be closed from 8pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike at exit 99, Okeechobee Boulevard. | Nov 12 2026, 6:42 PM",
    "Southeast | Miami-Dade | There is scheduled road work on the Florida's Turnpike Southbound at exit 4X, before Northwest 199th Street. All lanes are scheduled to be closed from 10pm to 5am. Motorists should follow posted detour signs to re-enter the Turnpike. | Nov 12 2026, 9:59 PM",
-   "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Nov 13 2026, 7:30 AM",
-   "Northeast | Duval | Duval: There is lane blocking construction on Main St from West 12th st to West 6th st. Use caution in the area. | Nov 13 2026, 10:49 AM",
-   "Southeast | Martin | There is a crash on Florida's Turnpike, Northbound at mile post 137, before Becker Road. The right shoulder is blocked, northbound. Delays extend to mile post 129. Motorists should expect delays. | Nov 13 2026, 12:38 PM"
+   "Northeast | Lafayette | Mayo: There is lane blocking construction on SR-51 at the Hal W. Adams bridge. Use caution in the area. | Nov 13 2026, 1:30 PM",
+   "Northeast | Duval | Duval: There is lane blocking construction on Main St from West 12th st to West 6th st. Use caution in the area. | Nov 13 2026, 10:49 AM"
   ],
   "fl511_local": [
    "Southeast | Palm Beach | There is scheduled road work on the Florida's Turnpike Northbound at exit 98, Jog Road. All lanes are scheduled to be closed from 8pm to 6am. Motorists should follow posted detour signs to re-enter the Turnpike at exit 99, Okeechobee Boulevard. | Nov 12 2026, 6:42 PM",
-   "Southeast | Miami-Dade | There is scheduled road work on the Florida's Turnpike Southbound at exit 4X, before Northwest 199th Street. All lanes are scheduled to be closed from 10pm to 5am. Motorists should follow posted detour signs to re-enter the Turnpike. | Nov 12 2026, 9:59 PM",
-   "Southeast | Martin | There is a crash on Florida's Turnpike, Northbound at mile post 137, before Becker Road. The right shoulder is blocked, northbound. Delays extend to mile post 129. Motorists should expect delays. | Nov 13 2026, 12:38 PM"
+   "Southeast | Miami-Dade | There is scheduled road work on the Florida's Turnpike Southbound at exit 4X, before Northwest 199th Street. All lanes are scheduled to be closed from 10pm to 5am. Motorists should follow posted detour signs to re-enter the Turnpike. | Nov 12 2026, 9:59 PM"
   ]
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-13T13:15:51-05:00",
+  "fetched_at": "2026-11-13T13:30:26-05:00",
   "issued": "100 PM EST Fri Nov 13 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 131718\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n100 PM EST Fri Nov 13 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Katz/Papin"
@@ -166,7 +317,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-13T13:15:51-05:00",
+  "fetched_at": "2026-11-13T13:30:26-05:00",
   "florida": "$3.6759",
   "national": "$3.8724",
   "diesel": "$5.7939",
@@ -175,7 +326,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-13T13:15:52-05:00",
+  "fetched_at": "2026-11-13T13:30:26-05:00",
   "streams": {
    "local": [
     {
@@ -284,6 +435,22 @@
   ],
   "local": [
    {
+    "title": "Pembroke Pines cop, wildlife center save injured owl at Broward College",
+    "url": "https://www.local10.com/news/local/2026/11/13/pembroke-pines-cop-wildlife-center-help-rescue-injured-owl-at-broward-college/",
+    "published": "Fri, 13 Nov 2026 18:21:14 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/XUQZN4EBIVBQRBXSONZNUWBNF4.png?auth=2c15656ef9b3d40558459f94a8d2d2abdb82525a078957739d6c6e8121a765e0&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
+    "title": "Cybertruck driver gets 6 years for Miami-Dade DUI crash that left woman dead, ‘destroyed’ family",
+    "url": "https://www.local10.com/news/local/2026/11/13/cybertruck-driver-gets-6-years-for-miami-dade-dui-crash-that-left-woman-dead-destroyed-family/",
+    "published": "Fri, 13 Nov 2026 18:16:58 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": null,
+    "media_type": null
+   },
+   {
     "title": "Man reports home burglary near Miami Shores. Deputies find his mother dead — and arrest him: MDSO",
     "url": "https://www.local10.com/news/local/2026/11/13/man-reports-home-burglary-near-miami-shores-deputies-find-his-mother-dead-and-arrest-him-mdso/",
     "published": "Fri, 13 Nov 2026 16:37:33 +0000",
@@ -332,22 +499,6 @@
     "media_type": "image"
    },
    {
-    "title": "Deerfield Beach man accused of repeatedly raping, beating minor for years and impregnating her",
-    "url": "https://www.local10.com/news/local/2026/11/13/deerfield-beach-man-accused-of-repeatedly-raping-beating-minor-for-years-and-impregnating-her/",
-    "published": "Fri, 13 Nov 2026 15:35:02 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/GAAYE7VZEFFQRJQUPBLV7ZLVX4.jpg?auth=88cdd74081e8f790cced8b76499ed6a8b2f995753081aa511c40f98af62e957f&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "Fight leads to shooting at northwest Miami-Dade food store, clerk says",
-    "url": "https://www.local10.com/news/local/2026/11/13/possible-shooting-reported-at-northwest-miami-dade-food-store/",
-    "published": "Fri, 13 Nov 2026 12:15:54 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "Crossing guard struck by car near Somerset Academy Charter High School in South Miami-Dade",
     "url": "https://wsvn.com/news/local/miami-dade/miami-dade-school-vehicle-accident/",
     "published": "Thu, 12 Nov 2026 22:24:01 +0000",
@@ -380,6 +531,14 @@
     "media_type": "video"
    },
    {
+    "title": "Miami Gardens Police officer to sue Opa-locka Police after charge stemming from domestic violence arrest is dropped",
+    "url": "https://wsvn.com/news/local/miami-dade/miami-gardens-officer-charges-dropped/",
+    "published": "Fri, 13 Nov 2026 18:18:34 +0000",
+    "feed": "https://wsvn.com/news/local/feed/",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/3275d2ca-a485-4ee9-8979-def70ca55d11/008b7e60-f70e-4ea7-af67-3915beca6c69/main.mp4?fastly_token=NmFmN2FkMjhfZDg0ZGI1MzAyYzc4ZWVhNjQ5MDI1ZjM3M2RmMGQ0YWZhZjliMzA3MWFlN2JiYmIxYjkzNGY0MjMyODE5ZjBlN18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zMjc1ZDJjYS1hNDg1LTRlZTktODk3OS1kZWY3MGNhNTVkMTEvMDA4YjdlNjAtZjcwZS00ZWE3LWFmNjctMzkxNWJlY2E2YzY5L21haW4ubXA0",
+    "media_type": "video"
+   },
+   {
     "title": "1 hospitalized after reported shooting at North Miami jewelry store",
     "url": "https://wsvn.com/news/local/miami-dade/north-miami-jewelry-store-shooting/",
     "published": "Fri, 13 Nov 2026 17:22:43 +0000",
@@ -402,14 +561,6 @@
     "feed": "https://wsvn.com/news/local/feed/",
     "media": "https://wsvn.com/wp-content/uploads/sites/2/2026/11/111226-home-in-sw-md-where-shots-were-fired.png",
     "media_type": "image"
-   },
-   {
-    "title": "Crossing guard struck by car near Somerset Academy Charter High School in South Miami-Dade",
-    "url": "https://wsvn.com/news/local/miami-dade/miami-dade-school-vehicle-accident/",
-    "published": "Thu, 12 Nov 2026 22:24:01 +0000",
-    "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/0120e166-8def-4df5-a035-16446494e0b3/37945877-d7d9-445c-a20a-92431abf6106/main.mp4?fastly_token=NmFmNzZmYzVfOGUzZDMwZGM0ZTdlYmExMzJlYTg1MDBlNzZiNGY4OTQzMmU5OWY2Y2NjMzg1NTBmMzM1YmE1ODZhM2Y3M2NlOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8wMTIwZTE2Ni04ZGVmLTRkZjUtYTAzNS0xNjQ0NjQ5NGUwYjMvMzc5NDU4NzctZDdkOS00NDVjLWEyMGEtOTI0MzFhYmY2MTA2L21haW4ubXA0",
-    "media_type": "video"
    }
   ],
   "colombia": [
@@ -548,7 +699,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-13T13:15:53-05:00",
+  "fetched_at": "2026-11-13T13:30:27-05:00",
   "items": [],
   "scanned": 5,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -556,7 +707,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (289) + USGS (18)",
-  "fetched_at": "2026-11-13T13:15:57-05:00",
+  "fetched_at": "2026-11-13T13:30:29-05:00",
   "events": [
    {
     "lat": -14.9934,
@@ -2029,7 +2180,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-13T13:15:57-05:00",
+  "fetched_at": "2026-11-13T13:30:29-05:00",
   "countries": [
    {
     "iso": "COL",
@@ -2174,8 +2325,6 @@
   "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
