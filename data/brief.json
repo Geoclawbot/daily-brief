@@ -1,38 +1,191 @@
 {
- "generated_at": "2026-11-15T20:45:59-05:00",
- "generated_at_utc": "2026-11-16T01:45:59+00:00",
+ "generated_at": "2026-11-15T21:01:00-05:00",
+ "generated_at_utc": "2026-11-16T02:01:00+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, November 15",
  "is_weekend": true,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-11-15T20:46:24-05:00",
-  "error": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=25)"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-11-15T21:01:00-05:00",
+  "curve": [
+   {
+    "time": "2026-11-15T05:00",
+    "hour": 5,
+    "temp": 58.2,
+    "feels": 56.2,
+    "humidity": 83,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T06:00",
+    "hour": 6,
+    "temp": 58.2,
+    "feels": 57.2,
+    "humidity": 86,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T07:00",
+    "hour": 7,
+    "temp": 58.2,
+    "feels": 56.9,
+    "humidity": 86,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T08:00",
+    "hour": 8,
+    "temp": 60.7,
+    "feels": 59.3,
+    "humidity": 84,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T09:00",
+    "hour": 9,
+    "temp": 65.3,
+    "feels": 64.4,
+    "humidity": 79,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T10:00",
+    "hour": 10,
+    "temp": 69.2,
+    "feels": 69.8,
+    "humidity": 77,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T11:00",
+    "hour": 11,
+    "temp": 73.8,
+    "feels": 76.1,
+    "humidity": 73,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T12:00",
+    "hour": 12,
+    "temp": 77.2,
+    "feels": 78.8,
+    "humidity": 58,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T13:00",
+    "hour": 13,
+    "temp": 79.0,
+    "feels": 77.8,
+    "humidity": 44,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T14:00",
+    "hour": 14,
+    "temp": 80.0,
+    "feels": 79.0,
+    "humidity": 42,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T15:00",
+    "hour": 15,
+    "temp": 78.7,
+    "feels": 76.9,
+    "humidity": 45,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T16:00",
+    "hour": 16,
+    "temp": 76.6,
+    "feels": 75.9,
+    "humidity": 54,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T17:00",
+    "hour": 17,
+    "temp": 74.9,
+    "feels": 73.8,
+    "humidity": 54,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T18:00",
+    "hour": 18,
+    "temp": 72.1,
+    "feels": 71.2,
+    "humidity": 57,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T19:00",
+    "hour": 19,
+    "temp": 69.8,
+    "feels": 69.2,
+    "humidity": 56,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T20:00",
+    "hour": 20,
+    "temp": 68.8,
+    "feels": 68.0,
+    "humidity": 65,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-15T21:00",
+    "hour": 21,
+    "temp": 67.3,
+    "feels": 67.1,
+    "humidity": 68,
+    "pop": 0
+   }
+  ],
+  "current": {
+   "temp": 67.3,
+   "feels": 67.1,
+   "humidity": 68,
+   "wind_mph": 5.4,
+   "wind_dir": 40,
+   "observed_at": "2026-11-15T21:00"
+  },
+  "today": {
+   "high": 80.0,
+   "low": 57.7,
+   "feels_max": 79.0,
+   "pop_max": 2
+  },
+  "peak_feels": 79.0,
+  "peak_hour": 14
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-15T20:46:24-05:00",
+  "fetched_at": "2026-11-15T21:01:00-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-15T20:46:25-05:00",
-  "aqi": 42,
+  "fetched_at": "2026-11-15T21:01:01-05:00",
+  "aqi": 41,
   "category": "Good",
-  "pm25": 10.4,
+  "pm25": 10.3,
   "pm10": 12.7,
-  "observed": "2026-11-15T20:00",
+  "observed": "2026-11-15T21:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-11-15T20:46:25-05:00",
+  "fetched_at": "2026-11-15T21:01:01-05:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -45,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-15T20:46:26-05:00",
+  "fetched_at": "2026-11-15T21:01:02-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -81,16 +234,18 @@
    }
   ],
   "fl511_all": [
-   "Southeast | St. Lucie | There is a crash on SR091, southbound at mile post 165 before SR70. The right lane is blocked. Delays extend 5 miles. Motorists should expect delays. | Nov 15 2026, 1:40 PM"
+   "Southeast | St. Lucie | There is a crash on SR091, southbound at mile post 165 before SR70. The right lane is blocked. Delays extend 5 miles. Motorists should expect delays. | Nov 15 2026, 1:40 PM",
+   "Southeast | Palm Beach | There is scheduled road work on the Florida Turnpike Northbound at exit 98, Jog Road. All lanes are scheduled to be closed from 8:00 pm to 6:00 am. Motorists should follow posted detour signs to re-enter the Florida Turnkpike at exit 99, Okeechobee Boulevard. | Nov 15 2026, 8:57 PM"
   ],
   "fl511_local": [
-   "Southeast | St. Lucie | There is a crash on SR091, southbound at mile post 165 before SR70. The right lane is blocked. Delays extend 5 miles. Motorists should expect delays. | Nov 15 2026, 1:40 PM"
+   "Southeast | St. Lucie | There is a crash on SR091, southbound at mile post 165 before SR70. The right lane is blocked. Delays extend 5 miles. Motorists should expect delays. | Nov 15 2026, 1:40 PM",
+   "Southeast | Palm Beach | There is scheduled road work on the Florida Turnpike Northbound at exit 98, Jog Road. All lanes are scheduled to be closed from 8:00 pm to 6:00 am. Motorists should follow posted detour signs to re-enter the Florida Turnkpike at exit 99, Okeechobee Boulevard. | Nov 15 2026, 8:57 PM"
   ]
  },
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-15T20:46:26-05:00",
+  "fetched_at": "2026-11-15T21:01:02-05:00",
   "issued": "700 PM EST Sun Nov 15 2026",
   "areas": [],
   "raw": "en Español\n\n614 \nABNT20 KNHC 152302\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n700 PM EST Sun Nov 15 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Blake"
@@ -98,7 +253,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-15T20:46:26-05:00",
+  "fetched_at": "2026-11-15T21:01:03-05:00",
   "florida": "$3.6145",
   "national": "$3.8242",
   "diesel": "$5.7434",
@@ -107,7 +262,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-15T20:46:27-05:00",
+  "fetched_at": "2026-11-15T21:01:03-05:00",
   "streams": {
    "local": [
     {
@@ -215,70 +370,6 @@
    }
   ],
   "local": [
-   {
-    "title": "Aventura officer will not face charges for 2025 fatal shooting",
-    "url": "https://www.local10.com/news/local/2026/11/15/aventura-officer-will-not-face-charges-for-2025-fatal-shooting/",
-    "published": "Sun, 15 Nov 2026 22:18:57 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "South Florida airports slowly returning to normal following nationwide issues",
-    "url": "https://www.local10.com/news/local/2026/11/15/south-florida-airports-slowly-returning-to-normal-following-nationwide-issues/",
-    "published": "Sun, 15 Nov 2026 22:15:22 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Death investigation ongoing in Miami Gardens, residents speak of gunfire, car crash",
-    "url": "https://www.local10.com/news/local/2026/11/15/death-investigation-ongoing-in-miami-gardens-residents-speak-of-gunfire-car-crash/",
-    "published": "Sun, 15 Nov 2026 22:13:37 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Elderly man accused of strangling longtime friend over missing items",
-    "url": "https://www.local10.com/news/local/2026/11/15/elderly-man-accused-of-strangling-longtime-friend-over-missing-items/",
-    "published": "Sun, 15 Nov 2026 20:04:21 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/TGO4YZFBPNERNIMIQ4IP7USTQA.jpg?auth=0384fa4b890add87846aad2271877d7a5c0f72f0a1159a9ac96608dd127c7491&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
-   {
-    "title": "Give Miami 5K draws record crowd for sold-out race and festival",
-    "url": "https://www.local10.com/news/local/2026/11/15/give-miami-5k-draws-record-crowd-for-sold-out-race-and-festival/",
-    "published": "Sun, 15 Nov 2026 17:48:46 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "2 aircraft make contact on Miami International Airport taxiway",
-    "url": "https://www.local10.com/news/local/2026/11/14/2-aircraft-make-contact-on-miami-international-airport-taxiway/",
-    "published": "Sun, 15 Nov 2026 03:47:26 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Deputies: 5-year-old shot during dispute between 2 men",
-    "url": "https://www.local10.com/news/local/2026/11/15/deputies-5-year-old-shot-during-dispute-between-2-men/",
-    "published": "Sun, 15 Nov 2026 13:39:22 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
-    "title": "Miami Gardens mourns the passing of former commissioner Betty T. Ferguson",
-    "url": "https://www.local10.com/news/local/2026/11/15/miami-gardens-mourns-the-passing-of-former-commissioner-betty-t-ferguson/",
-    "published": "Sun, 15 Nov 2026 12:33:20 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": "https://www.local10.com/resizer/v2/NLBFWVN4PZFUFMD6UMNHEQACQI.png?auth=f868d0d38cd3c7840590ee7f54d6404ab5af69472f419bdb84be05cf2bf42e25&smart=true&width=1200&height=900",
-    "media_type": "image"
-   },
    {
     "title": "South Florida airports face continued delays after nationwide ground stop",
     "url": "https://wsvn.com/news/local/miami-dade/south-florida-airports-face-continued-delays-after-nationwide-ground-stop/",
@@ -480,15 +571,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-15T20:46:28-05:00",
+  "fetched_at": "2026-11-15T21:01:04-05:00",
   "items": [],
-  "scanned": 2,
+  "scanned": 0,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
   "source": "GDACS (232) + USGS (10)",
-  "fetched_at": "2026-11-15T20:46:31-05:00",
+  "fetched_at": "2026-11-15T21:01:06-05:00",
   "events": [
    {
     "lat": 9.7595,
@@ -1953,7 +2044,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-15T20:46:31-05:00",
+  "fetched_at": "2026-11-15T21:01:06-05:00",
   "countries": [
    {
     "iso": "COL",
@@ -2102,12 +2193,10 @@
     "issue": "Who makes Sydney Sweeney's American Eagle jeans — and under what conditions?"
    }
   ],
-  "headlines_scanned": 32,
+  "headlines_scanned": 24,
   "countries_matched": 10,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
