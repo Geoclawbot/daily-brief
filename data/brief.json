@@ -1,38 +1,191 @@
 {
- "generated_at": "2026-11-16T10:46:09-05:00",
- "generated_at_utc": "2026-11-16T15:46:09+00:00",
+ "generated_at": "2026-11-16T11:01:05-05:00",
+ "generated_at_utc": "2026-11-16T16:01:05+00:00",
  "weekday": "Monday",
  "date_label": "Monday, November 16",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-11-16T10:46:34-05:00",
-  "error": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=25)"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-11-16T11:01:05-05:00",
+  "curve": [
+   {
+    "time": "2026-11-16T05:00",
+    "hour": 5,
+    "temp": 64.4,
+    "feels": 65.6,
+    "humidity": 80,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-16T06:00",
+    "hour": 6,
+    "temp": 64.8,
+    "feels": 65.4,
+    "humidity": 79,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-16T07:00",
+    "hour": 7,
+    "temp": 64.0,
+    "feels": 64.9,
+    "humidity": 80,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-16T08:00",
+    "hour": 8,
+    "temp": 69.4,
+    "feels": 70.1,
+    "humidity": 69,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-16T09:00",
+    "hour": 9,
+    "temp": 74.3,
+    "feels": 75.1,
+    "humidity": 65,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-16T10:00",
+    "hour": 10,
+    "temp": 76.3,
+    "feels": 75.2,
+    "humidity": 54,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-16T11:00",
+    "hour": 11,
+    "temp": 78.4,
+    "feels": 77.2,
+    "humidity": 49,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-16T12:00",
+    "hour": 12,
+    "temp": 79.6,
+    "feels": 80.4,
+    "humidity": 53,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-16T13:00",
+    "hour": 13,
+    "temp": 80.0,
+    "feels": 80.4,
+    "humidity": 55,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-16T14:00",
+    "hour": 14,
+    "temp": 79.9,
+    "feels": 78.2,
+    "humidity": 50,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-16T15:00",
+    "hour": 15,
+    "temp": 80.0,
+    "feels": 77.5,
+    "humidity": 44,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-16T16:00",
+    "hour": 16,
+    "temp": 78.7,
+    "feels": 76.7,
+    "humidity": 48,
+    "pop": 1
+   },
+   {
+    "time": "2026-11-16T17:00",
+    "hour": 17,
+    "temp": 75.9,
+    "feels": 75.1,
+    "humidity": 55,
+    "pop": 1
+   },
+   {
+    "time": "2026-11-16T18:00",
+    "hour": 18,
+    "temp": 72.7,
+    "feels": 73.1,
+    "humidity": 57,
+    "pop": 3
+   },
+   {
+    "time": "2026-11-16T19:00",
+    "hour": 19,
+    "temp": 71.2,
+    "feels": 73.3,
+    "humidity": 72,
+    "pop": 9
+   },
+   {
+    "time": "2026-11-16T20:00",
+    "hour": 20,
+    "temp": 71.9,
+    "feels": 73.7,
+    "humidity": 74,
+    "pop": 6
+   },
+   {
+    "time": "2026-11-16T21:00",
+    "hour": 21,
+    "temp": 70.7,
+    "feels": 72.6,
+    "humidity": 76,
+    "pop": 6
+   }
+  ],
+  "current": {
+   "temp": 78.4,
+   "feels": 77.6,
+   "humidity": 49,
+   "wind_mph": 10.8,
+   "wind_dir": 76,
+   "observed_at": "2026-11-16T11:00"
+  },
+  "today": {
+   "high": 80.3,
+   "low": 64.0,
+   "feels_max": 80.4,
+   "pop_max": 9
+  },
+  "peak_feels": 80.4,
+  "peak_hour": 12
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-16T10:46:34-05:00",
+  "fetched_at": "2026-11-16T11:01:05-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-16T10:46:35-05:00",
+  "fetched_at": "2026-11-16T11:01:06-05:00",
   "aqi": 45,
   "category": "Good",
-  "pm25": 7.3,
-  "pm10": 9.2,
-  "observed": "2026-11-16T10:00",
+  "pm25": 5.8,
+  "pm10": 7.9,
+  "observed": "2026-11-16T11:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-11-16T10:46:35-05:00",
+  "fetched_at": "2026-11-16T11:01:06-05:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -45,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-16T10:46:36-05:00",
+  "fetched_at": "2026-11-16T11:01:07-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -90,7 +243,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-16T10:46:36-05:00",
+  "fetched_at": "2026-11-16T11:01:07-05:00",
   "issued": "700 AM EST Mon Nov 16 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 161115\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n700 AM EST Mon Nov 16 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Kelly"
@@ -98,7 +251,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-16T10:46:36-05:00",
+  "fetched_at": "2026-11-16T11:01:07-05:00",
   "florida": "$3.5985",
   "national": "$3.8118",
   "diesel": "$5.7195",
@@ -107,7 +260,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-16T10:46:38-05:00",
+  "fetched_at": "2026-11-16T11:01:08-05:00",
   "streams": {
    "local": [
     {
@@ -324,7 +477,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/south-florida-traveler-frustrations/",
     "published": "Mon, 16 Nov 2026 13:14:37 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/0a3147c9-c352-4c62-8f29-74fd8fb78345/eb385ee6-f529-45ad-a53b-64fc676d2ae0/main.mp4?fastly_token=NmFmYjZkZjFfN2RiZGZjZmNlYTVjZDU0ZTlhNjI0NmNhZDI3OWY2ZWY5ODg4ZjNjMGFmMjJkMjI4N2ZiMTBjOWJiZjc2ZmI0Nl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8wYTMxNDdjOS1jMzUyLTRjNjItOGYyOS03NGZkOGZiNzgzNDUvZWIzODVlZTYtZjUyOS00NWFkLWE1M2ItNjRmYzY3NmQyYWUwL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/9517f105-c848-48cc-97f2-42e9a6cbb62b/eb178299-a8ed-49d1-b55d-c63cc8cbbe19/main.mp4?fastly_token=NmFmYjdlZmNfY2NjOTg0M2VlNWM1YmRlZDMxNjJkNGQ1NmRiNDk4OTliZjE1MTU4ZTViZWEwZDYxNzA3YmM5NDYyOGJlYzA1MF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS85NTE3ZjEwNS1jODQ4LTQ4Y2MtOTdmMi00MmU5YTZjYmI2MmIvZWIxNzgyOTktYThlZC00OWQxLWI1NWQtYzYzY2M4Y2JiZTE5L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -345,6 +498,14 @@
    }
   ],
   "colombia": [
+   {
+    "title": "Con nueva sala internacional y vuelos desde febrero, Barranquilla se prepara para conectarse de forma directa con Nueva York",
+    "url": "https://www.eltiempo.com/colombia/barranquilla/con-nueva-sala-internacional-y-vuelos-desde-febrero-barranquilla-se-prepara-para-conectarse-de-forma-directa-con-nueva-york-3601406",
+    "published": "2026-11-16T10:30:00-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/11/16/6afb256d44e62.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "Buenaventura le apuesta a la reconstrucción económica y turística tras las huellas del terremoto y la violencia",
     "url": "https://www.eltiempo.com/colombia/cali/buenaventura-le-apuesta-a-la-reconstruccion-economica-y-turistica-tras-las-huellas-del-terremoto-y-la-violencia-3601396",
@@ -399,14 +560,6 @@
     "published": "2026-11-16T07:22:02-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/11/15/6af9fe4869887.r_d.375-404-1.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "El presidente Abelardo De La Espriella y las regiones en 100 días del Gobierno: estos son los resultados y los desafíos",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/el-presidente-abelardo-de-la-espriella-y-las-regiones-en-100-dias-del-gobierno-estos-son-los-resultados-y-los-desafios-3601333",
-    "published": "2026-11-15T21:01:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/10/17/6ad3c6c04efbd.r_d.340-172-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -480,7 +633,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-16T10:46:38-05:00",
+  "fetched_at": "2026-11-16T11:01:08-05:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -488,7 +641,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (240) + USGS (9)",
-  "fetched_at": "2026-11-16T10:46:41-05:00",
+  "fetched_at": "2026-11-16T11:01:10-05:00",
   "events": [
    {
     "lat": 9.405,
@@ -1952,7 +2105,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-16T10:46:41-05:00",
+  "fetched_at": "2026-11-16T11:01:10-05:00",
   "countries": [
    {
     "iso": "COL",
@@ -2075,8 +2228,6 @@
   "countries_matched": 7,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
