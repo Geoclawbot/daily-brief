@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-11-19T17:00:34-05:00",
- "generated_at_utc": "2026-11-19T22:00:34+00:00",
+ "generated_at": "2026-11-19T17:15:44-05:00",
+ "generated_at_utc": "2026-11-19T22:15:44+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, November 19",
  "is_weekend": false,
  "weather": {
   "ok": false,
   "source": "Open-Meteo",
-  "fetched_at": "2026-11-19T17:00:59-05:00",
-  "error": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=25)"
+  "fetched_at": "2026-11-19T17:15:44-05:00",
+  "error": "429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpreci"
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-19T17:01:00-05:00",
+  "fetched_at": "2026-11-19T17:15:45-05:00",
   "alerts": [
    {
     "event": "Flood Watch",
@@ -30,11 +30,11 @@
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-19T17:01:01-05:00",
-  "aqi": 35,
+  "fetched_at": "2026-11-19T17:15:45-05:00",
+  "aqi": 33,
   "category": "Good",
-  "pm25": 7.4,
-  "pm10": 8.2,
+  "pm25": 3.7,
+  "pm10": 4.5,
   "observed": "2026-11-19T17:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
@@ -42,76 +42,76 @@
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-11-19T17:01:03-05:00",
+  "fetched_at": "2026-11-19T17:15:47-05:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
   "miles": 26.6,
-  "minutes": 65,
+  "minutes": 62,
   "delay_minutes": 0,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 26.8,
-    "minutes": 52,
+    "miles": 25.5,
+    "minutes": 51,
     "toll": true,
-    "saves": 13
+    "saves": 11
    },
    {
     "miles": 22.6,
-    "minutes": 56,
+    "minutes": 53,
     "toll": true,
     "saves": 9
    },
    {
-    "miles": 25.0,
-    "minutes": 66,
+    "miles": 23.8,
+    "minutes": 62,
     "toll": true,
-    "saves": -1
+    "saves": 0
    },
    {
-    "miles": 22.1,
-    "minutes": 63,
-    "toll": true,
-    "saves": 2
+    "miles": 23.5,
+    "minutes": 66,
+    "toll": false,
+    "saves": -4
    }
   ],
   "alternates_worth_taking": [
    {
-    "miles": 26.8,
-    "minutes": 52,
+    "miles": 25.5,
+    "minutes": 51,
     "toll": true,
-    "saves": 13
+    "saves": 11
    }
   ],
   "free_alternates": [
    {
     "miles": 26.6,
-    "minutes": 65,
+    "minutes": 62,
     "delay_minutes": 0,
     "saves": 0
    },
    {
-    "miles": 23.3,
-    "minutes": 66,
+    "miles": 21.8,
+    "minutes": 64,
+    "delay_minutes": 1
+   },
+   {
+    "miles": 24.1,
+    "minutes": 68,
     "delay_minutes": 0
    },
    {
     "miles": 23.3,
-    "minutes": 72,
+    "minutes": 69,
     "delay_minutes": 0
-   },
-   {
-    "miles": 21.6,
-    "minutes": 71,
-    "delay_minutes": 2
    }
   ],
   "best_free": {
    "miles": 26.6,
-   "minutes": 65,
+   "minutes": 62,
    "delay_minutes": 0,
    "saves": 0
   },
@@ -124,7 +124,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-19T17:01:04-05:00",
+  "fetched_at": "2026-11-19T17:15:48-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -173,7 +173,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-19T17:01:04-05:00",
+  "fetched_at": "2026-11-19T17:15:48-05:00",
   "issued": "100 PM EST Thu Nov 19 2026",
   "areas": [
    {
@@ -187,7 +187,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-19T17:01:04-05:00",
+  "fetched_at": "2026-11-19T17:15:48-05:00",
   "florida": "$3.5069",
   "national": "$3.7212",
   "diesel": "$5.6474",
@@ -196,7 +196,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-19T17:01:05-05:00",
+  "fetched_at": "2026-11-19T17:15:49-05:00",
   "streams": {
    "local": [
     {
@@ -569,15 +569,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-19T17:01:06-05:00",
+  "fetched_at": "2026-11-19T17:15:49-05:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (241) + USGS (12)",
-  "fetched_at": "2026-11-19T17:01:09-05:00",
+  "source": "GDACS (241) + USGS (11)",
+  "fetched_at": "2026-11-19T17:15:52-05:00",
   "events": [
    {
     "lat": 6.5,
@@ -755,19 +755,6 @@
     "mag": 4.8,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubxa",
     "when": 1795051773145,
-    "source": "USGS"
-   },
-   {
-    "lat": 15.9616,
-    "lon": -95.4267,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.8 — 11 km SSW of Santa Gertrudis Miramar, Mexico",
-    "place": "11 km SSW of Santa Gertrudis Miramar, Mexico",
-    "severity": "M4.8",
-    "mag": 4.8,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ubwa",
-    "when": 1795039612958,
     "source": "USGS"
    },
    {
@@ -2030,13 +2017,25 @@
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033934",
     "when": "Thu, 19 Nov 2026 16:14:40 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": 10.806013703749345,
+    "lon": 5.976455633762412,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Nigeria",
+    "place": "Nigeria",
+    "severity": "Green impact for forestfire in 11841 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033856",
+    "when": "Sun, 15 Nov 2026 16:02:20 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 253,
+  "event_count": 252,
   "counts": {
    "red": 0,
    "orange": 4,
-   "green": 249
+   "green": 248
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2044,7 +2043,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-19T17:01:09-05:00",
+  "fetched_at": "2026-11-19T17:15:52-05:00",
   "countries": [
    {
     "iso": "RUS",
