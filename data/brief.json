@@ -1,19 +1,172 @@
 {
- "generated_at": "2026-11-19T17:15:44-05:00",
- "generated_at_utc": "2026-11-19T22:15:44+00:00",
+ "generated_at": "2026-11-19T17:31:47-05:00",
+ "generated_at_utc": "2026-11-19T22:31:47+00:00",
  "weekday": "Thursday",
  "date_label": "Thursday, November 19",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-11-19T17:15:44-05:00",
-  "error": "429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpreci"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-11-19T17:31:47-05:00",
+  "curve": [
+   {
+    "time": "2026-11-19T05:00",
+    "hour": 5,
+    "temp": 73.7,
+    "feels": 81.3,
+    "humidity": 93,
+    "pop": 32
+   },
+   {
+    "time": "2026-11-19T06:00",
+    "hour": 6,
+    "temp": 73.9,
+    "feels": 80.0,
+    "humidity": 91,
+    "pop": 32
+   },
+   {
+    "time": "2026-11-19T07:00",
+    "hour": 7,
+    "temp": 74.2,
+    "feels": 79.5,
+    "humidity": 92,
+    "pop": 36
+   },
+   {
+    "time": "2026-11-19T08:00",
+    "hour": 8,
+    "temp": 74.6,
+    "feels": 82.6,
+    "humidity": 93,
+    "pop": 35
+   },
+   {
+    "time": "2026-11-19T09:00",
+    "hour": 9,
+    "temp": 74.7,
+    "feels": 83.2,
+    "humidity": 94,
+    "pop": 37
+   },
+   {
+    "time": "2026-11-19T10:00",
+    "hour": 10,
+    "temp": 74.6,
+    "feels": 80.9,
+    "humidity": 94,
+    "pop": 42
+   },
+   {
+    "time": "2026-11-19T11:00",
+    "hour": 11,
+    "temp": 76.0,
+    "feels": 83.7,
+    "humidity": 99,
+    "pop": 43
+   },
+   {
+    "time": "2026-11-19T12:00",
+    "hour": 12,
+    "temp": 76.0,
+    "feels": 81.8,
+    "humidity": 86,
+    "pop": 65
+   },
+   {
+    "time": "2026-11-19T13:00",
+    "hour": 13,
+    "temp": 78.7,
+    "feels": 86.1,
+    "humidity": 87,
+    "pop": 65
+   },
+   {
+    "time": "2026-11-19T14:00",
+    "hour": 14,
+    "temp": 79.4,
+    "feels": 84.4,
+    "humidity": 84,
+    "pop": 54
+   },
+   {
+    "time": "2026-11-19T15:00",
+    "hour": 15,
+    "temp": 77.0,
+    "feels": 84.4,
+    "humidity": 90,
+    "pop": 59
+   },
+   {
+    "time": "2026-11-19T16:00",
+    "hour": 16,
+    "temp": 77.0,
+    "feels": 85.4,
+    "humidity": 87,
+    "pop": 46
+   },
+   {
+    "time": "2026-11-19T17:00",
+    "hour": 17,
+    "temp": 76.7,
+    "feels": 84.3,
+    "humidity": 87,
+    "pop": 36
+   },
+   {
+    "time": "2026-11-19T18:00",
+    "hour": 18,
+    "temp": 74.8,
+    "feels": 80.7,
+    "humidity": 89,
+    "pop": 33
+   },
+   {
+    "time": "2026-11-19T19:00",
+    "hour": 19,
+    "temp": 73.8,
+    "feels": 81.4,
+    "humidity": 94,
+    "pop": 10
+   },
+   {
+    "time": "2026-11-19T20:00",
+    "hour": 20,
+    "temp": 73.7,
+    "feels": 81.6,
+    "humidity": 94,
+    "pop": 7
+   },
+   {
+    "time": "2026-11-19T21:00",
+    "hour": 21,
+    "temp": 73.4,
+    "feels": 81.1,
+    "humidity": 95,
+    "pop": 7
+   }
+  ],
+  "current": {
+   "temp": 76.0,
+   "feels": 83.7,
+   "humidity": 88,
+   "wind_mph": 3.8,
+   "wind_dir": 56,
+   "observed_at": "2026-11-19T17:30"
+  },
+  "today": {
+   "high": 79.4,
+   "low": 72.5,
+   "feels_max": 86.1,
+   "pop_max": 65
+  },
+  "peak_feels": 86.1,
+  "peak_hour": 13
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-19T17:15:45-05:00",
+  "fetched_at": "2026-11-19T17:31:47-05:00",
   "alerts": [
    {
     "event": "Flood Watch",
@@ -30,7 +183,7 @@
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-19T17:15:45-05:00",
+  "fetched_at": "2026-11-19T17:31:48-05:00",
   "aqi": 33,
   "category": "Good",
   "pm25": 3.7,
@@ -42,76 +195,69 @@
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-11-19T17:15:47-05:00",
+  "fetched_at": "2026-11-19T17:31:50-05:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
   "miles": 26.6,
-  "minutes": 62,
+  "minutes": 60,
   "delay_minutes": 0,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 25.5,
-    "minutes": 51,
+    "miles": 22.6,
+    "minutes": 52,
     "toll": true,
-    "saves": 11
+    "saves": 8
    },
    {
-    "miles": 22.6,
+    "miles": 25.5,
     "minutes": 53,
     "toll": true,
-    "saves": 9
+    "saves": 7
    },
    {
     "miles": 23.8,
-    "minutes": 62,
+    "minutes": 61,
     "toll": true,
-    "saves": 0
+    "saves": -1
    },
    {
-    "miles": 23.5,
-    "minutes": 66,
-    "toll": false,
-    "saves": -4
-   }
-  ],
-  "alternates_worth_taking": [
-   {
-    "miles": 25.5,
-    "minutes": 51,
+    "miles": 23.2,
+    "minutes": 60,
     "toll": true,
-    "saves": 11
+    "saves": 0
    }
   ],
+  "alternates_worth_taking": [],
   "free_alternates": [
    {
     "miles": 26.6,
-    "minutes": 62,
+    "minutes": 60,
     "delay_minutes": 0,
     "saves": 0
    },
    {
     "miles": 21.8,
-    "minutes": 64,
+    "minutes": 62,
     "delay_minutes": 1
    },
    {
-    "miles": 24.1,
-    "minutes": 68,
+    "miles": 24.3,
+    "minutes": 67,
     "delay_minutes": 0
    },
    {
     "miles": 23.3,
-    "minutes": 69,
+    "minutes": 68,
     "delay_minutes": 0
    }
   ],
   "best_free": {
    "miles": 26.6,
-   "minutes": 62,
+   "minutes": 60,
    "delay_minutes": 0,
    "saves": 0
   },
@@ -124,7 +270,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-19T17:15:48-05:00",
+  "fetched_at": "2026-11-19T17:31:51-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -173,7 +319,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-19T17:15:48-05:00",
+  "fetched_at": "2026-11-19T17:31:52-05:00",
   "issued": "100 PM EST Thu Nov 19 2026",
   "areas": [
    {
@@ -187,7 +333,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-19T17:15:48-05:00",
+  "fetched_at": "2026-11-19T17:31:52-05:00",
   "florida": "$3.5069",
   "national": "$3.7212",
   "diesel": "$5.6474",
@@ -196,7 +342,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-19T17:15:49-05:00",
+  "fetched_at": "2026-11-19T17:31:52-05:00",
   "streams": {
    "local": [
     {
@@ -413,7 +559,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/south-florida-flooding-updates/",
     "published": "Thu, 19 Nov 2026 13:59:34 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/479184ce-97ea-4c73-a914-2329b375342e/892db8b8-b123-402b-ab72-2ae03537dccc/main.mp4?fastly_token=NmFmZjkyZjlfNjYyYWU2NjFlYzU0M2YyNDNlMDYzNzk4NTUzMzQ5YTRkYjZjMDFlNTk3ZjU2YzEyMmRjZjU5ZDVkZjEwMDIyYl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS80NzkxODRjZS05N2VhLTRjNzMtYTkxNC0yMzI5YjM3NTM0MmUvODkyZGI4YjgtYjEyMy00MDJiLWFiNzItMmFlMDM1MzdkY2NjL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/479184ce-97ea-4c73-a914-2329b375342e/892db8b8-b123-402b-ab72-2ae03537dccc/main.mp4?fastly_token=NmFmZmNiMzZfY2E2MGQwNzg5MmIyYjFlMDE3NDc2Y2E4OTAxMmQzNGQ4MTJhZGQ4NTJhNmQzNjg0M2I0MDE2OGJlMGFiYmQ2MV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS80NzkxODRjZS05N2VhLTRjNzMtYTkxNC0yMzI5YjM3NTM0MmUvODkyZGI4YjgtYjEyMy00MDJiLWFiNzItMmFlMDM1MzdkY2NjL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -435,6 +581,14 @@
   ],
   "colombia": [
    {
+    "title": "Los más 'vigas' de la industria del culturismo y el fitness colombiano medirán sus fuerzas en la Copa Tauros 2026 en Cali",
+    "url": "https://www.eltiempo.com/colombia/cali/los-mas-vigas-de-la-industria-del-culturismo-y-el-fitness-colombiano-mediran-sus-fuerzas-en-la-copa-tauros-2026-en-cali-3602494",
+    "published": "2026-11-19T16:57:03-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/11/19/6aff69d1bd0af.r_d.691-480-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "Ministra de Transporte, Elsa Noguera, anunció una inversión de 350 mil millones de pesos para la interminable variante de San Gil",
     "url": "https://www.eltiempo.com/colombia/santander/ministra-de-transporte-elsa-noguera-anuncio-una-inversion-de-350-mil-millones-de-pesos-para-la-interminable-variante-de-san-gil-3602504",
     "published": "2026-11-19T16:50:38-05:00",
@@ -445,7 +599,7 @@
    {
     "title": "El presidente De La Espriella cumple promesa a niña de 4 años y le entrega vivienda a su familia: su padre es el bombero damnificado por el terremoto",
     "url": "https://www.eltiempo.com/colombia/cali/el-presidente-de-la-espriella-cumple-promesa-a-nina-de-4-anos-y-le-entrega-vivienda-a-su-familia-su-padre-es-el-bombero-damnificado-por-el-terremoto-3602486",
-    "published": "2026-11-19T16:43:52-05:00",
+    "published": "2026-11-19T17:02:26-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/11/19/6aff6a9b1c16f.r_d.603-319-0.png",
     "media_type": "image"
@@ -488,14 +642,6 @@
     "published": "2026-11-19T15:41:30-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/11/19/6aff5e9446db7.png",
-    "media_type": "image"
-   },
-   {
-    "title": "El último video que publicó Camilo Martínez, manager de Jhon Onofre, antes de ser asesinado en Villavicencio",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/el-ultimo-video-que-publico-camilo-martinez-manager-de-jhon-onofre-antes-de-ser-asesinado-en-villavicencio-3602446",
-    "published": "2026-11-19T13:50:02-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/11/19/6aff43076e9da.r_d.137-75-0.png",
     "media_type": "image"
    }
   ],
@@ -569,7 +715,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-19T17:15:49-05:00",
+  "fetched_at": "2026-11-19T17:31:53-05:00",
   "items": [],
   "scanned": 4,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -577,7 +723,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (241) + USGS (11)",
-  "fetched_at": "2026-11-19T17:15:52-05:00",
+  "fetched_at": "2026-11-19T17:31:56-05:00",
   "events": [
    {
     "lat": 6.5,
@@ -2043,7 +2189,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-19T17:15:52-05:00",
+  "fetched_at": "2026-11-19T17:31:56-05:00",
   "countries": [
    {
     "iso": "RUS",
@@ -2072,6 +2218,26 @@
     "issue": "Top House Democrat questions what Trump accomplished in Xi-Putin summit"
    },
    {
+    "iso": "COL",
+    "name": "Colombia",
+    "stories": [
+     {
+      "title": "Los más 'vigas' de la industria del culturismo y el fitness colombiano medirán sus fuerzas en la Copa Tauros 2026 en Cali",
+      "url": "https://www.eltiempo.com/colombia/cali/los-mas-vigas-de-la-industria-del-culturismo-y-el-fitness-colombiano-mediran-sus-fuerzas-en-la-copa-tauros-2026-en-cali-3602494",
+      "published": "2026-11-19T16:57:03-05:00",
+      "section": "colombia"
+     },
+     {
+      "title": "'Todo está normal en Cali y se desbloqueó la vía Panamericana': el mensaje del presidente Abelardo De La Espriella desde la capital del Valle en video",
+      "url": "https://www.eltiempo.com/colombia/cali/todo-esta-absolutamente-normal-el-mensaje-del-presidente-abelardo-de-la-espriella-desde-las-calles-de-cali-en-video-3602452",
+      "published": "2026-11-19T15:41:30-05:00",
+      "section": "colombia"
+     }
+    ],
+    "count": 2,
+    "issue": "Los más 'vigas' de la industria del culturismo y el fitness colombiano medirán sus fuerzas en la Copa Tauros 2026 en Cali"
+   },
+   {
     "iso": "CHN",
     "name": "China",
     "stories": [
@@ -2084,20 +2250,6 @@
     ],
     "count": 1,
     "issue": "Trump to meet with Russia's Putin and China's Xi for historic joint meeting"
-   },
-   {
-    "iso": "COL",
-    "name": "Colombia",
-    "stories": [
-     {
-      "title": "'Todo está normal en Cali y se desbloqueó la vía Panamericana': el mensaje del presidente Abelardo De La Espriella desde la capital del Valle en video",
-      "url": "https://www.eltiempo.com/colombia/cali/todo-esta-absolutamente-normal-el-mensaje-del-presidente-abelardo-de-la-espriella-desde-las-calles-de-cali-en-video-3602452",
-      "published": "2026-11-19T15:41:30-05:00",
-      "section": "colombia"
-     }
-    ],
-    "count": 1,
-    "issue": "'Todo está normal en Cali y se desbloqueó la vía Panamericana': el mensaje del presidente Abelardo De La Espriella desde la capital del Valle en video"
    },
    {
     "iso": "IRN",
@@ -2132,8 +2284,6 @@
   "countries_matched": 5,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
