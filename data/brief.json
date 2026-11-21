@@ -1,30 +1,183 @@
 {
- "generated_at": "2026-11-21T05:15:55-05:00",
- "generated_at_utc": "2026-11-21T10:15:55+00:00",
+ "generated_at": "2026-11-21T05:30:56-05:00",
+ "generated_at_utc": "2026-11-21T10:30:56+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, November 21",
  "is_weekend": true,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-11-21T05:16:20-05:00",
-  "error": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=25)"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-11-21T05:30:56-05:00",
+  "curve": [
+   {
+    "time": "2026-11-21T05:00",
+    "hour": 5,
+    "temp": 70.8,
+    "feels": 77.0,
+    "humidity": 93,
+    "pop": 1
+   },
+   {
+    "time": "2026-11-21T06:00",
+    "hour": 6,
+    "temp": 71.1,
+    "feels": 76.8,
+    "humidity": 93,
+    "pop": 3
+   },
+   {
+    "time": "2026-11-21T07:00",
+    "hour": 7,
+    "temp": 71.2,
+    "feels": 77.4,
+    "humidity": 93,
+    "pop": 2
+   },
+   {
+    "time": "2026-11-21T08:00",
+    "hour": 8,
+    "temp": 73.9,
+    "feels": 82.4,
+    "humidity": 95,
+    "pop": 3
+   },
+   {
+    "time": "2026-11-21T09:00",
+    "hour": 9,
+    "temp": 77.1,
+    "feels": 85.2,
+    "humidity": 92,
+    "pop": 3
+   },
+   {
+    "time": "2026-11-21T10:00",
+    "hour": 10,
+    "temp": 77.8,
+    "feels": 84.7,
+    "humidity": 87,
+    "pop": 6
+   },
+   {
+    "time": "2026-11-21T11:00",
+    "hour": 11,
+    "temp": 79.4,
+    "feels": 86.3,
+    "humidity": 84,
+    "pop": 11
+   },
+   {
+    "time": "2026-11-21T12:00",
+    "hour": 12,
+    "temp": 79.3,
+    "feels": 86.2,
+    "humidity": 86,
+    "pop": 13
+   },
+   {
+    "time": "2026-11-21T13:00",
+    "hour": 13,
+    "temp": 78.8,
+    "feels": 87.1,
+    "humidity": 90,
+    "pop": 25
+   },
+   {
+    "time": "2026-11-21T14:00",
+    "hour": 14,
+    "temp": 80.0,
+    "feels": 87.2,
+    "humidity": 80,
+    "pop": 32
+   },
+   {
+    "time": "2026-11-21T15:00",
+    "hour": 15,
+    "temp": 79.1,
+    "feels": 87.7,
+    "humidity": 87,
+    "pop": 33
+   },
+   {
+    "time": "2026-11-21T16:00",
+    "hour": 16,
+    "temp": 77.0,
+    "feels": 84.7,
+    "humidity": 91,
+    "pop": 28
+   },
+   {
+    "time": "2026-11-21T17:00",
+    "hour": 17,
+    "temp": 77.2,
+    "feels": 84.6,
+    "humidity": 89,
+    "pop": 12
+   },
+   {
+    "time": "2026-11-21T18:00",
+    "hour": 18,
+    "temp": 76.1,
+    "feels": 82.8,
+    "humidity": 90,
+    "pop": 8
+   },
+   {
+    "time": "2026-11-21T19:00",
+    "hour": 19,
+    "temp": 75.1,
+    "feels": 81.3,
+    "humidity": 91,
+    "pop": 5
+   },
+   {
+    "time": "2026-11-21T20:00",
+    "hour": 20,
+    "temp": 74.3,
+    "feels": 80.4,
+    "humidity": 91,
+    "pop": 4
+   },
+   {
+    "time": "2026-11-21T21:00",
+    "hour": 21,
+    "temp": 73.8,
+    "feels": 80.2,
+    "humidity": 93,
+    "pop": 2
+   }
+  ],
+  "current": {
+   "temp": 71.0,
+   "feels": 77.0,
+   "humidity": 93,
+   "wind_mph": 3.4,
+   "wind_dir": 97,
+   "observed_at": "2026-11-21T05:30"
+  },
+  "today": {
+   "high": 80.4,
+   "low": 70.7,
+   "feels_max": 87.7,
+   "pop_max": 33
+  },
+  "peak_feels": 87.7,
+  "peak_hour": 15
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-21T05:16:20-05:00",
+  "fetched_at": "2026-11-21T05:30:56-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-21T05:16:21-05:00",
-  "aqi": 45,
+  "fetched_at": "2026-11-21T05:30:57-05:00",
+  "aqi": 44,
   "category": "Good",
-  "pm25": 10.9,
-  "pm10": 12.5,
+  "pm25": 8.8,
+  "pm10": 10.2,
   "observed": "2026-11-21T05:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
@@ -32,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-11-21T05:16:22-05:00",
+  "fetched_at": "2026-11-21T05:30:57-05:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -45,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-21T05:16:22-05:00",
+  "fetched_at": "2026-11-21T05:30:58-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -88,7 +241,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-21T05:16:22-05:00",
+  "fetched_at": "2026-11-21T05:30:58-05:00",
   "issued": "100 AM EST Sat Nov 21 2026",
   "areas": [
    {
@@ -102,7 +255,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-21T05:16:23-05:00",
+  "fetched_at": "2026-11-21T05:30:58-05:00",
   "florida": "$3.4771",
   "national": "$3.6594",
   "diesel": "$5.6049",
@@ -111,7 +264,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-21T05:16:24-05:00",
+  "fetched_at": "2026-11-21T05:30:59-05:00",
   "streams": {
    "local": [
     {
@@ -288,7 +441,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/hialeah-woman-animal-cruelty-arrest/",
     "published": "Fri, 20 Nov 2026 23:06:28 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/12a67822-28fc-4868-9a9a-5320d5806db9/0d11e9eb-7369-45fd-9cff-557ad016defc/main.mp4?fastly_token=NmIwMTc0YzFfZmMzYjBmZDM0ZjVlODg3ZGU0MTcyZDUxOTI5YTM2ZTc1ODEzZDdkZGRhOTgwMjlmZjBiNzBiMTRlM2VhMWQ2MF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xMmE2NzgyMi0yOGZjLTQ4NjgtOWE5YS01MzIwZDU4MDZkYjkvMGQxMWU5ZWItNzM2OS00NWZkLTljZmYtNTU3YWQwMTZkZWZjL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/12a67822-28fc-4868-9a9a-5320d5806db9/0d11e9eb-7369-45fd-9cff-557ad016defc/main.mp4?fastly_token=NmIwMWJlOTRfNWRjNzE0NWUyNjFlNzg2OTEzODcyZTJmMTEzOTQ3YjFkNGRiYmZlODk1YWVkNzIzMjUyY2UxYWYxMTBkZWU1MV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xMmE2NzgyMi0yOGZjLTQ4NjgtOWE5YS01MzIwZDU4MDZkYjkvMGQxMWU5ZWItNzM2OS00NWZkLTljZmYtNTU3YWQwMTZkZWZjL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -312,7 +465,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/alleged-miami-dade-home-burglar-arrested/",
     "published": "Thu, 19 Nov 2026 22:44:08 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1bba8abe-dcb8-4fa6-98a5-d64d43c3f523/45b884f7-20f3-49ec-bb3e-27ace4e93262/main.mp4?fastly_token=NmIwMTZmYzRfYTdiZTc1OTUxOGNlN2Q3ZDk1MTMwMzM3YmYzODVkYWIxZWNlNmM2ZDk0OTBmYTgwN2I2YWRmZDQ4YzZlYmM1OF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xYmJhOGFiZS1kY2I4LTRmYTYtOThhNS1kNjRkNDNjM2Y1MjMvNDViODg0ZjctMjBmMy00OWVjLWJiM2UtMjdhY2U0ZTkzMjYyL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/1bba8abe-dcb8-4fa6-98a5-d64d43c3f523/45b884f7-20f3-49ec-bb3e-27ace4e93262/main.mp4?fastly_token=NmIwMWI5YjFfZjgxMjQyYjEwYWE3NGY4MjdjNzIzZjFjZGZlN2U5M2MwMWFmNmZmY2FkM2YyY2ViMjYxZTZhYTQ4OTU4MzAwZl8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8xYmJhOGFiZS1kY2I4LTRmYTYtOThhNS1kNjRkNDNjM2Y1MjMvNDViODg0ZjctMjBmMy00OWVjLWJiM2UtMjdhY2U0ZTkzMjYyL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -344,7 +497,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/police-intercept-man-attempting-to-enter-miami-high-school/",
     "published": "Fri, 20 Nov 2026 23:36:46 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/8be4bb3c-df71-4745-96d6-fd6bb5469f0f/fbf145fa-9971-4ec9-984e-dc6dbc81bf1c/main.mp4?fastly_token=NmIwMTdiOGJfMjAyMTEzNTk4OWU0ZjA1NDMxZjI5NzliOTVkYmZiZTliYmUxMGJlZmU5ZWVmNzA5MTNlYzllYTgxNjcyNjVjMF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84YmU0YmIzYy1kZjcxLTQ3NDUtOTZkNi1mZDZiYjU0NjlmMGYvZmJmMTQ1ZmEtOTk3MS00ZWM5LTk4NGUtZGM2ZGJjODFiZjFjL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/8be4bb3c-df71-4745-96d6-fd6bb5469f0f/fbf145fa-9971-4ec9-984e-dc6dbc81bf1c/main.mp4?fastly_token=NmIwMWM1NzdfMWYyMjcyOWM0ZjI4NzlhYWZjZDE5OWQxMjBhNGY4M2E0NjkxNTlkMTgwYTA4Njk4ZjgxMmE0OWU4NzcxZmJhZV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS84YmU0YmIzYy1kZjcxLTQ3NDUtOTZkNi1mZDZiYjU0NjlmMGYvZmJmMTQ1ZmEtOTk3MS00ZWM5LTk4NGUtZGM2ZGJjODFiZjFjL21haW4ubXA0",
     "media_type": "video"
    }
   ],
@@ -484,15 +637,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-21T05:16:25-05:00",
+  "fetched_at": "2026-11-21T05:31:00-05:00",
   "items": [],
   "scanned": 8,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (204) + USGS (14)",
-  "fetched_at": "2026-11-21T05:16:28-05:00",
+  "source": "GDACS (204) + USGS (12)",
+  "fetched_at": "2026-11-21T05:31:03-05:00",
   "events": [
    {
     "lat": -7.7563,
@@ -608,19 +761,6 @@
     "source": "USGS"
    },
    {
-    "lat": -24.7463,
-    "lon": 171.4327,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M5 — southeast of the Loyalty Islands",
-    "place": "southeast of the Loyalty Islands",
-    "severity": "M5",
-    "mag": 5,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000uc8g",
-    "when": 1795170601069,
-    "source": "USGS"
-   },
-   {
     "lat": -17.1789,
     "lon": 168.0998,
     "kind": "earthquake",
@@ -709,19 +849,6 @@
     "mag": 4.7,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000uc8k",
     "when": 1795171724362,
-    "source": "USGS"
-   },
-   {
-    "lat": 36.4406,
-    "lon": 22.082,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.6 — 40 km SSE of Koróni, Greece",
-    "place": "40 km SSE of Koróni, Greece",
-    "severity": "M4.6",
-    "mag": 4.6,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000uc8d",
-    "when": 1795169774294,
     "source": "USGS"
    },
    {
@@ -1947,13 +2074,37 @@
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033896",
     "when": "Tue, 17 Nov 2026 04:06:55 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": -17.53172010019964,
+    "lon": 123.11229352001496,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Australia",
+    "place": "Australia",
+    "severity": "Green impact for forestfire in 18835 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033952",
+    "when": "Thu, 19 Nov 2026 00:12:30 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": 9.037835820162927,
+    "lon": 32.758310304866974,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in South Sudan",
+    "place": "South Sudan",
+    "severity": "Green impact for forestfire in 7239 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033954",
+    "when": "Thu, 19 Nov 2026 12:14:51 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 218,
+  "event_count": 216,
   "counts": {
    "red": 2,
    "orange": 4,
-   "green": 212
+   "green": 210
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -1961,7 +2112,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-21T05:16:28-05:00",
+  "fetched_at": "2026-11-21T05:31:03-05:00",
   "countries": [
    {
     "iso": "COL",
@@ -2082,8 +2233,6 @@
   "countries_matched": 6,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
