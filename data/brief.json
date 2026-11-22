@@ -1,26 +1,179 @@
 {
- "generated_at": "2026-11-21T23:30:49-05:00",
- "generated_at_utc": "2026-11-22T04:30:49+00:00",
+ "generated_at": "2026-11-21T23:45:44-05:00",
+ "generated_at_utc": "2026-11-22T04:45:44+00:00",
  "weekday": "Saturday",
  "date_label": "Saturday, November 21",
  "is_weekend": true,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-11-21T23:30:49-05:00",
-  "error": "429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpreci"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-11-21T23:45:44-05:00",
+  "curve": [
+   {
+    "time": "2026-11-21T05:00",
+    "hour": 5,
+    "temp": 70.9,
+    "feels": 77.3,
+    "humidity": 92,
+    "pop": 1
+   },
+   {
+    "time": "2026-11-21T06:00",
+    "hour": 6,
+    "temp": 70.4,
+    "feels": 77.3,
+    "humidity": 94,
+    "pop": 1
+   },
+   {
+    "time": "2026-11-21T07:00",
+    "hour": 7,
+    "temp": 70.6,
+    "feels": 76.4,
+    "humidity": 94,
+    "pop": 4
+   },
+   {
+    "time": "2026-11-21T08:00",
+    "hour": 8,
+    "temp": 72.6,
+    "feels": 79.2,
+    "humidity": 96,
+    "pop": 4
+   },
+   {
+    "time": "2026-11-21T09:00",
+    "hour": 9,
+    "temp": 74.5,
+    "feels": 81.7,
+    "humidity": 92,
+    "pop": 28
+   },
+   {
+    "time": "2026-11-21T10:00",
+    "hour": 10,
+    "temp": 75.6,
+    "feels": 84.2,
+    "humidity": 91,
+    "pop": 33
+   },
+   {
+    "time": "2026-11-21T11:00",
+    "hour": 11,
+    "temp": 75.3,
+    "feels": 82.7,
+    "humidity": 93,
+    "pop": 47
+   },
+   {
+    "time": "2026-11-21T12:00",
+    "hour": 12,
+    "temp": 74.3,
+    "feels": 83.5,
+    "humidity": 99,
+    "pop": 62
+   },
+   {
+    "time": "2026-11-21T13:00",
+    "hour": 13,
+    "temp": 77.9,
+    "feels": 87.6,
+    "humidity": 90,
+    "pop": 44
+   },
+   {
+    "time": "2026-11-21T14:00",
+    "hour": 14,
+    "temp": 79.6,
+    "feels": 88.3,
+    "humidity": 86,
+    "pop": 44
+   },
+   {
+    "time": "2026-11-21T15:00",
+    "hour": 15,
+    "temp": 79.3,
+    "feels": 86.3,
+    "humidity": 82,
+    "pop": 38
+   },
+   {
+    "time": "2026-11-21T16:00",
+    "hour": 16,
+    "temp": 78.9,
+    "feels": 87.9,
+    "humidity": 87,
+    "pop": 33
+   },
+   {
+    "time": "2026-11-21T17:00",
+    "hour": 17,
+    "temp": 79.7,
+    "feels": 86.2,
+    "humidity": 84,
+    "pop": 28
+   },
+   {
+    "time": "2026-11-21T18:00",
+    "hour": 18,
+    "temp": 77.9,
+    "feels": 85.8,
+    "humidity": 86,
+    "pop": 17
+   },
+   {
+    "time": "2026-11-21T19:00",
+    "hour": 19,
+    "temp": 77.9,
+    "feels": 85.6,
+    "humidity": 87,
+    "pop": 14
+   },
+   {
+    "time": "2026-11-21T20:00",
+    "hour": 20,
+    "temp": 77.4,
+    "feels": 85.9,
+    "humidity": 89,
+    "pop": 8
+   },
+   {
+    "time": "2026-11-21T21:00",
+    "hour": 21,
+    "temp": 76.9,
+    "feels": 83.5,
+    "humidity": 86,
+    "pop": 4
+   }
+  ],
+  "current": {
+   "temp": 75.2,
+   "feels": 82.8,
+   "humidity": 93,
+   "wind_mph": 5.2,
+   "wind_dir": 196,
+   "observed_at": "2026-11-21T23:45"
+  },
+  "today": {
+   "high": 80.2,
+   "low": 70.1,
+   "feels_max": 88.3,
+   "pop_max": 62
+  },
+  "peak_feels": 88.3,
+  "peak_hour": 14
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-21T23:30:49-05:00",
+  "fetched_at": "2026-11-21T23:45:44-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-21T23:30:50-05:00",
+  "fetched_at": "2026-11-21T23:45:45-05:00",
   "aqi": 39,
   "category": "Good",
   "pm25": 4.1,
@@ -32,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-11-21T23:30:50-05:00",
+  "fetched_at": "2026-11-21T23:45:45-05:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -45,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-21T23:30:51-05:00",
+  "fetched_at": "2026-11-21T23:45:46-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -84,7 +237,7 @@
    "Tampa Bay | Hillsborough | Tampa: All travel lanes on eastbound I-4 from Exit 7 US 301/US 92 to east of Exit 9 I-75 will close on Sunday, Nov 22, from 10 p.m. - 5 a.m., weather permitting. Use alternate routes to avoid extra travel time. | Nov 20 2026, 4:39 PM",
    "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Silver Alert has been issued for Cathy Odum out of Middleburg. Look for a 2013 Blue Hyundai Sonata FL Tag KP374V. CALL *347. | Nov 21 2026, 6:37 PM",
    "Northeast | Duval | Jacksonville: Due to a crash, I-95 at Old St Augustine Rd all NB lanes are blocked. Use caution and seek an alternate route. | Nov 21 2026, 9:00 PM",
-   "Northeast | Duval | Jacksonville: Due to a vehicle crash on US-17/N Main St all southbound lanes of travel are blocked near Franklin Ave. Additionally all northbound lanes of travel on US-17/N Main St are blocked near Imeson Park Blvd. Motorists are advised to use caution in the area. | Nov 21 2026, 11:12 PM",
+   "Northeast | Duval | Jacksonville: Due to a vehicle crash on US-17/N Main St all southbound lanes of travel are blocked near Franklin Ave. Motorists are advised to use caution in the area. | Nov 21 2026, 11:45 PM",
    "Northeast, Panhandle, Southeast, Central, Southwest, Tampa Bay | Alachua, Baker, Bay, Broward, Bradford, Brevard, Calhoun, Charlotte, Citrus, Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin, Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando, Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette, Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Martin, Marion, Monroe, Miami-Dade, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Pasco, Palm Beach, Pinellas, Polk, Putnam, Sarasota, Seminole, St. Johns, Santa Rosa, St. Lucie, Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington | A Silver Alert has been issued for Matteo Mansolino out of Hollywood. Look for a 1991 Blue Cadillac Brougham Fl Tag HKLS35. CALL *347. | Nov 21 2026, 10:14 PM"
   ],
   "fl511_local": [
@@ -95,7 +248,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-21T23:30:51-05:00",
+  "fetched_at": "2026-11-21T23:45:46-05:00",
   "issued": "700 PM EST Sat Nov 21 2026",
   "areas": [
    {
@@ -109,7 +262,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-21T23:30:51-05:00",
+  "fetched_at": "2026-11-21T23:45:47-05:00",
   "florida": "$3.4771",
   "national": "$3.6594",
   "diesel": "$5.6049",
@@ -118,7 +271,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-21T23:30:51-05:00",
+  "fetched_at": "2026-11-21T23:45:48-05:00",
   "streams": {
    "local": [
     {
@@ -491,7 +644,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-21T23:30:52-05:00",
+  "fetched_at": "2026-11-21T23:45:48-05:00",
   "items": [],
   "scanned": 3,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -499,7 +652,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (188) + USGS (10)",
-  "fetched_at": "2026-11-21T23:30:54-05:00",
+  "fetched_at": "2026-11-21T23:45:50-05:00",
   "events": [
    {
     "lat": -7.7324,
@@ -1964,7 +2117,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-21T23:30:54-05:00",
+  "fetched_at": "2026-11-21T23:45:50-05:00",
   "countries": [
    {
     "iso": "COL",
@@ -2047,8 +2200,6 @@
   "countries_matched": 5,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
