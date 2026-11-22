@@ -1,26 +1,179 @@
 {
- "generated_at": "2026-11-22T17:15:52-05:00",
- "generated_at_utc": "2026-11-22T22:15:52+00:00",
+ "generated_at": "2026-11-22T17:30:52-05:00",
+ "generated_at_utc": "2026-11-22T22:30:52+00:00",
  "weekday": "Sunday",
  "date_label": "Sunday, November 22",
  "is_weekend": true,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-11-22T17:15:52-05:00",
-  "error": "429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpreci"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-11-22T17:30:52-05:00",
+  "curve": [
+   {
+    "time": "2026-11-22T05:00",
+    "hour": 5,
+    "temp": 73.2,
+    "feels": 80.4,
+    "humidity": 93,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T06:00",
+    "hour": 6,
+    "temp": 72.6,
+    "feels": 80.3,
+    "humidity": 96,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T07:00",
+    "hour": 7,
+    "temp": 72.4,
+    "feels": 79.8,
+    "humidity": 94,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T08:00",
+    "hour": 8,
+    "temp": 74.1,
+    "feels": 82.4,
+    "humidity": 94,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T09:00",
+    "hour": 9,
+    "temp": 76.8,
+    "feels": 85.9,
+    "humidity": 90,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T10:00",
+    "hour": 10,
+    "temp": 79.6,
+    "feels": 85.9,
+    "humidity": 72,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T11:00",
+    "hour": 11,
+    "temp": 80.7,
+    "feels": 88.9,
+    "humidity": 75,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T12:00",
+    "hour": 12,
+    "temp": 81.8,
+    "feels": 88.1,
+    "humidity": 68,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T13:00",
+    "hour": 13,
+    "temp": 82.4,
+    "feels": 87.3,
+    "humidity": 62,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T14:00",
+    "hour": 14,
+    "temp": 82.4,
+    "feels": 86.3,
+    "humidity": 60,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T15:00",
+    "hour": 15,
+    "temp": 82.5,
+    "feels": 86.1,
+    "humidity": 61,
+    "pop": 1
+   },
+   {
+    "time": "2026-11-22T16:00",
+    "hour": 16,
+    "temp": 82.2,
+    "feels": 88.4,
+    "humidity": 69,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T17:00",
+    "hour": 17,
+    "temp": 79.4,
+    "feels": 87.2,
+    "humidity": 78,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T18:00",
+    "hour": 18,
+    "temp": 78.2,
+    "feels": 87.5,
+    "humidity": 84,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T19:00",
+    "hour": 19,
+    "temp": 76.9,
+    "feels": 85.1,
+    "humidity": 85,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T20:00",
+    "hour": 20,
+    "temp": 75.2,
+    "feels": 81.9,
+    "humidity": 85,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-22T21:00",
+    "hour": 21,
+    "temp": 73.9,
+    "feels": 80.5,
+    "humidity": 90,
+    "pop": 0
+   }
+  ],
+  "current": {
+   "temp": 78.6,
+   "feels": 86.9,
+   "humidity": 82,
+   "wind_mph": 2.5,
+   "wind_dir": 291,
+   "observed_at": "2026-11-22T17:30"
+  },
+  "today": {
+   "high": 82.5,
+   "low": 70.2,
+   "feels_max": 88.9,
+   "pop_max": 12
+  },
+  "peak_feels": 88.9,
+  "peak_hour": 11
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-22T17:15:52-05:00",
+  "fetched_at": "2026-11-22T17:30:52-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-22T17:15:53-05:00",
+  "fetched_at": "2026-11-22T17:30:53-05:00",
   "aqi": 33,
   "category": "Good",
   "pm25": 5.8,
@@ -32,7 +185,7 @@
  "commute": {
   "ok": true,
   "source": "TomTom Traffic",
-  "fetched_at": "2026-11-22T17:15:53-05:00",
+  "fetched_at": "2026-11-22T17:30:53-05:00",
   "route_shown": false,
   "leg": null,
   "direction": null,
@@ -45,7 +198,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-22T17:15:54-05:00",
+  "fetched_at": "2026-11-22T17:30:54-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -88,7 +241,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-22T17:15:54-05:00",
+  "fetched_at": "2026-11-22T17:30:54-05:00",
   "issued": "100 PM EST Sun Nov 22 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 221712\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n100 PM EST Sun Nov 22 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Kelly"
@@ -96,7 +249,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-22T17:15:54-05:00",
+  "fetched_at": "2026-11-22T17:30:54-05:00",
   "florida": "$3.4674",
   "national": "$3.6448",
   "diesel": "$5.5875",
@@ -105,7 +258,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-22T17:15:55-05:00",
+  "fetched_at": "2026-11-22T17:30:54-05:00",
   "streams": {
    "local": [
     {
@@ -298,7 +451,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/2-hospitalized-after-car-plows-into-miami-goodwill-center/",
     "published": "Sat, 21 Nov 2026 21:54:28 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6da7f742-041d-4b85-b417-694e498257b8/f0d163ec-201b-49e6-93b5-c38542977947/main.mp4?fastly_token=NmIwMzg4OGNfOGZjYmQ4M2UxOTk5YzIwNTdhNmI1OWUwYjEzNTUyNGJlMDM3MzJmNDY3NzgwMWMwZjY5MzEzYTMzNDRhZWYyOV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82ZGE3Zjc0Mi0wNDFkLTRiODUtYjQxNy02OTRlNDk4MjU3YjgvZjBkMTYzZWMtMjAxYi00OWU2LTkzYjUtYzM4NTQyOTc3OTQ3L21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/6da7f742-041d-4b85-b417-694e498257b8/f0d163ec-201b-49e6-93b5-c38542977947/main.mp4?fastly_token=NmIwM2JjZjNfNDEwNWUzMjU1OWYwNjk4NjNlYzBiY2VkNWU5MjYyYTRkZGQxMWNlNjc1OTE1NzgyNDIyZWI0MmZmYTM3YjllM18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS82ZGE3Zjc0Mi0wNDFkLTRiODUtYjQxNy02OTRlNDk4MjU3YjgvZjBkMTYzZWMtMjAxYi00OWU2LTkzYjUtYzM4NTQyOTc3OTQ3L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -478,15 +631,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-22T17:15:56-05:00",
+  "fetched_at": "2026-11-22T17:30:55-05:00",
   "items": [],
   "scanned": 2,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (209) + USGS (11)",
-  "fetched_at": "2026-11-22T17:15:59-05:00",
+  "source": "GDACS (209) + USGS (12)",
+  "fetched_at": "2026-11-22T17:30:59-05:00",
   "events": [
    {
     "lat": 6.5,
@@ -664,6 +817,19 @@
     "mag": 4.6,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucpj",
     "when": 1795302965571,
+    "source": "USGS"
+   },
+   {
+    "lat": -21.9972,
+    "lon": -68.7311,
+    "kind": "earthquake",
+    "level": "green",
+    "title": "M4.5 — 54 km NNE of Calama, Chile",
+    "place": "54 km NNE of Calama, Chile",
+    "severity": "M4.5",
+    "mag": 4.5,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucuj",
+    "when": 1795384052112,
     "source": "USGS"
    },
    {
@@ -1926,25 +2092,13 @@
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033910",
     "when": "Tue, 17 Nov 2026 16:05:47 GMT",
     "source": "GDACS"
-   },
-   {
-    "lat": 11.711414781348898,
-    "lon": 2.310662530905844,
-    "kind": "wildfire",
-    "level": "green",
-    "title": "Green forest fire notification in Benin, Niger, Burkina Faso",
-    "place": "Benin, Niger, Burkina Faso",
-    "severity": "Green impact for forestfire in 7054 ha",
-    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033927",
-    "when": "Wed, 18 Nov 2026 04:06:00 GMT",
-    "source": "GDACS"
    }
   ],
-  "event_count": 220,
+  "event_count": 221,
   "counts": {
    "red": 0,
    "orange": 4,
-   "green": 216
+   "green": 217
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -1952,7 +2106,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-22T17:15:59-05:00",
+  "fetched_at": "2026-11-22T17:30:59-05:00",
   "countries": [
    {
     "iso": "COL",
@@ -2075,8 +2229,6 @@
   "countries_matched": 7,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
