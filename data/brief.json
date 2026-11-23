@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-23T11:45:57-05:00",
- "generated_at_utc": "2026-11-23T16:45:57+00:00",
+ "generated_at": "2026-11-23T12:01:04-05:00",
+ "generated_at_utc": "2026-11-23T17:01:04+00:00",
  "weekday": "Monday",
  "date_label": "Monday, November 23",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-23T11:45:57-05:00",
+  "fetched_at": "2026-11-23T12:01:05-05:00",
   "curve": [
    {
     "time": "2026-11-23T05:00",
@@ -143,16 +143,16 @@
     "temp": 67.7,
     "feels": 71.8,
     "humidity": 92,
-    "pop": 1
+    "pop": 2
    }
   ],
   "current": {
-   "temp": 72.9,
-   "feels": 77.4,
-   "humidity": 83,
-   "wind_mph": 5.0,
-   "wind_dir": 358,
-   "observed_at": "2026-11-23T11:45"
+   "temp": 73.2,
+   "feels": 77.5,
+   "humidity": 82,
+   "wind_mph": 5.4,
+   "wind_dir": 354,
+   "observed_at": "2026-11-23T12:00"
   },
   "today": {
    "high": 74.1,
@@ -166,29 +166,91 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-23T11:45:57-05:00",
+  "fetched_at": "2026-11-23T12:01:05-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-23T11:45:58-05:00",
-  "aqi": 37,
+  "fetched_at": "2026-11-23T12:01:06-05:00",
+  "aqi": 36,
   "category": "Good",
-  "pm25": 4.5,
-  "pm10": 5.4,
-  "observed": "2026-11-23T11:00",
+  "pm25": 4.6,
+  "pm10": 5.5,
+  "observed": "2026-11-23T12:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
-  "source": "TomTom Traffic",
-  "fetched_at": "2026-11-23T11:45:58-05:00",
-  "route_shown": false,
-  "leg": null,
-  "direction": null,
+  "source": "TomTom Routing + Traffic",
+  "fetched_at": "2026-11-23T12:01:08-05:00",
+  "route_shown": true,
+  "leg": "Jackson Memorial → Home",
+  "direction": "return",
+  "depart_clock": "3:30 PM",
+  "depart_at": "2026-11-23T15:30:00-05:00",
+  "miles": 20.6,
+  "minutes": 58,
+  "delay_minutes": 0,
+  "toll_free": true,
+  "alternates": [
+   {
+    "miles": 22.6,
+    "minutes": 51,
+    "toll": true,
+    "saves": 7
+   },
+   {
+    "miles": 28.6,
+    "minutes": 53,
+    "toll": true,
+    "saves": 5
+   },
+   {
+    "miles": 25.5,
+    "minutes": 54,
+    "toll": true,
+    "saves": 4
+   },
+   {
+    "miles": 24.8,
+    "minutes": 57,
+    "toll": true,
+    "saves": 1
+   }
+  ],
+  "alternates_worth_taking": [],
+  "free_alternates": [
+   {
+    "miles": 20.6,
+    "minutes": 58,
+    "delay_minutes": 0,
+    "saves": 0
+   },
+   {
+    "miles": 26.6,
+    "minutes": 61,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.4,
+    "minutes": 71,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 22.1,
+    "minutes": 67,
+    "delay_minutes": 0
+   }
+  ],
+  "best_free": {
+   "miles": 20.6,
+   "minutes": 58,
+   "delay_minutes": 0,
+   "saves": 0
+  },
   "incidents": [],
   "incident_count": 0,
   "named_count": 0,
@@ -198,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-23T11:45:59-05:00",
+  "fetched_at": "2026-11-23T12:01:09-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -239,7 +301,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-23T11:46:00-05:00",
+  "fetched_at": "2026-11-23T12:01:09-05:00",
   "issued": "700 AM EST Mon Nov 23 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 231113\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n700 AM EST Mon Nov 23 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Kelly"
@@ -247,7 +309,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-23T11:46:00-05:00",
+  "fetched_at": "2026-11-23T12:01:09-05:00",
   "florida": "$3.4604",
   "national": "$3.6366",
   "diesel": "$5.5687",
@@ -256,7 +318,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-23T11:46:01-05:00",
+  "fetched_at": "2026-11-23T12:01:10-05:00",
   "streams": {
    "local": [
     {
@@ -495,9 +557,17 @@
   ],
   "colombia": [
    {
+    "title": "Masacre por intolerancia en Barbosa (Antioquia): tres hombres y una mujer murieron en medio de una balacera",
+    "url": "https://www.eltiempo.com/colombia/medellin/masacre-por-intolerancia-en-barbosa-antioquia-tres-hombres-y-una-mujer-murieron-en-medio-de-una-balacera-3603412",
+    "published": "2026-11-23T11:39:42-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2025/10/29/6902a130d32fe.r_d.600-267-0.jpeg",
+    "media_type": "image"
+   },
+   {
     "title": "El prontuario de alias Choclo, del frente ‘Jaime Martínez’, que reclutaba a menores en parques: hizo inteligencia para atacar el Batallón Pichincha",
     "url": "https://www.eltiempo.com/colombia/cali/el-prontuario-de-alias-choclo-del-frente-jaime-martinez-que-reclutaba-a-menores-en-parques-hizo-inteligencia-para-atacar-el-batallon-pichincha-3603400",
-    "published": "2026-11-23T11:29:38-05:00",
+    "published": "2026-11-23T11:38:07-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/11/23/6b04690b63e57.r_d.362-515-0.png",
     "media_type": "image"
@@ -548,14 +618,6 @@
     "published": "2026-11-23T09:28:39-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/11/23/6b044b2d5fb2d.r_d.461-242-0.jpeg",
-    "media_type": "image"
-   },
-   {
-    "title": "Cartera de empresas oficiales con Afinia suma $430.000 millones y amenaza la sostenibilidad eléctrica en el Caribe",
-    "url": "https://www.eltiempo.com/colombia/otras-ciudades/cartera-de-empresas-oficiales-con-afinia-suma-430-000-millones-y-amenaza-la-sostenibilidad-electrica-en-el-caribe-3603332",
-    "published": "2026-11-23T09:28:00-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2026/10/23/6adbd192d4b86.jpeg",
     "media_type": "image"
    }
   ],
@@ -629,7 +691,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-23T11:46:02-05:00",
+  "fetched_at": "2026-11-23T12:01:11-05:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -637,7 +699,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (197) + USGS (20)",
-  "fetched_at": "2026-11-23T11:46:05-05:00",
+  "fetched_at": "2026-11-23T12:01:14-05:00",
   "events": [
    {
     "lat": -13.5846,
@@ -2112,7 +2174,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-23T11:46:05-05:00",
+  "fetched_at": "2026-11-23T12:01:14-05:00",
   "countries": [
    {
     "iso": "COL",
