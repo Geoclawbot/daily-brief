@@ -1,26 +1,179 @@
 {
- "generated_at": "2026-11-23T14:15:53-05:00",
- "generated_at_utc": "2026-11-23T19:15:53+00:00",
+ "generated_at": "2026-11-23T14:30:52-05:00",
+ "generated_at_utc": "2026-11-23T19:30:52+00:00",
  "weekday": "Monday",
  "date_label": "Monday, November 23",
  "is_weekend": false,
  "weather": {
-  "ok": false,
-  "source": "Open-Meteo",
-  "fetched_at": "2026-11-23T14:15:53-05:00",
-  "error": "503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=25.971228&longitude=-80.362648&hourly=temperature_2m%2Crelative_humidity_2m%2Capparent_temperature%2Cprecipitation_probability&daily=temperature_2m_max%2Ctemperature_2m_min%2Capparent_temperature_max%2Cpre"
+  "ok": true,
+  "source": "Open-Meteo (ECMWF/GFS blend)",
+  "fetched_at": "2026-11-23T14:30:52-05:00",
+  "curve": [
+   {
+    "time": "2026-11-23T05:00",
+    "hour": 5,
+    "temp": 68.0,
+    "feels": 72.0,
+    "humidity": 94,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T06:00",
+    "hour": 6,
+    "temp": 67.6,
+    "feels": 71.8,
+    "humidity": 93,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T07:00",
+    "hour": 7,
+    "temp": 66.9,
+    "feels": 69.7,
+    "humidity": 92,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T08:00",
+    "hour": 8,
+    "temp": 68.0,
+    "feels": 70.1,
+    "humidity": 90,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T09:00",
+    "hour": 9,
+    "temp": 69.7,
+    "feels": 73.5,
+    "humidity": 88,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T10:00",
+    "hour": 10,
+    "temp": 71.0,
+    "feels": 74.4,
+    "humidity": 82,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T11:00",
+    "hour": 11,
+    "temp": 73.8,
+    "feels": 77.0,
+    "humidity": 77,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T12:00",
+    "hour": 12,
+    "temp": 74.9,
+    "feels": 77.8,
+    "humidity": 73,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T13:00",
+    "hour": 13,
+    "temp": 76.1,
+    "feels": 79.7,
+    "humidity": 76,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T14:00",
+    "hour": 14,
+    "temp": 76.0,
+    "feels": 78.4,
+    "humidity": 70,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T15:00",
+    "hour": 15,
+    "temp": 74.8,
+    "feels": 77.0,
+    "humidity": 75,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T16:00",
+    "hour": 16,
+    "temp": 73.1,
+    "feels": 75.6,
+    "humidity": 77,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T17:00",
+    "hour": 17,
+    "temp": 71.2,
+    "feels": 75.3,
+    "humidity": 82,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T18:00",
+    "hour": 18,
+    "temp": 69.5,
+    "feels": 73.9,
+    "humidity": 87,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T19:00",
+    "hour": 19,
+    "temp": 68.8,
+    "feels": 72.5,
+    "humidity": 89,
+    "pop": 0
+   },
+   {
+    "time": "2026-11-23T20:00",
+    "hour": 20,
+    "temp": 68.1,
+    "feels": 72.0,
+    "humidity": 89,
+    "pop": 1
+   },
+   {
+    "time": "2026-11-23T21:00",
+    "hour": 21,
+    "temp": 67.8,
+    "feels": 71.4,
+    "humidity": 89,
+    "pop": 1
+   }
+  ],
+  "current": {
+   "temp": 75.4,
+   "feels": 77.4,
+   "humidity": 72,
+   "wind_mph": 9.3,
+   "wind_dir": 334,
+   "observed_at": "2026-11-23T14:30"
+  },
+  "today": {
+   "high": 76.1,
+   "low": 66.1,
+   "feels_max": 79.7,
+   "pop_max": 2
+  },
+  "peak_feels": 79.7,
+  "peak_hour": 13
  },
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-23T14:15:54-05:00",
+  "fetched_at": "2026-11-23T14:30:53-05:00",
   "alerts": [],
   "count": 0
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-23T14:15:54-05:00",
+  "fetched_at": "2026-11-23T14:30:53-05:00",
   "aqi": 36,
   "category": "Good",
   "pm25": 4.7,
@@ -32,48 +185,48 @@
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-11-23T14:15:57-05:00",
+  "fetched_at": "2026-11-23T14:30:56-05:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "2026-11-23T15:30:00-05:00",
   "miles": 20.6,
-  "minutes": 59,
-  "delay_minutes": 2,
+  "minutes": 58,
+  "delay_minutes": 0,
   "toll_free": true,
   "alternates": [
    {
     "miles": 22.6,
     "minutes": 51,
     "toll": true,
-    "saves": 8
+    "saves": 7
    },
    {
     "miles": 28.6,
     "minutes": 53,
     "toll": true,
-    "saves": 6
+    "saves": 5
    },
    {
     "miles": 25.5,
     "minutes": 54,
     "toll": true,
-    "saves": 5
+    "saves": 4
    },
    {
     "miles": 24.8,
     "minutes": 58,
     "toll": true,
-    "saves": 1
+    "saves": 0
    }
   ],
   "alternates_worth_taking": [],
   "free_alternates": [
    {
     "miles": 20.6,
-    "minutes": 59,
-    "delay_minutes": 2,
+    "minutes": 58,
+    "delay_minutes": 0,
     "saves": 0
    },
    {
@@ -94,8 +247,8 @@
   ],
   "best_free": {
    "miles": 20.6,
-   "minutes": 59,
-   "delay_minutes": 2,
+   "minutes": 58,
+   "delay_minutes": 0,
    "saves": 0
   },
   "incidents": [],
@@ -107,7 +260,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-23T14:15:58-05:00",
+  "fetched_at": "2026-11-23T14:30:57-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -150,7 +303,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-23T14:15:59-05:00",
+  "fetched_at": "2026-11-23T14:30:57-05:00",
   "issued": "100 PM EST Mon Nov 23 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 231709\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n100 PM EST Mon Nov 23 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Blake"
@@ -158,7 +311,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-23T14:15:59-05:00",
+  "fetched_at": "2026-11-23T14:30:57-05:00",
   "florida": "$3.4604",
   "national": "$3.6366",
   "diesel": "$5.5687",
@@ -167,7 +320,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-23T14:16:00-05:00",
+  "fetched_at": "2026-11-23T14:30:59-05:00",
   "streams": {
    "local": [
     {
@@ -276,6 +429,14 @@
   ],
   "local": [
    {
+    "title": "Key West DUI suspect touted being ‘a Republican,’ while husband blamed prostate for cruiser urination: Police",
+    "url": "https://www.local10.com/news/local/2026/11/23/key-west-dui-suspect-touted-being-a-republican-while-husband-blamed-prostate-for-cruiser-urination-police/",
+    "published": "Mon, 23 Nov 2026 19:15:28 +0000",
+    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
+    "media": "https://www.local10.com/resizer/v2/PTO35ONBUFCDHEAQDB2N52AHGU.png?auth=53fd22e5a9afe9e754488158f524e184717f704fdc9faf814f0bde94dbd6c02a&smart=true&width=1200&height=900",
+    "media_type": "image"
+   },
+   {
     "title": "Caribbean Princess docks at Port Everglades after 140+ sickened in stomach illness outbreak",
     "url": "https://www.local10.com/news/local/2026/11/23/caribbean-princess-docks-at-port-everglades-after-140-sickened-in-stomach-illness-outbreak/",
     "published": "Mon, 23 Nov 2026 17:17:59 +0000",
@@ -332,14 +493,6 @@
     "media_type": null
    },
    {
-    "title": "Unoccupied car found submerged in water behind Davie restaurant",
-    "url": "https://www.local10.com/news/local/2026/11/22/unoccupied-car-found-submerged-in-water-behind-davie-restaurant/",
-    "published": "Sun, 22 Nov 2026 15:17:19 +0000",
-    "feed": "https://www.local10.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml",
-    "media": null,
-    "media_type": null
-   },
-   {
     "title": "BSO searching for man seen shattering hurricane window at dentist office in Oakland Park",
     "url": "https://wsvn.com/news/local/broward/broward-sheriff-searches-oakland-park-vandal/",
     "published": "Mon, 23 Nov 2026 18:02:23 +0000",
@@ -360,15 +513,15 @@
     "url": "https://wsvn.com/news/local/miami-dade/two-men-hospitalized-after-drive-by-shooting-in-miami-gardens/",
     "published": "Sun, 22 Nov 2026 23:35:39 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/3b8f35d7-f836-436a-bb11-7592ca8ac4e1/94bfaaa5-9f7c-4dc9-93c0-44b3d98ff57e/main.mp4?fastly_token=NmIwNDliZWVfZmMzYmU1ZTEwMTVhMjYyZWFkYTk1ZjQ3MmQ2YWMxMDRkNGU1MzNiYWFkOGI3NzU1Nzc0MDI1ZDY3NGQ2NDZmMF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zYjhmMzVkNy1mODM2LTQzNmEtYmIxMS03NTkyY2E4YWM0ZTEvOTRiZmFhYTUtOWY3Yy00ZGM5LTkzYzAtNDRiM2Q5OGZmNTdlL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/3b8f35d7-f836-436a-bb11-7592ca8ac4e1/94bfaaa5-9f7c-4dc9-93c0-44b3d98ff57e/main.mp4?fastly_token=NmIwNGU2N2ZfYTlhYjdhNjY0YTA1ZjVlMzI4YWM5MDcyZDVlYjkwNzdlYzUzZmQyYjM1NTA1ZTUzNmNkNjFiMmU2YzFmMDEyZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zYjhmMzVkNy1mODM2LTQzNmEtYmIxMS03NTkyY2E4YWM0ZTEvOTRiZmFhYTUtOWY3Yy00ZGM5LTkzYzAtNDRiM2Q5OGZmNTdlL21haW4ubXA0",
     "media_type": "video"
    },
    {
-    "title": "Broward County Animal Care hosts annual ‘Pawsgiving’ feast",
-    "url": "https://wsvn.com/news/local/broward/broward-county-animal-care-hosts-annual-pawsgiving-feast/",
-    "published": "Mon, 23 Nov 2026 02:25:49 +0000",
+    "title": "Winterfest Family Fun Day held at Esplanade Park ahead of 55th boat parade",
+    "url": "https://wsvn.com/news/local/broward/winterfest-family-fun-day/",
+    "published": "Mon, 23 Nov 2026 19:18:44 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/e50493b5-16cb-4d28-b894-7c7c552461b1/8a4f0203-d139-49f2-b38d-d4919650613d/main.mp4?fastly_token=NmIwNGEzMTNfNGE1YWMxMTc0NzJjMzRlMzY0ZjAxNWI1ZTRkMDA0ODdhNWVmYzM2ODZmODAxMTVmYzQyMDgxNTAwNDQ4YWFmY18vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9lNTA0OTNiNS0xNmNiLTRkMjgtYjg5NC03YzdjNTUyNDYxYjEvOGE0ZjAyMDMtZDEzOS00OWYyLWIzOGQtZDQ5MTk2NTA2MTNkL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/e5237358-667d-472f-8dfc-66f3ac95fb44/f55aa076-5f0e-4267-980f-225d32435a79/main.mp4?fastly_token=NmIwNGU5YThfN2Q2MzBjYjdiNjNjY2E4NWQ2NGNjNTg3YjdjYmUxODA1MTliM2Q1OWE3YjlhZWJiYjk3Y2M1ZTRiNjcxNWVjNV8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS9lNTIzNzM1OC02NjdkLTQ3MmYtOGRmYy02NmYzYWM5NWZiNDQvZjU1YWEwNzYtNWYwZS00MjY3LTk4MGYtMjI1ZDMyNDM1YTc5L21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -392,7 +545,7 @@
     "url": "https://wsvn.com/news/local/miami-dade/two-men-hospitalized-after-drive-by-shooting-in-miami-gardens/",
     "published": "Sun, 22 Nov 2026 23:35:39 +0000",
     "feed": "https://wsvn.com/news/local/feed/",
-    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/3b8f35d7-f836-436a-bb11-7592ca8ac4e1/94bfaaa5-9f7c-4dc9-93c0-44b3d98ff57e/main.mp4?fastly_token=NmIwNDliZWVfZmMzYmU1ZTEwMTVhMjYyZWFkYTk1ZjQ3MmQ2YWMxMDRkNGU1MzNiYWFkOGI3NzU1Nzc0MDI1ZDY3NGQ2NDZmMF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zYjhmMzVkNy1mODM2LTQzNmEtYmIxMS03NTkyY2E4YWM0ZTEvOTRiZmFhYTUtOWY3Yy00ZGM5LTkzYzAtNDRiM2Q5OGZmNTdlL21haW4ubXA0",
+    "media": "https://fastly-signed-us-east-1-prod.brightcovecdn.com/media/v1/pmp4/static/clear/4368278029001/3b8f35d7-f836-436a-bb11-7592ca8ac4e1/94bfaaa5-9f7c-4dc9-93c0-44b3d98ff57e/main.mp4?fastly_token=NmIwNGU2N2ZfYTlhYjdhNjY0YTA1ZjVlMzI4YWM5MDcyZDVlYjkwNzdlYzUzZmQyYjM1NTA1ZTUzNmNkNjFiMmU2YzFmMDEyZF8vL2Zhc3RseS1zaWduZWQtdXMtZWFzdC0xLXByb2QuYnJpZ2h0Y292ZWNkbi5jb20vbWVkaWEvdjEvcG1wNC9zdGF0aWMvY2xlYXIvNDM2ODI3ODAyOTAwMS8zYjhmMzVkNy1mODM2LTQzNmEtYmIxMS03NTkyY2E4YWM0ZTEvOTRiZmFhYTUtOWY3Yy00ZGM5LTkzYzAtNDRiM2Q5OGZmNTdlL21haW4ubXA0",
     "media_type": "video"
    },
    {
@@ -405,6 +558,14 @@
    }
   ],
   "colombia": [
+   {
+    "title": "Ataque con drones deja heridos a dos policías y a un soldado en Taminango, Nariño: es el segundo atentado en esta zona en menos de un mes",
+    "url": "https://www.eltiempo.com/colombia/cali/ataque-con-drones-deja-dos-policias-y-un-soldado-heridos-en-taminango-narino-es-el-segundo-atentado-en-esta-zona-en-menos-de-un-mes-3603477",
+    "published": "2026-11-23T14:25:44-05:00",
+    "feed": "https://www.eltiempo.com/rss/colombia.xml",
+    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2024/09/30/66faec7cc5849.r_d.600-300-0.jpeg",
+    "media_type": "image"
+   },
    {
     "title": "'¡Todos Somos Criollos!': más de 40 perros y gatos encontraron hogar en la última adoptatón del año en Medellín",
     "url": "https://www.eltiempo.com/colombia/medellin/todos-somos-criollos-mas-de-40-perros-y-gatos-encontraron-hogar-en-la-ultima-adoptaton-del-ano-en-medellin-3603456",
@@ -459,14 +620,6 @@
     "published": "2026-11-23T11:38:07-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2026/11/23/6b04690b63e57.r_d.362-515-0.png",
-    "media_type": "image"
-   },
-   {
-    "title": "Las reacciones de varios sectores tras la muerte de Alberto Montoya Puyana, importante empresario y dirigente político de Santander",
-    "url": "https://www.eltiempo.com/colombia/santander/las-reacciones-de-varios-sectores-tras-la-muerte-de-alberto-montoya-puyana-importante-empresario-y-dirigente-politico-de-santander-3603362",
-    "published": "2026-11-23T10:54:25-05:00",
-    "feed": "https://www.eltiempo.com/rss/colombia.xml",
-    "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2023/11/02/65439a4e9db4b.r_d.376-143-0.jpeg",
     "media_type": "image"
    }
   ],
@@ -540,7 +693,7 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-23T14:16:01-05:00",
+  "fetched_at": "2026-11-23T14:31:03-05:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
@@ -548,7 +701,7 @@
  "events": {
   "ok": true,
   "source": "GDACS (197) + USGS (21)",
-  "fetched_at": "2026-11-23T14:16:03-05:00",
+  "fetched_at": "2026-11-23T14:31:05-05:00",
   "events": [
    {
     "lat": -13.5846,
@@ -2024,7 +2177,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-23T14:16:03-05:00",
+  "fetched_at": "2026-11-23T14:31:05-05:00",
   "countries": [
    {
     "iso": "UKR",
@@ -2135,8 +2288,6 @@
   "countries_matched": 7,
   "note": "A country appears here because a headline named it, not because anyone graded its importance."
  },
- "failures": [
-  "weather"
- ],
- "health": "10/11 sources ok"
+ "failures": [],
+ "health": "11/11 sources ok"
 }
