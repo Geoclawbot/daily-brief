@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-11-23T15:45:53-05:00",
- "generated_at_utc": "2026-11-23T20:45:53+00:00",
+ "generated_at": "2026-11-23T16:00:54-05:00",
+ "generated_at_utc": "2026-11-23T21:00:54+00:00",
  "weekday": "Monday",
  "date_label": "Monday, November 23",
  "is_weekend": false,
  "weather": {
   "ok": true,
   "source": "Open-Meteo (ECMWF/GFS blend)",
-  "fetched_at": "2026-11-23T15:45:53-05:00",
+  "fetched_at": "2026-11-23T16:00:54-05:00",
   "curve": [
    {
     "time": "2026-11-23T05:00",
@@ -135,7 +135,7 @@
     "temp": 68.3,
     "feels": 72.2,
     "humidity": 90,
-    "pop": 1
+    "pop": 0
    },
    {
     "time": "2026-11-23T21:00",
@@ -143,16 +143,16 @@
     "temp": 67.9,
     "feels": 71.9,
     "humidity": 91,
-    "pop": 1
+    "pop": 0
    }
   ],
   "current": {
-   "temp": 73.8,
+   "temp": 73.7,
    "feels": 76.3,
    "humidity": 77,
-   "wind_mph": 8.4,
-   "wind_dir": 337,
-   "observed_at": "2026-11-23T15:45"
+   "wind_mph": 8.1,
+   "wind_dir": 339,
+   "observed_at": "2026-11-23T16:00"
   },
   "today": {
    "high": 76.7,
@@ -166,44 +166,48 @@
  "alerts": {
   "ok": true,
   "source": "NWS api.weather.gov/alerts",
-  "fetched_at": "2026-11-23T15:45:54-05:00",
-  "alerts": [],
-  "count": 0
+  "fetched_at": "2026-11-23T16:00:56-05:00",
+  "alerts": [
+   {
+    "event": "Flood Watch",
+    "severity": "Severe",
+    "urgency": "Future",
+    "headline": "Flood Watch issued November 23 at 3:58PM EST until November 26 at 1:00AM EST by NWS Miami FL",
+    "description": "* WHAT...Flooding caused by excessive rainfall is possible.\n\n* WHERE...A portion of southeast Florida, including the following\nareas, Coastal Broward County, Coastal Miami Dade County, Coastal\nPalm Beach County, Metro Broward County, Metro Palm Beach County\nand Metropolitan Miami Dade.\n\n* WHEN...From Tuesday evening through late Wednesday night.\n\n* IMPACTS...Excessive runoff may result in flooding of rivers,\ncreeks, streams, and other low-lying and flood-prone locations.\nFlooding may occur in poor drainage and urban areas.\n\n* ADDITIONAL DETAILS...\n- The last 30 days of rainfall has been 400 to 600 percent of\nnormal across portions of Palm Beach and Broward Counties, and\nbetween 200 to 300 percent of normal across portions of\nMiami-Dade County. This amount of rainfall has made the ground\nvery saturated over the east coast metro areas of South Florida,\nand thus it will not take much rainfa",
+    "onset": "2026-11-24T19:00:00-05:00",
+    "ends": "2026-11-26T01:00:00-05:00"
+   }
+  ],
+  "count": 1
  },
  "air": {
   "ok": true,
   "source": "Open-Meteo air quality (no key)",
-  "fetched_at": "2026-11-23T15:45:55-05:00",
+  "fetched_at": "2026-11-23T16:00:57-05:00",
   "aqi": 37,
   "category": "Good",
-  "pm25": 4.5,
-  "pm10": 5.3,
-  "observed": "2026-11-23T15:00",
+  "pm25": 4.1,
+  "pm10": 4.8,
+  "observed": "2026-11-23T16:00",
   "forecast": [],
   "note": "Add AIRNOW_API_KEY for EPA observations and a multi-day forecast."
  },
  "commute": {
   "ok": true,
   "source": "TomTom Routing + Traffic",
-  "fetched_at": "2026-11-23T15:45:57-05:00",
+  "fetched_at": "2026-11-23T16:00:59-05:00",
   "route_shown": true,
   "leg": "Jackson Memorial → Home",
   "direction": "return",
   "depart_clock": "3:30 PM",
   "depart_at": "now",
-  "miles": 26.6,
+  "miles": 21.0,
   "minutes": 62,
-  "delay_minutes": 0,
+  "delay_minutes": 4,
   "toll_free": true,
   "alternates": [
    {
-    "miles": 25.5,
-    "minutes": 50,
-    "toll": true,
-    "saves": 12
-   },
-   {
-    "miles": 28.6,
+    "miles": 26.8,
     "minutes": 53,
     "toll": true,
     "saves": 9
@@ -215,47 +219,46 @@
     "saves": 5
    },
    {
-    "miles": 22.7,
-    "minutes": 63,
+    "miles": 28.6,
+    "minutes": 58,
     "toll": true,
-    "saves": -1
-   }
-  ],
-  "alternates_worth_taking": [
+    "saves": 4
+   },
    {
-    "miles": 25.5,
-    "minutes": 50,
+    "miles": 21.8,
+    "minutes": 60,
     "toll": true,
-    "saves": 12
+    "saves": 2
    }
   ],
+  "alternates_worth_taking": [],
   "free_alternates": [
    {
-    "miles": 26.6,
+    "miles": 21.0,
     "minutes": 62,
-    "delay_minutes": 0,
+    "delay_minutes": 4,
     "saves": 0
    },
    {
-    "miles": 21.9,
-    "minutes": 63,
-    "delay_minutes": 3
-   },
-   {
-    "miles": 23.2,
-    "minutes": 73,
+    "miles": 23.4,
+    "minutes": 68,
     "delay_minutes": 0
    },
    {
-    "miles": 22.1,
-    "minutes": 69,
-    "delay_minutes": 2
+    "miles": 23.2,
+    "minutes": 74,
+    "delay_minutes": 0
+   },
+   {
+    "miles": 23.0,
+    "minutes": 72,
+    "delay_minutes": 0
    }
   ],
   "best_free": {
-   "miles": 26.6,
+   "miles": 21.0,
    "minutes": 62,
-   "delay_minutes": 0,
+   "delay_minutes": 4,
    "saves": 0
   },
   "incidents": [],
@@ -267,7 +270,7 @@
  "closures": {
   "ok": true,
   "source": "FDOT District 6 + FL511",
-  "fetched_at": "2026-11-23T15:45:58-05:00",
+  "fetched_at": "2026-11-23T16:01:00-05:00",
   "closures": [
    {
     "source": "FDOT District 6",
@@ -304,7 +307,7 @@
   ],
   "fl511_all": [
    "Tampa Bay | Hillsborough | Tampa: All travel lanes on eastbound I-4 from Exit 7 (US 301/US 92) to east of Exit 9 (I-75) to close tonight, Nov 23rd from 10 p.m. to 5.a.m. (next morning - weather permitting) for safety and operational improvement project. Follow the posted detour or seek alternate routes. | Nov 23 2026, 3:33 PM",
-   "Tampa Bay | Hillsborough | Tampa: Westbound I-4 travel lanes through the Downtown Tampa Interchange (SB I-275) will close tonight, Monday, Nov 23rd, from 10 p.m., to 5 a.m. (next morning - weather permitting). Detour via northbound I-275 to Exit 46B SR 574 turn left, left onto Tampa St, and re-enter southbound I-275. | Nov 23 2026, 3:40 PM",
+   "Tampa Bay | Hillsborough | Tampa: Westbound I-4 travel lanes through the Downtown Tampa Interchange (SB I-275) will close tonight, Monday, Nov 23rd, from 10 p.m., to 5 a.m. (next morning - weather permitting) for maintenance activities. Detour via northbound I-275 to Exit 46B SR 574 turn left, left onto Tampa St, and re-enter southbound I-275. | Nov 23 2026, 3:48 PM",
    "Tampa Bay | Hillsborough | Tampa: Northbound I-275 ramp to Tampa International Airport will close tonight, Monday, Nov 23rd from 10 p.m. to 5.a.m. (next morning - weather permitting) for crash cushion repairs. Use Exit 39 Kennedy Blvd, left turn onto westbound SR 60 to access the airport. | Nov 23 2026, 3:43 PM"
   ],
   "fl511_local": []
@@ -312,7 +315,7 @@
  "tropics": {
   "ok": true,
   "source": "NOAA NHC MIATWOAT",
-  "fetched_at": "2026-11-23T15:45:58-05:00",
+  "fetched_at": "2026-11-23T16:01:00-05:00",
   "issued": "100 PM EST Mon Nov 23 2026",
   "areas": [],
   "raw": "en Español\n\n000\nABNT20 KNHC 231709\nTWOAT \n\nTropical Weather Outlook\nNWS National Hurricane Center Miami FL\n100 PM EST Mon Nov 23 2026\n\nFor the North Atlantic...Caribbean Sea and the Gulf of America:\n\nTropical cyclone formation is not expected during the next 7 days.\n\n$$\nForecaster Blake"
@@ -320,7 +323,7 @@
  "fuel": {
   "ok": true,
   "source": "AAA state gas price averages",
-  "fetched_at": "2026-11-23T15:45:58-05:00",
+  "fetched_at": "2026-11-23T16:01:01-05:00",
   "florida": "$3.4604",
   "national": "$3.6366",
   "diesel": "$5.5687",
@@ -329,7 +332,7 @@
  "news": {
   "ok": true,
   "source": "RSS (Local 10, WSVN, El Tiempo, Kyiv Independent, NPR)",
-  "fetched_at": "2026-11-23T15:45:59-05:00",
+  "fetched_at": "2026-11-23T16:01:04-05:00",
   "streams": {
    "local": [
     {
@@ -570,7 +573,7 @@
    {
     "title": "Audiencia por supuesta compra de votos del alcalde de Barrancabermeja, Jonathan Vásquez, se aplazó hasta enero de 2027",
     "url": "https://www.eltiempo.com/colombia/santander/audiencia-por-supuesta-compra-de-votos-del-alcalde-de-barrancabermeja-jonathan-vasquez-se-aplazo-hasta-enero-de-3603508",
-    "published": "2026-11-23T15:27:51-05:00",
+    "published": "2026-11-23T15:41:20-05:00",
     "feed": "https://www.eltiempo.com/rss/colombia.xml",
     "media": "https://imagenes2.eltiempo.com/files/og_thumbnail/files/fp/uploads/2025/10/23/68fa1f1a59008.r_d.401-445-0.jpeg",
     "media_type": "image"
@@ -702,15 +705,15 @@
  "fires": {
   "ok": true,
   "source": "Local 10 Florida feed (keyword filter)",
-  "fetched_at": "2026-11-23T15:46:00-05:00",
+  "fetched_at": "2026-11-23T16:01:05-05:00",
   "items": [],
   "scanned": 1,
   "note": "Headline-level only. Acreage and containment need the article."
  },
  "events": {
   "ok": true,
-  "source": "GDACS (206) + USGS (21)",
-  "fetched_at": "2026-11-23T15:46:03-05:00",
+  "source": "GDACS (206) + USGS (19)",
+  "fetched_at": "2026-11-23T16:01:07-05:00",
   "events": [
    {
     "lat": -13.5846,
@@ -943,19 +946,6 @@
     "source": "USGS"
    },
    {
-    "lat": -19.6421,
-    "lon": 169.0592,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.7 — 25 km WSW of Isangel, Vanuatu",
-    "place": "25 km WSW of Isangel, Vanuatu",
-    "severity": "M4.7",
-    "mag": 4.7,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucu7",
-    "when": 1795380892753,
-    "source": "USGS"
-   },
-   {
     "lat": -6.7526,
     "lon": 147.6543,
     "kind": "earthquake",
@@ -1018,19 +1008,6 @@
     "mag": 4.5,
     "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucuj",
     "when": 1795384052112,
-    "source": "USGS"
-   },
-   {
-    "lat": -22.0776,
-    "lon": -178.1773,
-    "kind": "earthquake",
-    "level": "green",
-    "title": "M4.5 — south of the Fiji Islands",
-    "place": "south of the Fiji Islands",
-    "severity": "M4.5",
-    "mag": 4.5,
-    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000ucu8",
-    "when": 1795381181943,
     "source": "USGS"
    },
    {
@@ -2172,13 +2149,37 @@
     "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033885",
     "when": "Mon, 16 Nov 2026 12:01:10 GMT",
     "source": "GDACS"
+   },
+   {
+    "lat": 11.253611062704643,
+    "lon": 1.55914851212821,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in Benin, Burkina Faso",
+    "place": "Benin, Burkina Faso",
+    "severity": "Green impact for forestfire in 9119 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033940",
+    "when": "Wed, 18 Nov 2026 16:08:15 GMT",
+    "source": "GDACS"
+   },
+   {
+    "lat": 7.889881950731901,
+    "lon": 25.685827863635073,
+    "kind": "wildfire",
+    "level": "green",
+    "title": "Green forest fire notification in South Sudan",
+    "place": "South Sudan",
+    "severity": "Green impact for forestfire in 5047 ha",
+    "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033958",
+    "when": "Mon, 23 Nov 2026 20:09:36 GMT",
+    "source": "GDACS"
    }
   ],
-  "event_count": 227,
+  "event_count": 225,
   "counts": {
    "red": 1,
    "orange": 5,
-   "green": 221
+   "green": 219
   },
   "failed_sources": [],
   "note": "Recorded events with coordinates. Not a threat assessment."
@@ -2186,7 +2187,7 @@
  "world": {
   "ok": true,
   "source": "Derived from the RSS headlines in this brief",
-  "fetched_at": "2026-11-23T15:46:03-05:00",
+  "fetched_at": "2026-11-23T16:01:07-05:00",
   "countries": [
    {
     "iso": "UKR",
